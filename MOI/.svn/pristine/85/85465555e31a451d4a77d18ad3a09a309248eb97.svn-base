@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="Authority" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>طلب تصريح الحفر</title>
+
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.ar.css"  id="changeStylesheet" />
+<!-- <link rel="stylesheet" href="css/bootstrap-theme.css" /> -->
+
+<script type="text/javascript">
+	function changeLanguage()
+	{ 
+	  $('#changeStylesheet').attr('href',$('#langageSelector').val());
+	 
+	}	
+	
+</script>
+
+<!-- Header-->
+<link rel="stylesheet" href="css/headerar.css">
+<!-- Header-->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+<!-- ........................................................................................................................ -->
+
+<!--Start Comman CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<!-- Start Header -->
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="indexar.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="indexar.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/moi-logo-white.png" id="navbar-logo" alt="Ministry of Regional Municipality & Water Resources"></a>
+    </div>
+</header>
+<nav class="navbar-core">
+  <div class="container-fluid">
+    <div class="col-xs-4 col-sm-5 home-icon">     
+	    <ul class="nav navbar-nav"> <li><a href="TS-dashbaord-ar.html"><i class="fa fa-home" aria-hidden="true"></i>الصفحة الرئيسية</a></li>
+        </ul>
+      
+    </div>
+    <div class="col-xs-2 text-size text-center"> <a href="#" class="small" id="lnkDecrease">&rlm; A-</a> <a href="#" id="lnkDefault" class="current">&rlm; A</a> <a href="#" class="large" id="lnkIncrease">&rlm; A+</a> </div>
+    <div class="col-xs-6 col-sm-4 text-right user-icon"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i class="fa fa-user-circle"></i><span class="user-name"><span class="wel-text">أهلا وسهلا بكم عمر أحمد</span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>الملف الشخصي</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-2 col-sm-1 text-right language-change"><a href="TS-dashbaord.html">English</a></div>
+  </div>
+</nav>
+<!-- End Header --> 
+
+<!--<form class="form-inline select-language" action="#" onsubmit="return false;">
+  <div class="form-group">    
+		<select class="form-control" id="langageSelector" name="language" onchange="changeLanguage();">
+		<option value="css/bootstrap.min.css" id="rtl">English</option>
+		<option value="css/bootstrap.min.ar.css" id="ltr">Arabic</option>
+	  </select>
+  </div>  
+</form>-->
+<div class="container main-content-top-margin"> 
+  
+  <!--Main content--> 
+  <!--  <div class="row transparent-white-background">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel panel-default panel-dm-theme">
+        <div class="panel-head-services header-with-image">
+          <div class="panel-title" style="margin-top: 0px;"> <i class="fa fa-dashboard fa-39px"></i>&nbsp; Request License for Major Construction - TS1700118
+            <ul class="pull-right">
+              <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help</a>&nbsp;</li>
+              <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>Print</a>&nbsp;</li>
+              <li><a href="#" class="helprint"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a>&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+  <div class="row panel-head-services">
+    <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+      <div class="panel-text">طلب تصريح الحفر - TS1700007</div>
+    </div>
+    <div class="col-sm-4 nopadding">
+      <ul class="pull-right">
+        <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>مساعدة</a></li>
+        <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>طباعة</a></li>
+        <li><a href="javascript:void(0);" class="helprint" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i>رجوع</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--End Main content-->
+  
+  <form accept-charset="utf-8" action="#" data-toggle="validator" id="myForm" method="post" name="myForm" role="form">
+  <!-- SmartWizard html --> 
+  <!--Inner Pages Start -->
+  <div class="inner-pages transparent-white-background"> 
+    <!--<div class="row">
+        	<div class="col-sm-12">
+			<div class="btn-group navbar-btn sw-btn-group-extra" role="group">
+			  <button class="btn btn-ts" type="button"><i class="fa fa-check" aria-hidden="true"></i> Approve Request</button>
+			  <button class="btn btn-ts" data-toggle="modal" data-target="#rejecttRequest" type="button"><i class="fa fa-times" aria-hidden="true"></i> Reject Request</button>
+              <button class="btn btn-ts" data-toggle="modal" data-target="#nextRequest" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i> Submit to Next Level</button>
+			  <button class="btn btn-ts" data-toggle="modal" data-target="#returnSite" type="button"><i class="fa fa-clock-o" aria-hidden="true"></i> Return for Site Inspection</button>
+			  <button class="btn btn-ts" onclick="window.location='site-visits-calendar.html';" type="button"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule Site Visit</button>
+			  <button class="btn btn-ts" data-toggle="modal" data-target="#requestClarifications" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Req. Clarifications</button>
+			  <button class="btn btn-ts" data-toggle="modal" data-target="#reAssign" type="button"><i class="fa fa-exchange" aria-hidden="true"></i> Reassign</button>
+			</div>
+            </div>
+            
+		</div>-->
+    <div class="panel-group paddingT10" id="accordion" role="tablist" aria-multiselectable="true"> 
+      <!-- content here -->
+      <div class="panel panel-default">
+        <div class="panel-heading header-ts" role="tab" id="headingOne">
+          <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse674" aria-expanded="true" aria-controls="collapse674"> <i class="fa fa-bars fa-fw"></i>بيانات الطلب <i class="more-less glyphicon glyphicon-chevron-down pull-right"></i></a> </h4>
+        </div>
+        <div id="collapse674" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-4 col-md-2-5">
+                <fieldset class="height">
+                  <legend>بيانات الخدمة </legend>
+                  <div class="table-responsive">
+                    <table class="table table-bordered ">
+                      <thead class="thead-default">
+                        <tr>
+                          <th class="col-sm-5">الخدمة</th>
+                          <td>طلب تصريح الحفر</td>
+                        </tr>
+                        <tr>
+                          <th>المحافظة</th>
+                          <td>Alshaqiya</td>
+                        </tr>
+                        <tr>
+                          <th>الولاية</th>
+                          <td>Nizwa</td>
+                        </tr>
+                        <tr>
+                          <th>اسم الشارع</th>
+                          <td>235</td>
+                        </tr>
+                        <tr>
+                          <th>البلدية</th>
+                          <td>Nizwa Municipality</td>
+                        </tr>
+                        <tr>
+                          <th>الرقم</th>
+                          <td>TS1700007</td>
+                        </tr>
+                        <tr>
+                          <th>التاريخ</th>
+                          <td>25/05/2017</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End .col-md-3 -->
+              
+              <div class="col-sm-4 col-md-2-5">
+                <fieldset class="height">
+                  <legend>بيانات مقدم الطلب</legend>
+                  <div class="table-responsive">
+                    <table class="table table-bordered ">
+                      <thead class="thead-default">
+                        <tr>
+                          <th>أسم مقدم الطلب</th>
+                          <td>Omar Ahmed</td>
+                        </tr>
+                        <tr>
+                          <th>الرقم المدني</th>
+                          <td>109823168</td>
+                        </tr>
+                        <tr>
+                          <th>العنوان</th>
+                          <td>Nizwa</td>
+                        </tr>
+                        <tr>
+                          <th>رقم الهاتف</th>
+                          <td>91303020</td>
+                        </tr>
+                        <tr>
+                          <th>البريد الإلكتروني</th>
+                          <td>abc@gmail.com</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End .col-md-3 -->
+              
+              <div class="col-sm-4 col-md-2-5">
+                <fieldset class="height">
+                  <legend>بيانات الشركة المقدمة</legend>
+                  <div class="table-responsive">
+                    <table class="table table-bordered ">
+                      <thead class="thead-default">
+                        <tr>
+                          <th>الاسم التجاري</th>
+                          <td>Bahwan IT</td>
+                        </tr>
+                        <tr>
+                          <th>الرقم المدني</th>
+                          <td>10164000</td>
+                        </tr>
+                        <tr>
+                          <th>العنوان</th>
+                          <td>KOM</td>
+                        </tr>
+                        <tr>
+                          <th>رقم الهاتف</th>
+                          <td>968658742</td>
+                        </tr>
+                        <tr>
+                          <th>البريد الإلكتروني</th>
+                          <td>abc@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <th>فاكس الشركة</th>
+                          <td>-----</td>
+                        </tr>
+                        <tr>
+                          <th>نوع النشاط التجاري</th>
+                          <td>Commercial Activity Type 1</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End .col-md-3 -->
+              
+              <div class="col-sm-4 col-md-2-5">
+                <fieldset class="height">
+                  <legend>بيانات المستفيد</legend>
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead class="thead-default">
+                      <div class="form-group" style="margin-bottom: 3px;">
+                        <label for="optradio6" style="margin-bottom: 0px;">نفس مقدم الطلب</label>
+                        <div class="form-control">
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio6" value="Yes">
+                            نعم </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio6" value="No" checked>
+                            لا</label>
+                        </div>
+                      </div>
+                      <div class="form-group" id="benType" style="margin-bottom: 3px;">
+                        <label for="optradio7" style="margin-bottom: 0px;">نوع المستفيد</label>
+                        <div class="form-control">
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio7" value="Individual" checked>
+                            شركة</label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio7" value="Organization">
+                            فرد</label>
+                        </div>
+                      </div>
+                      <tr>
+                        <th>الاسم التجاري</th>
+                        <td>Venkata</td>
+                      </tr>
+                      <tr>
+                        <th>رقم السجل التجاري</th>
+                        <td>109686749</td>
+                      </tr>
+                      <tr>
+                        <th>العنوان</th>
+                        <td>Barka</td>
+                      </tr>
+                      <tr>
+                        <th>رقم الهاتف</th>
+                        <td>968689334</td>
+                      </tr>
+                      <tr>
+                        <th>البريد الإلكتروني</th>
+                        <td>mail@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <th>فاكس الشركة</th>
+                        <td>-----</td>
+                      </tr>
+                      <tr>
+                        <th>نوع النشاط التجاري</th>
+                        <td>Commercial Activity Type 1</td>
+                      </tr>
+                        </thead>
+                      
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End .col-md-3 -->
+              
+              <div class="col-sm-4 col-md-2-5">
+                <fieldset class="height">
+                  <legend>الحالة</legend>
+                  <div class="text-center">
+                    <fieldset>
+                      <legend>رقم الطلب </legend>
+                      <h1 style="color: #90068a;margin: auto;">TS1700007</h1>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                      <legend> الحالة </legend>
+                      <h1 style="color: #90068a;margin: auto;">قيد الانتظار</h1>
+                    </fieldset>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End .col-md-2-5 --> 
+            </div>
+            <!-- End .row --> 
+          </div>
+          <!-- End .panel-body --> 
+        </div>
+      </div>
+      <!-- End .panel-default --> 
+    </div>
+    <!-- End .panel-group --> 
+    
+  </div>
+  <div class="inner-pages transparent-white-background">
+  <div class="row"> </div>
+  <!-- End .row -->
+  <div class="row">
+  <div id="smartwizard">
+  <ul id="credit" name="credit">
+    <li data-interest = "1"><a href="#RequestDetails"><i class="fa fa-user fa-fw"></i>بيانات الطلب</a></li>
+    <li data-interest = "2"><a href="#Comments"><i class="fa fa-weixin fa-fw"></i>التعليقات / الاجراءات</a> </li>
+    <li data-interest = "3"><a href="#Operations"><i class="fa fa-file-text-o"></i>العمليات</a> </li>
+    <li data-interest = "4"><a href="#SiteInspection"><i class="fa fa-sitemap fa-fw"></i>معاينة الموقع</a> </li>
+    <li data-interest = "5"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>المستندات</a></li>
+    <li data-interest = "6"><a href="#Payment"><i class="fa fa-credit-card fa-fw"></i>الدفع</a></li>
+    <li data-interest = "7"><a href="#Output"><i class="fa fa-print fa-fw"></i>النتائج</a></li>
+  </ul>
+  <div>
+  <div id="RequestDetails">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <div class="row">
+            <fieldset>
+            <legend>اباحة الحفر ل</legend>
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table table-gray table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" checked disabled></td>
+                      <td>اتصال المياه</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" checked disabled></td>
+                      <td>الكابلات</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" checked disabled></td>
+                      <td>الطرق</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" disabled></td>
+                      <td>مياه المجاري</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" disabled></td>
+                      <td>لوحات</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </fieldset>
+        </div> <!-- End .row --> 
+      </div> <!-- End form-group -->
+    </div>
+  </div> <!-- End RequestDetails -->
+  
+  <div id="Comments" class="">
+    <div data-toggle="validator" id="form-step-2" role="form">
+      <fieldset>
+        <legend>التعليقات</legend>
+        <div class="row">
+          <div class="table-responsive">
+            <table id="Commentstable" class="table table-striped table-bordered">
+              <thead class="thead-default">
+              <th>التاريخ و الوقت</th>
+                <th>التعليقات</th>
+                <th>المخول</th>
+                <th>أحصاءات الطلب</th>
+                  </thead>
+              <tbody>
+                <tr>
+                  <td>10/05/2017  09:41AM</td>
+                  <td>الرجاء تعديل الطلب باستخدام ...</td>
+                  <td>فني </td>
+                  <td>طلب توضيحات</td>
+                </tr>
+                <tr>
+                  <td>12/05/2017  11:15AM</td>
+                  <td></td>
+                  <td>مهندس</td>
+                  <td>سلمت </td>
+                </tr>
+                <tr>
+                  <td>13/05/2017  10:25AM</td>
+                  <td></td>
+                  <td>رئيس القسم</td>
+                  <td>وافق عليها رئيس القسم</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End .row -->
+      </fieldset>
+    </div>
+    <!-- End .data-toggle --> 
+  </div>
+  <!-- End Comments -->
+  
+  <div id="Operations" class="">
+  <div data-toggle="validator" id="form-step-2" role="form">
+  <fieldset>
+  <legend>مراجعة تفاصيل الطلب والمستندات المرفقة</legend>
+  <h2><strong>موافقة الجهات المعنية</strong></h2>
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table table-gray table-striped table-bordered">
+        <thead>
+          <tr>
+            <th class="col-sm-1">موافقة</th>
+            <th class="col-sm-11">الجهات المعنية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="technicalAffairsMinistry" value="technicalAffairsMinistry" id="technicalAffairsMinistry"></td>
+            <td>المديرية العامة للشؤون الفنية في الوزارة</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="ministryOfHousing" value="ministryOfHousing" id="ministryOfHousing"></td>
+            <td>وزارة الإسكان</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="royalOmanPolicy" value="royalOmanPolicy" id="royalOmanPolicy"></td>
+            <td>شرطة عمان السلطانية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="omanTelecommunications" value="omanTelecommunications" id="omanTelecommunications"></td>
+            <td>الشركة العمانية للاتصالات</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="agricultureAndFisheries" value="agricultureAndFisheries" id="agricultureAndFisheries"></td>
+            <td>وزارة الزراعة والثروة السمكية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="education" value="education" id="education"></td>
+            <td>وزارة التربية والتعليم</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="sportsAffairs" value="sportsAffairs" id="sportsAffairs"></td>
+            <td>وزارة الشؤون الرياضية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="omanGasCompany" value="omanGasCompany" id="omanGasCompany"></td>
+            <td>شركة الغاز العمانية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="tourism" value="tourism" id="tourism"></td>
+            <td>وزارة السياحة</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="internalAffairs" value="internalAffairs" id="internalAffairs"></td>
+            <td>وزارة الداخلية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="transportAndCommunications" value="transportAndCommunications" id="transportAndCommunications"></td>
+            <td>وزارة النقل والاتصالات</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="environment" value="environment" id="environment"></td>
+            <td>وزارة البيئة</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="electricityAndWater" value="electricityAndWater" id="electricityAndWater"></td>
+            <td>الهيئة العامة للكهرباء والمياه</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="awqafAndReligiousAffairs" value="awqafAndReligiousAffairs" id="awqafAndReligiousAffairs"></td>
+            <td>وزارة الأوقاف والشؤون الدينية</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="heritageAndCulture" value="heritageAndCulture" id="heritageAndCulture"></td>
+            <td>وزارة التراث والثقافة</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="defense" value="defense" id="defense"></td>
+            <td>وزارة الدفاع</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="petrochemical" value="petrochemical" id="petrochemical"></td>
+            <td>عمان للبتروكيماويات</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="justice" value="justice" id="justice"></td>
+            <td>وزارة العدل</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="commerceAndIndustry" value="commerceAndIndustry" id="commerceAndIndustry"></td>
+            <td>وزارة التجارة والصناعة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+  <div class="panel-box">
+  <div class="panel-box-body">
+    <div class="row">
+      <div class="form-group">
+        <label for="comments"></label>
+        <div class="col-sm-12">
+          <textarea id="comments" class="form-control" ></textarea>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- End .row -->
+</fieldset>
+</div>
+</div>
+<!-- End Operations -->
+
+<div id="SiteInspection" class="">
+  <div data-toggle="validator" id="form-step-3" role="form">
+    <fieldset>
+      <legend>قائمة معاينة الموقع</legend>
+      <div class="row">
+        <div class="table-responsive">
+          <table id="SiteInspectiontable" class="table table-striped table-bordered">
+            <thead class="thead-default">
+              <tr>
+                <th></th>
+                <th>معاينة الموقع</th>
+                <th>عدد الزيارات</th>
+                <th>الحالة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button class="btn btn-ts"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض بيانات معاينة الموقع</button></td>
+                <td>Site inspection no 1</td>
+                <td>2</td>
+                <td>Final</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-ts"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض بيانات معاينة الموقع</button></td>
+                <td>Site inspection no 2</td>
+                <td>3</td>
+                <td>In progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End .row -->
+    </fieldset>
+    <div class="btn-container">
+      <div class="btn-group"> <a href="site-visits-calendar-arabic.html" class="btn btn-ts btn-block"><i class="fa fa-plus" aria-hidden="true"></i> اضافة زيارات</a> </div>
+    </div>
+    <h2 class="subheadline">بيانات معاينة الموقع </h2>
+    <fieldset>
+      <legend>بيانات الزيارات</legend>
+      <div class="row">
+        <div class="table-responsive">
+          <table id="VDetails" class="table table-striped table-bordered">
+            <thead class="thead-default">
+            <th>رقم الزيارة</th>
+              <th>تاريخ التخطيط</th>
+              <th>التاريخ الفعلي</th>
+              <th>وقت البدء الفعلي</th>
+              <th>وقت الانتهاء الفعلي</th>
+                </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>10.05.2017</td>
+                <td>10.05.2017</td>
+                <td>08:00 AM</td>
+                <td>10:00 PM</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>18.05.2017</td>
+                <td>18.05.2017</td>
+                <td>11:00 AM</td>
+                <td>05:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End .row -->
+    </fieldset>
+    <fieldset>
+      <legend>قائمة أختيار المعاينة</legend>
+      <div class="row">
+        <div>
+          <table id="InspectionList" class="table table-striped table-bordered dt-responsive">
+            <thead>
+              <tr>
+                <th>الرقم</th>
+                <th>قائمة الأسئلة</th>
+                <th>قائمة الأجوبة (لم تتم الأجابة عنه /لا /نعم)</th>
+                <th>قائمة الملاحضات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>السؤال 1</td>
+                <td><label class="radio-inline">
+                    <input type="radio" name="optradio2" value="NotAnswered">
+                    لم تتم الأجابة </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="Yes" checked>
+                    نعم </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="No">
+                    لا </label></td>
+                <td><textarea class="form-control"></textarea></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>السؤال 2</td>
+                <td><label class="radio-inline">
+                    <input type="radio" name="optradio2" value="NotAnswered">
+                    لم تتم الأجابة </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="Yes" checked>
+                    نعم </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="No">
+                    لا </label></td>
+                <td><textarea class="form-control"></textarea></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>السؤال 3</td>
+                <td><label class="radio-inline">
+                    <input type="radio" name="optradio2" value="NotAnswered">
+                    لم تتم الأجابة </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="Yes" checked>
+                    نعم </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio2" value="No">
+                    لا </label></td>
+                <td><textarea class="form-control"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End .row -->
+    </fieldset>
+    <div class="panel-group" id="Inspectionaccordion" role="tablist" aria-multiselectable="true"> 
+      <!-- content here -->
+      <div class="panel panel-default">
+        <div class="panel-heading header-ts" role="tab" id="TechnicianOne">
+          <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#Inspectionaccordion" href="#Technician" aria-expanded="true" aria-controls="Technician"> <i class="fa fa-bars fa-fw"></i>الفني <i class="more-less glyphicon glyphicon-chevron-right pull-right"></i></a> </h4>
+        </div>
+        <div id="Technician" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TechnicianOne">
+          <div class="panel-body">
+            <div class="col-sm-12">
+              <fieldset>
+                <legend>الفني </legend>
+                <div class="row">
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="Predefined_text">نص محدد مسبقا</label>
+                    <select name="Predefined_text" id="Predefined_text" class="form-control">
+                      <option value="0">الرجاء التحديد...</option>
+                      <option value="1">نص محدد مسبقا 1</option>
+                      <option value="2">نص محدد مسبقا 2</option>
+                      <option value="3">نص محدد مسبقا 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="Technicaldec">وصف الفني</label>
+                    <textarea class="form-control" id="Technicaldec" row="3"></textarea>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="Editedat">تم التعديل في</label>
+                    <input type="text" class="form-control" id="Editedat" value="25/05/2017 10:10AM" readonly>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="TechnicianName">اسم فني</label>
+                    <input type="text" class="form-control" id="TechnicianName" placeholder="Technician Name">
+                  </div>
+                </div>
+                <!-- End .row -->
+              </fieldset>
+            </div>
+          </div>
+          <!-- End .panel-body --> 
+        </div>
+      </div>
+      
+      <!-- content here -->
+      <div class="panel panel-default">
+        <div class="panel-heading header-ts" role="tab" id="EngineerTwo">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Inspectionaccordion" href="#Engineer" aria-expanded="false" aria-controls="Engineer"> <i class="fa fa-bars fa-fw"></i>المهندس <i class="more-less glyphicon glyphicon-chevron-right pull-right"></i></a> </h4>
+        </div>
+        <div id="Engineer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EngineerTwo">
+          <div class="panel-body">
+            <div class="col-sm-12">
+              <fieldset>
+                <legend>المهندس </legend>
+                <div class="row">
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="EPredefined_text">نص محدد مسبقا</label>
+                    <select name="Predefined_text" id="Predefined_text" class="form-control">
+                      <option value="0">الرجاء التحديد...</option>
+                      <option value="1">نص محدد مسبقا 1</option>
+                      <option value="2">نص محدد مسبقا 2</option>
+                      <option value="3">نص محدد مسبقا 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="Engineerdec">وصف المهندس</label>
+                    <textarea class="form-control" id="Engineerdec" row="3"></textarea>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="EEditedat">تم التعديل في</label>
+                    <input type="text" class="form-control" id="EEditedat" value="25/05/2017 10:10AM" readonly>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="EngineerName">أسم المهندس</label>
+                    <input type="text" class="form-control" id="EngineerName" placeholder="Engineer Name">
+                  </div>
+                </div>
+                <!-- End .row -->
+              </fieldset>
+            </div>
+          </div>
+          <!-- End .panel-body --> 
+        </div>
+      </div>
+      
+      <!-- content here -->
+      <div class="panel panel-default">
+        <div class="panel-heading header-ts" role="tab" id="headThree">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Inspectionaccordion" href="#Head" aria-expanded="false" aria-controls="Head"> <i class="fa fa-bars fa-fw"></i>رئيس القسم<i class="more-less glyphicon glyphicon-chevron-right pull-right"></i></a> </h4>
+        </div>
+        <div id="Head" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headhree">
+          <div class="panel-body">
+            <div class="col-sm-12">
+              <fieldset>
+                <legend>رئيس القسم</legend>
+                <div class="row">
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="EPredefined_text">نص محدد مسبقا</label>
+                    <select name="Predefined_text" id="Predefined_text" class="form-control">
+                      <option value="0">الرجاء التحديد...</option>
+                      <option value="1">نص محدد مسبقا 1</option>
+                      <option value="2">نص محدد مسبقا 2</option>
+                      <option value="3">نص محدد مسبقا 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="Headdec">ملاحضات رئيس القسم</label>
+                    <textarea class="form-control" id="Headdec" row="3"></textarea>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="HEditedat">تم التعديل في</label>
+                    <input type="text" class="form-control" id="HEditedat" value="25/05/2017 10:10AM" readonly>
+                  </div>
+                  <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                    <label for="HeadName">أسم رئيس القسم</label>
+                    <input type="text" class="form-control" id="HeadName" placeholder="Head of Section Name">
+                  </div>
+                </div>
+                <!-- End .row -->
+              </fieldset>
+            </div>
+          </div>
+          <!-- End .panel-body --> 
+        </div>
+      </div>
+      
+      <!-- content here -->
+      <div class="panel panel-default">
+        <div class="panel-heading header-ts" role="tab" id="headThree">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#Inspectionaccordion" href="#upload" aria-expanded="false" aria-controls="Head"> <i class="fa fa-bars fa-fw"></i>المستندات<i class="more-less glyphicon glyphicon-chevron-right pull-right"></i></a> </h4>
+        </div>
+        <div id="upload" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headhree">
+          <div class="panel-body">
+            <div class="col-sm-12">
+              <fieldset>
+                <legend>المستندات</legend>
+                <div class="row">
+                  <div class="file-upload">
+                    <label for="upload" class="file-upload-label"><i class="fa fa-upload" aria-hidden="true"></i> تحميل</label>
+                    <input id="upload" class="file-upload-input" type="file" name="file-upload">
+                  </div>
+                  <div class="table-responsive">
+                    <table id="VDetails" class="table table-striped table-bordered">
+                      <thead>
+                      <th>أسم الملف</th>
+                        <th>حذف</th>
+                          </thead>
+                      <tbody>
+                        <tr>
+                          <td>Copy_1.pdf</td>
+                          <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Copy_2.pdf</td>
+                          <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Copy_3.pdf</td>
+                          <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- End .row -->
+              </fieldset>
+            </div>
+          </div>
+          <!-- End .panel-body --> 
+        </div>
+      </div>
+    </div>
+    <!-- End.panel-group --> 
+    
+  </div>
+  <!-- End .Validator --> 
+</div>
+<!-- End SiteInspection -->
+
+<div id="Attachment" class="">
+  <div data-toggle="validator" id="form-step-4" role="form">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <fieldset>
+            <legend>المستندات المطلوبة</legend>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>المستندات المطلوبة</th>
+                    <th>أسم الملف</th>
+                    <th>التحميل</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row" class="bold">1</td>
+                    <td>سند الملكية</td>
+                    <td><a style = "cursor:pointer" onclick = "TitleDeed();" title="TitleDeed">TitleDeed.pdf</a></td>
+                    <td><i class="fa fa-download"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="bold">2</td>
+                    <td>الرسم المساحي</td>
+                    <td><a style = "cursor:pointer" onclick = "SurveySketch(Krooki)();" title="TitleDeed">Survey Sketch ( Krooki ).pdf</a></td>
+                    <td><i class="fa fa-download"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </fieldset>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <fieldset>
+            <legend>مستعرض الملفات</legend>
+            <iframe src="" id="iframe">
+            <p>Your browser does not support iframes.</p>
+            </iframe>
+          </fieldset>
+        </div>
+      </div>
+      <!-- .row --> 
+    </div>
+    <!-- .form-group --> 
+  </div>
+  <!-- End data-toggle="validator" --> 
+</div>
+<!-- Attachment -->
+
+<div id="Payment">
+  <div data-toggle="validator" id="form-step-2" role="form">
+    <fieldset>
+      <legend>الدفع</legend>
+      <div class="row">
+        <div class="table-responsive">
+          <table id="Paymentstable" class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>نوع الدفع</th>
+                <th>التاريخ و الوقت</th>
+                <th>‎‎رسوم الدفع</th>
+                <th>الرسوم المدفوعة</th>
+                <th>رقم الإيصال</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Advanced payment</td>
+                <td>10/05/2016  09:41</td>
+                <td>2</td>
+                <td>2</td>
+                <td>A0092811</td>
+              </tr>
+              <tr>
+                <td>Fee</td>
+                <td>-</td>
+                <td>10</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Deposit</td>
+                <td>13/05/2016  10:25</td>
+                <td>100</td>
+                <td>100</td>
+                <td>A0098621</td>
+              </tr>
+              <tr>
+                <td>Fine</td>
+                <td>-</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End .row -->
+    </fieldset>
+  </div>
+  <!-- End .data-toggle --> 
+</div>
+<!-- Payment -->
+
+<div id="Output" class="">
+  <div data-toggle="validator" role="form">
+    <div class="row">
+      <div class="col-sm-12" role="toolbar" aria-label="Toolbar with button groups"> 
+        <!-- <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-ts"><i class="fa fa-file-pdf-o fa-fw"></i> Export</button>
+                      </div> -->
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-ts"><i class="fa fa-save fa-fw"></i> التحميل</button>
+        </div>
+      </div>
+      <!-- End toolbar --> 
+    </div>
+    <div class="row marTB10">
+      <div class="col-xs-4">
+        <fieldset class="height7">
+          <legend>بيانات التصريح</legend>
+          <div class="panel-box-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <table class="table table-bordered ">
+                    <thead class="thead-default">
+                      <tr>
+                        <th class="col-sm-6">رقم التصريح</th>
+                        <td>109686741</td>
+                      </tr>
+                      <tr>
+                        <th>تاريخ الإصدار</th>
+                        <td>25/04/2016</td>
+                      </tr>
+                      <tr>
+                        <th>تاريخ إنتهاء الصلاحية</th>
+                        <td>25/04/2017</td>
+                      </tr>
+                      <tr>
+                        <th>اصدار بواسطة</th>
+                        <td>Omar Ahamad</td>
+                      </tr>
+                      <tr>
+                        <th>الرقم المدني للمالك</th>
+                        <td>10968</td>
+                      </tr>
+                      <tr>
+                        <th>اسم المالك</th>
+                        <td>Abc</td>
+                      </tr>
+                      <tr>
+                        <th>اسم المشروع</th>
+                        <td>Abc</td>
+                      </tr>
+                      <tr>
+                        <th>تكلفة المشروع</th>
+                        <td><input type="text" class="form-control inputwidth"></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="col-xs-4">
+        <fieldset class="height7">
+          <legend>بيانات المكتب الاستشاري </legend>
+          <div class="panel-box-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <table class="table table-bordered">
+                    <thead class="thead-default">
+                      <tr>
+                        <th class="col-sm-6">رقم السجل التجاري</th>
+                        <td>109686749</td>
+                      </tr>
+                      <tr>
+                        <th>الاسم التجاري </th>
+                        <td>Abc</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="col-xs-4">
+        <fieldset class="height7">
+          <legend>بيانات المقاول </legend>
+          <div class="panel-box-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <table class="table table-bordered">
+                    <thead class="thead-default">
+                      <tr>
+                        <th class="col-sm-6">رقم السجل التجاري</th>
+                        <td>109686749</td>
+                      </tr>
+                      <tr>
+                        <th>الاسم التجاري</th>
+                        <td>Abc</td>
+                      </tr>
+                      <tr>
+                        <th>رقم الاباحة </th>
+                        <td>123</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .form-group -->
+</div>
+<!-- End data-toggle="validator" -->
+</div>
+<!-- Attachment -->
+
+</div>
+<!-- End Empty div -->
+</div>
+<!-- End SmartWizard html -->
+</div>
+<!-- End row -->
+</div>
+<!--inner-pages transparent-white-background -->
+</form>
+</div>
+<!-- .container main-content-top-margin --> 
+
+<br />
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-md-4">
+        <a href="index.html">
+          <img alt="oman-vision" id="footer-logo" class="img-responsive mb-2" src="images/oman-vision-white.png"></a>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline text-center">
+          <li><script>document.write(new Date().getFullYear())</script>
+              <a class="font-weight-bold" href="https://www.moi.gov.om" target="_blank">حقوق النشر <span>&copy;</span> وزارة الداخلية، كل الحقوق محفوظة</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-right">
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/instagram-logo.svg" class="list-brand-icon" alt="">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/twitter.svg" class="list-brand-icon" alt=""></a>
+          </li>
+
+          <!-- brand -->
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="images/oman-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="images/w3c-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div> <!-- /.container -->
+</section>
+<!-- FOOTER END -->  
+
+<!--Scrolling top--> 
+<a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br />
+Top </a> 
+<!-- end scrolling top--> 
+
+<!-- Request Clarifications Modal -->
+<div id="requestClarifications" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">طلب توضيحات</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+			<div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">السبب</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected="">Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">تعليقات</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">تاريخ الإنذار</label>
+            <div class="col-sm-5">
+              <div class=" input-group date">
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+            </div>
+            <label for="inputPassword3" class="col-sm-2 control-label">أيام</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">تاريخ إنتهاء الصلاحية</label>
+            <div class="col-sm-5">
+              <div class=" input-group date">
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+            </div>
+            <label for="inputPassword3" class="col-sm-2 control-label">أيام</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Next (Send Request) Modal -->
+<div id="nextRequest" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">أرسال للمستوى التالى </h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">دور</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>دور 1</option>
+                <option>دور 2</option>
+                <option>دور 3</option>
+                <option>دور 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">الاسم</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>الاسم 1</option>
+                <option>الاسم 2</option>
+                <option>الاسم 3</option>
+                <option>الاسم 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">التعليقات</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Return Request for Site Inspection Modal -->
+<div id="returnSite" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">عودة للمراجعة</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">دور</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>دور 1</option>
+                <option>دور 2</option>
+                <option>دور 3</option>
+                <option>دور 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">الاسم</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>الاسم 1</option>
+                <option>الاسم 2</option>
+                <option>الاسم 3</option>
+                <option>الاسم 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">التعليقات</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reject Request Modal -->
+<div id="rejecttRequest" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">رفض الطلب</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">سبب الرفض</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>Missing Required Documents</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">التعليقات</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Return for Review Site Inspection Modal -->
+<div id="returnReview" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">عودة للمراجعة</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">دور</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>دور 1</option>
+                <option>دور 2</option>
+                <option>دور 3</option>
+                <option>دور 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">الاسم</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>الاسم 1</option>
+                <option>الاسم 2</option>
+                <option>الاسم 3</option>
+                <option>الاسم 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  معاينة الموقع </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">التاريخ المحدد</label>
+            <div class="col-sm-9">
+              <div class=" input-group date">
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">التعليقات</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reassign Task Modal -->
+<div id="reAssign" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">إعادة تعيين</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">دور</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>دور 1</option>
+                <option>دور 2</option>
+                <option>دور 3</option>
+                <option>دور 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">الاسم</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>الاسم 1</option>
+                <option>الاسم 2</option>
+                <option>الاسم 3</option>
+                <option>الاسم 4</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  Schedule Site Visit -->
+<div id="ScheduleSiteVisit" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">جدولة زيارة الموقع</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">دور</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>دور 1</option>
+                <option>دور 2</option>
+                <option>دور 3</option>
+                <option>دور 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">الاسم</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>الاسم 1</option>
+                <option>الاسم 2</option>
+                <option>الاسم 3</option>
+                <option>الاسم 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group margin0">
+            <div class="col-sm-offset-3 col-sm-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  معاينة الموقع </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group"> 
+            <!-- <label for="inputPassword3" class="col-sm-12 control-label">Planned Dates</label> -->
+            <div class="col-sm-12 available-dates">
+              <div class="month">
+                <ul>
+                  <li class="prev">&#10095;</li>
+                  <li class="next">&#10094;</li>
+                  <li class="text-center"> <span class="month-display">أغسطس - </span> <span class="year-display">2017</span> </li>
+                </ul>
+              </div>
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+              <ul class="days">
+                <li></li>
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li><span class="active">18</span></li>
+                <li>19</li>
+                <li>20</li>
+                <li><span class="active">21</span></li>
+                <li><span class="active">22</span></li>
+                <li><span class="active">23</span></li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li><span class="active">28</span></li>
+                <li><span class="active">29</span></li>
+                <li><span class="active">30</span></li>
+                <li>31</li>
+              </ul>
+              <div class="slots-legend">
+                <ul>
+                  <li><span class="available-slots"></span> Available Dates</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-arrow-right" aria-hidden="true"></i> ارسال</button>
+        <button type="button" class="btn btn-default btn-ts" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> تجاهل</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/main.js"></script> 
+<script src="js/scrollJS.js"></script> 
+<script src="js/scrollToTop.js"></script> 
+<script src="js/text-resize.js"></script> 
+<script src="js/demo.js"></script> 
+
+<!-- Include Data Table smartWizard source --> 
+<script src="js/jquery.dataTables.min.ar.js"></script> 
+<script src="js/dataTables.bootstrap.min.js"></script> 
+
+<!-- Include smartWizard source --> 
+<script src="js/jquery.smartWizard-ar.js"></script> 
+
+<!-- Include Smartwizardws plugin --> 
+<script src="js/smartwizardws-ar.js"></script> 
+<!-- Include Preloader plugin --> 
+<script src="js/Preloader.js"></script> 
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script> 
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    orientation: "auto bottom",
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true
+});
+});
+</script> 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</body>
+</body>
+</html>

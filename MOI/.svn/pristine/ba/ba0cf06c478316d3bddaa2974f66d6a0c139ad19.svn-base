@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=11,10" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="author" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>ترخيص لافته أو إعلان (جديد / تجديد)</title>
+<script src="js/jquery-3.3.1.js"></script>
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.ar.css" />
+<link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.ar.css">
+
+<!-- Header-->
+<link rel="stylesheet" href="css/headerar.css">
+<!-- Header-->
+
+<!-- Top Menu -->
+<link rel="stylesheet" href="css/top-menu_ar.css"/>
+<!-- Top Menu -->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content_ar.css"/>
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop_ar.css" />
+
+<!-- side-nav Services -->
+<link rel="stylesheet" href="css/side-nav.ar.css">
+<!-- End side-nav Services -->
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard_ar.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.ar.css">
+<link rel="stylesheet" type="text/css" href="css/Multiselect/component-chosen.ar.css">
+<!--End CSS English / Arabic files-->
+<!-- ......................................................................................................... -->
+<!--Start Common CSS files-->
+
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/blue.css" id="colorstyle">
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<link rel="stylesheet" href="css/mobile-app.css"/>
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Common CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<div dir="rtl">
+  <div class="dm-welcome-msg"> <span>Welcome To OMAN Municipality Smart Portal</span> </div>
+  <header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="indexar.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="indexar.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/omanar.png" alt="Ministry of Regional Municipality & Water Resources"></a>
+      <ul class="gettime">
+        <li id="date"></li>
+        <li class="menu-separator">|</li>
+        <li id="time"></li>
+      </ul>
+    </div>
+  </header>
+  <!--  Modified by Balarama krishna --> 
+  <!--  Modified Date 10/03/2017 --> 
+  <!--Top Menu-->
+  <div class="top-menu">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-9">
+        <nav class="navbar navbar-default navbar-dm-theme" role="navigation"> 
+          
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="emarat-logo-menu" href="#" rel="nofollow" target="_blank" title="eService Portal"> <img src="" alt=""  width="100" height="20"> </a> </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!--class="active"-->
+              <li><a href="indexar.html" accesskey="0"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;الرئيسية</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="aboutar.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;عن الوزارة</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href='#'><i class="fa fa-medium" aria-hidden="true"></i>&nbsp;مركز الوسائط</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href='#'><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;المناقصات </a></li>
+              <li class="menu-separator">|</li>
+              <li><a href='#'><i class="fa fa-download" aria-hidden="true"></i>&nbsp;التحميل</a></li>
+              <li class="menu-separator">|</li>
+              <li style="border-left: transparent;"><a href="#"><i class="fa fa-crosshairs" aria-hidden="true"></i>&nbsp;متابعة الطلب</a></li>
+              <!-- <li class="menu-separator">|</li>
+                <li><a href="#">The Disabled</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="font-change" id="lnkDecrease" title="Zoomout" href="javascript:;" >A-</a></li>
+              <li><a class="font-change" id="lnkNormal"  title="Normalview" href="javascript:window.location.reload();" >A</a></li>
+              <li style="margin-left: 10px;"><a class="font-change" id="lnkIncrease" title="Zoomin" href="javascript:;" >A+</a></li>
+              <!-- <li class="theme-dark-red"><a href="#" target="_blank" title="RSS External"> 
+                <span class="fa fa-rss-square header-rss" aria-hidden="true"></span> <span class="sr-only">RSS External</span></a></li> -->
+              <li id="demo-lunar"   class="btn demo-lunar ccolor" title="lunar"></li>
+              <li id="demo-blue"    class="btn demo-blue ccolor" title="Blue"></li>
+              <li id="demo-green"   class="btn demo-green ccolor" title="Green"></li>
+              <li id="demo-red"     class="btn demo-red ccolor" title="Red"></li>
+              <li id="demo-orange"  class="btn demo-orange ccolor" title="Orange"></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <div class="search-div transparent-white-background">
+          <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10">
+              <form method="GET" target="_self" action="" class="pure-form pure-form-stacked">
+                <input type="search" name="q" id="tags" placeholder="بحث" maxlength="256" value=""/>
+                <div class="theme-dark-red"><a title="بحث" href="javascript:;" onclick="document.forms[0].submit();"> 
+                  <span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">بحث</span></a></div>
+              </form>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+              <div class="langL pull-right bold" style="">
+                <?xml version="1.0" encoding="ISO-8859-1" ?>
+                <!-- <a href="BPHS09.html" hreflang="en">English</a> --> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Top Menu-->
+  
+  <div class="container main-content-top-margin"> 
+    <!--Main content-->
+    <div class="row transparent-white-background">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="panel panel-default panel-dm-theme">
+          <div class="panel-head-services header-with-image" style="background: rgb(61, 199, 83);">
+            <div class="panel-title"> <img src=" images/Services/HSicon1ar.svg" alt="ترخيص لافته أو إعلان (جديد / تجديد)">ترخيص لافته أو إعلان (جديد / تجديد)
+              <ul class="pull-right" style="list-style: none;display: inline-flex;">
+                <li><a href="#" class="helprint">مساعدة <i class="fa fa-question" aria-hidden="true"></i>&nbsp;</a> </li>
+                <li><a class="helprint" id="btn1"> طباعة <i class="fa fa-print" aria-hidden="true"></i>&nbsp;</a> </li>
+                <li><a href="HServicesar.html" class="helprint">رجوع <i class="fa fa-chevron-left" aria-hidden="true"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Main content--> 
+    
+    <!--Section start from here--> 
+    <!--Inner Pages Start -->
+    <form accept-charset="utf-8" action="#" data-toggle="validator" id="myForm" method="post" name="myForm" role="form">
+      <div class="inner-pages transparent-white-background">
+        <div class="row"> 
+          <!-- SmartWizard html -->
+          <div id="smartwizard">
+            <ul id="credit" name="credit">
+              <li data-interest = "1"><a href="#ApplicantDetails"><i class="fa fa-user fa-fw"></i>بيانات مقدم الطلب</a></li>
+              <li data-interest = "2"><a href="#BeneficiaryDetails"><i class="fa fa-users fa-fw"></i>بيانات المستفيد</a></li>
+              <li data-interest = "3"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>المرفقات</a></li>
+              <li data-interest = "4"><a href="#Payment"><i class="fa fa-credit-card fa-fw"></i>الدفع والمخرجات</a></li>
+            </ul>
+            <div>
+              <div id="ApplicantDetails" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="appDetails_Err" class="Error">الرجاء إدخال جميع الحقول في بيانات الطلب </div>
+                    </div>
+                    <fieldset>
+                      <legend>بيانات مقدم الطلب</legend>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="aid">الرقم المدني لمقدم الطلب <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="aid" placeholder="الرقم المدني لمقدم الطلب">
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                        <label for="applcntEpiryDate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
+                        <div class="date">
+                          <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy"/>
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="aname">اسم مقدم الطلب <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="aname" placeholder="اسم مقدم الطلب">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="address_app">العنوان <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="address_app" placeholder="العنوان" required>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Phnumber_app">رقم الهاتف <span style="color:red">*</span></label>
+                        <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="رقم الهاتف"  maxlength="8">
+                        <div  id="Ph_Error" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="eMail">البريد الالكتروني</label>
+                        <input type="text" class="form-control" id="eMail" placeholder="البريد الالكتروني">
+                        <div id="email_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row --> 
+                </div>
+                <!-- .form-group -->
+                
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="LeaseRenew_Err" class="Error">Please fill all required fields of Request Type </div>
+                    </div>
+                    <fieldset>
+                      <legend>نوع الطلب</legend>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="optradio_advt">نوع المستفيد <span style="color:red">*</span></label>
+                        <div class="form-control" id="orgtypeID">
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio_advt" value="New" checked>
+                            جديد</label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio_advt" value="Renew">
+                            تجديد </label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="LNo_Id">
+                        <label for="LNo_LAdvt">رقم ترخيص الإعلان <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="LNo_LAdvt" placeholder="رقم ترخيص الإعلان">
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row --> 
+                </div>
+                <!-- .form-group -->
+                
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="serDetails_Err" class="Error">الرجاء ادخال جميع الحقول في بيانات الطلب </div>
+                    </div>
+                    <fieldset>
+                      <legend>بيانات الخدمة</legend>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="astatus">حالة الطلب</label>
+                        <input type="text" class="form-control" id="astatus" placeholder="حالة الطلب" value="In Progress" readonly>
+                      </div>
+                      <!-- <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                        <label for="optradio">نوع المستفيد <span style="color:red">*</span></label>
+                        <div class="form-control" id="orgtypeID">
+                          <label class="radio-inline"> <input type="radio" name="optradio" value="Individual" checked> فرد </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio" value="Organization"> مؤسسة </label>
+                        </div>
+                      </div> -->
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="srname">اسم الخدمة المطلوبة <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="srname" placeholder="اسم الخدمة المطلوبة" value="ترخيص لافته أو إعلان (جديد / تجديد)" readonly>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-2 col-lg-3 hidden">
+                        <label for="srno">رقم طلب الخدمة <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="srno" placeholder="رقم طلب الخدمة">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="srdate">تاريخ تقديم الطلب </label>
+                        <div class="date">
+                          <input class="form-control" id="srdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="sdate">تاريخ تسليم الطلب</label>
+                          <div class="date">
+                            <input class="form-control" id="sdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="region_ser">المحافظة<span style="color:red">*</span></label>
+                          <select name="region_ser" id="region_ser" class="form-control">
+                            <option value="0">الرجاء الاختيار</option>
+                            <option value="1">محافظة الشرقية</option>
+                            <option value="2">محافظة الظاهرة</option>
+                            <option value="3">محافظة مسندم</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Willayat_ser">الولاية <span style="color:red">*</span></label>
+                          <select name="Willayat_ser" id="Willayat_ser" class="form-control">
+                            <option value="0">الرجاء الاختيار..</option>
+                            <option value="1">صحار </option>
+                            <option value="2">نزوى</option>
+                            <option value="3">ابرأ</option>
+                            <option value="3">صحم</option>
+                            <option value="3">نخل</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Municiplity_ser">البلدية <span style="color:red">*</span></label>
+                          <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
+                            <option value="0">الرجاء الاختيار</option>
+                            <option value="1">بلدية صحار</option>
+                            <option value="2">بلدية صحم</option>
+                            <option value="3">بلدية ابرأ</option>
+                            <option value="4">بلدية دقم</option>
+                            <option value="5">بلدية نزوى</option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row --> 
+                </div>
+                <!-- .form-group --> 
+              </div>
+              <!-- ApplicantDetails -->
+              
+              <div id="BeneficiaryDetails" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="Beneficiary_Err" class="Error">Please fill all required fields of Beneficiary Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>بيانات المستفيد</legend>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Beneficiary_select">المستفيد<span style="color:red">*</span></label>
+                        <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                          <option value="0">الرجاء الأختيار...</option>
+                          <option value="Individual">فرد</option>
+                          <option value="Organization" selected="">مؤسسة</option>
+                          <option value="Attorney">مخول</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
+                        <label for="Authorization_No">رقم التوكيل <span style="color:red">*</span></label>
+                        <input type="text" class="form-control numeric" id="Authorization_No" placeholder="رقم التوكيل" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
+                        <label for="Investor_No">رقم عقد الاستثمار <span style="color:red">*</span></label>
+                        <input type="text" class="form-control numeric" id="Investor_No" placeholder="رقم عقد الاستثمار" />
+                      </div>
+                      <div id="benradio1">
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3" id="benradio">
+                          <label for="optradio" class="required">نوع المستفيد</label>
+                          <div class="form-control" id="orgtypeID">
+                            <label class="radio-inline"> <input type="radio" name="optradio" value="Individual" checked> فرد </label>
+                            <label class="radio-inline"> <input type="radio" name="optradio" value="Organization"> مؤسسة </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3" id="sameowner">
+                        <label for="optradio3" class="required">نفس المالك</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio3" value="117"> نعم</label>
+                          <label class="radio-inline"> <input type="radio" name="optradio3" value="118"> لا</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <label for="optradio1" class="required">نفس مقدم الطلب</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="117"> نعم </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="118" checked> لا</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="padtopbot">
+                          <div id="BenfDetails_Err" class="Error">الرجاء ادخال جميع الحقول في بيانات المستفيد </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
+                          <label for="optradio2">نوع المستفيد </label>
+                          <input type="text" class="form-control" id="optradio2" placeholder="نوع المستفيد" readonly>
+                        </div>
+                        <div id="benType" class="">
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="BeneficiaryID">الرقم المدني للمستفيد <span style="color:red">*</span></label>
+                            <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="الرقم المدني للمستفيد">
+                          </div>
+                          <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                            <label for="Bendate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
+                            <div class="date">
+                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy"/>
+                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bname">أسم المستفيد </label>
+                            <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
+                          </div>
+                          <div id="benId">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Baddress">عنوان المستفيد <span style="color:red">*</span></label>
+                              <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bph">رقم الهاتف <span style="color:red">*</span></label>
+                            <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف" maxlength="8">
+                            <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bemail">البريد الالكتروني</label>
+                            <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
+                            <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                            <label for="waqfName">اسم الوقف</label>
+                            <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
+                          </div>
+                        </div>
+                        <!-- End Beneficiary Details -->
+                        
+                        <div id="OrganizationDetails" class="">
+                          <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="crid" class="required">رقم السجل التجاري </label>
+                              <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="cname">الإسم التجاري</label>
+                              <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Commph">رقم الهاتف </label>
+                              <input type="text" class="form-control numeric" id="Commph" placeholder="رقم الهاتف"  maxlength="8" readonly>
+                            </div>
+                            <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                              <label for="E-mail">البريد الالكتروني</label>
+                              <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
+                              <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Authorized_Pro" class="required">الموظف المخول</label>
+                              <select name="Authorized_Pro" id="Authorized_Pro" class="form-control">
+                                <option value="1000">الرجاء الأختيار</option>
+                              </select>
+                            </div>
+                          </div> <!-- .row --> 
+                        </div> <!-- OrganizationDetails -->
+                        
+                        <div class="form-group pull-right">
+                          <button type="button" class="btn btn-hs" onclick="Beneficiary1()" id="form1Submit"><i class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="table-responsive">
+                              <table id="Beneficiary1" class="table table-striped table-bordered" style="width: 100%;">
+                                <thead class="hs-thead">
+                                </thead>
+                                <tbody>
+                                </tbody>
+                              </table>
+                            </div> <!-- End table-responsive --> 
+                          </div>
+                        </div> <!-- End row --> 
+                      </div> <!-- .row -->
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group -->
+                
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="MunLicDetails_Err" class="Error">Please fill all required fields of Municipal License Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>بيانات الترخيص البلدي</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Muni_crid" class="required">رقم السجل التجاري </label>
+                          <input type="text" class="form-control" id="Muni_crid" placeholder="رقم السجل التجاري ">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="boardLicenseNo" class="required">رقم ترخيص اللوحة</label>
+                          <!-- <input type="text" class="form-control" id="boardLicenseNo" placeholder="رقم ترخيص اللوحة"> -->
+                          <select name="boardLicenseNo" id="boardLicenseNo" class="form-control">
+                            <option value="1000">الرجاء الاختيار</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="IssueDate_req" class="required">تاريخ الإصدار</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="IssueDate_req" placeholder="تاريخ الإصدار">
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="endDate_req" class="required">تاريخ الانتهاء</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="endDate_req" placeholder="تاريخ الانتهاء">
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div> <!-- /.row -->
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="ContractNumber_Willayat">الولاية </label>
+                          <input type="text" class="form-control" id="ContractNumber_Willayat" placeholder="الولاية" readonly />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="ContractNumber_Village">القرية </label>
+                          <input type="text" class="form-control" id="ContractNumber_Village" placeholder="القرية" readonly />
+                        </div>
+                      </div> <!-- /.row -->
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table id="Main_Muni" class="table table-striped table-bordered">
+                              <thead class="hs-thead">
+                                <tr>
+                                  <th>رقم الترخيص البلدي</th>
+                                  <th>تاريخ الإصدار</th>
+                                  <th>تاريخ الانتهاء</th>
+                                  <th>النشاط</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div> <!-- row --> 
+                      </div> <!-- .form-group -->
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group -->  
+
+                <!-- <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="reqTypeDetails_Err" class="Error">Please fill all required fields of Request Type </div>
+                    </div>
+                    <fieldset>
+                      <legend>تفاصيل الاعلان</legend>
+                      <div class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="AdvtType_LAdvt" class="required">نوع الإعلان</label>
+                        <select name="AdvtType_LAdvt" id="AdvtType_LAdvt" class="form-control">
+                          <option value="1000">الرجاء الاختيار</option>
+                          <option value="330">وضع لافتة او اعلان المنتج فوق اسطح المباني</option>
+                          <option value="331">الاعلان بواسطة المطبوعات والملصقات</option>
+                          <option value="332">الاعلان على الاكياس والعبوات</option>
+                          <option value="333">الاعلان بواسطة عرض السيارات امام المحلات</option>
+                          <option value="334">وضع لافتة دعائية او الاعلان لمنتج على الحائط</option>
+                          <option value="335">اللوحات التجارية لمحطات تعبئة الوقود</option>
+                          <option value="336">وضع لافتة دعائية او الاعلان لمنتج على الشارع</option>
+                          <option value="337">وضع لافتة دعائية ارشادية على الشارع</option>
+                          <option value="338">وضع لافتة دعائية على شكل مظلة امام المحلات</option>
+                          <option value="339">اللافتات القماشية</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="carshow">
+                        <label for="No_car_LAdvt">عدد السيارات</label>
+                        <input type="text" class="form-control numeric" id="No_car_LAdvt" placeholder="عدد السيارات">
+                      </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="startDate_Adv" class="required">تاريخ الابتداء</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="startDate_Adv" placeholder="تاريخ الابتداء">
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="ExpiryDate_Adv" class="required">تاريخ الانتهاء</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="ExpiryDate_Adv" placeholder="تاريخ الانتهاء">
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                        </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="DisplayType_LAdvt" class="required">نوع العرض</label>
+                        <input type="text" class="form-control" id="DisplayType_LAdvt" placeholder="Display Type">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Village_LAdvt" class="required">القرية</label>
+                        <input type="text" id="Village_LAdvt" class="form-control" placeholder="القرية" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Street_LAdvt">الشارع</label>
+                        <input type="text" class="form-control" id="Street_LAdvt" placeholder="الشارع">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Description_LAdvt">الوصف</label>
+                        <input type="text" class="form-control" id="Description_LAdvt" placeholder="الوصف">
+                      </div>
+                      <div id="product">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                          <label for="Prod_type" class="required">نوع المنتج</label>
+                          <div class="row">
+                            <div class="table-responsive">
+                              <table class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="col-md-4">محلي</th>
+                                    <td class="col-md-4"><input type="text" class="form-control numeric inputwidth" id="Nati_Quan" placeholder="العدد"></td>
+                                    <td id="Nati_price" align="right">0.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th class="col-md-4">اجنبي</th>
+                                    <td><input type="text" class="form-control numeric inputwidth" id="Inter_Quan" placeholder="العدد"></td>
+                                    <td id="Inter_price" align="right">0.0</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Price_advt" class="required">المبلغ(ريال عماني)</label>
+                        <input type="number" class="form-control numeric" id="Price_advt" placeholder="المبلغ(ريال عماني)">
+                      </div>
+                      <div class="pull-right" style="margin-top: 25px;">
+                        <button class="btn btn-hs btn-circle" onclick="AdvLic()" id="AdvLicid"><i class="fa fa-plus"></i></button>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                        <div class="row margin-10">
+                          <div class="table-responsive">
+                            <table id="Adv_Lic" class="table table-striped table-bordered">
+                              <thead class="hs-thead">
+                              </thead>
+                              <tbody>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div> row margin-10 
+                      </div> .form-group
+                    </fieldset>
+                  </div> .row 
+                </div> .form-group -->
+
+                <div class="form-group">
+                  <fieldset>
+                    <legend>تفاصيل الاعلان</legend>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Advt_cat" class="required">فئة الإعلان </label>
+                        <select class="form-control" name="Advt_cat" id="Advt_cat">
+                          <option value="1000">الرجاء الاختيار</option>
+                          <option value="1">المنشورات والاعلان والترويج المؤقت</option>
+                          <option value="2">عرض السيارات والاعلان في مواقف السيارات</option>
+                          <option value="3">الإعلان في مواقع البناء</option>
+                          <option value="4">لافتة إلكترونية</option>
+                          <option value="5">الإعلان بإستخدام منظر طبيعي</option>
+                          <option value="6">أخرى</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Advt_type" class="required">نوع الإعلان</label>
+                        <select name="Advt_type" id="Advt_type" class="form-control form-control-chosen">
+                          <option value="1000">الرجاء الاختيار</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Product_id">
+                        <label for="Product_type"> نوع المنتج</label>
+                        <select class="form-control" id="Product_type">
+                          <option value="1000">الرجاء الاختيار</option>
+                          <option value="7273">National</option>
+                          <option value="7274">International</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="meter_id">
+                        <label for="No_meters">عدد الأمتار</label>
+                        <input type="text" name="" id="No_meters" class="form-control" placeholder="عدد الأمتار">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="month_id">
+                        <label for="No_month">عدد الأشهر</label>
+                        <input type="text" name="" id="No_month" class="form-control" placeholder="عدد الأشهر">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Poles_id">
+                        <label for="No_poles">عدد الأعمدة</label>
+                        <input type="text" name="" id="No_poles" class="form-control" placeholder="عدد الأعمدة">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Bundle_id">
+                        <label for="No_Bundle">عدد الحزم</label>
+                        <input type="text" name="" id="No_Bundle" class="form-control" placeholder="عدد الحزم">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Design_id">
+                        <label for="No_Design">عدد التصاميم</label>
+                        <input type="text" name="" id="No_Design" class="form-control" placeholder="عدد التصاميم">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Sides_id">
+                        <label for="No_Sides">عدد الجوانب</label>
+                        <input type="text" name="" id="No_Sides" class="form-control" placeholder="عدد الجوانب">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Extra_id">
+                        <label for="Extra_Meters">أمتار إضافية</label>
+                        <input type="text" name="" id="Extra_Meters" class="form-control" placeholder="أمتار إضافية">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Ballons_id">
+                        <label for="No_Ballons">عدد البالونات</label>
+                        <input type="text" name="" id="No_Ballons" class="form-control" placeholder="عدد البالونات">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Flags_id">
+                        <label for="No_Flags">عدد الأعلام</label>
+                        <input type="text" name="" id="No_Flags" class="form-control" placeholder="عدد الأعلام">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Parking_id">
+                        <label for="No_Parking">عدد المواقف</label>
+                        <input type="text" name="" id="No_Parking" class="form-control" placeholder="عدد المواقف">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="car_id">
+                        <label for="No_car">عدد السيارات</label>
+                        <input type="text" name="" id="No_car" class="form-control" placeholder="عدد السيارات">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Umbrella_id">
+                        <label for="No_Umbrella">عدد المظلات</label>
+                        <input type="text" name="" id="No_Umbrella" class="form-control" placeholder="عدد المظلات">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Chairs_id">
+                        <label for="No_Chairs">عدد الكراسي</label>
+                        <input type="text" name="" id="No_Chairs" class="form-control" placeholder="عدد الكراسي">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Equi_id">
+                        <label for="No_Equi">عدد المعدات</label>
+                        <input type="text" name="" id="No_Equi" class="form-control" placeholder="عدد المعدات">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Price_advt" class="required">المبلغ(ريال عماني)</label>
+                        <input type="number" class="form-control numeric" id="Price_advt" placeholder="المبلغ(ريال عماني)" readonly="true">
+                      </div>
+                      <div class="pull-right top-25">
+                        <button type="button" class="btn btn-hs" onclick="AdvLic()" id="AdvLicid"><i class="fa fa-plus"></i>إضافة</button>
+                      </div>
+                    </div> <!-- /.row -->
+                    <div class="row">
+                      <div class="table-responsive">
+                        <table id="Adv_table" class="table table-striped table-bordered">
+                          <thead class="hs-thead">
+                          </thead>
+                          <tbody>
+                          </tbody>
+                          <tfoot class="hs-thead">
+                            <tr>
+                              <th colspan="17" class="text-right">المبلغ الأجمالي&nbsp;:- &nbsp;</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div> <!-- /.row -->
+                  </fieldset>
+                </div> <!-- /.form-group -->
+              </div> <!-- BeneficiaryDetails -->
+              
+              <div id="Attachment" class="">
+                <div class="form-group">
+                  <div class="row"> 
+                    <!-- Note message -->
+                    <div class="alert alert-success"><strong>ملحوظة :- </strong>&nbsp;يرجى إرفاق الملفات فقط بصيغة (.pdf و .jpg و .png) فقط. كما يرجى التأكد أن حجم الملف لا يتجاوز 1MB.</div>
+                    <!-- Note message -->
+                    <fieldset>
+                      <legend>المرفقات</legend>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>المرفقات المطلوبة</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>سند الملكية <i class="fa fa-question-circle" aria-hidden="true" title="نسخة من سند الملكية " data-toggle="modal" data-target="#Deed"></i></td>
+                              <td><input type="file" name=""></td>
+                              <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                            </tr>
+                            <!-- Ownership document ( Mulkiya ) & Survey Sketch ( Krooki ) Modal -->
+                          <div class="modal fade" id="Deed" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header hs">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">سند الملكية</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>نسخة من سند الملكية </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Ownership document ( Mulkiya ) & Survey Sketch ( Krooki ) Modal -->
+                          
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>الرسم المساحي <i class="fa fa-question-circle" aria-hidden="true" title="نسخة من الرسم المساحي" data-toggle="modal" data-target="#Sketch"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Ownership document ( Mulkiya ) & Survey Sketch ( Krooki ) Modal -->
+                          <div class="modal fade" id="Sketch" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header hs">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">الرسم المساحي</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>نسخة من الرسم المساحي</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Ownership document ( Mulkiya ) & Survey Sketch ( Krooki ) Modal -->
+                          
+                            </tbody>
+                          
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row --> 
+                </div>
+                <!-- .form-group --> 
+              </div>
+              <!-- Attachment -->
+              
+              <div id="Payment" class="">
+                <div class="form-group">
+                  <div class="row margin-10">
+                    <fieldset>
+                      <legend>الدفع</legend>
+                      <div class="table-responsive">
+                        <table id="pay_table" class="table table-striped table-bordered">
+                          <thead style="background: rgb(61, 199, 83);color:#fff;">
+                            <tr role="row">
+                              <th aria-label="S.No">الرقم المتسلسل</th>
+                              <th aria-label="Fee Type">نوع الرسوم</th>
+                              <th aria-label="Payment Value">القيمة</th>
+                              <th aria-label="Payment Deadline">‎‎آخر تاريخ للدفع</th>
+                              <th aria-label="Payment Type">نوع الدفع</th>
+                              <th aria-label="Payment Reference">الرقم المرجعي</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div> <!-- End .table-responsive -->
+                    </fieldset>
+                  </div> <!-- End .row .margin-10--> 
+                </div> <!-- End .form-group --> 
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>المخرجات</legend>
+                      <div class="table-responsive">
+                        <table id="example2"  class="table table-bordered">
+                          <thead style="background: rgb(61, 199, 83);color:#fff;">
+                            <tr>
+                              <th>رقم العقد</th>
+                              <th>تاريخ ابتداء العقد</th>
+                              <th>تاريخ إنتهاء العقد</th>
+                              <th>تاريخ إصدار العقد</th>
+                              <th width="3%">تحميل</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td class="text-center"><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-download"></span></button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div> <!-- End .row --> 
+                </div> <!-- End .form-group --> 
+              </div> <!-- End #Payment -->
+              
+            </div> <!-- End Empty div --> 
+          </div> <!-- End SmartWizard html --> 
+        </div> <!-- End row --> 
+      </div> <!--End Inner Pages -->
+    </form>
+  </div> <!-- End container --> 
+  <br />
+  
+  <!-- FOOTER START -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline">
+            <li><a href="indexar.html">الرئيسية</a></li>
+            <li>|</li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li>|</li>
+            <li><a href="usefullinksar.html" title="روابط هامة">روابط هامة</a></li>
+            <li>|</li>
+            <li><a href="#">خريطة الموقع</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة الموقع</a></li>
+            <li>|</li>
+            <li><a href="#">العلامات التجارية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة مكافحة الفساد</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة المشاركات الإلكترونية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة الوصول </a></li>
+            <li>|</li>
+            <li><a href="#">سياسة التحول للحكومة الإلكترونية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة البيانات المفتوحة</a></li>
+            <li>|</li>
+            <li><a href="#"> عمان الرقمية</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled list-inline social-icons">
+            <li><a href="#"> <img src="images/store/google-play-badge.png" alt="Get it on Google Play" style="width: 120px;"></a></li>
+            <li><a href="#"> <img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="width: 120px;"></a> </li>
+          </ul>
+        </div>
+        <div class="col-md-4"  style="text-align:center;"> 
+          <!-- <h4>Follow with us</h4> -->
+          <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+            <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="pull-right"> <a class="pull-right ml101" href="http://www.w3.org/" target="_blank"> <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline" style="text-align: center;">
+            <li>حقوق الطبع محفوظة &copy; لوزارة البلديات الإقليمية وموارد المياه</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End container --> 
+  </section>
+  <!-- FOOTER END --> 
+  
+  <!--Scrolling top--> 
+  <a class="scrollup" href="#" title="للأعلى" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br>
+  للأعلى</a> 
+  <!-- end scrolling top--> 
+  
+  <!-- Side Nav top-->
+  <div class="login-anmi wow fadeInDown">
+    <ul>
+      <li><a class="lnk-social social-facebook social-rounded" href="loginar.html"><img src="images/sidenav/loginside.png"> تسجيل الدخول</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/track.png">متابعة الطلب</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/about.png">عن الوزارة</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/Tender.png">المناقصات</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/newside.png">النشرة الإخبارية</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/library.png">المكتبة الإلكترونية</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/anreport.png">التقارير السنوية</a></li>
+    </ul>
+  </div>
+  <!-- end Side Nav top--> 
+  <!--End Footer --> 
+</div>
+<!-- End dir="rtl" --> 
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Time/timejsar.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Datepicker/bootstrap-datepicker.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/demo.js"></script> 
+<!-- Include Data Table smartWizard source --> 
+<script src="js/jquery.dataTables.min.ar.js"></script> 
+<script src="js/dataTables.bootstrap.js"></script> 
+<script src="js/jquery.smartWizard.js"></script> 
+<!-- Select2 --> 
+<script src="js/Multiselect/Multiselect.js"></script> 
+<!-- Include Smartwizard-HS plugin --> 
+<script src="js/smartwizardHSar.js"></script> 
+<script src="js/validations.js"></script> 
+<script src="js/HS/Beneficiaryar.js"></script> 
+<!-- <script src="js/HS/AdvLic.js"></script> -->
+<script type="text/javascript" src="js/HS/BPHS09ar.js"></script>
+<script type="text/javascript" src="js/Multiselect/chosen.jquery.js"></script>
+<script type="text/javascript">
+$('.form-control-chosen').chosen({
+  allow_single_deselect: true,
+  width: '100%'
+});
+</script>
+</body>
+</html>

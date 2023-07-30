@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.544" height="55.544" viewBox="0 0 55.544 55.544">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f45d7e"/>
+      <stop offset="1" stop-color="#ec90e9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.163" x2="1" y2="0.837" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fd9b8d"/>
+      <stop offset="1" stop-color="#fbbe7e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a076e8"/>
+      <stop offset="0.048" stop-color="#a077e8"/>
+      <stop offset="1" stop-color="#b1c4f8"/>
+    </linearGradient>
+  </defs>
+  <g id="Staff" transform="translate(-491 -1552.956)">
+    <circle id="circle" cx="27.772" cy="27.772" r="27.772" transform="translate(491 1552.956)" opacity="0.5" fill="url(#linear-gradient)"/>
+    <circle id="circle-2" data-name="circle" cx="16.663" cy="16.663" r="16.663" transform="translate(502 1564.171)" fill="url(#linear-gradient-2)"/>
+    <g id="dots" transform="translate(494 1566.877)">
+      <circle id="circle_Kopie" data-name="circle Kopie" cx="1.587" cy="1.587" r="1.587" transform="translate(46.419 1.19)" fill="url(#linear-gradient-3)"/>
+      <circle id="circle_Kopie_2" data-name="circle Kopie 2" cx="2.182" cy="2.182" r="2.182" fill="url(#linear-gradient)"/>
+      <circle id="circle_Kopie_3" data-name="circle Kopie 3" cx="0.992" cy="0.992" r="0.992" transform="translate(36.897 29.756)" fill="url(#linear-gradient-5)"/>
+    </g>
+    <path id="medical-history-icon" d="M1.184,2.374H4.027V3.425H2.016a1.013,1.013,0,0,0-1,1V20.11a1.01,1.01,0,0,0,1,1H15.8a1,1,0,0,0,1-1V4.426a1.01,1.01,0,0,0-1-1H13.788V2.374h2.841a1.19,1.19,0,0,1,1.186,1.184V20.968a1.193,1.193,0,0,1-1.186,1.184H1.184A1.19,1.19,0,0,1,0,20.968V3.559A1.188,1.188,0,0,1,1.184,2.374Zm7.932,3.5h6.25v.593H9.108V5.879Zm0,3.231h2.145V9.7H9.108V9.109Zm0-1.682h3.018v.595H9.108V7.427Zm4.53-.166h.517a.18.18,0,0,1,.18.18v.6h.6a.18.18,0,0,1,.18.18v.519a.18.18,0,0,1-.18.18h-.613v.586a.18.18,0,0,1-.18.18h-.514a.18.18,0,0,1-.18-.18v-.6h-.6a.18.18,0,0,1-.18-.18V8.215a.18.18,0,0,1,.18-.18h.6v-.6a.18.18,0,0,1,.18-.18ZM4.273,8.4c.025-.056.047-.119.061-.16a2.064,2.064,0,0,1-.162-.233L4,7.752a.48.48,0,0,1-.092-.238.169.169,0,0,1,.016-.087.15.15,0,0,1,.056-.065.169.169,0,0,1,.04-.022,4.073,4.073,0,0,1,0-.471.692.692,0,0,1,.02-.106A.635.635,0,0,1,4.319,6.4a.855.855,0,0,1,.234-.1c.052-.014-.045-.18.009-.18a1.342,1.342,0,0,1,.867.409.64.64,0,0,1,.162.4l-.011.429h0a.114.114,0,0,1,.087.088.361.361,0,0,1-.045.225h0l-.18.31a1.639,1.639,0,0,1-.247.308.438.438,0,0,0,.025.036c.317.467.746.227,1.246.591l-.016.02v.8H3.065v-.8h0a.045.045,0,0,1,.022-.023c.323-.18,1.067-.251,1.181-.507ZM2.65,5.239H6.87a.361.361,0,0,1,.361.361v4.651a.366.366,0,0,1-.359.359H2.654a.361.361,0,0,1-.361-.361V5.6a.361.361,0,0,1,.361-.361Zm4.217.306H2.654a.052.052,0,0,0-.036.016A.045.045,0,0,0,2.6,5.6v4.653a.05.05,0,0,0,.016.034.049.049,0,0,0,.036.016H6.87a.056.056,0,0,0,.05-.05V5.6A.049.049,0,0,0,6.9,5.562a.05.05,0,0,0-.034-.016ZM2.484,18.331H12.6v.6H2.484v-.59Zm0-2.262H15.324v.59H2.484Zm0-2.679H5.549L6.1,12.268l1.091,1.57,1.1-2.149,1.138,2.23.485-.453.2-.078h1.556l.975-1.006.9,1.006h1.778v.59H13.285l-.654-.734-.71.734H10.229l-.977.9-.959-1.9-1.033,2L6.178,13.42l-.276.559H2.477v-.59ZM5.67,1.655H7.013A1.835,1.835,0,0,1,8.794,0a1.832,1.832,0,0,1,1.778,1.635l1.572.02a.2.2,0,0,1,.2.2V3.748a.2.2,0,0,1-.2.2H5.672a.2.2,0,0,1-.2-.2V1.853a.195.195,0,0,1,.2-.2Zm2.387.813a1.339,1.339,0,0,0,.48.416.862.862,0,0,0,.478,0,1.293,1.293,0,0,0,.559-.595.981.981,0,0,0,.02-.2.8.8,0,1,0-1.6,0,.93.93,0,0,0,.074.361Z" transform="translate(510 1569.956)" fill="#fff" stroke="#fff" stroke-width="0.1" fill-rule="evenodd"/>
+  </g>
+</svg>

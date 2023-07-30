@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <META name="robots" content="follow,index" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+  <meta name="description" content="Official Portal for Oman Municipality" />
+  <meta name="author" content="oman Government, oman Municipality" />
+  <meta name="generator" content="ITON oman" />
+  <title>Cancel the Lease Contract</title>
+  <script src="js/jquery-3.6.0.js"></script>
+  <link rel=icon href="img/Khanjar.png" type=image/png />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/fontawesome.5.15.4.css" />
+  <link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
+  <link rel="stylesheet" href="css/moi.css" />
+  <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.css">
+  <link rel="stylesheet" href="css/smart_wizard.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+  <div class="preloader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- header -->
+  <header class="navbar-sticky sticky-bg dark bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <nav class="navbar p-0" aria-label="">
+            <div class="container p-0">
+              <a class="navbar-brand m-0" href="index.html">
+                <img alt="MOI Logo" id="navbar-logo" src="img/khanjar-white.svg" />
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-9 d-flex justify-content-end">
+          <ul class="d-flex align-items-center list-unstyled mb-0">
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkDecrease" title="Zoomout"
+                href="#!">A-</a></li>
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkNormal" title="Normalview"
+                href="javascript:window.location.reload();">A</a></li>
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin"
+                href="#!">A+</a></li>
+            <li class="mr-3 text-white font-weight-bolder" id="date"></li>
+            <li class="mr-3 text-white font-weight-bolder" id="time"></li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bolder" href="login.html"><i
+                  class="fal fa-user-lock fa-fw fa-lg"></i>
+                Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-sm btn-laguage btn-icon ml-3" href="BPHS02ar.html">
+                <span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
+                <span class="btn-inner--text">
+                  <?xml version="1.0" encoding="ISO-8859-1" ?> &#1593;&#1585;&#1576;&#1610;
+                </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /. container -->
+  </header>
+
+  <div class="container mt-6">
+    <!--Main content-->
+    <div class="row transparent-white-background">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="panel panel-default panel-dm-theme">
+          <div class="panel-head-services d-flex align-items-center justify-content-between header-hs">
+            <div class="panel-title mt-0 d-flex align-items-center">
+              <img src="img/Services/hs.svg" class="mr-2" alt="Cancel the Lease Contract"> Cancel the Lease Contract
+            </div>
+            <ul class="mb-0 d-flex" style="list-style: none;">
+              <li><a href="#" class="helprint"><i class="fal fa-question-circle" aria-hidden="true"></i>Help &nbsp;</a>
+              </li>
+              <li><a class="helprint" id="btn1"><i class="fal fa-print" aria-hidden="true"></i> Print &nbsp;</a> </li>
+              <li><a href="HServices.html" class="helprint"><i class="fal fa-chevron-left" aria-hidden="true"></i> Back
+                  &nbsp;</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Main content-->
+
+    <!--Section start from here-->
+    <!--Inner Pages Start -->
+    <form accept-charset="utf-8" action="#" data-toggle="validator" id="BPHS02" method="post" name="BPHS02" role="form">
+      <div class="inner-pages transparent-white-background">
+        <div class="row">
+          <!-- SmartWizard html -->
+          <div id="smartwizard">
+            <ul id="credit" name="credit">
+              <li data-interest="1"><a href="#ApplicantDetails"><i class="fal fa-user fa-fw"></i>Applicant Details</a>
+              </li>
+              <li data-interest="2"><a href="#SecondpartyData"><i class="fal fa-user-secret fa-fw"></i>Party Data</a>
+              </li>
+              <li data-interest="3"><a href="#BuildingsDetails"><i class="fal fa-building fa-fw"></i>Property Data</a>
+              </li>
+              <li data-interest="4"><a href="#Attachment"><i class="fal fa-paperclip fa-fw"></i>Required Documents</a>
+              </li>
+              <li data-interest="5"><a href="#Payment"><i class="fal fa-credit-card fa-fw"></i>Payments &amp;
+                  Licenses</a></li>
+            </ul>
+            <div>
+              <div id="ApplicantDetails" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="appDetails_Err" class="Error">Please fill all required fields of Applicant Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Applicant Details</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="aid" class="control-label required">Applicant ID</label>
+                          <input type="text" class="form-control" id="aid" placeholder="Applicant ID" required
+                            validate-group="form-step-01" data-error="Applicant ID" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="applcntEpiryDate" class="required">ID Expiry Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy"
+                              required validate-group="form-step-01" />
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="aname" class="required">Applicant Name</label>
+                          <input type="text" class="form-control" id="aname" placeholder="Applicant Name" required
+                            validate-group="form-step-01" data-error="Applicant Name" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="address_app" class="required">Address</label>
+                          <input type="text" class="form-control" id="address_app" placeholder="Address" required
+                            validate-group="form-step-01" data-error="Address" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                      </div> <!-- End row -->
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Phnumber_app" class="required">Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="Mobile Number"
+                            onchange="return isNumberKey(event,this)" maxlength="8" required
+                            validate-group="form-step-01" />
+                          <div id="Ph_Error" class="text-danger">Please Enter a 8-Digits Mobile Number</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="eMail">Email</label>
+                          <input type="text" class="form-control" id="eMail" placeholder="Email"
+                            onchange="isValidEmail(this)">
+                          <div id="email_Error" class="text-danger">Please Enter Valid Email</div>
+                        </div>
+                      </div> <!-- End row -->
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="LeaseContract_Err" class="Error">Please fill all required fields of Lease Contract </div>
+                    </div>
+                    <fieldset>
+                      <legend>Request Type</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="LeaseCancel">Request Type</label>
+                          <input type="text" class="form-control" id="LeaseCancel" placeholder="Request Type"
+                            value="Cancel" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="LeaseCName">Lease Contract Number</label>
+                          <input type="text" class="form-control" id="LeaseCName" placeholder="Contract Number"
+                            value="123456">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3 hidden">
+                          <label for="CancelledDate">Cancellation Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="CancelledDate" placeholder="Cancel Date">
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="Beneficiary_Err" class="Error">Please fill all required fields of Beneficiary Details
+                      </div>
+                    </div>
+                    <fieldset>
+                      <legend>Beneficiary Details</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Beneficiary_select" class="required">Beneficiary</label>
+                          <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                            <option value="1000">Please select</option>
+                            <option value="Attorney" selected>Power of Atorney</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                          <label for="optradio1" class="required">Same as Applicant</label>
+                          <div class="form-control">
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="optradio1" value="117">
+                              <label class="form-check-label">Yes </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="optradio1" value="118" checked>
+                              <label class="form-check-label">No</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="GCC_div">
+                          <label for="gccRadio1" class="required">Is GCC Resident</label>
+                          <div class="form-control">
+                            <div class="form-check form-check-inline">
+                              <input type="radio" id="gccRadio1" name="gccRadio" value="True" />
+                              <label class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input type="radio" id="gccRadio2" name="gccRadio" checked="checked" value="False" />
+                              <label class="form-check-label">No</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
+                          <label for="optradio" class="required">Beneficiary Type</label>
+                          <div class="form-control" id="orgtypeID">
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="optradio" value="Individual" checked />
+                              <label class="form-check-label" for="optradio">Individual</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="optradio" value="Organization" />
+                              <label class="form-check-label" for="optradio">Organization</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div id="benType" class="row">
+                        <div class="padtopbot">
+                          <div id="BenfDetails_Err" class="Error">Please fill all required fields of Beneficiary Details
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
+                          <label for="optradio2">Beneficiary Type </label>
+                          <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type"
+                            readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="BeneficiaryID">Beneficiary ID <span style="color:red">*</span></label>
+                          <input type="text" class="form-control numeric" id="BeneficiaryID"
+                            placeholder="Beneficiary ID">
+                        </div>
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="Bendate" class="required">ID Expiry Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bname">Beneficiary Name </label>
+                          <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
+                          <label for="Baddress">Beneficiary Address <span style="color:red">*</span></label>
+                          <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bph">Beneficiary Mobile Number <span style="color:red">*</span></label>
+                          <input type="text" class="form-control numeric" id="Bph"
+                            placeholder="Beneficiary Mobile Number" maxlength="8">
+                          <div id="Ph_BenfError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bemail">Beneficiary Email Address</label>
+                          <input type="text" class="form-control" id="Bemail" placeholder="Beneficiary Email Address">
+                          <div id="Bemail_Error" style="color:red">Please Enter Valid Email</div>
+                        </div>
+                      </div>
+                      <!-- End Beneficiary Details -->
+
+                      <div id="OrganizationDetails" class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="crid">Commerical Registration ID <span style="color:red">*</span></label>
+                          <input type="text" class="form-control" id="crid" placeholder="Commerical Registration ID">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="cname">Commercial Name</label>
+                          <input type="text" class="form-control" id="cname" placeholder="Commercial Name" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Commph">Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="Commph" placeholder="Mobile Number"
+                            maxlength="8" readonly>
+                        </div>
+                        <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                          <label for="Email">Email</label>
+                          <input type="text" class="form-control" id="E-mail" placeholder="Email">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error"><b style="color:red">Please
+                            Enter Valid Email</b></div>
+                        <!-- .row -->
+                      </div> <!-- OrganizationDetails -->
+
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="table-responsive">
+                            <table id="Beneficiary1" class="table table-striped table-bordered" style="width: 100%;">
+                              <thead class="hs-thead">
+                              </thead>
+                              <tbody>
+                              </tbody>
+                            </table>
+                          </div> <!-- End table-responsive -->
+                        </div>
+                      </div> <!-- End row -->
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="serDetails_Err" class="Error">Please fill all required fields of Service Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Service Details</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="astatus">Application Status</label>
+                          <input type="text" class="form-control" id="astatus" placeholder="Application Status"
+                            value="In Progress" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="srname">Service Request Name </label>
+                          <input type="text" class="form-control" id="srname" placeholder="Service Request Name"
+                            value="Cancel the Lease Contract" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-2 col-lg-3 hidden">
+                          <label for="srno">Service Request No </label>
+                          <input type="text" class="form-control" id="srno" placeholder="Service Request No">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="srdate">Service Request Date </label>
+                          <div class="date">
+                            <input class="form-control" id="srdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="sdate">Submission Date </label>
+                          <div class="date">
+                            <input class="form-control" id="sdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="region_ser">Governorate </label>
+                          <input class="form-control" id="region_ser" placeholder="Governorate" type="text"
+                            value="Alshaqiya Governorate" readonly />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Willayat_ser">Willayat </label>
+                          <input class="form-control" id="Willayat_ser" placeholder="Willayat" type="text" value="Suhar"
+                            readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                          <label for="Municiplity_ser">Municipality </label>
+                          <input class="form-control" id="Municiplity_ser" placeholder="Municipality" type="text"
+                            value="Suhar Municipality" readonly />
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row -->
+                </div>
+                <!-- .form-group -->
+              </div>
+              <!-- ApplicantDetails -->
+
+              <div id="BeneficiaryDetails" class=""> </div>
+              <!-- BeneficiaryDetails -->
+
+              <!-- ......... Secondparty Data ......... -->
+
+              <div id="SecondpartyData">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="reqTypeDetails_Err" class="Error">Please fill all required fields of Request Type</div>
+                    </div>
+                    <fieldset>
+                      <legend>Contract Details</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Renttype_id">Type of Renting Contract </label>
+                          <input type="text" class="form-control" id="Renttype_id" placeholder="Type of Renting Contract"
+                            value="Residential" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="startDate_req">Start Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="startDate_req" placeholder="Start Date" disabled>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3 hidden">
+                          <label for="Issue_req">Issue Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="Issue_req" placeholder="Issue Date" disabled>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="endDate_req">Expiry Date </label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="endDate_req" placeholder="Expiry Date" disabled>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="payment_id">Rent Payment Interval</label>
+                          <input type="text" class="form-control" id="payment_id" placeholder="Rent Payment Interval"
+                            value="Monthly" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="paymentDay_req">Rent Payment Day </label>
+                          <input type="text" class="form-control" id="paymentDay_req" placeholder="Rent Payment Day"
+                            value="10" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Amount_req">Amount (OMR) </label>
+                          <input type="text" class="form-control numeric" id="Amount_req" placeholder="Amount (OMR)"
+                            value="300" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="AmountPaid_req" class="required">Amount Paid in Advance</label>
+                          <input type="number" class="form-control numeric" id="AmountPaid_req" value="0"
+                            placeholder="Amount Paid in Advance" required validate-group="form-step-11">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-12 col-lg-12">
+                          <label for="comment_req" class="required">Comments</label>
+                          <textarea rows="5" class="form-control border" id="comment_req" placeholder="Comments" required
+                            validate-group="form-step-11"></textarea>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="FirstPartyDetails_Err" class="Error">Please fill all required fields of First Party Data
+                      </div>
+                    </div>
+                    <fieldset>
+                      <legend>First Party Data (Lessor)</legend>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="table-responsive">
+                            <table id="firstParty_Table" class="table table-striped table-bordered"
+                              style="width: 100%;">
+                              <thead class="hs-thead">
+                                <tr>
+                                  <th>Civil ID</th>
+                                  <th>Name</th>
+                                  <th>Address</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- End table-responsive -->
+                        </div>
+                      </div>
+                      <!-- End row -->
+                    </fieldset>
+                  </div>
+                  <!-- .row -->
+                </div>
+                <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="secPartyDetails_Err" class="Error">Please fill all required fields of Party Data </div>
+                    </div>
+                    <fieldset>
+                      <legend>Second Party Data (Lessee)</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                          <label for="optradio4">Second Party Type</label>
+                          <input type="text" class="form-control" id="secondPartyID" placeholder="Second Party Type"
+                            value="Organization" readonly>
+                          <!-- <div class="form-control">
+                            <label class="radio-inline"> <input type="radio" name="optradio4" value="Individual"> Individual </label>
+                            <label class="radio-inline"> <input type="radio" name="optradio4" value="Organization" checked> Organization </label>
+                          </div> -->
+                        </div>
+                        <div class="form-group col-sm-6 col-md-2 col-lg-3">
+                          <label for="secondPartyID">Civil ID</label>
+                          <input type="text" class="form-control" id="secondPartyID" placeholder="Civil ID" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Name">Name</label>
+                          <input type="text" class="form-control" placeholder="Name" id="Name" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="secondPartyAddress">Address</label>
+                          <input type="text" class="form-control" id="secondPartyAddress" placeholder="Address" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="secondPartyMobileNumber">Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="secondPartyMobileNumber"
+                            placeholder="Mobile Number" value="98765432" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="secondPartyEmail">Email</label>
+                          <input type="text" class="form-control" id="secondPartyEmail" placeholder="Email"
+                            value="oman@mrmwr.gov.om" readonly>
+                        </div>
+                      </div>
+                      <div class="row" id="Individual_Sponsor1">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="NationalityID">Nationality </label>
+                          <input type="text" class="form-control" id="NationalityID" placeholder="Nationality"
+                            value="Oman" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Sponsor_Name">Sponsor Name</label>
+                          <input type="text" class="form-control" id="Sponsor_Name" placeholder="Sponsor Name" readonly>
+                        </div>
+                      </div>
+                      <!-- End .row -->
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="ActivityType_hidden">
+                        <label for="ActivityType_RT">Activity</label>
+                        <select name="ActivityType_RT" id="ActivityType_RT" class="form-control select2"
+                          multiple="multiple" data-placeholder="Activity">
+                          <option value="">Please select...</option>
+                          <option>Iron</option>
+                          <option>Clothes Washing</option>
+                          <option>Sales of Clothes</option>
+                          <option>Stitching Clothes</option>
+                        </select>
+                      </div>
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+              </div> <!-- End SecondpartyData -->
+
+              <div id="PropertyData"> </div>
+              <!-- End PropertyData -->
+
+              <!-- ......... Start BuildingsDetails ......... -->
+              <div id="BuildingsDetails" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="propertyDetails_Err" class="Error">Please fill all required fields of Plot Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Property Details</legend>
+                      <div class="form-group">
+                        <div class="row">
+                          <fieldset>
+                            <legend></legend>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Licno_Build">License Number <span style="color:red">*</span></label>
+                              <input type="text" class="form-control numeric" id="Licno_Build"
+                                placeholder="License Number" readonly>
+                            </div>
+                          </fieldset>
+                        </div> <!-- End row -->
+                      </div> <!-- End form-group -->
+                      <div class="form-group">
+                        <div class="row">
+                          <fieldset>
+                            <legend>Plot Data</legend>
+                            <div class="row">
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="LandSNumber_Build">Plot Serial Number</label>
+                                <input type="text" class="form-control numeric" id="LandSNumber_Build"
+                                  placeholder="Plot Serial Number" readonly>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Region_PD">Governorate</label>
+                                <input type="text" class="form-control" id="Region_PD" placeholder="Alshaqiya Governorate"
+                                  readonly>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Willayat_PD">Willayat</label>
+                                <input type="text" class="form-control" id="Willayat_PD" placeholder="Suhar" readonly>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Village_PD">Village</label>
+                                <input type="text" class="form-control" id="Village_PD" placeholder="Suhar" readonly>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="TitleDeed_PD">Ownership document ( Mulkiya ) Number</label>
+                                <input type="text" class="form-control" id="TitleDeed_PD"
+                                  placeholder="Ownership document ( Mulkiya ) Number" readonly>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Owner_name">Owner</label>
+                                <textarea class="form-control" id="Owner_name" placeholder="Owner" rows="2"
+                                  readonly></textarea>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div> <!-- End row -->
+                      </div> <!-- End form-group -->
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>GIS Coordinates Details</legend>
+                      <div class="row">
+                        <div class="pull-right">
+                          <button type="button" class="btn btn-hs" id="GISGoogleMap"><i class="fa fa-map fa-fw"></i>Show
+                            Map</button>
+                        </div>
+                      </div> <!-- end row -->
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="table-responsive">
+                              <table id="GIS_table" class="table table-striped table-bordered">
+                                <thead class="hs-thead">
+                                </thead>
+                                <tbody>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- end row -->
+                    </fieldset>
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row margin-10">
+                    <fieldset>
+                      <div class="table-responsive">
+                        <table id="Building_ID_table" class="table table-striped table-bordered">
+                          <thead class="hs-thead">
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div> <!-- row margin-10 -->
+                </div> <!-- .form-group -->
+              </div> <!-- End BuildingsDetails -->
+              <!-- ......... End BuildingsDetails ......... -->
+
+              <div id="Attachment" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <!-- Note message -->
+                    <div class="alert alert-success"><strong>Note :- </strong>&nbsp;Please attach only files with
+                      extension of .pdf,.jpg &amp; png. Also makes sure the each file size is not more than 1MB.</div>
+                    <!-- Note message -->
+                    <fieldset>
+                      <legend>Required Documents</legend>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Required Documents</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Ownership document ( Mulkiya )<i class="fa fa-question-circle" aria-hidden="true"
+                                  title="Copy of the Ownership document ( Mulkiya )" data-toggle="modal"
+                                  data-target="#Deed"></i></td>
+                              <td><input type="file" name=""></td>
+                              <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                            </tr>
+                            <!-- Ownership document ( Mulkiya ) Modal -->
+                            <div class="modal fade" id="Deed" role="dialog">
+                              <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header hs">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Ownership document ( Mulkiya )</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Copy of the Ownership document ( Mulkiya )</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Ownership document ( Mulkiya ) Modal -->
+
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Survey Sketch ( Krooki ) <i class="fa fa-question-circle" aria-hidden="true"
+                                  title="Copy of the Survey Sketch ( Krooki ) for verification" data-toggle="modal"
+                                  data-target="#Sketch"></i></td>
+                              <td><input type="file" name=""></td>
+                              <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                            </tr>
+                            <!-- Survey Sketch ( Krooki ) Modal -->
+                            <div class="modal fade" id="Sketch" role="dialog">
+                              <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header hs">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Survey Sketch ( Krooki )</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Copy of the Survey Sketch ( Krooki ) for verification</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Survey Sketch ( Krooki ) Modal -->
+
+                          </tbody>
+
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- .row -->
+                </div>
+                <!-- .form-group -->
+              </div>
+              <!-- Attachment -->
+
+              <div id="Payment" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>Payment</legend>
+                      <div class="table-responsive">
+                        <table id="pay_table" class="table table-striped table-bordered">
+                          <thead class="hs-thead">
+                            <tr role="row">
+                              <th aria-label="S.No">S.No</th>
+                              <th aria-label="Fee Type">Fee Type</th>
+                              <th aria-label="Payment Value">Payment Value</th>
+                              <th aria-label="Payment Deadline">Payment Deadline</th>
+                              <th aria-label="Payment Type">Payment Type</th>
+                              <th aria-label="Payment Reference">Payment Reference</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div> <!-- End .table-responsive -->
+                    </fieldset>
+                  </div> <!-- End .row -->
+                </div> <!-- End .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>Licenses</legend>
+                      <div class="table-responsive">
+                        <table id="example2" class="table table-bordered">
+                          <thead class="hs-thead">
+                            <tr>
+                              <th>Contract Number</th>
+                              <th>Contract Start Date</th>
+                              <th>Contract End Date</th>
+                              <th>Contract Issue Date</th>
+                              <th width="3%">Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-hs"> 
+                                  <span class="fad fa-download fa-lg"></span></button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div> <!-- End .row -->
+                </div> <!-- End .form-group -->
+              </div> <!-- End #Payment -->
+
+            </div>
+            <!-- End Empty div -->
+          </div>
+          <!-- End SmartWizard html -->
+        </div>
+        <!-- End row -->
+      </div>
+      <!--End Inner Pages -->
+    </form>
+  </div>
+  <!-- End container -->
+
+  <br />
+
+  <!-- FOOTER START -->
+  <footer id="footer-main">
+    <div class="position-relative footer-dark bg-dark footer-bg">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
+            <a href="index.html">
+              <img alt="oman-vision" id="footer-logo" class="img-fluid mb-2" src="img/oman-vision-white.png"></a>
+            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <i class="fab fa-twitter"></i></a>
+              </li>
+
+              <!-- brand -->
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="divider divider-fade divider-dark my-4">
+        <div class="row align-items-center justify-content-md-between pb-4">
+          <div class="col-md-4">
+            <div class="copyright text-sm font-weight-bolder text-white">
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              <a class="text-dark" href="https://www.moi.gov.om" target="_blank">Copyright &copy; Ministry of
+                Interior</a> - All Rights Reserved.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <ul
+              class="social-icons icon-circle icon-zoom list-unstyled list-inline d-flex justify-content-center mt-3 mt-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <i class="fab fa-twitter"></i></a>
+              </li>
+
+              <!-- brand -->
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="mb-0 text-white mx-2 d-flex align-items-center justify-content-end">Download Citizen App</h6>
+            <ul class="nav mt-3 mt-md-0 d-flex align-items-center justify-content-end">
+              <!-- <li class="nav-item list-social-item">
+                        <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                          <img src="img/app/appStore.svg" class="appStore" alt="app_store">
+                        </a>
+                      </li> -->
+              <li class="nav-item list-social-item">
+                <a href="https://play.google.com/store/apps/details?id=com.moi.citizen" target="_blank"
+                  class="text-decoration-none">
+                  <img src="img/app/googlePlay.svg" class="brand-icon" alt="google_play">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="customizer">
+    <button class="btn btn-primary btn-sm btn-icon-only rounded-circle hover-scale-110 shadow-lg" data-mode="dark"
+      id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
+  </div>
+  <!--End Footer -->
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- Date &amp; Time Live-->
+  <script src="js/Time/timejs.js"></script>
+  <!-- Date &amp; Time Live-->
+  <script src="js/Datepicker/bootstrap-datepicker.js"></script>
+
+  <!-- Multiselect -->
+  <script src="js/Multiselect/Multiselect.js"></script>
+  <!-- Include Data Table smartWizard source -->
+  <script src="js/dataTables-4/jquery.dataTables.js"></script>
+  <script src="js/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.js"></script>
+  <script src="js/jquery.smartWizard.js"></script>
+  <!-- Include jQuery Validator plugin -->
+  <script src="js/Validator/validator.js"></script>
+  <script src="js/HS/Beneficiary.js"></script>
+  <script src="js/HS/Addbuilding.js"></script>
+  <script src="js/GIS.js"></script>
+  <!-- Include Smartwizard-HS plugin -->
+  <script src=" js/smartwizardHS.js"></script>
+  <script src=" js/validations.js"></script>
+
+  <script src="js/moi-webapp.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

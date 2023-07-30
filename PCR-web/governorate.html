@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="dark" data-sidebar-size="sm-hover">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="e-Service" name="description" />
+    <meta content="altomouhit" name="author" />
+    <meta name="theme-color" content="#0d1c3d">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/img/Khanjar.png" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0/bootstrap.css" />
+    <!-- App Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" />
+    <!-- custom Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
+    <script type="text/javascript" defer src="/assets/js/auth.js"></script>
+    <script type="text/javascript" defer src="/init.js"></script>
+
+</head>
+
+<body class="bodybg">
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <lord-icon src="assets/libs/lord-icon/loader.json" trigger="loop"
+                style="width:250px;height:250px">
+            </lord-icon>
+        </div>
+    </div>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/img/Logo.svg" alt="" height="60">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/img/Logo.svg" alt="" height="60">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/img/Logo.svg" alt="" height="60">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/img/Logo.svg" alt="" height="60">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button"
+                            class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                            id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ms-1 topbar-head-dropdown header-item d-none">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="assets/img/flags/uk.svg" alt="Header Language"
+                                    height="20" class="rounded">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2 active"
+                                    data-lang="en" title="English">
+                                    <img src="assets/img/flags/uk.svg" alt="user-image" class="me-2 rounded"
+                                        height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ar"
+                                    title="&#1593;&#1585;&#1576;&#1610;">
+                                    <img src="assets/img/flags/omr.svg" alt="user-image" class="me-2 rounded"
+                                        height="18">
+                                    <span class="align-middle">&#1593;&#1585;&#1576;&#1610;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user" src="assets/img/avatar.svg"
+                                        alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal
+                                            Khamis Alrasbi</span>
+                                        <!-- <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span> -->
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Welcome!</h6>
+                                <!-- <a class="dropdown-item" href="lockscreen.html">
+                                    <i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Lock screen</span></a> -->
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logOut">
+                                    <i class="mdi mdi-power text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/img/Logo.svg" alt="" height="60">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/img/Logo.svg" alt="" height="60">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/img/Logo.svg" alt="" height="60">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/img/Logo.svg" alt="" height="60">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                    id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar" class="d-md-none1 d-xs-block1">
+                <div class="container-fluid">
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="dashboard.html" aria-controls="sidebarDashboards">
+                                <i class="bi bi-columns-gap"></i> <span data-key="t-dashboards">Dashboards</span>
+                            </a>
+                        </li>
+                        <!-- end Dashboard Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
+                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents </span>
+                            </a>
+                        </li>
+                        <!-- end Show PCR / Incidents Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="PCR.html" aria-controls="sidebarCreateNew">
+                                <img src="assets/img/create.svg" class="me-1" alt="create" width="21" /> <span data-key="t-CreateNew">Create New</span>
+                            </a>
+                        </li>
+                        <!-- end Create New Menu -->
+                        <li class="menu-title"><span data-key="t-master">Master Data</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
+                                <i class="fal fa-users-crown"></i> <span data-key="t-global">Master Data</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="patientInfo">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
+                                    <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
+                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
+                                    <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
+                                    <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- end Master Data Menu -->
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+			<div class="page-content">
+				<div class="container-fluid">
+
+					<!-- start page title -->
+					<div class="row">
+						<div class="col-12 master">
+							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+								<ul class="nav nav-tabs border-bottom-0">
+                                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#callCategoryTab"> 
+                                        <i class="fa-light fa-fort fa-lg me-2" aria-hidden="true"></i>&nbsp;Governorate
+                                    </a></li>
+                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#callSub"> 
+                                        <i class="fa-light fa-location-crosshairs fa-lg me-2" aria-hidden="true"></i>&nbsp; Incident Location
+                                    </a></li>
+                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#callType"> 
+                                        <i class="fa-light fa-thumbtack fa-lg me-2" aria-hidden="true"></i>&nbsp; Station Name
+                                    </a></li>
+                                </ul>
+
+								<div class="page-title-right">
+									<ol class="breadcrumb m-0">
+										<li class="breadcrumb-item"><a href="dashboard.html"> <i class="fal fa-home" aria-hidden="true"></i> Dashboard</a></li>
+										<li class="breadcrumb-item active">Governorate</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end page title -->
+
+					<div class="row">
+						<div class="col-xxl-12">
+							<div class="tab-content">
+                                <div class="tab-pane fade active show" id="callCategoryTab" role="tabpanel">
+                                    <!-- start page title -->
+                                    <div class="row contest_input_block">
+                                        <div class="col-12">
+                                                <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                                    <div class="input-group input-group-navbar">
+                                                        <div class="input-group-append">
+                                                            <button class="btn" type="button" style="min-width: auto">
+                                                                <i class="fal fa-search" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input type="text" id="governorateSearch" class="form-control" placeholder="Search..." aria-label="Search">
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="createNew" style="min-width: 158px">
+                                                        <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.row -->
+                                    <!-- end page title -->
+                                    <div class="row project-wrapper">
+                                        <div class="col-xxl-12">
+                                            <section class="smart-Wizard-Gov smart-Wizard">
+                                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                                                    <fieldset class="mb-2 p-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="governoratetxt" placeholder="Governorate" />
+                                                                    <label for="governoratetxt">Governorate</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <select name="" id="slaStatus" class="form-select">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Active</option>
+                                                                        <option value="2">In active</option>
+                                                                    </select>
+                                                                    <label for="slaStatus">Status</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row -->
+                
+                                                        <div class="row">
+                                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                                                <button type="reset" class="btn btn-text" id="cancelid" style="width: auto; margin-left: 0; color: #868700">
+                                                                    Cancel
+                                                                </button>
+                
+                                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="governorateFn()" id="form1Submit">
+                                                                    <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row  -->
+                                                    </fieldset>
+                                                </form>
+                                            </section>
+                
+                                            <div class="row mt-4">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive-sm data_table">
+                                                        <table class="table table-bordered table-striped w-100" id="governorateTable">
+                                                            <thead class="table-light">
+                                                                <tr>
+                                                                    <th>Governorate</th>
+                                                                    <th class="w-10">Status</th>
+                                                                    <th></th>
+                                                                    <th class="w-10">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.row  -->
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+
+                                <div class="tab-pane fade p-2" id="callSub">
+                                    <!-- start page title -->
+                                    <div class="row contest_input_block">
+                                        <div class="col-12">
+                                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                                <div class="input-group input-group-navbar">
+                                                    <div class="input-group-append">
+                                                        <button class="btn" type="button" style="min-width: auto">
+                                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" id="regionSearch" class="form-control" placeholder="Search..."
+                                                        aria-label="Search">
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="regionNew"
+                                                    style="min-width: 158px">
+                                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- end page title -->
+                                    <div class="row project-wrapper">
+                                        <div class="col-xxl-12">
+                                            <section class="smart-Wizard-incidentLoc smart-Wizard">
+                                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                                                    <fieldset class="mb-2 p-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="regionID" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Muscat</option>
+                                                                        <option value="2">Al Batinah South</option>
+                                                                        <option value="3">Al Batinah North</option>
+                                                                        <option value="4">Al Burimi</option>
+                                                                        <option value="5">Al Dakhiliyah</option>
+                                                                        <option value="6">Al Dhahira</option>
+                                                                        <option value="7">Al Sharqyah North</option>
+                                                                        <option value="8">Al Sharqyah South</option>
+                                                                        <option value="9">AL Wusta</option>
+                                                                        <option value="10">Dhofar</option>
+                                                                        <option value="11">Musandam</option>
+                                                                    </select>
+                                                                    <label for="regionID">Governorate</label>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="incidentLocationtxt" placeholder="Incident Location" />
+                                                                    <label for="incidentLocationtxt">Incident Location</label>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <select name="" id="regionStatus" class="form-select">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Active</option>
+                                                                        <option value="2">In active</option>
+                                                                    </select>
+                                                                    <label for="regionStatus">Status</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row -->
+                                
+                                                        <div class="row">
+                                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                                                <button type="reset" class="btn btn-text" id="incidentLocationId"
+                                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                                    Cancel
+                                                                </button>
+                                
+                                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="incidentLocationFn()"
+                                                                    id="incidentLocationBtn">
+                                                                    <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row  -->
+                                                    </fieldset>
+                                                </form>
+                                            </section>
+                                
+                                            <div class="row mt-4">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive-sm data_table">
+                                                        <table class="table table-bordered table-striped w-100" id="incidentLocTable">
+                                                            <thead class="table-light">
+                                                                <tr>
+                                                                    <th>Governorate</th>
+                                                                    <th></th>
+                                                                    <th>Incident Location</th>
+                                                                    <th class="w-10">Status</th>
+                                                                    <th></th>
+                                                                    <th class="w-10">Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.row  -->
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+
+                                <div class="tab-pane fade p-2" id="callType">
+                                    <!-- start page title -->
+                                    <div class="row contest_input_block">
+                                        <div class="col-12">
+                                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                                <div class="input-group input-group-navbar">
+                                                    <div class="input-group-append">
+                                                        <button class="btn" type="button" style="min-width: auto">
+                                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" id="stnSearch" class="form-control" placeholder="Search..."
+                                                        aria-label="Search">
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="stnNew"
+                                                    style="min-width: 158px">
+                                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- end page title -->
+                                    <div class="row project-wrapper">
+                                        <div class="col-xxl-12">
+                                            <section class="smart-Wizard-stn smart-Wizard">
+                                                <form action="" class="smart-form" novalidate="novalidate">
+                                                    <fieldset class="mb-2 p-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="regionIDStn" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Muscat</option>
+                                                                        <option value="2">Al Batinah South</option>
+                                                                        <option value="3">Al Batinah North</option>
+                                                                    </select>
+                                                                    <label for="regionIDStn">Governorate</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="incidentLocation" aria-label="Floating label">
+                                                                        <option value="">Please select</option>                                                           
+                                                                    </select>
+                                                                    <label for="incidentLocation">Incident Location</label>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="stationNametxt" placeholder="Station Name" />
+                                                                    <label for="stationNametxt">Station Name</label>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="col-sm-6 col-md-3">
+                                                                <div class="form-floating">
+                                                                    <select name="" id="stnStatus" class="form-select">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Active</option>
+                                                                        <option value="2">In active</option>
+                                                                    </select>
+                                                                    <label for="stnStatus">Status</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row -->
+                                
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                                                <button type="reset" class="btn btn-text" id="stnCancelid"
+                                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                                    Cancel
+                                                                </button>
+                                
+                                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="stNameFn()"
+                                                                    id="stnbtn">
+                                                                    <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.row  -->
+                                                    </fieldset>
+                                                </form>
+                                            </section>
+                                
+                                            <div class="row mt-4">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive-sm data_table">
+                                                        <table class="table table-bordered table-striped w-100" id="stNameTable">
+                                                            <thead class="table-light">
+                                                                <tr>
+                                                                    <th>Governorate</th>
+                                                                    <th></th>
+                                                                    <th>Incident Location</th>
+                                                                    <th></th>
+                                                                    <th>Station Name</th>
+                                                                    <th class="w-10">Status</th>
+                                                                    <th></th>
+                                                                    <th class="w-10">Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.row  -->
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+						</div>
+						<!-- end col -->
+					</div> <!-- end row -->
+
+				</div> <!-- container-fluid -->
+			</div> <!-- End Page-content -->
+
+			<footer class="footer">
+                <div class="container-fluid position-absolute footer-img">
+                    <div class="row align-items-end">
+                        <div class="col">
+                            <img src="assets/img/ambulance.svg" class="img-fluid" alt="ambulance"
+                                style="width: 249px;" />
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <img src="assets/img/peoples.svg" class="img-fluid" alt="peoples" style="width: 189px;" />
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <img src="assets/img/fireBus.svg" class="img-fluid" alt="fireBus" style="width: 249px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            2000 -
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> &copy; <span>Civil Defense and Ambulance Authority - All rights reserved.</span>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end">
+                            <p>
+                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">Al Tomouh IT LLC</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+		</div> <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!-- <div class="customizer-setting d-none d-md-block">
+        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
+        </div>
+    </div> -->
+
+    <!-- Theme Settings -->
+    <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
+        <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
+            <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
+
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div data-simplebar class="h-100">
+                <div class="p-4">
+                    <h6 class="mb-0 fw-bold text-uppercase">Layout</h6>
+                    <p>Choose your layout</p>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout01" name="data-layout" type="radio" value="vertical"
+                                    class="form-check-input">
+                                <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout01">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Vertical</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout02" name="data-layout" type="radio" value="horizontal"
+                                    class="form-check-input">
+                                <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout02">
+                                    <span class="d-flex h-100 flex-column gap-1">
+                                        <span class="bg-light d-flex p-1 gap-1 align-items-center">
+                                            <span class="d-block p-1 bg-soft-primary rounded me-1"></span>
+                                            <span class="d-block p-1 pb-0 px-2 bg-soft-primary ms-auto"></span>
+                                            <span class="d-block p-1 pb-0 px-2 bg-soft-primary"></span>
+                                        </span>
+                                        <span class="bg-light d-block p-1"></span>
+                                        <span class="bg-light d-block p-1 mt-auto"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Horizontal</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input id="customizer-layout03" name="data-layout" type="radio" value="twocolumn"
+                                    class="form-check-input">
+                                <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout03">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1">
+                                                <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Two Column</h5>
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <h6 class="mt-4 mb-0 fw-bold text-uppercase">Color Scheme</h6>
+                    <p>Choose Light or Dark Scheme.</p>
+
+                    <div class="colorscheme-cardradio">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-mode"
+                                        id="layout-mode-light" value="light">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="layout-mode-light">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Light</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check card-radio dark">
+                                    <input class="form-check-input" type="radio" name="data-layout-mode"
+                                        id="layout-mode-dark" value="dark">
+                                    <label class="form-check-label p-0 avatar-md w-100 bg-dark" for="layout-mode-dark">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-soft-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-soft-light d-block p-1"></span>
+                                                    <span class="bg-soft-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Dark</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="layout-width">
+                        <h6 class="mt-4 mb-0 fw-bold text-uppercase">Layout Width</h6>
+                        <p>Choose Fluid or Boxed layout.</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-width"
+                                        id="layout-width-fluid" value="fluid">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="layout-width-fluid">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Fluid</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-width"
+                                        id="layout-width-boxed" value="boxed">
+                                    <label class="form-check-label p-0 avatar-md w-100 px-2" for="layout-width-boxed">
+                                        <span class="d-flex gap-1 h-100 border-start border-end">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Boxed</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="layout-position">
+                        <h6 class="mt-4 mb-0 fw-bold text-uppercase">Layout Position</h6>
+                        <p>Choose Fixed or Scrollable Layout Position.</p>
+
+                        <div class="btn-group radio" role="group">
+                            <input type="radio" class="btn-check" name="data-layout-position" id="layout-position-fixed"
+                                value="fixed">
+                            <label class="btn btn-light w-sm" for="layout-position-fixed">Fixed</label>
+
+                            <input type="radio" class="btn-check" name="data-layout-position"
+                                id="layout-position-scrollable" value="scrollable">
+                            <label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Scrollable</label>
+                        </div>
+                    </div>
+                    <h6 class="mt-4 mb-0 fw-bold text-uppercase">Topbar Color</h6>
+                    <p>Choose Light or Dark Topbar Color.</p>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-light"
+                                    value="light">
+                                <label class="form-check-label p-0 avatar-md w-100" for="topbar-color-light">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-light d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Light</h5>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check card-radio">
+                                <input class="form-check-input" type="radio" name="data-topbar" id="topbar-color-dark"
+                                    value="dark">
+                                <label class="form-check-label p-0 avatar-md w-100" for="topbar-color-dark">
+                                    <span class="d-flex gap-1 h-100">
+                                        <span class="flex-shrink-0">
+                                            <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                            </span>
+                                        </span>
+                                        <span class="flex-grow-1">
+                                            <span class="d-flex h-100 flex-column">
+                                                <span class="bg-primary d-block p-1"></span>
+                                                <span class="bg-light d-block p-1 mt-auto"></span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <h5 class="fs-13 text-center mt-2">Dark</h5>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-size">
+                        <h6 class="mt-4 mb-0 fw-bold text-uppercase">Sidebar Size</h6>
+                        <p>Choose a size of Sidebar.</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size"
+                                        id="sidebar-size-default" value="lg">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-size-default">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Default</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size"
+                                        id="sidebar-size-compact" value="md">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-size-compact">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Compact</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size"
+                                        id="sidebar-size-small" value="sm">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-size-small">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1">
+                                                    <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Small (Icon View)</h5>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar-size"
+                                        id="sidebar-size-small-hover" value="sm-hover">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-size-small-hover">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1">
+                                                    <span class="d-block p-1 bg-soft-primary mb-2"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Small Hover View</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-view">
+                        <h6 class="mt-4 mb-0 fw-bold text-uppercase">Sidebar View</h6>
+                        <p>Choose Default or Detached Sidebar view.</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-style"
+                                        id="sidebar-view-default" value="default">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-view-default">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Default</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-layout-style"
+                                        id="sidebar-view-detached" value="detached">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-view-detached">
+                                        <span class="d-flex h-100 flex-column">
+                                            <span class="bg-light d-flex p-1 gap-1 align-items-center px-2">
+                                                <span class="d-block p-1 bg-soft-primary rounded me-1"></span>
+                                                <span class="d-block p-1 pb-0 px-2 bg-soft-primary ms-auto"></span>
+                                                <span class="d-block p-1 pb-0 px-2 bg-soft-primary"></span>
+                                            </span>
+                                            <span class="d-flex gap-1 h-100 p-1 px-2">
+                                                <span class="flex-shrink-0">
+                                                    <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
+                                                        <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                        <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                        <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="bg-light d-block p-1 mt-auto px-2"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Detached</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar-color">
+                        <h6 class="mt-4 mb-0 fw-bold text-uppercase">Sidebar Color</h6>
+                        <p>Choose Ligth or Dark Sidebar Color.</p>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar"
+                                        id="sidebar-color-light" value="light">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-color-light">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-white border-end d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Light</h5>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check sidebar-setting card-radio">
+                                    <input class="form-check-input" type="radio" name="data-sidebar"
+                                        id="sidebar-color-dark" value="dark">
+                                    <label class="form-check-label p-0 avatar-md w-100" for="sidebar-color-dark">
+                                        <span class="d-flex gap-1 h-100">
+                                            <span class="flex-shrink-0">
+                                                <span class="bg-primary d-flex h-100 flex-column gap-1 p-1">
+                                                    <span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                    <span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+                                                </span>
+                                            </span>
+                                            <span class="flex-grow-1">
+                                                <span class="d-flex h-100 flex-column">
+                                                    <span class="bg-light d-block p-1"></span>
+                                                    <span class="bg-light d-block p-1 mt-auto"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <h5 class="fs-13 text-center mt-2">Dark</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="offcanvas-footer border-top p-3 text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="btn btn-primary w-100">Save</a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="logOut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="logOutLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center" style="color:#4E5969">
+                    Are you sure you want to logout <strong style="color: var(--vz-link-color);"> Ahlam Hilal Khamis
+                        Alrasbi</strong> ?
+                </div>
+                <div class="modal-footer border-0 justify-content-center pt-5">
+                    <button type="button" class="btn justify-content-center d-block btn-outline-dark"
+                        data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
+                    <a href="../Landing_theme/index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center"
+                            style="min-width:100px">Yes</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
+   
+    <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
+    <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
+    <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
+
+    <!-- App js -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/governorate.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/incidentLocation.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/stationName.js"></script>
+</body>
+
+</html>

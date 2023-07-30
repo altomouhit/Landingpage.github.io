@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11,10" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <META name="robots" content="follow,index" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+    <meta name="description" content="Official Portal for Oman Municipality" />
+    <meta name="Authority" content="oman Government, oman Municipality" />
+    <meta name="generator" content="ITON oman" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>لوحة الإعدادات</title>
+
+    <!--Start CSS English / Arabic files-->
+    <link rel="stylesheet" href="css/bootstrap.min.ar.css" id="changeStylesheet" />
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.css" /> -->
+
+    <!-- Header-->
+    <link rel="stylesheet" href="css/headerar.css">
+    <!-- Header-->
+
+    <!-- Homepage Main Content -->
+    <link rel="stylesheet" href="css/homepage-main-content.css" />
+    <!-- Homepage Main Content -->
+
+    <link rel="stylesheet" href="css/scrollToTop.css" />
+
+    <!-- LOAD smart_wizard CSS -->
+    <link rel="stylesheet" href="css/smart_wizard.css" />
+
+    <!-- LOAD DataTables CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+
+    <!--End CSS English / Arabic files-->
+    <!-- marquee Services -->
+    <link rel="stylesheet" href="css/marquee.css">
+    <!-- marquee Services -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+    <!-- ........................................................................................................................ -->
+
+    <!--Start Comman CSS files-->
+    <!--text resize assets -->
+    <link rel="stylesheet" href="css/text-resize.css" />
+    <!-- End text resize assets -->
+
+    <!--font-awesome-4.1.0-->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!--font-awesome-4.1.0-->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Footer assets -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- End Footer assets -->
+
+    <!--scrolling assets -->
+    <link rel="stylesheet" href="css/scroll.css" />
+    <!-- End scrolling assets -->
+
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/mrm.css">
+    <!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <!-- Start Header -->
+    <header>
+        <div class="enjaz-logo">
+            <div class="dm-Logo">
+                <a href="index-arabic.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a>
+            </div>
+        </div>
+        <div class="dg-Logo">
+            <a href="index-arabic.html" rel="nofollow" title="MOAF">
+                <img src="images/MOAF-white.png" id="navbar-logo" alt="MOAF"></a>
+        </div>
+    </header>
+    <nav class="navbar-core">
+        <div class="container-fluid">
+            <div class="col-xs-6">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="WS-dashboard-arabic.html"><i class="fa fa-home" aria-hidden="true"></i>الصفحة الرئيسية</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-2 text-size text-center"> <a href="#" class="small">&rlm; A-</a> <a href="#" class="current">&rlm; A</a> <a href="#" class="large">&rlm; A+</a> </div>
+            <div class="col-xs-3 text-right user-icon"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i class="fa fa-user-circle"></i> <span class="user-name">أهلا وسهلا بكم عمر أحمد<i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>الملف الشخصي</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-1 text-right language-change"><a href="WS-dashboard.html">English</a></div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <div class="container main-content-top-margin">
+
+        <form accept-charset="utf-8" action="#" data-toggle="validator" id="myForm" method="post" name="myForm" role="form">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel-group paddingT10">
+
+                        <div class="dashboard-panel">
+                            <div class="panel-heading ws-header-db">
+                                <h4 class="panel-title">جميع الطلبات</h4>
+                            </div>
+                            <div aria-labelledby="headingOne" class="panel-collapse collapse in" id="collapse674" role="tabpanel">
+                                <div class="db-panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <a href="WS-request-list-view-arabic.html">
+                                                <div class="sub-menu">
+                                                    <div class="menu-block">
+                                                        <i aria-hidden="true" class="fa fa-file-text-o fa-2x"></i>
+                                                    </div>
+                                                    <span class="menu-title">عرض جميع الطلبات</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="javascript:void(0)">
+                                                <div class="sub-menu">
+                                                    <div class="menu-block">
+                                                        <i aria-hidden="true" class="fa fa-bar-chart fa-2x"></i>
+                                                    </div>
+                                                    <span class="menu-title">عرض التقارير</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <a href="CAWS-SearchContractor.html">
+                                                <div class="sub-menu">
+                                                    <div class="menu-block">
+                                                        <i aria-hidden="true" class="fa fa-search fa-2x"></i>
+                                                    </div>
+                                                    <span class="menu-title">بحث المقاول</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#search_Inventory">
+                                                <div class="sub-menu">
+                                                    <div class="menu-block">
+                                                        <i aria-hidden="true" class="fa fa-search fa-2x"></i>
+                                                    </div>
+                                                    <span class="menu-title">البحث برقم الحصر</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="panel-group paddingT10">
+                        <!-- content here -->
+                        <div class="dashboard-panel">
+                            <div class="panel-heading ws-header-db">
+                                <h4 class="panel-title">طلباتي</h4>
+                            </div>
+                            <div id="collapse674" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="db-panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="table-responsive table-db">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>رقم الطلب</th>
+                                                            <th>تاريخ الطلب</th>
+                                                            <th>تاريخ إنتهاء الصلاحية</th>
+                                                            <th>اسم مقدم الطلب</th>
+                                                            <th>الخدمات</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>25/05/2017</td>
+                                                            <td>عمر أحمد</td>
+                                                            <td>طلبات التراخيص المائية</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>25/05/2017</td>
+                                                            <td>عمر أحمد</td>
+                                                            <td>طلبات الحصر والتسجيل </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>25/05/2017</td>
+                                                            <td>عمر أحمد</td>
+                                                            <td>طلبات مقاولي حفر آبار المياه</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>25/05/2017</td>
+                                                            <td>عمر أحمد</td>
+                                                            <td>طلبات دراسات الوضع المائي والمعلومات الهيدرولوجية و المسوحات الفنية</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>25/05/2017</td>
+                                                            <td>عمر أحمد</td>
+                                                            <td>طلبات الافلاج</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <a href="WS-request-list-view-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض طلباتي </a>
+                                            <span class="pull-right">
+                                              <a href="CAWS-violationar.html" class="btn btn-ws"><i class="fa fa-balance-scale" aria-hidden="true"></i> Create Violation</a>
+                                              <a href="CAWS-violation-list-view-arabic.html" class="btn btn-ws"><i class="fa fa-search" aria-hidden="true"></i> Search Violation</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- End .row -->
+                                </div>
+                                <!-- End .panel-body -->
+                            </div>
+                        </div>
+                        <!-- End .panel-default -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel-group paddingT10">
+                        <!-- content here -->
+                        <div class="dashboard-panel">
+                            <div class="panel-heading ws-header-db">
+                                <h4 class="panel-title">نظرة عامة على إدارة الحالة</h4>
+                            </div>
+                            <div id="collapse674" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="db-panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="table-responsive table-db">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="id-width">رقم الحاله</th>
+                                                            <th>اسم الحالة</th>
+                                                            <th>الوصف</th>
+                                                            <th>الحالة</th>
+                                                            <th>تاريخ الفتح</th>
+                                                            <th>تاريخ الإغلاق</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>طلبات التراخيص المائية</td>
+                                                            <td>طلبات التراخيص المائية</td>
+                                                            <td>نشط</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>15/06/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>طلبات الحصر والتسجيل </td>
+                                                            <td>طلبات الحصر والتسجيل </td>
+                                                            <td>نشط</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>15/06/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>طلبات مقاولي حفر آبار المياه</td>
+                                                            <td>طلبات مقاولي حفر آبار المياه</td>
+                                                            <td>نشط</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>15/06/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>طلبات دراسات الوضع المائي والمعلومات الهيدرولوجية و المسوحات الفنية</td>
+                                                            <td>طلبات دراسات الوضع المائي والمعلومات الهيدرولوجية و المسوحات الفنية</td>
+                                                            <td>نشط</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>15/06/2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>طلبات الافلاج</td>
+                                                            <td>طلبات الافلاج</td>
+                                                            <td>نشط</td>
+                                                            <td>10/05/2017</td>
+                                                            <td>15/06/2017</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="btn-group navbar-btn sw-btn-group-extra pull-leftright" role="group">
+                                                <button class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض الكل</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .row -->
+                                </div>
+                                <!-- End .panel-body -->
+                            </div>
+                        </div>
+                        <!-- End .panel-default -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- End .panel-group -->
+
+            <!--inner-pages transparent-white-background -->
+        </form>
+    </div>
+    <!-- .container main-content-top-margin -->
+
+    <br />
+
+    <!-- FOOTER START -->
+    <section id="footer">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img alt="oman-vision" class="img-responsive mb-2" id="footer-logo" src="images/oman-vision-white.png"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                        <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="https://www.instagram.com/mafwr_om/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li> <a href="https://www.youtube.com/user/moaoman" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li> <a href="https://twitter.com/mafwr_om/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="pull-right">
+                        <a class="pull-right ml101" href="http://www.w3.org/" target="_blank">
+                            <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a>
+                        <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li>&copy; حقوق النشر <a class="" href="https://www.maf.gov.om" target="_blank"> وزارة الثروة الزراعية و السمكية وموارد المياه</a> - كل الحقوق محفوظة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- FOOTER END -->
+
+    <!--Scrolling top-->
+    <a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br /> Top </a>
+    <!-- end scrolling top-->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollJS.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/text-resize.js"></script>
+    <script src="js/demo.js"></script>
+    <script type="text/javascript" src="js/jquery.marquee.min.ar.js"></script>
+
+    <!-- Include Data Table smartWizard source -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.min.js"></script>
+
+    <!-- Include smartWizard source -->
+    <script src="js/jquery.smartWizard.js"></script>
+
+    <!-- Include Preloader plugin -->
+    <script src="js/Preloader.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        $('.twitter-scroll').marquee({
+            duration: 25000,
+            pauseOnHover: true
+        });
+    </script>
+</body>
+
+</html>

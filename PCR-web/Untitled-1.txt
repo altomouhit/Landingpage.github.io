@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-4">
+        <label for="choices-priority-input" class="form-label">Priority</label>
+        <select class="form-select" data-choices data-choices-search-false id="choices-priority-input">
+            <option value="High" selected>High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+    </div>
+    <div class="col-lg-4">
+        <label for="choices-status-input" class="form-label">Status</label>
+        <select class="form-select" data-choices data-choices-search-true id="choices-status-input">
+            <option selected="">Choose...</option>
+            <option value="Inprogress">Inprogress</option>
+            <option value="Completed">Completed</option>
+        </select>
+    </div>
+</div>

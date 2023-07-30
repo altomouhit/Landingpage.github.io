@@ -1,0 +1,590 @@
+/*ITON CSS BY BALARAM*/
+ /*Button an  background*/
+
+.btn-mrm {
+	color: #287195;
+	background-color: #fff;
+	border-color: #287195;
+}
+.btn-mrm:hover {
+	color: #fff;
+	background-color: #287195;
+	border-color: #287195;
+}
+.btn-ts {
+	color: #fff;
+	background: rgb(213, 184, 111);
+	border-color: rgb(213, 184, 111);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-ts:hover {
+	color: #fff;
+	background-color: rgb(209, 170, 100);
+	border-color: rgb(213, 184, 111);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-ts:hover, .btn-ts:focus, .btn-ts.focus {
+	color: #fff;
+	text-decoration: none;
+}
+.btn-hs {
+	color: #fff;
+	background: rgb(86, 111, 122);
+	border-color: rgb(86, 111, 122);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-hs:hover {
+	color: #fff;
+	background-color: rgb(75, 115, 125);
+	border-color: rgb(75, 115, 125);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-hs:hover, .btn-hs:focus, .btn-hs.focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.btn-ws {
+	color: #fff;
+	background: rgb(0, 139, 174);
+	border-color: rgb(0, 139, 174);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-ws:hover {
+	color: #fff;
+	background-color: rgb(22, 158, 192);
+	border-color: rgb(22, 158, 192);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-group .btn-ts, .btn-group .btn-hs, .btn-group .btn-ws {
+    margin-right: 5px !important;
+}
+.btn-ws:focus, .btn-ws:active, .btn-ws:active:focus{
+	background-color:rgb(0, 139, 174),rgb(0, 139, 174); 
+	color:#fff;}
+
+.btn-small {
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+	margin:0px 5px;
+}
+.divider-style-top {
+	height: 80px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 996;
+}
+.divider-style-top .divider-shadow {
+	background-image: url(../img/divider-style-top.png);
+	background-repeat: no-repeat;
+	height: 53px;
+	z-index: 99;
+	background-position: center;
+}
+.divider-style-bottom {
+	/*height: 55px;*/
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+}
+.divider-style-bottom .divider-shadow {
+	background-image: url(../img/divider-style-bottom.png);
+	background-repeat: no-repeat;
+	height: 53px;
+	/* background-image: url(../images/content-bg.png); */
+	background-position: center;
+}
+.divider-style-bottom .divider-line {
+	border-bottom-width: 1px;
+	height: 1.2px;
+}
+.divider-style-top .divider-line {
+	border-top-width: 1px;
+	height: 2px;
+}
+.divider-line {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbd9da+0,fadbd9+0,fcdcdf+0,fbdddd+1,fde3e4+1,fbe6e5+2,fee5e8+2,fde8e7+2,feeaeb+2,fdebeb+3,fef0f0+3,fdf3f2+5,fff5f6+5,fef5f6+6,fef8f8+6,fef8f8+7,fffafa+7,fffbfa+9,fef8f8+9,fffbfa+10,fff7f8+11,fefaf9+11,fff7f8+11,fff7f8+13,fff5f4+13,fff1f1+16,feeaeb+18,feecec+18,fee9e8+18,fde9ea+18,fee4e5+19,fee6e6+19,ffe3e2+20,fde3e4+20,fde1e0+20,fcdad9+22,fed7d8+22,fdd7d6+23,fbcdcd+24,fdcdcd+24,fbc5c5+25,fdb3b4+27,fab0b1+28,fbabac+28,f9a8a7+29,f99f9f+29,fa9f9e+30,fa9696+30,fb8f8f+31,f98b8c+31,fa8a89+32,f78181+32,f97e80+33,f87a7b+33,f87877+33,f96d6e+34,f76b6a+34,f85e5e+36,f65c5c+36,f75b5c+36,f65251+37,f43a3b+39,f53435+40,f42223+42,f32120+42,f31415+44,f41011+45,f20e0d+45,f40a0b+47,f10706+47,f30304+49,f20201+50,f20203+50,f10100+50,f30100+64,ef0703+67,ec0702+67,e80e05+69,d21e03+73,d02305+73,ca2704+74,c92701+74,bf3103+75,c23102+75,bc3203+75,b93801+76,b63700+76,a84702+77,a74600+77,a64b02+78,985400+79,995700+79,8d6100+80,8e6201+80,8b6400+80,896800+81,7b7400+82,7a7801+82,767a00+82,747e01+83,6f8300+83,718200+83,6b8a01+84,648d00+84,659002+85,619100+85,629401+85,5e9400+85,5b9a01+86,559f00+86,579e00+86,54a000+87,52a401+87,4ea500+87,4eaa01+88,4aaa00+88,40b600+89,31c500+92,2dc800+93,2fc700+93,2dca01+93,2acc00+93,2ccb00+94,27cd00+94,27d100+95,23d400+95,25d300+96,22d300+96,22d601+97,19db00+99,1bda00+100 */
+	background: #fbd9da;
+	/* Old browsers */
+ 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+ 	/* FF3.6+ */
+ 	/* Chrome,Safari4+ */
+ 	/* Chrome10+,Safari5.1+ */
+ 	/* Opera 11.10+ */
+ 	/* IE10+ */
+	background: linear-gradient(to right, #f3f3f3 0%, #f3c0ca 0%, #f3d7d7 0%, #efe0e0 1%, #ffe2e2 1%, #ffe2e2 2%, #fee5e8 2%, #fde8e7 2%, #feeaeb 2%, #fdebeb 3%, #fef0f0 3%, #fdf3f2 5%, #fff5f6 5%, #fef5f6 6%, #fef8f8 6%, #fef8f8 7%, #fffafa 7%, #fffbfa 9%, #fef8f8 9%, #fffbfa 10%, #fff7f8 11%, #fefaf9 11%, #fff7f8 11%, #fff7f8 13%, #fff5f4 13%, #fff1f1 16%, #feeaeb 18%, #feecec 18%, #fee9e8 18%, #fde9ea 18%, #fee4e5 19%, #fee6e6 19%, #ffe3e2 20%, #fde3e4 20%, #fde1e0 20%, #fcdad9 22%, #fed7d8 22%, #fdd7d6 23%, #fbcdcd 24%, #fdcdcd 24%, #fbc5c5 25%, #fdb3b4 27%, #fab0b1 28%, #fbabac 28%, #f9a8a7 29%, #f99f9f 29%, #fa9f9e 30%, #fa9696 30%, #fb8f8f 31%, #f98b8c 31%, #fa8a89 32%, #f78181 32%, #f97e80 33%, #f87a7b 33%, #f87877 33%, #f96d6e 34%, #f76b6a 34%, #f85e5e 36%, #f65c5c 36%, #f75b5c 36%, #f65251 37%, #f43a3b 39%, #f53435 40%, #f42223 42%, #f32120 42%, #f31415 44%, #f41011 45%, #f20e0d 45%, #f40a0b 47%, #f10706 47%, #f30304 49%, #f20201 50%, #f20201 50%, #dc1918 50%, #c10248 64%, #27ee75 67%, #27ee75 67%, #27cd75 69%, #27cf00 73%, #27cf00 73%, #27cf00 74%, #27cf00 74%, #27cf00 75%, #27cf00 75%, #27cf00 75%, #27cf00 76%, #27cf00 76%, #27cf00 77%, #27bf77 77%, #27cd00 78%, #27cd00 79%, #27cd00 79%, #27cd00 80%, #27cd03 80%, #27cd50 80%, #27cd00 81%, #27cd00 82%, #27cd00 82%, #27cd00 82%, #27cd00 83%, #27cd00 83%, #27cd00 83%, #27cd00 84%, #27cd00 84%, #27cd00 85%, #27cd00 85%, #27cd00 85%, #27cd00 85%, #27cd00 86%, #27cd50 86%, #27cd00 86%, #27ce50 87%, #27ce50 87%, #27ce50 87%, #27cf00 88%, #27cf00 88%, #27cf00 89%, #31c500 92%, #2dc800 93%, #2fc700 93%, #2dca01 93%, #2acc00 93%, #2ccb00 94%, #27cd00 94%, #27d100 95%, #23d400 95%, #25d300 96%, #22d300 96%, #22d601 97%, #19db00 99%, #1bda00 100%);
+ 	/* W3C */
+ 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fbd9da', endColorstr='#1bda00', GradientType=1);
+/* IE6-8 */
+}
+.ml10 {
+	margin-left: 10px !important;
+}
+.ml101 {
+	margin-right: 10px !important;
+}
+.more {
+	float: right;
+	margin-right: 15px;
+	color: #448aff;
+}
+.morear {
+	float: left;
+	color: #448aff;
+}
+.panel {
+	background: transparent;
+}
+.panel-title>a {
+	color: #fff;
+}
+/*................................................................................................................................*/
+
+.login-form .form-group {
+	margin-bottom: 10px;
+}
+.login-form {
+	padding: 5px;
+}
+.login-form .header {
+	text-align: left;
+	padding: 0px;
+	padding-top: 0px;
+	font-weight: bold;
+}
+.login-form .body {
+	padding: 0px;
+}
+.login-form .error {
+	padding: 0px;
+	padding-top: 10px;
+}
+.login-form .alert {
+	padding: 10px;
+	margin: 0px;
+}
+.login-information {
+	padding: 5px;
+}
+/*................................................................................................................................*/
+
+ /*.................................... Bootstrap Override modal-header on 02/05/2017 by Balaram .................................*/
+
+.modal-header {
+	background: rgb(213, 184, 111);
+	color: #fff;
+}
+.hs-modal-header {
+	background: rgb(86, 111, 122);
+	color: #fff;
+}
+.ws-modal-header {
+	background: #008bae;
+	color: #fff;
+}
+.modal-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.close {
+	color: #fff;
+	opacity: 1;
+}
+.close:hover {
+	color: #fff;
+	opacity: 1;
+}
+/*.................................... Bootstrap Override modal-header on 02/05/2017 by Balaram .................................*/
+
+.margin-5 thead {
+	background: #287195;
+	color: #fff;
+}
+/*......................... Bootstrap Override .form-control-feedback  on 03/05/2017 by Balaram .................................*/
+.form-control-feedback {
+	width: 65px;
+	line-height: 80px;
+}
+.form-control {
+	background-color: #fff;
+	/* border: 1px solid #efefef; */
+	border-radius: 0;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075);
+	color: #444;
+	display: block;
+	width: 100%;
+	padding:3px 12px;
+	font-size: 12px;
+}
+select.form-control {
+	background-color: #fff;
+}
+.inputwidth{width:auto !important;}
+/*......................... Bootstrap Override .form-control-feedback  on 03/05/2017 by Balaram .................................*/
+.btn-default {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+/*......................... Bootstrap Override .modal-footer .btn + .btn  on 07/05/2017 by Balaram .................................*/
+.modal-footer .btn + .btn {
+	margin-bottom: 5px;
+}
+/*......................... Bootstrap Override .modal-footer .btn + .btn  on 07/05/2017 by Balaram .................................*/
+
+/*.................................... Bootstrap Override modal-header-mrm on 07/05/2017 by Balaram .................................*/
+.modal-header-mrm {
+	background: rgb(40, 113, 149);
+	color: #fff;
+	padding: 15px;
+	border-bottom: 1px solid;
+}
+/*.................................... Bootstrap Override modal-header-mrm on 07/05/2017 by Balaram .................................*/
+
+.btn-grey {
+	color: #222!important;
+	background-color: #eee!important;
+	background-image: -webkit-linear-gradient(180deg, #fcfcfc, #eee);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eee));
+	background-image: -webkit-linear-gradient(top, #fcfcfc, #eee);
+	background-image: linear-gradient(180deg, #fcfcfc, #eee);
+	border: 1px solid #ddd!important;
+}
+/*.................................... Bootstrap Override panel-heading on 15/05/2017 by Balaram .................................*/
+.header-ts {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: #789383 !important;
+}
+.header-ts:hover {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: #6e7e73 !important;
+}
+.list-group-item .fa {
+	color: rgb(213, 184, 111);
+}
+/*.................................... Bootstrap Override panel-heading on 15/05/2017 by Balaram .................................*/
+
+/*override language label*/
+.top-menu .search-div span.lnkLanglbl {
+	margin-top: 6px;
+	font-size: 12px;
+}
+.helprint {
+	color: #fff;
+	font-size: 12px;
+	vertical-align: sub;
+}
+.helprint:hover {
+	color: #fff;
+}
+.serv-block h6 {
+	padding-bottom: 10px;
+	color: #0092cb;
+}
+.serv-block h6:hover {
+	text-decoration: underline;
+}
+/*.................................... Health Services Add color code header-ts on 17/05/2017 by Balaram .................................*/
+.header-hs {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: rgb(86, 111, 122) !important;
+}
+.header-hs:hover {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: rgb(86, 111, 122) !important;
+}
+.list-group-item .hs .fa {
+	color: rgb(86, 111, 122);
+}
+/*.................................... Health Services Add color code header-ts on 17/05/2017 by Balaram .................................*/
+
+.Termsofuse {
+	border: 1px solid #e5e5e5;
+	height: 320px;
+	overflow: auto;
+	padding: 10px;
+}
+/*.................................... Bootstrap Override label on 02/06/2017 by Balaram .................................*/
+label {
+	overflow: overlay;
+	margin-top: 5px;
+	/* white-space: nowrap; */
+}
+/*.................................... Bootstrap Override radio on 02/06/2017 by Balaram .................................*/
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: -18px;
+}
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+	margin-top: 5px;
+	margin-left: 0px !important;
+}
+login-panel-body .radio input[type="radio"], login-panel-body .radio-inline input[type="radio"], login-panel-body .checkbox input[type="checkbox"], login-panel-body .checkbox-inline input[type="checkbox"] {
+    position: relative;
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
+/*.................................... Bootstrap Override label on 03/06/2017 by Balaram .................................*/
+#pop_up {
+	background: rgb(0, 139, 174);
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 999;
+	font-size: 14px;
+	text-shadow: none;
+}
+.well-sm {
+	padding: 0px !important;/* border-radius: 3px; */
+}
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/*.................................... Bootstrap Override Table on 03/07/2017 - CoreApp Sysytem by Balaram .................................*/
+@media (min-width:992px) {
+	.height-ts {min-height: 325px;}
+	.height {min-height: 410px;}
+	.height2 {min-height: 300px;}
+	.height3 {min-height: 335px;}
+	.height4 { min-height: 375px; }
+	.height5 {min-height: 360px;}
+	.height6 {min-height: 210px;}
+	.height7 {min-height: 280px;}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.height {height: 300px;}
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 4px !important;
+}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 0px;
+	vertical-align: middle;
+	font-weight: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: initial;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
+    line-height: initial;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
+    line-height: initial;
+  }
+}
+
+.tb {
+	margin-bottom: 0px;
+	background-color: transparent !important;
+	padding: 4px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.top-25 {
+	margin-top: 25px;
+}
+.top-30 {
+	margin-top: 30px;
+}
+.top-50 {
+	margin-top: 50px;
+}
+.ws thead {
+    background: #008bae;
+    color: #fff;
+}
+.ts thead {
+    background: rgb(213, 184, 111);
+    color: #fff;
+}
+.ts-thead {
+    background: rgb(213, 184, 111);
+    color: #fff;
+}
+.hs-thead {
+    background: rgb(86, 111, 122);
+    color: #fff;
+}
+.ws-thead {
+	background: rgb(0, 139, 174);
+	color:#fff;
+}
+.top-10 {
+	margin-top: 10px;
+}
+.inputtable {
+	border: none;
+    padding: 1px;
+    height: auto;
+    background: transparent !important;
+}
+/*.............. multiple Seletions on 28/01/2018 by Balaram ..............*/
+.ms-wrap {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    width: 100%;
+}
+.ms-wrap:focus{
+	outline:0;
+}
+.ms-label-wrap {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+.ms-label-wrap, .ms-dropdown {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ms-label-wrap .ms-label {
+    padding: 6px 22px 6px 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ms-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    margin: auto;
+}
+.ms-dropdown {
+    /* position: absolute; */
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 5px;
+    z-index: 1000;
+}
+.ms-dropdown .ms-options {
+    max-height: 100px;
+    overflow: auto;
+}
+.ms-search input {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+    /* padding: 0px 0; */
+    width: 100%;
+}
+.ms-option, .ms-search, .ms-optgroup-label {
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+    cursor: default;
+}
+.ms-option:last-child {
+    border-bottom: none;
+}
+.ms-search {
+    padding: 0 0px;
+}
+.ms-option {
+    cursor: pointer;
+}
+.ms-option.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+.ms-option.hl {
+    background-color: #f5f5f5;
+}
+.ms-wrap.multiple .ms-option {
+    position: relative;
+    padding-left: 30px;
+}
+.ms-wrap.multiple .ms-checkbox {
+    position: absolute;
+    display: block;
+    width: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.ms-wrap.multiple .ms-option .ms-checkbox i {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aeaeae;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.ms-wrap.multiple .ms-option.selected .ms-checkbox i {
+    background-color: rgb(0, 139, 174);
+    border-color: transparent;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ms-optgroup-label {
+    font-weight: bold;
+    text-align: center;
+}
+/*.............. multiple Seletions on 28/01/2018 by Balaram ..............*/
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #cacaca;
+}
+img#navbar-logo {
+    width: 10rem;
+}
+#footer-logo {
+    width: 12rem;
+}
+.radio-inline, .checkbox-inline {
+	display: inline-flex;
+	align-items: center;
+}

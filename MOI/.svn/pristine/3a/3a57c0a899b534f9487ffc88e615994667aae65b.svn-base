@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="Authority" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>Site Visits Calendar</title>
+
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.css"  id="changeStylesheet" />
+<!-- <link rel="stylesheet" href="css/bootstrap-theme.css" /> -->
+<!-- Header-->
+<link rel="stylesheet" href="css/header.css">
+<!-- Header-->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Comman CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<!-- Start Header -->
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="index.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="index.html" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/moi-logo-white.png" id="navbar-logo" alt="Ministry of Regional Municipality & Water Resources"></a>
+    </div>
+</header>
+<nav class="navbar-core">
+  <div class="container-fluid">
+    <div class="col-xs-3 col-sm-5 home-icon">
+	  <ul class="nav navbar-nav">
+          <li><a href="TS-dashbaord.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-2 text-size text-center"><a href="#" class="small" id="lnkDecrease">A-</a> <a href="#" id="lnkDefault" class="current">A</a> <a href="#" class="large" id="lnkIncrease">A+</a></div>
+    
+    
+	<div class="col-xs-7 col-sm-4 text-right user-icon">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i class="fa fa-user-circle"></i><span class="user-name"><span class="wel-text">Welcome Omar Ahmed</span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+		</a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+      </ul>
+    </div>
+	<div class="col-xs-2 col-sm-1 text-right language-change"><a href="TS-dashbaord-ar.html">عربى</a></div>
+  </div>
+</nav>
+<!-- End Header -->
+<div class="container main-content-top-margin"> 
+  
+  <!--Main content-->
+  <div class="row panel-head-services">
+    <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+      <div class="panel-text">Site Visits Calendar</div>
+    </div>
+    <div class="col-sm-4 nopadding">
+      <ul class="pull-right">
+        <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help</a></li>
+        <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>Print</a></li>
+        <li><a href="javascript:void(0);" class="helprint" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--End Main content--> 
+  
+  <!-- SmartWizard html --> 
+  <!--Inner Pages Start -->
+  <div class="inner-pages transparent-white-background">
+    <div class="container">
+      <div class="row">
+        <div class="calendar-header">
+          <h3>August</h3>
+          <ul class="pagination">
+            <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+            <li><a href="#">Week 2</a></li>
+            <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <div class="table-responsive table-sv">
+            <table class="table table-bordered table-striped" >
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Day 1</th>
+                  <th>Day 2</th>
+                  <th>Day 3</th>
+                  <th>Day 4</th>
+                  <th>Day 5</th>
+                  <th>Updated</th>
+                </tr>
+              </thead>
+              <tr>
+                <td class="technician-info"><div class="tech-name">Technician 1</div>
+                  <div class="tech-available btn btn-ts">Set Unavailability</div></td>
+                <td><div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div>
+                  <div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div></td>
+                <td>&nbsp;</td>
+                <td><div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div>
+                  <div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div></td>
+              </tr>
+              <tr>
+                <td class="technician-info"><div class="tech-name">Technician 2</div>
+                  <div class="tech-available btn btn-ts">Set Unavailability</div></td>
+                <td>&nbsp;</td>
+                <td><div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div></td>
+                <td></td>
+                <td class="day-holiday"><span>Day off Holiday</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="current-week">
+                <td class="technician-info"><div class="tech-name">Technician 3</div>
+                  <div class="tech-available btn btn-ts">Set Unavailability</div></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="technician-info"><div class="tech-name">Unassigned Requests</div></td>
+                <td><div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div>
+                  <div class="day-info"> <span class="visit-num">R123</span> <span class="visit-icons"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </div></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--inner-pages transparent-white-background -->
+  </form>
+</div>
+<!-- .container main-content-top-margin --> 
+
+<br />
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline">
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="#">FAQ</a></li>
+          <li>|</li>
+          <li><a href="#">Sitemap</a></li>
+          <li>|</li>
+          <li><a href="#">Website Policies</a></li>
+          <li>|</li>
+          <li><a href="#">Trademarks</a></li>
+          <li>|</li>
+          <li><a href="#">Anti-Corruption Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eParticipation Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eAccessibility Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eTransformation Policy</a></li>
+          <li>|</li>
+          <li><a href="#">Government Open Data Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eOman</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline social-icons">
+          <li><a href="#"><img src="images/store/google-play-badge.png" alt="Get it on Google Play"></a></li>
+          <li><a href="#"><img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store"></a> </li>
+        </ul>
+      </div>
+      <div class="col-md-4"  style="text-align:center;"> 
+        <!-- <h4>Follow with us</h4> -->
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+          <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="pull-right"> <a class="pull-right ml10" href="http://www.w3.org/" target="_blank"><img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline" style="text-align: center;">
+          <li>Copyright © Ministry of Regional Municipalities and Water Resources, All Rights Reserved</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End container --> 
+</section>
+<!-- FOOTER END --> 
+
+<!--Scrolling top--> 
+<a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br />
+Top </a> 
+<!-- end scrolling top--> 
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/main.js"></script> 
+<script src="js/scrollJS.js"></script> 
+<script src="js/scrollToTop.js"></script> 
+<script src="js/text-resize.js"></script> 
+<script src="js/demo.js"></script> 
+
+<!-- Include Data Table smartWizard source --> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/dataTables.bootstrap.min.js"></script> 
+
+<!-- Include smartWizard source --> 
+<script src="js/jquery.smartWizard.js"></script> 
+
+<!-- Include Smartwizardws plugin --> 
+<script src="js/smartwizardws.js"></script> 
+<!-- Include Preloader plugin --> 
+<script src="js/Preloader.js"></script> 
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script> 
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    orientation: "auto bottom",
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true
+});
+});
+
+</script> 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</body>
+</html>

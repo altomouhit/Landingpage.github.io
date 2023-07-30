@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="Authority" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>Delegator</title>
+
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Header-->
+<link rel="stylesheet" href="css/header.css">
+<!-- Header-->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Comman CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<!-- Start Header -->
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="index.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="index.html" title="Ministry of Regional Municipality & Water Resources">
+      <img src="images/moi-logo-white.png" id="navbar-logo" alt="Ministry of Regional Municipality & Water Resources"></a>
+    </div>
+</header>
+<nav class="navbar-core">
+  <div class="container-fluid">
+    <div class="col-xs-3 col-sm-5 home-icon">
+      <ul class="nav navbar-nav">
+        <li><a href="TS-dashbaord.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-2 text-size text-center">
+      <a href="#" class="small" id="lnkDecrease">A-</a> <a href="#" id="lnkDefault" class="current">A</a>
+      <a href="#" class="large" id="lnkIncrease">A+</a></div>
+    <div class="col-xs-7 col-sm-4 text-right user-icon">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i class="fa fa-user-circle"></i><span class="user-name"><span class="wel-text">Welcome Omar Ahmed</span><i class="fa fa-angle-down" aria-hidden="true"></i></span> </a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-2 col-sm-1 text-right language-change"><a href="TS-dashbaord-ar.html">عربى</a></div>
+  </div>
+</nav>
+<!-- End Header -->
+<div class="container main-content-top-margin">
+
+  <!--Main content-->
+  <div class="row panel-head-services">
+    <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+      <div class="panel-text">Delegator</div>
+    </div>
+    <div class="col-sm-4 nopadding">
+      <ul class="pull-right">
+        <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help</a></li>
+        <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>Print</a></li>
+        <li><a href="javascript:void(0);" class="helprint" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--/.Main content-->
+
+  <!-- SmartWizard html -->
+  <!--Inner Pages Start -->
+  <div class="inner-pages transparent-white-background">
+    <fieldset>
+      <div class="form-group">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="delID" class="required">Delegator ID</label>
+            <input type="text" name="delID" id="delID" placeholder="Delegator ID" class="form-control" value="301833" readonly="readonly">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="delName" class="required">Delegator Name</label>
+            <input type="text" name="delName" id="delName" placeholder="Delegator Name" class="form-control" value="Sri" readonly="readonly"/>
+          </div>
+        </div> <!-- /.row -->
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="ActiveYnFrom" class="required">From Date</label>
+            <div class="input-group date">
+              <input type="text" name="ActiveYnFrom" id="ActiveYnFrom" class="form-control" placeholder="dd/MM/yyyy" readonly />
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="ActiveYnTo" class="required">To Date</label>
+            <div class="input-group date">
+              <input type="text" name="ActiveYnTo" id="ActiveYnTo" class="form-control" placeholder="dd/MM/yyyy" readonly />
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+          </div>
+        </div> <!-- /.row -->
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="empNo" class="required">Delegate ID</label>
+            <input type="text" name="empNo" id="empNo" placeholder="Delegate ID" class="form-control">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="empName" class="required">Delegate Name</label>
+            <input type="text" name="empName" id="empName" placeholder="Delegate Name" class="form-control" readonly="readonly">
+          </div>
+        </div> <!-- /.row -->
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="Municiplity_ser" class="required">Municipality</label>
+            <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
+              <option value="1000">Please select</option>
+              <option value="1">Sohar Municipality</option>
+              <option value="2">Saham Municipality</option>
+              <option value="3">Ibra Municipality</option>
+              <option value="4">Duqum Municipality</option>
+              <option value="5">Nizwa Municipality</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="delRole" class="required">Role</label>
+            <select class="form-control" id="delRole">
+              <option value="1000">Please select</option>
+              <option value="11">Tech</option>
+            </select>
+          </div>
+        </div> <!-- /.row -->
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="ActiveYn" class="required">Status</label>
+            <select class="form-control" id="ActiveYn">
+              <option value="1000">Please select</option>
+              <option value="Y">Active</option>
+              <option value="N">Inactive</option>
+            </select>
+          </div>
+        </div> <!-- /.row -->
+      </div> <!-- /.form-group -->
+      <div class="pull-right">
+        <button type="reset" class="btn btn-raised btn-primary">Cancel</button>
+        <button type="submit" class="btn btn-raised btn-primary" onclick="delegationType()" id="form1Submit">Save</button>
+      </div>
+    </fieldset>
+  </div> <!-- inner-pages -->
+</div> <!-- .container main-content-top-margin -->
+<br />
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-md-4">
+        <a href="index.html">
+          <img alt="oman-vision" id="footer-logo" class="img-responsive mb-2" src="images/oman-vision-white.png"></a>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline text-center">
+          <li><script>document.write(new Date().getFullYear())</script> 
+            <a class="font-weight-bold" href="https://www.moi.gov.om"
+              target="_blank">Copyright &copy; Ministry of Interior</a> - All Rights Reserved.</li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-right">
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/instagram-logo.svg" class="list-brand-icon" alt="">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/twitter.svg" class="list-brand-icon" alt=""></a>
+          </li>
+
+          <!-- brand -->
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="images/oman-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="images/w3c-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div> <!-- /.container -->
+</section>
+<!-- FOOTER END -->
+
+<!--Scrolling top-->
+<a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br />
+Top </a>
+<!-- end scrolling top-->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scrollJS.js"></script>
+<script src="js/scrollToTop.js"></script>
+<script src="js/text-resize.js"></script>
+<script src="js/demo.js"></script>
+
+<!-- Include Data Table smartWizard source -->
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+
+<!-- Include smartWizard source -->
+<script src="js/jquery.smartWizard.js"></script>
+
+<!-- Include Smartwizardws plugin -->
+<script src="js/smartwizardws.js"></script>
+<!-- Include Preloader plugin -->
+<script src="js/Preloader.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    orientation: "auto bottom",
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true
+});
+});
+
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<!--<script>
+$(document).ready(function(){
+	$('.violation-list').hide();
+	$('.btn-search-license').click(function(){
+		$('.license-list').show();
+		$('.violation-list').hide();
+	})
+	$('.btn-search-violation').click(function(){
+		$('.license-list').hide();
+		$('.violation-list').show();
+	})
+})
+</script>-->
+</body>
+</html>

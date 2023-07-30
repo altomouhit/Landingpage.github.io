@@ -1,0 +1,9 @@
+<svg id="Group_4396" data-name="Group 4396" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <rect id="Rectangle_1843" data-name="Rectangle 1843" width="22" height="22" fill="#fff" opacity="0"/>
+  <g id="megaphone" transform="translate(1 -13.992)">
+    <path id="Path_863" data-name="Path 863" d="M219.459,15.992a.562.562,0,0,0-.562.562v.877a10.968,10.968,0,0,1-7.623,3.061h-.289v6.75h.289A10.968,10.968,0,0,1,218.9,30.3v.877a.562.562,0,0,0,1.125,0V16.554A.562.562,0,0,0,219.459,15.992Z" transform="translate(-203.074 0)" fill="#ffffff"/>
+    <path id="Path_864" data-name="Path 864" d="M94.36,351.054v-5.062H90.985v5.062a.562.562,0,0,0,.562.562H93.8A.562.562,0,0,0,94.36,351.054Z" transform="translate(-87.573 -317.626)" fill="#ffffff"/>
+    <path id="Path_865" data-name="Path 865" d="M481.985,174.335v3.874a2.23,2.23,0,0,0,0-3.874Z" transform="translate(-463.912 -152.406)" fill="#ffffff"/>
+    <path id="Path_866" data-name="Path 866" d="M0,139.368a3.375,3.375,0,0,0,3.374,3.375H6.786v-6.75H3.534A3.467,3.467,0,0,0,0,139.368Z" transform="translate(0 -115.501)" fill="#ffffff"/>
+  </g>
+</svg>

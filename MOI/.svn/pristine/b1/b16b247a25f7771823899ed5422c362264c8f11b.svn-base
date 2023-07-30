@@ -1,0 +1,64 @@
+.login-anmi{
+    position: fixed;
+    right: 0.5%;
+    top: 175px;
+    z-index: 1;
+    border: 1px #ccc solid;  
+    cursor: pointer;
+    padding-top:3px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background: #0097c3;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    line-height: .8;
+}
+.login-anmi:hover{
+    width: 55px;
+    height: 55px;
+    background-color: #2eaded;
+    text-decoration: none !important;
+}  
+.login-anmi a{
+    color: #FFF !important;
+}
+
+.login-anmi a:hover{
+    text-decoration: none !important;
+}
+@media (max-width: 991px) {
+    .login-anmi {
+        position: absolute;
+        top: 145px;
+        left: 5px;
+    }
+
+    .login-anmi:hover{
+        padding-left: 0px;
+    } 
+
+}
+
+@media (max-width: 768px) {
+    .login-anmi {
+        position: absolute;
+        top: 129px;
+        left: 5px;
+    }
+
+    .login-anmi:hover{
+        padding-left: 10px;
+
+    } 
+
+}

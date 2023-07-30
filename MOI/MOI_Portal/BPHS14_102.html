@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="author" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href=" images/Khanjar.png">
+<title>Health Violations</title>
+<script src="js/jquery-3.3.1.js"></script>
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<!-- Header-->
+<link rel="stylesheet" href="css/header.css">
+<!-- Header-->
+
+<!-- Top Menu -->
+<link rel="stylesheet" href="css/top-menu.css" />
+<!-- Top Menu -->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- side-nav Services -->
+<link rel="stylesheet" href="css/side-nav.css">
+<!-- End side-nav Services -->
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Common CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/blue.css" id="colorstyle">
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<link rel="stylesheet" href="css/mobile-app.css"/>
+<!-- End scrolling assets -->
+
+<!-- Select2 -->
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Common CSS files-->
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<div class="dm-welcome-msg"> <span>Welcome To OMAN Municipality Smart Portal</span> </div>
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="index.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="index.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/oman.svg" alt="Ministry of Regional Municipality & Water Resources"></a>
+      <ul class="gettime">
+        <li id="date"></li>
+        <li class="menu-separator">|</li>
+        <li id="time"></li>
+      </ul>
+    </div>
+  </header>
+
+<!--  Modified by Balarama krishna --> 
+<!--  Modified Date 10/03/2017 --> 
+
+<!--Top Menu-->
+<div class="top-menu">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-9">
+      <nav class="navbar navbar-default navbar-dm-theme" role="navigation"> 
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="emarat-logo-menu" href="#" rel="nofollow" target="_blank" title="eService Portal"> <img src="" alt=""  width="100" height="20"> </a> </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <!--class="active"-->
+            <li><a href=" index.html" accesskey="0"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About MRMWR</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="media.html"><i class="fa fa-medium" aria-hidden="true"></i>&nbsp;Media Center</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Tenders.html"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Tender Announcement </a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Downloads.html"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Downloads</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Track.html"><i class="fa fa-crosshairs" aria-hidden="true"></i>&nbsp;Track Application</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Zoom"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="font-change" id="lnkDecrease" title="Zoomout" href="JavaScript:Void(0)" >A-</a></li>
+                <li><a class="font-change" id="lnkNormal"  title="Normalview" href="javascript:window.location.reload();" >A</a></li>
+                <li><a class="font-change" id="lnkIncrease" title="Zoomin" href="JavaScript:Void(0)" >A+</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Change Color"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li id="demo-lunar"   class="btn demo-lunar ccolor" title="lunar"></li>
+                <li id="demo-blue"    class="btn demo-blue ccolor" title="Blue"></li>
+                <li id="demo-green"   class="btn demo-green ccolor" title="Green"></li>
+                <li id="demo-red"     class="btn demo-red ccolor" title="Red"></li>
+                <li id="demo-orange"  class="btn demo-orange ccolor" title="Orange"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3">
+      <div class="search-div transparent-white-background">
+        <div class="row">
+          <div class="col-xs-10 col-sm-10 col-md-10">
+            <form method="GET" target="_self" action="" class="pure-form pure-form-stacked">
+              <input type="search" name="q" id="tags" placeholder="Search" maxlength="256" value=""/>
+              <div class="theme-dark-red"><a title="Search" href="javascript:;" onclick="document.forms[0].submit();"> 
+                <span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Search</span></a></div>
+            </form>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2">
+            <div class="langL pull-right bold" style="">
+              <?xml version="1.0" encoding="ISO-8859-1" ?>
+              <!-- <a href=" BPTS01ar.html" hreflang="ar">&#1593;&#1585;&#1576;&#1610;</a> --> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Top Menu-->
+
+<div class="container main-content-top-margin"> 
+  <!--Main content-->
+  <div class="row transparent-white-background">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel panel-default panel-dm-theme">
+        <div class="panel-head-services header-with-image" style="background: rgb(61, 199, 83);">
+          <div class="panel-title"> <img src="images/Services/HSicon1.svg" alt="Health Violations"> Health Violations
+            <ul class="pull-right" style="list-style: none;display: inline-flex;">
+              <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help &nbsp;</a> </li>
+              <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i> Print &nbsp;</a> </li>
+              <li><a href="myreg.html" class="helprint"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back &nbsp;</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Main content--> 
+  
+  <!--Section start from here-->
+  <!--Inner Pages Start -->
+  <div class="inner-pages transparent-white-background">
+    <div class="row"> 
+      <!-- SmartWizard html -->
+      <div id="smartwizard">
+        <ul id="credit">
+          <li data-interest = "1"><a href="#ViolationData"><i class="fa fa-balance-scale fa-fw"></i>Violation Data</a></li>
+          <!-- <li data-interest = "2"><a href="#History"><i class="fa fa-weixin fa-fw"></i>Violations History</a></li> -->
+          <li data-interest = "3"><a href="#Comments"><i class="fa fa-check-square-o fa-fw"></i>Comments / Actions</a></li>
+          <li data-interest = "4"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>Documents</a></li>
+          <!-- <li data-interest = "5"><a href="#TechnicalReport"><i class="fa fa-user-secret fa-fw"></i>Technical Report</a></li> -->
+          <li data-interest = "5"><a href="#Output"><i class="fa fa-print fa-fw"></i>Payment &amp; Output</a></li>
+          <li data-interest = "6"><a href="#certificate"><i class="fa fa-certificate" aria-hidden="true"></i>Certificate</a></li>
+        </ul>
+        <div>
+          <div id="ViolationData" class="">
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend>Inspector Details</legend>
+                  <div class="row">
+                    <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                      <label for="vioday">Municipality</label>
+                      <input type="text" class="form-control" id="vioday" placeholder="Municipality" value="Nizwa" readonly />
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                      <label for="vioSrno">Section of Edit the Violation</label>
+                      <input type="text" class="form-control" id="vioSrno" placeholder="Section of Edit the Violation" readonly />
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                      <label for="vioday">Name of Inspector</label>
+                      <input type="text" class="form-control" id="vioday" placeholder="Name of Inspector" readonly />
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                      <label for="viodate">Date</label>
+                      <input type="text" class="form-control" id="viodate" placeholder="Date" readonly />
+                    </div>
+                  </div> <!-- End row -->
+                </fieldset>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group -->
+            
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend>Violator Details</legend>
+                  <div class="table-responsive">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">Municipal License Number</th>
+                              <td>10922323</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Municipal Licenses</th>
+                              <td>000001</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Municipal License Expiry Date</th>
+                              <td>23/02/2020</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Civil ID / Commercial ID</th>
+                              <td>109823168</td>
+                            </tr>
+                            <tr>
+                              <th>Violator Name (Name / Commercial Name)</th>
+                              <td>Omar</td>
+                            </tr>
+                            <tr>
+                              <th>Mobile Number</th>
+                              <td>91397889</td>
+                            </tr>
+                            <tr>
+                              <th>Email</th>
+                              <td>abc@mrmwr.gov.om</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">Vehicle Number</th>
+                              <td>85260</td>
+                            </tr>
+                            <tr>
+                              <th>Vehicle Character</th>
+                              <td>Mus</td>
+                            </tr>
+                            <tr>
+                              <th>Governorate</th>
+                              <td>Muscat</td>
+                            </tr>
+                            <tr>
+                              <th>Willayat</th>
+                              <td>Bousher</td>
+                            </tr>
+                            <tr>
+                              <th>Village</th>
+                              <td>Bousher</td>
+                            </tr>
+                            <tr>
+                              <th>Activity Type</th>
+                              <td>Activity 1</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group -->
+            
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend>Violation Details</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Violation_table" class="table table-striped table-bordered" width="100%">
+                        <thead class="thead-default">
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> <!-- End row -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="table-responsive">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-4">Violation Type</th>
+                              <td><input type="text" id="Vio_Type" name="" class="form-control" readonly></td>
+                            </tr>
+                            <tr>
+                              <th>Actions to be Taken</th>
+                              <td><input type="text" id="action_taken" name="" class="form-control" readonly></td>
+                            </tr>
+                            <tr>
+                              <th>Number of Employee (violators)</th>
+                              <td><input type="text" id="noemp" name="" class="form-control" readonly></td>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div> <!-- /.col-lg-6 -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="table-responsive">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-4">Rules not met</th>
+                              <td><input type="text" id="Rules_met" name="" class="form-control" readonly></td>
+                            </tr>
+                            <tr>
+                              <th>Fine</th>
+                              <td><input type="text" id="Fineid" name="" class="form-control" readonly></td>
+                            </tr>
+                            <tr>
+                              <th>Ministerial Decision</th>
+                              <td><input type="text" id="Minis_Deci" name="" class="form-control" readonly></td>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div> <!-- /.col-lg-6 -->
+                  </div> <!-- End row -->
+                </fieldset>
+              </div> <!-- .End row --> 
+            </div> <!-- .form-group -->
+
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend></legend>
+                  <div class="row">
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Minis_Deci">Period to remove the fine</label> 
+                      <input class="form-control" id="Minis_Deci" placeholder="Period to remove the fine" type="text" readonly>
+                    </div>
+                  </div> <!-- End row -->
+                </fieldset> 
+              </div> <!-- .End row --> 
+            </div> <!-- .form-group -->
+
+          </div> <!-- End ViolationData -->
+          
+          <div id="History" class="">
+            <fieldset>
+              <legend>History</legend>
+              <div class="row">
+                <div class="table-responsive">
+                  <table id="Commentstable" class="table table-striped table-bordered">
+                    <thead class="thead-default">
+                      <tr>
+                        <th>Violation No</th>
+                        <th>Type</th>
+                        <th>Created Date</th>
+                        <th>License No</th>
+                        <th>Created By</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>HS1700001</td>
+                        <td>Health Violations</td>
+                        <td>14/06/2012</td>
+                        <td>286111944284540</td>
+                        <td>Sai</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div><!-- End .row -->
+            </fieldset>
+          </div><!-- End History -->
+          
+          <div id="Comments" class="">
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend>Comments Details</legend>
+                  <div class="table-responsive">
+                    <table id="Commentstable" class="table table-striped table-bordered">
+                      <thead class="thead-default">
+                        <tr>
+                          <th>Date and Time</th>
+                          <th>Comments</th>
+                          <th>Request Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>10/05/2017  09:41AM</td>
+                          <td>Please Modify the Request with... </td>
+                          <td>Clarifications Req.</td>
+                        </tr>
+                        <tr>
+                          <td>12/05/2017  11:15AM</td>
+                          <td></td>
+                          <td>Submitted</td>
+                        </tr>
+                        <tr>
+                          <td>13/05/2017  10:25AM</td>
+                          <td></td>
+                          <td>Approved by Head of Section</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div> <!-- .End row --> 
+            </div> <!-- .form-group --> 
+          </div> <!-- End Comments -->
+          
+          <div id="Attachment" class="">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <fieldset class="fieldset">
+                    <legend>Site Inspection Documents</legend>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Documents</th>
+                            <th>File Name</th>
+                            <th>Upload By</th>
+                            <th>Date</th>
+                            <th>Downloads</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row" class="bold">1</td>
+                            <td>Title Deed</td>
+                            <td><a style = "cursor:pointer" onclick = "TitleDeed();" title="TitleDeed">TitleDeed.pdf</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-download"></i></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="bold">2</td>
+                            <td>Sketch</td>
+                            <td><a style = "cursor:pointer" onclick = "Sketch();" title="TitleDeed">Sketch.pdf</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-download"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <fieldset>
+                    <legend>File Viewer</legend>
+                    <iframe src="" id="iframe">
+                    <p>Your browser does not support iframes.</p>
+                    </iframe>
+                  </fieldset>
+                </div>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group --> 
+          </div> <!-- Attachment -->
+          
+          <div id="TechnicalReport" class=""> 
+            <div class="form-group">
+              <div class="row">
+                <fieldset class="fieldset">
+                  <legend>Technical Report Details</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Report_table" class="table table-striped table-bordered" width="100%">
+                        <thead class="thead-default">
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> <!-- End row -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="table-responsive">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-2">Site Inspection Date</th>
+                              <td><input type="text" id="SIDate" name="" class="form-control"></td>
+                            </tr>
+                            <tr>
+                              <th>Site Inspector Name</th>
+                              <td><input type="text" id="SIname" name="" class="form-control"></td>
+                            </tr>
+                            <tr>
+                              <th>Report</th>
+                              <td><textarea id="Reportid" name="" class="form-control" rows="8"></textarea></td>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                  </div> <!-- End row -->
+                </fieldset>
+              </div> <!-- .End row --> 
+            </div> <!-- .form-group -->
+          </div> <!-- #TechnicalReport -->
+
+          <div id="Output" class="">
+            <fieldset>
+              <legend>Payment</legend>
+              <div class="row">
+                <div class="table-responsive">
+                  <table id="Paymentstable" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Payment type</th>
+                        <th>Date &amp; Time</th>
+                        <th>Value to be paid</th>
+                        <th>Paid value</th>
+                        <th>Receipt Number</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Advanced payment</td>
+                        <td>10/05/2016  09:41</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>A0092811</td>
+                      </tr>
+                      <tr>
+                        <td>Fee</td>
+                        <td>-</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>Deposit</td>
+                        <td>13/05/2016  10:25</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>A0098621</td>
+                      </tr>
+                      <tr>
+                        <td>Fine</td>
+                        <td>-</td>
+                        <td>0</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> <!-- End .row -->
+            </fieldset>
+            <fieldset>
+              <legend>Output</legend>
+              <div class="row">
+                <div class="table-responsive">
+                  <table id="Paymentstable" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>Date &amp; Time</th>
+                        <th>Violation Number</th>
+                        <th width="5%">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>10/05/2016</td>
+                        <td>2</td>
+                        <td><a href="#" class="btn btn-hs"><i class="fa fa-download" aria-hidden="true">&nbsp;</i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> <!-- End .row -->
+            </fieldset>
+            <br>
+            <div class="col-sm-12">
+              <div class="form-group pull-right">
+                <button type="button" class="btn btn-hs"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Payment</button>
+              </div>
+            </div>
+          </div> <!-- End #Output -->
+
+          <div id="certificate" class="">
+            <fieldset>
+              <legend>Certificate</legend>
+              <div class="row">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped">
+                    <thead class="hs-thead">
+                      <tr>
+                        <th>S.No</th>
+                        <th>Violation Number</th>
+                        <th>Violation Name</th>
+                        <th width="5%">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>HS1900V123</td>
+                        <td>Omar</td>
+                        <td><button type="button" class="btn btn-hs"><i class="fa fa-download" aria-hidden="true"></i></button></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>HS1900V321</td>
+                        <td>Civid ID</td>
+                        <td><button type="button" class="btn btn-hs"><i class="fa fa-download" aria-hidden="true"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- /.table-responsive -->
+              </div> <!-- /.row -->
+            </fieldset>
+          </div> <!-- /#certificate -->
+
+        </div> <!-- .Empty div --> 
+      </div> <!-- End SmartWizard html --> 
+    </div> <!-- End row --> 
+  </div> <!--End Inner Pages --> 
+</div> <!-- End container --> 
+<br />
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline">
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="#">FAQ</a></li>
+          <li>|</li>
+          <li><a href="usefullinks.html" title="Useful Links">Useful Links</a></li>
+          <li>|</li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li>|</li>
+          <li><a href="Website-Policies.html">Website Policies</a></li>
+          <li>|</li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li>|</li>
+          <li><a href="#">Anti-Corruption Policy</a></li>
+          <li>|</li>
+          <li><a href="eparticipation-policy.html">eParticipation Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eAccessibility Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eTransformation Policy</a></li>
+          <li>|</li>
+          <li><a href="#">Government Open Data Policy</a></li>
+          <li>|</li>
+          <li><a href="#">eOman</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline social-icons">
+          <li><a href="#"> <img src="images/store/google-play-badge.png" alt="Get it on Google Play" style="width: 120px;"></a></li>
+          <li><a href="#"> <img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="width: 120px;"></a> </li>
+        </ul>
+      </div>
+      <div class="col-md-4"  style="text-align:center;"> 
+        <!-- <h4>Follow with us</h4> -->
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+          <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="pull-right"> <a class="pull-right ml10" href="http://www.w3.org/" target="_blank"> <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline" style="text-align: center;">
+          <li>Copyright &copy; Ministry of Regional Municipalities and Water Resources, All Rights Reserved</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End container --> 
+</section>
+<!-- FOOTER END --> 
+
+<!--Scrolling top--> 
+<a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br>
+Top </a> 
+<!-- end scrolling top--> 
+
+<!-- Side Nav top-->
+<div class="login-anmi wow fadeInDown">
+  <ul>
+    <li><a class="lnk-social social-facebook social-rounded" href=" login.html"><img src=" images/sidenav/loginside.png"> Login</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="Track.html"><img src="images/sidenav/track.png">Track Application</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="about.html"><img src="images/sidenav/about.png">About Ministry</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="Tenders.html"><img src="images/sidenav/Tender.png"> Tender Announcement</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/newside.png"> News Letters</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/library.png"> Electronic Library</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/anreport.png"> Annual Reports</a></li>
+  </ul>
+</div>
+<!-- end Side Nav top--> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script type="text/javascript" src="js/Time/timejs.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/demo.js"></script> 
+<!-- Include smartWizard source -->
+<script src="js/jquery.dataTables.js"></script> 
+<script src="js/dataTables.bootstrap.js"></script> 
+<script src="js/jquery.smartWizard.js"></script> 
+<script src="js/smartwizardHSviolation.js"></script>
+</body>
+</html>

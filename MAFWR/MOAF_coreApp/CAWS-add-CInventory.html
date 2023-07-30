@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11,10" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <META name="robots" content="follow,index" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+    <meta name="description" content="Official Portal for Oman Municipality" />
+    <meta name="Authority" content="oman Government, oman Municipality" />
+    <meta name="generator" content="ITON oman" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Add Inventory</title>
+
+    <!--Start CSS English / Arabic files-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" id="changeStylesheet" />
+    <!-- Header-->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Header-->
+
+    <!-- Homepage Main Content -->
+    <link rel="stylesheet" href="css/homepage-main-content.css" />
+    <!-- Homepage Main Content -->
+
+    <link rel="stylesheet" href="css/scrollToTop.css" />
+
+    <!-- LOAD smart_wizard CSS -->
+    <link rel="stylesheet" href="css/smart_wizard.css" />
+
+    <!-- LOAD DataTables CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+    <!--End CSS English / Arabic files-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+    <!-- ........................................................................................................................ -->
+    <!--Start Comman CSS files-->
+    <!--text resize assets -->
+    <link rel="stylesheet" href="css/text-resize.css" />
+    <!-- End text resize assets -->
+
+    <!--font-awesome-4.1.0-->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!--font-awesome-4.1.0-->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Footer assets -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- End Footer assets -->
+
+    <!--scrolling assets -->
+    <link rel="stylesheet" href="css/scroll.css" />
+    <!-- End scrolling assets -->
+
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/mrm.css">
+    <!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <!-- Start Header -->
+    <header>
+        <div class="enjaz-logo">
+            <div class="dm-Logo">
+                <a href="index.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a>
+            </div>
+        </div>
+        <div class="dg-Logo">
+            <a href="index.html" rel="nofollow" title="MOAF">
+                <img src="images/MOAF-white.png" id="navbar-logo" alt="MOAF"></a>
+        </div>
+    </header>
+    <nav class="navbar-core">
+        <div class="container-fluid">
+            <div class="col-xs-3 col-sm-5 home-icon">
+                <ul class="nav navbar-nav">
+                    <li><a href="WS-dashboard.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 text-size text-center"><a href="#" class="small" id="lnkDecrease">A-</a> <a href="#" id="lnkDefault" class="current">A</a> <a href="#" class="large" id="lnkIncrease">A+</a></div>
+            <div class="col-xs-7 col-sm-4 text-right user-icon"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i
+            class="fa fa-user-circle"></i><span class="user-name"><span class="wel-text">Welcome Omar Ahmed</span><i
+              class="fa fa-angle-down" aria-hidden="true"></i></span> </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-2 col-sm-1 text-right language-change"><a href="CAWS-add-Inventory-arabic.html">عربى</a></div>
+        </div>
+    </nav>
+    <!-- End Header -->
+    <div class="container main-content-top-margin">
+
+        <!--Main content-->
+        <div class="row panel-head-services ws-panel">
+            <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+                <div class="panel-text">Add / Update Contractor</div>
+            </div>
+            <div class="col-sm-4 nopadding">
+                <ul class="pull-right">
+                    <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help</a></li>
+                    <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>Print</a></li>
+                    <li><a href="javascript:void(0);" class="helprint" onclick="goBack()"><i class="fa fa-chevron-left"
+                aria-hidden="true"></i>Back</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--End Main content-->
+
+        <!-- SmartWizard html -->
+        <!--Inner Pages Start -->
+        <div class="inner-pages transparent-white-background">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#Contractor_tab"><i class="fa fa-building-o fa-fw" 
+          aria-hidden="true">&nbsp;</i>Contractor Details </a></li>
+                <li><a data-toggle="tab" href="#Drilling_tab"><i class="fa fa-user-secret fa-fw" aria-hidden="true">&nbsp;</i>
+          Drilling Equipment </a></li>
+                <li><a data-toggle="tab" href="#WorkC_tab"><i class="fa fa-chevron-left fa-fw"
+              aria-hidden="true">&nbsp;</i>Work Completion Details </a></li>
+                <li><a data-toggle="tab" href="#Violation_tab"><i class="fa fa-balance-scale fa-fw"
+              aria-hidden="true">&nbsp;</i>Violation</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="Contractor_tab" class="tab-pane active">
+                    <fieldset>
+                        <legend>Contractor Details</legend>
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="establishedBussName">Established Business Name</label>
+                                <input type="text" name="" id="establishedBussName" class="form-control" placeholder="Established business name" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="class_pump">Head Office of the Commercial Register</label>
+                                <input type="text" name="" id="headCR" class="form-control" placeholder="Head Office of the Commercial Register" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="CRNumber">Commercial Registration Number</label>
+                                <input type="text" name="CRNumber" id="CRNumber" class="form-control" placeholder="Commercial Registration Number" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="cerNumber">Certificate Registration Number</label>
+                                <input type="text" name="CRNumber" id="cerNumber" class="form-control" placeholder="Certificate Registration Number" readonly>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Govt">Governorate</label>
+                                <select name="" id="Govt" class="form-control" disabled>
+                  <option value="1000">Please select</option>
+                </select>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="state_ser">State</label>
+                                <select name="" id="state_ser" class="form-control" disabled>
+                  <option value="1000">Please select</option>
+                </select>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Village_ser">Village</label>
+                                <select class="form-control" id="Village_ser" disabled>
+                  <option value="1000">Please select</option>
+                </select>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="DrillingType">Drilling Type</label>
+                                <select name="" id="DrillingType" class="form-control" disabled>
+                  <option value="1000">Please select</option>
+                </select>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="StartDOR">Start Date of Registration</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="StartDOR" placeholder="dd/mm/yyyy" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="lastRDate">Last Renewal Date</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="lastRDate" placeholder="dd/mm/yyyy" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="expiryDate">Expiry Date</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" id="expiryDate" placeholder="dd/mm/yyyy" readonly>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="licenseCase">License Case</label>
+                                <select name="" id="licenseCase" class="form-control" disabled>
+                  <option value="1000">Please select</option>
+                </select>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="oName">Owner Name</label>
+                                <input type="text" name="" id="oName" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="phNo">Phone</label>
+                                <input type="tel" name="" id="phNo" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="faxNo">Fax</label>
+                                <input type="text" name="" id="faxNo" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="mobNumber">Mobile Number</label>
+                                <input type="tel" name="" id="mobNumber" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="pBox">Post Box</label>
+                                <input type="text" name="" id="pBox" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="IPCode">IP Code</label>
+                                <input type="text" name="" id="IPCode" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="eMail">E-mail</label>
+                                <input type="email" name="" id="eMail" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="NoDrilling">No. Drilling Engineers</label>
+                                <input type="text" name="" id="NoDrilling" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Nopr">No. Drilling Operators</label>
+                                <input type="text" name="" id="Nopr" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="noWells">No. Wells Diggers</label>
+                                <input type="text" name="" id="noWells" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="noTechnician">No. of Technician</label>
+                                <input type="text" name="" id="noTechnician" class="form-control" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="IPCode">Comments</label>
+                                <textarea name="" id="" cols="30" rows="10" class="form-control" readonly></textarea>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </fieldset>
+                </div>
+                <!-- /.tab-pane -->
+                <div id="Drilling_tab" class="tab-pane">
+                    <div class="form-group">
+                        <div class="row">
+                            <fieldset>
+                                <legend>Equipment</legend>
+                                <div class="row">
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Type_Equipment" class="required">Type of Equipment</label>
+                                        <select name="Type_Equipment" id="Type_Equipment" class="form-control">
+                      <option value="1000">Please select</option>
+                      <option value="330">Auto Drilling Equipment</option>
+                      <option value="331">Air Compressor</option>
+                    </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Name_Equipment">Equipment Name</label>
+                                        <input type="text" class="form-control" id="Name_Equipment" placeholder="Equipment Name" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="CRNO">Commercial Registration Name</label>
+                                        <input type="text" class="form-control numeric" id="CRNO" placeholder="Commercial Registration Name" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Equi_Engine">Engine No</label>
+                                        <input type="text" class="form-control" id="Equi_Engine" placeholder="Engine No" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Equi_Manuf">Manufacture Year</label>
+                                        <select class="form-control" name="Equi_Manuf" id="Equi_Manuf">
+                      <option value="1000">Please select</option>
+                    </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Equi_Country">Manufacture Country</label>
+                                        <input type="text" class="form-control" id="Equi_Country" placeholder="Manufacture Country" />
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="srnoid">
+                                        <label for="Equisrno">Serial Number</label>
+                                        <input type="text" class="form-control" id="Equisrno" placeholder="Serial Number" />
+                                    </div>
+                                    <div id="dateid">
+                                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                            <label for="Issuing_Date">Issuing Date</label>
+                                            <div class="input-group date">
+                                                <input type="text" class="form-control" id="Issuing_Date" placeholder="DD/MM/YYYY" />
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                            <label for="Expiry_Date">Expiration Date</label>
+                                            <div class="input-group date">
+                                                <input type="text" class="form-control" id="Expiry_Date" placeholder="DD/MM/YYYY" />
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                        <label for="Equi_Color">Color</label>
+                                        <input type="text" class="form-control" id="Equi_Color" placeholder="Color" />
+                                    </div>
+                                    <div class="form-group pull-right top-25">
+                                        <button type="button" class="btn btn-ws" onclick="Equi_fn()" id="Equibtn">Add</button>
+                                    </div>
+                                </div>
+                                <!-- End .row -->
+                                <div class="row">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped" id="Equi_table">
+                                            <thead class="ws-thead"></thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End row -->
+                            </fieldset>
+                        </div>
+                        <!-- End row -->
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="row">
+                        <div class="form-group pull-right">
+                            <button class="btn btn-ws btn-search-violation" type="button"><i class="fa fa-save" aria-hidden="true"></i>
+                Save</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tab-pane -->
+                <div id="WorkC_tab" class="tab-pane">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <fieldset>
+                                <legend>Work completion Details </legend>
+                                <div class="table-responsive table-db">
+                                    <table class="table table-bordered table-striped" id="">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Permit Number</th>
+                                                <th>Service Type</th>
+                                                <th>Governorate</th>
+                                                <th>Willayat</th>
+                                                <th>Work Completion Date </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1234</td>
+                                                <td>Service Type</td>
+                                                <td>Nizwa</td>
+                                                <td>Nizwa</td>
+                                                <td>16/01/2020</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.tab-pane -->
+                <div id="Violation_tab" class="tab-pane">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <fieldset class="violation-list">
+                                <legend>Violation</legend>
+                                <div class="table-responsive table-db">
+                                    <table class="table table-bordered table-striped" id="violation_table">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Violation number</th>
+                                                <th>Violation Type</th>
+                                                <th>Governorate</th>
+                                                <th>Willayat</th>
+                                                <th>Violation Issue Date</th>
+                                                <th>Violation Ending Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.tab-pane -->
+
+            </div>
+            <!-- /.tab-content -->
+        </div>
+        <!-- inner-pages -->
+        </form>
+    </div>
+    <!-- .container main-content-top-margin -->
+
+    <br />
+    <!-- FOOTER START -->
+    <section id="footer">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img alt="oman-vision" class="img-responsive mb-2" id="footer-logo" src="images/oman-vision-white.png"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                        <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="https://www.instagram.com/mafwr_om/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li> <a href="https://www.youtube.com/user/moaoman" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li> <a href="https://twitter.com/mafwr_om/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="pull-right">
+                        <a class="pull-right ml10" href="http://www.w3.org/" target="_blank">
+                            <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a>
+                        <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li>Copyright &copy; <a class="" href="https://www.maf.gov.om" target="_blank">Ministry of Agriculture, Fisheries &amp; Water
+                        Resources</a> - All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- FOOTER END -->
+
+    <!--Scrolling top-->
+    <a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br /> Top </a>
+    <!-- end scrolling top-->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollJS.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/text-resize.js"></script>
+    <script src="js/demo.js"></script>
+
+    <!-- Include Data Table smartWizard source -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.min.js"></script>
+    <!-- Include Preloader plugin -->
+    <script src="js/Preloader.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    <script type='text/javascript' src="js/WS/Equipment.js"></script>
+    <script type='text/javascript'>
+        $(function() {
+            $('.input-group.date').datepicker({
+                orientation: "auto bottom",
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                toggleActive: true
+            });
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+        $(document).ready(function() {
+            var Type_Equipment = $("select#Type_Equipment option:selected").attr('value');
+            $("select#Type_Equipment").trigger('change');
+            console.log("Beneficiary select" + Type_Equipment);
+            for (i = new Date().getFullYear(); i > 2000; i--) {
+                $('#Equi_Manuf').append($('<option />').val(i).html(i));
+            }
+
+        });
+        $("#Type_Equipment").on('change', function() {
+            if (this.value == '330') {
+                $('#srnoid').hide();
+                $('#dateid').show();
+            } else {
+                $('#srnoid').show();
+                $('#dateid').hide();
+            }
+        });
+    </script>
+</body>
+
+</html>

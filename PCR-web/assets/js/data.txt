@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "Quote": "Inc234",
+      "Date": "20-02-2022",
+      "callType": "Truma",
+      "subCategory": "Blunt force",
+      "stationName": "Boshar / 1050",
+      "incidentLocation": "Boshar-2"
+    },
+    {
+      "id": "2",
+      "Quote": "Inc786",
+      "Date": "20-02-2022",
+      "callType": "Medical",
+      "subCategory": "Shortness Of Breath - Suspected  Pulmonary Edema",
+      "stationName": "Burimi / 4001",
+      "incidentLocation": "AL-Burimi"
+    }
+  ]
+}

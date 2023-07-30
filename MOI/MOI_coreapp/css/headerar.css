@@ -1,0 +1,144 @@
+/*  header Styles   */
+header {
+	height: 75px;
+	/*background-color: #FFF;*/
+	/* background: #789383 url(../images/bg_header.png) 0 0 repeat; */
+	background-color: rgb(206 161 44);
+	z-index: 1;
+}
+.dm-Logo {
+	float: left;
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.dg-Logo {
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 9px;
+}
+/*  End header Styles */
+.dg-Logo >ul >li {
+	color: #ffffff;
+	padding: 0;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	font-size: 11px;
+	display: inline;
+}
+.dg-Logo img {
+	width: 22%;
+	height: auto;
+}
+@media (max-width: 768px) {
+header {
+	height: 60px;
+}
+.dm-Logo img {
+	height: 40px;
+}
+.dg-Logo img {
+	height: 40px;
+	width: auto;
+}
+}
+.gettime {
+	display: inline-block;
+	list-style: none;
+	letter-spacing: .5px;
+}
+@media (max-width: 750px) {
+.gettime {
+	display: none;
+	list-style: none;
+	letter-spacing: .5px;
+}
+}
+.dm-welcome-msg-weather {
+	display: block;
+	/* background: rgba(0, 0, 0, .60); */
+    /* height: 34px; */
+	width: 69%;
+	position: absolute;
+	top: 0;
+	/* margin-top: 1%; */
+	text-align: left;
+	font-size: 21px;
+	/* padding-left: 5%; */
+    /* padding-top: 5px; */
+	color: #ffffff;
+	z-index: 2;
+}
+ @media (max-width: 991px) {
+ .dm-welcome-msg-weather {
+ width: 65%;
+ text-align: center;
+ margin-top: 30%;
+ height: 60px;
+ font-size: 24px;
+ padding-top: 15px;
+}
+}
+@media (max-width: 767px) {
+ .dm-welcome-msg-weather {
+ width: 65%;
+ margin-top: 32%;
+ height: 50px;
+ font-size: 20px;
+ padding-left: 1%;
+ padding-top: 12px;
+}
+}
+@media (max-width: 991px) {
+ .dm-welcome-msg-weather {
+ display:none;
+}
+}
+.dm-welcome-msg {
+	display: none;
+	/* background: rgba(0, 0, 0, .60); */
+	height: 30px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	margin-top: 1%;
+	text-align: center;
+	font-size: 21px;
+	padding-right: 5%;
+	padding-top: 5px;
+	color: #ffffff;
+	z-index: 2;
+}
+ @media (max-width: 991px) {
+.dm-welcome-msg {
+	width: 100%;
+	text-align: center;
+	margin-top: 30%;
+	height: 60px;
+	font-size: 24px;
+	padding-top: 15px;
+}
+}
+@media (max-width: 767px) {
+.dm-welcome-msg {
+	width: 100%;
+	margin-top: 32%;
+	height: 50px;
+	font-size: 20px;
+	padding-left: 1%;
+	padding-top: 12px;
+}
+}
+@media (max-width: 991px) {
+.dm-welcome-msg {
+	display: none;
+}
+}
+.enjaz-logo {
+  background: url(../images/enjaz-logo-bg-ar.png) no-repeat left;
+  position: absolute;
+  height: 75px;
+  width: 100%;
+}

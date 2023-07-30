@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="author" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href=" images/Khanjar.png">
+<title>Request Municipal Service</title>
+<script src="js/jquery-3.3.1.js"></script>
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.css">
+
+<!-- Header-->
+<link rel="stylesheet" href="css/header.css">
+<!-- Header-->
+
+<!-- Top Menu -->
+<link rel="stylesheet" href="css/top-menu.css" />
+<!-- Top Menu -->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- side-nav Services -->
+<link rel="stylesheet" href="css/side-nav.css">
+<!-- End side-nav Services -->
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Common CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/blue.css" id="colorstyle">
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<link rel="stylesheet" href="css/mobile-app.css"/>
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Common CSS files-->
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<div dir="ltr">
+  <div class="dm-welcome-msg"> <span>Welcome To OMAN Municipality Smart Portal</span> </div>
+  <header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="index.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="index.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/oman.svg" alt="Ministry of Regional Municipality & Water Resources"></a>
+      <ul class="gettime">
+        <li id="date"></li>
+        <li class="menu-separator">|</li>
+        <li id="time"></li>
+      </ul>
+    </div>
+  </header>
+  
+  
+  <!--  Modified by Balarama krishna --> 
+  <!--  Modified Date 10/03/2017 --> 
+  
+  <!--Top Menu-->
+  <div class="top-menu">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-9">
+        <nav class="navbar navbar-default navbar-dm-theme" role="navigation"> 
+          
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="emarat-logo-menu" href="#" rel="nofollow" target="_blank" title="eService Portal"> <img src="" alt=""  width="100" height="20"> </a> </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!--class="active"-->
+              <li><a href=" index.html" accesskey="0"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About MRMWR</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="media.html"><i class="fa fa-medium" aria-hidden="true"></i>&nbsp;Media Center</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Tenders.html"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Tender Announcement </a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Downloads.html"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Downloads</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Track.html"><i class="fa fa-crosshairs" aria-hidden="true"></i>&nbsp;Track Application</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+              <!-- <li class="menu-separator">|</li>
+              <li><a href="#">The Disabled</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Zoom"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="font-change" id="lnkDecrease" title="Zoomout" href="JavaScript:Void(0)" >A-</a></li>
+                  <li><a class="font-change" id="lnkNormal"  title="Normalview" href="javascript:window.location.reload();" >A</a></li>
+                  <li><a class="font-change" id="lnkIncrease" title="Zoomin" href="JavaScript:Void(0)" >A+</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Change Color"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li id="demo-lunar"   class="btn demo-lunar ccolor" title="lunar"></li>
+                  <li id="demo-blue"    class="btn demo-blue ccolor" title="Blue"></li>
+                  <li id="demo-green"   class="btn demo-green ccolor" title="Green"></li>
+                  <li id="demo-red"     class="btn demo-red ccolor" title="Red"></li>
+                  <li id="demo-orange"  class="btn demo-orange ccolor" title="Orange"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <div class="search-div transparent-white-background">
+          <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10">
+              <form method="GET" target="_self" action="" class="pure-form pure-form-stacked">
+                <input type="search" name="q" id="tags" placeholder="Search" maxlength="256" value=""/>
+                <div class="theme-dark-red"><a title="Search" href="javascript:;" onclick="document.forms[0].submit();"> 
+                  <span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Search</span></a></div>
+              </form>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+              <div class="langL pull-right bold" style="">
+                <?xml version="1.0" encoding="ISO-8859-1" ?>
+                <!-- <a href=" BPTS01ar.html" hreflang="ar">&#1593;&#1585;&#1576;&#1610;</a> --> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Top Menu-->
+  
+  <div class="container main-content-top-margin"> 
+    <!--Main content-->
+    <div class="row transparent-white-background">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="panel panel-default panel-dm-theme">
+          <div class="panel-head-services header-with-image" style="background: rgb(61, 199, 83);">
+            <div class="panel-title"> 
+              <img src=" images/Services/HSicon1.svg" alt="Request Municipal Services New">Request Municipal Services New
+              <ul class="pull-right" style="list-style: none;display: inline-flex;">
+                <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>Help &nbsp;</a> </li>
+                <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i> Print &nbsp;</a> </li>
+                <li><a href="HServices.html" class="helprint"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back &nbsp;</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Main content--> 
+    
+    <!--Section start from here--> 
+    <!--Inner Pages Start -->
+    <form accept-charset="utf-8" action="#" data-toggle="validator" id="myForm" method="post" name="myForm" role="form">
+      <div class="inner-pages transparent-white-background">
+        <div class="row"> 
+          <!-- SmartWizard html -->
+          <div id="smartwizard">
+            <ul id="credit" name="credit">
+              <li data-interest = "1"><a href="#ApplicantDetails"><i class="fa fa-user fa-fw"></i>Applicant Details</a></li>
+              <li data-interest = "2"><a href="#BeneficiaryDetails"><i class="fa fa-users fa-fw"></i>Beneficiary / Request</a></li>
+              <li data-interest = "3"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>Required Documents</a></li>
+              <li data-interest = "4"><a href="#Payment"><i class="fa fa-credit-card fa-fw"></i>Payments &amp; Licenses</a></li>
+            </ul>
+            <div>
+              <div id="ApplicantDetails" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="appDetails_Err" class="Error">Please fill all required fields of Applicant Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Applicant Details</legend>
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="aid" class="control-label required">Applicant ID</label>
+                          <input type="text" class="form-control" id="aid" placeholder="Applicant ID" required validate-group="form-step-01" data-error="Applicant ID" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="applcntEpiryDate" class="required">ID Expiry Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" required validate-group="form-step-01"/>
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="aname" class="required">Applicant Name</label>
+                          <input type="text" class="form-control" id="aname" placeholder="Applicant Name" required validate-group="form-step-01" data-error="Applicant Name" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="address_app" class="required">Address</label>
+                          <input type="text" class="form-control" id="address_app" placeholder="Address" required validate-group="form-step-01" data-error="Address" />
+                          <span class="help-block with-errors"></span>
+                        </div>
+                      </div> <!-- End row -->
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Phnumber_app" class="required">Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8" required validate-group="form-step-01"/>
+                          <div id="Ph_Error" style="color:red">Please Enter a 8-Digits Mobile Number</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="eMail">Email</label>
+                          <input type="text" class="form-control" id="eMail" placeholder="Email" onchange="isValidEmail(this)">
+                          <div id="email_Error" style="color:red">Please Enter Valid Email</div>
+                        </div>
+                      </div> <!-- End row -->
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group -->
+                
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="serDetails_Err" class="Error">Please fill all required fields of Service Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Service Details</legend>
+                      <div class="form-group  col-sm-3 col-md-4 col-lg-3">
+                        <label for="Application Status">Application Status</label>
+                        <input type="text" class="form-control" id="astatus" placeholder="Application Status" value="In Progress" readonly>
+                      </div>
+                      <!-- <div class="form-group  col-sm-5 col-md-4 col-lg-3">
+                        <label for="Beneficiary Type">Beneficiary Type <span style="color:red">*</span></label>
+                        <div class="form-control" id="orgtypeID">
+                          <label class="radio-inline"> <input type="radio" name="optradio" value="Individual" checked> Individual </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio" value="Organization"> Organization </label>
+                        </div>
+                      </div> -->
+                      <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <label for="Service Request Name">Service Request Name</label>
+                        <input type="text" class="form-control" id="srname" placeholder="Service Request Name" value="Request Municipal Services New" readonly>
+                      </div>
+                      <div class="form-group  col-sm-3 col-md-4 col-lg-3 hidden">
+                        <label for="Service Request No">Service Request No</label>
+                        <input type="text" class="form-control" id="srno" placeholder="Service Request No">
+                      </div>
+                      <div class="form-group  col-sm-5 col-md-4 col-lg-3">
+                        <label for="srdate">Service Request Date</label>
+                        <div class="date">
+                          <input class="form-control" id="srdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <label for="sdate">Submission Date</label>
+                        <div class="date">
+                          <input class="form-control" id="sdate" placeholder="DD/MM/YYYY" type="text" disabled>
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                      <label for="Region">Governorate <span style="color:red">*</span></label>
+                      <select name="region_ser" id="region_ser" class="form-control">
+                        <option value="0">Please select...</option>
+                        <option value="1">Alshaqiya Governorate</option>
+                        <option value="2">Aldhahira Governorate</option>
+                        <option value="3">Mosandam Governorate</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                      <label for="Willayat_ser">Willayat <span style="color:red">*</span></label>
+                      <select name="Willayat_ser" id="Willayat_ser" class="form-control">
+                        <option value="0">Please select...</option>
+                        <option value="1">Suhar</option>
+                        <option value="2">Nizwa</option>
+                        <option value="3">Ibra</option>
+                        <option value="3">Saham</option>
+                        <option value="3">Nakhal</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Municipality">Municipality <span style="color:red">*</span></label>
+                      <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
+                        <option value="0">Please select...</option>
+                        <option value="461">Sohar Municipality</option>
+                        <option value="463">Saham Municipality</option>
+                        <option value="464">Ibra Municipality</option>
+                        <option value="465">Duqum Municipality</option>
+                        <option value="466">Nizwa Municipality</option>
+                      </select>
+                    </div>
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group --> 
+              </div> <!-- ApplicantDetails -->
+              
+              <div id="BeneficiaryDetails">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="padtopbot">
+                      <div id="Beneficiary_Err" class="Error">Please fill all required fields of Beneficiary Details </div>
+                    </div>
+                    <fieldset>
+                      <legend>Beneficiary Details</legend>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Beneficiary_select">Beneficiary <span style="color:red">*</span></label>
+                        <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                          <option value="1000">Please select...</option>
+                          <option value="Individual">Individual</option>
+                          <option value="Organization">Organization</option>
+                          <option value="Attorney" selected="">Authorized</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
+                        <label for="Authorization_No">Usufructer Number <span style="color:red">*</span></label>
+                        <input type="text" class="form-control numeric" id="Authorization_No" placeholder="Usufructer Number" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
+                        <label for="Investor_No">Investment Contract Number <span style="color:red">*</span></label>
+                        <input type="text" class="form-control numeric" id="Investor_No" placeholder="Investment Contract Number" />
+                      </div>
+                      <div id="benradio1">
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3" id="benradio">
+                          <label for="optradio" class="required">Beneficiary Type</label>
+                          <div class="form-control" id="orgtypeID">
+                            <label class="radio-inline"> <input type="radio" name="optradio" value="Individual" checked> Individual </label>
+                            <label class="radio-inline"> <input type="radio" name="optradio" value="Organization"> Organization </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3" id="sameowner">
+                        <label for="optradio3" class="required">Same as Owner</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio3" value="117" checked> Yes </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio3" value="118"> No</label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <label for="Same as Applicant" class="required">Same as Applicant</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="117"> Yes </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="118" checked> No</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="padtopbot">
+                          <div id="BenfDetails_Err" class="Error">Please fill all required fields of Beneficiary Details </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
+                          <label for="optradio2">Beneficiary Type </label>
+                          <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type" readonly>
+                        </div>
+                        <div id="benType" class="">
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="BeneficiaryID">Beneficiary ID <span style="color:red">*</span></label>
+                            <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="Beneficiary ID">
+                          </div>
+                          <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                            <label for="Bendate" class="required">ID Expiry Date</label>
+                            <div class="date">
+                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy"/>
+                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bname">Beneficiary Name </label>
+                            <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name">
+                          </div>
+                          <div id="benId">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Baddress">Beneficiary Address <span style="color:red">*</span></label>
+                              <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address">
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bph">Beneficiary Mobile Number <span style="color:red">*</span></label>
+                            <input type="text" class="form-control numeric" id="Bph" placeholder="Beneficiary Mobile Number" maxlength="8">
+                            <div id="Ph_BenfError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Bemail">Beneficiary Email Address</label>
+                            <input type="text" class="form-control" id="Bemail" placeholder="Beneficiary Email Address">
+                            <div id="Bemail_Error" style="color:red">Please Enter Valid Email</div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                            <label for="waqfName">waqf Name</label>
+                            <input type="text" class="form-control" id="waqfName" placeholder="waqf Name">
+                          </div>
+                        </div>
+                        <!-- End Beneficiary Details -->
+                        
+                        <div id="OrganizationDetails" class="">
+                          <div class="row">
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="crid">Commerical Registration ID <span style="color:red">*</span></label>
+                              <input type="text" class="form-control" id="crid" placeholder="Commerical Registration ID">
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="cname">Commercial Name</label>
+                              <input type="text" class="form-control" id="cname" placeholder="Commercial Name" readonly>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Commph">Mobile Number</label>
+                              <input type="text" class="form-control numeric" id="Commph" placeholder="Mobile Number" maxlength="8" readonly>
+                            </div>
+                            <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                              <label for="Email">Email</label>
+                              <input type="text" class="form-control" id="E-mail" placeholder="Email">
+                              <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">Please Enter Valid Email</div>
+                            </div>
+                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                              <label for="Authorized_Pro" class="required">Authorized PRO’s</label>
+                              <select name="Authorized_Pro" id="Authorized_Pro" class="form-control">
+                                <option value="1000">Please select</option>
+                              </select>
+                            </div>
+                          </div> <!-- .row -->
+                        </div> <!-- OrganizationDetails --> 
+                        <div class="form-group pull-right top-25">
+                            <button type="button" class="btn btn-hs" onclick="Beneficiary1()" id="form1Submit"><i class="fa fa-plus"></i>&nbsp;Add Beneficiary</button>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="table-responsive">
+                                <table id="Beneficiary1" class="table table-striped table-bordered" style="width: 100%;">
+                                  <thead class="hs-thead">
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                                </table>
+                              </div> <!-- End table-responsive --> 
+                            </div>
+                          </div> <!-- End row -->
+                      </div> <!-- .row -->
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group -->
+
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>Request Type</legend>
+                      <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <label for="MuniciplSerViceType">Type of Municipal Service <span style="color:red">*</span></label>
+                        <select name="MuniciplSerViceType" id="MuniciplSerViceType" class="form-control">
+                          <option value="0">Please Select...</option>
+                          <option value="1">Pest control and Rodent</option>
+                          <option value="2">Rain Water</option>
+                          <option value="3">Abandoned</option>
+                          <option value="4">Stray Animals</option>
+                          <option value="5">Cleaning Garbage</option>
+                          <!-- <option value="6">Others</option> -->
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="region_new">Governorate <span style="color:red">*</span></label>
+                          <select name="region_new" id="region_new" class="form-control">
+                            <option value="0">Please select...</option>
+                            <option value="1">Alshaqiya Governorate</option>
+                            <option value="2">Aldhahira Governorate</option>
+                            <option value="3">Mosandam Governorate</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Willayat_new">Willayat <span style="color:red">*</span></label>
+                          <select name="Willayat_new" id="Willayat_new" class="form-control">
+                            <option value="0">Please select...</option>
+                            <option value="1">Suhar</option>
+                            <option value="2">Nizwa</option>
+                            <option value="3">Ibra</option>
+                            <option value="3">Saham</option>
+                            <option value="3">Nakhal</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Village_new">Village <span style="color:red">*</span></label>
+                          <input type="text" class="form-control" id="Village_new" placeholder="Village">
+                        </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Request Description">Request Description<span style="color:red">*</span></label>
+                        <textarea class="form-control" id="ReqDecription" placeholder="Request Description"></textarea>
+                      </div>
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- End form-group -->
+              </div><!-- End BeneficiaryDetails --> 
+
+              <div id="Attachment" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <!-- Note message -->
+                    <div class="alert alert-success"><strong>Note :- </strong>&nbsp;Please attach only files with extension of .pdf,.jpg &amp; png. Also makes sure the each file size is not more than 1MB.</div>
+                    <!-- Note message -->
+                    <fieldset>
+                      <legend>Required Documents</legend>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Required Documents</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Ownership document ( Mulkiya )<i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Ownership document ( Mulkiya )" data-toggle="modal" data-target="#Deed"></i></td>
+                              <td><input type="file" name=""></td>
+                              <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                            </tr>
+                            <!-- Ownership document ( Mulkiya ) Modal -->
+                          <div class="modal fade" id="Deed" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header hs">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Ownership document ( Mulkiya )</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Copy of the Ownership document ( Mulkiya )</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Ownership document ( Mulkiya ) Modal -->
+                          
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Survey Sketch ( Krooki ) <i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Survey Sketch ( Krooki ) for verification" data-toggle="modal" data-target="#Sketch"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Survey Sketch ( Krooki ) Modal -->
+                          <div class="modal fade" id="Sketch" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header hs">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Survey Sketch ( Krooki )</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Copy of the Survey Sketch ( Krooki ) for verification</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Survey Sketch ( Krooki ) Modal -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div> <!-- .row --> 
+                </div> <!-- .form-group --> 
+              </div> <!-- Attachment -->
+
+              <div id="Payment" class="">
+                <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>Payment</legend>
+                      <div class="table-responsive">
+                        <table id="pay_table" class="table table-striped table-bordered">
+                          <thead class="hs-thead">
+                            <tr role="row">
+                              <th aria-label="S.No">S.No</th>
+                              <th aria-label="Fee Type">Fee Type</th>
+                              <th aria-label="Payment Value">Payment Value</th>
+                              <th aria-label="Payment Deadline">Payment Deadline</th>
+                              <th aria-label="Payment Type">Payment Type</th>
+                              <th aria-label="Payment Reference">Payment Reference</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div> <!-- End .table-responsive -->
+                    </fieldset>
+                  </div> <!-- End .row --> 
+                </div> <!-- End .form-group -->
+
+                <div class="form-group">
+                  <fieldset>
+                    <legend>Customer Feedback</legend>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Comments_Feedback">Comments/Feedback</label>
+                        <select class="form-control" id="Comments_Feedback">
+                          <option value="1000">Please select</option>
+                          <option>Feedback</option>
+                          <option>Comments</option>
+                        </select>
+                      </div>
+                    </div> <!-- /.row -->
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <label for="Customer_comments">Comments</label>
+                        <textarea class="form-control border" rows="5" cols="50" id="Customer_comments" placeholder="Please Enter Comments"></textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <!-- <div class="form-group">
+                  <div class="row">
+                    <fieldset>
+                      <legend>Licenses</legend>
+                      <div class="table-responsive">
+                        <table id="example2"  class="table table-bordered">
+                          <thead class="hs-thead">
+                            <tr>
+                              <th>Contract Number</th>
+                              <th>Contract Start Date</th>
+                              <th>Contract End Date</th>
+                              <th>Contract Issue Date</th>
+                              <th width="3%">Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td class="text-center"><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-download"></span></button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </fieldset>
+                  </div> End .row 
+                </div> End .form-group  -->
+              </div> <!-- End #Payment -->
+
+            </div><!-- End Empty div -->
+          </div><!-- End SmartWizard html -->
+        </div><!--End row -->
+      </div><!--End Inner Pages -->
+    </form>
+  </div><!-- End container --> 
+  
+  <br />
+  
+  <!-- FOOTER START -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a href="#">FAQ</a></li>
+            <li>|</li>
+            <li><a href="usefullinks.html" title="Useful Links">Useful Links</a></li>
+            <li>|</li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li>|</li>
+            <li><a href="Website-Policies.html">Website Policies</a></li>
+            <li>|</li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li>|</li>
+            <li><a href="#">Anti-Corruption Policy</a></li>
+            <li>|</li>
+            <li><a href="eparticipation-policy.html">eParticipation Policy</a></li>
+            <li>|</li>
+            <li><a href="#">eAccessibility Policy</a></li>
+            <li>|</li>
+            <li><a href="#">eTransformation Policy</a></li>
+            <li>|</li>
+            <li><a href="#">Government Open Data Policy</a></li>
+            <li>|</li>
+            <li><a href="#">eOman</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled list-inline social-icons">
+            <li><a href="#"> <img src="images/store/google-play-badge.png" alt="Get it on Google Play" style="width: 120px;"></a></li>
+            <li><a href="#"> <img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="width: 120px;"></a> </li>
+          </ul>
+        </div>
+        <div class="col-md-4"  style="text-align:center;"> 
+          <!-- <h4>Follow with us</h4> -->
+          <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+            <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="pull-right"> <a class="pull-right ml10" href="http://www.w3.org/" target="_blank"> <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline" style="text-align: center;">
+            <li>Copyright &copy; Ministry of Regional Municipalities and Water Resources, All Rights Reserved</li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- End container --> 
+  </section> <!-- FOOTER END -->  
+  
+  <!--Scrolling top--> 
+  <a class="scrollup" href="#" title="back to top" style="display: inline;"><span class="fa fa-angle-double-up fa-22px"></span><br />Top</a> 
+  <!-- end scrolling top--> 
+  
+  <!-- Side Nav top-->
+  <div class="login-anmi wow fadeInDown">
+    <ul>
+      <li><a class="lnk-social social-facebook social-rounded" href=" login.html"><img src=" images/sidenav/loginside.png"> Login</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="Track.html"><img src="images/sidenav/track.png">Track Application</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="about.html"><img src="images/sidenav/about.png">About Ministry</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="Tenders.html"><img src="images/sidenav/Tender.png"> Tender Announcement</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/newside.png"> News Letters</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/library.png"> Electronic Library</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src=" images/sidenav/anreport.png"> Annual Reports</a></li>
+    </ul>
+  </div>
+  <!-- end Side Nav top--> 
+  <!--End Footer --> 
+</div> <!-- End dir="ltr" -->
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- Date &amp; Time Live-->
+<script src="js/Time/timejs.js"></script>
+<!-- Date &amp; Time Live-->
+<script src="js/Datepicker/bootstrap-datepicker.js"></script>
+<script src="js/owl.carousel.js"></script> 
+<script src="js/demo.js"></script> 
+<!-- Include Data Table smartWizard source -->
+<script src="js/jquery.dataTables.js"></script> 
+<script src="js/dataTables.bootstrap.js"></script>
+<script src="js/jquery.smartWizard.js"></script> 
+<!-- Include jQuery Validator plugin --> 
+<script src="js/Validator/validator.js"></script> 
+<!-- Select2 --> 
+<script src="js/Multiselect/Multiselect.js"></script> 
+<!-- Include Smartwizard-HS plugin --> 
+<script src="js/smartwizardHS.js"></script>
+<script src="js/HS/Beneficiary.js"></script>
+<script src="js/validations.js"></script>
+</body>
+</html>

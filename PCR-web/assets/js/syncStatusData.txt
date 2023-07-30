@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "Quote": "1",
+      "deviceID": "Inc234",
+      "status": "SYNC",
+      "lastSyncDate": "15-06-2023"
+      
+    },
+    {
+      "id": "1",
+      "Quote": "2",
+      "deviceID": "Inc235",
+      "status": "Pending",
+      "lastSyncDate": "15-06-2023"
+    },
+    {
+      "id": "1",
+      "Quote": "3",
+      "deviceID": "Inc236",
+      "status": "Error",
+      "lastSyncDate": "15-06-2023"
+    }
+    
+  ]
+}

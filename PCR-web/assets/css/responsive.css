@@ -1,0 +1,480 @@
+@media (min-width: 1600px) {
+    .col-xxlg {
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+    }
+
+    .col-xxlg-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-xxlg-1 {
+        -ms-flex: 0 0 8.3333333333%;
+        flex: 0 0 8.3333333333%;
+        max-width: 8.3333333333%;
+    }
+
+    .col-xxlg-2 {
+        -ms-flex: 0 0 16.6666666667%;
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    .col-xxlg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-xxlg-4 {
+        -ms-flex: 0 0 33.3333333333%;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .col-xxlg-5 {
+        -ms-flex: 0 0 41.6666666667%;
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .col-xxlg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-xxlg-7 {
+        -ms-flex: 0 0 58.3333333333%;
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .col-xxlg-8 {
+        -ms-flex: 0 0 66.6666666667%;
+        flex: 0 0 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+
+    .col-xxlg-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-xxlg-10 {
+        -ms-flex: 0 0 83.3333333333%;
+        flex: 0 0 83.3333333333%;
+        max-width: 83.3333333333%;
+    }
+
+    .col-xxlg-11 {
+        -ms-flex: 0 0 91.6666666667%;
+        flex: 0 0 91.6666666667%;
+        max-width: 91.6666666667%;
+    }
+
+    .col-xxlg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .userslist .bottom div.dataTables_length {
+        right: 471px !important;
+    }
+    .contest_details .contest_date {
+        display: flex;
+    }
+    .br_hide {
+        display: none;
+    }
+    /* Mentorship Program */
+    .mentordiv .col-xxlg-2 {
+        -ms-flex: 0 0 14.285719%;
+        flex: 0 0 14.285719%;
+        max-width: 14.285719%;
+    }
+    /* Mentorship Program */
+    /* .announcement_details_form .mt-30px {
+        margin-top: 30px;
+    } */
+    .positionStatic {
+        position: absolute;
+        top: calc(40vh - -25px);
+        width: 100%;
+    }
+    .pd-lt-frist {
+        padding-left: 15px;
+    }
+    
+    .pd-rt-last {
+        padding-right: 15px;
+    }
+    
+    .pd-lt-non {
+        padding-left: 5px;
+    }
+    
+    .pd-rt-non {
+        padding-right: 5px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .col-xsm {
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+    }
+
+    .col-xsm-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-xsm-1 {
+        -ms-flex: 0 0 8.3333333333%;
+        flex: 0 0 8.3333333333%;
+        max-width: 8.3333333333%;
+    }
+
+    .col-xsm-2 {
+        -ms-flex: 0 0 16.6666666667%;
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    .col-xsm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-xsm-4 {
+        -ms-flex: 0 0 33.3333333333%;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .col-xsm-5 {
+        -ms-flex: 0 0 41.6666666667%;
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .col-xsm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-xsm-7 {
+        -ms-flex: 0 0 58.3333333333%;
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .col-xsm-8 {
+        -ms-flex: 0 0 66.6666666667%;
+        flex: 0 0 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+
+    .col-xsm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-xsm-10 {
+        -ms-flex: 0 0 83.3333333333%;
+        flex: 0 0 83.3333333333%;
+        max-width: 83.3333333333%;
+    }
+
+    .col-xsm-11 {
+        -ms-flex: 0 0 91.6666666667%;
+        flex: 0 0 91.6666666667%;
+        max-width: 91.6666666667%;
+    }
+
+    .col-xsm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contest_input_block .top_header_bar .input-group {
+        min-width: 183px !important;
+    }
+    .custom-tiles-blocks .item .contest_info {
+        padding: 10px;
+    }
+    .top_header_bar .row .col-sm-12 {
+        justify-content: end !important;
+        margin-top: 15px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+    /* .top_header_bar .row {
+        flex-direction: column;
+    }
+    .top_header_bar .row .col-sm-8 {
+        justify-content: end !important;
+        margin-top: 30px;
+    }
+    .top_header_bar .row .col-sm-8 .input-group {
+        min-width: 260px;
+    } */
+    /* .more_btn {
+    top: auto !important;
+    bottom: -6px !important;
+} */
+    .contest_input_tbHeight {
+        max-width: 174px;
+    }
+    .custom-tiles-blocks .item .contest_info .contest_details .text-danger {
+        margin-left: 0px;
+    }
+    .row h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: inherit !important;
+        font-size: 28px !important;
+    }
+    .contest_input_block .top_header_bar .input-group {
+        min-width: 221px;
+    }
+    #users_table th,
+    #users_table td,
+    #filterUsear_table th,
+    #filterUsear_table td,
+    #points_table th,
+    #points_table td,
+    #pointsFilter_table th,
+    #pointsFilter_table td,
+    #announcements_table th,
+    #announcements_table td,
+    #clientsList_table th,
+    #clientsList_table td {
+        max-width: 125px !important;
+    }
+    /* Mentorship Program */
+    .mentordiv .col-xl-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    /* Mentorship Program */
+    .header-btn-block .btn-outline-dark {
+        min-width: auto !important;
+    }
+    .dashboard_top_block h6 {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .contest_input_block .container_block {
+        padding: 0 20px;
+    }
+
+    /* .header-btn-block {
+        justify-content: flex-start !important;
+    } */
+    .userslist .bottom div.dataTables_length {
+        right: 399px !important;
+    }
+    .header-btn-block a {
+        margin-left: 0;
+        white-space: nowrap;
+    }
+
+    .container_block .nav-tab-pt {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .container_block .nav-tab-pt .nav {
+        margin-left: 26px;
+        margin-right: 0;
+        padding: 0 !important;
+    }
+
+    .custom-tiles-blocks .item .contest_info {
+        padding: 20px;
+    }
+    .contest_details .contest_date {
+        display: block;
+        height: 50px;
+    }
+    .br_hide {
+        display: block;
+    }
+    .custom-tiles-blocks .item .contest_info .contest_details .text-danger {
+        margin-left: 0px;
+    }
+    .sidebar {
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .sidebar a {
+        font-size: 16px;
+    }
+    .content {
+        padding-left: 250px;
+    }
+    .announcement_details_form .mt-30px, 
+    .contestView .mt-30px, .mt-added-30px {
+        margin-top: 30px;
+    }
+    .pd-lt-non {
+        padding-left: 0px;
+    }
+    .pd-rt-non {
+        padding-right: 0px;
+    }
+    .pd-lt-rt-non {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /* .contest_details_form .date_section .fa-calendar {
+        right: 10px !important;
+    } */
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .top_header_bar .row {
+        flex-direction: column;
+    }
+
+    .top_header_bar .row .col-sm-12 {
+        justify-content: end !important;
+        margin-top: 10px;
+    }
+
+    .top_header_bar .row .col-sm-12 .input-group {
+        min-width: 299px;
+    }
+    .contest_preview .avatar_preview img {
+        width: 100% !important;
+        height: 180px;
+    }
+
+    .sw-theme-dots > .nav::before {
+        opacity: 0 !important;
+    }
+
+    .uploader img {
+        height: 200px !important;
+    }
+
+    .contest_details_form .upload_poster {
+        min-height: 300px !important;
+    }
+
+    .smart-Wizard {
+        padding: 20px !important;
+    }
+
+    .hr_divider {
+        margin: 20px -20px !important;
+    }
+
+    /* .sidebar {
+    min-width: 250px !important;
+    max-width: 250px !important;
+}
+.sidebar_position {
+    left: -183px !important;
+} */
+    /* .content {
+        padding-left: 60px !important;
+    } */
+
+    .contest_input_block .form-inline .input-group {
+        width: 100% !important;
+        position: relative;
+    }
+
+    .contest_input_block .form-inline .search {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
+    }
+
+    #step-2 .col-auto {
+        padding-right: 0;
+    }
+
+    .form-check-label {
+        white-space: nowrap;
+    }
+
+    #step-4 .form_border {
+        height: 55vh !important;
+    }
+
+    #step-2 .form_border {
+        height: 30vh !important;
+    }
+    .verifiedStats .bottom div.dataTables_length {
+        position: relative !important;
+    }
+    .userslist .bottom div.dataTables_length {
+        right: 0px !important;
+    }
+    .contest_details .contest_date {
+        display: flex !important;
+    }
+    .br_hide {
+        display: none;
+    }
+    .form-inline .form-group {
+        margin-bottom: 1rem;
+    }
+    #users_table th, #users_table td,
+    #filterUsear_table th, #filterUsear_table td,
+    #points_table th, #points_table td,
+    #pointsFilter_table th, #pointsFilter_table td,
+    #announcements_table th, #announcements_table td,
+    #clientsList_table th, #clientsList_table td {
+        max-width: 125px !important;
+    }
+    .Answer_Type {
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .mentordiv .col-sm-4 {
+        -ms-flex: 0 0 33.333333% !important;
+        flex: 0 0 33.333333% !important;
+        max-width: 33.333333%  !important;
+    }
+    .mt-85px {
+        margin-top: 0px !important;
+    }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body, .btn-chartreuse 
+    .card-body .text-center .btn, .btn-outline-dark, .btn-default, .dropdown button {
+        font-size: 14px;
+    }
+    .custom-tiles-blocks .col-sm-6 {
+        padding: 0 0px;
+    }
+    .custom-tiles-blocks .item .contest_info {
+        padding: 10px;
+    }
+    .nav-tab-pt .nav-pills {
+        padding:0 10px !important;
+    }
+    .row h3 {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+    }
+    .contest_input_block .top_header_bar {
+        padding: 20px 20px;
+    }
+    .min-width {
+        min-width:120px !important;
+    }
+}

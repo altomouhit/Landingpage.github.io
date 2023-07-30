@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d1c3d">
+    <link rel=icon href="assets/img/Khanjar.png" type=image/png>
+    <title>::login::</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.0/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <script type="text/javascript" defer src="/assets/js/auth.js"></script>
+    <script type="text/javascript" defer src="/init.js"></script>
+  </head>
+  <body class="vh-100 bg-login">
+    <main class="form-signin w-100 m-auto">
+      <form action="dashboard.html">
+        <div class="text-center mb-3 d-xs-block d-md-none">
+          <img src="assets/img/Logo.svg" alt="logo" />
+        </div>
+        <div class="input-group mb-3 form-textdiv">
+          <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="txtUsr" placeholder="Username" autofocus />
+            <label for="txtUsr">Username</label>
+          </div>
+        </div>
+
+        <div class="input-group mb-3 form-textdiv">
+          <span class="input-group-text"><i class="fal fa-lock-alt fa-lg"></i></span>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="txtPwd" placeholder="Password">
+            <label for="txtPwd">Password</label>
+          </div>
+        </div>
+    
+        <div class="checkbox mb-3">
+          <label class="text-white">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+      </form>
+    </main>
+    
+    <script src="assets/js/jquery-3.6.3.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

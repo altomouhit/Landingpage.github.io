@@ -1,0 +1,65 @@
+{
+  "data": [
+    [
+      "1",
+      "B1",
+      "Building 1",
+      "Residential",
+      "5",
+      "4",
+      "Sohar",
+      "Nizwa",
+      "Ownership Document"
+    ], [
+      "2",
+      "B2",
+      "Building 2",
+      "Industrials",
+      "5",
+      "6",
+      "Saham",
+      "Ibra",
+      "Ownership Document"
+    ], [
+      "3",
+      "B3",
+      "Building 3",
+      "Commercial",
+      "3",
+      "6",
+      "Saham",
+      "Ibra",
+      "Ownership Document"
+    ], [
+      "4",
+      "B4",
+      "Building 4",
+      "Residential",
+      "5",
+      "4",
+      "Sohar",
+      "Nizwa",
+      "Ownership Document"
+    ], [
+      "5",
+      "B5",
+      "Building 5",
+      "Industrials",
+      "5",
+      "6",
+      "Saham",
+      "Ibra",
+      "Ownership Document"
+    ], [
+      "6",
+      "B6",
+      "Building 6",
+      "Commercial",
+      "3",
+      "6",
+      "Saham",
+      "Ibra",
+      "Ownership Document"
+    ]
+  ]
+}

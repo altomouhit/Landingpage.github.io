@@ -1,0 +1,1811 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="dark" data-sidebar-size="lg">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>:: Complaint Registration ::</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy"content="default-src 'self';script-src 'self';style-src 'self';font-src 'self';img-src 'self';">
+    <meta content="e-Service" name="description" />
+    <meta content="altomouhit" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/img/Khanjar.png" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-5.1.3/css/bootstrap.css.map" /> -->
+    <!-- Icons Css -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/material-icons/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/RemixIcon/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/boxicons-2.1.2/css/boxicons.css" />
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.5.15.4/fontawesome.5.15.4.css" /> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome-6.3.0/fontawesome.6.3.0.css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/eSevice.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/img/OAB_LOGO.svg" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/img/OAB_LOGO.svg" alt="" height="60">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/img/OAB_LOGO.svg" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/img/OAB_LOGO.svg" alt="" height="60">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-md-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="">
+                                <span class="mdi mdi-magnify search-widget-icon"></span>
+                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ms-1 topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="assets/img/flags/uk.svg" alt="Header Language"
+                                    height="20" class="rounded">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2 active" data-lang="en" title="English">
+                                    <img src="assets/img/flags/uk.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ar" title="&#1593;&#1585;&#1576;&#1610;">
+                                    <img src="assets/img/flags/omr.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">&#1593;&#1585;&#1576;&#1610;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-category-alt fs-22'></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg p-0 dropdown-menu-end">
+                                <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0 fw-semibold fs-15"><i class="fal fa-calendar"></i> calendar</h6>
+                                        </div>
+                                        <!-- <div class="col-auto">
+                                            <a href="#!" class="btn btn-sm btn-soft-info"> View All Apps
+                                                <i class="ri-arrow-right-s-line align-middle"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="p-2">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-deafult-date="today" data-inline-date="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <a href="search.html" title="Search" class="text-white btn bg-gradient-info mx-2">
+                                <i class="fal fa-search"></i></a>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <a href="complaint_reg.html" class="btn btn-chartreuse mx-2" title="Complaint Registration">
+                                <i class="fal fa-plus"></i></a>
+                        </div>
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user"
+                                        src="assets/img/avatar.svg" alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Legal User 1</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Welcome!</h6>
+                                <a class="dropdown-item" href="lockscreen.html">
+                                    <i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="index.html">
+                                    <i class="mdi mdi-power text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/img/OAB_LOGO.svg" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/img/OAB_LOGO.svg" alt="" height="60">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/img/OAB_LOGO.svg" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/img/OAB_LOGO.svg" alt="" height="60">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="dashboard.html" aria-controls="sidebarDashboards">
+                                <i class="bx bxs-dashboard"></i> <span data-key="t-dashboards">Dashboards</span>
+                            </a>
+                        </li>
+                        <!-- end Dashboard Menu -->
+
+                        <li class="nav-item">
+                            <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                                aria-controls="sidebarEmail" data-key="t-global">
+                                <i class="fal fa-chalkboard-teacher"></i> <span>Masters</span>
+                            </a>
+							<div class="collapse menu-dropdown" id="sidebarEmail">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link globalMasters" href="#sidebarGlobalMasters" data-bs-toggle="collapse"
+                                            role="button" aria-expanded="false" aria-controls="sidebarGlobalMasters">
+                                            <i class="fal fa-users-crown"></i> <span data-key="t-global">Global Masters</span>
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarGlobalMasters">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item"><a href="complaint-type.html" class="nav-link" data-key="t-complaintype">Complaint Type</a></li>
+                                                <li class="nav-item"><a href="channel.html" class="nav-link" data-key="t-channel">Channel</a></li>
+                                                <li class="nav-item"><a href="complaint-category.html" class="nav-link" data-key="t-category">Complaint Category</a></li>
+                                                <li class="nav-item"><a href="region.html" class="nav-link" data-key="t-region">Region</a></li>
+                                                <li class="nav-item"><a href="branch.html" class="nav-link" data-key="t-branch">Branch</a></li>
+                                                <li class="nav-item"><a href="enquiry.html" class="nav-link" data-key="t-enquiry">Enquiry</a></li>
+                                                <li class="nav-item"><a href="finalized.html" class="nav-link" data-key="t-finalized">Finalized SMS</a></li>
+                                                <li class="nav-item"><a href="holiday.html" class="nav-link" data-key="t-holiday">Holiday</a></li>
+                                                <li class="nav-item"><a href="country.html" class="nav-link" data-key="t-country">Country</a></li>
+                                                <li class="nav-item"><a href="currency.html" class="nav-link" data-key="t-currency">Currency</a></li>
+                                                <li class="nav-item"><a href="Product-master.html" class="nav-link" data-key="t-productCategory">Product Category Master</a></li>
+                                                <li class="nav-item"><a href="service-Provider.html" class="nav-link" data-key="t-ServiceProvider">Service Provider Master</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end Global Masters Menu -->
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link masters" href="#sidebarMasters" data-bs-toggle="collapse" role="button"
+                                            aria-expanded="false" aria-controls="sidebarMasters">
+                                            <i class="fal fa-user-graduate"></i> <span data-key="t-masters">Masters</span>
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarMasters">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item"><a href="complaint-desc.html" class="nav-link" data-key="t-complaindesc">Complaint Description</a></li>
+                                                <li class="nav-item"><a href="channel-master.html" class="nav-link" data-key="t-mchannel">Channel</a></li>
+                                                <li class="nav-item"><a href="more-info.html" class="nav-link" data-key="t-moreinfo">More Info</a></li>
+                                                <li class="nav-item"><a href="routing-criteria.html" class="nav-link" data-key="t-routing">Routing Criteria</a></li>
+                                                <li class="nav-item"><a href="productCategory.html" class="nav-link" data-key="t-productCategory">Product Category</a></li>
+                                                <li class="nav-item"><a href="serviceProvider-master.html" class="nav-link" data-key="t-ServiceProvider">Service Provider</a></li>
+                                                <li class="nav-item"><a href="prioritySLA.html" class="nav-link" data-key="t-prioritySLA">Priority SLA</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end Masters Menu -->
+                        
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link groupMasters" href="#sidebarGroupMasters" data-bs-toggle="collapse"
+                                            role="button" aria-expanded="false" aria-controls="sidebarGroupMasters">
+                                            <i class="fal fa-users-class"></i> <span data-key="t-groupmasters">Group Masters</span>
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarGroupMasters">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item"><a href="group-masters.html" class="nav-link" data-key="t-groupmasters">Group Masters</a></li>
+                                                <li class="nav-item"><a href="group-branch.html" class="nav-link" data-key="t-branch">Branch</a></li>
+                                                <li class="nav-item"><a href="offsite.html" class="nav-link" data-key="t-offsite">Offsite</a></li>
+                                                <li class="nav-item"><a href="user.html" class="nav-link" data-key="t-user">User</a></li>
+                                                <li class="nav-item"><a href="remove-ticket.html" class="nav-link" data-key="t-ticket">Remove Ticket</a></li>
+                                                <li class="nav-item"><a href="ticket-history.html" class="nav-link" data-key="t-History">Ticket History</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- end Group Masters Menu -->
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- end Masters Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link sysAdmin" href="#sidebarSystemAdmin" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSystemAdmin">
+                                <i class="fal fa-users-cog"></i> <span data-key="t-systemadmin">System Admin</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarSystemAdmin">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item"><a href="AD-config.html" class="nav-link" data-key="t-adconfig">AD Config</a></li>
+                                    <li class="nav-item"><a href="oracle-config.html" class="nav-link" data-key="t-oracle">Oracle Config</a></li>
+                                    <li class="nav-item"><a href="SMTP-config.html" class="nav-link" data-key="t-smtp">SMTP Config</a></li>
+                                    <li class="nav-item"><a href="SLA-config.html" class="nav-link" data-key="t-sla">PM SLA Config</a></li>
+                                    <li class="nav-item"><a href="message-config.html" class="nav-link" data-key="t-message">Message Config</a></li>
+                                    <li class="nav-item"><a href="notifications-config.html" class="nav-link" data-key="t-noti">Notifications Config</a></li>
+                                    <li class="nav-item"><a href="admin-config.html" class="nav-link" data-key="t-admin">Admin Users Config</a></li>
+                                    <li class="nav-item"><a href="fetch-tickets.html" class="nav-link" data-key="t-fetch">Fetch Tickets</a></li>
+                                    <li class="nav-item"><a href="config-XML.html" class="nav-link" data-key="t-xml">Config XML</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- end System Admin Menu -->
+						
+						<li class="nav-item">
+                            <a class="nav-link menu-link gmReports" href="coporate_reg.html">
+                                <i class="fa-light fa-file-certificate"></i> <span data-key="t-coporatereg">Corporate Registration</span>
+                            </a>
+                        </li>
+                        <!-- end Corporate Registration Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link gmReports" href="gm_reports.html">
+                                <i class="fal fa-analytics"></i> <span data-key="t-gmreports">GM Reports</span>
+                            </a>
+                        </li>
+                        <!-- end GM Reports Menu -->
+
+						<li class="nav-item">
+                            <a class="nav-link menu-link gmReports" href="reports_OAB.html">
+                                <i class="fal fa-analytics"></i> <span data-key="t-reportsoab">Reports(OAB)</span>
+                            </a>
+                        </li>
+                        <!-- end Reports(OAB) Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="regionMaster.html">
+                                <i class="fa-light fa-fort"></i> <span data-key="t-regionMaster">Region Manager Reports</span>
+                            </a>
+                        </li>
+                        <!-- end Region Manager Reports -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="bulkClosure.html">
+                                <i class="fa-light fa-square-check"></i> <span data-key="t-bulkClosure">Bulk Closure</span>
+                            </a>
+                        </li>
+                        <!-- end Bulk Closure -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="sugg_Comp.html">
+                                <i class="fa-light fa-square-check"></i> <span data-key="t-sugg_Comp">Suggestion &amp; Compliments</span>
+                            </a>
+                        </li>
+                        <!-- end Suggestion & Compliments -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="enquiryView.html">
+                                <i class="fa-light fa-square-check"></i> <span data-key="t-enquiryView">Enquiry View</span>
+                            </a>
+                        </li>
+                        <!-- end Enquiry View -->
+						
+                        <li class="nav-item">
+                            <a class="nav-link menu-link transfer" href="transfer.html">
+                                <i class="fal fa-exchange"></i> <span data-key="t-transfer">Transfer</span>
+                            </a>
+                        </li>
+                        <!-- end Transfer Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="complaintRegisterList.html">
+                                <i class="ri-keyboard-fill"></i> <span data-key="t-complainlist">Complaint Register List</span>
+                            </a>
+                        </li>
+                        <!-- end Complaint Register List Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="get_returned.html">
+                                <i class="fal fa-reply"></i> <span data-key="t-getreturned">Get Returned</span>
+                            </a>
+                        </li>
+                        <!-- end Get Returned Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="refresh.html">
+                                <i class="fal fa-sync"></i> <span data-key="t-refresh">Refresh</span>
+                            </a>
+                        </li>
+                        <!-- end Refresh Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="rejected.html">
+                                <i class="fal fa-times-square"></i> <span data-key="t-rejected">Rejected</span>
+                            </a>
+                        </li>
+                        <!-- end rejected Menu -->
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+			<div class="page-content">
+				<div class="container-fluid">
+
+					<!-- start page title -->
+					<div class="row">
+						<div class="col-12">
+							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+								<h4 class="mb-sm-0">Complaint Registration</h4>
+
+								<div class="page-title-right">
+									<ol class="breadcrumb m-0">
+										<li class="breadcrumb-item"><a href="dashboard.html"> <i class="fal fa-home fa-lg fa-fw" aria-hidden="true"></i> Dashboard</a></li>
+										<li class="breadcrumb-item active">Complaint Registration</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end page title -->
+
+					<div class="row">
+						<div class="col-xxl-12">
+							<div class="card custom-tab-1">
+								<div class="card-header p-2">
+									<ul class="nav nav-tabs border-bottom-0">
+										<li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#complaint"> 
+											<i class="fal fa-ballot-check me-2" aria-hidden="true"></i>&nbsp;Complaint
+										</a></li>
+										<li class="nav-item"><a class="nav-link text-danger" data-bs-toggle="tab" href="#suggestion"> 
+											<i class="fal fa-comments-alt me-2 rainbow-text" aria-hidden="true"></i>&nbsp; Suggestions
+										</a></li>
+										<li class="nav-item"><a class="nav-link text-success" data-bs-toggle="tab" href="#compliment"> 
+											<i class="fal fa-phone me-2 gradient-green-text" aria-hidden="true"></i>&nbsp; Compliment
+										</a></li>
+										<li class="nav-item"><a class="nav-link text-warning" data-bs-toggle="tab" href="#enquiry">
+												<i class="fal fa-user-headset me-2 gradient-yellow-text" aria-hidden="true"></i>&nbsp; Enquiries
+										</a></li>
+										<!-- <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#lifeSpan"> 
+											<i class="fal fa-user-clock me-2" aria-hidden="true"></i>&nbsp;Lifespan
+										</a></li> -->
+									</ul>
+								</div>
+								<div id="alert"></div>
+								<div class="card-body p-0">
+									<div class="tab-content">
+										<div class="tab-pane fade active show" id="complaint" role="tabpanel">
+											<ul class="nav nav-tabs border-bottom-0">
+												<li class="nav-item"><a class="nav-link active bright-pink" data-bs-toggle="tab" href="#customerDetail"> 
+													<i class="fal fa-user-check me-2 bright-pink" aria-hidden="true"></i>&nbsp;Customer Details
+												</a></li>
+												<li class="nav-item"><a class="nav-link vivid-green" data-bs-toggle="tab" href="#attachment"> 
+													<i class="fal fa-paperclip me-2 gradient-green-text" aria-hidden="true"></i>&nbsp; Attachments
+												</a></li>
+												<li class="nav-item"><a class="nav-link strong-purple" data-bs-toggle="tab" href="#lifeSpan"> 
+													<i class="fal fa-user-clock me-2 strong-purple" aria-hidden="true"></i>&nbsp;Lifespan
+												</a></li>
+											</ul>
+											<div class="tab-content mt-3">
+												<div class="tab-pane fade active show p-2" id="customerDetail" role="tabpanel">
+													<form>
+														<fieldset class="mb-2">
+															<legend>Customer Details</legend>
+															<div class="row">
+																<div class="col-sm-12 col-lg-6 border_right">
+																	<div class="row">
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="input-group">
+																				<div class="form-floating">
+																					<input type="text" class="form-control" id="accountNo" placeholder="CIF NO / Account No.">
+																					<label for="accountNo" class="required">CIF NO / Account No.</label>
+																				</div>
+																				<div class="input-group-text">
+																					<button class="btn p-0" type="button" id="searchAccountButton">
+																						<i class="fal fa-search fa-lg" aria-hidden="true"></i>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" id="civilId" class="form-control" placeholder="Civil Id No" />
+																				<label class="col-form-label required" for="civilId">Civil Id No</label>
+																			</div>
+																		</div>
+																		
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" class="form-control" placeholder="P.O.Box" id="poBox" />
+																				<label class="required" for="poBox">P.O.Box</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" class="form-control" placeholder="PC" id="pCode">
+																				<label class="col-form-label">PC</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" class="form-control" id="status" placeholder="Status" value="New" readonly />
+																				<label class="col-form-label" for="status">Status</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" id="telNo" class="form-control" placeholder="Telephone No" />
+																				<label class="col-form-label" for="telNo">Telephone No</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<select id="complaintEnquiry" class="form-select">
+																					<option value="">Please select</option>
+																				</select>
+																				<label class="col-form-label required" for="complaintEnquiry">Complaint/Enquiry</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<select id="priority" class="form-select">
+																					<option value="">Please select</option>
+																					<option value="1">Low</option>
+																					<option value="2">Medium</option>
+																					<option value="3">High</option>
+																				</select>
+																				<label class="col-form-label required" for="priority">Priority</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															
+																<div class="col-sm-12 col-lg-6">
+																	<div class="row">
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" id="cusName" class="form-control" placeholder="Name" autocomplete="off" />
+																				<label class="col-form-label required">Name</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" id="contactNo" class="form-control" placeholder="Mobile No" />
+																				<label class="required">Mobile No</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<select id="customerType" class="form-select">
+																					<option value="">Select Customer Type</option>
+																					<option value=BankCustomer>Bank Customer</option>
+																					<option value=NonBankCustomer>Non-Bank Customer</option>
+																					<option value=Elite>Elite</option>
+																				</select>
+																				<label class="col-form-label">Customer Type</label>
+																			</div>
+																		</div>
+																		
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="text" class="form-control" id="initiator" placeholder="Initiator" value="FLS" readonly />
+																				<label class="col-form-label">Initiator</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<select id="registerType" class="form-select">
+																					<option value="">Select Register Type</option>
+																					<option value="Complaint">Complaint</option>
+																					<option value="AL YUSR Complaint">AL YUSR Complaint</option>
+																				</select>
+																				<label class="col-form-label required">Register Type</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 col-md-6 mb-3">
+																			<div class="form-floating">
+																				<input type="email" id="cusEmail" class="form-control" placeholder="Email" />
+																				<label class="col-form-label">Email</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</fieldset>
+
+														<div class="row">
+															<div class="col">
+																<fieldset class="mb-2">
+																	<legend>Compliant Details</legend>
+																	<div class="row">
+																		<div class="col">
+																			<div class="row">
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating">
+																						<select id="feedbackType" class="form-select" onchange="loadComplaintSubType();loadMoreInfoFields()">
+																							<option value="">Please select</option>
+																						</select>
+																						<label class="form-label required">Complaint Type</label> 
+																					</div>
+																				</div>
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating">
+																						<select id="feedbackDesc" class="form-select" onchange="loadChannel()">
+																							<option value="">Please select</option>
+																						</select>
+																						<label class="form-label">Compliant Sub Type</label> 
+																					</div>
+																				</div>
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating">
+																						<select id="productCategory" class="form-select">
+																							<option value="">Please select</option>
+																						</select>
+																						<label class="form-label" for="productCategory">Product Category</label> 
+																					</div>
+																				</div>
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating">
+																						<select id="channel" class="form-select" onchange="loadSLATime()">
+																							<option value="">Please select</option>
+																						</select>
+																						<label class="form-label">Channel</label>
+																					</div>
+																				</div>
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating">
+																						<select id="serviceProvider" class="form-select">
+																							<option value="">Please select</option>
+																						</select>
+																						<label class="form-label" for="serviceProvider">Service Provider</label> 
+																					</div>
+																				</div>
+																				<div class="col-sm-6 col-lg-4 mb-3">
+																					<div class="form-floating" id="slaTimeDiv">
+																						<input type="text" class="form-control" placeholder="Executed Closure Time(in Days)" id="slaTime" readonly />
+																						<label for="slaTime" class="form-label">Executed Closure Time(in Days)</label> 
+																					</div>
+																				</div>
+																				<div class="col-sm-12 col-md-12 mb-3">
+																					<div class="form-floating">
+																						<textarea class="form-control" placeholder="Details" id="feedbackDetails"></textarea>
+																						<label for="feedbackDetails">Details</label>
+																					  </div>
+																				</div>
+																			</div>
+																			<!-- /.row -->
+																		</div>
+																		<div class="col-3 d-none" id="moreInfoDiv">
+																			<div class="table-responsive-md">
+																				<table id="moreInfoValueTable" class="table table-bordered table-striped w-100" aria-labelledby="moreInfoTable-table" aria-hidden="true">
+																					<thead class="table-dark">
+																						<tr>
+																							<th scope="col">Field Name</th>
+																							<th scope="col">Value</th>
+																						</tr>
+																					</thead>
+																					<tbody id="moreInfoValueTableTBody">
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																	<!-- /.row -->
+
+																</fieldset>
+															</div>
+															<div class="col-md-3">
+																<fieldset class="mb-2">
+																	<legend>Preferred communication channel</legend>
+																	<div class="row">
+																		<h4 class="card-title tx-16">Language</h4>
+																		<div class="mb-3 mb-0">
+																			<label class="radio-inline me-3"><input type="radio" name="Language" value="eng"> English </label> 
+																			<label class="radio-inline me-3"><input type="radio" name="Language" value="arb"> Arabic</label>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<h4 class="card-title tx-16">communication channel</h4>
+																		<div class="mb-3">
+																			<div class="form-check form-check-inline">
+																				<label class="form-check-label"> <input type="checkbox" name="commChannel" id="commChannel1" class="form-check-input" value="sms" checked>SMS </label>
+																			</div>
+																			<div class="form-check form-check-inline">
+																				<label class="form-check-label"> <input type="checkbox" name="commChannel" id="commChannel2" class="form-check-input" value="email">Email</label>
+																			</div>
+																			<div class="form-check form-check-inline">
+																				<label class="form-check-label"> <input type="checkbox" name="commChannel" id="commChannel3" class="form-check-input" value="phone">Phone</label>
+																			</div>
+																		</div>
+																	</div>
+																</fieldset>
+															</div>
+
+														</div>
+
+														<div class="row border-top">
+															<div class="col-12 d-flex justify-content-end my-2">
+																<button type="button" class="btn btn-secondary mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#warpUpModal">
+																	<i class="fa-light fa-box-open-full label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Warp Up
+																</button>
+																<button type="button" class="btn btn-danger mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#rejectedModal">
+																	<i class="fa-light fa-xmark-to-slot label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Rejected
+																</button>
+																<button type="button" class="btn btn-success mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#finalizeModal">
+																	<i class="fa-light fa-circle-check label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Finalize
+																</button>
+																<button type="button" class="btn btn-info mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#transferModal">
+																	<i class="fa-light fa-random label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Transfer
+																</button>
+																<button type="button" class="btn btn-warning mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#needMoreInfoModal">
+																	<i class="fa-light fa-memo-circle-info label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Need More Info
+																</button>
+																<button type="button" class="btn btn-primary mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#escalateModal">
+																	<i class="fal fa-exclamation-triangle label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Escalate
+																</button>
+																<button type="button" class="btn btn-primary mx-2 btn-label" data-bs-toggle="modal" data-bs-target="#sendModal">
+																	<i class="fal fa-paper-plane label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Send
+																</button>
+																<button type="reset" class="btn btn-light btn-label">
+																	<i class="fal fa-times label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Clear
+																</button>
+															</div>
+														</div>
+													</form>
+												</div>
+
+												<div class="tab-pane fade p-2" id="attachment" role="tabpanel">
+													<div class="row">
+														<div class="form-group col-sm-12 col-md-12">
+															<fieldset>
+																<legend>Attachments</legend>
+																<div class="file-upload">
+																	<form method="post" action="" enctype="multipart/form-data" id="upload-Form">
+																		<input type="hidden" value="${token}" id="tokenid" />
+																		<input type="hidden" value="${ip}" id="ipid" /> 
+																		<input type="hidden" value="${port}" id="portid" />
+																	</form>
+																</div>
+
+																<div id='file_tools' class="row mb-3">
+																	<div class="col-md-4">
+																		<table class="file_upload w-100 table-hover mb-0" id="f" aria-hidden="true">
+																			<tr>
+																				<td>
+																					<div class="input-group">
+																						<div class="custom-file">
+																							<input type="file" name="file" class="custom-file-input" id="complaintAttachment" onchange="isFileSizeAndType(event)" aria-describedby="inputGroupFileAddon01" /> 
+																							<label class="custom-file-label" id="complaintAttachmentId" for="complaintAttachment">Choose file</label>
+																						</div>
+																					</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																	<div class="col-md-4">
+																		<button type="button" class="btn btn-outline-primary btn_upload" id="btn_upload" onclick="uploadFile(this.id)">
+																			<i class="fad fa-arrow-to-top fa-fw" aria-hidden="true"></i>&nbsp; Upload
+																		</button>
+
+																		<button type="button" class="btn btn-info btn_upload" data-bs-toggle="modal" data-bs-target="#moreInfoModal">
+																			<i class="fal fa-comment-alt-dots fa-fw" aria-hidden="true"></i>&nbsp; More Info
+																		</button>
+																	</div>
+
+																</div>
+																<div class="col-md-4">
+																	<!-- Parent Branch is hard coded . here it is Muscat - 0334 -->
+																	<input name="ParentBranchId" id="Pbranch" type="text" class="d-none" value="Muscat - 0334" />
+																</div>
+
+
+																<div class="table-responsive-md data_table ">
+																	<table id="complaintAttachmentTable" class="table table-bordered table-striped w-100" aria-labelledby="Documents-table" aria-hidden="true">
+																		<thead class="table-light">
+																		</thead>
+																		<tbody>
+																		</tbody>
+																	</table>
+																</div>
+															</fieldset>
+														</div>
+
+													</div> <!-- /.row -->
+												</div>
+
+												<div class="tab-pane fade p-2" id="lifeSpan" role="tabpanel">
+													<div class="row">
+														<div class="col-xl-12">
+															<table class="table table-striped table-hover table-bordered table-border-radius" aria-hidden="true">
+																<thead class="table-light">
+																	<tr>
+																		<th scope="col">Original</th>
+																		<th scope="col">Escalated time</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>3 hr</td>
+																		<td class="text-danger"><i class="fad fa-hourglass-end" aria-hidden="true"></i>&nbsp; 6 hr</td>
+																	</tr>
+																	<tr>
+																		<td>3 hr</td>
+																		<td class="text-success"><i class="fal fa-stopwatch" aria-hidden="true"></i>&nbsp; 2:30 hr</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="tab-pane fade p-2" id="suggestion">
+											<form>
+												<fieldset class="mb-2">
+													<legend>Customer Details</legend>
+													<div class="row">
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="number" class="form-control" id="cifNo" placeholder="CIF NO" autocomplete="off" />
+																<label class="col-form-label required" for="cifNo">CIF NO</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugCusName" placeholder="Name" autocomplete="off" />
+																<label class="col-form-label required" for="sugCusName">Name</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugContactNo" placeholder="Mobile No" />
+																<label class="col-form-label required" for="sugContactNo">Mobile No</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="email" class="form-control" id="sugEmail" placeholder="Email" />
+																<label class="col-form-label" for="sugEmail">Email</label>
+															</div>
+														</div>
+
+														<!-- <div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<select id="sugRegisterType" class="form-select">
+																	<option value="">Please select</option>
+																	<option value="suggestion">Suggestion</option>
+																	<option value="AL YUSR suggestion">AL YUSR Suggestion</option>
+																</select>
+																<label class="col-form-label required" for="sugRegisterType">Register Type</label>
+															</div>
+														</div> -->
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugStatus" placeholder="Status" value="New" readonly />
+																<label class="col-form-label" for="sugStatus">Status</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" placeholder="Initiator" id="sugInitiator" value="FLS" readonly />
+																<label class="col-form-label" for="sugInitiator">Initiator</label>
+															</div>
+														</div>
+													</div> <!-- /.row -->
+												</fieldset>
+
+												<div class="row">
+													<div class="col-md-9">
+														<fieldset class="mb-2">
+															<legend>Suggestion Details</legend>
+															<div class="row">
+																<div class="mb-3 col-md-12">
+																	<label class="form-label required" for="sugDetails">Details</label>
+																	<textarea name="" id="sugDetails" cols="30" rows="3" class="form-control"></textarea>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+													<div class="col-md-3">
+														<fieldset class="mb-2">
+															<legend>Preferred communication channel</legend>
+															<div class="row">
+																<h4 class="card-title tx-16">Language</h4>
+																<div class="mb-3 mb-0">
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> English </label> 
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> Arabic </label>
+																</div>
+															</div>
+															<div class="row">
+																<h4 class="card-title tx-16">communication channel</h4>
+																<div class="mb-3">
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="sms" checked>SMS
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="email">Email
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="phone">Phone
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+
+												</div>
+
+												<div class="row">
+													<div class="form-group col-sm-12 col-md-12">
+														<fieldset>
+															<legend>Attachments</legend>
+															<div class="file-upload">
+																<form method="post" action="" enctype="multipart/form-data" id="upload-Form">
+																	<input type="hidden" value="${token}" id="tokenid" />
+																	<input type="hidden" value="${ip}" id="ipid" /> 
+																	<input type="hidden" value="${port}" id="portid" />
+																</form>
+															</div>
+
+															<div id='file_tools_sug' class="row mb-3">
+																<div class="col-md-4">
+																	<table class="file_upload w-100 table-hover mb-0" id="s" aria-hidden="true">
+																		<tr>
+																			<td>
+																				<div class="input-group">
+																					<div class="custom-file">
+																						<input type="file" name="file" class="custom-file-input" id="sugAttachment" aria-describedby="inputGroupFileAddon01" /> 
+																						<label class="custom-file-label" id="SugAttachmentLabel" for="sugAttachment">Choose file</label>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div class="col-md-4">
+																	<button type="button" class="btn btn-outline-primary btn_upload" id="btn_upload_sug" onclick="uploadFile(this.id)">
+																		<i class="fad fa-arrow-to-top fa-fw" aria-hidden="true"></i>&nbsp; Upload
+																	</button>
+																</div>
+															</div>
+
+
+															<div class="table-responsive-md data_table ">
+																<table id="suggestionTable" class="table table-bordered table-striped w-100" aria-labelledby="Documents-table" aria-hidden="true">
+																	<thead class="table-light">
+																		<tr>
+																		</tr>
+																	</thead>
+																	<tbody>
+																	</tbody>
+																</table>
+															</div>
+														</fieldset>
+													</div>
+
+												</div>
+												<!-- /.row -->
+
+												<div class="row border-top">
+													<div class="col-12 d-flex justify-content-end my-2">
+														<button type="submit" class="btn btn-primary mx-2" onclick="saveSuggestion()">
+															<i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Submit
+														</button>
+														<button type="reset" class="btn btn-light">
+															<i class="fal fa-times fa-fw" aria-hidden="true"></i>&nbsp;Clear
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+										<div class="tab-pane fade p-2" id="compliment">
+											<form>
+												<fieldset class="mb-2">
+													<legend>Customer Details</legend>
+													<div class="row">
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="number" class="form-control" id="cifNo" placeholder="CIF NO" autocomplete="off" />
+																<label class="col-form-label required" for="cifNo">CIF NO</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugCusName" placeholder="Name" autocomplete="off" />
+																<label class="col-form-label required" for="sugCusName">Name</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugContactNo" placeholder="Mobile No" />
+																<label class="col-form-label required" for="sugContactNo">Mobile No</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="email" class="form-control" id="sugEmail" placeholder="Email" />
+																<label class="col-form-label" for="sugEmail">Email</label>
+															</div>
+														</div>
+
+														<!-- <div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<select id="sugRegisterType" class="form-select">
+																	<option value="">Please select</option>
+																	<option value="suggestion">Suggestion</option>
+																	<option value="AL YUSR suggestion">AL YUSR Suggestion</option>
+																</select>
+																<label class="col-form-label required" for="sugRegisterType">Register Type</label>
+															</div>
+														</div> -->
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="sugStatus" placeholder="Status" value="New" readonly />
+																<label class="col-form-label" for="sugStatus">Status</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" placeholder="Initiator" id="sugInitiator" value="FLS" readonly />
+																<label class="col-form-label" for="sugInitiator">Initiator</label>
+															</div>
+														</div>
+													</div> <!-- /.row -->
+												</fieldset>
+
+												<div class="row">
+													<div class="col-md-9">
+														<fieldset class="mb-2">
+															<legend>Suggestion Details</legend>
+															<div class="row">
+																<div class="mb-3 col-md-12">
+																	<label class="form-label required" for="sugDetails">Details</label>
+																	<textarea name="" id="sugDetails" cols="30" rows="3" class="form-control"></textarea>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+													<div class="col-md-3">
+														<fieldset class="mb-2">
+															<legend>Preferred communication channel</legend>
+															<div class="row">
+																<h4 class="card-title tx-16">Language</h4>
+																<div class="mb-3 mb-0">
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> English </label> 
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> Arabic </label>
+																</div>
+															</div>
+															<div class="row">
+																<h4 class="card-title tx-16">communication channel</h4>
+																<div class="mb-3">
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="sms" checked>SMS
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="email">Email
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="phone">Phone
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+
+												</div>
+
+												<div class="row">
+													<div class="form-group col-sm-12 col-md-12">
+														<fieldset>
+															<legend>Attachments</legend>
+															<div class="file-upload">
+																<form method="post" action="" enctype="multipart/form-data" id="upload-Form">
+																	<input type="hidden" value="${token}" id="tokenid" />
+																	<input type="hidden" value="${ip}" id="ipid" /> 
+																	<input type="hidden" value="${port}" id="portid" />
+																</form>
+															</div>
+
+															<div id='file_tools_sug' class="row mb-3">
+																<div class="col-md-4">
+																	<table class="file_upload w-100 table-hover mb-0" id="s" aria-hidden="true">
+																		<tr>
+																			<td>
+																				<div class="input-group">
+																					<div class="custom-file">
+																						<input type="file" name="file" class="custom-file-input" id="sugAttachment" aria-describedby="inputGroupFileAddon01" /> 
+																						<label class="custom-file-label" id="SugAttachmentLabel" for="sugAttachment">Choose file</label>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div class="col-md-4">
+																	<button type="button" class="btn btn-outline-primary btn_upload" id="btn_upload_sug" onclick="uploadFile(this.id)">
+																		<i class="fad fa-arrow-to-top fa-fw" aria-hidden="true"></i>&nbsp; Upload
+																	</button>
+																</div>
+															</div>
+
+
+															<div class="table-responsive-md data_table ">
+																<table id="suggestionTable" class="table table-bordered table-striped w-100" aria-labelledby="Documents-table" aria-hidden="true">
+																	<thead class="table-light">
+																		<tr>
+																		</tr>
+																	</thead>
+																	<tbody>
+																	</tbody>
+																</table>
+															</div>
+														</fieldset>
+													</div>
+
+												</div>
+												<!-- /.row -->
+
+												<div class="row border-top">
+													<div class="col-12 d-flex justify-content-end my-2">
+														<button type="submit" class="btn btn-primary mx-2" onclick="saveSuggestion()">
+															<i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Submit
+														</button>
+														<button type="reset" class="btn btn-light">
+															<i class="fal fa-times fa-fw" aria-hidden="true"></i>&nbsp;Clear
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+										<div class="tab-pane fade p-2" id="enquiry">
+											<form>
+												<fieldset class="mb-2">
+													<legend>Customer Details</legend>
+													<div class="row">
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="input-group mb-3">
+																<div class="form-floating">
+																	<input type="text" class="form-control" id="enqCusAccountNo" placeholder="Account No" />
+																	<label class="col-form-label" for="enqCusAccountNo">Account No</label>
+																</div>
+																<span class="input-group-text">
+																	<button class="btn p-0" type="button" id="button-addon2">
+																		<i class="fal fa-search fa-lg" aria-hidden="true"></i>
+																	</button>
+																</span>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="enqCusName" placeholder="Name" autocomplete="off" />
+																<label class="col-form-label" for="enqCusName">Name</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<select id="EnquiryDropDown" class="form-select">
+																	<option value="">Please select</option>
+																</select>
+																<label class="col-form-label">Enquiry Type</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<select id="enqCusType" class="form-select">
+																	<option value="">Select Customer Type</option>
+																	<option value="1">Bank Customer</option>
+																	<option value="2">Non-Bank Customer</option>
+																</select>
+																<label class="col-form-label">Customer Type</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="enqStatus" placeholder="Status" value="New" readonly />
+																<label class="col-form-label">Status</label>
+															</div>
+														</div>
+														<input type="hidden" id="custId" name="custId" value="3487">
+														<!--The above field is used to store the -->
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="email" class="form-control" id="enqCusEmail" placeholder="Email" />
+																<label class="col-form-label">Email</label>
+															</div>
+														</div>
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" id="enqContactNo" placeholder="Mobile No" />
+																<label class="col-form-label">Mobile No</label>
+															</div>
+														</div>
+													
+														<!-- <div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<select id="enqRegisterType" class="form-select">
+																	<option value="">Please select</option>
+																	<option value="enquiry">Enquiry</option>
+																	<option value="AL YUSR enquiry">AL YUSR enquiry</option>
+																</select>
+																<label class="col-form-label required">Register Type</label>
+															</div>
+														</div> -->
+													
+														<div class="col-sm-6 col-lg-4 mb-3">
+															<div class="form-floating">
+																<input type="text" class="form-control" placeholder="Initiator" value="FLS" readonly />
+																<label class="col-form-label">Initiator</label>
+															</div>
+														</div>
+														
+													</div> <!-- /.row -->
+												</fieldset>
+
+												<div class="row">
+													<div class="col-md-9">
+														<fieldset class="mb-2">
+															<legend>Details</legend>
+															<div class="row">
+																<div class="mb-3 col-md-12">
+																	<div class="form-floating">
+																		<textarea name="" id="enqDetails" cols="30" rows="3" class="form-control"></textarea>
+																		<label class="form-label required" for="enqDetails">Details</label>
+																	</div>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+													<div class="col-md-3">
+														<fieldset class="mb-2">
+															<legend>Preferred communication channel</legend>
+															<div class="row">
+																<h4 class="card-title tx-16">Language</h4>
+																<div class="mb-3 mb-0">
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> English </label> 
+																	<label class="radio-inline me-3"> <input type="radio" name="sugLanguage"> Arabic </label>
+																</div>
+															</div>
+															<div class="row">
+																<h4 class="card-title tx-16">communication channel</h4>
+																<div class="mb-3">
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="sms" checked>SMS
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="email">Email
+																		</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<label class="form-check-label"> 
+																			<input type="checkbox" class="form-check-input" name="sugCommChannels" value="phone">Phone
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+
+												</div>
+
+												<div class="row border-top">
+													<div class="col-12 d-flex justify-content-end my-3">
+														<button type="button" class="btn btn-primary mx-2" onclick="saveEnquiry()">
+															<i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp; Submit
+														</button>
+														<button type="reset" class="btn btn-light">
+															<i class="fal fa-times fa-fw" aria-hidden="true"></i>&nbsp; Clear
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end col -->
+					</div> <!-- end row -->
+
+				</div> <!-- container-fluid -->
+			</div> <!-- End Page-content -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="moreInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="moreInfoModalLabel">Add information</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row" id="addInfo1">
+									<!-- Text -->
+									<div class="col-md-6">
+										<label for="" class="required">Text</label> 
+										<input type="text" name="${mi.fieldName}" id="${mi.seqNo}" placeholder="${mi.fieldLabel}" class="form-control" />
+									</div>
+
+									<!-- &lt;!&ndash; List &ndash;&gt; -->
+									<div class="col-md-6">
+										<label for="" class="required">Select</label> 
+										<select Name="${mi.fieldName}" class="form-select" id="${mi.seqNo}">
+											<option value="">-Please select-</option>
+										</select>
+									</div>
+
+									<!-- &lt;!&ndash; check box &ndash;&gt; -->
+									<div class="col-md-6">
+										<label for="" class="required">Check box</label>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+										</div>
+									</div>
+
+									<!-- &lt;!&ndash; radio &ndash;&gt; -->
+									<div class="col-md-6">
+										<label for="" class="required">Radio</label>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" value="" id="flexCheckradio" checked>
+										</div>
+									</div>
+
+									<!-- &lt;!&ndash; Text Area &ndash;&gt; -->
+									<div class="col-md-6">
+										<label for="" class="required">Text area</label>
+										<textarea rows="" cols="" class="form-control"></textarea>
+									</div>
+
+									<!-- &lt;!&ndash; Date &ndash;&gt; -->
+									<div class="col-md-6">
+										<label for="" class="required">Date</label>
+										<div class="input-group">
+											<input type="text" name="datepicker" class="datepicker-default form-control" id="fromDate">
+											<span class="input-group-text"><i class="fal fa-calendar-alt" aria-hidden="true"></i></span>
+										</div>
+									</div>
+
+								</div>
+								<!-- /.row -->
+								<p class="text-danger">Please Enter NA or 00 in the Text Boxes if it is not necessary</p>
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setFlag();loadMoreInfoToTable()">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Continue
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- send Modal -->
+			<div class="modal fade" id="sendModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-primary">
+							<h5 class="modal-title text-white" id="sendModalLabel">
+								<i class="fal fa-paper-plane label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Send Info</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<!-- Action Description  -->
+									<div class="col-md-12 mb-3">
+										<label for="description" class="required">Action Description </label>
+										<textarea rows="5" cols="30" class="form-control" id="description" placeholder="Action Description"></textarea>
+									</div>
+								</div>
+								<!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- escalate Modal -->
+			<div class="modal fade" id="escalateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="escalateModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-primary">
+							<h5 class="modal-title text-white" id="escalateModalLabel"><i class="fal fa-exclamation-triangle label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Escalate</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<!-- Escalate To -->
+									<div class="col-12 col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select Name="escalateTo" class="form-select" id="escalateTo">
+												<option value="">Please select</option>
+											</select>
+											<label for="escalateTo" class="required">Escalate To</label> 
+										</div>
+									</div>
+									<!-- Description -->
+									<div class="col-md-12 mb-3">
+										<label for="escalateDesc" class="required">Description</label>
+										<textarea rows="" cols="" class="form-control" id="escalateDesc"></textarea>
+									</div>
+								</div> <!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- needMoreInfo Modal -->
+			<div class="modal fade" id="needMoreInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="needMoreInfoModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-warning">
+							<h5 class="modal-title text-white" id="needMoreInfoModalLabel">
+								<i class="fa-light fa-memo-circle-info label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Need More Info</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<!-- Action Description  -->
+									<div class="col-md-12 mb-3">
+										<label for="needMoreInfoDesc" class="required">Action Description </label>
+										<textarea rows="5" cols="30" class="form-control" id="needMoreInfoDesc" placeholder="Action Description"></textarea>
+									</div>
+								</div>
+								<!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Transfer Modal -->
+			<div class="modal fade" id="transferModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-info">
+							<h5 class="modal-title text-white" id="transferModalLabel">
+								<i class="fa-light fa-random label-icon align-middle fa-lg me-2" aria-hidden="true"></i>&nbsp; Transfer
+							</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<!-- Escalate To -->
+									<div class="col-12 col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select Name="transferTo" class="form-select" id="transferTo">
+												<option value="">Please select</option>
+											</select>
+											<label for="transferTo" class="required">Transfer To</label> 
+										</div>
+									</div>
+									<!-- Description -->
+									<div class="col-md-12 mb-3">
+										<label for="transferDesc" class="required">Description</label>
+										<textarea rows="5" cols="30" class="form-control" id="transferDesc"></textarea>
+									</div>
+								</div> <!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- finalize Modal -->
+			<div class="modal fade" id="finalizeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="finalizeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-success">
+							<h5 class="modal-title text-white" id="finalizeModalLabel">Finalize</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="feedbackType" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label required">Complaint Type</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="feedbackDesc" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label">Compliant Sub Type</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="productCategory" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label" for="productCategory">Product Category</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="serviceProvider" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label" for="serviceProvider">Service Provider</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<label for="rootCase1" class="required">Root Case</label>
+										<div class="">
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase1" class="form-check-input" value="people">People</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase2" class="form-check-input" value="technology">Technology</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase3" class="form-check-input" value="process">Process</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase4" class="form-check-input" value="other">Other</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="finalizedType" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label" for="finalizedType">Finalized Type</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<label for="knowledgeBase" class="">Knowledge Base</label>
+										<div class="">
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> 
+													<input type="checkbox" name="knowledgeBase" id="knowledgeBase" class="form-check-input" value="yes">Yes</label>
+											</div>
+										</div>
+									</div>
+									<!-- Resolution Date -->
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<label for="resolutionDate" class="required">Resolution Date</label>
+										<div class="input-group">
+											<input type="date" name="datepicker" class="datepicker-default form-control" id="resolutionDate">
+											<span class="input-group-text"><i class="fal fa-calendar-alt" aria-hidden="true"></i></span>
+										</div>
+									</div>
+
+									<!-- Description -->
+									<div class="col-md-12 mb-3">
+										<label for="finalizeDesc" class="required">Description</label>
+										<textarea rows="5" cols="30" class="form-control" id="finalizeDesc"></textarea>
+									</div>
+								</div>
+								<!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- rejected Modal -->
+			<div class="modal fade" id="rejectedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="rejectedModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-danger">
+							<h5 class="modal-title text-white" id="rejectedModalLabel">Rejected</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+
+								<div class="row">
+									<!-- Action Description  -->
+									<div class="col-md-12 mb-3">
+										<label for="rejectedDesc" class="required">Action Description </label>
+										<textarea rows="5" cols="30" class="form-control" id="rejectedDesc" placeholder="Action Description"></textarea>
+									</div>
+								</div>
+								<!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- warpUp Modal -->
+			<div class="modal fade" id="warpUpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="warpUpModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header bg-secondary">
+							<h5 class="modal-title text-white" id="warpUpModalLabel">Warp Up</h5>
+						</div>
+						<div class="modal-body">
+							<fieldset>
+								<legend></legend>
+								<div class="row">
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="feedbackType" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label required">Complaint Type</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<div class="form-floating">
+											<select id="feedbackDesc" class="form-select">
+												<option value="">Please select</option>
+											</select>
+											<label class="form-label">Compliant Sub Type</label> 
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<label for="rootCase1" class="required">Root Case</label>
+										<div class="">
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase1" class="form-check-input" value="people">People</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase2" class="form-check-input" value="technology">Technology</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase3" class="form-check-input" value="process">Process</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> <input type="checkbox" name="rootCase" id="rootCase4" class="form-check-input" value="other">Other</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4 mb-3">
+										<label for="knowledgeBase" class="">Knowledge Base</label>
+										<div class="">
+											<div class="form-check form-check-inline">
+												<label class="form-check-label"> 
+													<input type="checkbox" name="knowledgeBase" id="knowledgeBase" class="form-check-input" value="yes">Yes</label>
+											</div>
+										</div>
+									</div>
+
+									<!-- Comments -->
+									<div class="col-md-12 mb-3">
+										<label for="warpUpComments" class="required">Comments</label>
+										<textarea rows="5" cols="30" class="form-control" id="warpUpComments" placeholder="Comments"></textarea>
+									</div>
+								</div>
+								<!-- /.row -->
+							</fieldset>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								<i class="fal fa-times" aria-hidden="true"></i>&nbsp; Close
+							</button>
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fal fa-arrow-from-left" aria-hidden="true"></i>&nbsp;
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
+    <!-- <script type="text/javascript" src="assets/bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-5.1.3/js/bootstrap.bundle.js.map"></script> -->
+    <script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
+    <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
+    <script type="text/javascript" src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
+
+    <!-- projects js -->
+    <!-- <script type="text/javascript" src="assets/js/pages/dashboard-projects.init.js"></script> -->
+
+    <!-- App js -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/attachments.js"></script>
+    <script type="text/javascript" src="assets/js/custom-file-input.js"></script>
+</body>
+
+</html>

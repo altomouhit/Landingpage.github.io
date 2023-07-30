@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="242" height="198" viewBox="0 0 242 198">
+  <defs>
+    <radialGradient id="radial-gradient" cx="1.276" cy="-0.115" r="1.608" gradientTransform="translate(-0.265) scale(1.529 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9191"/>
+      <stop offset="0.5" stop-color="#f6455e"/>
+      <stop offset="0.586" stop-color="#ee4164"/>
+      <stop offset="0.714" stop-color="#da3875"/>
+      <stop offset="0.868" stop-color="#b82990"/>
+      <stop offset="1" stop-color="#971aad"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.688" cy="-1.127" r="2.488" gradientTransform="translate(0.219) scale(0.563 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6ef6"/>
+      <stop offset="0.5" stop-color="#f6455e"/>
+      <stop offset="0.586" stop-color="#ee4164"/>
+      <stop offset="0.714" stop-color="#da3875"/>
+      <stop offset="0.868" stop-color="#b82990"/>
+      <stop offset="1" stop-color="#115ecd"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.534" cy="0" r="1.056" gradientTransform="translate(0.529 -0.534) rotate(89.371)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#115ecd"/>
+      <stop offset="0.566" stop-color="#115ecd"/>
+      <stop offset="1" stop-color="#ca3182"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="0.037" cy="-0.347" r="3.322" gradientTransform="translate(0.037) scale(0.926 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#488334"/>
+      <stop offset="1" stop-color="#90e545"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="7.39" cy="-3.278" r="10.271" gradientTransform="translate(-0.264) scale(1.529 1)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="10.854" cy="-6.124" r="17.447" gradientTransform="translate(-0.264) scale(1.529 1)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-7" cx="9.914" cy="-5.124" r="17.447" xlink:href="#radial-gradient"/>
+    <clipPath id="clip-eoffice">
+      <rect width="242" height="198"/>
+    </clipPath>
+  </defs>
+  <g id="eoffice" clip-path="url(#clip-eoffice)">
+    <g id="eoffice-2" data-name="eoffice" transform="translate(-467.301 -147)">
+      <path id="Path_1" data-name="Path 1" d="M515.4,213.655l2.282,67.2,73.936-49.345-2.282-67.2Zm7.7,57.021-1.929-54.318,62.741-41.873,1.943,54.3Z" transform="translate(9.001 5.849)" fill="url(#radial-gradient)"/>
+      <path id="Path_2" data-name="Path 2" d="M653.073,242.974l-59.917-26-73.939,49.343,59.917,26Z" transform="translate(10.37 24.734)" fill="url(#radial-gradient-2)"/>
+      <path id="Path_3" data-name="Path 3" d="M675.168,199.111l-7.826,15.665a84.756,84.756,0,1,1-25.08-33.952l15.909-4.239a98.236,98.236,0,1,0,17,22.526Z" transform="translate(0 0)" fill="url(#radial-gradient-3)"/>
+      <path id="Path_4" data-name="Path 4" d="M585.338,185.116l23.05,12.764,9.73,27.434,28.172-56.437Z" transform="translate(34.082 7.487)" fill="url(#radial-gradient-4)"/>
+      <path id="Path_5" data-name="Path 5" d="M526.112,212.379l.66,19.45,21.4-14.282-.66-19.45Z" transform="translate(12.843 17.966)" fill="url(#radial-gradient-5)"/>
+      <path id="Path_6" data-name="Path 6" d="M542.35,214.629l.389,11.451,12.6-8.408-.389-11.451Z" transform="translate(18.666 20.879)" fill="url(#radial-gradient-6)"/>
+      <path id="Path_7" data-name="Path 7" d="M551.34,200.012l.388,11.451,12.6-8.408L563.94,191.6Z" transform="translate(21.89 15.637)" fill="url(#radial-gradient-7)"/>
+    </g>
+  </g>
+</svg>

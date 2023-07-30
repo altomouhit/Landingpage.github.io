@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="Authority" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>طلب عرض القائمة</title>
+
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.ar.css"  id="changeStylesheet" />
+<!-- <link rel="stylesheet" href="css/bootstrap-theme.css" /> -->
+<!-- Header-->
+<link rel="stylesheet" href="css/headerar.css">
+<!-- Header-->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content.css" />
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop.css" />
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+<!--End CSS English / Arabic files-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Comman CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<!-- Start Header -->
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="indexar.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="indexar.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/moi-logo-white.png" id="navbar-logo" alt="Ministry of Regional Municipality & Water Resources"></a>
+    </div>
+</header>
+<nav class="navbar-core">
+  <div class="container-fluid">
+    <div class="col-xs-6">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="WS-dashboard-arabic.html"><i class="fa fa-home" aria-hidden="true"></i>الصفحة الرئيسية</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-2 text-size text-center"> <a href="#" class="small">&rlm; A-</a> <a href="#" class="current">&rlm; A</a> <a href="#" class="large">&rlm; A+</a> </div>
+    <div class="col-xs-3 text-right user-icon"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="User details"><i class="fa fa-user-circle"></i> <span class="user-name">أهلا وسهلا بكم عمر أحمد<i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>الملف الشخصي</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-1 text-right language-change"><a href="WS-dashboard.html">English</a></div>
+  </div>
+</nav>
+<!-- End Header -->
+<div class="container main-content-top-margin"> 
+  
+  <!--Main content-->
+  <div class="row panel-head-services ws-panel">
+    <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+      <div class="panel-text">عرض قائمة الطلبات</div>
+    </div>
+    <div class="col-sm-4 nopadding">
+      <ul class="pull-right">
+        <li><a href="#" class="helprint"><i class="fa fa-question" aria-hidden="true"></i>مساعدة</a></li>
+        <li><a class="helprint" id="btn1"><i class="fa fa-print" aria-hidden="true"></i>طباعة</a></li>
+        <li><a href="javascript:void(0);" class="helprint" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i>رجوع</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--End Main content--> 
+  
+  <!-- SmartWizard html --> 
+  <!--Inner Pages Start -->
+  <div class="inner-pages transparent-white-background">
+    <div class="">
+      <div class="row">
+        <div class="col-sm-12">
+          <fieldset>
+            <legend>بحث الطلبات</legend>
+            <div class="panel-box">
+              <div class="panel-box-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">رقم السجل التجاري</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">اسم مقدم الطلب</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">رقم الهاتف</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">رقم الطلب</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">رقم الحصر</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">رقم شهادة سجل المقاول</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">نوع النشاط</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">من تاريخ</label>
+                        <div class="col-sm-8">
+                          <div class="input-group date">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">الى تاريخ</label>
+                        <div class="col-sm-8">
+                          <div class="input-group date">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">‎الخدمات الرئيسية</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option>‎طلبات تراخيص الآبار</option>
+                            <option>طلبات حصر الآبار</option>
+                            <option>طلبات دراسات الوضع المائي والمعلومات الهيدرومترية و المسوحات الفنية</option>
+                            <option>طلبات مقاولي حفر آبار المياه</option>
+                            <option>طلبات الأفلاج</option>
+                            <option>طلبات السدود</option>
+                            <option>طلبات تنمية موارد المياه</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">اسم الخدمة</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option value="1">جديد</option>
+                            <option value="2">بديلة</option>
+                            <option value="3">الابقاء على البئر</option>
+                            <option value="4">التعميق / الصيانة</option>
+                            <option value="5">ردم</option>
+                            <option value="6">تغير نوع الاستخدام</option>
+                            <option value="7">أستغناء / استغلال ابار الوزارة</option>
+                            <option value="8">مضخة/وحدة تحلية المياه</option>
+                            <option value="9">اعادة استخدام</option>
+                            <option value="10">نقل / بيع / تمديد</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">حالة الطلب</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">المحافظة</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">الولاية</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">نوع الطلب</label>
+                        <div class="col-sm-8">
+                          <select class="form-control">
+                            <option value="1000">الرجاء الإختيار...</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="btn-group navbar-btn sw-btn-group-extra" role="group">
+                          <button class="btn btn-ws"><i class="fa fa-search" aria-hidden="true"></i> بحث</button>
+                          <button class="btn btn-ws marginR10"><i class="fa fa-undo" aria-hidden="true"></i> إعادة تعيين / تصفيه</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="table-responsive table-db">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>رقم الطلب</th>
+                  <th>التاريخ</th>
+                  <th>مقدم الطلب</th>
+                  <th>الرقم المدني</th>
+                  <th>اسم الخدمة</th>
+                  <th>حالة الطلب</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>WS1700001</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 1</td>
+                  <td>286111944284540</td>
+                  <td>طلبات التراخيص المائية</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS01-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700002</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 2</td>
+                  <td>286111944284540</td>
+                  <td>طلبات الحصر والتسجيل </td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS02-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700003</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 3</td>
+                  <td>286111944284540</td>
+                  <td>طلبات مقاولي حفر آبار المياه</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS03-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700004</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 4</td>
+                  <td>286111944284540</td>
+                  <td>طلبات دراسات الوضع المائي والمعلومات الهيدرولوجية و المسوحات الفنية</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS04-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700005</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 5</td>
+                  <td>286111944284540</td>
+                  <td>مخالفات المياة</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS-violationar.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i>عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700006</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 5</td>
+                  <td>286111944284540</td>
+                  <td>طلبات الافلاج</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS06-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS1700008</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 6</td>
+                  <td>286111944284540</td>
+                  <td>طلبات السدود</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS08-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+                <tr>
+                  <td>WS17000018</td>
+                  <td>14/06/2012</td>
+                  <td>اسم مقدم الطلب 7</td>
+                  <td>286111944284540</td>
+                  <td>طلبات تنمية موارد المياه</td>
+                  <td>مبدئي</td>
+                  <td><a href="CAWS18-arabic.html" class="btn btn-ws"><i class="fa fa-file-text-o" aria-hidden="true"></i> عرض التفاصيل</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+<!-- .container main-content-top-margin --> 
+
+<br />
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-md-4">
+        <a href="index.html">
+          <img alt="oman-vision" id="footer-logo" class="img-responsive mb-2" src="images/oman-vision-white.png"></a>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline text-center">
+          <li><script>document.write(new Date().getFullYear())</script>
+              <a class="font-weight-bold" href="https://www.moi.gov.om" target="_blank">حقوق النشر <span>&copy;</span> وزارة الداخلية، كل الحقوق محفوظة</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-right">
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/instagram-logo.svg" class="list-brand-icon" alt="">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3">
+              <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="images/social/twitter.svg" class="list-brand-icon" alt=""></a>
+          </li>
+
+          <!-- brand -->
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="images/oman-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="images/w3c-logo.png" class="list-brand-icon" alt="...">
+              </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div> <!-- /.container -->
+</section>
+<!-- FOOTER END --> 
+
+<!--Scrolling top--> 
+<a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br />
+Top </a> 
+<!-- end scrolling top--> 
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/main.js"></script> 
+<script src="js/scrollJS.js"></script> 
+<script src="js/scrollToTop.js"></script> 
+<script src="js/text-resize.js"></script> 
+<script src="js/demo.js"></script> 
+
+<!-- Include Data Table smartWizard source --> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/dataTables.bootstrap.min.js"></script> 
+
+<!-- Include smartWizard source --> 
+<script src="js/jquery.smartWizard.js"></script> 
+
+<!-- Include Smartwizardws plugin --> 
+<script src="js/smartwizardws.js"></script> 
+<!-- Include Preloader plugin --> 
+<script src="js/Preloader.js"></script> 
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script> 
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    orientation: "auto bottom",
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true
+});
+});
+
+</script> 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</body>
+</html>

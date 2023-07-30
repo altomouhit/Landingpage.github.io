@@ -1,0 +1,432 @@
+
+@font-face {
+    font-family: 'Thameen-Web';
+    src: url('ThameenWebFont/ThameenDemi.eot');
+    src: url('ThameenWebFont/ThameenDemi.ttf?#iefix') format('embedded-opentype'),
+    url('ThameenWebFont/ThameenDemi.woff') format('woff'),
+    url('ThameenWebFont/ThameenDemi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thameen-Web';
+    src: url('ThameenWebFont/ThameenBook.eot');
+    src: url('ThameenWebFont/ThameenBook.ttf?#iefix') format('embedded-opentype'),
+    url('ThameenWebFont/ThameenBook.woff') format('woff'),
+    url('ThameenWebFont/ThameenBook.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thameen-Web';
+    src: url('ThameenWebFont/ThameenLight.eot');
+    src: url('ThameenWebFont/ThameenLight.ttf?#iefix') format('embedded-opentype'),
+    url('ThameenWebFont/ThameenLight.woff') format('woff'),
+    url('ThameenWebFont/ThameenLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/*@font-face {
+  font-family: 'Droid';
+  src: url(DroidKufi-Regular.ttf);
+}*/
+body {
+    margin: 0;
+    margin: 0px;
+    font-family: 'Thameen-Web', arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    font-weight: 500;
+    background-color: #dbdbdb;
+    line-height: none;
+}
+
+.title-page{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+.fa{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.top-menu {
+  font-family: 'Thameen-Web', arial;
+  font-weight: 700;
+}
+
+.normal-font {
+  font-family: 'Thameen-Web', arial;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.latest-news-content > h5 {
+  font-weight: 500;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+/* START Override global content inline CSS */
+
+.global-content span[style] {
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+
+}
+
+.global-content p[style] {
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+}
+
+.margin-Bsmart{
+    margin-bottom: 30px;
+}
+/* END Override global content inline CSS */
+
+/* START Override portal content inline CSS */
+
+.portal-content span[style] {
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+
+}
+
+.portal-content p[style] {
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+}
+
+/* END Override global content inline CSS */
+
+/* Google Map in My City text override */
+/*for directions*/
+.adp, .adp table{
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+}
+
+.gm-style .gm-style-iw, .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+  font-family: 'Thameen-Web', arial !important;
+  font-weight: 700 !important;
+}
+
+.portal-desc-panel a {
+  font-weight: 200;
+}
+
+.panel-title {
+  font-family: 'Thameen-Web', arial;
+}
+
+.header-with-image > div {
+  font-family: 'Thameen-Web', arial;
+  font-weight: 700;
+}
+
+.red-note{
+    color: red;
+}
+.required:after{
+    content: " * ";
+    color: red;
+    font-size: 18px;
+    top: 7px;
+    margin-right: 5px;
+    position: absolute;
+}
+.full-width-image{
+    width: 100%;
+}
+.happy{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+/*----------------- font sizes styles ------------------*/
+.fa-8px{
+    font-size: 8px !important;
+}
+.fa-10px{
+    font-size: 10px !important;
+}
+.fa-12px{
+    font-size: 12px !important;
+}
+.fa-14px{
+    font-size: 14px !important;
+}
+.fa-16px{
+    font-size: 16px !important;
+}
+.fa-18px{
+    font-size: 18px !important;
+}
+.fa-20px{
+    font-size: 20px !important;
+}
+.fa-22px{
+    font-size: 22px !important;
+}
+.fa-24px{
+    font-size: 24px !important;
+}
+.fa-26px{
+    font-size: 26px !important;
+}
+.fa-28px{
+    font-size: 28px !important;
+}
+.fa-30px{
+    font-size: 30px !important;
+}
+/*-----------------End font sizes styles ------------------*/
+
+.padding-5{
+    padding: 5px;
+}
+.margin-5{
+    margin: 5px;
+}
+.zero-padding {
+    padding: 0px !important;
+}
+.transparent-white-background {
+      background: #FFF;
+}
+.inner-pages {
+    padding: 5px;
+}
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*---------------Start breadcrumb -----------------------*/
+.breadcrumb {
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    list-style: none outside none;
+    background-color: transparent;
+    border-radius: 0px;
+    /*font-size: 12px; commented by Sweety issue in chrome*/
+}
+.breadcrumb a {
+    color: #000;
+}
+.breadcrumb a:hover {
+    color: #76261B;
+}
+.breadcrumb > li + li:before {
+    content: "/ ";
+    padding: 0px 5px;
+    color: #000;
+}
+/*---------------End breadcrumb -----------------------*/
+/*---------------Start images -----------------------*/
+img {
+    text-decoration: none;
+    border: 0px;
+}
+img:hover {
+    text-decoration: none;
+    border: 0px;
+}
+img:visited {
+    text-decoration: none;
+    border: 0px;
+}
+/*---------------End images -----------------------*/
+/*---------------Start Over write buttons -----------------------*/
+.btn {
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 0;
+}
+/*---------------End Over write buttons -----------------------*/
+/*---------------Start href links -----------------------*/
+a:hover, a:focus {
+    color: #666;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+a {
+    color: #000;
+}
+/*
+a {
+        text-decoration: none;
+}
+a:hover {
+        text-decoration: underline !important;
+}
+a:visited {
+        color: #996666 !important;
+}
+*/
+
+/*--------------- End href links -----------------------*/
+
+
+
+.popover-content {
+        font-size: 12px;
+}
+.popover.top > .arrow {
+  margin-right: -80px;
+}
+
+/*---------------Start content -----------------------*/
+
+.global-content {
+    color: #000;
+    text-align: justify;
+    line-height: 1.7;
+    direction: rtl;
+    font-size:16px;
+min-height: 500px;
+}
+.global-content ul li{
+    list-style:square;
+}
+.global-content a {
+    color: #000;
+    text-align: justify;
+    text-decoration: underline;
+   -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.global-content a:hover {
+    color: #76261B;
+    text-align: justify;
+}
+.global-content img {
+    max-width: 550px;
+    height: auto;
+
+}
+@media (max-width: 767px) {
+    .global-content img {
+        width: 100%
+    }
+}
+
+
+.bold{
+    font-weight: 800;
+}
+/*---------------End Start content -----------------------*/
+/*---------------Start H text -----------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+h5 {
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+h6 {
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 1em;
+    line-height: 1.1
+}
+/*---------------End H text -----------------------*/
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 98%;
+    }
+     /*body {
+        background-image: url(/DMRedesignTheme/themes/DMRedesignTheme/assets/global/global/expo2020-2013.png);
+    }*/
+}
+@media (min-width: 768px) {
+    .container {
+        width: 98%;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.alert>p, .alert>ul {
+	margin-bottom: 0;
+	margin-right: 70px;
+}

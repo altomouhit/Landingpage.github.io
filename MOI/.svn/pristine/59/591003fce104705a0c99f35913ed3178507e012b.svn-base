@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <META name="robots" content="follow,index" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+  <meta name="description" content="Official Portal for Oman Municipality" />
+  <meta name="author" content="oman Government, oman Municipality" />
+  <meta name="generator" content="ITON oman" />
+  <link rel="shortcut icon" href="images/Khanjar.png">
+  <title>Health Violations - View issue details</title>
+
+  <!--Start CSS English / Arabic files-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" id="changeStylesheet" />
+  <!-- <link rel="stylesheet" href="css/bootstrap-theme.css" /> -->
+
+  <!-- <script type="text/javascript">
+  function changeLanguage()
+  { 
+    $('#changeStylesheet').attr('href',$('#langageSelector').val());
+   
+  } 
+  
+</script> -->
+
+  <!-- Header-->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Header-->
+
+  <!-- Homepage Main Content -->
+  <link rel="stylesheet" href="css/homepage-main-content.css" />
+  <!-- Homepage Main Content -->
+
+  <link rel="stylesheet" href="css/scrollToTop.css" />
+
+  <!-- LOAD smart_wizard CSS -->
+  <link rel="stylesheet" href="css/smart_wizard.css" />
+
+  <!-- LOAD DataTables CSS -->
+  <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+  <!--End CSS English / Arabic files-->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+  <!-- ........................................................................................................................ -->
+
+  <!--Start Comman CSS files-->
+  <!--text resize assets -->
+  <link rel="stylesheet" href="css/text-resize.css" />
+  <!-- End text resize assets -->
+
+  <!--font-awesome-4.1.0-->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <!--font-awesome-4.1.0-->
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!--Footer assets -->
+  <link rel="stylesheet" href="css/footer.css" />
+  <!-- End Footer assets -->
+
+  <!--scrolling assets -->
+  <link rel="stylesheet" href="css/scroll.css" />
+  <!-- End scrolling assets -->
+
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/mrm.css">
+  <!--End Comman CSS files-->
+
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div><!-- Start Header -->
+  <header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo">
+        <a href="index.html" title="Enjaz"><img alt="Enjaz" src="images/Enjaz.svg"></a>
+      </div>
+    </div>
+    <div class="dg-Logo">
+      <a href="index.html" title="Ministry of Regional Municipality & Water Resources"><img
+          alt="Ministry of Regional Municipality & Water Resources" src="images/moi-logo-white.png"
+          id="navbar-logo"></a>
+    </div>
+  </header>
+  <nav class="navbar-core">
+    <div class="container-fluid">
+      <div class="col-xs-6">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="HS-dashbaord.html"><i aria-hidden="true" class="fa fa-home"></i>Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-2 text-size text-center">
+        <a class="small" href="#">A-</a> <a class="current" href="#">A</a> <a class="large" href="#">A+</a>
+      </div>
+      <div class="col-xs-3 text-right user-icon">
+        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#"
+          role="button" title="User details"><i class="fa fa-user-circle"></i> <span class="user-name">Welcome Omar
+            Ahmed<i aria-hidden="true" class="fa fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#"><i aria-hidden="true" class="fa fa-user"></i>Profile</a>
+          </li>
+          <li class="divider" role="separator"></li>
+          <li>
+            <a href="#"><i aria-hidden="true" class="fa fa-sign-out"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-1 text-right language-change">
+        <a href="HS-dashbaord-arabic.html">عربى</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav><!-- End Header -->
+  <!-- <form class="form-inline select-language" action="#" onsubmit="return false;">
+  <div class="form-group">    
+        <select class="form-control" id="langageSelector" name="language" onchange="changeLanguage();">
+        <option value="css/bootstrap.min.css" id="rtl">English</option>
+        <option value="css/bootstrap.min.ar.css" id="ltr">Arabic</option>
+      </select>
+  </div>  
+</form> -->
+  <div class="container main-content-top-margin">
+    <!--Main content-->
+    <div class="row panel-head-services hs-panel">
+      <div class="col-sm-8 panel-title"><i class="fa fa-dashboard fa-39px"></i>
+        <div class="panel-text">Health Violations</div>
+      </div>
+      <div class="col-sm-4 nopadding">
+        <ul class="pull-right">
+          <li><a class="helprint" href="#"><i aria-hidden="true" class="fa fa-question"></i>Help</a></li>
+          <li><a class="helprint" id="btn1"><i aria-hidden="true" class="fa fa-print"></i>Print</a></li>
+          <li><a class="helprint" href="javascript:void(0);" onclick="goBack()"><i aria-hidden="true"
+                class="fa fa-chevron-left"></i>Back</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--End Main content-->
+    <div class="inner-pages transparent-white-background">
+      <div class="panel-group paddingT10" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- content here -->
+        <div class="panel panel-default">
+          <div class="panel-heading header-ts" role="tab" id="headingOne">
+            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse674" aria-expanded="true" aria-controls="collapse674">
+                <i class="fa fa-bars fa-fw"></i>Request General Details <i
+                  class="more-less glyphicon glyphicon-chevron-down pull-right"></i></a> </h4>
+          </div>
+          <div id="collapse674" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="row cloumns-count">
+                <div class="col-sm-6 col-md-6">
+                  <fieldset class="height-ts">
+                    <legend>Inspector Details</legend>
+                    <div class="table-responsive">
+                      <table class="table table-bordered ">
+                        <thead class="thead-default">
+                          <tr>
+                            <th class="col-sm-6">Municipality</th>
+                            <td>Nizwa</td>
+                          </tr>
+                          <tr>
+                            <th>Department</th>
+                            <td>New</td>
+                          </tr>
+                          <tr>
+                            <th>Section of Edit the Violation</th>
+                            <td>Alshaqiya</td>
+                          </tr>
+                          <tr>
+                            <th>Inspector Name</th>
+                            <td>Omar Ahmed</td>
+                          </tr>
+                          <tr>
+                            <th>Date</th>
+                            <td>02/09/2018</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div> <!-- End .col-md-6 -->
+
+                <div class="col-sm-6 col-md-6">
+                  <fieldset class="height-ts">
+                    <legend>Status</legend>
+                    <div class="text-center">
+                      <fieldset>
+                        <legend>Request Number </legend>
+                        <h1 style="color: #90068a;margin: auto;">TS1700001</h1>
+                      </fieldset>
+                      <fieldset>
+                        <legend> Status </legend>
+                        <h1 style="color: #90068a;margin: auto;">Pending</h1>
+                      </fieldset>
+                      <fieldset>
+                        <legend> Created By </legend>
+                        <h1 style="color: #90068a;margin: auto;">Tech3</h1>
+                      </fieldset>
+                      <fieldset>
+                        <legend> Role Name </legend>
+                        <h1 style="color: #90068a;margin: auto;">Technician</h1>
+                      </fieldset>
+                    </div>
+                  </fieldset>
+                </div> <!-- End .col-md-2-5 -->
+              </div> <!-- End .row -->
+            </div> <!-- End .panel-body -->
+          </div>
+        </div> <!-- End .panel-default -->
+      </div> <!-- End .panel-group -->
+
+    </div>
+    <!-- SmartWizard html -->
+    <!--Inner Pages Start -->
+    <div class="inner-pages transparent-white-background">
+      <div class="panel-group">
+        <div class="row">
+          <div id="smartwizard">
+            <ul id="credit">
+              <li data-interest="1"><a href="#IssueDetails"><i class="fa fa-balance-scale fa-fw"></i>Violations</a></li>
+              <li data-interest="2"><a href="#History"><i class="fa fa-weixin fa-fw"></i>Violations History</a></li>
+              <li data-interest="3"><a href="#Comments"><i class="fa fa-weixin fa-fw"></i>Comments / Actions</a></li>
+              <li data-interest="4"><a href="#SiteInspection"><i class="fa fa-sitemap fa-fw"></i>Site Inspection</a>
+              </li>
+              <li data-interest="5"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>Documents</a></li>
+              <li data-interest="6"><a href="#Payment"><i class="fa fa-credit-card fa-fw"></i>Payment &amp; Output</a>
+              </li>
+              <li data-interest="7"><a href="#certificate"><i class="fa fa-certificate"
+                    aria-hidden="true"></i>Certificate</a></li>
+            </ul>
+            <div class="request-details-tabs">
+              <div id="IssueDetails">
+                <div class="" id="Violation">
+                  <div class="row">
+                    <div class="col-sm-12" data-toggle="validator" id="form-step-10" role="form">
+                      <div class="form-group" id="Warningid">
+                        <div class="row">
+                          <fieldset>
+                            <legend>Violator Details</legend>
+                            <div class="">
+                              <div class="row">
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="Munclic">Municipal License Number</label>
+                                  <input class="form-control" id="Munclic" placeholder="Municipal License Number"
+                                    type="text">
+                                </div>
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="Region_vio">Municipal Licenses </label>
+                                  <select class="form-control" id="Region_vio" name="Region_vio">
+                                    <option value="1000">Please select</option>
+                                    <option value="1">0000001</option>
+                                    <option value="2">0000002</option>
+                                    <option value="3">0000003</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="MuncExp">Municipal License Expiry Date</label>
+                                  <div class="input-group date">
+                                    <input class="form-control" id="MuncExp" placeholder="dd/mm/yyyy" type="text">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                  </div>
+                                </div>
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="crid">Civil ID / Commercial ID</label>
+                                  <input class="form-control" id="crid" placeholder="Civil ID / Commercial ID"
+                                    type="text">
+                                </div>
+                              </div> <!-- End row -->
+                              <div class="row">
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="Namevoilator">Violator Name (Name / Commercial Name)</label>
+                                  <input class="form-control" id="Namevoilator"
+                                    placeholder="Violator Name (Name / Commercial Name)" type="text">
+                                </div>
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="Phnumber_app">Mobile Number</label>
+                                  <input type="text" class="form-control numeric" id="Phnumber_app"
+                                    placeholder="Mobile Number" maxlength="8">
+                                </div>
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="eMail">Email</label>
+                                  <input type="text" class="form-control" id="eMail" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="crid">Vehicle Number</label>
+                                  <input class="form-control" id="crid" placeholder="Vehicle Number" type="text">
+                                </div>
+                              </div> <!-- End row -->
+                              <div class="row">
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="crid">Vehicle Character</label>
+                                  <input class="form-control" id="crid" placeholder="Vehicle Character" type="text">
+                                </div>
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="Region_vio">Governorate</label>
+                                  <select class="form-control" id="Region_vio" name="Region_vio">
+                                    <option value="1000">Please select</option>
+                                    <option value="1">Alshaqiya Governorate</option>
+                                    <option value="2">Aldhahira Governorate</option>
+                                    <option value="3">Mosandam Governorate</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="Willayat_vio">Willayat</label>
+                                  <select class="form-control" id="Willayat_vio" name="Willayat_vio">
+                                    <option value="1000">Please select</option>
+                                    <option value="1">Suhar</option>
+                                    <option value="2">Nizwa</option>
+                                    <option value="3">Ibra</option>
+                                    <option value="3">Saham</option>
+                                    <option value="3">Nakhal</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                  <label for="Village_vio">Village</label>
+                                  <select class="form-control" id="Village_vio" name="Village_vio">
+                                    <option value="1000">Please select</option>
+                                    <option value="1">Suhar</option>
+                                    <option value="2">Nizwa</option>
+                                    <option value="3">Ibra</option>
+                                    <option value="3">Saham</option>
+                                    <option value="3">Nakhal</option>
+                                  </select>
+                                </div>
+                              </div> <!-- End row -->
+                              <div class="row">
+                                <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                  <label for="Activity_Type">Activity Type</label>
+                                  <select class="form-control" id="Activity_Type" name="Activity_Type">
+                                    <option value="1000">Please select</option>
+                                    <option value="1">Activity 1</option>
+                                    <option value="2">Activity 2</option>
+                                    <option value="3">Activity 3</option>
+                                  </select>
+                                </div>
+                              </div> <!-- End row -->
+                            </div> <!-- End #common -->
+                          </fieldset>
+                        </div><!-- End row -->
+                      </div><!-- End form-group # Warningid-->
+
+                      <div class="form-group">
+                        <div class="row">
+                          <fieldset>
+                            <legend>Violation Details</legend>
+                            <div class="row">
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Vio_cat">Violation Category</label>
+                                <select class="form-control" id="Vio_cat" name="Vio_cat">
+                                  <option value="1000">Please select</option>
+                                  <option value="1">Violation 1</option>
+                                  <option value="2">Violation 2</option>
+                                  <option value="3">Violation 3</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                                <label for="Vio_Type">Violation Type</label>
+                                <select class="form-control" id="Vio_Type" name="Vio_Type">
+                                  <option value="1000">Please select</option>
+                                  <option value="1">Violation 1</option>
+                                  <option value="2">Violation 2</option>
+                                  <option value="3">Violation 3</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="action_taken">Actions to be Taken</label>
+                                <input class="form-control" id="action_taken" placeholder="Actions to be Taken"
+                                  type="text" readonly>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="noemp">Number of Employee (violators)</label>
+                                <input class="form-control" id="noemp" min="0"
+                                  placeholder="Number of Employee (violators)" type="number">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Rules_met">Rules not met</label>
+                                <input class="form-control" id="Rules_met" min="0" placeholder="Rules not met"
+                                  type="number">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Mini">Minimum</label>
+                                <input class="form-control" id="Mini" placeholder="Minimum" type="text" readonly>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Maxi">Maximum</label>
+                                <input class="form-control" id="Maxi" placeholder="Maximum" type="text" readonly>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Fineid">Fine</label>
+                                <input class="form-control" id="Fineid" placeholder="Fine" type="text">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Minis_Deci">Ministerial Decision</label>
+                                <input class="form-control" id="Minis_Deci" placeholder="Ministerial Decision"
+                                  type="text" readonly>
+                              </div>
+                              <div class="form-group pull-right top-25">
+                                <button class="btn btn-hs" id="vioid" onclick="Violation_fn()" type="button">Add
+                                  Violation Data</button>
+                              </div>
+                            </div> <!-- End row -->
+                            <!-- <div class="row">
+                              <div class="table-responsive">
+                                <table class="table table-striped table-bordered" id="Violation_table">
+                                  <thead style="background: rgb(86, 111, 122);color:#fff;"></thead>
+                                  <tbody></tbody>
+                                </table>
+                              </div>
+                            </div> -->
+                            <div class="row">
+                              <div class="table-responsive">
+                                <table class="table table-striped table-bordered" id="Violation_table">
+                                  <thead class="hs-thead">
+                                    <tr>
+                                      <th>S.No</th>
+                                      <th>Violation Type</th>
+                                      <th>Actions to be Taken</th>
+                                      <th>Number of Employee (violators)</th>
+                                      <th>Rules not met</th>
+                                      <th>Fine</th>
+                                      <th>Ministerial Decision</th>
+                                      <th>Actions</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody></tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="row">
+                          <fieldset>
+                            <legend></legend>
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Minis_Deci">Period to remove the fine</label>
+                                <input class="form-control" id="Minis_Deci" placeholder="Period to remove the fine"
+                                  type="text">
+                              </div>
+                            </div> <!-- End row -->
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <button class="btn btn-hs" type="button" data-toggle="modal" data-target="#Savebtn"><i
+                                class="fa fa-floppy-o fa-fw">&nbsp;</i>Save</button>
+                            <button class="btn btn-hs" type="button"><i class="fa fa-plus fa-fw">&nbsp;</i>Add
+                              Violations</button>
+                            <a href="CAHS14_103.html" class="btn btn-hs"><i class="fa fa-times fa-fw">&nbsp;</i>Create
+                              Closure Report</a>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group pull-right">
+                            <a href="CAHS14.html" class="btn btn-hs"><i
+                                class="fa fa-balance-scale fa-fw">&nbsp;</i>Create Warning</a>
+                            <a href="CAHS14_104.html" class="btn btn-hs"><i
+                                class="fa fa-balance-scale fa-fw">&nbsp;</i>Create Sample Handing Report</a>
+                          </div>
+                        </div>
+                      </div> <!-- End row -->
+                    </div>
+                  </div><!-- End .row -->
+                </div><!-- End Violations -->
+              </div>
+
+              <div class="" id="History">
+                <fieldset>
+                  <legend>History</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Commentstable" class="table table-striped table-bordered">
+                        <thead class="thead-default">
+                          <tr>
+                            <th>Violation No</th>
+                            <th>Type</th>
+                            <th>Created Date</th>
+                            <th>License No</th>
+                            <th>Created By</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>HS1700001</td>
+                            <td>Health Warning</td>
+                            <td>14/06/2012</td>
+                            <td>286111944284540</td>
+                            <td>Sai</td>
+                            <td><a href="#" class="btn btn-hs"><i class="fa fa-eye fa-fw"></i>View</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- End .row -->
+                </fieldset>
+              </div><!-- End History -->
+
+              <div id="Comments" class="">
+                <fieldset>
+                  <legend>Comments / Actions</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Commentstable" class="table table-striped table-bordered">
+                        <thead class="thead-default">
+                          <tr>
+                            <th>Date &amp; Time</th>
+                            <th>Comments</th>
+                            <th>Authority</th>
+                            <th>Request Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>10/05/2017 09:41AM</td>
+                            <td>Please Modify the Request with... </td>
+                            <td>Technical</td>
+                            <td>Clarifications Req.</td>
+                          </tr>
+                          <tr>
+                            <td>12/05/2017 11:15AM</td>
+                            <td></td>
+                            <td>Engineer</td>
+                            <td>Submitted</td>
+                          </tr>
+                          <tr>
+                            <td>13/05/2017 10:25AM</td>
+                            <td></td>
+                            <td>Head of Section</td>
+                            <td>Approved by Head of Section</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> <!-- End .row -->
+                </fieldset>
+              </div> <!-- End #Comments -->
+
+              <div id="SiteInspection">
+                <div>
+                  <fieldset>
+                    <legend>Date &amp; Time of Site Visit</legend>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="panel-box">
+                          <div class="panel-box-body">
+                            <form>
+                              <div class="form-group">
+                                <label class="col-sm-6 control-label">Date</label>
+                                <div class="col-sm-6">
+                                  <div class=" input-group date">
+                                    <input class="form-control" type="text"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-calendar"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="panel-box">
+                          <div class="panel-box-body">
+                            <form>
+                              <div class="form-group">
+                                <label class="col-sm-6 control-label">Time</label>
+                                <div class="col-sm-6">
+                                  <input class="form-control" type="text">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="row paddingB10">
+                  <div class="col-sm-12">
+                    <fieldset>
+                      <legend>Documents</legend>
+                      <div class="row">
+                        <div class="file-upload">
+                          <label class="file-upload-label" for="upload"><i aria-hidden="true"
+                              class="fa fa-upload"></i>Upload</label>
+                          <input class="file-upload-input" id="upload" name="file-upload" type="file">
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-striped table-bordered" id="VDetails">
+                            <thead>
+                              <tr>
+                                <th>File name</th>
+                                <th>Delete</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Copy_1.pdf</td>
+                                <td><i aria-hidden="true" class="fa fa-trash-o fa-2"></i></td>
+                              </tr>
+                              <tr>
+                                <td>Copy_2.pdf</td>
+                                <td><i aria-hidden="true" class="fa fa-trash-o fa-2"></i></td>
+                              </tr>
+                              <tr>
+                                <td>Copy_3.pdf</td>
+                                <td><i aria-hidden="true" class="fa fa-trash-o fa-2"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div>
+                  <!-- // Warning -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2 class="subheadline">Warning Report</h2>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Warning Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">License Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Applicant Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th class="col-sm-6">Owner National ID</th>
+                                  <td>123456</td>
+                                </tr>
+                                <tr>
+                                  <th>Owner Name</th>
+                                  <td>Ahmed</td>
+                                </tr>
+                                <tr>
+                                  <th>Address</th>
+                                  <td>Street 123</td>
+                                </tr>
+                                <tr>
+                                  <th>License Start Date</th>
+                                  <td>20/06/2017</td>
+                                </tr>
+                                <tr>
+                                  <th>Activity</th>
+                                  <td>Activities 1</td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Organization Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th>Commercial Registration ID</th>
+                                  <td>252123</td>
+                                </tr>
+                                <tr>
+                                  <th>Company Name</th>
+                                  <td>Abc</td>
+                                </tr>
+                                <tr>
+                                  <th>Municipality</th>
+                                  <td>Municipality Area</td>
+                                </tr>
+                                <tr>
+                                  <th>License end date</th>
+                                  <td>20/06/2018</td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="panel-box">
+                        <div class="panel-box-body">
+                          <form>
+                            <div class="row paddingB10">
+                              <div class="col-sm-6 col-md-4 nopadding">
+                                <div class="form-group">
+                                  <label class="col-sm-6 col-md-4 control-label" for="">Type of Warning</label>
+                                  <div class="col-sm-6 col-md-8">
+                                    <select class="form-control">
+                                      <option>
+                                        Select
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <a class="btn btn-hs" href="#"><i aria-hidden="true" class="fa fa-plus"></i> Add
+                                  Warning</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="table-responsive">
+                        <table class="table table-gray table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Recurrent</th>
+                              <th>Type of Warning</th>
+                              <th>Options</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Yes</td>
+                              <td>Violation 1</td>
+                              <td>
+                                <a href="#"><i aria-hidden="true" class="fa fa-trash-o fa-2"></i>Delete</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>No</td>
+                              <td>Violation 2</td>
+                              <td>
+                                <a href="#"><i aria-hidden="true" class="fa fa-trash-o fa-2"></i>Delete</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Action to be Taken</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Deadline for Removing Violation</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="constructionCost">Days</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Details About Violation</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Issued Date</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Warning Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Warning \\-->
+                <div>
+                  <!-- // Violation Report -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2 class="subheadline">Violation Report</h2>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Violation Report Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">License Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Applicant Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th class="col-sm-6">Owner National ID</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Owner Name</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Activity</th>
+                                  <td><select class="form-control">
+                                      <option>
+                                        Select
+                                      </option>
+                                      <option>
+                                        Activities1
+                                      </option>
+                                      <option>
+                                        Activities2
+                                      </option>
+                                    </select></td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Organization Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th>Commercial Registration ID</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Company Name</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Municipality</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="panel-box">
+                        <div class="panel-box-body">
+                          <form>
+                            <div class="row paddingB10">
+                              <div class="col-sm-6 col-md-4 nopadding">
+                                <div class="form-group">
+                                  <label class="col-sm-6 col-md-4 control-label" for="">Type of Violation</label>
+                                  <div class="col-sm-6 col-md-8">
+                                    <select class="form-control">
+                                      <option>
+                                        Select
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <a class="btn btn-hs" href="#"><i aria-hidden="true" class="fa fa-plus"></i> Add
+                                  Violation</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="table-responsive">
+                        <table class="table table-gray table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Violation Number</th>
+                              <th>Recurrent</th>
+                              <th>Violation Type</th>
+                              <th>Fixed Price</th>
+                              <th>Min Price</th>
+                              <th>Max Price</th>
+                              <th>Value</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Yes - former problems not solved</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>10</td>
+                              <td>50</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Yes - violation type is repeated</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>20</td>
+                              <td>50</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>No</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>20</td>
+                              <td>100</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Total Amount</label>
+                        <div class="col-sm-6">
+                          1234
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Deadline for Removing Violation</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Days</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Details About Violation</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Issued Date</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Violation Report Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Violation Report \\-->
+                <div>
+                  <!-- // Close Inspection Report -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2 class="subheadline">Closure Report</h2>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Closure Report Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">License Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="constructionCost" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Applicant Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th class="col-sm-6">Owner National ID</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Owner Name</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Activity</th>
+                                  <td><select class="form-control">
+                                      <option>
+                                        Select
+                                      </option>
+                                      <option>
+                                        Activities1
+                                      </option>
+                                      <option>
+                                        Activities2
+                                      </option>
+                                    </select></td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset>
+                        <legend>Organization Data</legend>
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th>Commercial Registration ID</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Company Name</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Municipality</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="panel-box">
+                        <div class="panel-box-body">
+                          <form>
+                            <div class="row paddingB10">
+                              <div class="col-sm-6 col-md-4 nopadding">
+                                <div class="form-group">
+                                  <label class="col-sm-6 col-md-4 control-label" for="">Type of Violation</label>
+                                  <div class="col-sm-6 col-md-8">
+                                    <select class="form-control">
+                                      <option>
+                                        Select
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <a class="btn btn-hs" href="#"><i aria-hidden="true" class="fa fa-plus"></i> Add
+                                  Violation</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="table-responsive">
+                        <table class="table table-gray table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Violation Number</th>
+                              <th>Recurrent</th>
+                              <th>Violation Type</th>
+                              <th>Fixed Price</th>
+                              <th>Min Price</th>
+                              <th>Max Price</th>
+                              <th>Value</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Yes - former problems not solved</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>10</td>
+                              <td>50</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Yes - violation type is repeated</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>20</td>
+                              <td>50</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>No</td>
+                              <td>Violation 1</td>
+                              <td>50</td>
+                              <td>20</td>
+                              <td>100</td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Total Amount</label>
+                        <div class="col-sm-6">
+                          5422
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">According to Articles</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <div class="row">
+                            <div class="col-sm-3 paddingL0">
+                              <input class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                              It was decided to close the company
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Closing Shop Period - From</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Closing Shop Period - To</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Inspection Details</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Issued Date</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Closure Report Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Close Inspection Report \\-->
+                <div>
+                  <!-- // Sample for food -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2 class="subheadline">Sample Handling Report</h2>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Warning Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" id="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <fieldset class="paddingT10">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                <thead class="thead-default">
+                                  <tr>
+                                    <th class="col-sm-6">License Number</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <th>Commercial Registration ID</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <th>Contractor/Consultant Name</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                </thead>
+                                <tbody></tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                <thead class="thead-default">
+                                  <tr>
+                                    <th class="col-sm-6">Address</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <th>Activity</th>
+                                    <td><select class="form-control">
+                                        <option>
+                                          Select
+                                        </option>
+                                        <option>
+                                          Activities1
+                                        </option>
+                                        <option>
+                                          Activities2
+                                        </option>
+                                      </select></td>
+                                  </tr>
+                                </thead>
+                                <tbody></tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="col-sm-6 col-md-4 control-label" for="">Type of Procedure</label>
+                        <div class="col-sm-6 col-md-8">
+                          <select class="form-control">
+                            <option selected>
+                              Adjust
+                            </option>
+                            <option>
+                              Destruction
+                            </option>
+                            <option>
+                              Release
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="paddingB10">
+                        <a class="btn btn-hs" href="#"><i aria-hidden="true" class="fa fa-plus"></i> Add</a>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-gray table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Product</th>
+                              <th>Container Type</th>
+                              <th>Quantity</th>
+                              <th>Weight</th>
+                              <th>Reason</th>
+                              <th>Observations</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                            <tr>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                              <td><input class="form-control inputwidth" type="text"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-3 col-md-6 control-label" for="">Issued Date</label>
+                        <div class="col-sm-6">
+                          <div class=" input-group date">
+                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-6 control-label" for="">Warning Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Sample for food \\-->
+                <div>
+                  <!-- // Sample for water -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2 class="subheadline">Sample</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <fieldset class="paddingT10">
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th class="col-sm-6">License Number</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Commercial Registration ID</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Contractor/Consultant Name</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Address</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Activity</th>
+                                  <td>
+                                    <select class="form-control">
+                                      <option>Select</option>
+                                      <option>Activities1</option>
+                                      <option>Activities2</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset class="paddingT10">
+                        <div class="row">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead class="thead-default">
+                                <tr>
+                                  <th>Number of sample</th>
+                                  <td><input class="form-control" type="text"></td>
+                                </tr>
+                                <tr>
+                                  <th>Sample Date</th>
+                                  <td>
+                                    <table>
+                                      <tr>
+                                        <td class="col-sm-6 paddingL0">
+                                          <div class=" input-group date">
+                                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-calendar"></i></span>
+                                          </div>
+                                        </td>
+                                        <td>Hour</td>
+                                        <td><input class="form-control" type="text"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>Date Sent</th>
+                                  <td>
+                                    <table>
+                                      <tr>
+                                        <td class="col-sm-6 paddingL0">
+                                          <div class=" input-group date">
+                                            <input class="form-control" type="text"><span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-calendar"></i></span>
+                                          </div>
+                                        </td>
+                                        <td>Hour</td>
+                                        <td><input class="form-control" type="text"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <fieldset class="paddingT10">
+                        <legend>Sample Information</legend>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                <thead class="thead-default">
+                                  <tr>
+                                    <th class="col-sm-6">Sample Type</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <th>Sample Source</th>
+                                    <td>source 1</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Source State</th>
+                                    <td>Source State 1</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Sample Volume</th>
+                                    <td>Sample 1</td>
+                                  </tr>
+                                  <tr>
+                                    <th class="col-sm-6">Unit Number</th>
+                                    <td>8722</td>
+                                  </tr>
+                                </thead>
+                                <tbody></tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                <thead class="thead-default">
+                                  <tr>
+                                    <th>Pollution Source</th>
+                                    <td>Activities1</td>
+                                  </tr>
+                                  <tr>
+                                    <th class="col-sm-6">Chlorine</th>
+                                    <td><span class="pull-left input-radio"><label class="radio-inline"><input checked
+                                            name="optradio8" type="radio" value="Yes">Yes</label> <label
+                                          class="radio-inline"><input name="optradio8" type="radio"
+                                            value="No">No</label></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="col-sm-6">Manufacturing Date</th>
+                                    <td>
+                                      <div class="input-group date">
+                                        <input class="form-control" type="text"><span class="input-group-addon"><i
+                                            class="glyphicon glyphicon-calendar"></i></span>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>Expiration Date</th>
+                                    <td>
+                                      <div class="input-group date">
+                                        <input class="form-control" type="text"><span class="input-group-addon"><i
+                                            class="glyphicon glyphicon-calendar"></i></span>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="col-sm-6">Manufacturer Company / Country of Origin</th>
+                                    <td><input class="form-control" type="text"></td>
+                                  </tr>
+                                </thead>
+                                <tbody></tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Reason</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row paddingB10">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label" for="">Observations</label>
+                        <div class="col-sm-9 paddingL5MD">
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Sample for water \\-->
+              </div><!-- End SiteInspection -->
+
+              <div id="Attachment" class="">
+                <div data-toggle="validator" id="form-step-4" role="form">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <!-- <fieldset>
+                          <legend>Attachments - Reference Documents</legend>
+                          <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Documents</th>
+                                  <th>File Name</th>
+                                  <th>Downloads</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row" class="bold">1</td>
+                                  <td>Ownership Document ( Mulkiya ) </td>
+                                  <td><a style = "cursor:pointer" onclick = "TitleDeed();" title="TitleDeed">TitleDeed.pdf</a></td>
+                                  <td><i class="fa fa-download"></i></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row" class="bold">2</td>
+                                  <td>Survey Sketch ( Krooki )</td>
+                                  <td><a style = "cursor:pointer" onclick = "Survey Sketch ( Krooki )();" title="TitleDeed">Survey Sketch ( Krooki ).pdf</a></td>
+                                  <td><i class="fa fa-download"></i></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </fieldset> -->
+                        <fieldset>
+                          <legend>Captured / Surveilance Images</legend>
+                          <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Image Name</th>
+                                  <th>File Name</th>
+                                  <th>Downloads</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row" class="bold">1</td>
+                                  <td>Captured Image 01</td>
+                                  <td><a style="cursor:pointer" onclick="" title="TitleDeed">Captured-Image-01.jpg</a>
+                                  </td>
+                                  <td><i class="fa fa-download"></i></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row" class="bold">2</td>
+                                  <td>Captured Image 02</td>
+                                  <td><a style="cursor:pointer" onclick="" title="TitleDeed">Captured-Image-02.jpg</a>
+                                  </td>
+                                  <td><i class="fa fa-download"></i></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </fieldset>
+                        <fieldset>
+                          <legend>Site Inspection Documents</legend>
+                          <div class="row">
+                            <div class="file-upload">
+                              <label for="upload" class="file-upload-label"><i class="fa fa-upload"
+                                  aria-hidden="true"></i> Upload</label>
+                              <input id="upload" class="file-upload-input" type="file" name="file-upload">
+                            </div>
+                            <div class="table-responsive">
+                              <table id="VDetails" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>File name</th>
+                                    <th>Upload By</th>
+                                    <th>Date</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Copy_1.pdf</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copy_2.pdf</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copy_3.pdf</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><i class="fa fa-trash-o fa-2" aria-hidden="true"></i></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- End .row -->
+                        </fieldset>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <fieldset>
+                          <legend>File Viewer</legend>
+                          <iframe src="" id="iframe">
+                            <p>Your browser does not support iframes.</p>
+                          </iframe>
+                        </fieldset>
+                      </div>
+                    </div> <!-- .row -->
+                  </div> <!-- .form-group -->
+                </div> <!-- End data-toggle="validator" -->
+              </div> <!-- Attachment -->
+
+              <div id="Payment" class="">
+                <fieldset>
+                  <legend>Payment</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Paymentstable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Payment type</th>
+                            <th>Date &amp; Time</th>
+                            <th>Value to be paid</th>
+                            <th>Paid value</th>
+                            <th>Receipt Number</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Advanced payment</td>
+                            <td>10/05/2016 09:41</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>A0092811</td>
+                          </tr>
+                          <tr>
+                            <td>Fee</td>
+                            <td>-</td>
+                            <td>10</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>Deposit</td>
+                            <td>13/05/2016 10:25</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>A0098621</td>
+                          </tr>
+                          <tr>
+                            <td>Fine</td>
+                            <td>-</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> <!-- End .row -->
+                </fieldset>
+                <fieldset>
+                  <legend>Output</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="Paymentstable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th>S.No</th>
+                            <th>Date &amp; Time</th>
+                            <th>Violation Number</th>
+                            <th width="5%">Download</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Advanced payment</td>
+                            <td>10/05/2016 09:41</td>
+                            <td>2</td>
+                            <td><a href="#" class="btn btn-hs"><i class="fa fa-download"
+                                  aria-hidden="true">&nbsp;</i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> <!-- End .row -->
+                </fieldset>
+              </div> <!-- End #Payment -->
+
+              <div id="certificate" class="">
+                <fieldset>
+                  <legend>Certificate</legend>
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+                        <thead class="hs-thead">
+                          <tr>
+                            <th>S.No</th>
+                            <th>Violation Number</th>
+                            <th>Violation Name</th>
+                            <th width="5%">Download</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>HS1900V123</td>
+                            <td>Omar</td>
+                            <td><button type="button" class="btn btn-hs"><i class="fa fa-download"
+                                  aria-hidden="true"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>HS1900V321</td>
+                            <td>Civid ID</td>
+                            <td><button type="button" class="btn btn-hs"><i class="fa fa-download"
+                                  aria-hidden="true"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div> <!-- /.table-responsive -->
+                  </div> <!-- /.row -->
+                </fieldset>
+              </div> <!-- /#certificate -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--inner-pages transparent-white-background -->
+  <!-- .container main-content-top-margin -->
+  <!-- FOOTER START -->
+  <section id="footer">
+    <div class="container">
+      <div class="row" style="display: flex; align-items: center;">
+        <div class="col-md-4">
+          <a href="index.html">
+            <img alt="oman-vision" id="footer-logo" class="img-responsive mb-2" src="images/oman-vision-white.png"></a>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled list-inline text-center">
+            <li>
+              <script>document.write(new Date().getFullYear())</script>
+              <a class="font-weight-bold" href="https://www.moi.gov.om" target="_blank">Copyright &copy; Ministry of
+                Interior</a> - All Rights Reserved.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-right">
+          <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+
+            <li class="list-inline-item list-social-item me-3">
+              <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                <img src="images/social/instagram-logo.svg" class="list-brand-icon" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                <img src="images/social/twitter.svg" class="list-brand-icon" alt=""></a>
+            </li>
+
+            <!-- brand -->
+            <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                <img src="images/oman-logo.png" class="list-brand-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3 lift">
+              <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                <img src="images/w3c-logo.png" class="list-brand-icon" alt="...">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </section>
+  <!--Scrolling top-->
+  <a class="scrollup" href="#" style="display: inline;" title="back to top"><span
+      class="fa fa-angle-double-up fa-22px"></span><br>
+    Top</a> <!-- end scrolling top-->
+  <!-- Request Clarifications Modal -->
+  <div class="modal fade" id="requestClarifications" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Request Clarifications</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Reason</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Missing Documents
+                  </option>
+                  <option>
+                    Invalid Document
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Comment</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button>
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Next (Send Request) Modal -->
+  <div class="modal fade" id="nextRequest" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Submit to Next Level</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Role</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Role
+                  </option>
+                  <option>
+                    Role 1
+                  </option>
+                  <option>
+                    Role 2
+                  </option>
+                  <option>
+                    Role 3
+                  </option>
+                  <option>
+                    Role 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Name</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Name
+                  </option>
+                  <option>
+                    Name 1
+                  </option>
+                  <option>
+                    Name 2
+                  </option>
+                  <option>
+                    Name 3
+                  </option>
+                  <option>
+                    Name 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Comments</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button>
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Return Request for Site Inspection Modal -->
+  <div class="modal fade" id="returnSite" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Return for Review</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Role</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Role
+                  </option>
+                  <option>
+                    Role 1
+                  </option>
+                  <option>
+                    Role 2
+                  </option>
+                  <option>
+                    Role 3
+                  </option>
+                  <option>
+                    Role 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Name</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Name
+                  </option>
+                  <option>
+                    Name 1
+                  </option>
+                  <option>
+                    Name 2
+                  </option>
+                  <option>
+                    Name 3
+                  </option>
+                  <option>
+                    Name 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Comments</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button> <button class="btn btn-default btn-hs" data-dismiss="modal"
+            type="button"><i aria-hidden="true" class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Reject Request Modal -->
+  <div class="modal fade" id="rejecttRequest" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Reject Request</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">Reject Reason</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>Missing Required Documents</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </div> -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Reject Reason</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button> <button class="btn btn-default btn-hs" data-dismiss="modal"
+            type="button"><i aria-hidden="true" class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Return for Review Site Inspection Modal -->
+  <div class="modal fade" id="returnReview" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Return for Review</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Role</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Role
+                  </option>
+                  <option>
+                    Role 1
+                  </option>
+                  <option>
+                    Role 2
+                  </option>
+                  <option>
+                    Role 3
+                  </option>
+                  <option>
+                    Role 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Name</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Name
+                  </option>
+                  <option>
+                    Name 1
+                  </option>
+                  <option>
+                    Name 2
+                  </option>
+                  <option>
+                    Name 3
+                  </option>
+                  <option>
+                    Name 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <div class="checkbox">
+                  <label><input type="checkbox"> For Site Inspection</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Planned Date</label>
+              <div class="col-sm-9">
+                <div class=" input-group date">
+                  <input class="form-control" type="text"><span class="input-group-addon"><i
+                      class="glyphicon glyphicon-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Comments</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button> <button class="btn btn-default btn-hs" data-dismiss="modal"
+            type="button"><i aria-hidden="true" class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Reassign Task Modal -->
+  <div class="modal fade" id="reAssign" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Reassign Task</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputEmail3">Role</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>
+                  Select Role
+                </option>
+                <option>
+                  Role 1
+                </option>
+                <option>
+                  Role 2
+                </option>
+                <option>
+                  Role 3
+                </option>
+                <option>
+                  Role 4
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputPassword3">Name</label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option selected>
+                  Select Name
+                </option>
+                <option>
+                  Name 1
+                </option>
+                <option>
+                  Name 2
+                </option>
+                <option>
+                  Name 3
+                </option>
+                <option>
+                  Name 4
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button>
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div><!--  Schedule Site Visit -->
+
+  <div class="modal fade" id="ScheduleSiteVisit" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title">Schedule Site Visit</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail3">Role</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Role
+                  </option>
+                  <option>
+                    Role 1
+                  </option>
+                  <option>
+                    Role 2
+                  </option>
+                  <option>
+                    Role 3
+                  </option>
+                  <option>
+                    Role 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword3">Name</label>
+              <div class="col-sm-9">
+                <select class="form-control">
+                  <option selected>
+                    Select Name
+                  </option>
+                  <option>
+                    Name 1
+                  </option>
+                  <option>
+                    Name 2
+                  </option>
+                  <option>
+                    Name 3
+                  </option>
+                  <option>
+                    Name 4
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group margin0">
+              <div class="col-sm-offset-3 col-sm-9">
+                <div class="checkbox">
+                  <label><input type="checkbox"> For Site Inspection</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputPassword3" class="col-sm-12 control-label">Planned Dates</label> -->
+              <div class="col-sm-12 available-dates">
+                <div class="month">
+                  <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li class="text-center"><span class="month-display">August -</span> <span
+                        class="year-display">2017</span></li>
+                  </ul>
+                </div>
+                <ul class="weekdays">
+                  <li>Mo</li>
+                  <li>Tu</li>
+                  <li>We</li>
+                  <li>Th</li>
+                  <li>Fr</li>
+                  <li>Sa</li>
+                  <li>Su</li>
+                </ul>
+                <ul class="days">
+                  <li></li>
+                  <li></li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                  <li>11</li>
+                  <li>12</li>
+                  <li>13</li>
+                  <li>14</li>
+                  <li>15</li>
+                  <li>16</li>
+                  <li>17</li>
+                  <li><span class="active">18</span></li>
+                  <li>19</li>
+                  <li>20</li>
+                  <li><span class="active">21</span></li>
+                  <li><span class="active">22</span></li>
+                  <li><span class="active">23</span></li>
+                  <li>24</li>
+                  <li>25</li>
+                  <li>26</li>
+                  <li>27</li>
+                  <li><span class="active">28</span></li>
+                  <li><span class="active">29</span></li>
+                  <li><span class="active">30</span></li>
+                  <li>31</li>
+                </ul>
+                <div class="slots-legend">
+                  <ul>
+                    <li><span class="available-slots"></span> Available Dates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button>
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Savebtn" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header hs-modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Save Viotion</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputPassword3">Comments</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-arrow-right"></i> Submit</button>
+          <button class="btn btn-default btn-hs" data-dismiss="modal" type="button"><i aria-hidden="true"
+              class="fa fa-times"></i> Discard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scrollJS.js"></script>
+  <script src="js/scrollToTop.js"></script>
+  <script src="js/text-resize.js"></script>
+  <script src="js/demo.js"></script>
+
+  <!-- Include Data Table smartWizard source -->
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap.min.js"></script>
+
+  <!-- Include smartWizard source -->
+  <script src="js/jquery.smartWizard.js"></script>
+  <!-- Include Smartwizardws plugin -->
+  <script src="js/smartwizardws-hs.js"></script>
+  <!-- Include Preloader plugin -->
+  <script src="js/Preloader.js"></script>
+  <script type='text/javascript'
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+  <!-- <script src="js/HS_Violation.js"></script> -->
+  <script type='text/javascript'>
+    $(function () {
+      $('.input-group.date').datepicker({
+        orientation: "auto bottom",
+        format: "dd/mm/yyyy",
+        forceParse: false,
+        autoclose: true,
+        todayHighlight: true,
+        toggleActive: true
+      });
+    });
+    // .................................. Payment Table ..................................//
+    $(document).ready(function () {
+      var Violation_table = $('#Violation_table').DataTable();
+      Violation_table.page.len(5).draw();
+      $(".dataTables_length").replaceWith("<div class='hidden'><label>Show</label><input type='text' class='Violation_page form-control' value='5'> <label>Entries</label></div>");
+      $(".Violation_page").keyup(function () {
+        Violation_table.page.len(eval($(".Violation_page").val())).draw();
+      });
+    });
+// .................................. Payment Table ..................................//
+  </script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>

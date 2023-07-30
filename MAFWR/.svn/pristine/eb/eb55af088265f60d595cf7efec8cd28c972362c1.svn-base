@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description content="MOAF">
+    <meta name=author content="MOAF">
+    <title>Water Services</title>
+    <link rel=icon href="img/favicon.ico" type=image/png>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome.5.15.4/fontawesome.5.15.4.css" />
+    <link rel="stylesheet" href="css/moaf-webapp.css" id=stylesheet />
+    <link rel="stylesheet" href="css/moaf.css" />
+    <link rel="stylesheet" href="css/marquee.css" />
+    <link rel="stylesheet" href="css/AdminLTE.min.css" />
+    <link rel="stylesheet" href="css/scrollToTop.css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div class="bg-white1 shadow-lg p-0">
+        <!-- header -->
+        <header class="navbar-sticky sticky-bg bg-dark p-2">
+            <div class="row">
+                <div class="col-3">
+                    <nav class="navbar p-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img alt="MOAF-white" id="navbar-logo" src="img/MOAF-white.png"></a>
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-9 d-flex justify-content-end">
+                    <ul class="d-flex align-items-center list-unstyled mb-0">
+                        <li class="ml-3 text-white" id="date"></li>
+                        <li class="ml-3 text-white" id="time"></li>
+                        <li class="ml-3"><a class="font-change text-white" id="lnkDecrease" title="Zoomout" href="#!">A-</a></li>
+                        <li class="ml-3"><a class="font-change text-white" id="lnkNormal" title="Normalview" href="javascript:window.location.reload();">A</a></li>
+                        <li class="ml-3"><a class="font-change text-white" id="lnkIncrease" title="Zoomin" href="#!">A+</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="login.html"><i class="fal fa-user-lock fa-fw fa-lg"></i>&nbsp; Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-ws btn-icon ml-3" href="WServicesar.html">
+                                <span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
+                                <span class="btn-inner--text">
+                                      <?xml version="1.0" encoding="ISO-8859-1" ?> &#1593;&#1585;&#1576;&#1610;</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </header>
+
+        <div class="container mt-6">
+            <!--Main content-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="card border-0">
+                        <div class="panel-head-services d-flex align-items-center justify-content-between header-ws">
+                            <div class="card-title mb-0 d-flex align-items-center"> <i class="fal fa-tint fa-2x fa-fw" aria-hidden="true"></i>Water Services</div>
+                            <div>
+                                <ul class="d-flex mb-0" style="list-style: none;">
+                                    <!-- <li>
+                                        <a href="#" class="helprint"> <i class="fal fa-question-circle" aria-hidden="true"></i>&nbsp;Help </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="helprint"> <i class="fal fa-print" aria-hidden="true"></i> &nbsp;Print </a>
+                                    </li> -->
+                                    <li>
+                                        <a href="index.html" class="helprint"> <i class="fal fa-chevron-left" aria-hidden="true"></i>&nbsp; Back </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Main content-->
+
+            <!--Developer Section start from here-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 p-0">
+                    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!-- content here -->
+                        <div class="card">
+                            <div class="card-header header-ws" role="tab" id="headingOne">
+                                <h4 class="card-title">
+                                    <button class="btn btn-link btn-block d-flex justify-content-between p-0" type="button" data-toggle="collapse" data-target="#collapse674" aria-expanded="true" aria-controls="collapse674">
+                                      <span><i class="fal fa-bars fa-fw"></i>Well Permits</span>
+                                      <i class="more-less fal fa-chevron-down"></i>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div id="collapse674" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body p-0">
+                                    <ul class="list-group mb-0">
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="Major();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Well Permit <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="Permit();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Registration of Well <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- list-group -->
+                                </div>
+                                <!-- End .card-body p-0 -->
+                            </div>
+                        </div>
+
+                        <!-- content here -->
+                        <div class="card">
+                            <div class="card-header header-ws" role="tab" id="headingTwo">
+                                <h4 class="card-title">
+                                    <button class="btn btn-link btn-block d-flex justify-content-between p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapse675" aria-expanded="true" aria-controls="collapse675">
+                                      <span><i class="fal fa-bars fa-fw"></i>Water Data Requests</span>
+                                      <i class="more-less fal fa-chevron-right"></i>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div id="collapse675" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body p-0" style="padding-top: 0px;">
+                                    <ul class="list-group" style="margin-bottom: 0px;">
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="Minor();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Water Situation, Hydrometric Information &amp; Technical Surveys <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- list-group -->
+                                </div>
+                                <!-- End .card-body p-0 -->
+                            </div>
+                        </div>
+
+                        <!-- content here -->
+                        <div class="card">
+                            <div class="card-header header-ws" role="tab" id="headingThree">
+                                <h4 class="card-title">
+                                    <button class="btn btn-link btn-block d-flex justify-content-between p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapse676" aria-expanded="true" aria-controls="collapse676">
+                                    <span><i class="fal fa-bars fa-fw"></i>Well Water Drilling Contractors Request</span>
+                                    <i class="more-less fal fa-chevron-right"></i>
+                                  </button>
+                                </h4>
+                            </div>
+                            <div id="collapse676" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body p-0" style="padding-top: 0px;">
+                                    <ul class="list-group" style="margin-bottom: 0px;">
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="Drilling();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Well Water Drilling Contractors Request <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- list-group -->
+                                </div>
+                                <!-- End .card-body p-0 -->
+                            </div>
+                        </div>
+
+                        <!---content here -->
+                        <div class="card">
+                            <div class="card-header header-ws" role="tab" id="headingFour">
+                                <h4 class="card-title">
+                                    <button class="btn btn-link btn-block d-flex justify-content-between p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapse677" aria-expanded="true" aria-controls="collapse677">
+                                      <span><i class="fal fa-bars fa-fw"></i>Dam &amp; Aflaj Requests</span>
+                                      <i class="more-less fal fa-chevron-right"></i>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div id="collapse677" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body p-0" style="padding-top: 0px;">
+                                    <ul class="list-group" style="margin-bottom: 0px;">
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="Certificate();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Aflaj Water<i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="permanent();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Dams<i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- list-group -->
+                                </div>
+                                <!-- End .card-body p-0 -->
+                            </div>
+                        </div>
+
+                        <!---content here -->
+                        <div class="card">
+                            <div class="card-header header-ws" role="tab" id="headingFive">
+                                <h4 class="card-title">
+                                    <button class="btn btn-link btn-block d-flex justify-content-between p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapse678" aria-expanded="true" aria-controls="collapse678">
+                                      <span><i class="fal fa-bars fa-fw"></i>Development Projects Request</span>
+                                      <i class="more-less fal fa-chevron-right"></i>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div id="collapse678" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body p-0" style="padding-top: 0px;">
+                                    <ul class="list-group" style="margin-bottom: 0px;">
+                                        <li class="list-group-item">
+                                            <a href="javascript:;" onclick="regarding();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp; Request for Development Projects<i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- list-group -->
+                                </div>
+                                <!-- End .card-body p-0 -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End.accordion -->
+                </div>
+                <!-- .col-md-5 -->
+
+                <div class="col-xs-12 col-sm-7 col-md-7">
+                    <div class="row">
+
+                        <!-- TS start Description -->
+                        <div class="col-lg-12" id="Description">
+                            <p class="text-justify">The activities of technical Affairs directorate occupy an important place in the municipal sector in ensuring implementation of requirements and specifications for constructions sites during execution, Ensuring issue of construction
+                                permits and licenses according to the applied regulations and systems, Proposing development plans in the Wilayat, Following up implantation and maintenance of projects in Willayats in coordination with the concerned authorities,
+                                Maintenance of parks, playgrounds and gardens, planting trees adjacent to roads and yards in coordination with the concerned authorities and follow up issuing property deeds for the sites following the Ministry in coordination
+                                with the concerned authorities</p>
+                        </div>
+                        <!-- TS start Description -->
+
+                        <div class="col-lg-12" id="BPTS01">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-01 - Request for Well Permit</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="1000">Please select</option>
+                                              <option value="">New Drilling well for Individual</option>
+                                              <option value="">New Drilling Well for Group|New Drilling Well for Public Use|New Drilling Well for Governmental Institution</option>
+                                              <option value="">New Drilling Well for Public Authority for Electricity and Water|New Drilling Well to Help Falaj at the Expense of Residents</option>
+                                              <option value="">New Drilling Well to Help Falaj at the Expense of Ministry|New Drilling Well for Factory Purification and Water Bottling</option>
+                                              <option value="">|New Drilling Well for Oil Fields|New Drilling Well for Temporarily for the Purpose of Soil Drying</option>
+                                              <option value="">New Drilling Well for Temporarily for Soil Testing</option>
+                                              <option value="">Drilling New Well for Development Projects</option>
+                                              <option value="">Drilling New Well for Industrial Projects</option>
+                                              <option value="">Drilling New Well for Commercial Projects</option>
+                                              <option value="">Drilling New Well for Tourism Projects</option>
+                                              <option value="">Drilling New Well for Agriculture Projects</option>
+                                              <option value="">Alternative  Drilling of Wells Similar Inside the Boundaries of the Site</option>
+                                              <option value="">Similar Drilling Alternative Wells Outside the Boundaries of the Site</option>
+                                              <option value="">Alternative Drilling Well not Similar Outside the Boundaries of the Site</option>
+                                              <option value="">Alternative  Drilling of Wells from Open to Hole Within the Boundaries of the Site</option>
+                                              <option value="">Alternative  Drilling of wells from Hole to Open Within the Boundaries of the Site</option>
+                                              <option value="">Retaining the Well Substituent(old)</option>
+                                              <option value="">Retaining the Wells Alternative and Substituent</option>
+                                              <option value="">Deepen Open Wells Manually|Deepen Open Wells Automatically</option>
+                                              <option value="">Deepening Wells on Automatically Drilling</option>
+                                              <option value="">Maintenance and Cleaning of the Wells|Expanding the Diameter of the Wells</option>
+                                              <option value="">Demolish Wells</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts01()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Well Permit </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS- 01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the building permit application form with the owner details, Plot details and consultant details and all required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts the technical inspection and prepare the technical report for the site with the site photos attached clarifying its features.</li>
+                                                            <li>Approves the permit and detailed maps by its engineers.</li>
+                                                            <li>The required fees are paid by the applicant and the application is transferred to the municipality director for approval.</li>
+                                                            <li>Issues the building permit to be accessed by the applicant in the portal and a copy of permit and maps is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                            <li>Drawing of Structural and Architectural</li>
+                                                            <li>Structural Design Calculations</li>
+                                                            <li>Approvals (Omantel/Ooredo/PAEW)</li>
+                                                            <li>PACDA approved Maps</li>
+                                                            <li>SOIL test report</li>
+                                                            <li>Govt.Bodies approval</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>3 to 10 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts01()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts01">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-01 - Request for Well Permit</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app01" class="panel-footer">
+                                        <label for="agree">
+                                            <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                            I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts01();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS02">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-04 - Request for Water Situation, Hydrometric Information &amp; Technical Surveys</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="0">Please select</option>
+                                              <option value="406">Geophysical Survey </option>
+                                              <option value="407">Geophysical Monitoring of Wells</option>
+                                              <option value="408">Television Photography for Wells</option>
+                                              <option value="409">Telegraphic Survey</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts02()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Water Situation, Hydrometric Information &amp; Technical Surveys</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS-04</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the building permit application form with the owner details, Plot details and consultant details and all required documents attached.</li>
+                                                            <li>Schedule an appointment of the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conduct the technical inspection and prepare the technical report for the site with the site photos attached clarifying its features.</li>
+                                                            <li>Notify the owner to attach the detailed maps (in buildings that require design maps), if required, in accordance with the site inspection.</li>
+                                                            <li>Approve of permits and detailed maps by the municipal engineer.</li>
+                                                            <li>The required fees are paid by the applicant and the application is transferred to the municipality director for approval.</li>
+                                                            <li>Issues the building permit to be accessed by the applicant in the portal and a copy of permit and maps is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>8 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts02()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts02">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-04 - Request for Water Situation, Hydrometric Information &amp; Technical Surveys</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app02" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts02();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS03">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-13 - Request for General Services outside the Segment Limit</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for General Services outside the Segment Limit
+                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts03()" style="color:#fff;">Apply</button>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-TS- 13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the building permit application form with all required documents attached.</li>
+                                                            <li>Schedule an appointment of the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conduct the site inspection and prepare the technical report for the site.</li>
+                                                            <li>Approve the permit and detailed maps by the municipal engineer.</li>
+                                                            <li>The required fees are paid by the applicant and the application is transferred to the municipality director for approval.</li>
+                                                            <li>Issues the building permit to the consultant and a copy of permit and maps is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                            <li>Drawing of Structural and Architectural</li>
+                                                            <li>Structural Design Calculations</li>
+                                                            <li>Govt.Bodies approval</li>
+                                                            <li>Supervising Consultant Report</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>3 to 10 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts03()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts03">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-13 - Request for General Services outside the Segment Limit</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app03" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts03();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS04">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-02 - Registration of Well</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                            <option value="">Please select</option>
+                                            <option value="201">Inventory and registration of late wells</option>
+                                            <option value="202">Registration of late wells</option>
+                                            <option value="203">Issuance of inventory certificate and register for the first time</option>
+                                            <option value="204">Issuance of inventory well panel and register replacement of lost\ Damages</option>
+                                            <option value="205">Issuance of inventory certificate and register for new owner</option>
+                                            <option value="206">Issuance of inventory certificate and register to add partner</option>
+                                            <option value="207">Issuance of inventory certificate and register to modify the wells data</option>
+                                            <option value="208">Prove the existence /nonexistence of the well on the location</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts04()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Registration of Well</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS- 02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>If the renter is a previous renter the Existing lease contract should be provided.</li>
+                                                            <li>Schedules the appointment for the site visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts the site visit to verify the provision of a fence or a wall around the plot according to the specifications and a project board according to the model prepared before the implementation
+                                                                in the case of new projects.</li>
+                                                            <li>The required fees for the permit and fees of waste removal deposit (based on the required building area) are paid by the applicant.</li>
+                                                            <li>Issue of building permit and deliver it in the site.</li>
+                                                            <li> The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                            <span><strong>Note: </strong>
+                                                              <ul>
+                                                                <li>Submit a follow-up implementation report by the consultant before the start of any construction phase listed on the report. The municipality inspect and approve the report.</li>
+                                                                <li>The consultant is required to supervise the buildings that increase the cost of the (10,000 Rial Omani- ten thousand RO).</li>
+                                                              </ul>
+                                                            </span>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                            <li>Drawing of Structural and Architectural</li>
+                                                            <li>Structural Design Calculations</li>
+                                                            <li>Govt.Bodies approval</li>
+                                                            <li>Supervising Consultant Report</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>1 to 3 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts04()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts04">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-02 - Registration of Well</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app04" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts04();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS05">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-05 - Consultant Reports for Buildings Implementation Follow-up</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Consultant Reports for Buildings Implementation Follow-up
+                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts05()" style="color:#fff;">Apply</button>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-TS- 05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <!-- <li>If the renter is a previous renter the Existing lease contract should be provided.</li>
+                                <li> If it is a new building a certificate of “completing the construction and services” is needed.</li>
+                                <li>If the renter is a commercial or an industrial organization the CR number for this organization is needed.</li>
+                                <li>If the rent contract is a subcontract a No Objection certificate from the first party of the original contract with details (this required lease contract is a subcontract Under the contract number…) with specifying the activity use and a copy of the original contract.</li> -->
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Approved Electricity Map</li>
+                                                            <li>Waste Removal Deposit Receipt</li>
+                                                            <li>Colors Adherence</li>
+                                                            <li>Marks Delivery Form</li>
+                                                            <li>certificate of completing the construction and services and what proves the cancellation of the previous contract</li>
+                                                            <li>the original expired contract</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts05()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts05">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-05 - Consultant Reports for Buildings Implementation Follow-up</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app05" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts05();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS06">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-06 - Request for Aflaj Water</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="">Please select</option>
+                                              <option value="601">Inventory of the  Falaj</option>
+                                              <option value="602">Extend of the Falaj</option>
+                                              <option value="603">Maintenance or replacement of Falaj</option>
+                                              <option value="604">Maintenance and replacement of the Falaj channel</option>
+                                              <option value="605">Restoration of the pool basin wall</option>
+                                              <option value="606">Plowing or deepening the falaj channel</option>
+                                              <option value="607">Raising or repairing the fugal</option>
+                                              <option value="608">Deepening the mother of falaj</option>
+                                              <option value="609">Remove the caps from the bypass channel</option>
+                                              <option value="610">Pressing of the duct is open</option>
+                                              <option value="611">Building a pool</option>
+                                              <option value="612">Build a wall holder for the channel</option>
+                                              <option value="613">Build a wall protector for the channel</option>
+                                              <option value="614">Building a complex wall for the mother of falaj</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts06()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Aflaj Water</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS-06</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the application form with all the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
+                                                            <li>Approves and issues the required certificate to be accessed by the applicant in the portal and a copy is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Refund Deposit Original Receipt Provision</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>3 to 5 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts06()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts06">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-06 - Request for Aflaj Water </h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app06" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts06();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS07">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-03 - Well Water Drilling Contractors Request</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="">Please select</option>
+                                              <option value="101">Registration of Drilling contractor</option>
+                                              <option value="102">Renewal Registration of the Drilling Contractor</option>
+                                              <option value="103">Add Drilling Equipment for Water Wells</option>
+                                              <option value="104">Change / Practice Contractor Registration Type</option>
+                                              <option value="105">Waiver</option>
+                                              <option value="106">Drilling of Water Wells</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts07()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Well Water Drilling Contractors Request</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS- 03</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the application form with all the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
+                                                            <li>After the completion of the technical inspection, the report is prepared and forwarded to the municipal engineer to review the plans.</li>
+                                                            <li>The Engineer approves the permit form and Survey Sketch ( Krooki )es and forwards them to the head of the section for approval.</li>
+                                                            <li>The required fees and waste removal deposit are paid by the applicant.</li>
+                                                            <li>The municipality director approves the permit.</li>
+                                                            <li>The permit is issued to be accessed by the contractor in the portal and a copy is kept in the municipality.</li>
+                                                            <li> The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                            <span><strong>Note: </strong>
+                                                              <ul>
+                                                                <li>provision of a fence or a protection, or traffic lights around the excavations and pipelines.</li>
+                                                              </ul>
+                                                            </span>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                            <li>Drawing of Structural and Architectural</li>
+                                                            <li>Structural Design Calculations</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>3 to 5 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts07()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts07">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-03 - Well Water Drilling Contractors Request </h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app07" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts07();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS08">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-08 - Request for Dams</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="">Please select</option>
+                                              <option value="811">Remove the silt from the dam lake</option>
+                                              <option value="812">Maintenance of Water drainage gates</option>
+                                              <option value="813">Remove the Waste from the dam</option>
+                                              <option value="814">Pumps &amp; Pipes</option>
+                                              <option value="815">Treatment of Water Leaks</option>
+                                              <option value="816">The Fence</option>
+                                              <option value="817">Silt</option>
+                                              <option value="818">Clean the Coolant</option>
+                                              <option value="819">Plot</option>
+                                              <option value="820">Dam Crossings</option>
+                                              <option value="821">Water level Meter in the Lake</option>
+                                              <option value="822">Silt Measuring Columns in the Lake</option>
+                                              <option value="823">Rulers of water levels</option>
+                                              <option value="824">Gabopion Chains</option>
+                                              <option value="825">The main Gate of the Dam</option>
+                                              <option value="826">Treatment of Cracks</option>
+                                              <option value="827">Maintenance Expenditure</option>
+                                              <option value="828">The Piezometer (Montring wel)</option>
+                                              <option value="829">Survey Points on the Dam</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts08()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Dams</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS-08</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the application form with all the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
+                                                            <li>Issues the required service certificate to be accessed by the applicant in the portal and a copy is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Excavations Approved Maps</li>
+                                                            <li>Civil Work Path Approved Maps</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>5 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts08()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts08">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-08 - Request for Dams</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app08" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts08();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS09">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-09 - Application for Work Completion Certificate and Services Connection</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request Connect of Temporary Services to Building site
+                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts09()" style="color:#fff;">Apply</button>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-TS- 09</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application Processing</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>The ministry receives the application with all the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
+                                                            <li>Issues of the required service certificate to be accessed by the applicant in the portal and a copy is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Ownership document ( Mulkiya )</li>
+                                                            <li>Survey Sketch (Krooki)</li>
+                                                            <li>Drawing of Structural and Architectural</li>
+                                                            <li>Structural Design Calculations</li>
+                                                            <li>Waste Removal Deposit Receipt</li>
+                                                            <li>Excavations Path Approved Maps</li>
+                                                            <li>Civil Work Path Approved Maps</li>
+                                                            <li>Project Letter</li>
+                                                            <li>CotractorObligation Form</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>1 to 3 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts09()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts09">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-09 - Application for Work Completion Certificate and Services Connection</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app09" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts09();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS10">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-18 - Request for Development Projects</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="row align-items-center">
+                                        <label for="" class="col-sm-3">Type of Service</label>
+                                        <div class="col-md-6">
+                                            <select class="form-control border" name="">
+                                              <option value="">Please select</option>
+                                              <option value="101">Construction of Crusher Projects</option>
+                                              <option value="102">Construction of Quarries Project</option>
+                                              <option value="103">Construction of Gas Station Projects</option>
+                                              <option value="104">Changing the Use of Agricultural Lands</option>
+                                              <option value="105">Construction of Development Projects</option>
+                                              <option value="106">Extraction of Waste Materials</option>
+                                              <option value="107">No objection to Establishment Facility</option>
+                                              <option value="108">General Studies</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts10()" style="color:#fff;">Apply</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Development Projects</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-WS-18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol class="text-justify">
+                                                            <li>The ministry receives the application with the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection for the building to approve the existence of the requirements.</li>
+                                                            <li>Issues of the certificate after the approval of the municipality director.</li>
+                                                            <li>Delivers the certificate to the applicant in the portal and a copy is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Building Architecture Maps</li>
+                                                            <li>Consultant Certificate for Building Components</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>5 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts10()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts10">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-WS-18 - Request for Development Projects</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app10" class="panel-footer">
+                                        <label for="agree">
+                                          <input id="agree" type="checkbox" value="agree" v-model="checked"/>
+                                          I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts10();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="BPTS14">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-14 - Request for Preliminary Study</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-middle">Process Name</th>
+                                                    <th>Request for Preliminary Study
+                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts14()" style="color:#fff;">Apply</button>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Process ID</td>
+                                                    <td>BP-TS- 14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle w-25">Application processing</td>
+                                                    <td>
+                                                        <ol class="text-justify">
+                                                            <li>The ministry receives the application with the required documents attached.</li>
+                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
+                                                            <li>Conducts technical inspection for the building to approve the existence of the requirements.</li>
+                                                            <li>Issues of the certificate after the approval of the municipality director.</li>
+                                                            <li>Delivers the certificate to the applicant in the portal and a copy is kept in the municipality.</li>
+                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">Required Documents</td>
+                                                    <td>
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Building Architecture Maps</li>
+                                                            <li>Consultant Certificate for Building Components</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Process duration</td>
+                                                    <td>5 working days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts14()" style="color:#fff;">Apply</button>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+
+                        <div class="col-lg-12" id="applybpts14">
+                            <div class="box box-ws">
+                                <div class="box-header with-border with-ws">
+                                    <h3 class="box-title">BP-TS-14 - Request for Preliminary Study</h3>
+                                    <div class="box-tools float-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+                                    <h6>Disclaimer</h6>
+                                    <div class="Termsofuse">
+                                        <table class="table table-hover table-striped table-condensed">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
+                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
+                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
+                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
+                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
+                                                            personal identifiable information.</p>
+                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
+                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
+                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
+                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
+                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
+                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
+                                                        </p>
+                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
+                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
+                                                            you receive from this online payment service (eService’s).</p>
+                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
+                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="app14" class="panel-footer">
+                                        <label for="agree"><input id="agree" type="checkbox" value="agree" v-model="checked"/> I Agree to the Terms and Conditions </label>
+                                        <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts14();">I agree </button>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!--/.ts-chat -->
+                        </div>
+                        <!-- .col-lg-12 -->
+                    </div>
+                    <!-- .col row -->
+                </div>
+            </div>
+            <!--/.row -->
+        </div>
+    </div>
+    <!--/.container-->
+
+    <footer id="footer-main" class="">
+        <div class="position-relative footer-dark footer-bg eSevices">
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg class="" height="100px" preserveaspectratio="none" style="enable-background:new 0 0 2560 100" viewbox="0 0 2560 100" width="2560px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+        <polygon points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+            </div>
+            <!-- <div class="mbr-overlay"></div> -->
+            <div class="container pt-3">
+                <hr class="divider divider-fade divider-dark my-5">
+                <div class="row">
+                    <div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
+                        <a href="index.html">
+                            <img alt="Tedad2020 Final Logo" id="footer-logo" class="img-fluid mb-2" src="img/oman-vision-white.png"></a>
+                        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.facebook.com/mrmwr/" target="_blank">
+                                    <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.instagram.com/mafwr_om/" target="_blank">
+                                    <i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.youtube.com/user/moaoman" target="_blank">
+                                    <i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://twitter.com/mafwr_om" target="_blank">
+                                    <i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0" hidden>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="#!" class="text-decoration-none">
+                                    <img src="img/social/instagram.svg" class="list-social-icon social-w-40" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="#!" class="text-decoration-none">
+                                    <img src="img/social/facebook.svg" class="list-social-icon social-w-40" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="#!" class="text-decoration-none">
+                                    <img src="img/social/twitter.svg" class="list-social-icon social-w-40" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- brand -->
+                        <ul class="list-unstyled list-inline list-social mt-2 mb-md-0">
+
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-9 copyright">
+                        <p class="text-3 mb-0">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Copyright &copy;
+                            <a class="" href="https://www.maf.gov.om" target="_blank">Ministry of Agriculture, Fisheries &amp; Water Resources</a> - All Rights Reserved.
+                        </p>
+                        <p class="text-3 mb-0">Last modified on : 15-05-2023 at 9:09 PM</p>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item list-social-item">
+                                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                                    <img src="img/app/app_store.svg" class="list-brand-icon" alt="app_store">
+                                </a>
+                            </li>
+                            <li class="nav-item list-social-item">
+                                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                                    <img src="img/app/google_play.svg" class="list-brand-icon" alt="google_play">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item mx-2 lift">
+                                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                                    <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item lift">
+                                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                                    <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="customizer">
+        <button class="btn btn-primary btn-sm btn-icon-only rounded-circle hover-scale-110 shadow-lg" data-mode="dark" id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
+    </div>
+    <!--Scrolling top-->
+    <a class="scrollup" href="#" title="back to top" style="display: inline;"> <span class="fal fa-angle-double-up fa-2x"></span><br /> Top</a>
+    <!-- end scrolling top-->
+
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/svg-injector.min.js"></script>
+    <script type="text/javascript" src="js/moaf-webapp.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="js/Wservices.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript" src="js/Time/timejs.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript">
+        /*******************************
+         * ACCORDION WITH TOGGLE ICONS
+         *******************************/
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.card-header')
+                .find(".more-less")
+                .toggleClass('fal fa-chevron-down fal fa-chevron-right');
+        }
+        $('.accordion').on('hidden.bs.collapse', toggleIcon);
+        $('.accordion').on('shown.bs.collapse', toggleIcon);
+
+        new Vue({
+            el: '#app01',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app02',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app03',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app04',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app05',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app06',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app07',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app08',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app09',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app10',
+            data: {
+                checked: false
+            }
+        });
+        new Vue({
+            el: '#app14',
+            data: {
+                checked: false
+            }
+        });
+
+        $(function() {
+            //console.log('ready');
+            $('.list-group li').click(function(e) {
+                e.preventDefault()
+                $that = $(this);
+                $that.parent().find('li').removeClass('active');
+                $that.addClass('active');
+            });
+        })
+    </script>
+</body>
+
+</html>

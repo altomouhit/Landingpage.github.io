@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "DlookUpSel": "Call Category",
+      "DlookUpSel_Val": "1",
+      "DlookupDetailSel": "Trauma",
+      "DlookupDetailSel_val": "1",
+      "lookupDetailSubtxt_En": "Assault",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "2",
+      "DlookUpSel": "Call Category",
+      "DlookUpSel_Val": "1",
+      "DlookupDetailSel": "Trauma",
+      "DlookupDetailSel_val": "1",
+      "lookupDetailSubtxt_En": "MVC",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "3",
+      "DlookUpSel": "Call Category",
+      "DlookUpSel_Val": "1",
+      "DlookupDetailSel": "Medical",
+      "DlookupDetailSel_val": "2",
+      "lookupDetailSubtxt_En": "Falls",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "4",
+      "DlookUpSel": "Call Category",
+      "DlookUpSel_Val": "1",
+      "DlookupDetailSel": "Medical",
+      "DlookupDetailSel_val": "2",
+      "lookupDetailSubtxt_En": "Neurologic",
+      "Cstatus": "In active",
+      "Cstatus_val": "2"
+    }
+    
+  ]
+}
