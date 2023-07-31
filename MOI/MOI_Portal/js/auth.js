@@ -6,13 +6,13 @@ class Auth {
 	}
 	validateAuth(auth) {
 		if (auth != "sri@altomouhit.com") {
-			window.location.replace("/");
+			window.location.replace("../../../Landing_theme/index.html");
 		} else {
 			document.querySelector("body").style.display = "block";
 		}
 	}
 	logOut() {
 		localStorage.removeItem("auth");
-		window.location.replace("/");
+		window.location.replace("../../../Landing_theme/index.html");
 	}
 }
