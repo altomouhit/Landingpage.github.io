@@ -72,6 +72,8 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #868700 !important;
     color: #868700 !important;
     border-radius: 6px !important;
+    transition:.3s ease all;
+    min-width: 100px;
 }
 
 .btn-height {
@@ -528,4 +530,10 @@ hr.horizontal.dark {
     .contest_input_block .top_header_bar .btn {
         height: 36px;
     }
+}
+.userColor {
+    color: var(--vz-link-color);
+}
+.logOut button {
+    min-width: 100px;
 }
