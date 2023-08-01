@@ -971,7 +971,7 @@ body.rtl .elementor-5991 .elementor-element.elementor-element-6a08cf8 {
     background-image: url(../img/footer-bg-02.png), url(../img/h7-bg-section2.jpg);
     background-position: bottom, center center;
     background-repeat: no-repeat;
-    background-size:contain, cover;
+    background-size:cover, cover;
 }
 .elementor-7249 .elementor-element.elementor-element-8550330 {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
