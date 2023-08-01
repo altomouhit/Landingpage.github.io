@@ -8,11 +8,11 @@ class Auth {
 		if (auth != "sri@altomouhit.com") {
 			window.location.replace("../");
 		} else {
-			document.querySelector("body").style.display = "flex";
+			document.querySelector("body").style.display = "block";
 		}
 	}
-	logOut() {
-		localStorage.removeItem("auth");
-		window.location.replace("../");
-	}
+	// logOut() {
+	// 	localStorage.removeItem("auth");
+	// 	window.location.replace("../");
+	// }
 }
