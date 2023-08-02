@@ -706,3 +706,6 @@ hr.horizontal.dark {
 .w-10 {
     width: 10% !important;
 }
+.bootbox-close-button {
+    display: none;
+}

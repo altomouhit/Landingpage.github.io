@@ -6,6 +6,7 @@ window.onload = function() {
 	$("#resuscitationDiv, #painDiv").hide();
 	//Airway, Breathing, 
 	$("#airwayNotClearDiv, #breathingNormalDiv, #breathingAbnormalDiv").hide();
+	$("#mAirwayDoneByDiv, #nasalDoneByDiv, #combiDoneByDiv, #ETTDoneByDiv, #LMADoneByDiv").hide();
 	//circulation
 	$("#circulationPulseDiv, #circulationSkinDiv").hide();
 	//Burns
@@ -24,6 +25,8 @@ window.onload = function() {
 	//Upper EXT > Upper EXT Left Burns
 	$("#upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv").hide();
 	$("#downTimeDiv, #handoverDiv").hide();
+	// Location Type
+	$("#locationSelectDiv").hide();
 	//$('.selector').editableSelect();
 	$('.selector').editableSelect({
 		// enable filter
@@ -250,96 +253,44 @@ $('#nonTansport').on('change', function() {
 		$("#nonTransportCrimeDiv, .PDOADiv, #refused, #DNRDiv").hide();
 	}
 });
-// $("#mAirway").on('change', function() {
-// 	if (this.value == 1) {
-// 		$("#oralSizeDiv").show();
-// 		$("#ETTSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	} else if (this.value == 2) {
-// 		$("#nasalSizeDiv").show();
-// 		$("#oralSizeDiv, #ETTSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	} else if (this.value == 4) {
-// 		$("#ETTSizeDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	} else if (this.value == 5) {
-// 		$("#mAirwayCommentDiv, #mAirwayDoneByDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv").hide();
-// 	} else if (this.value == 6) {
-// 		$("#LMASizeDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #ETTSizeDiv").hide();
-// 	} else {
-// 		$("#mAirwayDoneByDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv, #mAirwayCommentDiv").hide();
-// 	}
-// });
 
-// $("#mAirway").on('change', function() {
-// 	var Value = $(this).val();
-// 	if (Value.indexOf("1") > -1) {
-// 		$("#oralSizeDiv").show();
-// 		$("#ETTSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	} 
-// 	if (Value.indexOf("2") > -1) {
-// 		$("#nasalSizeDiv").show();
-// 		$("#oralSizeDiv, #ETTSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	}
-// 	if (Value.indexOf("4") > -1) {
-// 		$("#ETTSizeDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #LMASizeDiv").hide();
-// 	} 
-// 	if (Value.indexOf("5") > -1) {
-// 		$("#mAirwayCommentDiv, #mAirwayDoneByDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv").hide();
-// 	} 
-// 	if (Value.indexOf("6") > -1) {
-// 		$("#LMASizeDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #mAirwayCommentDiv, #ETTSizeDiv").hide();
-// 	} 
-// 	if (Value.indexOf("1") > -1 && Value.indexOf("2") > -1 && Value.indexOf("4") > -1 && Value.indexOf("5") > -1 && Value.indexOf("6")) {
-// 		$("#mAirwayDoneByDiv").hide();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv, #mAirwayCommentDiv").show();
-// 	}
-// 	if (!(Value.indexOf("1") > -1) && !(Value.indexOf("2") > -1) && !(Value.indexOf("4") > -1) && !(Value.indexOf("5") > -1) && !(Value.indexOf("6") > -1)) {
-// 		$("#mAirwayDoneByDiv").show();
-// 		$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv, #mAirwayCommentDiv").hide();
-// 	}
-// });
 $("#mAirway").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("1") > -1) {
-		$("#oralSizeDiv").show();
+		$("#oralSizeDiv, #mAirwayDoneByDiv").show();
 	}
 	if (!(Value.indexOf("1") > -1)) {
-		$("#oralSizeDiv").hide();
+		$("#oralSizeDiv, #mAirwayDoneByDiv").hide();
 	}
 	if (Value.indexOf("2") > -1) {
-		$("#nasalSizeDiv").show();
+		$("#nasalSizeDiv, #nasalDoneByDiv").show();
 	}
 	if (!(Value.indexOf("2") > -1)) {
-		$("#nasalSizeDiv").hide();
+		$("#nasalSizeDiv, #nasalDoneByDiv").hide();
 	}
 	if (Value.indexOf("3") > -1) {
-		$("#mAirwayDoneByDiv").show();
+		$("#combiDoneByDiv").show();
 	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#combiDoneByDiv").hide();
+	 }
 	if (Value.indexOf("4") > -1) {
-		$("#ETTSizeDiv").show();
+		$("#ETTSizeDiv, #ETTDoneByDiv").show();
 	}
 	if (!(Value.indexOf("4") > -1)) {
-		$("#ETTSizeDiv").hide();
+		$("#ETTSizeDiv, #ETTDoneByDiv").hide();
 	}
 	if (Value.indexOf("5") > -1) {
-		$("#mAirwayCommentDiv, #mAirwayDoneByDiv").show();
+		$("#mAirwayCommentDiv").show();
 	}
 	if (!(Value.indexOf("5") > -1)) {
 		$("#mAirwayCommentDiv").hide();
 	}
-	if (!(Value.indexOf("3") > -1) && !(Value.indexOf("5") > -1)) {
-		$("#mAirwayDoneByDiv").hide();
-	}
 	if (Value.indexOf("6") > -1) {
-		$("#LMASizeDiv").show();
+		$("#LMASizeDiv, #LMADoneByDiv").show();
 	}
 	if (!(Value.indexOf("6") > -1)) {
-		$("#LMASizeDiv").hide();
+		$("#LMASizeDiv, #LMADoneByDiv").hide();
 	}
 });
 $("#oxygenLPM").on('change', function() {
@@ -371,12 +322,12 @@ $("#splinting").on('change', function() {
 	}
 });
 $("#defibrillation").on('change', function() {
-	if (this.value == 5) {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
 		$("#defibrillationDiv").show();
-		$("#defibrillationDoneByDiv").hide();
-	} else {
+	}
+	if (!(Value.indexOf("5") > -1)) {
 		$("#defibrillationDiv").hide();
-		$("#defibrillationDoneByDiv").show();
 	}
 });
 $("#IVIO").on('change', function() {
@@ -395,19 +346,27 @@ $("#IVIO").on('change', function() {
 	}
 });
 $("#mOthers").on('change', function() {
-	if (this.value == 3) {
+	var Value = $(this).val();
+	if (Value.indexOf("3") > -1) {
 		$("#assistDeliveryDiv").show();
-		$("#mOthersDiv, #NGTSizeDiv").hide();
-	} else if (this.value == 9) {
-		$("#mOthersDiv").show();
-		$("#assistDeliveryDiv, #actualDeliveryDiv, #resuscitationManagementDiv, #obstetricCareDiv, #NGTSizeDiv").hide();
-	} else if (this.value == 7) {
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#assistDeliveryDiv").hide();
+	}
+	if (Value.indexOf("7") > -1) {
 		$("#NGTSizeDiv").show();
-		$("#assistDeliveryDiv, #actualDeliveryDiv, #resuscitationManagementDiv, #obstetricCareDiv, #mOthersDiv").hide();
-	} else {
-		$("#mOthersDiv, #assistDeliveryDiv, #actualDeliveryDiv, #resuscitationManagementDiv, #obstetricCareDiv, #NGTSizeDiv").hide();
+	}
+	if (!(Value.indexOf("7") > -1)) {
+		$("#NGTSizeDiv").hide();
+	}
+	if (Value.indexOf("9") > -1) {
+		$("#mOthersDiv").show();
+	}
+	if (!(Value.indexOf("9") > -1)) {
+		$("#mOthersDiv").hide();
 	}
 });
+
 $("#assistDelivery").on('change', function() {
 	if (this.value == 2) {
 		$("#actualDeliveryDiv").show();
@@ -988,6 +947,222 @@ $(document).ready(function() {
 					text: value.text
 				})).trigger('change');
 			});
+		}
+	});
+
+	$('#locationType').on('change', function() {
+		//alert($(this).find(":selected").val());
+		$('#locationLabel').text($(this).find(":selected").text());
+		$('#locationSelect').find('option').remove().end().append('<option value="">Please select</option>').val('').trigger('change');
+		//$('#locationSelect').trigger("chosen:updated");
+		if (this.value == 6 || this.value == 7 || this.value == 8 || this.value == 9 || this.value == 12) {
+			$("#locationSelectDiv").hide();
+		} else {
+			$("#locationSelectDiv").show();
+		}
+		var storedata;
+		if ($(this).find(":selected").val() == "1") {
+			//alert("1");
+			storedata = [{
+				value: '1',
+				text: 'Nursery'
+			}, {
+				value: '2',
+				text: 'Preschool'
+			}, {
+				value: '3',
+				text: 'Private School'
+			}, {
+				value: '4',
+				text: 'Public School'
+			}, {
+				value: '5',
+				text: 'College'
+			}, {
+				value: '6',
+				text: 'Institute'
+			}, {
+				value: '7',
+				text: 'University'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "2") {
+			//alert("2");
+			storedata = [{
+				value: '8',
+				text: 'Factory'
+			}, {
+				value: '9',
+				text: 'Workshop'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "3") {
+			//alert("3");
+			storedata = [{
+				value: '10',
+				text: 'Clinic'
+			}, {
+				value: '11',
+				text: 'Health Center'
+			}, {
+				value: '12',
+				text: 'Polyclinic'
+			}, {
+				value: '13',
+				text: 'Hospital'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "4") {
+			//alert("4");
+			storedata = [{
+				value: '14',
+				text: 'Hotel'
+			}, {
+				value: '15',
+				text: 'Park'
+			}, {
+				value: '16',
+				text: 'Resort'
+			}, {
+				value: '17',
+				text: 'Play-yard'
+			}, {
+				value: '18',
+				text: 'Chalet'
+			}, {
+				value: '19',
+				text: 'Theatre / Cinema'
+			}, {
+				value: '20',
+				text: 'Museum'
+			}, {
+				value: '21',
+				text: 'Restaurant'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "5") {
+			//alert("5");
+			storedata = [{
+				value: '22',
+				text: 'Gym'
+			}, {
+				value: '23',
+				text: 'Club'
+			}, {
+				value: '24',
+				text: 'Complex'
+			}, {
+				value: '25',
+				text: 'Stadium'
+			}, {
+				value: '26',
+				text: 'Playing field'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "10") {
+			//alert("10");
+			storedata = [{
+				value: '27',
+				text: 'Souq'
+			}, {
+				value: '28',
+				text: 'Supermarket'
+			}, {
+				value: '29',
+				text: 'Mall'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		} else if ($(this).find(":selected").val() == "11") {
+			//alert("11");
+			storedata = [{
+				value: '30',
+				text: 'Street'
+			}, {
+				value: '31',
+				text: 'Highway'
+			}, {
+				value: '32',
+				text: 'Service Road '
+			}, {
+				value: '33',
+				text: 'Airport'
+			}, {
+				value: '34',
+				text: 'Bus Station'
+			}, {
+				value: '35',
+				text: 'Train Station'
+			}, {
+				value: '36',
+				text: 'Ports'
+			}];
+			$.each(storedata, function(index, value) {
+				$('#locationSelect').append($('<option>', {
+					value: value.value,
+					text: value.text
+				})).trigger('change');
+			});
+		}
+	});
+});
+
+var ecgTable = $('#ecgTable').DataTable({
+	processing: true,
+	"destroy": true,
+	"dom": '<"top"f>rt<"bottom"ilp>',
+	"order": [[0, 'asc']]
+});
+
+$('#ecgTable tbody').on('click', '#removeBtn', function() {
+	var table = $('#ecgTable').DataTable();
+	bootbox.confirm({
+		message: "Do you want to delete a record?",
+		buttons: {
+			confirm: {
+				label: '<i class="fal fa-check fa-fw fa-lg"></i> Yes',
+				className: 'btn-success'
+			},
+			cancel: {
+				label: '<i class="fa fa-times fa-fw fa-lg"></i> No',
+				className: 'btn-danger'
+			}
+		},
+		callback: function(result) {
+			//alert("result="+result);
+			if (result) {
+				table.row($(this).parents('tr')).remove().draw();
+			}
+			//  console.log('This was logged in the callback: ' + result);
 		}
 	});
 });

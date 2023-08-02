@@ -145,3 +145,11 @@
 ul li .dropdown-item {
     font-size: 1rem !important;
 }
+.multiselect-container>li.multiselect-group label {
+    flex-direction: row;
+    border-bottom: 1px dashed #c3cad3;
+}
+.multiselect-container>li.multiselect-group>a>label:after {
+    border: 0;
+    background: transparent;
+}

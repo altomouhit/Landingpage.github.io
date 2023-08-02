@@ -463,7 +463,7 @@
                                                                 <option value="3">Shooting</option>
                                                                 <option value="4">Stabbing</option>
                                                                 <option value="5">Suspected abuse</option>
-                                                                <option value="6">Suspected sexual abuse</option>                                                       -->
+                                                                <option value="6">Suspected sexual abuse</option> -->
                                                             </select>
                                                             <label for="callType">Call Type</label>
                                                         </div>
@@ -564,7 +564,7 @@
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                                 <input type="text" class="form-control" id="totalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                                <label for="totalTime">Total Time</label>
+                                                                <label for="totalTime">Total Call time</label>
                                                             </div>
                                                             <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
                                                         </div>
@@ -1961,10 +1961,10 @@
                                                             </div>
                                                             <!--end row-->
                                         
-                                                            <div class="card p-0">
+                                                            <div class="card p-0 border-0 shadow-none">
                                                                 <div class="card-body">
-                                                                    <div class="table-responsive table-card">
-                                                                        <table class="table align-middle table-nowrap table-bordered" id="customerTable">
+                                                                    <div class="table-responsive table-card data_table">
+                                                                        <table class="table align-middle table-nowrap table-bordered" id="ecgTable">
                                                                             <thead class="table-info">
                                                                                 <tr>
                                                                                     <th scope="col">Time / Vs</th>
@@ -1979,7 +1979,7 @@
                                                                                     <th scope="col">RHYTHM</th>
                                                                                     <th scope="col">ECG Attachment</th>
                                                                                     <th scope="col">APGAR</th>
-                                                                                    <th scope="col">Total Burn Score %  </th>
+                                                                                    <th scope="col">Total Burn Score % </th>
                                                                                     <th style="width: 5%;"></th>
                                                                                 </tr>
                                                                                 <!--end tr-->
@@ -2007,7 +2007,7 @@
                                                                                                 <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
                                                                                             </li>
                                                                                             <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">
-                                                                                                <a class="remove-item-btn">
+                                                                                                <a class="remove-item-btn" id="removeBtn">
                                                                                                     <i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
                                                                                                 </a>
                                                                                             </li>
@@ -2035,7 +2035,7 @@
                                                                                                 <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
                                                                                             </li>
                                                                                             <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">
-                                                                                                <a class="remove-item-btn">
+                                                                                                <a class="remove-item-btn" id="removeBtn">
                                                                                                     <i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
                                                                                                 </a>
                                                                                             </li>
@@ -2046,26 +2046,9 @@
                                                                             </tbody>
                                                                         </table>
                                                                         <!--end table-->
-                                                                        <div class="noresult" style="display: none">
-                                                                            <div class="text-center">
-                                                                                <lord-icon src="assets/libs/lord-icon/search.json" trigger="loop"
-                                                                                    colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
-                                                                                </lord-icon>
-                                                                                <h5 class="mt-2">Sorry! No Result Found</h5>
-                                                                            </div>
-                                                                        </div>
+                                                                        
                                                                     </div>
-                                                                    <div class="d-flex justify-content-end mt-3">
-                                                                        <div class="pagination-wrap hstack gap-2">
-                                                                            <a class="page-item pagination-prev disabled" href="#">
-                                                                                Previous
-                                                                            </a>
-                                                                            <ul class="pagination listjs-pagination mb-0"></ul>
-                                                                            <a class="page-item pagination-next" href="#">
-                                                                                Next
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                    
                                                                 </div>
                                                                 <!--end card-body-->
                                                             </div>
@@ -2205,12 +2188,24 @@
                                                                                             <option value="6">Prison</option>
                                                                                             <option value="7">Public Building</option>
                                                                                             <option value="8">Residence / House</option>
-                                                                                            <option value="9">Sea/ Beach</option>
+                                                                                            <option value="9">Sea / Beach</option>
                                                                                             <option value="10">Shopping Place</option>
                                                                                             <option value="11">Transpotaions</option>
                                                                                             <option value="12">Work Place (Office)</option>
                                                                                         </select>
                                                                                         <label for="locationType">Location Type</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-3 mt-0" id="locationSelectDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="locationSelect" aria-label="Floating label">
+                                                                                            <option value="">Please select</option>
+                                                                                        </select>
+                                                                                        <label for="locationSelect" id="locationLabel"></label>
                                                                                     </div>
                                                                                     <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
                                                                                 </div>
@@ -2232,7 +2227,7 @@
 
                                                                             <div class="col-lg-3 mt-0" id="governmentHospitalDiv">
                                                                                 <div class="input-group">
-                                                                                    <div class="form-floating">
+                                                                                    <div class="form-floating singleSelect">
                                                                                         <select class="form-select multiSelect" id="governmentHospital" data-live-search="true" aria-label="Floating label">
                                                                                             <option value="">Please select</option>
                                                                                             <option value="1">Al Seefa Health Center</option>
@@ -2288,7 +2283,7 @@
                                                                             </div>
                                                                             <div class="col-lg-3 mt-0" id="privateHospitalDiv">
                                                                                 <div class="input-group">
-                                                                                    <div class="form-floating">
+                                                                                    <div class="form-floating singleSelect">
                                                                                         <select class="form-select multiSelect" id="privateHospital" data-live-search="true" aria-label="Floating label">
                                                                                             <option value="">Please select</option>
                                                                                             <option value="1">Bardr Al-Samaa Hospital (Ruwi)</option>
@@ -2376,6 +2371,17 @@
                                                                                 <label for="oralSize">Oral Size</label>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="col-md-6 mb-2" id="mAirwayDoneByDiv">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="mAirwayDoneBy" data-live-search="true" aria-label="Floating label">
+                                                                                    <option value="">Please select</option>
+                                                                                    <option value="1">EMT1</option>
+                                                                                    <option value="2">EMT2</option>
+                                                                                    <option value="3">EMT3</option>
+                                                                                </select>
+                                                                                <label for="mAirwayDoneBy">Oral Done By</label>
+                                                                            </div>
+                                                                        </div>
                                                                         <div class="col-md-6 mb-2" id="nasalSizeDiv">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select" id="nasalSize" aria-label="Floating label">
@@ -2386,6 +2392,28 @@
                                                                                     <option value="4">9</option>
                                                                                 </select>
                                                                                 <label for="nasalSize">Nasal Size</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-2" id="nasalDoneByDiv">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="nasalDoneBy" data-live-search="true" aria-label="Floating label">
+                                                                                    <option value="">Please select</option>
+                                                                                    <option value="1">EMT1</option>
+                                                                                    <option value="2">EMT2</option>
+                                                                                    <option value="3">EMT3</option>
+                                                                                </select>
+                                                                                <label for="mAirwayDoneBy">Nasal Done By</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-2" id="combiDoneByDiv">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="combiDoneBy" data-live-search="true" aria-label="Floating label">
+                                                                                    <option value="">Please select</option>
+                                                                                    <option value="1">EMT1</option>
+                                                                                    <option value="2">EMT2</option>
+                                                                                    <option value="3">EMT3</option>
+                                                                                </select>
+                                                                                <label for="mAirwayDoneBy">Combi Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="ETTSizeDiv">
@@ -2408,6 +2436,17 @@
                                                                                 <label for="ETTSize">ETT Size</label>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="col-md-6 mb-2" id="ETTDoneByDiv">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="ETTDoneBy" data-live-search="true" aria-label="Floating label">
+                                                                                    <option value="">Please select</option>
+                                                                                    <option value="1">EMT1</option>
+                                                                                    <option value="2">EMT2</option>
+                                                                                    <option value="3">EMT3</option>
+                                                                                </select>
+                                                                                <label for="mAirwayDoneBy">ETT Done By</label>
+                                                                            </div>
+                                                                        </div>
                                                                         <div class="col-md-6 mb-2" id="LMASizeDiv">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select" id="LMASize" aria-label="Floating label">
@@ -2420,17 +2459,18 @@
                                                                                 <label for="LMASize">LMA Size</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-6 mb-2" id="mAirwayDoneByDiv">
-                                                                            <div class="form-floating">
-                                                                                <select class="form-select" id="mAirwayDoneBy" aria-label="Floating label">
+                                                                        <div class="col-md-6 mb-2" id="LMADoneByDiv">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="LMADoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
                                                                                     <option value="1">EMT1</option>
                                                                                     <option value="2">EMT2</option>
                                                                                     <option value="3">EMT3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Done by</label>
+                                                                                <label for="mAirwayDoneBy">LMA Done By</label>
                                                                             </div>
                                                                         </div>
+                                                                        
                                                                         <div class="col-md-6 mb-2" id="mAirwayCommentDiv">
                                                                             <div class="form-floating">
                                                                                 <input type="text" class="form-control" id="mAirwayComments" placeholder="Comments" />
@@ -2468,8 +2508,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col" id="oxygenLPMDoneByDiv">
-                                                                            <div class="form-floating">
-                                                                                <select class="form-select" id="oxygenLPMDoneBy" aria-label="Floating label">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="oxygenLPMDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
                                                                                     <option value="1">EMT1</option>
                                                                                     <option value="2">EMT2</option>
@@ -2516,8 +2556,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col" id="immoblazatiomDoneByDiv">
-                                                                            <div class="form-floating">
-                                                                                <select class="form-select" id="immoblazatiomDoneBy" aria-label="Floating label">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="immoblazatiomDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
                                                                                     <option value="1">EMT1</option>
                                                                                     <option value="2">EMT2</option>
@@ -2550,8 +2590,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col">
-                                                                            <div class="form-floating">
-                                                                                <select class="form-select" id="splintingDoneBy">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="splintingDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
                                                                                     <option value="1">EMT1</option>
                                                                                     <option value="2">EMT2</option>
@@ -2573,7 +2613,7 @@
                                                                 <fieldset>
                                                                     <legend>Electrical Intervention</legend>
                                                                     <div class="row mb-2">
-                                                                        <div class="col">
+                                                                        <div class="col-md-4 mb-2">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select multiSelect" id="defibrillation" aria-label="Floating label" data-live-search="true" multiple title="Please select">
                                                                                     <!-- <option value="">Please select</option> -->
@@ -2586,7 +2626,7 @@
                                                                                 <label for="defibrillation">Electrical Intervention (Cardiac) </label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col" id="defibrillationDoneByDiv">
+                                                                        <div class="col-md-4 mb-2" id="defibrillationDoneByDiv">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select" id="defibrillationDoneBy" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
@@ -2596,7 +2636,7 @@
                                                                                 <!-- <label for="defibrillationDoneBy">Done by</label> -->
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col" id="defibrillationDiv">
+                                                                        <div class="col-md-4 mb-2" id="defibrillationDiv">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select" id="defibrillationComments" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
@@ -2606,6 +2646,17 @@
                                                                                 <label for="defibrillationComments">ECG</label>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="col-md-4 mb-2">
+                                                                            <div class="form-floating singleSelect">
+                                                                                <select class="form-select multiSelect" id="defibrillationDoneBy" data-live-search="true">
+                                                                                    <option value="">Please select</option>
+                                                                                    <option value="1">EMT1</option>
+                                                                                    <option value="2">EMT2</option>
+                                                                                    <option value="3">EMT3</option>
+                                                                                </select>
+                                                                                <label for="defibrillationDoneBy">Done By</label>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </fieldset>
                                                             </div>
@@ -2613,7 +2664,7 @@
                                                                 <fieldset>
                                                                     <legend>Others</legend>
                                                                     <div class="row mb-2">
-                                                                        <div class="col">
+                                                                        <div class="col-md-6 mb-2">
                                                                             <div class="form-floating">
                                                                                 <select class="form-select multiSelect" id="mOthers" data-live-search="true" multiple title="Please select">
                                                                                     <!-- <option value="">Please select</option> -->
@@ -2632,7 +2683,7 @@
                                                                                 <label for="mOthers">Others</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col" id="NGTSizeDiv">
+                                                                        <div class="col-md-6 mb-2" id="NGTSizeDiv">
                                                                             <div class="form-floating">
                                                                                 <select name="NGTSize" id="NGTSize" class="form-select">
                                                                                     <option value="">Please select</option>
@@ -2645,7 +2696,7 @@
                                                                                 <label for="NGTSize">NGT (Size)</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col" id="assistDeliveryDiv">
+                                                                        <div class="col-md-6 mb-2" id="assistDeliveryDiv">
                                                                             <div class="form-floating">
                                                                                 <select name="assistDelivery" id="assistDelivery" class="form-select">
                                                                                     <option value="">Please select</option>
@@ -2655,7 +2706,7 @@
                                                                                 <label for="assistDelivery">Assist Delivery</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col" id="mOthersDiv">
+                                                                        <div class="col-md-6 mb-2" id="mOthersDiv">
                                                                             <div class="form-floating">
                                                                                 <input type="text" class="form-control" id="mOthersComments" placeholder="Comments" />
                                                                                 <label for="mOthersComments">Comments</label>
@@ -2665,7 +2716,7 @@
 
                                                                     <div class="row align-items-center" id="actualDeliveryDiv">
                                                                         <label for="actualDelivery" class="text-primary">Actual Delivery</label>
-                                                                        <div class="col-lg-4 mb-2">
+                                                                        <div class="col-lg-6 mb-2">
                                                                             <div class="input-group">
                                                                                 <div class="form-floating">
                                                                                     <input type="text" class="form-control" id="timeDeliveryRadio" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
@@ -2674,7 +2725,7 @@
                                                                                 <span class="input-group-text"><i class="fa-light fa-calendar-clock fa-lg"></i></span>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-4 mb-2">
+                                                                        <div class="col-lg-6 mb-2">
                                                                             <div class="form-floating">
                                                                                 <select name="aliveRadio" id="aliveRadio" class="form-select">
                                                                                     <option value="">Please select</option>
@@ -2684,7 +2735,7 @@
                                                                                 <label for="aliveRadio">Type</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-4 mb-2">
+                                                                        <div class="col-lg-6 mb-2">
                                                                             <div class="form-floating">
                                                                                 <select name="genderRadio" id="genderRadio" class="form-select">
                                                                                     <option value="">Please select</option>
@@ -2694,7 +2745,7 @@
                                                                                 <label for="genderRadio">Gender</label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-12">
+                                                                        <div class="col-lg-6">
                                                                             <div class="form-check form-check-inline">
                                                                                 <input class="form-check-input actualDelivery" type="radio" name="actualDelivery" id="resuscitationRadio" value="6">
                                                                                 <label class="form-check-label" for="resuscitationRadio">Resuscitation</label>
@@ -4026,7 +4077,7 @@
                                                 <option value="1">Adult</option>
                                                 <option value="2">Peditric</option>
                                             </select>
-                                            <label for="burnType" class="form-label">Burn Type</label>
+                                            <label for="burnType" class="form-label">Total Body Service Area</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -4054,115 +4105,115 @@
                                                     <tr>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
+                                                            <option value="1">1</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                     </tr>
                                                 </tbody>
@@ -4191,125 +4242,125 @@
                                                     <tr>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
-                                                            <option value="10">10%</option>
-                                                            <option value="11">11%</option>
-                                                            <option value="12">12%</option>
-                                                            <option value="13">13%</option>
-                                                            <option value="14">14%</option>
-                                                            <option value="15">15%</option>
-                                                            <option value="16">16%</option>
-                                                            <option value="17">17%</option>
-                                                            <option value="18">18%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
-                                                            <option value="10">10%</option>
-                                                            <option value="11">11%</option>
-                                                            <option value="12">12%</option>
-                                                            <option value="13">13%</option>
-                                                            <option value="14">14%</option>
-                                                            <option value="15">15%</option>
-                                                            <option value="16">16%</option>
-                                                            <option value="17">17%</option>
-                                                            <option value="18">18%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
-                                                            <option value="10">10%</option>
-                                                            <option value="11">11%</option>
-                                                            <option value="12">12%</option>
-                                                            <option value="13">13%</option>
-                                                            <option value="14">14%</option>
-                                                            <option value="15">15%</option>
-                                                            <option value="16">16%</option>
-                                                            <option value="17">17%</option>
-                                                            <option value="18">18%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
                                                         </select></td>
                                                         
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
-                                                            <option value="10">10%</option>
-                                                            <option value="11">11%</option>
-                                                            <option value="12">12%</option>
-                                                            <option value="13">13%</option>
-                                                            <option value="14">14%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
                                                         </select></td>
                                                         <td><select name="" id="" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">1%</option>
-                                                            <option value="2">2%</option>
-                                                            <option value="3">3%</option>
-                                                            <option value="4">4%</option>
-                                                            <option value="5">5%</option>
-                                                            <option value="6">6%</option>
-                                                            <option value="7">7%</option>
-                                                            <option value="8">8%</option>
-                                                            <option value="9">9%</option>
-                                                            <option value="10">10%</option>
-                                                            <option value="11">11%</option>
-                                                            <option value="12">12%</option>
-                                                            <option value="13">13%</option>
-                                                            <option value="14">14%</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
                                                         </select></td>
                                                     </tr>
                                                 </tbody>
@@ -4386,10 +4437,10 @@
                                                 <option value="32">Inj. Paratcemol 1g </option>
                                                 <option value="33">Inj. HALOPERIDOL</option>
                                                 <option value="34">Inj. ONDANSETRON</option>
-                                                <option value="35">Inj. SODIUM BICARBONATE 8.4%</option>
+                                                <option value="35">Inj. SODIUM BICARBONATE 8.4</option>
                                                 <option value="36">Lactacted Ringer’s (Hartmann’s Solution)</option>
                                                 <option value="37">Inj.Tranexamic Acid</option>
-                                                <option value="38">Inj. CALCIUM CHLORIDE 10%</option>
+                                                <option value="38">Inj. CALCIUM CHLORIDE 10</option>
                                                 <optgroup label="Narcotic">
                                                     <option value="25">Inj.Morphine Sulphate 10mg/ ml </option>
                                                     <option value="26">Inj.Diazepam  (Valium ) 10mg/2ml</option>
@@ -7132,6 +7183,8 @@
     <!-- <script src="//code.jquery.com/jquery-latest.min.js"></script> -->
     <script type="text/javascript" src="assets/libs/editable-Select/jquery-editable-select.js"></script>
 
+    <!-- Bootbox -->
+    <script type="text/javascript" src="assets/libs/bootbox/bootbox.js"></script>
     
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
