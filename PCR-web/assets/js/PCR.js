@@ -1134,6 +1134,533 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+	//Governorate
+	$('#governorateID').on('change', function() {
+        //alert($(this).find(":selected").val());
+        $('#stationID').find('option').remove().end().append('<option value="">Please select</option>').val('').trigger('change');
+		$('#incidentLocation').find('option').remove().end().append('<option value="">Please select</option>').val('').trigger('change');
+        //$('#stationID').trigger("chosen:updated");
+        var storedata;
+		var incidentLocData;
+        if ($(this).find(":selected").val() == "1") {
+            //alert("1");
+			incidentLocData = [{
+                value: '1',
+                text: 'Muscat'
+            }, {
+                value: '2',
+                text: 'Muttarah'
+            }, {
+                value: '3',
+                text: 'Seeb'
+            }, {
+                value: '4',
+                text: 'Qurayyat'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '1',
+                text: 'Al-Amirat'
+            }, {
+                value: '2',
+                text: 'AL-Athaiba'
+            }, {
+                value: '3',
+                text: 'Al-Khudh1'
+            }, {
+                value: '4',
+                text: 'Al-Khudh2'
+            }, {
+                value: '5',
+                text: 'Al-Watayah'
+            }, {
+                value: '6',
+                text: 'Boshar-1'
+            }, {
+                value: '7',
+                text: 'Boshar-2'
+            }, {
+                value: '8',
+                text: 'Darsate'
+            }, {
+                value: '9',
+                text: 'Qurayyat'
+            }, {
+                value: '10',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+			
+        } else if ($(this).find(":selected").val() == "2") {
+            //alert("2");
+			incidentLocData = [{
+                value: '5',
+                text: 'Al Rustaq'
+            }, {
+                value: '6',
+                text: 'Al Awabi'
+            }, {
+                value: '7',
+                text: 'Nakahl'
+            }, {
+                value: '8',
+                text: 'Wadi Al Muwawal'
+            },  {
+                value: '9',
+                text: 'Barka'
+            }, {
+                value: '10',
+                text: 'AL-Mansnaa'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '11',
+                text: 'AL-Musina'
+            }, {
+                value: '12',
+                text: 'Barka'
+            }, {
+                value: '13',
+                text: 'Nakhal'
+            }, {
+                value: '14',
+                text: 'Rustaq'
+            }, {
+                value: '15',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "3") {
+			//alert("3");
+			incidentLocData = [{
+                value: '11',
+                text: 'Shinas'
+            }, {
+                value: '12',
+                text: 'Lewa'
+            }, {
+                value: '13',
+                text: 'Sohar'
+            }, {
+                value: '14',
+                text: 'Saham'
+            },  {
+                value: '15',
+                text: 'Al Khaboura'
+            }, {
+                value: '16',
+                text: 'Al Suwaiq'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '16',
+                text: 'Sohar'
+            }, {
+                value: '17',
+                text: 'Saham'
+            }, {
+                value: '18',
+                text: 'Al Khaborah'
+            }, {
+                value: '19',
+                text: 'Shinas'
+            }, {
+                value: '20',
+                text: 'Port Sohar'
+            }, {
+                value: '21',
+                text: 'Al Swaiq'
+            }, {
+                value: '22',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "4") {
+            //alert("4");
+			incidentLocData = [{
+                value: '17',
+                text: 'Haima'
+            }, {
+                value: '18',
+                text: 'Muhot'
+            }, {
+                value: '19',
+                text: 'Al Duqm'
+            }, {
+                value: '20',
+                text: 'AL Jazer'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '23',
+                text: 'Haima'
+            }, {
+                value: '24',
+                text: 'Ghaba'
+            }, {
+                value: '25',
+                text: 'Al Ghaftin'
+            }, {
+                value: '26',
+                text: 'Qatbit'
+            }, {
+                value: '27',
+                text: 'Saih Al Kairat'
+            }, {
+                value: '28',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "5") {
+            //alert("5");
+			incidentLocData = [{
+                value: '21',
+                text: 'Khasab'
+            }, {
+                value: '22',
+                text: 'Dibba'
+            }, {
+                value: '23',
+                text: 'Mudhah'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '29',
+                text: 'Khasab'
+            }, {
+                value: '30',
+                text: 'Daba'
+            }, {
+                value: '31',
+                text: 'Madha'
+            }, {
+                value: '32',
+                text: 'Standby'
+            }, {
+                value: '33',
+                text: ''
+            }, {
+                value: '34',
+                text: ''
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "6") {
+            //alert("6");
+			incidentLocData = [{
+                value: '24',
+                text: 'Al Buraimi'
+            }, {
+                value: '25',
+                text: 'AL Sunnah'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+            storedata = [{
+                value: '33',
+                text: 'Al Burimi'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "7") {
+            //alert("7");
+			incidentLocData = [{
+                value: '26',
+                text: 'Nizwa'
+            }, {
+                value: '27',
+                text: 'Bahla'
+            }, {
+                value: '28',
+                text: 'Manah'
+            }, {
+                value: '29',
+                text: 'Adam'
+            }, {
+                value: '30',
+                text: 'Izki'
+            }, {
+                value: '31',
+                text: 'Samail'
+            }, {
+                value: '32',
+                text: 'Bedbed'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+
+            storedata = [{
+                value: '34',
+                text: 'Smail'
+            }, {
+                value: '35',
+                text: 'Izki'
+            }, {
+                value: '36',
+                text: 'Bahla'
+            }, {
+                value: '37',
+                text: 'Adam'
+            }, {
+                value: '38',
+                text: 'Nizwa'
+            }, {
+                value: '39',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "8") {
+            //alert("8");
+			incidentLocData = [{
+                value: '33',
+                text: 'Ibri'
+            }, {
+                value: '34',
+                text: 'Yanqul'
+            }, {
+                value: '35',
+                text: 'Dhank'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+
+            storedata = [{
+                value: '40',
+                text: 'Ibri'
+            }, {
+                value: '41',
+                text: 'Yanqul'
+            }, {
+                value: '42',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "9") {
+            //alert("9");
+			incidentLocData = [{
+                value: '36',
+                text: 'Ibra'
+            }, {
+                value: '37',
+                text: 'Al Mudhaibi'
+            }, {
+                value: '38',
+                text: 'Bidiya'
+            }, {
+                value: '39',
+                text: 'Al Khabil'
+            }, {
+                value: '40',
+                text: 'Wadi Bani Khalid'
+            }, {
+                value: '41',
+                text: 'Duma and Taein'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+			
+            storedata = [{
+                value: '43',
+                text: 'Ibra'
+            }, {
+                value: '44',
+                text: 'Bidiya'
+            }, {
+                value: '45',
+                text: 'Sienaw'
+            }, {
+                value: '46',
+                text: 'Al Mudhaibi'
+            }, {
+                value: '47',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "10") {
+            //alert("10");
+			incidentLocData = [{
+                value: '42',
+                text: 'Sur'
+            }, {
+                value: '43',
+                text: 'Al Kamil and Al -Wafi'
+            }, {
+                value: '44',
+                text: 'Jalan Bani Bohassen'
+            }, {
+                value: '45',
+                text: 'Jalan Bani Boali'
+            }, {
+                value: '46',
+                text: 'Masira'
+            }];
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+
+            storedata = [{
+                value: '48',
+                text: 'AL-Kamil & AL-Wafi'
+            }, {
+                value: '49',
+                text: 'Jaalan'
+            }, {
+                value: '50',
+                text: 'Qalhat'
+            }, {
+                value: '51',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        } else if ($(this).find(":selected").val() == "11") {
+            //alert("11");
+			incidentLocData = [{
+                value: '47',
+                text: 'Salalah'
+            }, {
+                value: '48',
+                text: 'Taqah'
+            }, {
+                value: '49',
+                text: 'Merbat'
+            }, {
+                value: '50',
+                text: 'Thamrit'
+            }, {
+                value: '51',
+                text: 'Thalqot'
+            }, {
+                value: '52',
+                text: 'Al Mazyouna'
+            }, {
+                value: '53',
+                text: 'Makshen'
+            }, {
+                value: '54',
+                text: 'Shalim and the Halmaniyah Islands'
+            }, {
+                value: '55',
+                text: 'Sadah'
+            }];
+			
+            $.each(incidentLocData, function(index, value) {
+                $('#incidentLocation').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+			
+            storedata = [{
+                value: '52',
+                text: 'Oqad'
+            }, {
+                value: '53',
+                text: 'Thamrit'
+            }, {
+                value: '54',
+                text: 'Standby'
+            }];
+            $.each(storedata, function(index, value) {
+                $('#stationID').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+            });
+        }
+    });
 });
 
 var ecgTable = $('#ecgTable').DataTable({

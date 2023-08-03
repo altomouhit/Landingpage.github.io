@@ -46,7 +46,7 @@ $(function() {
 			showPreviousButton: true, // show/hide a Previous button
 			position: 'bottom', // none/ top/ both bottom
 			extraHtml: `<button class="btn btn-success float-start me-1" id="btnSave"">Save</button>
-						<button class="btn btn-danger float-start" id="btnSubmit" onclick="onFinish()">Submit</button>`
+						<button class="btn btn-danger float-start" id="btnSubmit" onclick="onFinish()">Finish</button>`
 		},
 		anchor: {
 			enableNavigation: true, // Enable/Disable anchor navigation 
