@@ -1,9 +1,11 @@
 window.onload = function() {
 	$("#pastMedicalHistoryTxt, #pComments, #transportDiv, #nonTransportDiv, #hospitalDiv, #nonTransportCrimeDiv, #transportTypeDiv, #DNRDiv").hide();
 	$("#locationTypeDiv, #governmentHospitalDiv, #privateHospitalDiv").hide();
-	$("#mAirwayCommentDiv, #oxygenLPMDiv, #immoblazatiomDiv, #splintingDiv, #defibrillationDiv, #IVIODiv, #mOthersDiv, #timeDiv").hide();
+	$("#mAirwayCommentDiv, #IVIODiv, #mOthersDiv, #timeDiv").hide();
 	$(".PDOADiv, #refused").hide();
 	$("#resuscitationDiv, #painDiv").hide();
+	//Oxygen / LPM
+	$("#oxygenLPMDiv, #oxygenLPMDoneByDiv, #nasalDiv, #SFMDiv, #SFMLPMDoneByDiv, #NRMDiv, #NRMLPMDoneByDiv, #BVMDiv, #BVMLPMDoneByDiv").hide();
 	//Airway, Breathing, 
 	$("#airwayNotClearDiv, #breathingNormalDiv, #breathingAbnormalDiv").hide();
 	$("#mAirwayDoneByDiv, #nasalDoneByDiv, #combiDoneByDiv, #ETTDoneByDiv, #LMADoneByDiv").hide();
@@ -14,8 +16,15 @@ window.onload = function() {
 	//Patient & Incident Info > Patient Management > Management> Air way
 	$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> immobilization
-	$("#immobilizationAdultDiv").hide();
-	//
+	$("#immobilizationAdultDiv, #immoblazatiomDoneByDiv, #KEDDoneByDiv, #LBBDoneByDiv, #ScoopDoneByDiv, #StairDoneByDiv, #immoblazatiomDiv").hide();
+	//Patient & Incident Info > Patient Management > Management> Splinting
+	$("#rigidDoneByDiv, #tractionDoneByDiv, #splintingDiv").hide();
+	//Patient & Incident Info > Patient Management > Management> Electrical Intervention (Cardiac)
+	$("#AEDUsedDiv, #AEDUsedDoneByDiv,#DefibrillationDiv, #DefibrillationDoneByDiv, #CardiversionDiv, #CardiversionDoneByDiv, #TCPDiv, #TCPDoneByDiv, #defibrillationDiv, #ECGDoneByDiv").hide();
+	//Patient & Incident Info > Patient Management > Management> Others
+	$("#BandageDoneByDiv, #coldPackDoneByDiv, #AssistDeliveryDoneByDiv, #WarmingDoneByDiv, #CoolingDoneByDiv, #BleedingDoneByDiv,"+
+	"#IrrigationDoneByDiv, #SuctionDoneByDiv, #NGTDoneByDiv, #BurnCareDoneByDiv").hide();
+
 	$("#assistDeliveryDiv, #actualDeliveryDiv, #resuscitationManagementDiv, #obstetricCareDiv, #NGTSizeDiv").hide();
 	//Patient & Incident Info > Resuscitation Management > Indication Procedures > Tube Type
 	$("#ETtubeSizeDiv, #COMBItubeSizeDiv, #LMAtubeSizeDiv").hide();
@@ -294,35 +303,120 @@ $("#mAirway").on('change', function() {
 	}
 });
 $("#oxygenLPM").on('change', function() {
-	if (this.value == 5) {
-		$("#oxygenLPMDiv, #oxygenLPMDoneByDiv").show();
-		$("#oxygenLPMAdultDiv").hide();
-	} else {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#nasalDiv, #oxygenLPMDoneByDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#nasalDiv, #oxygenLPMDoneByDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#SFMDiv, #SFMLPMDoneByDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#SFMDiv, #SFMLPMDoneByDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#NRMDiv, #NRMLPMDoneByDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#NRMDiv, #NRMLPMDoneByDiv").hide();
+	 }
+	if (Value.indexOf("4") > -1) {
+		$("#BVMDiv, #BVMLPMDoneByDiv").show();
+	}
+	if (!(Value.indexOf("4") > -1)) {
+		$("#BVMDiv, #BVMLPMDoneByDiv").hide();
+	}
+	if (Value.indexOf("5") > -1) {
+		$("#oxygenLPMDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
 		$("#oxygenLPMDiv").hide();
-		$("#oxygenLPMDoneByDiv, #oxygenLPMAdultDiv").show();
 	}
 });
+
 $("#immoblazatiom").on('change', function() {
-	if (this.value == 1) {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
 		$("#immobilizationAdultDiv, #immoblazatiomDoneByDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#immobilizationAdultDiv, #immoblazatiomDoneByDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#KEDDoneByDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#KEDDoneByDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#LBBDoneByDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#LBBDoneByDiv").hide();
+	 }
+	if (Value.indexOf("4") > -1) {
+		$("#ScoopDoneByDiv").show();
+	}
+	if (!(Value.indexOf("4") > -1)) {
+		$("#ScoopDoneByDiv").hide();
+	}
+	if (Value.indexOf("5") > -1) {
+		$("#immoblazatiomDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
 		$("#immoblazatiomDiv").hide();
-	} else if (this.value == 5) {
-		$("#immoblazatiomDiv, #immoblazatiomDoneByDiv").show();
-		$("#immobilizationAdultDiv").hide('');
-	} else {
-		$("#immoblazatiomDiv, #immobilizationAdultDiv").hide();
-		$("#immoblazatiomDoneByDiv").show();
+	}
+	if (Value.indexOf("6") > -1) {
+		$("#StairDoneByDiv").show();
+	}
+	if (!(Value.indexOf("6") > -1)) {
+		$("#StairDoneByDiv").hide();
 	}
 });
+
 $("#splinting").on('change', function() {
-	if (this.value == 3) {
-		$("#splintingDiv").show();
-	} else {
-		$("#splintingDiv").hide();
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#rigidDoneByDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#rigidDoneByDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#tractionDoneByDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#tractionDoneByDiv").hide();
 	}
 });
 $("#defibrillation").on('change', function() {
 	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#AEDUsedDiv, #AEDUsedDoneByDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#AEDUsedDiv, #AEDUsedDoneByDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#DefibrillationDiv, #DefibrillationDoneByDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#DefibrillationDiv, #DefibrillationDoneByDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#CardiversionDiv, #CardiversionDoneByDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#CardiversionDiv, #CardiversionDoneByDiv").hide();
+	}
+	if (Value.indexOf("4") > -1) {
+		$("#TCPDiv, #TCPDoneByDiv").show();
+	}
+	if (!(Value.indexOf("4") > -1)) {
+		$("#TCPDiv, #TCPDoneByDiv").hide();
+	}
 	if (Value.indexOf("5") > -1) {
 		$("#defibrillationDiv").show();
 	}
@@ -345,25 +439,74 @@ $("#IVIO").on('change', function() {
 		$("#IVIODoneByDiv").show();
 	}
 });
+
 $("#mOthers").on('change', function() {
 	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#BandageDoneByDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#BandageDoneByDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#coldPackDoneByDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#coldPackDoneByDiv").hide();
+	}
 	if (Value.indexOf("3") > -1) {
-		$("#assistDeliveryDiv").show();
+		$("#assistDeliveryDiv, #AssistDeliveryDoneByDiv").show();
 	}
 	if (!(Value.indexOf("3") > -1)) {
-		$("#assistDeliveryDiv").hide();
+		$("#assistDeliveryDiv, #AssistDeliveryDoneByDiv").hide();
+	}
+	if (Value.indexOf("4") > -1) {
+		$("#WarmingDoneByDiv").show();
+	}
+	if (!(Value.indexOf("4") > -1)) {
+		$("#WarmingDoneByDiv").hide();
+	}
+	if (Value.indexOf("5") > -1) {
+		$("#IrrigationDoneByDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#IrrigationDoneByDiv").hide();
+	}
+	if (Value.indexOf("6") > -1) {
+		$("#SuctionDoneByDiv").show();
+	}
+	if (!(Value.indexOf("6") > -1)) {
+		$("#SuctionDoneByDiv").hide();
 	}
 	if (Value.indexOf("7") > -1) {
-		$("#NGTSizeDiv").show();
+		$("#NGTSizeDiv, #NGTDoneByDiv").show();
 	}
 	if (!(Value.indexOf("7") > -1)) {
-		$("#NGTSizeDiv").hide();
+		$("#NGTSizeDiv, #NGTDoneByDiv").hide();
+	}
+	if (Value.indexOf("8") > -1) {
+		$("#BurnCareDoneByDiv").show();
+	}
+	if (!(Value.indexOf("8") > -1)) {
+		$("#BurnCareDoneByDiv").hide();
 	}
 	if (Value.indexOf("9") > -1) {
 		$("#mOthersDiv").show();
 	}
 	if (!(Value.indexOf("9") > -1)) {
 		$("#mOthersDiv").hide();
+	}
+	if (Value.indexOf("10") > -1) {
+		$("#CoolingDoneByDiv").show();
+	}
+	if (!(Value.indexOf("10") > -1)) {
+		$("#CoolingDoneByDiv").hide();
+	}
+	if (Value.indexOf("11") > -1) {
+		$("#BleedingDoneByDiv").show();
+	}
+	if (!(Value.indexOf("11") > -1)) {
+		$("#BleedingDoneByDiv").hide();
 	}
 });
 
@@ -1382,12 +1525,6 @@ $(document).ready(function() {
             }, {
                 value: '32',
                 text: 'Standby'
-            }, {
-                value: '33',
-                text: ''
-            }, {
-                value: '34',
-                text: ''
             }];
             $.each(storedata, function(index, value) {
                 $('#stationID').append($('<option>', {
