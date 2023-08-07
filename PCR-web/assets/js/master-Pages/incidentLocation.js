@@ -84,7 +84,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": region_cols,
-		"ajax": "assets/js/incidentLocation.txt",
+		"ajax": "assets/js/json/incidentLocation.json",
         "columns": [
             { "data": "DregionID" },
             { "data": "DregionID_val" },

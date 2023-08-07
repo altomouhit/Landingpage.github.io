@@ -87,7 +87,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": subCategory_cols,
-        "ajax": "assets/js/lookupDetail.txt",
+        "ajax": "assets/js/json/lookupDetail.json",
         "columns": [
             { "data": "DlookUp" },
             { "data": "DlookUp_val"},

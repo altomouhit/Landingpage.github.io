@@ -93,7 +93,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": stn_cols,
-		"ajax": "assets/js/stationName.txt",
+		"ajax": "assets/js/json/stationName.json",
         "columns": [
             { "data": "DregionIDStn" },
             { "data": "DregionIDStn_Val" },

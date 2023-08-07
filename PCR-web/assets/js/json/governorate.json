@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "governoratetxt_En": "Muscat",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+      
+    },
+    {
+      "id": "2",
+      "governoratetxt_En": "Al Batinah South",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "3",
+      "governoratetxt_En": "Al Batinah North",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    }
+    
+  ]
+}

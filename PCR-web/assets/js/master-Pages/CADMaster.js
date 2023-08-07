@@ -134,7 +134,7 @@ $(document).ready(function() {
     var CADTable = $('#CADTable').DataTable({
 		processing: true,
 		//serverSide: true,
-        "ajax": "assets/js/CAD_data.txt",
+        "ajax": "assets/js/json/CAD_data.json",
         "columns": [
             { "data": "DcallNo" },
             { "data": "DcallDate" },
@@ -160,9 +160,9 @@ $(document).ready(function() {
 			"searchable": false,
 			//"orderable": false,
             "visible": false,
-			"targets": [4, 6, 8, 10, 12, 14]
+			"targets": [3, 4, 5, 6, 7, 8, 10, 12, 14]
 		}],
-		"order": [[0, 'asc']]
+		"order": [[1, 'desc']]
 	});
 	$('#cadSearch').keyup(function() {
 		CADTable.search($(this).val()).draw(); // this  is for customized searchbox with datatable search feature.

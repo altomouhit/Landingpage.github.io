@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "DlookUpSelSub": "Call Category",
+      "DlookUpSelSub_Val": "1",
+      "DlookupDetailSub_Sel": "Trauma",
+      "DlookupDetailSub_Sel_val": "1",
+      "DlookupDetailSubsel": "Assault",
+      "DlookupDetailSubsel_val": "1",
+      "lookupDetailSubStxt_En": "Suspected abuse",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "2",
+      "DlookUpSelSub": "Call Category",
+      "DlookUpSelSub_Val": "1",
+      "DlookupDetailSub_Sel": "Trauma",
+      "DlookupDetailSub_Sel_val": "1",
+      "DlookupDetailSubsel": "MVC",
+      "DlookupDetailSubsel_val": "2",
+      "lookupDetailSubStxt_En": "Multiple Car",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "3",
+      "DlookUpSelSub": "Call Category",
+      "DlookUpSelSub_Val": "1",
+      "DlookupDetailSub_Sel": "Medical",
+      "DlookupDetailSub_Sel_val": "2",
+      "DlookupDetailSubsel": "Respiratory",
+      "DlookupDetailSubsel_val": "8",
+      "lookupDetailSubStxt_En": "Shortness Of Breath- Suspected Asthma / COPD",
+      "Cstatus": "Active",
+      "Cstatus_val": "1"
+    },
+    {
+      "id": "4",
+      "DlookUpSelSub": "Call Category",
+      "DlookUpSelSub_Val": "1",
+      "DlookupDetailSub_Sel": "Medical",
+      "DlookupDetailSub_Sel_val": "2",
+      "DlookupDetailSubsel": "Neurologic",
+      "DlookupDetailSubsel_val": "10",
+      "lookupDetailSubStxt_En": "Syncope",
+      "Cstatus": "In active",
+      "Cstatus_val": "2"
+    }
+    
+  ]
+}

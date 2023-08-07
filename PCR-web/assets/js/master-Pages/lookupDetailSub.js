@@ -100,7 +100,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": lookupDetailSub_cols,
-        "ajax": "assets/js/lookupDetailSub.txt",
+        "ajax": "assets/js/json/lookupDetailSub.json",
         "columns": [
             { "data": "DlookUpSel" },
             { "data": "DlookUpSel_Val" },

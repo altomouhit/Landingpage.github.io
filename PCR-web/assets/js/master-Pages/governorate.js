@@ -73,7 +73,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": governorate_cols,
-        "ajax": "assets/js/governorate.txt",
+        "ajax": "assets/js/json/governorate.json",
         "columns": [
             { "data": "governoratetxt_En" },
             { "data": "Cstatus" },

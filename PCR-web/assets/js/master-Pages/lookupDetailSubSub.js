@@ -109,7 +109,7 @@ $(document).ready(function() {
 		processing: true,
 		//serverSide: true,
 		//"aoColumns": SubSub_cols,
-        "ajax": "assets/js/lookupDetailSubSub.txt",
+        "ajax": "assets/js/json/lookupDetailSubSub.json",
         "columns": [
             { "data": "DlookUpSelSub" },
             { "data": "DlookUpSelSub_Val" },
