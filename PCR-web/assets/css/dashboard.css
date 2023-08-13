@@ -1,10 +1,11 @@
-/* .bodybg {
-    background: transparent linear-gradient(180deg, var(--vz-body-bg) 0%, #C0CFD6 100%) 0% 0% no-repeat padding-box;
-    background: url(../img/Boby-bg.svg) no-repeat center center;
+.bodybg {
+    /* background: transparent linear-gradient(180deg, var(--vz-body-bg) 0%, #f7f1e9 100%) 0% 0% no-repeat padding-box; */
+    background: url(../img/shapes/shape-5.png) no-repeat center center;
+    /* background: url(../img/Boby-bg.svg) no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
 }
-body.bodybg::before {
+/* body.bodybg::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -56,4 +57,3 @@ body.bodybg::before {
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
         -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
-  
