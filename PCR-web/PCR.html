@@ -32,8 +32,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 
     <!-- multiselect Css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
+    <!-- multiUpload Css-->
+    <link rel="stylesheet" type="text/css" href="assets/libs/multiUpload/multiUpload.css" />
+
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
 </head>
@@ -6640,50 +6643,17 @@
                 
                 <div class="modal-body p-0">
                     <div class="card border-0 shadow-none mb-0">
-                        <form class="needs-validation" novalidate id="invoice_form">
-
                             <div class="card-body p-2 border-top border-top-dashed">
-                                <div>
-                                    <div class="dropzone">
-                                        <div class="fallback">
-                                            <input name="file" type="file">
-                                        </div>
-                                        <div class="dz-message needsclick">
-                                            <div class="mb-3">
-                                                <i class="display-4 text-muted ri-upload-cloud-2-fill"></i>
-                                            </div>
-                                            <h5>Drop files here or click to upload.</h5>
-                                        </div>
-                                    </div>
-
-                                    <ul class="list-unstyled mb-0" id="dropzone-preview">
-                                        <li class="mt-2" id="dropzone-preview-list">
-                                            <!-- This is used as the file preview template -->
-                                            <div class="border rounded">
-                                                <div class="d-flex p-2">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <div class="avatar-sm bg-light rounded">
-                                                            <img data-dz-thumbnail class="img-fluid rounded d-block" src="#" alt="Product-Image" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div class="pt-1">
-                                                            <h5 class="fs-13 mb-1" data-dz-name>&nbsp;</h5>
-                                                            <p class="fs-13 text-muted mb-0" data-dz-size></p>
-                                                            <strong class="error text-danger" data-dz-errormessage></strong>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-shrink-0 ms-3">
-                                                        <button data-dz-remove class="btn btn-sm btn-danger">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- end dropzon-preview -->
+                                <div class="wrapper">
+                                    <form action="#">
+                                      <input class="file-input" type="file" name="file" >
+                                      <i class="display-4 text-primary ri-upload-cloud-2-fill fa-6x"></i>
+                                      <p>Browse File to Upload</p>
+                                    </form>
+                                    <section class="progress-area"></section>
+                                    <section class="uploaded-area"></section>
                                 </div>
                             </div> <!-- /.card-body -->
-                        </form>
                     </div>
                 </div>
                 <div class="modal-footer border-0 p-1">
@@ -6708,50 +6678,40 @@
                 
                 <div class="modal-body p-0">
                     <div class="card border-0 shadow-none mb-0">
-                        <form class="needs-validation" novalidate id="invoice_form">
-
-                            <div class="card-body p-2 border-top border-top-dashed">
-                                <div>
-                                    <div class="dropzone dz-clickable">
-                                        <div class="fallback d-none">
-                                            <input name="file" type="file">
-                                        </div>
-                                        <div class="dz-message needsclick">
-                                            <div class="mb-3">
-                                                <i class="display-4 text-muted ri-upload-cloud-2-fill"></i>
+                        <div class="card-body p-2 border-top border-top-dashed">
+                            <div class="wrapper">
+                                <section class="uploaded-area">
+                                    <li class="rowFile">
+                                        <div class="contentFile upload">
+                                            <i class="fal fa-file-alt"></i>
+                                            <div class="details">
+                                                <span class="name" title="AL_TOMOUH-Log..." .png="">AL_TOMOUH-Log... .png 
+                                                    <div class="fal fa-circle-dot fa-lg me-2 text-success"></div> Uploaded</span>
+                                                <span class="size">1 KB</span>
                                             </div>
-                                            <h5>Drop files here or click to upload.</h5>
                                         </div>
-                                    </div>
-
-                                    <ul class="list-unstyled mb-0" id="dropzone-preview">
-                                        <li class="mt-2" id="dropzone-preview-list">
-                                            <!-- This is used as the file preview template -->
-                                            <div class="border rounded">
-                                                <div class="d-flex p-2 align-items-center">
-                                                    <div class="flex-shrink-0 me-3 mb-1">
-                                                        <div class="avatar-sm bg-light rounded">
-                                                            <img class="img-fluid rounded d-block" src="assets/img/PDOA_Logo.png" alt="Product-Image" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div class="pt-1">
-                                                            <h5 class="fs-13 mb-1" data-dz-name>PDOA_Logo.png</h5>
-                                                            <p class="fs-13 text-muted mb-0" data-dz-size=""><strong>61.3</strong> KB</p>
-                                                            <strong class="error text-danger" data-dz-errormessage></strong>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-shrink-0 ms-3">
-                                                        <button data-dz-remove class="btn btn-sm btn-danger">Delete</button>
-                                                    </div>
-                                                </div>
+                                        <div>
+                                            <a href="#" class="btn btn-success">
+                                                <i class="fa-light fa-arrow-down-to-line fa-2x text-white"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="rowFile">
+                                        <div class="contentFile upload">
+                                            <i class="fal fa-file-alt"></i>
+                                            <div class="details">
+                                                <span class="name" title="bg-counter1..." .jpg="">bg-counter1... .jpg 
+                                                    <div class="fal fa-circle-dot fa-lg me-2 text-success"></div> Uploaded</span>
+                                                <span class="size">1 KB</span>
                                             </div>
-                                        </li>
-                                    </ul>
-                                    <!-- end dropzon-preview -->
-                                </div>
-                            </div> <!-- /.card-body -->
-                        </form>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-success">
+                                                <i class="fa-light fa-arrow-down-to-line fa-2x text-white"></i></a>
+                                        </div>
+                                    </li>
+                                </section>
+                            </div>
+                        </div> <!-- /.card-body -->
                     </div>
                 </div>
                 <div class="modal-footer border-0 p-1">
@@ -7463,7 +7423,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
 
     <!-- dropzone js -->
-    <script type="text/javascript" src="assets/libs/dropzone/dropzone-min.js"></script>
+    <!-- <script type="text/javascript" src="assets/libs/dropzone/dropzone.js"></script> -->
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
@@ -7480,10 +7440,12 @@
     <!-- smart_wizard -->
     <script type="text/javascript" src="assets/libs/jquery-smartwizard/js/jquery.smartWizard.js"></script>
     <script type="text/javascript" src="assets/js/wizard.js"></script>
+    <!-- multiUpload Css-->
+    <script type="text/javascript" src="assets/libs/multiUpload/multiUpload.js"></script>
 
     <script type="text/javascript" src="assets/js/PCR.js"></script>
 
-    <script type="text/javascript" src="assets/js/image.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/image.js"></script> -->
 </body>
 
 </html>

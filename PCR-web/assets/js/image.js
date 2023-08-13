@@ -6,4 +6,4 @@ var dropzonePreviewNode = document.querySelector("#dropzone-preview-list"),
 		method: "post",
 		previewTemplate: previewTemplate,
 		previewsContainer: "#dropzone-preview"
-	}));
+}));

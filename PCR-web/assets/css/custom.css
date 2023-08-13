@@ -51,9 +51,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Custom scrollbar */
-/* .bodybg {
-    background: transparent linear-gradient(180deg, var(--vz-body-bg) 0%, #C0CFD6 100%) 0% 0% no-repeat padding-box;
-} */
+
 /* [data-topbar=dark] .bodybg {
     background: transparent radial-gradient(closest-side at 50% 50%, #073149 12%, #072D47 43%, #0A2441 68%, #0F1338 90%, #130933 100%) 0% 0% no-repeat padding-box;
 } */
