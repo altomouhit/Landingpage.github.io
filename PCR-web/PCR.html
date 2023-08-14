@@ -1961,7 +1961,7 @@
                                                                                     <td>887</td>
                                                                                     <td class="text-danger-emphasis fw-bold">9</td>
                                                                                     <td class="text-primary-emphasis fw-bold">6</td>
-                                                                                    <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachmentData">
+                                                                                    <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachmentImage">
                                                                                         <i class="fa-light fa-link-simple fa-lg text-decoration-underline"></i></a>
                                                                                         <span>PDOA_Logo.png</span>
                                                                                     </td>
@@ -1991,7 +1991,7 @@
                                                                                     <td>887</td>
                                                                                     <td class="text-danger-emphasis fw-bold">9</td>
                                                                                     <td class="text-primary-emphasis fw-bold">6</td>
-                                                                                    <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachment">
+                                                                                    <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachmentImage">
                                                                                         <i class="fa-light fa-link-simple fa-lg text-decoration-underline"></i></a></td>
                                                                                     <td class="text-info-emphasis fw-bold">9</td>
                                                                                     <td></td>
@@ -4247,6 +4247,16 @@
                                                 <option value="29">Not Applicable</option>
                                             </select>
                                             <label for="RHYTHM" class="form-label">RHYTHM</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <label for="ecgAttachment" class="mb-0">ECG Attachment</label>
+                                        <div class="input-group">
+                                            <input class="form-control" id="ecgAttachment" type="file" accept="image/png, image/gif, image/jpeg" />
+                                            <span class="input-group-text"><i class="fa-light fa-camera-viewfinder fa-lg"></i></span>
                                         </div>
                                     </div>
                                 </div>
@@ -7401,6 +7411,39 @@
             </div>
         </div>
     </div>
+
+    <!-- ECGAttachmentImage modal -->
+    <div class="modal fade zoomIn" id="ECGAttachmentImage" tabindex="-1" aria-labelledby="ECGAttachmentImageModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 p-3">
+                    <h5 class="modal-title" id="ECGAttachmentImageModal">PDOA Logo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                </div>
+                
+                <div class="modal-body pt-1 pb-1">
+                    <div class="card border-0 shadow-none mb-0">
+                        <div class="card-body p-2">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 text-center">
+                                    <img src="assets/img/Boby-bg.svg" class="img-fluid img-thumbnail img-Ecg" alt="">
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div> <!-- /.card-body -->
+                    </div>
+                </div>
+                <!-- <div class="modal-footer border-0">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- ECGAttachmentImage modal-->
 
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
