@@ -422,7 +422,8 @@
 	border-color: var(--vz-header-bg-dark);
 	/* background: url(../img/bg-pattern.png), url(../img/bg_header.png), linear-gradient(to right, #002650 50%, #025f3e);
     background-position: center center; */
-	background: url(../img/topNav.svg);
+	/* background: url(../img/topNav.svg); */
+	background: url(../img/footer/pacda.jpg);
 }
 [data-topbar=dark] #page-topbar::before {
     content: ' ';
