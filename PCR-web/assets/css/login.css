@@ -6,7 +6,8 @@ body {
     height: 100%;
 }
 .bg-login {
-    background: url(../img/Login-bg.svg);
+    /* background: url(../img/Login-bg.svg); */
+    background: url(../img/login/dsc_1043.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: bottom; */
@@ -37,4 +38,13 @@ body {
 }
 .form-control:focus {
     box-shadow: none;
+}
+.login-form-bg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    background-color: #0003;
+    position: relative;
+    padding: 15px 25px;
+    border-radius: 1rem;
 }
