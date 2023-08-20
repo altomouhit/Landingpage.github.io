@@ -4,11 +4,10 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Mailbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="e-Service" name="description" />
-    <meta content="altomouhit" name="author" />
-    <meta name="theme-color" content="#0d1c3d">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/img/Khanjar.png" />
 
@@ -16,33 +15,27 @@
     <script src="assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0/bootstrap.css" />
+    <!-- Icons Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.min.css" />
     <!-- App Css-->
     <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" />
     <!-- custom Css-->
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
-    <!-- multiselect Css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
 
-    <script type="text/javascript" defer src="assets/js/auth.js"></script>
-    <script type="text/javascript" defer src="init.js"></script>
 </head>
 
-<body class="bodybg">
-    <!--preloader-->
-    <div id="preloader">
-        <div id="status">
-            <lord-icon src="assets/libs/lord-icon/loader.json" trigger="loop"
-                style="width:250px;height:250px">
-            </lord-icon>
-        </div>
-    </div>
-    
+<body>
+
     <!-- Begin page -->
     <div id="layout-wrapper">
-
+        <!--preloader-->
+        <div id="preloader">
+            <div id="status">
+                <lord-icon src="assets/libs/lord-icon/loader.json" trigger="loop" style="width:250px;height:250px">
+                </lord-icon>
+            </div>
+        </div>
         <header id="page-topbar">
             <div class="layout-width">
                 <div class="navbar-header">
@@ -112,7 +105,7 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="dropdown ms-1 topbar-head-dropdown header-item d-none">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -157,7 +150,8 @@
                                 id="page-header-notifications-dropdown" data-bs-toggle="dropdown"
                                 data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                                 <i class='bx bx-bell fs-22'></i>
-                                <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
+                                <span
+                                    class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
                                         class="visually-hidden">unread messages</span></span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
@@ -193,12 +187,14 @@
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
                                                             <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author
-                                                                Graphic Optimization <span class="text-secondary">reward</span>
+                                                                Graphic Optimization <span
+                                                                    class="text-secondary">reward</span>
                                                                 is ready!
                                                             </h6>
                                                         </a>
                                                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec
+                                                                ago</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -215,8 +211,9 @@
                                                     </div>
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
-                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received 
-                                                                <b class="text-success">20</b> new messages in the conversation
+                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received
+                                                                <b class="text-success">20</b> new messages in the
+                                                                conversation
                                                             </h6>
                                                         </a>
                                                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
@@ -227,7 +224,9 @@
                                             </div>
 
                                             <div class="my-3 text-center view-all">
-                                                <button type="button" class="btn btn-soft-success waves-effect waves-light">View All Notifications 
+                                                <button type="button"
+                                                    class="btn btn-soft-success waves-effect waves-light">View All
+                                                    Notifications
                                                     <i class="ri-arrow-right-line align-middle"></i></button>
                                             </div>
                                         </div>
@@ -265,6 +264,7 @@
                 </div>
             </div>
         </header>
+
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
             <!-- LOGO -->
@@ -313,22 +313,28 @@
                         <!-- end Show PCR / Incidents Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="PCR.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/create.svg" class="me-1" alt="create" width="21" /> <span data-key="t-CreateNew">Create New</span>
+                                <img src="assets/img/create.svg" class="me-1" alt="create" width="21" /> <span
+                                    data-key="t-CreateNew">Create New</span>
                             </a>
                         </li>
                         <!-- end Create New Menu -->
                         <li class="menu-title"><span data-key="t-master">Master Data</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
+                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="patientInfo">
                                 <i class="fal fa-users-crown"></i> <span data-key="t-global">Master Data</span>
                             </a>
                             <div class="collapse menu-dropdown" id="patientInfo">
                                 <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
+                                    <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look
+                                            UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
-                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
-                                    <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
-                                    <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
+                                    <li class="nav-item"><a href="governorate.html" class="nav-link"
+                                            data-key="t-category">Governorate</a></li>
+                                    <li class="nav-item"><a href="sync-status.html" class="nav-link"
+                                            data-key="t-sync">SYNC Status</a></li>
+                                    <li class="nav-item"><a href="deviceMaster.html" class="nav-link"
+                                            data-key="t-device">Device Master</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -349,44 +355,69 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12 master1">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between pt-0 pb-0">
-                                <ul class="nav nav-tabs border-bottom-0">
-                                    <li class="nav-item"><a class="nav-link active text-danger fw-semibold" data-bs-toggle="tab" href="#unreadPCR"> 
-                                        <i class="fa-duotone fa-envelope-open-text fa-beat fa-lg me-2" aria-hidden="true"></i>&nbsp;Unread PCR / INCIDENT
-                                    </a></li>
-                                    <li class="nav-item"><a class="nav-link text-success-emphasis fw-semibold" data-bs-toggle="tab" href="#PCRShow"> 
-                                        <i class="fa-light fa-envelope fa-lg me-2" aria-hidden="true"></i>&nbsp; PCR / INCIDENT
-                                    </a></li>
-                                </ul>
-
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item">
-                                            <a href="dashboard.html">
-                                                <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">PCR / Incident</li>
-                                    </ol>
+                    <div class="email-wrapper d-lg-flex gap-1 mx-n4 mt-n4 mb-5 p-1">
+                        <div class="email-content">
+                            <div class="border-bottom border-bottom-dashed">
+                                <div class="row mt-n2 mb-sm-0">
+                                    <div class="col-sm order-3 order-sm-2 d-none">
+                                        <div class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link">
+                                            <div class="form-check fs-14 m-0">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkall">
+                                                <label class="form-check-label" for="checkall"></label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
+                        
+                                <div class="row align-items-end ">
+                                    <div class="col">
+                                        <div id="mail-filter-navlist">
+                                            <ul class="nav nav-tabs nav-tabs-custom gap-1 text-center border-bottom-0" role="tablist">
+                                                <li class="nav-item">
+                                                    <button class="nav-link fw-semibold active" id="pills-primary-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-primary" type="button" role="tab" aria-controls="pills-primary"
+                                                        aria-selected="true">
+                                                        <i class="fa-duotone fa-envelopes fa-lg d-inline-block"></i>
+                                                        <span class="ms-1 d-none d-sm-inline-block">All</span>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button class="nav-link fw-semibold text-danger" id="pills-social-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social"
+                                                        aria-selected="false">
+                                                        <i class="fa-duotone fa-envelope-open-text fa-beat fa-lg d-inline-block"></i>
+                                                        <span class="ms-1 d-none d-sm-inline-block">Unread</span>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button class="nav-link fw-semibold" id="pills-promotions-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-promotions" type="button" role="tab"
+                                                        aria-controls="pills-promotions" aria-selected="false">
+                                                        <i class="ri-price-tag-3-fill align-bottom d-inline-block"></i>
+                                                        <span class="ms-1 d-none d-sm-inline-block">Promotions</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="col-auto order-2 order-sm-3 d-flex justify-content-end">
+                                        <div class="text-muted mb-2">1-50 of 154</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- end page title -->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade active show p-2" id="unreadPCR" role="tabpanel">
-                            <div class="row contest_input_block">
-                                <div class="col-lg-12">
-                                    <div class="card shadow-none border-0" id="leadsList">
-                                        <div class="card-body">
-                                            <div class="table-responsive table-card data_table">
-                                                <table id="unreadPCRTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100" aria-hidden="true" 
-                                                    style="margin: 0 !important;">
-                                                  <thead class="table-danger">
+                        
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="pills-primary" role="tabpanel" aria-labelledby="pills-primary-tab">
+                                    <div class="message-list-content mx-n4 message-list-scroll">
+                                        <div id="elmLoader">
+                                            <div class="spinner-border text-primary avatar-sm" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table w-100 table-nowrap">
+                                                <thead class="table-danger">
                                                     <tr>
                                                       <th>Incident No#</th>
                                                       <th>Call Date</th>
@@ -394,51 +425,187 @@
                                                       <th>Call Type</th>
                                                       <th>Call Sub category</th>
                                                       <th>Incident Location</th>
-                                                      <th></th>
                                                     </tr>
                                                   </thead>
-                                              </table>
+                                                <tbody class="message-list" id="mail-list">
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
+                                    <div class="message-list-content mx-n4 message-list-scroll">
+                                        <ul class="message-list" id="social-mail-list"></ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-promotions" role="tabpanel" aria-labelledby="pills-promotions-tab">
+                                    <div class="message-list-content mx-n4 message-list-scroll">
+                                        <ul class="message-list" id="promotions-mail-list"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <!-- end email-content -->
+
+                        <div class="email-detail-content">
+                            <div class="p-4 d-flex flex-column h-100">
+                                <div class="pb-4 border-bottom border-bottom-dashed">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="">
+                                                <button type="button" class="btn btn-soft-danger btn-icon btn-sm fs-16 close-btn-email shadow-none"
+                                                    id="close-btn-email">
+                                                    <i class="ri-close-fill align-bottom"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link">
+                                                <button type="button"
+                                                    class="btn btn-ghost-secondary btn-icon btn-sm shadow-none fs-16 favourite-btn active">
+                                                    <i class="ri-star-fill align-bottom"></i>
+                                                </button>
+                                                <button class="btn btn-ghost-secondary btn-icon btn-sm shadow-none fs-16">
+                                                    <i class="ri-printer-fill align-bottom"></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-ghost-secondary btn-icon btn-sm shadow-none fs-16 remove-mail"
+                                                    data-remove-id="" data-bs-toggle="modal"
+                                                    data-bs-target="#removeItemModal">
+                                                    <i class="ri-delete-bin-5-fill align-bottom"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-        
                                 </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-                        </div>
 
-                        <div class="tab-pane fade p-2" id="PCRShow" role="tabpanel">
-                            <div class="row contest_input_block">
-                                <div class="col-lg-12">
-                                    <div class="card" id="leadsList">
-                                        <div class="card-body">
-                                            <div class="table-responsive table-card">
-                                                <table id="example" class="table align-middle table-nowrap table-bordered display expandable-table w-100" aria-hidden="true" 
-                                                    style="margin: 0 !important;">
-                                                  <thead class="table-secondary">
-                                                    <tr>
-                                                      <th>Incident No#</th>
-                                                      <th>Call Date</th>
-                                                      <th>Call Type</th>
-                                                      <th>Call Sub category</th>
-                                                      <th>Station Name</th>
-                                                      <th>Incident Location</th>
-                                                      <th></th>
-                                                    </tr>
-                                                  </thead>
-                                              </table>
+                                <div class="mx-n4 email-detail-content-scroll" data-simplebar>
+                                    <div class="mt-4 mb-3">
+                                        <h5 class="fw-bold email-subject-title">New updates for Skate Theme</h5>
+                                    </div>
+
+                                    <div class="accordion accordion-flush">
+                                        <div class="accordion-item border-dashed left">
+                                            <div class="accordion-header">
+                                                <a role="button" class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
+                                                    data-bs-toggle="collapse" href="#email-collapseOne" aria-expanded="true" aria-controls="email-collapseOne">
+                                                    <div class="d-flex align-items-center text-muted">
+                                                        <div class="flex-shrink-0 avatar-xs me-3">
+                                                            <img src="assets/img/avatar.svg" alt="" class="img-fluid rounded-circle">
+                                                        </div>
+                                                        <div class="flex-grow-1 overflow-hidden">
+                                                            <h5 class="fs-14 text-truncate email-user-name mb-0">Jack Davis</h5>
+                                                            <div class="text-truncate fs-12">to: me</div>
+                                                        </div>
+                                                        <div class="flex-shrink-0 align-self-start">
+                                                            <div class="text-muted fs-12 call-date">09 Jan 2022, 11:12 AM</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="email-collapseOne" class="accordion-collapse collapse">
+                                                <div class="accordion-body text-body px-0">
+                                                    <div>
+                                                        <p>Hi,</p>
+                                                        <p>Praesent dui ex, dapibus eget mauris ut, finibus vestibulum
+                                                            enim. Quisque arcu leo, facilisis in fringilla id, luctus in
+                                                            tortor.</p>
+                                                        <p>Sed elementum turpis eu lorem interdum, sed porttitor eros
+                                                            commodo. Nam eu venenatis tortor, id lacinia diam. Sed
+                                                            aliquam in dui et porta. Sed bibendum orci non tincidunt
+                                                            ultrices.</p>
+                                                        <p>Sincerly,</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-        
-                                </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-                        </div>
+                                        <!-- end accordion-item -->
 
+                                        <div class="accordion-item border-dashed right">
+                                            <div class="accordion-header">
+                                                <a role="button" class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
+                                                    data-bs-toggle="collapse" href="#email-collapseTwo"
+                                                    aria-expanded="true" aria-controls="email-collapseTwo">
+                                                    <div class="d-flex align-items-center text-muted">
+                                                        <div class="flex-shrink-0 avatar-xs me-3">
+                                                            <img src="assets/img/avatar.svg" alt=""
+                                                                class="img-fluid rounded-circle">
+                                                        </div>
+                                                        <div class="flex-grow-1 overflow-hidden">
+                                                            <h5 class="fs-14 text-truncate email-user-name-right mb-0">
+                                                                Anna Adame</h5>
+                                                            <div class="text-truncate fs-12">to: jackdavis@email.com
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-shrink-0 align-self-start">
+                                                            <div class="text-muted fs-12">09 Jan 2022, 02:15 PM</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="email-collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body text-body px-0">
+                                                    <div>
+                                                        <p>Hi,</p>
+                                                        <p>If several languages coalesce, the grammar of the resulting
+                                                            language is more simple and regular than that of the
+                                                            individual.</p>
+                                                        <p>Thank you</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end accordion-item -->
+
+                                        <div class="accordion-item border-dashed left">
+                                            <div class="accordion-header">
+                                                <a role="button"
+                                                    class="btn w-100 text-start px-0 bg-transparent shadow-none"
+                                                    data-bs-toggle="collapse" href="#email-collapseThree"
+                                                    aria-expanded="true" aria-controls="email-collapseThree">
+                                                    <div class="d-flex align-items-center text-muted">
+                                                        <div class="flex-shrink-0 avatar-xs me-3">
+                                                            <img src="assets/img/avatar.svg" alt=""
+                                                                class="img-fluid rounded-circle">
+                                                        </div>
+                                                        <div class="flex-grow-1 overflow-hidden">
+                                                            <h5 class="fs-14 text-truncate email-user-name mb-0">Jack
+                                                                Davis</h5>
+                                                            <div class="text-truncate fs-12">to: me</div>
+                                                        </div>
+                                                        <div class="flex-shrink-0 align-self-start">
+                                                            <div class="text-muted fs-12">10 Jan 2022, 10:08 AM</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="email-collapseThree" class="accordion-collapse collapse show">
+                                                <div class="accordion-body text-body px-0">
+                                                    <div>
+                                                        <p>Hi,</p>
+                                                        <p>Everyone realizes why a new common language would be
+                                                            desirable: one could refuse to pay expensive translators. To
+                                                            achieve this, it would be necessary to have uniform grammar
+                                                            pronunciation.</p>
+                                                        <p>Thank you</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end accordion-item -->
+                                    </div>
+                                    <!-- end accordion -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end email-detail-content -->
                     </div>
+                    <!-- end email wrapper -->
 
                 </div>
                 <!-- container-fluid -->
@@ -470,8 +637,7 @@
                             </script> &copy; <span>Civil Defense and Ambulance Authority - All rights reserved.</span>
                         </div>
                         <div class="col-sm-6 d-flex justify-content-end">
-                            <p>
-                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">Al Tomouh IT LLC</a>.
+                            <p> Design & Develop by <a href="https://altomouhit.com/" target="_blank">Al Tomouh IT LLC</a>.
                             </p>
                         </div>
                     </div>
@@ -483,6 +649,32 @@
     </div>
     <!-- END layout-wrapper -->
 
+    <!-- removeItemModal -->
+    <div id="removeItemModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2 text-center">
+                        <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
+                            colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                        <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                            <h4>Are you Sure ?</h4>
+                            <p class="text-muted mx-4 mb-0">Are you Sure You want to Remove this Record ?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                        <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn w-sm btn-danger " id="delete-record">Yes, Delete It!</button>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
     <!--start back-to-top-->
@@ -490,6 +682,12 @@
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
+    <!-- <div class="customizer-setting d-none d-md-block">
+        <div class="btn-info rounded-pill shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
+            data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
+        </div>
+    </div> -->
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
@@ -1015,24 +1213,6 @@
         </div> -->
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="logOut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="logOutLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center" style="color:#4E5969">
-                    Are you sure you want to logout <strong style="color: var(--vz-link-color);"> Ahlam Hilal Khamis
-                        Alrasbi</strong> ?
-                </div>
-                <div class="modal-footer border-0 justify-content-center pt-5">
-                    <button type="button" class="btn justify-content-center d-block btn-outline-dark"
-                        data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
@@ -1040,137 +1220,14 @@
     <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
     <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
-    <!-- <script type="text/javascript" src="assets/js/plugins.js"></script> -->
+    <!-- <script src="assets/js/plugins.js"></script> -->
     <script type="text/javascript" src='assets/libs/choices/choices.min.js'></script>
     <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
 
-    <script type="text/javascript" src="assets/libs/list/list.js"></script>
-    <script type="text/javascript" src="assets/libs/list/list.pagination.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
-
-    <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
-
+    <!-- mailbox init -->
+    <script src="assets/js/mailbox.js"></script>
     <!-- App js -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            function format(d) {
-                // `d` is the original data object for the row
-                return '<table class="table align-middle table-nowrap mb-0 table-bordered table-striped w-100">'+
-                        '<thead>'+
-                            '<tr>'+
-                                '<th>PCR</th>'+
-                                '<th>Name</th>'+
-                                '<th class="w-5"></th>'+
-                            '</tr>'+
-                        '</thead>'+
-                        '<tbody>'+
-                            '<tr>'+
-                                '<td>PCR1</td>'+
-                                '<td class="">Ahlam Hilal Khamis Alrasbi</td>'+
-                                '<td>'+
-                                    '<ul class="list-inline hstack gap-2 mb-0">'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">'+
-                                            '<a class="edit-item-btn" href="#showModal" data-bs-toggle="modal"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>'+
-                                        '</li>'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">'+
-                                            '<a class="remove-item-btn" data-bs-toggle="modal" href="#deleteRecordModal">'+
-                                                '<i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>'+
-                                            '</a>'+
-                                        '</li>'+
-                                    '</ul>'+
-                                '</td>'+
-                            '</tr>'+
-
-                            '<tr>'+
-                                '<td>PCR1</td>'+
-                                '<td class="">Ahlam Hilal Khamis Alrasbi</td>'+
-                                '<td>'+
-                                    '<ul class="list-inline hstack gap-2 mb-0">'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">'+
-                                            '<a class="edit-item-btn" href="#showModal" data-bs-toggle="modal"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>'+
-                                        '</li>'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">'+
-                                            '<a class="remove-item-btn" data-bs-toggle="modal" href="#deleteRecordModal">'+
-                                                '<i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>'+
-                                            '</a>'+
-                                        '</li>'+
-                                    '</ul>'+
-                                '</td>'+
-                            '</tr>'+
-
-                            '<tr>'+
-                                '<td>PCR1</td>'+
-                                '<td class="">Ahlam Hilal Khamis Alrasbi</td>'+
-                                '<td>'+
-                                    '<ul class="list-inline hstack gap-2 mb-0">'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">'+
-                                            '<a class="edit-item-btn" href="#showModal" data-bs-toggle="modal"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>'+
-                                        '</li>'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">'+
-                                            '<a class="remove-item-btn" data-bs-toggle="modal" href="#deleteRecordModal">'+
-                                                '<i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>'+
-                                            '</a>'+
-                                        '</li>'+
-                                    '</ul>'+
-                                '</td>'+
-                            '</tr>'+
-                            
-                        '</tbody>'+
-                    '</table>';
-            }
-            var table = $('#example').DataTable({
-                "ajax": "assets/js/data.txt",
-                "columns": [
-                    { "data": "Quote" },
-                    { "data": "Date" },
-                    { "data": "callType" },
-                    { "data": "subCategory" },
-                    { "data": "stationName" },
-                    { "data": "incidentLocation" },
-                    { "className": 'details-control', "orderable": false, "data": null, "defaultContent": '' }],
-                "order": [[1, 'asc']],
-                "paging": false,
-                "ordering": false,
-                "info": false,
-                "filter": false,
-                columnDefs: [{
-                    orderable: false,
-                    className: 'select-checkbox',
-                    targets: 0
-                }],
-                select: {
-                    style: 'os',
-                    selector: 'td:first-child'
-                }
-            });
-            $('#example tbody').on('click', 'td.details-control', function() {
-                var tr = $(this).closest('tr');
-                var row = table.row(tr);
-                if (row.child.isShown()) {
-                    // This row is already open - close it
-                    row.child.hide();
-                    tr.removeClass('shown');
-                } else {
-                    // Open this row
-                    row.child(format(row.data())).show();
-                    tr.addClass('shown');
-                }
-            });
-
-            $('#unreadPCRTable').DataTable({
-                processing: true,
-                //serverSide: true,
-                "destroy": true,
-                "dom": '<"top"f>rt<"bottom"ilp>',
-                "order": [[1, 'asc']],
-                
-            });
-        });
-    </script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

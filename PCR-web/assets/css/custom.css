@@ -268,9 +268,9 @@ legend {
     overflow: hidden;
 }
 
-.bottom {
+/* .bottom {
     margin-top: 1rem;
-}
+} */
 
 .table-bt-pd .bottom {
     padding: 0 0.5rem 0.5rem 0.5rem;
@@ -441,6 +441,7 @@ hr.horizontal.dark {
     height: calc(100% - 10px);
     /* border-radius: 1rem; */
     /* overflow: hidden; */
+    background: var(--vz-input-bg);
 }
 
 .card-header {

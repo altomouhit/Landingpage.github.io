@@ -13645,25 +13645,52 @@ span.flatpickr-weekday {
 		height: calc(100vh - 230px)
 	}
 }
+.message-list-scroll {
+    position: relative;
+    overflow-y: auto;
+}
+
+.message-list-scroll::-webkit-scrollbar {
+    -webkit-appearance: none
+}
+
+.message-list-scroll::-webkit-scrollbar:vertical {
+    width: 12px
+}
+
+.message-list-scroll::-webkit-scrollbar:horizontal {
+    height: 12px
+}
+
+.message-list-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--vz-body-color-rgb),.075);
+    border-radius: 10px;
+    border: 2px solid var(--vz-secondary-bg)
+}
+
+.message-list-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--vz-secondary-bg)
+}
 .message-list {
-	display: block;
+	/* display: block; */
 	padding-left: 0;
 	margin: 0
 }
-.message-list li {
+.message-list li, .message-list tr {
 	position: relative;
-	display: block;
+	/* display: block; */
 	height: 50px;
-	line-height: 50px;
+	/* line-height: 50px; */
 	cursor: default;
 	-webkit-transition-duration: .3s;
 	transition-duration: .3s;
 	clear: both
 }
-.message-list li a {
+.message-list li a, .message-list tr a {
 	color: var(--vz-gray-700)
 }
-.message-list li:hover {
+.message-list li:hover, .message-list tr:hover {
 	background: var(--vz-light);
 	-webkit-transition-duration: 50ms;
 	transition-duration: 50ms
@@ -13696,7 +13723,7 @@ span.flatpickr-weekday {
 	margin-top: 18px;
 	margin-left: 5px
 }
-.message-list li .col-mail-1 .title {
+.message-list li .col-mail-1 .title, .message-list tr .col-mail-1 .title {
 	position: absolute;
 	top: 0;
 	left: 95px;
@@ -13707,7 +13734,7 @@ span.flatpickr-weekday {
 	margin-bottom: 0
 }
 @media (max-width: 575.98px) {
-	.message-list li .col-mail-1 .title {
+	.message-list li .col-mail-1 .title, .message-list tr .col-mail-1 .title {
 		left: 95px
 	}
 }
@@ -13718,36 +13745,43 @@ span.flatpickr-weekday {
 	right: 0;
 	bottom: 0
 }
-.message-list li .col-mail-2 .date, .message-list li .col-mail-2 .subject {
+.message-list li .col-mail-2 .date, .message-list li .col-mail-2 .subject,
+.message-list tr .col-mail-2 .date, .message-list tr .col-mail-2 .subject  {
 	position: absolute;
 	top: 0
 }
-.message-list li .col-mail-2 .subject {
+.message-list li .col-mail-2 .subject, .message-list tr .col-mail-2 .subject{
 	left: 0;
 	right: 110px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap
 }
-.message-list li .col-mail-2 .subject .teaser {
-	color: var(--vz-gray-600)
+.message-list li .col-mail-2 .subject .teaser,
+.message-list tr .col-mail-2 .subject .teaser  {
+	color: var(--vz-gray-400)
 }
-.message-list li .col-mail-2 .date {
+.message-list li .col-mail-2 .date,
+.message-list tr .col-mail-2 .date {
 	right: 0;
 	width: 100px;
 	padding-left: 20px
 }
-.message-list li.active, .message-list li.active:hover {
+.message-list li.active, .message-list li.active:hover,
+.message-list tr.active, .message-list tr.active:hover  {
 	-webkit-box-shadow: inset 3px 0 0 #6691e7;
 	box-shadow: inset 3px 0 0 #6691e7;
 	background-color: var(--vz-light)
 }
-.message-list li.unread {
-	color: var(--vz-gray-800)
-}
-.message-list li.unread a {
+.message-list li.unread, .message-list tr.unread {
 	color: var(--vz-gray-800);
-	font-weight: 500
+	font-weight: 700;
+	background: #f3f6f9;
+    margin-bottom: 3px;
+}
+.message-list li.unread a, .message-list tr.unread a{
+	color: var(--vz-gray-800);
+	font-weight: 700
 }
 #email-topbar-actions, #unreadConversations {
 	display: none
