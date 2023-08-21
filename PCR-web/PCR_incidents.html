@@ -389,14 +389,13 @@
                                                   <thead class="table-danger">
                                                     <tr>
                                                       <th>Incident No#</th>
-                                                      <th>Call Date</th>
+                                                      <th>Incident Location</th>
                                                       <th>Station Name</th>
+                                                      <th>Call Date</th>
                                                       <th>Call Type</th>
                                                       <th>Call Sub category</th>
-                                                      <th>Incident Location</th>
                                                       <th></th>
                                                     </tr>
-                                                  </thead>
                                               </table>
                                             </div>
                                         </div>
@@ -419,11 +418,11 @@
                                                   <thead class="table-secondary">
                                                     <tr>
                                                       <th>Incident No#</th>
+                                                      <th>Incident Location</th>
+                                                      <th>Station Name</th>
                                                       <th>Call Date</th>
                                                       <th>Call Type</th>
                                                       <th>Call Sub category</th>
-                                                      <th>Station Name</th>
-                                                      <th>Incident Location</th>
                                                       <th></th>
                                                     </tr>
                                                   </thead>
@@ -1123,14 +1122,14 @@
                     '</table>';
             }
             var table = $('#example').DataTable({
-                "ajax": "assets/js/data.txt",
+                "ajax": "assets/js/json/data.json",
                 "columns": [
                     { "data": "Quote" },
+                    { "data": "incidentLocation" },
+                    { "data": "stationName" },
                     { "data": "Date" },
                     { "data": "callType" },
                     { "data": "subCategory" },
-                    { "data": "stationName" },
-                    { "data": "incidentLocation" },
                     { "className": 'details-control', "orderable": false, "data": null, "defaultContent": '' }],
                 "order": [[1, 'asc']],
                 "paging": false,
