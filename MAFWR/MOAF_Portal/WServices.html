@@ -6,7 +6,7 @@
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name=description content="MOAF">
     <meta name=author content="MOAF">
-    <title>Water Services</title>
+    <title>Water Permits</title>
     <link rel=icon href="img/favicon.ico" type=image/png>
     <!-- fontawesome -->
     <link rel="stylesheet" href="css/fontawesome.5.15.4/fontawesome.5.15.4.css" />
@@ -63,7 +63,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="card border-0">
                         <div class="panel-head-services d-flex align-items-center justify-content-between header-ws">
-                            <div class="card-title mb-0 d-flex align-items-center"> <i class="fal fa-tint fa-2x fa-fw" aria-hidden="true"></i>Water Services</div>
+                            <div class="card-title mb-0 d-flex align-items-center"> <i class="fal fa-tint fa-2x fa-fw" aria-hidden="true"></i>Water Permits</div>
                             <div>
                                 <ul class="d-flex mb-0" style="list-style: none;">
                                     <!-- <li>
@@ -86,7 +86,7 @@
             <!--Developer Section start from here-->
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-5 p-0">
-                    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="accordion ts" id="accordion" role="tablist" aria-multiselectable="true">
                         <!-- content here -->
                         <div class="card">
                             <div class="card-header header-ws" role="tab" id="headingOne">
@@ -128,7 +128,7 @@
                                 <div class="card-body p-0" style="padding-top: 0px;">
                                     <ul class="list-group" style="margin-bottom: 0px;">
                                         <li class="list-group-item">
-                                            <a href="javascript:;" onclick="Minor();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Water Situation, Hydrometric Information &amp; Technical Surveys <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
+                                            <a href="javascript:;" onclick="Minor();"> <i class="fal fa-check fa-fw" aria-hidden="true"></i>&nbsp;Request for Water Situation, HydroMetric Information Surveys &amp; Flood risk assessment <i class="fal fa-chevron-right fa-fw float-right" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
                                     <!-- list-group -->
@@ -239,37 +239,71 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
                                             <select class="form-control border" name="">
-                                              <option value="1000">Please select</option>
-                                              <option value="">New Drilling well for Individual</option>
-                                              <option value="">New Drilling Well for Group|New Drilling Well for Public Use|New Drilling Well for Governmental Institution</option>
-                                              <option value="">New Drilling Well for Public Authority for Electricity and Water|New Drilling Well to Help Falaj at the Expense of Residents</option>
-                                              <option value="">New Drilling Well to Help Falaj at the Expense of Ministry|New Drilling Well for Factory Purification and Water Bottling</option>
-                                              <option value="">|New Drilling Well for Oil Fields|New Drilling Well for Temporarily for the Purpose of Soil Drying</option>
-                                              <option value="">New Drilling Well for Temporarily for Soil Testing</option>
-                                              <option value="">Drilling New Well for Development Projects</option>
-                                              <option value="">Drilling New Well for Industrial Projects</option>
-                                              <option value="">Drilling New Well for Commercial Projects</option>
-                                              <option value="">Drilling New Well for Tourism Projects</option>
-                                              <option value="">Drilling New Well for Agriculture Projects</option>
-                                              <option value="">Alternative  Drilling of Wells Similar Inside the Boundaries of the Site</option>
-                                              <option value="">Similar Drilling Alternative Wells Outside the Boundaries of the Site</option>
-                                              <option value="">Alternative Drilling Well not Similar Outside the Boundaries of the Site</option>
-                                              <option value="">Alternative  Drilling of Wells from Open to Hole Within the Boundaries of the Site</option>
-                                              <option value="">Alternative  Drilling of wells from Hole to Open Within the Boundaries of the Site</option>
-                                              <option value="">Retaining the Well Substituent(old)</option>
-                                              <option value="">Retaining the Wells Alternative and Substituent</option>
-                                              <option value="">Deepen Open Wells Manually|Deepen Open Wells Automatically</option>
-                                              <option value="">Deepening Wells on Automatically Drilling</option>
-                                              <option value="">Maintenance and Cleaning of the Wells|Expanding the Diameter of the Wells</option>
-                                              <option value="">Demolish Wells</option>
+                                                <option value="1000">Please select</option>
+                                                <option value="4701">New Drilling well for Individual</option>
+                                                <option value="4702">New Drilling Well for Group</option>
+                                                <option value="4703">New Drilling Well for Public Use</option>
+                                                <option value="4704">New Drilling Well for Governmental Institution</option>
+                                                <option value="4705">New Drilling Well to Help Falaj at the Expense of Residents</option>
+                                                <option value="4706">New Drilling Well to Help Falaj at the Expense of Ministry</option>
+                                                <option value="4707">New Drilling Well for Factory Purification and Water Bottling</option>
+                                                <option value="4708">New Drilling Well for Oil Fields</option>
+                                                <option value="4709">New Drilling Well for Temporarily for the Purpose of Soil Drying</option>
+                                                <option value="4710">New Drilling Well for Temporarily for Soil Testing</option>
+                                                <option value="4711">Drilling New Well for Development Projects</option>
+                                                <option value="4712">Drilling New Well for Industrial Projects</option>
+                                                <option value="4713">Drilling New Well for Commercial Projects</option>
+                                                <option value="4714">Drilling New Well for Tourism Projects</option>
+                                                <option value="4715">Drilling New Well for Agriculture Projects</option>
+                                                <option value="4716">Alternative &nbsp;Drilling of Wells Similar Inside the Boundaries of the Site</option>
+                                                <option value="4717">Similar Drilling Alternative Wells Outside the Boundaries of the Site</option>
+                                                <option value="4718">Alternative Drilling Well not Similar Outside the Boundaries of the Site</option>
+                                                <option value="4719">Alternative &nbsp;Drilling of Wells from Open to Hole Within the Boundaries of the Site
+                                                </option>
+                                                <option value="4720">Alternative &nbsp;Drilling of wells from Hole to Open Within the Boundaries of the Site
+                                                </option>
+                                                <option value="4721">Retaining the Well Substituent(old)</option>
+                                                <option value="4722">Retaining the Wells Alternative and Substituent</option>
+                                                <option value="4723">Deepen Open Wells Manually</option>
+                                                <option value="4724">Deepen Open Wells Automatically</option>
+                                                <option value="4725">Deepening Wells on Automatically Drilling</option>
+                                                <option value="4726">Maintenance and Cleaning of the Wells</option>
+                                                <option value="4727">Expanding the Diameter of the Wells</option>
+                                                <option value="4728">Demolish Wells</option>
+                                                <option value="4729">Change the Type of Use of the Well to Agriculture</option>
+                                                <option value="4730">Change the Type of Use of the Well for Domestic Purposes</option>
+                                                <option value="4731">Change the Type of Use of the Well for Public Benefit</option>
+                                                <option value="4732">Change the Type of Use the Well for Drinking</option>
+                                                <option value="4733">Change the Type of Use to Selling Water from a Well</option>
+                                                <option value="4734">Change the Type of Use of the Well to Feed Animals</option>
+                                                <option value="4735">Changing Type of the Use of the Well to Assist Falaj</option>
+                                                <option value="4736">Changing the Type of the Use of the Well to Commercial</option>
+                                                <option value="4737">Changing the Type of the Use of the Well to Industrial Projects</option>
+                                                <option value="4738">Dispensing the Ministry Well for Change of Owner ship / Titling</option>
+                                                <option value="4739">Exploitation Ministry Wells for a Temporary Period</option>
+                                                <option value="4740">Exploitation Ministry Wells for a Development Projects</option>
+                                                <option value="4741">Exploitation Ministry Wells for Companies Concession Areas</option>
+                                                <option value="4742">Add Pump to Wells</option>
+                                                <option value="4743">Replacement Pump on Another Well with Higher Capacity</option>
+                                                <option value="4744">Installation of Water Desalination Units on the Wells</option>
+                                                <option value="4745">Re-use of Un-working Well (Confined and Registered)</option>
+                                                <option value="4746">Re-use of Wells for Development Projects</option>
+                                                <option value="4747">Re-use of Wells for Companies Concession Areas</option>
+                                                <option value="4748">Transfer of Water from a Well</option>
+                                                <option value="4749">Selling Water from a Well</option>
+                                                <option value="4750">The Extension of a Water Pipeline from a Well</option>
+                                                <option value="4751">Change the type of well use for Monitoring</option>
+                                                <option value="4752">Change the type of well use for Drying</option>
+                                                <option value="4753">Change the type of the use of the well to Tourism</option>
+                                                <option value="4898">Drilling new well for Developmental Projects</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts01()" style="color:#fff;">Apply</button>
+                                        <div class="col-md-3 ">
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts01()">Apply</button>
                                         </div>
                                     </div>
 
@@ -278,51 +312,54 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Request for Well Permit </th>
+                                                    <th colspan="2">Request for Well Permit </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS- 01</td>
+                                                    <td colspan="2">BP-WS- 01</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
-                                                            <li>The ministry receives the building permit application form with the owner details, Plot details and consultant details and all required documents attached.</li>
-                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
-                                                            <li>Conducts the technical inspection and prepare the technical report for the site with the site photos attached clarifying its features.</li>
-                                                            <li>Approves the permit and detailed maps by its engineers.</li>
-                                                            <li>The required fees are paid by the applicant and the application is transferred to the municipality director for approval.</li>
-                                                            <li>Issues the building permit to be accessed by the applicant in the portal and a copy of permit and maps is kept in the municipality.</li>
-                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
+                                                            <li>Payment of the application fee.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
+                                                            <li>If the application is approved, the license shall be issued and the fees and insurance paid.</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Ownership document ( Mulkiya )</li>
-                                                            <li>Survey Sketch (Krooki)</li>
-                                                            <li>Drawing of Structural and Architectural</li>
-                                                            <li>Structural Design Calculations</li>
-                                                            <li>Approvals (Omantel/Ooredo/PAEW)</li>
-                                                            <li>PACDA approved Maps</li>
-                                                            <li>SOIL test report</li>
-                                                            <li>Govt.Bodies approval</li>
-                                                        </ol>
+                                                    <td colspan="2">
+                                                        
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>3 to 10 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">3 to 10 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts01()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts01()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -344,35 +381,18 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app01" class="panel-footer">
                                         <label for="agree">
@@ -390,7 +410,7 @@
                         <div class="col-lg-12" id="BPTS02">
                             <div class="box box-ws">
                                 <div class="box-header with-border with-ws">
-                                    <h3 class="box-title">BP-WS-04 - Request for Water Situation, Hydrometric Information &amp; Technical Surveys</h3>
+                                    <h3 class="box-title">BP-WS-04 - Request for Water Situation, HydroMetric Information Surveys &amp; Flood risk assessment</h3>
                                     <div class="box-tools float-right">
                                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus" title="Contacts"></i></button>
                                         <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -399,19 +419,27 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                              <option value="0">Please select</option>
-                                              <option value="406">Geophysical Survey </option>
-                                              <option value="407">Geophysical Monitoring of Wells</option>
-                                              <option value="408">Television Photography for Wells</option>
-                                              <option value="409">Telegraphic Survey</option>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4762">Geophysical Survey</option>
+                                                <option value="4763">Geophysical Monitoring of Wells</option>
+                                                <option value="4764">Television Photography for Wells</option>
+                                                <option value="4765">Telegraphic Survey</option>
+                                                <option value="4766">Request for Provision of Hydrometric Data</option>
+                                                <option value="4767">Request to study the water situation and evaluate the underground reservoirs</option>
+                                                <option value="4768">Request flood risk assessment for the &nbsp;&nbsp;housing schemes, development projects,
+                                                    requests of companies</option>
+                                                <option value="4769">Request to Provide &nbsp;Hydrological and Hydrogeological Data</option>
+                                                <option value="4770">Water Situation Studies</option>
+                                                <option value="4771">Request technical surveys</option>
+                                                <option value="4772">General Studies</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts02()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts02()">Apply</button>
                                         </div>
                                     </div>
 
@@ -420,46 +448,53 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Request for Water Situation, Hydrometric Information &amp; Technical Surveys</th>
+                                                    <th colspan="2">Request for Water Situation, HydroMetric Information Surveys &amp; Flood risk assessment</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS-04</td>
+                                                    <td colspan="2">BP-WS-04</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
-                                                            <li>The ministry receives the building permit application form with the owner details, Plot details and consultant details and all required documents attached.</li>
-                                                            <li>Schedule an appointment of the field visit to carry out technical inspection of the site.</li>
-                                                            <li>Conduct the technical inspection and prepare the technical report for the site with the site photos attached clarifying its features.</li>
-                                                            <li>Notify the owner to attach the detailed maps (in buildings that require design maps), if required, in accordance with the site inspection.</li>
-                                                            <li>Approve of permits and detailed maps by the municipal engineer.</li>
-                                                            <li>The required fees are paid by the applicant and the application is transferred to the municipality director for approval.</li>
-                                                            <li>Issues the building permit to be accessed by the applicant in the portal and a copy of permit and maps is kept in the municipality.</li>
-                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
+                                                            <li>Payment of the application fees.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
+                                                            <li>If the application is approved, the license shall be issued and the fees and insurance, if any, shall be issued</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Ownership document ( Mulkiya )</li>
-                                                            <li>Survey Sketch (Krooki)</li>
-                                                        </ol>
+                                                    <td colspan="2">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
+                                                    <td>Process Duration</td>
                                                     <td>8 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts02()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts02()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -481,40 +516,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app02" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts02();">I agree </button>
                                     </div>
                                 </div>
@@ -542,7 +560,7 @@
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
                                                     <th>Request for General Services outside the Segment Limit
-                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts03()" style="color:#fff;">Apply</button>
+                                                        <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts03()">Apply</button>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -579,13 +597,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
+                                                    <td>Process Duration</td>
                                                     <td>3 to 10 working days</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts03()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts03()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -607,35 +625,18 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app03" class="panel-footer">
                                         <label for="agree">
@@ -662,23 +663,23 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                            <option value="">Please select</option>
-                                            <option value="201">Inventory and registration of late wells</option>
-                                            <option value="202">Registration of late wells</option>
-                                            <option value="203">Issuance of inventory certificate and register for the first time</option>
-                                            <option value="204">Issuance of inventory well panel and register replacement of lost\ Damages</option>
-                                            <option value="205">Issuance of inventory certificate and register for new owner</option>
-                                            <option value="206">Issuance of inventory certificate and register to add partner</option>
-                                            <option value="207">Issuance of inventory certificate and register to modify the wells data</option>
-                                            <option value="208">Prove the existence /nonexistence of the well on the location</option>
-                                          </select>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4754">Inventory and registration of late wells</option>
+                                                <option value="4755">Registration of late wells</option>
+                                                <option value="4756">Issuance of inventory certificate and register for the first time</option>
+                                                <option value="4757">Issuance of inventory well panel and register replacement of lost or Damages</option>
+                                                <option value="4758">Issuance of inventory certificate and register for new owner</option>
+                                                <option value="4759">Issuance of inventory certificate and register to add partner</option>
+                                                <option value="4760">Issuance of inventory certificate and register to modify the wells data</option>
+                                                <option value="4761">Prove the existence /nonexistence of the well on the location</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts04()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts04()">Apply</button>
                                         </div>
                                     </div>
 
@@ -687,55 +688,54 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Registration of Well</th>
+                                                    <th colspan="2">Registration of Well</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS- 02</td>
+                                                    <td colspan="2">BP-WS- 02</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
-                                                            <li>If the renter is a previous renter the Existing lease contract should be provided.</li>
-                                                            <li>Schedules the appointment for the site visit to carry out technical inspection of the site.</li>
-                                                            <li>Conducts the site visit to verify the provision of a fence or a wall around the plot according to the specifications and a project board according to the model prepared before the implementation
-                                                                in the case of new projects.</li>
-                                                            <li>The required fees for the permit and fees of waste removal deposit (based on the required building area) are paid by the applicant.</li>
-                                                            <li>Issue of building permit and deliver it in the site.</li>
-                                                            <li> The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
-                                                            <span><strong>Note: </strong>
-                                                              <ul>
-                                                                <li>Submit a follow-up implementation report by the consultant before the start of any construction phase listed on the report. The municipality inspect and approve the report.</li>
-                                                                <li>The consultant is required to supervise the buildings that increase the cost of the (10,000 Rial Omani- ten thousand RO).</li>
-                                                              </ul>
-                                                            </span>
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
+                                                            <li>Payment of the application fee.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
+                                                            <li>If the application is approved, the license shall be issued and the fees and insurance paid.</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Ownership document ( Mulkiya )</li>
-                                                            <li>Survey Sketch (Krooki)</li>
-                                                            <li>Drawing of Structural and Architectural</li>
-                                                            <li>Structural Design Calculations</li>
-                                                            <li>Govt.Bodies approval</li>
-                                                            <li>Supervising Consultant Report</li>
-                                                        </ol>
+                                                    <td colspan="2">
+                                                        
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>1 to 3 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">1 to 3 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts04()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts04()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -757,40 +757,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app04" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts04();">I agree </button>
                                     </div>
                                 </div>
@@ -818,7 +801,7 @@
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
                                                     <th>Consultant Reports for Buildings Implementation Follow-up
-                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts05()" style="color:#fff;">Apply</button>
+                                                        <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts05()">Apply</button>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -852,13 +835,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
+                                                    <td>Process Duration</td>
                                                     <td></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts05()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts05()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -880,40 +863,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app05" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts05();">I agree </button>
                                     </div>
                                 </div>
@@ -935,29 +901,26 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                              <option value="">Please select</option>
-                                              <option value="601">Inventory of the  Falaj</option>
-                                              <option value="602">Extend of the Falaj</option>
-                                              <option value="603">Maintenance or replacement of Falaj</option>
-                                              <option value="604">Maintenance and replacement of the Falaj channel</option>
-                                              <option value="605">Restoration of the pool basin wall</option>
-                                              <option value="606">Plowing or deepening the falaj channel</option>
-                                              <option value="607">Raising or repairing the fugal</option>
-                                              <option value="608">Deepening the mother of falaj</option>
-                                              <option value="609">Remove the caps from the bypass channel</option>
-                                              <option value="610">Pressing of the duct is open</option>
-                                              <option value="611">Building a pool</option>
-                                              <option value="612">Build a wall holder for the channel</option>
-                                              <option value="613">Build a wall protector for the channel</option>
-                                              <option value="614">Building a complex wall for the mother of falaj</option>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4788">Inventory of the &nbsp;Falaj</option>
+                                                <option value="4789">Extend of the Falaj</option>
+                                                <option value="4790">Maintenance or replacement of the Falaj channel</option>
+                                                <option value="4791">Renovation Other parts of the channel Falaj</option>
+                                                <option value="4795">Deepening the mother of falaj</option>
+                                                <option value="4796">Restoration of the pool basin wall</option>
+                                                <option value="4797">Plowing or deepening of the falaj channel</option>
+                                                <option value="4798">Building a pool</option>
+                                                <option value="4799">Build a wall holder for the channel</option>
+                                                <option value="4800">build a wall protector for the channel</option>
+                                                <option value="4801">Build a complex wall for the mother of the falaj</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts06()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts06()">Apply</button>
                                         </div>
                                     </div>
 
@@ -966,42 +929,51 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Request for Aflaj Water</th>
+                                                    <th colspan="2">Request for Aflaj Water</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS-06</td>
+                                                    <td colspan="2">BP-WS-06</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
-                                                            <li>The ministry receives the application form with all the required documents attached.</li>
-                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
-                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
-                                                            <li>Approves and issues the required certificate to be accessed by the applicant in the portal and a copy is kept in the municipality.</li>
-                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
+                                                            <li>Payment of the application fees.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Refund Deposit Original Receipt Provision</li>
-                                                        </ol>
-                                                    </td>
+                                                    <td colspan="2"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>3 to 5 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">3 to 5 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts06()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts06()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1023,40 +995,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app06" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts06();">I agree </button>
                                     </div>
                                 </div>
@@ -1078,21 +1033,30 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                              <option value="">Please select</option>
-                                              <option value="101">Registration of Drilling contractor</option>
-                                              <option value="102">Renewal Registration of the Drilling Contractor</option>
-                                              <option value="103">Add Drilling Equipment for Water Wells</option>
-                                              <option value="104">Change / Practice Contractor Registration Type</option>
-                                              <option value="105">Waiver</option>
-                                              <option value="106">Drilling of Water Wells</option>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4773">Registration New contractor for drilling the wells Automatic</option>
+                                                <option value="4774">Registration New contractor for drilling the wells Manual</option>
+                                                <option value="4775">Renewal of the registration of contractor for Drilling &nbsp;the water wells Automatic</option>
+                                                <option value="4776">Renewal of the registration of contractor for Drilling &nbsp;the water wells Manual</option>
+                                                <option value="4777">Adding Water Well Drilling Equipment for the Contractor Automatic</option>
+                                                <option value="4778">Adding Water Well Drilling Equipment for the Contractor Manual</option>
+                                                <option value="4779">Change registration type of the contractor to manual contractor</option>
+                                                <option value="4780">Change registration type of the contractor to Automatic contractor</option>
+                                                <option value="4781">Change the profession of labor Activity</option>
+                                                <option value="4782">Practicing drilling activity in Two fields</option>
+                                                <option value="4783">Waiver of activity Drilling of water wells</option>
+                                                <option value="4784">Waiver of Labor Activity for drilling wells</option>
+                                                <option value="4785">Drilling of new water wells Labor</option>
+                                                <option value="4786">Drilling of water wells of departure</option>
+                                                <option value="4787">Transfer of labor to drilling water well Activity</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts07()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts07()">Apply</button>
                                         </div>
                                     </div>
 
@@ -1101,54 +1065,55 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Well Water Drilling Contractors Request</th>
+                                                    <th colspan="2">Well Water Drilling Contractors Request</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS- 03</td>
+                                                    <td colspan="2">BP-WS- 03</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
-                                                            <li>The ministry receives the application form with all the required documents attached.</li>
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
                                                             <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
-                                                            <li>Conducts technical inspection to approve the existence of the requirements.</li>
-                                                            <li>After the completion of the technical inspection, the report is prepared and forwarded to the municipal engineer to review the plans.</li>
-                                                            <li>The Engineer approves the permit form and Survey Sketch ( Krooki )es and forwards them to the head of the section for approval.</li>
-                                                            <li>The required fees and waste removal deposit are paid by the applicant.</li>
-                                                            <li>The municipality director approves the permit.</li>
-                                                            <li>The permit is issued to be accessed by the contractor in the portal and a copy is kept in the municipality.</li>
-                                                            <li> The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
-                                                            <span><strong>Note: </strong>
-                                                              <ul>
-                                                                <li>provision of a fence or a protection, or traffic lights around the excavations and pipelines.</li>
-                                                              </ul>
-                                                            </span>
+                                                            <li>Payment of the application fees.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
+                                                            <li>If the application is approved, the license shall be issued.</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Ownership document ( Mulkiya )</li>
-                                                            <li>Survey Sketch (Krooki)</li>
-                                                            <li>Drawing of Structural and Architectural</li>
-                                                            <li>Structural Design Calculations</li>
-                                                        </ol>
+                                                    <td colspan="2">
+                                                        
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>3 to 5 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">3 to 5 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts07()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts07()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1170,40 +1135,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app07" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts07();">I agree </button>
                                     </div>
                                 </div>
@@ -1225,34 +1173,41 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                              <option value="">Please select</option>
-                                              <option value="811">Remove the silt from the dam lake</option>
-                                              <option value="812">Maintenance of Water drainage gates</option>
-                                              <option value="813">Remove the Waste from the dam</option>
-                                              <option value="814">Pumps &amp; Pipes</option>
-                                              <option value="815">Treatment of Water Leaks</option>
-                                              <option value="816">The Fence</option>
-                                              <option value="817">Silt</option>
-                                              <option value="818">Clean the Coolant</option>
-                                              <option value="819">Plot</option>
-                                              <option value="820">Dam Crossings</option>
-                                              <option value="821">Water level Meter in the Lake</option>
-                                              <option value="822">Silt Measuring Columns in the Lake</option>
-                                              <option value="823">Rulers of water levels</option>
-                                              <option value="824">Gabopion Chains</option>
-                                              <option value="825">The main Gate of the Dam</option>
-                                              <option value="826">Treatment of Cracks</option>
-                                              <option value="827">Maintenance Expenditure</option>
-                                              <option value="828">The Piezometer (Montring wel)</option>
-                                              <option value="829">Survey Points on the Dam</option>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4802">Maintenance of Water drainage gates</option>
+                                                <option value="4803">Pumps &amp; Pipes</option>
+                                                <option value="4804">Treatment of Water Leaks</option>
+                                                <option value="4805">The Fence</option>
+                                                <option value="4806">Silt</option>
+                                                <option value="4807">Clean the Coolant</option>
+                                                <option value="4808">Plot</option>
+                                                <option value="4809">Dam Crossings</option>
+                                                <option value="4810">Rulers of water levels</option>
+                                                <option value="4811">Silt Measuring Columns in the Lake</option>
+                                                <option value="4812">Gabopion Chains</option>
+                                                <option value="4813">The main Gate of the Dam</option>
+                                                <option value="4814">Treatment of Cracks</option>
+                                                <option value="4815">Maintenance Expenditure</option>
+                                                <option value="4816">The Piezometer (Monitoring wel)</option>
+                                                <option value="4817">Survey Points on the Dam</option>
+                                                <option value="4818">Water level Meter in the Lake</option>
+                                                <option value="4819">Dam Coordinates</option>
+                                                <option value="4820">Study of projects affected by dams</option>
+                                                <option value="4821">Review Projects Affected by Dams</option>
+                                                <option value="4822">Dam Construction</option>
+                                                <option value="4823">Dam Maintenance</option>
+                                                <option value="4824">Dam Studies</option>
+                                                <option value="4825">Benefiting from Silt dam lakes</option>
+                                                <option value="4826">Request Provide Dam Data</option>
+                                                <option value="4827">Providing data for dam studies</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts08()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts08()">Apply</button>
                                         </div>
                                     </div>
 
@@ -1261,17 +1216,17 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Request for Dams</th>
+                                                    <th colspan="2">Request for Dams</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS-08</td>
+                                                    <td colspan="2">BP-WS-08</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
+                                                    <td colspan="2">
                                                         <ol type="1" class="text-justify">
                                                             <li>The ministry receives the application form with all the required documents attached.</li>
                                                             <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
@@ -1283,21 +1238,31 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Excavations Approved Maps</li>
-                                                            <li>Civil Work Path Approved Maps</li>
-                                                        </ol>
+                                                    <td colspan="2">
+                                                        
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>5 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">5 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts08()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts08()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1319,40 +1284,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app08" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts08();">I agree </button>
                                     </div>
                                 </div>
@@ -1380,7 +1328,7 @@
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
                                                     <th>Request Connect of Temporary Services to Building site
-                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts09()" style="color:#fff;">Apply</button>
+                                                        <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts09()">Apply</button>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -1418,13 +1366,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
+                                                    <td>Process Duration</td>
                                                     <td>1 to 3 working days</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts09()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts09()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1446,40 +1394,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app09" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts09();">I agree </button>
                                     </div>
                                 </div>
@@ -1501,23 +1432,85 @@
                                 <!-- /.box-header -->
 
                                 <div class="box-body">
-                                    <div class="row align-items-center">
-                                        <label for="" class="col-sm-3">Type of Service</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control border" name="">
-                                              <option value="">Please select</option>
-                                              <option value="101">Construction of Crusher Projects</option>
-                                              <option value="102">Construction of Quarries Project</option>
-                                              <option value="103">Construction of Gas Station Projects</option>
-                                              <option value="104">Changing the Use of Agricultural Lands</option>
-                                              <option value="105">Construction of Development Projects</option>
-                                              <option value="106">Extraction of Waste Materials</option>
-                                              <option value="107">No objection to Establishment Facility</option>
-                                              <option value="108">General Studies</option>
+                                    <div class="row align-items-center justify-content-between mb-2">
+                                        <!-- <label for="" class="col-sm-3">Type of Service</label> -->
+                                        <div class="col-md-8">
+                                            <select class="form-control">
+                                                <option value="1000">Please select</option>
+                                                <option value="4828">Extraction of waste material</option>
+                                                <option value="4829">Latret</option>
+                                                <option value="4830">Clay Bar</option>
+                                                <option value="4831">Copper</option>
+                                                <option value="4832">Manganese</option>
+                                                <option value="4833">Marble</option>
+                                                <option value="4834">Chrom</option>
+                                                <option value="4835">Limestone</option>
+                                                <option value="4836">Delomite</option>
+                                                <option value="4837">Magnesium</option>
+                                                <option value="4838">Gold</option>
+                                                <option value="4839">Gypsum</option>
+                                                <option value="4840">Granite</option>
+                                                <option value="4841">Silka</option>
+                                                <option value="4842">Quarry</option>
+                                                <option value="4843">Quarry and Crusher</option>
+                                                <option value="4844">Crusher</option>
+                                                <option value="4845">Rberb Rocks</option>
+                                                <option value="4846">Stones Accessories</option>
+                                                <option value="4847">Latret</option>
+                                                <option value="4848">Clay Bar</option>
+                                                <option value="4849">Copper</option>
+                                                <option value="4850">Manganese</option>
+                                                <option value="4851">Marble</option>
+                                                <option value="4852">Chrom</option>
+                                                <option value="4853">Limestone</option>
+                                                <option value="4854">Delomite</option>
+                                                <option value="4855">Magnesium</option>
+                                                <option value="4856">Gold</option>
+                                                <option value="4857">Gypsum</option>
+                                                <option value="4858">Granite</option>
+                                                <option value="4859">Silka</option>
+                                                <option value="4860">Quarry</option>
+                                                <option value="4861">Quarry and Crusher</option>
+                                                <option value="4862">Crusher</option>
+                                                <option value="4863">Rberb Rocks</option>
+                                                <option value="4864">Stones Accessories</option>
+                                                <option value="4865">Changes of Agricultural Land</option>
+                                                <option value="4866">Deduction of Agricultural Land</option>
+                                                <option value="4867">Partition of Agricultural Land</option>
+                                                <option value="4868">Industrial</option>
+                                                <option value="4869">Agriculture</option>
+                                                <option value="4870">Animal</option>
+                                                <option value="4871">Tourist</option>
+                                                <option value="4872">Residential Plans</option>
+                                                <option value="4873">Crossing Projects on Aflaj Channels</option>
+                                                <option value="4874">Construction of Quaryying Projects</option>
+                                                <option value="4875">Construction of Quarries Project</option>
+                                                <option value="4876">Construction of Gas Station Projects</option>
+                                                <option value="4877">Changing the use of Agricultural Lands</option>
+                                                <option value="4878">Construction of Development Projects</option>
+                                                <option value="4879">Constrction of cursher projects</option>
+                                                <option value="4880">Latret</option>
+                                                <option value="4881">Clay Bar</option>
+                                                <option value="4882">Copper</option>
+                                                <option value="4883">Manganese</option>
+                                                <option value="4884">Marble</option>
+                                                <option value="4885">Chrom</option>
+                                                <option value="4886">Limestone</option>
+                                                <option value="4887">Delomite</option>
+                                                <option value="4888">Magnesium</option>
+                                                <option value="4889">Gold</option>
+                                                <option value="4890">Gypsum</option>
+                                                <option value="4891">Granite</option>
+                                                <option value="4892">Silka</option>
+                                                <option value="4893">Quarry</option>
+                                                <option value="4894">Quarry and Crusher</option>
+                                                <option value="4895">Crusher</option>
+                                                <option value="4896">Rberb Rocks</option>
+                                                <option value="4897">Stones Accessories</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <button type="button" class="btn btn-ws float-right" onclick="clickbpts10()" style="color:#fff;">Apply</button>
+                                            <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts10()">Apply</button>
                                         </div>
                                     </div>
 
@@ -1526,44 +1519,53 @@
                                             <thead>
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
-                                                    <th>Request for Development Projects</th>
+                                                    <th colspan="2">Request for Development Projects</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Process ID</td>
-                                                    <td>BP-WS-18</td>
+                                                    <td colspan="2">BP-WS-18</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle w-25">Application processing</td>
-                                                    <td>
-                                                        <ol class="text-justify">
-                                                            <li>The ministry receives the application with the required documents attached.</li>
-                                                            <li>Schedules the appointment for the field visit to carry out technical inspection of the site.</li>
-                                                            <li>Conducts technical inspection for the building to approve the existence of the requirements.</li>
-                                                            <li>Issues of the certificate after the approval of the municipality director.</li>
-                                                            <li>Delivers the certificate to the applicant in the portal and a copy is kept in the municipality.</li>
-                                                            <li>The applicant is notified with the process steps, additional required documents or clarifications needed with SMS and Email services.</li>
+                                                    <td colspan="2">
+                                                        <ol type="1" class="text-justify">
+                                                            <li>Fill out the application data in full and attach the required documents.</li>
+                                                            <li>Payment of the application fees.</li>
+                                                            <li>Notification of the beneficiary to accept the application.</li>
+                                                            <li>Notification of the beneficiary in the event of a field inspection of the site.</li>
+                                                            <li>Notify the beneficiary of the stages of studying the application.</li>
+                                                            <li>If the application is approved, the license shall be issued and the fees and insurance paid.</li>
                                                         </ol>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="align-middle">Required Documents</td>
-                                                    <td>
-                                                        <ol type="1" class="text-justify">
-                                                            <li>Building Architecture Maps</li>
-                                                            <li>Consultant Certificate for Building Components</li>
-                                                        </ol>
+                                                    <td colspan="2">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
-                                                    <td>5 working days</td>
+                                                    <td>Process Duration</td>
+                                                    <td colspan="2">5 working days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle" rowspan="3">Fee</td>
+                                                    <td>Application fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Service Fee</td>
+                                                    <td><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Re submission Fee</td>
+                                                    <td><span></span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts10()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts10()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1585,40 +1587,23 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app10" class="panel-footer">
                                         <label for="agree">
                                           <input id="agree" type="checkbox" value="agree" v-model="checked"/>
-                                          I Agree to the Terms and Conditions </label>
+                                          I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts10();">I agree </button>
                                     </div>
                                 </div>
@@ -1646,7 +1631,7 @@
                                                 <tr>
                                                     <th class="align-middle">Process Name</th>
                                                     <th>Request for Preliminary Study
-                                                        <button type="button" class="btn btn-ws float-right" onclick="clickbpts14()" style="color:#fff;">Apply</button>
+                                                        <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts14()">Apply</button>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -1678,13 +1663,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Process duration</td>
+                                                    <td>Process Duration</td>
                                                     <td>5 working days</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <button type="button" class="btn btn-ws float-right" onclick="clickbpts14()" style="color:#fff;">Apply</button>
+                                    <button type="button" class="btn btn-ws float-right text-white" onclick="clickbpts14()">Apply</button>
                                 </div>
                                 <!-- /.box-body -->
                             </div>
@@ -1706,38 +1691,21 @@
                                 <div class="box-body">
                                     <h6>Disclaimer</h6>
                                     <div class="Termsofuse">
-                                        <table class="table table-hover table-striped table-condensed">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>By accessing or using MRMWR E-Services Portal, you agree to be bound by all of its terms and conditions.</p>
-                                                        <p class="text-justify">The Ministry may modify this document at any time, and you agree that such modifications will be effective immediately upon posting of the modified document. You agree that by using our web portal
-                                                            after any such modifications, you will be deemed to have reviewed, agreed to and accepted the modified terms and conditions.</p>
-                                                        <p class="text-justify">When you follow a link to any other web site, even the site of another Governmental Agency, you are subject to the terms and conditions and privacy policy of that web site. The Ministry is not responsible
-                                                            for the practices or content of other Web sites. You should check the terms and conditions and/or privacy policy of such other websites if you have concerns about how such websites handle your
-                                                            personal identifiable information.</p>
-                                                        <p class="text-justify">At the MRMWR's sole and absolute discretion, the Ministry may, without notice, restrict or terminate any person's use of the eService’s and any related service or user accounts.</p>
-                                                        <p class="text-justify">The Ministry agrees to make every reasonable effort to ensure effective performance of the eService’s and to resolve disputes that may arise in a timely manner. The Ministry cannot assume responsibility
-                                                            for malfunctions outside the eService’s that may affect the accuracy or timeliness of email messages you receive.</p>
-                                                        <p class="text-justify">Any information sent by the Ministry to you via email is deemed to be reliable. However, such information can only be provided on a best-efforts basis for your convenience and its accuracy cannot
-                                                            be guaranteed. The Ministry will not be liable for any deficiencies in the accuracy, completeness, availability or timeliness of such information or for any decision made u sing this information.</p>
-                                                        <p class="text-justify">The eService’s portal has security measures in place to protect against the loss, misuse, or alteration of the information you provide including details contained in your chosen means of payment.
-                                                        </p>
-                                                        <p class="text-justify">The information collected from you is stored by the Ministry and is used for effecting payments and displaying your statements online and such information will also be maintained. You agree that
-                                                            you will not intentionally provide false information when accessing or using the eService’s. You also agree that you will not falsify, forge, or otherwise tamper with any information in the emails
-                                                            you receive from this online payment service (eService’s).</p>
-                                                        <p class="text-justify"><strong>THE MINISTRY DOES NOT MAKE ANY WARRANTIES CONCERNING THE E-SERVICES INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS PROHIBITED BY LAW. THE MINISTRY MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.</strong></p>
-                                                        <p class="text-justify"><strong>THE MINISTRY WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND SUFFERED BY THE CONSUMER ARISING FROM THE USE OF THIS WEB PORTAL, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES. FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE MINISTRY OR THROUGH THE eService’s PORTAL WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEB PORTAL IS AT YOUR SOLE RISK.</strong></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <ol>
+                                            <li> As per the Law against IT Crimes issued under Royal Decree No. 12/2011 the rules are applicable for all the transactions made from Regional Municipality and water resources portal.</li>
+                                            <li> By using the services Portal, you are subject to the terms, conditions, and privacy policy of the site.</li>
+                                            <li> The Ministry is not responsible for the policies or content of other Web sites.</li>
+                                            <li> The Ministry may restrict or terminate the use by any person of the services portal and any other accounts, without notice.</li>
+                                            <li> The Ministry is not responsible for electronic service failures that may affect the accuracy or timeliness of the e-mail it receives.</li>
+                                            <li> The information you submit to the Ministry through the Services Portal is accurate and correct and is responsible for any tampering with it when you enter it or during the electronic payment service.</li>
+                                            <li> The Ministry shall store and maintain the information transmitted from you. The Ministry shall not be held responsible for any failure in the accuracy, completeness or correctness of this information.</li>
+                                            <li> The ministry not responsible for any damages resulting from the use of services portal.</li>
+                                            <li> <strong>The Ministry may modify or add any conditions related to the services portal of and shall be deemed effective in the user's right from its date.</strong></li>
+                                            <li> <strong>Payment made for the services raised through this portal are non - refundable.</strong></li>
+                                        </ol>
                                     </div>
                                     <div id="app14" class="panel-footer">
-                                        <label for="agree"><input id="agree" type="checkbox" value="agree" v-model="checked"/> I Agree to the Terms and Conditions </label>
+                                        <label for="agree"><input id="agree" type="checkbox" value="agree" v-model="checked"/> I Agree to the Terms &amp; Conditions </label>
                                         <button type="button" :disabled="!checked" class="btn btn-ws float-right" onclick="agreebpts14();">I agree </button>
                                     </div>
                                 </div>
@@ -1771,7 +1739,7 @@
                             <img alt="Tedad2020 Final Logo" id="footer-logo" class="img-fluid mb-2" src="img/oman-vision-white.png"></a>
                         <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
                             <li class="list-inline-item list-social-item me-3">
-                                <a href="https://www.facebook.com/mrmwr/" target="_blank">
+                                <a href="https://www.facebook.com/mafwr_om/" target="_blank">
                                     <i class="fab fa-facebook"></i></a>
                             </li>
                             <li class="list-inline-item list-social-item me-3">

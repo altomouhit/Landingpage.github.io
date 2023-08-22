@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description content="MOAF">
+    <meta name=author content="MOAF">
+    <title>:: Income Report ::</title>
+    <link rel=icon href="img/favicon.ico" type=image/png>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome-6.3.0/fontawesome.6.3.0.css" />
+    <link rel="stylesheet" href="css/bootstrap.5.3.1/bootstrap.5.3.1.css" />
+    <link rel="stylesheet" href="css/moaf-webapp.css" id=stylesheet />
+    <link rel="stylesheet" href="css/moaf.css" />
+    <link rel="stylesheet" href="css/marquee.css" />
+    <link rel="stylesheet" href="css/scrollToTop.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/centerLogo.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="css/incomeReport.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="navbar-sticky sticky-bg bg-dark p-2">
+        <div class="row">
+            <div class="col-3">
+                <nav class="navbar p-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="MOAF-white" id="navbar-logo" src="img/MOAF-white.png"></a>
+                    </a>
+                </nav>
+            </div>
+            <div class="col-9 d-flex justify-content-end">
+                <ul class="d-flex align-items-center list-unstyled mb-0">
+                    <li class=" text-white" id="date"></li>
+                    <li class=" text-white" id="time"></li>
+                    <li class=""><a class="font-change text-white" id="lnkDecrease" title="Zoomout" href="#!">A-</a></li>
+                    <li class=""><a class="font-change text-white" id="lnkNormal" title="Normalview" href="javascript:window.location.reload();">A</a></li>
+                    <li class=""><a class="font-change text-white" id="lnkIncrease" title="Zoomin" href="#!">A+</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="Downloads.html"><i class="fal fa-arrow-to-bottom fa-fw fa-lg"></i>&nbsp; Download</a>
+                    </li>
+                    <li class="nav-item userlogin ">
+                        <div class="dropdown">
+                            <a href="" class="nav-link nav-link-profile d-flex align-items-center"
+                                data-toggle="dropdown">
+                                <img src="img/svg/avatar.svg" class="ht-32 rounded-circle" alt="" />
+                                <span class="logged-name hidden-md-down text-white">Sridhar Talluri</span>
+                                <i class="fal fa-angle-down fa-lg text-white mx-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-header wd-200">
+                                <ul class="list-unstyled user-profile-nav">
+                                    <li><a href="dashboard.html"><i class="icon fal fa-chalkboard" aria-hidden="true"></i> My Requests</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#logOut"><i class="icon fal fa-power-off" aria-hidden="true"></i> logout </a></li>
+                                </ul>
+                            </div>
+                            <!-- dropdown-menu -->
+                        </div>
+                        <!-- dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-ws btn-icon ml-3" href="dashboardar.html">
+                            <span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
+                            <span class="btn-inner--text">
+                                <?xml version="1.0" encoding="ISO-8859-1" ?> &#1593;&#1585;&#1576;&#1610;
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+    </header>  
+
+    <div class="container mt-6">
+        <!--Main content-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="panel panel-default panel-dm-theme">
+                    <div class="panel-head-services d-flex align-items-center justify-content-between">
+                        <div class="panel-title mt-0 d-flex align-items-center">
+                            <i class="fal fa-file-chart-line fa-2x fa-fw mr-2" aria-hidden="true"></i> Income / Insurance Report
+                        </div>
+                        <div>
+                            <ul class="d-flex mb-0" style="list-style: none;">
+                                <li>
+                                    <a href="index.html" class="helprint"> <i class="fal fa-chevron-left" aria-hidden="true"></i>&nbsp; Back </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Main content-->
+
+        <!--Developer Section start from here-->
+        <!--Inner Pages Start -->
+        <section class="slice pt-0 mb-5">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-3 my-4 order1">
+                    <fieldset class="border-dashed">
+                        <!-- <legend></legend> -->
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating date">
+                                        <input type="text" class="form-control" id="fromDate" placeholder="dd/mm/yyyy">
+                                        <span class="input-group-addon"></span>
+                                        <label for="fromDate">From Date</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating date">
+                                        <input type="text" class="form-control" id="toDate" placeholder="dd/mm/yyyy">
+                                        <span class="input-group-addon"></span>
+                                        <label for="toDate">To Date</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="governorateID" aria-label="Floating label">
+                                            <option value="">Please select</option>
+                                            <option value="1">Muscat</option>
+                                            <option value="2">AL Batinah South</option>
+                                            <option value="3">AL Batinah North</option>
+                                            <option value="4">AL Wusta</option>
+                                            <option value="5">Musandam</option>
+                                            <option value="6">AL Burimi</option>
+                                            <option value="7">AL Dakhiliyah</option>
+                                            <option value="8">AL Dhahira</option>
+                                            <option value="9">AL Sharqyah North</option>
+                                            <option value="10">AL Sharqyah South</option>
+                                            <option value="11">Dhofar</option>
+                                            <option value="12">Both</option>
+                                        </select>
+                                        <label for="governorateID">Governorate ID</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-fort fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="willayatID" aria-label="Floating label">
+                                            <option value="">Please select</option>
+                                            <option value="1">Suhar </option>
+                                            <option value="2">Nizwa</option>
+                                            <option value="3">Ibra</option>
+                                            <option value="4">Saham</option>
+                                            <option value="5">Nakhal</option>
+                                            <option value="6">Both</option>
+                                        </select>
+                                        <label for="willayatID">Willayat</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-location-crosshairs fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input type="text" name="serviceType" id="serviceType" class="form-control" value="Water Service" readonly />
+                                        <label for="serviceType">Module</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-tint fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="reportType" aria-label="Floating label">
+                                            <option value="">Please select</option>
+                                            <option value="1">Income</option>			
+                                            <option value="2">Insurance</option>
+                                            <option value="3">Both</option>                                                           
+                                        </select>
+                                        <label for="reportType">Report</label>
+                                    </div>
+                                    <span class="input-group-text"><i class="fa-light fa-file-chart-line fa-lg fa-fw"></i></span>
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger">Clear</button>
+                                <button type="button" class="btn btn-ws" title="Search"><i class="fal fa-search fa-lg fa-fw"></i></button>
+                            </div>
+                        </div> 
+                    </fieldset>
+                </div>
+                <!-- .col-md-3 -->
+
+                <div class="col-xs-12 col-sm-12 col-lg-9 my-4 order3">
+                    <fieldset class="border-dashed">
+                        <div class="table-responsive">
+                            <table id="Fee_Collections1" class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="bg-govt" rowspan="2">Governorate</th>
+                                  <th class="bg-total text-dark text-right" rowspan="2">Income Water Service</th>
+                                  <th class="bg-hs text-dark text-right" rowspan="2">Insurance Water Service</th>
+                                  <th class="bg-ts text-dark text-center" colspan="2">Grand Total</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-indigo text-white text-right">Income</th>
+                                    <th class="bg-danger text-white text-right">Insurance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td>AL BURAIMI GOVERNORATE</td>
+                                    <td class="text-right">634.2</td>
+                                    <td class="text-right">1339.785</td>
+                                    <td class="text-right">634.2</td>
+                                    <td class="text-right">1339.785</td>
+                                </tr>
+                                <tr>
+                                    <td>AL DAKHILIYAH GOVERNORATE</td>
+                                    <td class="text-right">2654.2</td>
+                                    <td class="text-right">8592.6</td>
+                                    <td class="text-right">2654.2</td>
+                                    <td class="text-right">8592.6</td>
+                                </tr>
+                                <tr>
+                                    <td>AL DHAHIRAH GOVERNORATE</td>
+                                    <td class="text-right">1038</td>
+                                    <td class="text-right">3905.365</td>
+                                    <td class="text-right">1038</td>
+                                    <td class="text-right">3905.365</td>
+                                </tr>
+                                <tr>
+                                    <td>AL WUSTA GOVERNORATE</td>
+                                    <td class="text-right">433.5</td>
+                                    <td class="text-right">309.181</td>
+                                    <td class="text-right">433.5</td>
+                                    <td class="text-right">309.181</td>
+                                </tr>
+                                <tr>
+                                    <td>MUSANDAM GOVERNORATE</td>
+                                    <td class="text-right">148</td>
+                                    <td class="text-right">955.629</td>
+                                    <td class="text-right">148</td>
+                                    <td class="text-right">955.629</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTH AL BATINAH GOVERNORATE</td>
+                                    <td class="text-right">1280.1</td>
+                                    <td class="text-right">9740.71</td>
+                                    <td class="text-right">1280.1</td>
+                                    <td class="text-right">9740.71</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTH AL SHARQIYA GOVERNORATE</td>
+                                    <td class="text-right">785.4</td>
+                                    <td class="text-right">4504.642</td>
+                                    <td class="text-right">785.4</td>
+                                    <td class="text-right">4504.642</td>
+                                </tr>
+                                <tr>
+                                    <td>SOUTH AL BATINAH GOVERNORATE</td>
+                                    <td class="text-right">1628</td>
+                                    <td class="text-right">9733.259</td>
+                                    <td class="text-right">1628</td>
+                                    <td class="text-right">9733.259</td>
+                                </tr>
+                                <tr>
+                                    <td>SOUTH AL SHARQIYA GOVERNORATE</td>
+                                    <td class="text-right">1028.2</td>
+                                    <td class="text-right">4707.618</td>
+                                    <td class="text-right">1028.2</td>
+                                    <td class="text-right">4707.618</td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <th class="bg-govt">Grand Total</th>
+                                  <th class="bg-ts text-right">9629.6</th>
+                                  <th class="bg-hs text-right">43788.789</th>
+                                  <th class="bg-indigo text-white text-right">9629.6</th>
+                                  <th class="bg-danger text-white text-right">43788.789</th>
+                                </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+                    </fieldset>
+                </div>
+                <!-- .col-md-9 -->
+            </div>
+            <!-- /.row -->
+            
+            <div class="row">
+                <div class="col-12">
+                    <fieldset class="border-dashed my-3">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped" id="reportTable">
+                                <thead class="ws-thead">
+                                    <tr>
+                                        <th>WS Number</th>
+                                        <th>Inc / Ins</th>
+                                        <th>Governorate</th>
+                                        <th>Willayat</th>
+                                        <th>Amount</th>
+                                        <th>Tran.Ref No.</th>
+                                        <th>Bank Ref.No</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div> <!-- /.table-responsive -->
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-auto p-0">
+                                    <label for="NOTES" class="form-label"><strong>Note: </strong></label>
+                                </div>
+                                <div class="col-auto">
+                                    <strong><i class="fa-solid fa-circle fa-fw fa-lg text-success"></i>&nbsp;Inc&nbsp;</strong>
+                                    <span style='font-family:"Wingdings 3";'>&Uacute;</span>
+                                    <strong>&nbsp;Income</strong>
+                                </div>
+                                <div class="col-auto">
+                                    <strong><i class="fa-solid fa-circle fa-fw fa-lg text-danger"></i>&nbsp;Ins&nbsp;</strong>
+                                    <span style='font-family:"Wingdings 3";'>&Uacute;</span>
+                                    <strong>Insurance</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div> <!-- /.col-12 -->
+            </div> <!-- /.row -->
+
+            
+        </section>
+        <!--/.Inner Pages -->
+    </div>
+    </div>
+    <!--/.container-->
+
+    <footer id="footer-main" class="">
+        <div class="position-relative footer-dark footer-bg eSevices">
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg class="" height="100px" preserveaspectratio="none" style="enable-background:new 0 0 2560 100"
+                    viewbox="0 0 2560 100" width="2560px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- <div class="mbr-overlay"></div> -->
+            <div class="container pt-3">
+                <hr class="divider divider-fade divider-dark my-5">
+                <div class="row">
+                    <div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
+                        <a href="index.html">
+                            <img alt="Tedad2020 Final Logo" id="footer-logo" class="img-fluid mb-2"
+                                src="img/oman-vision-white.png"></a>
+                        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.facebook.com/mrmwr/" target="_blank">
+                                    <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.instagram.com/mafwr_om/" target="_blank">
+                                    <i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://www.youtube.com/user/moaoman" target="_blank">
+                                    <i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item list-social-item me-3">
+                                <a href="https://twitter.com/mafwr_om" target="_blank">
+                                    <i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-9 copyright">
+                        <p class="text-3 mb-0">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Copyright &copy;
+                            <a class="" href="https://www.maf.gov.om" target="_blank">Ministry of Agriculture, Fisheries
+                                &amp; Water Resources</a> - All Rights Reserved.
+                        </p>
+                        <p class="text-3 mb-0">Last modified on : 15-05-2023 at 9:09 PM</p>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item list-social-item">
+                                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                                    <img src="img/app/app_store.svg" class="list-brand-icon" alt="app_store">
+                                </a>
+                            </li>
+                            <li class="nav-item list-social-item">
+                                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                                    <img src="img/app/google_play.svg" class="list-brand-icon" alt="google_play">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item mx-2 lift">
+                                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                                    <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-inline-item list-social-item lift">
+                                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                                    <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scrolling top-->
+    <a class="scrollup" href="#" title="back to top" style="display: inline;"> <span
+        class="fal fa-angle-double-up fa-2x"></span> <br />Top </a>
+    <!-- ./scrolling top -->
+    <div class="customizer">
+        <button class="btn btn-primary btn-sm btn-icon-only rounded-circle hover-scale-110 shadow-lg" data-mode="dark"
+            id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <!-- logout Modal -->
+    <div class="modal fade contest_input_modal" id="logOut" tabindex="-1" aria-labelledby="logOutLabel"
+        aria-hidden="false" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center font-weight-bold" style="color:#4E5969">
+                    Are you sure you want to logout <strong class="ml-2" style="color: #0287aa"> Sridhar
+                        Talluri</strong> ?
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn sw-btn-prev justify-content-center d-block" data-dismiss="modal"
+                        style="min-width:100px; display:block !important">No</button>
+                    <a href="index.html"><button type="button" class="btn btn-ws justify-content-center"
+                            style="min-width:100px">Yes</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/Datepicker/bootstrap-datepicker.js"></script>
+    
+    <!-- Datatable -->
+    <script type="text/javascript" src="js/dataTables-4/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap4.js"></script>
+    <!-- Datatable -->
+
+    <!-- Datatable export buttons-->
+    <script type="text/javascript" src="js/Buttons/dataTables.buttons.js"></script>
+    <script type="text/javascript" src="js/Buttons/buttons.bootstrap4.js"></script>
+    <script type="text/javascript" src="js/Buttons/jszip.js"></script>
+    <script type="text/javascript" src="js/Buttons/pdfmake.js"></script>
+    <script type="text/javascript" src="js/Buttons/vfs_fonts.js"></script>
+    <script type="text/javascript" src="js/Buttons/buttons.html5.js"></script>
+    <!-- Datatable export buttons-->
+    <script type="text/javascript" src="js/moaf-webapp.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript" src="js/Time/timejs.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript" src="js/incomeReport.js"></script>
+</body>
+
+</html>

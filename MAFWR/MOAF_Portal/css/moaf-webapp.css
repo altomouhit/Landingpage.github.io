@@ -23183,7 +23183,7 @@ textarea[resize=horizontal] {
 
 .table td,
 .table th {
-    font-size: .8125rem;
+    font-size: .875rem;
     white-space: nowrap
 }
 
@@ -27317,7 +27317,8 @@ article p {
 }
 
 section.slice {
-    background-color: #f1f4f8;
+    /* background-color: #f1f4f8; */
+    background-color: #ffffff;
 }
 
 .slice {
@@ -30052,6 +30053,8 @@ span.flatpickr-weekday {
 .list-group-item a {
     color: #000;
 }
-
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f5f7f9;
+}
 
 /*# sourceMappingURL=quick-website.css.map */

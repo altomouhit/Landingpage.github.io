@@ -1,0 +1,33 @@
+#Fee_Collections_filter {
+    display: none;
+}
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0;
+}
+div.dataTables_wrapper div.dataTables_length select {
+    padding: 0.625rem 1.2rem;
+}
+.bg-govt {
+    background-color: #0D0D0D !important;
+    color: #fff !important;
+}
+.bg-ts {
+    background-color: #FFC000 !important;
+    color: #0D0D0D !important;
+}
+.bg-hs {
+    background-color: #92D050 !important;
+    color: #0D0D0D !important;
+}
+.bg-total {
+    background-color: #00B0F0 !important;
+    color: #0D0D0D !important;
+}
+.dataTables_wrapper .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table thead th {
+    color: #fff;
+}

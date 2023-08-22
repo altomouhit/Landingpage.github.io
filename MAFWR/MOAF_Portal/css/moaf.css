@@ -802,10 +802,6 @@ legend {
     margin: 0 10px;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f5f7f9;
-}
-
 .required:after {
     content: "*";
     color: red;
@@ -1143,4 +1139,29 @@ img#navbar-logo {
 .parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
+}
+.ws-thead {
+    background: -webkit-linear-gradient(90deg, rgb(2, 124, 156) 0%, rgb(3, 142, 179) 100%);
+    color: #fff;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 4px 10px !important;
+    vertical-align: middle;
+}
+.ts .list-group-item {
+    font-size: 0.75rem;
+}
+div.panel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.825rem;
+}
+.panel-footer label {
+    font-size: 0.875rem;
 }
