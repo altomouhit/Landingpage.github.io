@@ -246,7 +246,7 @@
                                     <span class="text-start ms-xl-2">
                                         <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal
                                             Khamis Alrasbi</span>
-                                        <!-- <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span> -->
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span>
                                     </span>
                                 </span>
                             </button>
@@ -384,19 +384,20 @@
                                     <div class="card shadow-none border-0" id="leadsList">
                                         <div class="card-body">
                                             <div class="table-responsive table-card data_table">
-                                                <table id="unreadPCRTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100" aria-hidden="true" 
-                                                    style="margin: 0 !important;">
-                                                  <thead class="table-danger">
-                                                    <tr>
-                                                      <th>Incident No#</th>
-                                                      <th>Incident Location</th>
-                                                      <th>Station Name</th>
-                                                      <th>Call Date</th>
-                                                      <th>Call Type</th>
-                                                      <th>Call Sub category</th>
-                                                      <th></th>
-                                                    </tr>
-                                              </table>
+                                                <table id="unreadPCRTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100"
+                                                    aria-hidden="true" style="margin: 0 !important;">
+                                                    <thead class="table-danger">
+                                                        <tr>
+                                                            <th>Incident No#</th>
+                                                            <th>Incident Location</th>
+                                                            <th>Station Name</th>
+                                                            <th>Call Date</th>
+                                                            <th>Call Type</th>
+                                                            <th>Call Sub category</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -1056,7 +1057,7 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            function format(d) {
+            function format(data) {
                 // `d` is the original data object for the row
                 return '<table class="table align-middle table-nowrap mb-0 table-bordered table-striped w-100">'+
                         '<thead>'+
@@ -1130,7 +1131,7 @@
                     { "data": "Date" },
                     { "data": "callType" },
                     { "data": "subCategory" },
-                    { "className": 'details-control', "orderable": false, "data": null, "defaultContent": '' }],
+                    { "data": null, "className": 'details-control', "orderable": false, "defaultContent": '' }],
                 "order": [[1, 'asc']],
                 "paging": false,
                 "ordering": false,
@@ -1166,7 +1167,6 @@
                 "destroy": true,
                 "dom": '<"top"f>rt<"bottom"ilp>',
                 "order": [[1, 'asc']],
-                
             });
         });
     </script>
