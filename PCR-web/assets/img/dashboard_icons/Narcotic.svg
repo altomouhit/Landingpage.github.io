@@ -713,8 +713,8 @@
           <path id="Path_120-2" data-name="Path 120" d="M259.107,144.22,147.8,307.96l10.791,10.135L270.235,150.878Z" transform="translate(-39.707 -11.431)" fill="#00456b"/>
         </g>
         <g id="Group_5-4" data-name="Group 5" transform="translate(474.674 546.095)">
-          <rect id="Rectangle_4-4" data-name="Rectangle 4" width="79.945" height="112.981" rx="9.829" transform="translate(281.505 142.311)" fill="#d7563d"/>
-          <rect id="Rectangle_5-4" data-name="Rectangle 5" width="68.696" height="102.101" transform="translate(287.505 147.311)" fill="#ece6ea"/>
+          <rect id="Rectangle_4-4" data-name="Rectangle 4" width="72.945" height="105.981" rx="8.83" transform="translate(285.505 145.311)" fill="#4c6674"/>
+          <rect id="Rectangle_5-4" data-name="Rectangle 5" width="68.696" height="102.101" rx="6" transform="translate(287.505 147.311)" fill="#ece6ea"/>
           <g id="Group_4-2" data-name="Group 4" transform="translate(293.121 161.761)">
             <rect id="Rectangle_6-4" data-name="Rectangle 6" width="12.877" height="3.396" transform="translate(0 4.74)" fill="#e33232"/>
             <rect id="Rectangle_7-4" data-name="Rectangle 7" width="12.877" height="3.396" transform="translate(8.136 0) rotate(90)" fill="#e33232"/>
@@ -740,7 +740,7 @@
           <path id="Path_11-4" data-name="Path 11" d="M298.645,206.485l1,2.269,4.811-5.6h1.7l-6.509,8.552-2.732-4.276Z" transform="translate(-6.199 -24.851)" fill="#d7563d"/>
           <path id="Path_12-4" data-name="Path 12" d="M355.837,222.508l1,2.269,4.811-5.6h1.7l-6.509,8.552-2.732-4.276Z" transform="translate(-29.507 -31.38)" fill="#d7563d"/>
           <line id="Line_6-2" data-name="Line 6" x2="36.552" transform="translate(304.128 154.207)" fill="none" stroke="#4c6674" stroke-miterlimit="10" stroke-width="2"/>
-          <text id="Doctor_Approve-2" data-name="Doctor Approve" transform="translate(289.505 247.311)" fill="#d7563d" font-size="7" font-family="Cilogie"><tspan x="0" y="0">Doctor Approve</tspan></text>
+          <text id="Doctor_Approve-2" data-name="Doctor Approve" transform="translate(288.505 246.311)" fill="#e33232" font-size="11" font-family="Slogan-Normal"><tspan x="0" y="0">Doctor Approve</tspan></text>
         </g>
       </g>
       <g id="Group_11-3" data-name="Group 11" transform="translate(547.803 542.975)">
