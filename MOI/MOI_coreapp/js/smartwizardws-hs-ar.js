@@ -25,7 +25,7 @@ $(document).ready(function() {
     }
   });
   // Toolbar extra buttons
-  var btnApprove = $('<button class="btn btn-hs" type="button"><i class="fa fa-check" aria-hidden="true"></i> الموافقة على الطلب</button>').on('click', function() {
+  var btnApprove = $('<button class="btn btn-hs" data-toggle="modal" data-target="#approveRequest" type="button"><i class="fa fa-check" aria-hidden="true"></i> الموافقة على الطلب</button>').on('click', function() {
     //alert('Finish Clicked');
   });
   var btnReject = $('<button class="btn btn-hs" data-toggle="modal" data-target="#rejecttRequest" type="button"><i class="fa fa-times" aria-hidden="true"></i> رفض الطلب</button>').on('click', function() {

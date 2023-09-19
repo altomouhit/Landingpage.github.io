@@ -341,7 +341,7 @@ $(document).ready(function() {
     }
   });
   // Toolbar extra buttons
-  var btnApprove = $('<button class="btn btn-ws" type="button"><i class="fa fa-check" aria-hidden="true"></i> Approve Request</button>').on('click', function() {
+  var btnApprove = $('<button class="btn btn-ws" data-toggle="modal" data-target="#approveRequest" type="button"><i class="fa fa-check" aria-hidden="true"></i> Approve Request</button>').on('click', function() {
     //alert('Finish Clicked');
   });
   var btnReject = $('<button class="btn btn-ws" data-toggle="modal" data-target="#rejecttRequest" type="button"><i class="fa fa-times" aria-hidden="true"></i> Reject Request</button>').on('click', function() {
