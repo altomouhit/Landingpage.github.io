@@ -2521,7 +2521,7 @@ footer::before {
 	box-shadow: none
 }
 .accordion-fill-info .accordion-item .accordion-button:not(.collapsed) {
-	color: #fff;
+	color: #fff !important;
 	background-color: #50c3e6!important
 }
 .accordion-warning .accordion-item {

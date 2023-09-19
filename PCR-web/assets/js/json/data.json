@@ -7,7 +7,9 @@
       "stationName": "Boshar / 1050",
       "Date": "20-02-2022",
       "callType": "Truma",
-      "subCategory": "Blunt force"
+      "subCategory": "Blunt force",
+      "PCR" : "PCR1",
+      "PCRName" : "Ahlam Hilal Khamis Alrasbi"
     },
     {
       "id": "2",
@@ -16,7 +18,9 @@
       "stationName": "Burimi / 4001",
       "Date": "20-02-2022",
       "callType": "Medical",
-      "subCategory": "Shortness Of Breath - Suspected  Pulmonary Edema"
+      "subCategory": "Shortness Of Breath - Suspected  Pulmonary Edema",
+      "PCR" : "PCR2",
+      "PCRName" : "Mohammed Ahlam"
     }
   ]
 }
