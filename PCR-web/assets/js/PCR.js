@@ -12,7 +12,7 @@ window.onload = function() {
 	//circulation
 	$("#circulationPulseDiv, #circulationSkinDiv").hide();
 	//Burns
-	$("#headBurnsDiv, #neckBurnsDiv, #abdomenBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #backBurnsDiv").hide();
+	$("#headBurnsDiv, #neckBurnsDiv, #abdomenBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #chestRightBurnsDiv, #backBurnsDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> Air way
 	$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> immobilization
@@ -33,7 +33,7 @@ window.onload = function() {
 	$("#adultDiv, #peditricDiv").hide();
 	//Upper EXT > Upper EXT Left Burns
 	$("#upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv").hide();
-	$("#downTimeDiv, #handoverDiv").hide();
+	$("#downTimeDiv, #handoverDiv, #CPRProgressDiv, .AEDApplied").hide();
 	// Location Type
 	$("#locationSelectDiv").hide();
 	//$('.selector').editableSelect();
@@ -142,12 +142,20 @@ $('#pelvic').on('change', function() {
 		$("#pelvicBurnsDiv").hide();
 	}
 });
-//Patient Assessment > Chest
+//Patient Assessment > Chest Left
 $('#chest').on('change', function() {
 	if ($("#chest option[value=5]:selected") ?.length > 0) {
 		$("#chestBurnsDiv").show();
 	} else {
 		$("#chestBurnsDiv").hide();
+	}
+});
+//Patient Assessment > Chest Right
+$('#chestRight').on('change', function() {
+	if ($("#chest option[value=5]:selected") ?.length > 0) {
+		$("#chestRightBurnsDiv").show();
+	} else {
+		$("#chestRightBurnsDiv").hide();
 	}
 });
 //Patient Assessment > Back
@@ -530,7 +538,8 @@ $("#actualDelivery").on('change', function() {
 });
 $("#resuscitationRequired").on('change', function() {
 	if (this.value == 1) {
-		$("#resuscitationRequiredModal").modal('show');
+		//$("#resuscitationRequiredModal").modal('show');
+		$('.nav-tabs-custom a[href="#resuscitationManagement"]').tab('show');
 		$("#resuscitationDiv").show();
 	} else {
 		$("#resuscitationDiv").hide();
@@ -538,7 +547,8 @@ $("#resuscitationRequired").on('change', function() {
 });
 $("#resuscitation").on('change', function() {
 	if (this.value == 1) {
-		$("#resuscitationRequiredModal").modal('show');
+		//$("#resuscitationRequiredModal").modal('show');
+		$('.nav-tabs-custom a[href="#resuscitationManagement"]').tab('show');
 		$("#resuscitationDiv").show();
 	} else {
 		$("#resuscitationDiv").hide();
@@ -591,6 +601,20 @@ $("#preEMSArrival").on('change', function() {
 		$("#downTimeDiv").hide();
 	}
 });
+$("#CPRProgress").on('change', function() {
+	if (this.value == 1) {
+		$("#CPRProgressDiv").show();
+	} else {
+		$("#CPRProgressDiv").hide();
+	}
+});
+$("#AEDApplied").on('change', function() {
+	if (this.value == 1) {
+		$(".AEDApplied").show();
+	} else {
+		$(".AEDApplied").hide();
+	}
+});
 $("#belongingHandover").on('change', function() {
 	if (this.value == 1) {
 		$("#handoverDiv").show();
@@ -609,9 +633,18 @@ $(".actualDelivery").change(function() {
 		$("#resuscitationManagementDiv, #obstetricCareDiv").hide();
 	}
 });
+//New Change Bugs
+$("#CPRProgress").change(function() {
+	if (this.value == 1) {
+		$("#resuscitationManagementDiv").show();
+		$("#obstetricCareDiv").hide();
+	} else {
+		$("#resuscitationManagementDiv, #obstetricCareDiv").hide();
+	}
+});
 $("#resuscitationRequiredBtn").click(function() {
 	$('.nav-tabs-custom a[href="#resuscitationManagement"]').tab('show');
-	$("#resuscitationRequiredModal").modal('hide');
+	//$("#resuscitationRequiredModal").modal('hide');
 });
 $(document).ready(function() {
 	$('.multiSelect').multiselect({
@@ -622,7 +655,7 @@ $(document).ready(function() {
 		nonSelectedText: 'Please select',
 	});
 });
-// Advertising License (New / Renew) - BPHS09 - Advertisement Category
+// Call Category
 $(document).ready(function() {
 	$('#callCategory').on('change', function() {
 		//alert($(this).find(":selected").val());
@@ -1828,5 +1861,22 @@ $('#ecgTable tbody').on('click', '#removeBtn', function() {
 			}
 			//  console.log('This was logged in the callback: ' + result);
 		}
+	});
+});
+//New changes on 20-08-2023
+//Number Validition
+$(document).on("input", ".numeric", function() {
+	$(this).val($(this).val().replace(/[^\d,/ \u0600-\u06FF \s \_]/gi, ''));
+});
+
+$('#BP_txt, #TreatmentBP_txt').on('keyup', function() {
+	var card_number = '';
+	$(this).attr('maxlength', '7');
+	$(this).each(function() {
+	  card_number = $(this).val();
+	  if (card_number.length == 3) {
+		card_number = card_number.concat('/');
+	  }
+	  $(this).val(card_number);
 	});
 });
