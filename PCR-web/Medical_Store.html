@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Medical Store Requests</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -23,9 +23,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
+    <!-- multiselect Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
-
 </head>
 
 <body class="bodybg">
@@ -37,6 +38,7 @@
             </lord-icon>
         </div>
     </div>
+    
     <!-- Begin page -->
     <div id="layout-wrapper">
 
@@ -74,6 +76,17 @@
                                 <span></span>
                             </span>
                         </button>
+                        <!-- <div class="ms-1 header-item d-none d-sm-flex">
+                            <a href="dashboard.html" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Dashboard" 
+                                class="text-white btn bg-gradient-info mx-2">
+                                <i class="fa-light fa-house-blank fa-lg"></i></a>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <a href="PCR_incidents.html" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Show PCR / Incidents" 
+                                class="btn btn-chartreuse mx-2">
+                                <i class="fa-light fa-file-invoice fa-lg"></i></a>
+                        </div> -->
                     </div>
 
                     <div class="d-flex align-items-center">
@@ -91,13 +104,14 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search ..."
                                                 aria-label="Recipient's username">
-                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-
+                        
                         <div class="dropdown ms-1 topbar-head-dropdown header-item d-none">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -136,6 +150,93 @@
                                 <i class='bx bx-moon fs-22'></i>
                             </button>
                         </div>
+
+                        <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                id="page-header-notifications-dropdown" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-bell fs-22'></i>
+                                <span
+                                    class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
+                                        class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+
+                                <div class="dropdown-head rounded-top">
+                                    <div class="px-2 pt-2">
+                                        <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true"
+                                            id="notificationItemsTab" role="tablist">
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#all-noti-tab"
+                                                    role="tab" aria-selected="true">
+                                                    All (2)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-content position-relative" id="notificationItemsTabContent">
+                                    <div class="tab-pane fade show active py-2 ps-2" id="all-noti-tab" role="tabpanel">
+                                        <div data-simplebar style="max-height: 300px;" class="pe-2">
+                                            <div
+                                                class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <div class="avatar-xs me-3">
+                                                        <span
+                                                            class="avatar-title bg-soft-info text-info rounded-circle fs-16">
+                                                            <i class="bx bx-badge-check"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author
+                                                                Graphic Optimization <span class="text-secondary">reward</span>
+                                                                is ready!
+                                                            </h6>
+                                                        </a>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <div class="avatar-xs me-3">
+                                                        <span
+                                                            class="avatar-title bg-soft-danger text-danger rounded-circle fs-16">
+                                                            <i class='bx bx-message-square-dots'></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received 
+                                                                <b class="text-success">20</b> new messages in the conversation
+                                                            </h6>
+                                                        </a>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="my-3 text-center view-all">
+                                                <button type="button" class="btn btn-soft-success waves-effect waves-light">View All Notifications 
+                                                    <i class="ri-arrow-right-line align-middle"></i></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="dropdown ms-sm-3 header-item topbar-user">
                             <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -205,8 +306,8 @@
                         </li>
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
-                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents </span>
+                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarDashboards">
+                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents</span>
                             </a>
                         </li>
                         <!-- end Show PCR / Incidents Menu -->
@@ -236,14 +337,13 @@
                             <div class="collapse menu-dropdown" id="patientInfo">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
-                                    <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li>
+                                    <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
                                     <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
                                     <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
                                     <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <!-- end Master Data Menu -->
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -258,100 +358,62 @@
         <!-- ============================================================== -->
         <div class="main-content">
 
-			<div class="page-content">
-				<div class="container-fluid">
+            <div class="page-content">
+                <div class="container-fluid">
 
-					<!-- start page title -->
-					<div class="row contest_input_block">
-						<div class="col-12">
-							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
-								<ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="dashboard.html"> <i class="fal fa-home" aria-hidden="true"></i> Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Factors Affecting EMS</li>
-                                </ol>
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Medical Store Requests</h4>
 
-                                <div class="page-title-right top_header_bar d-flex align-items-center">
-                                    <div class="input-group input-group-navbar">
-                                        <div class="input-group-append">
-                                            <button class="btn" type="button" style="min-width: auto">
-                                                <i class="fal fa-search" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                        <input type="text" id="factorsAffectingEMSSearch" class="form-control" placeholder="Search..." aria-label="Search">
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="createNew" style="min-width: 158px">
-                                        <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
-                                    </a>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="dashboard.html">
+                                                <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">Medical Store Requests</li>
+                                    </ol>
                                 </div>
-							</div>
-						</div>
-					</div>
-					<!-- end page title -->
 
-                    <div class="row project-wrapper">
-                        <div class="col-xxl-12">
-                            <section class="smart-Wizard">
-                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
-                                    <fieldset class="mb-2 p-3">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-3">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="factorsAffectingEMStxt" placeholder="Factors Affecting EMS" />
-                                                    <label for="factorsAffectingEMStxt">Factors Affecting EMS</label>
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
 
-                                            <div class="col-sm-6 col-md-3">
-                                                <div class="form-floating">
-                                                    <select name="" id="slaStatus" class="form-select">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Active</option>
-                                                        <option value="2">In active</option>
-                                                    </select>
-                                                    <label for="slaStatus">Status</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.row -->
-
-                                        <div class="row">
-                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                                                <button type="reset" class="btn btn-text" id="cancelid" style="width: auto; margin-left: 0; color: #868700">
-                                                    Cancel
-                                                </button>
-
-                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="factorsAffectingEMSFn()" id="form1Submit">
-                                                    <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!-- /.row  -->
-                                    </fieldset>
-                                </form>
-                            </section>
-
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <div class="table-responsive-sm data_table">
-                                        <table class="table table-bordered table-striped w-100" id="factorsAffectingEMSTable">
-                                            <thead class="table-light">
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-                                        </table>
+                    <div class="row mt-3">
+                        <div class="col-lg-12">
+                            <div class="card border-0 shadow-none">
+                                <div class="card-body">
+                                    <div class="table-responsive table-card data_table">
+                                        <table id="PCRIncidentsTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100" aria-hidden="true" 
+                                            style="margin: 0 !important;">
+                                          <thead class="table-primary">
+                                            <tr>
+                                              <th>Incident No#</th>
+                                              <th>Incident Location</th>
+                                              <th>Station Name</th>
+                                              <th>Call Date</th>
+                                              <th>Call Type</th>
+                                              <th>Call Sub category</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                      </table>
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.row  -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
 
-				</div> <!-- container-fluid -->
-			</div> <!-- End Page-content -->
+                        </div> <!--end col-->
+                    </div> <!--end row-->
 
-			<footer class="footer">
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
                 <!-- <div class="container-fluid position-absolute footer-img">
                     <div class="row align-items-end">
                         <div class="col">
@@ -383,7 +445,9 @@
                     </div>
                 </div>
             </footer>
-		</div> <!-- end main content-->
+        </div>
+        <!-- end main content-->
+
     </div>
     <!-- END layout-wrapper -->
 
@@ -394,12 +458,6 @@
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
-
-    <!-- <div class="customizer-setting d-none d-md-block">
-        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
-        </div>
-    </div> -->
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
@@ -937,28 +995,38 @@
                 <div class="modal-footer border-0 justify-content-center pt-5">
                     <button type="button" class="btn justify-content-center d-block btn-outline-dark"
                         data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center"
-                            style="min-width:100px">Yes</button></a>
+                    <a href="index.html" class="logOut""><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
                 </div>
             </div>
         </div>
     </div>
-
+   
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
-   
+    <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
     <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/plugins.js"></script> -->
+    <script type="text/javascript" src='assets/libs/choices/choices.min.js'></script>
     <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/list/list.js"></script>
+    <script type="text/javascript" src="assets/libs/list/list.pagination.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
 
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/master-Pages/FactorsEMS.js"></script>
+
+    <!-- App js -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <script type="text/javascript" src="assets/js/PCR_incidents.js"></script>
 </body>
 
 </html>
