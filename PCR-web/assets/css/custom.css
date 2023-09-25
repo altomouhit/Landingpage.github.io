@@ -711,3 +711,54 @@ hr.horizontal.dark {
 .img-Ecg {
     height: 299px;
 }
+.verify_dropdown a {
+    text-decoration: none;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.verify_dropdown a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.verify_dropdown .dropdown-menu {
+    box-shadow: 0px 0px 30px #00000029;
+    border-radius: 6px;
+    border: none;
+    min-width: 118px;
+    padding: 0 10px;
+}
+.accept {
+    color: #FFF;
+    background: #44CC44;
+    box-shadow: 0 4px 0 0 #2EA62E;
+}
+
+.accept:hover {
+    background: #6FE76F;
+    box-shadow: 0 4px 0 0 #7ED37E;
+}
+
+.reject {
+    color: #FFF;
+    background: tomato;
+    box-shadow: 0 4px 0 0 #CB4949;
+}
+
+.reject:hover {
+    background: rgb(255, 147, 128);
+    box-shadow: 0 4px 0 0 #EF8282;
+}
+.btn-medical {
+    color: #FFF;
+    background: #005500;
+    box-shadow: 0 4px 0 0 #008200;
+}
+
+.btn-medical:hover {
+    background: #009200;
+    box-shadow: 0 4px 0 0 #008200;
+    color: #fff;
+}

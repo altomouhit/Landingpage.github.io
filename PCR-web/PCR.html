@@ -4077,7 +4077,6 @@
                                                                                     <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#personalBelongingForm" data-bs-placement="top" title="Personal Belonging">
                                                                                         <a class="edit-item-btn text-white btn btn-info"><i class="fa-light fa-bags-shopping fa-lg"></i></a>
                                                                                     </li>
-                                                                                    
                                                                                 </ul>
                                                                             </td>
                                                                         </tr>
@@ -4090,7 +4089,6 @@
                                                                                     <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#narcoticModal" data-bs-placement="top" title="Narcotic">
                                                                                         <a class="edit-item-btn text-white btn btn-danger"><i class="fa-light fa-syringe fa-lg"></i></a>
                                                                                     </li>
-                                                                                    
                                                                                 </ul>
                                                                             </td>
                                                                         </tr>
@@ -6501,7 +6499,13 @@
                 <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
+                        <!-- This button Visible to Medical Store Person -->
+                        <button type="button" class="btn btn-medical"><i class="fal fa-pills fa-xl fa-fw"></i> Release Medicine</button>
+                        <!-- This button Visible to Doctor approval -->
+                        <button type="button" class="btn reject"><i class="fas fa-times-circle fa-xl fa-fw"></i> Reject</button>
+                        <button type="button" class="btn accept"><i class="fas fa-check-circle fa-xl fa-fw"></i> Approved</button>
+                        <!-- This button Visible to New and edit -->
+                        <button type="submit" class="btn btn-success"><i class="fal fa-print fa-lg fa-fw"></i> Save</button>
                     </div>
                 </div>
             </div>

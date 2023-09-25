@@ -5381,10 +5381,11 @@ a, button {
 .dropdown-toggle::after {
 	display: inline-block;
 	margin-left: .255em;
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 21px;
+	/* line-height: 15px; */
 	content: "\f0140";
-	font-family: "Material Design Icons"
+	font-family: "Material Design Icons";
+	border: 0;
 }
 .dropdown-menu {
 	-webkit-box-shadow: 0 5px 10px rgba(30, 32, 37, .12);

@@ -1000,7 +1000,455 @@
             </div>
         </div>
     </div>
-   
+    
+    <!-- Narcotic modal -->
+    <div class="modal fade zoomIn" id="narcoticModal" tabindex="-1" aria-labelledby="narcoticModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content border-0">
+                <!-- <div class="modal-header bg-soft-info p-3">
+                    <h5 class="modal-title" id="narcoticModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                </div> -->
+                
+                <div class="modal-body pt-1 pb-1">
+                    <div class="card border-0 shadow-none mb-0">
+                        <form class="needs-validation" novalidate id="Narcotic_form">
+                            <div class="card-body border-bottom border-bottom-dashed p-0">
+                                <div class="row">
+                                    <div class="col-lg-6 mx-auto text-center">
+                                        <div class="profile-user mx-auto mb-1">
+                                            <input id="profile-img-file-input" type="file" class="profile-img-file-input" />
+                                            <label for="profile-img-file-input" class="d-block" tabindex="0">
+                                                <span class="d-flex align-items-center justify-content-center rounded">
+                                                    <img src="assets/img/PDOA_Logo.png" class="card-logo card-logo-dark user-profile-image img-fluid" alt="logo dark" width="60">
+                                                    <img src="assets/img/Logo.svg" class="card-logo card-logo-light user-profile-image img-fluid" alt="logo light" width="60">
+                                                </span>
+                                                <h5 class="fw-bold text-primary-emphasis text-decoration-underline">RESTRICTED MEDICATION PRESCRIPTION</h5>
+                                            </label>
+                                        </div>
+                                    </div> <!-- /.col -->
+                                </div> <!-- /.row -->
+                            </div>
+
+                            <div class="card-body p-2 border-top border-top-dashed">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="PBincidentNo" placeholder="Incident No" value="Inc786" readonly />
+                                            <label for="PBincidentNo" class="mb-0">Incident No</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="PBStation" placeholder="Station" value="Burimi / 4001" readonly />
+                                            <label for="PBStation" class="">Station</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="dateNarcotic" placeholder="Select Date-time" value="25-09-2023" readonly>
+                                            <label for="dateNarcotic" class="">Date</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="timeNarcotic" placeholder="HH:SS" value="16:34" readonly>
+                                            <label for="timeNarcotic" class="">Time</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-6 col-sm-12 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="PBPatientName" placeholder="Patient Name" value="Ahlam Hilal Khamis Alrasbi" readonly/>
+                                            <label for="PBPatientName" class="">Patient Name</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="ageNarcotic" placeholder="Age" value="30" readonly>
+                                            <label for="ageNarcotic" class="">Age</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-3 col-sm-6 mb-2">
+                                        <div class="form-floating">
+                                            <select name="" id="genderNarcotic" class="form-select">
+                                                <option value="">Please select</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                            <label for="genderNarcotic" class="">Gender</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-12 col-sm-12 mb-2">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="DiagnosisNarcotic" placeholder="Diagnosis" />
+                                            <label for="DiagnosisNarcotic" class="">Diagnosis</label>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div> <!-- /.card-body -->
+
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered align-middle table-nowrap mb-0" id="PBTable">
+                                                <thead class="table-info text-white align-middle">
+                                                    <tr>
+                                                        <tr>
+                                                            <th rowspan="2">S.No</th>
+                                                            <th rowspan="2">Drug Name</th>
+                                                            <th colspan="3" class="text-center">1<sup>st</sup> Dose</th>
+                                                            <th colspan="3" class="text-center">2<sup>nd</sup> Dose</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Dose</th>
+                                                            <th>Time</th>
+                                                            <th>Done by</th>
+                                                            <th>Dose</th>
+                                                            <th>Time</th>
+                                                            <th>Done by</th>
+                                                        </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><input type="text" name="" id="drugName1" class="form-control" value="Inj.Morphine Sulphate 10mg/1ml"></td>
+                                                        <td><input type="text" name="" id="Dose1st_1" class="form-control" value="1"></td>
+                                                        <td><input type="text" class="form-control" id="time1st_1" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" value="16:05"></td>
+                                                        <td><select name="" id="Doneby1st_1" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1" selected>EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                        <td><input type="text" name="" id="Dose2nd_1" class="form-control" value="3"></td>
+                                                        <td><input type="text" class="form-control" id="time2nd_1" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" value="14:05"></td>
+                                                        <td><select name="" id="Doneby2nd_1" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1" selected>EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><input type="text" name="" id="drugName2" class="form-control"></td>
+                                                        <td><input type="text" name="" id="Dose1st_2" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time1st_2" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby1st_2" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                        <td><input type="text" name="" id="Dose2nd_2" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time2nd_2" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby2nd_2" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><input type="text" name="" id="drugName3" class="form-control"></td>
+                                                        <td><input type="text" name="" id="Dose1st_3" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time1st_3" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby1st_3" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                        <td><input type="text" name="" id="Dose2nd_3" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time2nd_3" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby2nd_3" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td><input type="text" name="" id="drugName4" class="form-control"></td>
+                                                        <td><input type="text" name="" id="Dose1st_4" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time1st_4" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby1st_4" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                        <td><input type="text" name="" id="Dose2nd_4" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time2nd_4" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby2nd_4" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td><input type="text" name="" id="drugName5" class="form-control"></td>
+                                                        <td><input type="text" name="" id="Dose1st_5" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time1st_5" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby1st_5" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                        <td><input type="text" name="" id="Dose2nd_5" class="form-control"></td>
+                                                        <td><input type="text" class="form-control" id="time2nd_5" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
+                                                        <td><select name="" id="Doneby2nd_5" class="form-select">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT1</option>
+                                                            <option value="2">EMT2</option>
+                                                            <option value="3">EMT3</option>
+                                                            <option value="4">EMT4</option>
+                                                            <option value="5">EMT5</option>
+                                                        </select></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div> <!--end row-->
+                            </div> <!-- /.card-body -->
+
+                            <div class="card-body p-2 border-top border-top-dashed">
+                                <fieldset>
+                                    <div class="row mt-2">
+                                        <div class="col-lg-6 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="administeredBy" placeholder="Administered By" />
+                                                <label for="administeredBy">Administered By</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="NarcoticForceNo" placeholder="Force No">
+                                                <label for="NarcoticForceNo">Force No</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+    
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="witnessedBy" placeholder="Witnessed By" />
+                                                <label for="witnessedBy">Witnessed By</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="NarcoticForceNo1" placeholder="Force No">
+                                                <label for="NarcoticForceNo1">Force No</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature2">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+                                </fieldset>
+                            </div> <!-- /.card-body -->
+
+                            <div class="card-body p-2 border-top border-top-dashed">
+                                <fieldset>
+                                    <legend>Medication Discarded</legend>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_Drug" placeholder="Drug" />
+                                                <label for="MD_Drug">Drug</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="doseDiscarded" placeholder="Dose discarded" />
+                                                <label for="doseDiscarded">Dose discarded</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="time_MD" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true">
+                                                <label for="time_MD">Time</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+    
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="discardBy" placeholder="Discard By" />
+                                                <label for="discardBy">Discard By</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_ForceNo" placeholder="Force No" />
+                                                <label for="MD_ForceNo">Force No</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_WitnessedBy" placeholder="Witnessed By" />
+                                                <label for="MD_WitnessedBy">Witnessed By</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_ForceNo1" placeholder="Force No" />
+                                                <label for="MD_ForceNo1">Force No</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-9 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_DutySupervisor" placeholder="Duty Supervisor" />
+                                                <label for="MD_DutySupervisor">Duty Supervisor</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-9 col-sm-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="MD_MedicalDirector" placeholder="Medical director" />
+                                                <label for="MD_MedicalDirector">Medical director</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-3 col-sm-6 mb-2">
+                                            <label for="ambulanceSignature">Signature</label>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal"><i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+                                </fieldset>
+
+                                <!-- <div class="mt-2">
+                                    <div class="alert alert-info p-2 mb-0" role="alert">
+                                        <label for="NOTES" class="form-label"><strong>Note: </strong></label>
+                                        <ol type="1" class="mb-0">
+                                            <li>This prescription need to be signed by both EMT's personnel and will need to be counter signed by the notified duty supervisor or medical director.</li>
+                                            <li>Any unused medication should be discarded immediately in the hospital in front of nurses or doctors and for the person to sign as witnessed.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <hr class="border-top-dashed">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        <label for="NOTES" class="form-label"><strong>Copies: </strong></label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <strong><i class="fa-light fa-circle fa-fw fa-lg"></i>&nbsp;White</strong>
+                                        <span style='font-family:"Wingdings 3";'>&Uacute;</span>
+                                        <strong>Hospital file</strong>
+                                    </div>
+                                    <div class="col-auto">
+                                        <strong><i class="fa-solid fa-circle fa-fw fa-lg text-warning"></i>&nbsp;Yellow&nbsp;</strong>
+                                        <span style='font-family:"Wingdings 3";'>&Uacute;</span>
+                                        <strong>&nbsp;Administration file</strong>
+                                    </div>
+                                    <div class="col-auto">
+                                        <strong><i class="fa-solid fa-circle fa-fw fa-lg" style="color: darkmagenta;"></i>&nbsp;Pink&nbsp;</strong>
+                                        <span style='font-family:"Wingdings 3";'>&Uacute;</span>
+                                        <strong>Station file</strong>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Narcotic modal-->
+
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>

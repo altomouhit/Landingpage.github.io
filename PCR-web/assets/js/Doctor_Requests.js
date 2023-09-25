@@ -16,6 +16,7 @@ $(document).ready(function() {
                                 '<th>PCR</th>'+
                                 '<th>Name</th>'+
                                 '<th class="w-5"></th>'+
+                                '<th class="w-5"></th>'+
                             '</tr>'+
                         '</thead>'+
                         '<tbody>'+
@@ -23,9 +24,21 @@ $(document).ready(function() {
                                 '<td>' + data.PCR + '</td>'+
                                 '<td class="">' + data.PCRName + '</td>'+
                                 '<td>'+
+                                    '<div class="verify_dropdown">'+
+                                        '<a class="dropdown-toggle text-success" href="#?" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                                        '<i class="fad fa-check-circle fa-xl fa-fw"></i> Approved</a>'+
+                                        
+                                        '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">'+
+                                            '<a class="dropdown-toggle text-danger" href="#">'+
+                                                '<i class="fad fa-times-circle fa-xl fa-fw"></i> Rejected'+
+                                            '</a>'+
+                                        '</div>'+ 
+                                    '</div>'+
+                                '</td>'+
+                                '<td>'+
                                     '<ul class="list-inline hstack gap-2 mb-0">'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">'+
-                                            '<a class="edit-item-btn" href="PCR.html"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>'+
+                                        '<li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#narcoticModal" data-bs-placement="top" title="Narcotic">'+
+                                            '<a class="edit-item-btn text-white btn btn-danger"><i class="fa-light fa-syringe fa-lg"></i></a>'+
                                         '</li>'+
                                     '</ul>'+
                                 '</td>'+
@@ -56,11 +69,16 @@ $(document).ready(function() {
                                 '<td>' + data.PCR + '</td>'+
                                 '<td class="">' + data.PCRName + '</td>'+
                                 '<td>'+
-                                    '<ul class="list-inline hstack gap-2 mb-0">'+
-                                        '<li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">'+
-                                            '<a class="edit-item-btn" href="PCR.html"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>'+
-                                        '</li>'+
-                                    '</ul>'+
+                                    '<div class="verify_dropdown">'+
+                                    '<a class="dropdown-toggle text-danger" href="#?" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                                    '<i class="fad fa-times-circle fa-xl fa-fw"></i> Rejected</a>'+
+                                    
+                                    '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">'+
+                                        '<a class="dropdown-toggle text-success" href="#">'+
+                                            '<i class="fad fa-check-circle fa-xl fa-fw"></i> Approved'+
+                                        '</a>'+
+                                    '</div>'+ 
+                                '</div>'+
                                 '</td>'+
                             '</tr>'+
                         '</tbody>'+
