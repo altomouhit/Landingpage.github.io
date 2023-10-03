@@ -1,10 +1,11 @@
+/* New loader CSS */
 .body-load {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: sans-serif;
-    background: transparent linear-gradient(333deg, #1E4B83 0%, #041656 100%, #693FFB 100%) 0% 0% no-repeat padding-box;;
+    /* background: linear-gradient(45deg, #6fc7b5 0%, #13bdce 20%, #0094d9 40%, #5a3694 60%, #ee4d74 80%, #f58c58 100%); */
+    background: linear-gradient(45deg, #1E4B83 80%, #041656 20%, #2FE3FE 40%, #5a3694 60%, #13bdce 0%, #6fc7b5 100%);
+    background-size: 600%;
+    background-position: 0% 100%;
+    -webkit-animation: gradient 7s ease-in-out infinite;
+    animation: gradient 7s ease-in-out infinite;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -13,405 +14,178 @@
     bottom: 0;
     z-index: 9999;
 }
-.outer {
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
-    border-radius: 50%;
-}
 
-.inner {
-    position: absolute;
-    width: 275px;
-    height: 275px;
-    text-align: center;
-    line-height: 275px;
-    background: transparent linear-gradient(333deg, #1E4B83 0%, #041656 100%, #693FFB 100%) 0% 0% no-repeat padding-box;;
-    border-radius: 50%;
-    cursor: default;
-}
-
-.inner span {
-    font-size: 60px;
-    font-weight: 800;
-    background: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-size: 300%;
-}
-
-.outer.active-loader {
-    animation: rotate 2s ease infinite;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.outer.active-loader-2 {
-    animation: rotate2 3s ease;
-}
-
-@keyframes rotate2 {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* New loader CSS */
-/* @keyframes driving {
-    100% {
-        transform: scale(2) translateX(-10vw);
-    }
-
-    0% {
-        transform: translateY(0vh) translateX(100vw) scale(2);
-    }
-}
-
-.body-load {
-    padding: 20px;
-    margin: 0;
-    color: #fff;
-    background: url("../img/login/dsc_1043.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.loading {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    position: fixed;
+}
+
+.loading * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+}
+
+.loading .logo {
+    background-image: url("../img/Logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 100%;
+}
+
+.loading .dots.animate .dot {
+    -webkit-animation: loading-block 3.5s ease-in-out infinite;
+    animation: loading-block 3.5s ease-in-out infinite;
+}
+
+.loading .dots.animate .dot:after {
+    -webkit-animation: loading-dot 3.5s ease-in-out infinite;
+    animation: loading-dot 3.5s ease-in-out infinite;
+}
+
+.loading .dots .dot {
+    width: 300px;
+    height: 300px;
+}
+
+.loading .dots .dot:after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0.17);
+}
+
+.loading .dots .dot:nth-child(1) {
+    top: 212px;
+    left: -210px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.loading .dots .dot:nth-child(1):after {
+    transform-origin: top right;
+    top: 0;
+    right: 0;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.loading .dots .dot:nth-child(2) {
+    top: -161px;
+    left: -194px;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+.loading .dots .dot:nth-child(2):after {
+    transform-origin: bottom right;
+    bottom: 0;
+    right: 0;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+.loading .dots .dot:nth-child(3) {
+    top: -161px;
+    left: -101px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.loading .dots .dot:nth-child(3):after {
+    transform-origin: bottom right;
+    bottom: 0;
+    right: 0;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.loading .dots .dot:nth-child(4) {
+    top: 81px;
+    left: 145px;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.loading .dots .dot:nth-child(4):after {
+    transform-origin: top left;
     top: 0;
     left: 0;
-    right: 0;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.loading .dots .dot:nth-child(5) {
+    top: -77px;
+    left: 209px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.loading .dots .dot:nth-child(5):after {
+    transform-origin: bottom left;
     bottom: 0;
-    z-index: 9999;
+    left: 0;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
-#light-button {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-}
+@-webkit-keyframes loading-block {
 
-.light {
-    width: 2px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    z-index: 100;
-}
-
-.light--blue {
-    background-color: #0094FF;
-}
-
-.light--flash {
-    animation: glowing 0.5s linear infinite;
-}
-
-.headlight--flash {
-    animation: headlight-flash-animation 0.5s linear infinite;
-}
-
-.headlight--flash::before {
-    animation: headlight-beam-animation 0.5s linear infinite;
-}
-
-.light--flash-offset {
-    animation-delay: 0.25s;
-    right: 0px;
-}
-
-@keyframes headlight-beam-animation {
-    0% {
-        border-top: 10px solid transparent;
-        border-left: 40px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 20px solid transparent;
-    }
-
-    50% {
-        border-top: 10px solid transparent;
-        border-left: 40px solid rgba(255, 255, 255, 0.8);
-        border-bottom: 20px solid transparent;
-    }
-
+    71.4285714286%,
     100% {
-        border-top: 10px solid transparent;
-        border-left: 40px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 20px solid transparent;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
     }
 }
 
-@keyframes headlight-flash-animation {
-    0% {
-        background-color: #fff;
-        box-shadow: 0 0 3px #004A7F;
-    }
+@keyframes loading-block {
 
-    50% {
-        background-color: #fff;
-        box-shadow: 0px 0px 0px #fff;
-    }
-
+    71.4285714286%,
     100% {
-        background-color: #fff;
-        box-shadow: 0 0 3px #004A7F;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
     }
 }
 
-@keyframes glowing {
+@-webkit-keyframes loading-dot {
 
     0%,
-    50%,
+    71.4285714286%,
     100% {
-        background-color: #004A7F;
-        box-shadow: 0 0 3px #004A7F;
+        transform: scale(0.17);
     }
 
-    25%,
-    75% {
-        background-color: #0094FF;
-        box-shadow: 0px 0px 100px 25px #0094FF;
+    35.7142857143% {
+        transform: scale(1);
     }
 }
 
-.ambulance {
-    position: relative;
-    animation-duration: 5s;
-    animation-name: driving;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+@keyframes loading-dot {
+
+    0%,
+    71.4285714286%,
+    100% {
+        transform: scale(0.17);
+    }
+
+    35.7142857143% {
+        transform: scale(1);
+    }
 }
 
-.ambulance__bonnet {
-    z-index: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #FAE100;
-    left: 30px;
-    position: relative;
+@-webkit-keyframes gradient {
+    50% {
+        background-position: 100% 0%;
+    }
 }
 
-.ambulance__bonnet::before {
-    content: "";
-    position: relative;
-    display: block;
-    width: 0;
-    height: 0;
-    top: -26px;
-    border-bottom: 30px solid #FAE100;
-    border-left: 20px solid transparent;
-    left: -6px;
-    z-index: 1;
+@keyframes gradient {
+    50% {
+        background-position: 100% 0%;
+    }
 }
-
-.ambulance__bonnet::after {
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    position: relative;
-    top: -31px;
-    left: -15px;
-    border-bottom: 10px solid #FAE100;
-    border-left: 20px solid transparent;
-    z-index: 0;
-}
-
-.ambulance__headlight {
-    background: #efefef;
-    width: 4px;
-    top: -1px;
-    position: relative;
-    height: 3px;
-}
-
-.ambulance__headlight::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -9px;
-    left: -35px;
-}
-
-.ambulance__bumper {
-    background-color: #FAE100;
-    width: 20px;
-    height: 10px;
-    position: relative;
-    top: -11px;
-    left: 16px;
-}
-
-.ambulance__cab {
-    position: relative;
-    display: block;
-    width: 0;
-    height: 0;
-    top: 4px;
-    border-bottom: 30px solid #020202;
-    border-left: 20px solid transparent;
-    left: 26px;
-    z-index: 2;
-}
-
-.ambulance__cab::before {
-    width: 10px;
-    height: 8px;
-    background-color: #FAE100;
-    display: block;
-    content: "";
-    position: absolute;
-    left: -6px;
-    border-top-left-radius: 100%;
-    top: -1px;
-    z-index: 2;
-}
-
-.ambulance__cab::after {
-    z-index: 0;
-    width: 2px;
-    height: 30px;
-    background-color: #020202;
-    display: block;
-    content: "";
-    position: relative;
-}
-
-.ambulance__side-window {
-    z-index: 2;
-    width: 20px;
-    height: 10px;
-    background: #020202;
-    position: absolute;
-    top: 10px;
-    left: 28px;
-    border-radius: 2px;
-}
-
-.ambulance__side-window::before {
-    width: 10px;
-    height: 15px;
-    background: #020202;
-    position: absolute;
-    top: 0px;
-    left: -25px;
-    border-radius: 2px;
-    content: "";
-    display: block;
-}
-
-.ambulance__box {
-    position: absolute;
-    left: 50px;
-    top: 0px;
-    width: 75px;
-    height: 50px;
-    background-color: #FAE100;
-}
-
-.ambulance__box::before {
-    height: 15px;
-    background-color: #FAE100;
-    left: -3px;
-    position: relative;
-    width: 3px;
-    top: 10px;
-    display: block;
-    content: "";
-}
-
-.ambulance__battenberg-row {
-    position: absolute;
-    top: 34px;
-    left: 29px;
-    z-index: 1;
-    width: 1000px;
-}
-
-.ambulance__battenberg-row-upper {
-    position: absolute;
-    top: 24px;
-    left: 45px;
-    width: 100px;
-    z-index: 1;
-}
-
-.ambulance__battenberg {
-    width: 16px;
-    height: 10px;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    float: left;
-    background-color: #9cae00;
-}
-
-.ambulance__battenberg--alt {
-    background-color: #004e48;
-}
-
-.ambulance__top-right-light {
-    top: 0px;
-    right: 0px;
-    position: absolute;
-}
-
-.ambulance__top-left-light {
-    top: 0px;
-    left: 0px;
-    position: absolute;
-}
-
-.ambulance__top-right-mid-light {
-    top: 5px;
-    right: 10px;
-    position: absolute;
-}
-
-.ambulance__top-left-mid-light {
-    top: 5px;
-    left: 10px;
-    position: absolute;
-}
-
-.ambulance__wheel {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #5a6d6d;
-    z-index: 2;
-    position: absolute;
-}
-
-.ambulance__wheel::before {
-    content: "";
-    display: block;
-    border-radius: 50%;
-    left: 1px;
-    top: 1px;
-    position: relative;
-    background-color: #414141;
-    height: 18px;
-    width: 18px;
-}
-
-.ambulance__wheel--back {
-    top: 39px;
-    left: 20px;
-}
-
-.ambulance__wheel--front {
-    top: 39px;
-    left: 95px;
-}
-
-.road {
-    position: absolute;
-    bottom: 35%;
-} */

@@ -12,7 +12,11 @@ window.onload = function() {
 	//circulation
 	$("#circulationPulseDiv, #circulationSkinDiv").hide();
 	//Burns
-	$("#headBurnsDiv, #neckBurnsDiv, #abdomenBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #chestRightBurnsDiv, #backBurnsDiv").hide();
+	$("#headBurnsDiv, #neckBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #chestRightBurnsDiv, #leftChestDiv, #rightChestDiv").hide();
+	//Abdomen
+	$("#leftUpAbdomenDiv, #abdomenBurnsDiv,#rightUpAbdomenDiv ,#rightUpAbdomenBurnsDiv, #leftDownAbdomenDiv, #leftDownAbdomenBurnsDiv, #rightDownAbdomenDiv, #rightDownAbdomenBurnsDiv").hide();
+	//Back
+	$("#backDiv, #backBurnsDiv, #backLumbarDiv, #backLumbarBurnsDiv, #backSacrumDiv, #backSacrumBurnsDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> Air way
 	$("#oralSizeDiv, #nasalSizeDiv, #ETTSizeDiv, #LMASizeDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> immobilization
@@ -32,10 +36,12 @@ window.onload = function() {
 	//Total Burn Score
 	$("#adultDiv, #peditricDiv").hide();
 	//Upper EXT > Upper EXT Left Burns
-	$("#upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv").hide();
+	$(".upperEXTLeft, .upperEXTRight, .lwEXTLeft, .lwEXTRight, #upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv").hide();
 	$("#downTimeDiv, #handoverDiv, #CPRProgressDiv, .AEDApplied").hide();
 	// Location Type
-	$("#locationSelectDiv").hide();
+	$("#locationSelectDiv, #dutyDiv").hide();
+	//Patient & Incident Info > Incident info > Factors Affecting EMS
+	$(".factorsAffectingEMSDiv").hide();
 	//$('.selector').editableSelect();
 	$('.selector').editableSelect({
 		// enable filter
@@ -140,6 +146,22 @@ $('#pelvic').on('change', function() {
 		$("#pelvicBurnsDiv").show();
 	} else {
 		$("#pelvicBurnsDiv").hide();
+	}
+});
+//Patient Assessment > Chest
+$("#chestLeftRight").on('change', function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#leftChestDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#leftChestDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#rightChestDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#rightChestDiv").hide();
 	}
 });
 //Patient Assessment > Chest Left
@@ -640,6 +662,151 @@ $("#CPRProgress").change(function() {
 		$("#obstetricCareDiv").hide();
 	} else {
 		$("#resuscitationManagementDiv, #obstetricCareDiv").hide();
+	}
+});
+//Staff Info
+$("#staff_name").change(function() {
+	if (this.value == 6 || this.value == 7) {
+		$("#dutyDiv").show();
+	} else {
+		$("#dutyDiv").hide();
+	}
+});
+//Patient & Incident Info > Incident info > Factors Affecting EMS
+$("#factorsAffectingEMS").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("17") > -1) {
+		$(".factorsAffectingEMSDiv").show();
+	}
+	if (!(Value.indexOf("17") > -1)) {
+		$(".factorsAffectingEMSDiv").hide();
+	}
+});
+//Patient Assessment & Management > Patient Assessment > Abdomen
+$("#abdomenLeftRight").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#leftUpAbdomenDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#leftUpAbdomenDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#rightUpAbdomenDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#rightUpAbdomenDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#leftDownAbdomenDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#leftDownAbdomenDiv").hide();
+	}
+	if (Value.indexOf("4") > -1) {
+		$("#rightDownAbdomenDiv").show();
+	}
+	if (!(Value.indexOf("4") > -1)) {
+		$("#rightDownAbdomenDiv").hide();
+	}
+});
+$("#rightUpAbdomen").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
+		$("#rightUpAbdomenBurnsDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#rightUpAbdomenBurnsDiv").hide();
+	}
+});
+$("#leftDownAbdomen").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
+		$("#leftDownAbdomenBurnsDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#leftDownAbdomenBurnsDiv").hide();
+	}
+});
+$("#rightDownAbdomen").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
+		$("#rightDownAbdomenBurnsDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#rightDownAbdomenBurnsDiv").hide();
+	}
+});
+//Patient Assessment & Management > Patient Assessment > Back
+$("#backType").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#backDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#backDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#backLumbarDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#backLumbarDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#backSacrumDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#backSacrumDiv").hide();
+	}
+});
+$("#backLumbar").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
+		$("#backLumbarBurnsDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#backLumbarBurnsDiv").hide();
+	}
+});
+$("#backSacrum").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("5") > -1) {
+		$("#backSacrumBurnsDiv").show();
+	}
+	if (!(Value.indexOf("5") > -1)) {
+		$("#backSacrumBurnsDiv").hide();
+	}
+});
+//Patient Assessment & Management > Patient Assessment > Upper EXT
+$("#upperEXT").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$(".upperEXTLeft").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$(".upperEXTLeft").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$(".upperEXTRight").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$(".upperEXTRight").hide();
+	}
+});
+//Patient Assessment & Management > Patient Assessment > Lw EXT
+$("#lwEXT").change(function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$(".lwEXTLeft").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$(".lwEXTLeft").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$(".lwEXTRight").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$(".lwEXTRight").hide();
 	}
 });
 $("#resuscitationRequiredBtn").click(function() {
@@ -1880,3 +2047,6 @@ $('#BP_txt, #TreatmentBP_txt').on('keyup', function() {
 	  $(this).val(card_number);
 	});
 });
+// $(document).ready(function() {
+// 	$('select').niceSelect();
+// }); 
