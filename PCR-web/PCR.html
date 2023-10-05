@@ -546,15 +546,7 @@
                                                             <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="additionalResources" placeholder="Additional Resources On Scene">
-                                                                <label for="additionalResources">Additional Resources On Scene</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-diagram-project fa-lg"></i></span>
-                                                        </div>
-                                                    </div>
+                                                    
                                                     <div class="col-lg-3">
                                                         <div class="input-group">
                                                             <div class="form-floating">
@@ -639,6 +631,83 @@
                                                     </div>
                                                 </div> <!-- /.row -->
 
+                                            </div>
+                                        </div>
+
+                                        <div class="card ribbon-box border shadow-none radius-25 mb-3">
+                                            <div class="card-body">
+                                                <span class="ribbon-three ribbon-three-primary"><span>Additional Resources On Scene</span></span>
+                                                <div class="row g-3 mt-4">
+                                                    <div class="col-lg-3">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <select class="form-select multiSelect" id="additionalResources" data-live-search="true" multiple title="Please select">
+                                                                    <!-- <option value="">Please select</option> -->
+                                                                    <option value="1">Royal Oman Police Formations</option>
+                                                                    <option value="2">Military &amp; Government Entities</option>
+                                                                    <option value="3">Private Sector Entities</option>
+                                                                </select>
+                                                                <label for="additionalResources">Additional Resources On Scene</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-diagram-project fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3" id="royalOmanPoliceDiv">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <select class="form-select multiSelect" id="royalOmanPolice" data-live-search="true" multiple title="Please select">
+                                                                    <!-- <option value="">Please select</option> -->
+                                                                    <option value="1">Special Missions Police Command</option>
+                                                                    <option value="2">Coast Guard Police Command</option>
+                                                                    <option value="3">Oil and Gas Facilities Security Police Command</option>
+                                                                    <option value="4">General Traffic Department</option>
+                                                                    <option value="5">General Police Aviation Department</option>
+                                                                    <option value="6">General Department of Investigations and Criminal Investigations (Crime Scene Team)</option>
+                                                                    <option value="7">Police Dog Unit</option>
+                                                                    <option value="8">Public Security Police</option>
+                                                                    <option value="9">Civil Defense</option>
+                                                                    <option value="10">Team Search and Rescue</option>
+                                                                    <option value="11">Hazardous Materials Team</option>
+                                                                </select>
+                                                                <label for="royalOmanPolice">Royal Oman Police Formations</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-building-shield fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3" id="militaryGovernmentDiv">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <select class="form-select multiSelect" id="militaryGovernment" data-live-search="true" multiple title="Please select">
+                                                                    <!-- <option value="">Please select</option> -->
+                                                                    <option value="1">Royal Army of Oman</option>
+                                                                    <option value="2">Royal Air Force of Oman</option>
+                                                                    <option value="3">Royal Navy of Oman</option>
+                                                                    <option value="4">Ministry of Health</option>
+                                                                    <option value="5">Ministry of Environment and Climate Affairs</option>
+                                                                    <option value="6">Ministry of Transport and Communications</option>
+                                                                    <option value="7">Ministry of Regional Municipalities</option>
+                                                                    <option value="8">Public Authority of Water</option>
+                                                                </select>
+                                                                <label for="militaryGovernment">Military &amp; Government Entities</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-building-flag fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3" id="privateSectorDiv">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <select class="form-select multiSelect" id="privateSector" data-live-search="true" multiple title="Please select">
+                                                                    <!-- <option value="">Please select</option> -->
+                                                                    <option value="1">Nama Group(Electricity  , Water and WasteWater)</option>
+                                                                    <option value="2">Rural Areas Electricity Company(Tanweer's)</option>
+                                                                    <option value="3">Dhofar Power Company</option>
+                                                                </select>
+                                                                <label for="privateSector">Private Sector Entities</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-buildings fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 

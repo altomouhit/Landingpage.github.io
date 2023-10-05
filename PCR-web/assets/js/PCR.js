@@ -42,6 +42,8 @@ window.onload = function() {
 	$("#locationSelectDiv, #dutyDiv").hide();
 	//Patient & Incident Info > Incident info > Factors Affecting EMS
 	$(".factorsAffectingEMSDiv").hide();
+	//Patient & Incident Info > Additional Resources On Scene
+	$("#royalOmanPoliceDiv, #militaryGovernmentDiv, #privateSectorDiv").hide();
 	//$('.selector').editableSelect();
 	$('.selector').editableSelect({
 		// enable filter
@@ -644,7 +646,7 @@ $("#belongingHandover").on('change', function() {
 		$("#handoverDiv").hide();
 	}
 });
-$(".actualDelivery").change(function() {
+$(".actualDelivery").on('change', function() {
 	if ($("#resuscitationRadio").prop("checked") == true) {
 		$("#resuscitationManagementDiv").show();
 		$("#obstetricCareDiv").hide();
@@ -656,7 +658,7 @@ $(".actualDelivery").change(function() {
 	}
 });
 //New Change Bugs
-$("#CPRProgress").change(function() {
+$("#CPRProgress").on('change', function() {
 	if (this.value == 1) {
 		$("#resuscitationManagementDiv").show();
 		$("#obstetricCareDiv").hide();
@@ -665,7 +667,7 @@ $("#CPRProgress").change(function() {
 	}
 });
 //Staff Info
-$("#staff_name").change(function() {
+$("#staff_name").on('change', function() {
 	if (this.value == 6 || this.value == 7) {
 		$("#dutyDiv").show();
 	} else {
@@ -673,7 +675,7 @@ $("#staff_name").change(function() {
 	}
 });
 //Patient & Incident Info > Incident info > Factors Affecting EMS
-$("#factorsAffectingEMS").change(function() {
+$("#factorsAffectingEMS").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("17") > -1) {
 		$(".factorsAffectingEMSDiv").show();
@@ -683,7 +685,7 @@ $("#factorsAffectingEMS").change(function() {
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Abdomen
-$("#abdomenLeftRight").change(function() {
+$("#abdomenLeftRight").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("1") > -1) {
 		$("#leftUpAbdomenDiv").show();
@@ -710,7 +712,7 @@ $("#abdomenLeftRight").change(function() {
 		$("#rightDownAbdomenDiv").hide();
 	}
 });
-$("#rightUpAbdomen").change(function() {
+$("#rightUpAbdomen").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("5") > -1) {
 		$("#rightUpAbdomenBurnsDiv").show();
@@ -719,7 +721,7 @@ $("#rightUpAbdomen").change(function() {
 		$("#rightUpAbdomenBurnsDiv").hide();
 	}
 });
-$("#leftDownAbdomen").change(function() {
+$("#leftDownAbdomen").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("5") > -1) {
 		$("#leftDownAbdomenBurnsDiv").show();
@@ -728,7 +730,7 @@ $("#leftDownAbdomen").change(function() {
 		$("#leftDownAbdomenBurnsDiv").hide();
 	}
 });
-$("#rightDownAbdomen").change(function() {
+$("#rightDownAbdomen").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("5") > -1) {
 		$("#rightDownAbdomenBurnsDiv").show();
@@ -738,7 +740,7 @@ $("#rightDownAbdomen").change(function() {
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Back
-$("#backType").change(function() {
+$("#backType").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("1") > -1) {
 		$("#backDiv").show();
@@ -759,7 +761,7 @@ $("#backType").change(function() {
 		$("#backSacrumDiv").hide();
 	}
 });
-$("#backLumbar").change(function() {
+$("#backLumbar").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("5") > -1) {
 		$("#backLumbarBurnsDiv").show();
@@ -768,7 +770,7 @@ $("#backLumbar").change(function() {
 		$("#backLumbarBurnsDiv").hide();
 	}
 });
-$("#backSacrum").change(function() {
+$("#backSacrum").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("5") > -1) {
 		$("#backSacrumBurnsDiv").show();
@@ -778,7 +780,7 @@ $("#backSacrum").change(function() {
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Upper EXT
-$("#upperEXT").change(function() {
+$("#upperEXT").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("1") > -1) {
 		$(".upperEXTLeft").show();
@@ -794,7 +796,7 @@ $("#upperEXT").change(function() {
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Lw EXT
-$("#lwEXT").change(function() {
+$("#lwEXT").on('change', function() {
 	var Value = $(this).val();
 	if (Value.indexOf("1") > -1) {
 		$(".lwEXTLeft").show();
@@ -807,6 +809,28 @@ $("#lwEXT").change(function() {
 	}
 	if (!(Value.indexOf("2") > -1)) {
 		$(".lwEXTRight").hide();
+	}
+});
+//Patient & Incident Info > Additional Resources On Scene
+$("#additionalResources").on('change', function() {
+	var Value = $(this).val();
+	if (Value.indexOf("1") > -1) {
+		$("#royalOmanPoliceDiv").show();
+	}
+	if (!(Value.indexOf("1") > -1)) {
+		$("#royalOmanPoliceDiv").hide();
+	}
+	if (Value.indexOf("2") > -1) {
+		$("#militaryGovernmentDiv").show();
+	}
+	if (!(Value.indexOf("2") > -1)) {
+		$("#militaryGovernmentDiv").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#privateSectorDiv").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#privateSectorDiv").hide();
 	}
 });
 $("#resuscitationRequiredBtn").click(function() {
