@@ -681,7 +681,7 @@ $("#factorsAffectingEMS").on('change', function() {
 		$(".factorsAffectingEMSDiv").show();
 	}
 	if (!(Value.indexOf("17") > -1)) {
-		$(".factorsAffectingEMSDiv").hide();
+		$(".factorsAffectingEMSDiv, #governmentHospitalDiv, #privateHospitalDiv").hide();
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Abdomen
