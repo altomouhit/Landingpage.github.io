@@ -41,7 +41,7 @@ window.onload = function() {
 	// Location Type
 	$("#locationSelectDiv, #dutyDiv").hide();
 	//Patient & Incident Info > Incident info > Factors Affecting EMS
-	$(".factorsAffectingEMSDiv").hide();
+	$(".factorsAffectingEMSDiv, #governmentHospitalRefusedDiv, #privateHospitalRefusedDiv").hide();
 	//Patient & Incident Info > Additional Resources On Scene
 	$("#royalOmanPoliceDiv, #militaryGovernmentDiv, #privateSectorDiv").hide();
 	//$('.selector').editableSelect();
@@ -275,6 +275,18 @@ $("#hospitalFacility").on('change', function() {
 		$("#privateHospitalDiv").show();
 	} else {
 		$("#governmentHospitalDiv, #privateHospitalDiv").hide();
+	}
+});
+// Patient & Incident Info > Incident info > Factors Affecting EMS > Refuse Receiving Patient
+$("#hospitalRefused").on('change', function() {
+	if (this.value == 1) {
+		$("#governmentHospitalRefusedDiv").show();
+		$("#privateHospitalRefusedDiv").hide();
+	} else if (this.value == 2) {
+		$("#governmentHospitalRefusedDiv").hide();
+		$("#privateHospitalRefusedDiv").show();
+	} else {
+		$("#governmentHospitalRefusedDiv, #privateHospitalRefusedDiv").hide();
 	}
 });
 $('#nonTansport').on('change', function() {
@@ -681,7 +693,7 @@ $("#factorsAffectingEMS").on('change', function() {
 		$(".factorsAffectingEMSDiv").show();
 	}
 	if (!(Value.indexOf("17") > -1)) {
-		$(".factorsAffectingEMSDiv, #governmentHospitalDiv, #privateHospitalDiv").hide();
+		$(".factorsAffectingEMSDiv, #governmentHospitalRefusedDiv, #privateHospitalRefusedDiv").hide();
 	}
 });
 //Patient Assessment & Management > Patient Assessment > Abdomen
