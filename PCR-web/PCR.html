@@ -422,19 +422,19 @@
                                                     <div class="col-lg-3">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="callNo" placeholder="Call No" autofocus>
-                                                                <label for="callNo">Call No</label>
+                                                                <input type="text" class="form-control" id="callDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                                <label for="callDate">Call Date</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
+                                                            <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                                <input type="text" class="form-control" id="callDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
-                                                                <label for="callDate">Call Date</label>
+                                                                <input type="number" class="form-control" id="callNo" placeholder="Call No" autofocus>
+                                                                <label for="callNo">Call No</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                            <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
@@ -447,12 +447,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="acceptedTime" placeholder="HH:SS" value="08:00" readonly />
-                                                                <label for="acceptedTime">Accepted Time</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-calendar-clock fa-lg"></i></span>
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="acceptedTime" placeholder="HH:SS" value="08:00" readonly />
+                                                            <label for="acceptedTime">Accepted Time</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
@@ -462,6 +459,42 @@
                                                                 <label for="onSceneTime">On Scene Time</label>
                                                             </div>
                                                             <span class="input-group-text"><i class="fa-light fa-calendar-clock fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input type="text" class="form-control" id="leaveScene" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
+                                                                <label for="leaveScene">Leave The Scene</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input type="text" class="form-control" id="hospitalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
+                                                                <label for="hospitalTime">AT Hospital Time</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-hospital fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input type="text" class="form-control" data-provider="timepickr" data-time-basic="true" id="serviceTime" placeholder="HH:SS">
+                                                                <label for="serviceTime">In Service Time</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="input-group">
+                                                            <div class="form-floating">
+                                                                <input type="text" class="form-control" id="totalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
+                                                                <label for="totalTime">Total Call time</label>
+                                                            </div>
+                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
@@ -541,46 +574,9 @@
                                                                 <select class="form-select" id="stationID" aria-label="Floating label">
                                                                     <option value="">Please select</option>
                                                                 </select>
-                                                                <label for="stationID">Station Name</label>
+                                                                <label for="stationID">Station ID</label>
                                                             </div>
                                                             <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="leaveScene" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                                <label for="leaveScene">Leave The Scene</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="hospitalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                                <label for="hospitalTime">AT Hospital Time</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-hospital fa-lg"></i></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" data-provider="timepickr" data-time-basic="true" id="serviceTime" placeholder="HH:SS">
-                                                                <label for="serviceTime">In Service Time</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control" id="totalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                                <label for="totalTime">Total Call time</label>
-                                                            </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
@@ -1123,15 +1119,6 @@
                                                             <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <input type="text" class="form-control" id="policyNumber" placeholder="Policy Number">
-                                                                        <label for="policyNumber">Policy Number</label>
-                                                                    </div>
-                                                                    <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <div class="form-floating">
                                                                         <select class="form-select" id="insuranceStatus" aria-label="Floating label">
                                                                             <option value="">Please select</option>
                                                                             <option value="1">Yes</option>
@@ -1142,6 +1129,16 @@
                                                                     <span class="input-group-text"><i class="fa-light fa-sensor-triangle-exclamation fa-lg"></i></span>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="input-group">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="policyNumber" placeholder="Policy Number">
+                                                                        <label for="policyNumber">Policy Number</label>
+                                                                    </div>
+                                                                    <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                </div>
+                                                            </div>
+                                                           
                                                             <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
@@ -1242,7 +1239,7 @@
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
                                                                         <textarea name="" class="form-control" id="sceneDescription" cols="30" rows="10"></textarea>
-                                                                        <label for="sceneDescription">Scene Description</label>
+                                                                        <label for="sceneDescription">General Impression</label>
                                                                     </div>
                                                                     <span class="input-group-text"><i class="fa-light fa-message-pen fa-lg"></i></span>
                                                                 </div>
@@ -1609,7 +1606,7 @@
                                                                     <fieldset>
                                                                         <legend class="mt-1"><i class="fa-light fa-stomach fa-lg fa-fw"></i>Abdomen </legend>
                                                                         <div class="row">
-                                                                            <div class="col-6 mb-3">
+                                                                            <div class="col-md-6 mb-3">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating">
                                                                                         <select class="form-select multiSelect" id="abdomenLeftRight" data-live-search="true" multiple title="Please select">
@@ -1777,6 +1774,56 @@
                                                                         </div>
                                                                     </fieldset>
                                                                 </div>
+                                                                <!-- Pelvic / Genitalia -->
+                                                                <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4 mb-3">
+                                                                    <fieldset>
+                                                                        <legend class="mt-1"><i class="fa-light fa-skeleton fa-lg fa-fw"></i>Pelvic / Genitalia</legend>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-6 mb-3">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select multiSelect" id="pelvic" data-live-search="true" multiple title="Please select">
+                                                                                            <!-- <option value="">Please select</option> -->
+                                                                                            <option value="1">Deformities</option>
+                                                                                            <option value="2">Contusions</option>
+                                                                                            <option value="3">Abrasions</option>
+                                                                                            <option value="4">Punctures Penetrations</option>
+                                                                                            <option value="5">Burns</option>
+                                                                                            <option value="6">Tenderness</option>
+                                                                                            <option value="7">Lacerations</option>
+                                                                                            <option value="8">Swellings</option>
+                                                                                            <option value="9">Stable</option>
+                                                                                            <option value="10">Unstable</option>
+                                                                                            <option value="11">NO DCAP BTLS</option>
+                                                                                        </select>
+                                                                                        <label for="pelvic">Pelvic / Genitalia</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-skeleton fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-6 mb-3" id="pelvicBurnsDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="pelvicBurns">
+                                                                                            <option value="">Please select</option>
+                                                                                            <option value="1">1 &deg;</option>
+                                                                                            <option value="2">2 &deg;</option>
+                                                                                            <option value="3">3 &deg;</option>
+                                                                                        </select>
+                                                                                        <label for="pelvicBurns">Pelvic Burns</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-fire-smoke fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- <div class="col-lg-6">
+                                                                                <div class="form-floating">
+                                                                                    <input type="text" class="form-control" id="pelvicComments" placeholder="Pelvic / Genitalia comments">
+                                                                                    <label for="pelvicComments">Pelvic / Genitalia comments</label>
+                                                                                </div>
+                                                                            </div> -->
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
                                                                 <!-- Back -->
                                                                 <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4 mb-3">
                                                                     <fieldset>
@@ -1902,56 +1949,6 @@
                                                                                 <div class="form-floating">
                                                                                     <input type="text" class="form-control" id="backComments" placeholder="Back comments">
                                                                                     <label for="backComments">Back comments</label>
-                                                                                </div>
-                                                                            </div> -->
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </div>
-                                                                <!-- Pelvic / Genitalia -->
-                                                                <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4 mb-3">
-                                                                    <fieldset>
-                                                                        <legend class="mt-1"><i class="fa-light fa-skeleton fa-lg fa-fw"></i>Pelvic / Genitalia</legend>
-                                                                        <div class="row">
-                                                                            <div class="col-lg-6 mb-3">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select multiSelect" id="pelvic" data-live-search="true" multiple title="Please select">
-                                                                                            <!-- <option value="">Please select</option> -->
-                                                                                            <option value="1">Deformities</option>
-                                                                                            <option value="2">Contusions</option>
-                                                                                            <option value="3">Abrasions</option>
-                                                                                            <option value="4">Punctures Penetrations</option>
-                                                                                            <option value="5">Burns</option>
-                                                                                            <option value="6">Tenderness</option>
-                                                                                            <option value="7">Lacerations</option>
-                                                                                            <option value="8">Swellings</option>
-                                                                                            <option value="9">Stable</option>
-                                                                                            <option value="10">Unstable</option>
-                                                                                            <option value="11">NO DCAP BTLS</option>
-                                                                                        </select>
-                                                                                        <label for="pelvic">Pelvic / Genitalia</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-skeleton fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-6 mb-3" id="pelvicBurnsDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select" id="pelvicBurns">
-                                                                                            <option value="">Please select</option>
-                                                                                            <option value="1">1 &deg;</option>
-                                                                                            <option value="2">2 &deg;</option>
-                                                                                            <option value="3">3 &deg;</option>
-                                                                                        </select>
-                                                                                        <label for="pelvicBurns">Pelvic Burns</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-fire-smoke fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!-- <div class="col-lg-6">
-                                                                                <div class="form-floating">
-                                                                                    <input type="text" class="form-control" id="pelvicComments" placeholder="Pelvic / Genitalia comments">
-                                                                                    <label for="pelvicComments">Pelvic / Genitalia comments</label>
                                                                                 </div>
                                                                             </div> -->
                                                                         </div>
@@ -2224,7 +2221,7 @@
                                                                     </div>
                                                                 </div>
     
-                                                                <div class="col-lg-4">
+                                                                <div class="col-lg-4 mt-3">
                                                                     <div class="input-group">
                                                                         <div class="form-floating">
                                                                             <textarea name="" class="form-control" id="illnesstxtArea" cols="30" rows="10"></textarea>
@@ -2442,7 +2439,7 @@
                                                             </div>
                                                             <!--end card-->
     
-                                                            <div class="col-lg-6 mt-0">
+                                                            <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
                                                                         <textarea name="" class="form-control" id="fieldImpression" cols="30" rows="10" placeholder="Field Impression"></textarea>
@@ -2466,16 +2463,6 @@
                                                                                         <option value="4">Pedestrian</option>
                                                                                     </select>
                                                                                     <label for="impactedPerson">Impacted Person</label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3 mb-3">
-                                                                                <div class="form-floating">
-                                                                                    <select class="form-select" id="significant" aria-label="Floating label">
-                                                                                        <option value="">Please select</option>
-                                                                                        <option value="1">Severity of Accident</option>
-                                                                                        <option value="2">Non Severity of Accident</option>
-                                                                                    </select>
-                                                                                    <label for="significant">Severity of Accident</label>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-3 mb-3">
@@ -2518,6 +2505,16 @@
                                                                                     <label for="helMet">Helmet</label>
                                                                                 </div>
                                                                             </div>
+                                                                            <div class="col-lg-3 mb-3">
+                                                                                <div class="form-floating">
+                                                                                    <select class="form-select" id="significant" aria-label="Floating label">
+                                                                                        <option value="">Please select</option>
+                                                                                        <option value="1">Significant</option>
+                                                                                        <option value="2">Non Significant</option>
+                                                                                    </select>
+                                                                                    <label for="significant">Severity of Accident</label>
+                                                                                </div>
+                                                                            </div>
                                                                             <div class="col-lg-3 mb-3" id="pregnancyDiv">
                                                                                 <div class="form-floating">
                                                                                     <select class="form-select" id="pregnancy" aria-label="Floating label">
@@ -2556,7 +2553,7 @@
                                                                 <div class="col-12">
                                                                     <fieldset>
                                                                         <div class="row my-2">
-                                                                            <div class="col-lg-3 mt-0 mb-3">
+                                                                            <div class="col-lg-3 mb-3">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating">
                                                                                         <select class="form-select" id="transportCategory" aria-label="Floating label">
@@ -2569,7 +2566,7 @@
                                                                                     <span class="input-group-text"><i class="fa-light fa-taxi-bus fa-lg"></i></span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-lg-3 mt-0" id="transportDiv">
+                                                                            <div class="col-lg-3 mb-3" id="transportDiv">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating">
                                                                                         <select class="form-select" id="transport" aria-label="Floating label">
@@ -2588,118 +2585,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div class="col-lg-3 mt-0" id="nonTransportDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select" id="nonTansport" aria-label="Floating label">
-                                                                                            <option value="">Please select</option>
-                                                                                            <option value="1">Assist Only</option>
-                                                                                            <option value="2">Call Cancelled</option>
-                                                                                            <option value="3">Stand By</option>
-                                                                                            <option value="4">PDOA</option>
-                                                                                            <option value="5">No PT Found</option>
-                                                                                            <option value="6">No Care Required</option>
-                                                                                            <option value="7">Refused</option>
-                                                                                            <!-- <option value="8">Crime scene</option> -->
-                                                                                            <option value="9">DNR</option>
-                                                                                        </select>
-                                                                                        <label for="nonTansport">Non Transport</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-truck fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-6 mt-0 mb-3" id="nonTransportCrimeDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <textarea name="" id="crimeComments" cols="30" rows="10" class="form-control"></textarea>
-                                                                                        <label for="crimeComments">Crime scene comments</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-people-robbery fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-6 mt-0" id="DNRDiv">
-                                                                                <div class="input-group">
-                                                                                    <input class="form-control" id="DNR-img" type="file" accept="image/png, image/gif, image/jpeg" />
-                                                                                    <span class="input-group-text"><i class="fa-light fa-camera-viewfinder fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3 mt-0 PDOADiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select multiSelect" id="PDOAType" data-live-search="true" multiple title="Please select" aria-label="Floating label">
-                                                                                            <!-- <option value="">Please select</option> -->
-                                                                                            <option value="1">Rigor Mortis</option>
-                                                                                            <option value="2">Dependent Lividity</option>
-                                                                                            <option value="3">Decapitation</option>
-                                                                                            <option value="4">Decomposition</option>
-                                                                                            <option value="5">Traumatic Injuries Incompatible with Life </option>
-                                                                                            <option value="6">Incineration</option>
-                                                                                            <option value="7">Submersion Greater or Equal To 24 Hours</option>
-                                                                                        </select>
-                                                                                        <label for="PDOAType">PDOA Type</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-rectangles-mixed fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3 mt-0 PDOADiv">
-                                                                                <button type="button" class="btn bg-gradient-info text-white" data-bs-toggle="modal" data-bs-target="#PDOAForm">
-                                                                                    PDOA Form</button>
-                                                                            </div>
-                                                                            <div class="col-lg-3 mt-0" id="refused">
-                                                                                <button type="button" class="btn bg-gradient-info text-white" data-bs-toggle="modal" data-bs-target="#refusedForm">Refused</button>
-                                                                            </div>
-                                                                            
-                                                                            <div class="col-lg-3 mt-0" id="transportTypeDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select" id="transportType" aria-label="Floating label">
-                                                                                            <option value="">Please select</option>
-                                                                                            <option value="1">Ground Transport</option>
-                                                                                            <option value="2">Air Transport</option>
-                                                                                            <option value="3">Sea Transport</option>
-                                                                                        </select>
-                                                                                        <label for="transportType">Transport Type</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3 mt-0" id="locationTypeDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select" id="locationType" aria-label="Floating label">
-                                                                                            <option value="">Please select</option>
-                                                                                            <option value="1">Education Facility</option>
-                                                                                            <option value="2">Industrial Place</option>
-                                                                                            <option value="3">Medical Facility</option>
-                                                                                            <option value="4">Place For Recreation</option>
-                                                                                            <option value="5">Sport</option>
-                                                                                            <option value="6">Prison</option>
-                                                                                            <option value="7">Public Building</option>
-                                                                                            <option value="8">Residence / House</option>
-                                                                                            <option value="9">Sea / Beach</option>
-                                                                                            <option value="10">Shopping Place</option>
-                                                                                            <option value="11">Transpotaions</option>
-                                                                                            <option value="12">Work Place (Office)</option>
-                                                                                        </select>
-                                                                                        <label for="locationType">Location Type</label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-3 mt-0" id="locationSelectDiv">
-                                                                                <div class="input-group">
-                                                                                    <div class="form-floating">
-                                                                                        <select class="form-select" id="locationSelect" aria-label="Floating label">
-                                                                                            <option value="">Please select</option>
-                                                                                        </select>
-                                                                                        <label for="locationSelect" id="locationLabel"></label>
-                                                                                    </div>
-                                                                                    <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-3 mt-0 mb-3" id="hospitalDiv">
+                                                                            <div class="col-lg-3 mb-3" id="hospitalDiv">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating">
                                                                                         <select class="form-select" id="hospitalFacility" aria-label="Floating label">
@@ -2713,7 +2599,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div class="col-lg-3 mt-0" id="governmentHospitalDiv">
+                                                                            <div class="col-lg-3 mb-3" id="governmentHospitalDiv">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating singleSelect">
                                                                                         <select class="form-select multiSelect" id="governmentHospital" data-live-search="true" aria-label="Floating label">
@@ -2769,7 +2655,8 @@
                                                                                     <span class="input-group-text"><i class="fa-light fa-house-medical-flag fa-lg"></i></span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-lg-3 mt-0" id="privateHospitalDiv">
+                                                                            
+                                                                            <div class="col-lg-3 mb-3" id="privateHospitalDiv">
                                                                                 <div class="input-group">
                                                                                     <div class="form-floating singleSelect">
                                                                                         <select class="form-select multiSelect" id="privateHospital" data-live-search="true" aria-label="Floating label">
@@ -2808,6 +2695,117 @@
                                                                                         <label for="privateHospital">Private Health Care Facility</label>
                                                                                     </div>
                                                                                     <span class="input-group-text"><i class="fa-light fa-hospital fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-3 mb-3" id="nonTransportDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="nonTansport" aria-label="Floating label">
+                                                                                            <option value="">Please select</option>
+                                                                                            <option value="1">Assist Only</option>
+                                                                                            <option value="2">Call Cancelled</option>
+                                                                                            <option value="3">Stand By</option>
+                                                                                            <option value="4">PDOA</option>
+                                                                                            <option value="5">No PT Found</option>
+                                                                                            <option value="6">No Care Required</option>
+                                                                                            <option value="7">Refused</option>
+                                                                                            <!-- <option value="8">Crime scene</option> -->
+                                                                                            <option value="9">DNR</option>
+                                                                                        </select>
+                                                                                        <label for="nonTansport">Non Transport</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-truck fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-6 mb-3" id="nonTransportCrimeDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <textarea name="" id="crimeComments" cols="30" rows="10" class="form-control"></textarea>
+                                                                                        <label for="crimeComments">Crime scene comments</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-people-robbery fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-6 mb-3" id="DNRDiv">
+                                                                                <div class="input-group">
+                                                                                    <input class="form-control" id="DNR-img" type="file" accept="image/png, image/gif, image/jpeg" />
+                                                                                    <span class="input-group-text"><i class="fa-light fa-camera-viewfinder fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 mb-3 PDOADiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select multiSelect" id="PDOAType" data-live-search="true" multiple title="Please select" aria-label="Floating label">
+                                                                                            <!-- <option value="">Please select</option> -->
+                                                                                            <option value="1">Rigor Mortis</option>
+                                                                                            <option value="2">Dependent Lividity</option>
+                                                                                            <option value="3">Decapitation</option>
+                                                                                            <option value="4">Decomposition</option>
+                                                                                            <option value="5">Traumatic Injuries Incompatible with Life </option>
+                                                                                            <option value="6">Incineration</option>
+                                                                                            <option value="7">Submersion Greater or Equal To 24 Hours</option>
+                                                                                        </select>
+                                                                                        <label for="PDOAType">PDOA Type</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-rectangles-mixed fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 PDOADiv">
+                                                                                <button type="button" class="btn bg-gradient-info text-white" data-bs-toggle="modal" data-bs-target="#PDOAForm">
+                                                                                    PDOA Form</button>
+                                                                            </div>
+                                                                            <div class="col-lg-3" id="refused">
+                                                                                <button type="button" class="btn bg-gradient-info text-white" data-bs-toggle="modal" data-bs-target="#refusedForm">Refused</button>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-lg-3 mb-3" id="transportTypeDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="transportType" aria-label="Floating label">
+                                                                                            <option value="">Please select</option>
+                                                                                            <option value="1">Ground Transport</option>
+                                                                                            <option value="2">Air Transport</option>
+                                                                                            <option value="3">Sea Transport</option>
+                                                                                        </select>
+                                                                                        <label for="transportType">Transport Type</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 mb-3" id="locationTypeDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="locationType" aria-label="Floating label">
+                                                                                            <option value="">Please select</option>
+                                                                                            <option value="1">Education Facility</option>
+                                                                                            <option value="2">Industrial Place</option>
+                                                                                            <option value="3">Medical Facility</option>
+                                                                                            <option value="4">Place For Recreation</option>
+                                                                                            <option value="5">Sport</option>
+                                                                                            <option value="6">Prison</option>
+                                                                                            <option value="7">Public Building</option>
+                                                                                            <option value="8">Residence / House</option>
+                                                                                            <option value="9">Sea / Beach</option>
+                                                                                            <option value="10">Shopping Place</option>
+                                                                                            <option value="11">Transpotaions</option>
+                                                                                            <option value="12">Work Place (Office)</option>
+                                                                                        </select>
+                                                                                        <label for="locationType">Location Type</label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-3 mb-3" id="locationSelectDiv">
+                                                                                <div class="input-group">
+                                                                                    <div class="form-floating">
+                                                                                        <select class="form-select" id="locationSelect" aria-label="Floating label">
+                                                                                            <option value="">Please select</option>
+                                                                                        </select>
+                                                                                        <label for="locationSelect" id="locationLabel"></label>
+                                                                                    </div>
+                                                                                    <span class="input-group-text"><i class="fa-light fa-location-arrow fa-lg"></i></span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -3678,7 +3676,7 @@
                                                         <span class="ribbon-three ribbon-three-success"><span>Medications Details</span></span>
 
                                                         <div class="row align-items-center g-3">
-                                                            <div class="col-md-auto ms-auto">
+                                                            <div class="col-md-auto col-ms-auto">
                                                                 <div class="hstack">
                                                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnMedications" data-bs-target="#addTimeMedications">
                                                                         <i class="ri-add-line align-bottom me-1"></i>Add</button>
@@ -3749,8 +3747,8 @@
                                                     <div class="card-body">
                                                         <!-- <span class="ribbon-three ribbon-three-info"><span>Narrative</span></span> -->
 
-                                                        <div class="row mb-3">
-                                                            <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 mb-3">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
                                                                         <textarea name="" class="form-control" id="narrativetxt" cols="30" rows="10" placeholder="Narrative"></textarea>
@@ -3760,7 +3758,7 @@
                                                                 </div>
                                                             </div>
                                                             
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg-3 mb-3">
                                                                 <div class="form-floating">
                                                                     <select name="" id="patientOutCome" class="form-select">
                                                                         <option value="">Please select</option>
@@ -3907,7 +3905,7 @@
                                                     <div class="card-body">
                                                         <span class="ribbon-three ribbon-three-danger"><span>Pre EMS Arrival Information</span></span>
                                                         <div class="row mt-4 g-3">
-                                                            <div class="col">
+                                                            <div class="col-md-6">
                                                                 <div class="form-floating">
                                                                     <select class="form-select" id="preEMSArrival" aria-label="Floating label">
                                                                         <option value="">Please select</option>
@@ -3918,13 +3916,13 @@
                                                                     <label for="preEMSArrival">Pre EMS Arrival</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col" id="downTimeDiv">
+                                                            <div class="col-md-6" id="downTimeDiv">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" data-provider="timepickr" data-time-basic="true" id="downTime" placeholder="HH:SS">
                                                                     <label for="downTime">Estimated Down Time</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col">
+                                                            <div class="col-md-6">
                                                                 <div class="form-floating">
                                                                     <select class="form-select" id="CPRProgress" aria-label="Floating label">
                                                                         <option value="">Please select</option>
@@ -3934,13 +3932,13 @@
                                                                     <label for="CPRProgress">CPR Progress</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col" id="CPRProgressDiv">
+                                                            <div class="col-md-6" id="CPRProgressDiv">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" id="timeInitiated" placeholder="Time Initiated">
                                                                     <label for="timeInitiated">Time Initiated</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col">
+                                                            <div class="col-md-6">
                                                                 <div class="form-floating">
                                                                     <select class="form-select" id="AEDApplied" aria-label="Floating label">
                                                                         <option value="">Please select</option>
@@ -3950,13 +3948,13 @@
                                                                     <label for="AEDApplied">AED Applied </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col AEDApplied">
+                                                            <div class="col-md-6 AEDApplied">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" id="timeInitiated" placeholder="Time Initiated">
                                                                     <label for="timeInitiated">By</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col AEDApplied">
+                                                            <div class="col-md-6 AEDApplied">
                                                                 <div class="form-floating">
                                                                     <input type="text" class="form-control" data-provider="timepickr" data-time-basic="true" id="timeSelection" placeholder="HH:SS">
                                                                     <label for="timeSelection">Time selection</label>
@@ -4054,12 +4052,6 @@
                                                             </div>
                                                             <div class="col-lg-3">
                                                                 <div class="form-floating">
-                                                                    <input type="text" name="tubeSize" id="noOfAttempts" class="form-control" placeholder="Number Of Attempts" />
-                                                                    <label for="noOfAttempts">Number Of Attempts</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <div class="form-floating">
                                                                     <select class="form-select" id="locationPerformed" aria-label="Floating label">
                                                                         <option value="">Please select</option>
                                                                         <option value="1">On Scene</option>
@@ -4067,6 +4059,12 @@
                                                                         <option value="3">Enroute</option>
                                                                     </select>
                                                                     <label for="locationPerformed">Location Performed</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <input type="text" name="tubeSize" id="noOfAttempts" class="form-control" placeholder="Number Of Attempts" />
+                                                                    <label for="noOfAttempts">Number Of Attempts</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-3 d-flex justify-content-end">
@@ -4208,7 +4206,7 @@
                                                                                 <th rowspan="2">Time</th>
                                                                                 <th rowspan="2">B.P</th>
                                                                                 <th rowspan="2">Pulse</th>
-                                                                                <th rowspan="2">P.P</th>
+                                                                                <th rowspan="2">R.R</th>
                                                                                 <th rowspan="2">Rhythm</th>
                                                                                 <th colspan="4" class="text-center">Intervention</th>
                                                                                 <th rowspan="2">Response</th>
@@ -4260,8 +4258,8 @@
                                                     <div class="card-body">
                                                         <!-- <span class="ribbon-three ribbon-three-info"><span>Narrative</span></span> -->
 
-                                                        <div class="row mb-3">
-                                                            <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 mb-3">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
                                                                         <textarea name="" class="form-control" id="narrativetxt" cols="30" rows="10" placeholder="Narrative"></textarea>
@@ -4270,18 +4268,79 @@
                                                                     <span class="input-group-text"><i class="fa-light fa-message-pen fa-lg"></i></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg-3 mb-3">
                                                                 <div class="form-floating">
-                                                                    <select name="" id="patientOutCome" class="form-select">
+                                                                    <select name="" id="patientOutComeRes" class="form-select">
                                                                         <option value="">Please select</option>
-                                                                        <option value="1">Stable</option>
-                                                                        <option value="2">Unstable</option>
-                                                                        <option value="3">Improve</option>
-                                                                        <option value="4">Deteriorated</option>
-                                                                        <option value="5">Dead</option>
+                                                                        <option value="1">Unchange</option>
+                                                                        <option value="2">Rosc</option>
+                                                                        <option value="3">Dead</option>
                                                                     </select>
                                                                     <label for="patientOutCome">Patient outcome</label>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <fieldset>
+                                                                    <div class="row mb-3 mt-1">
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="" class="col-sm-5 col-form-label d-flex align-items-center fw-bold">Written By</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <span class="fs-6">Ahlam Hilal Khamis Alrasbi</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="signureWritten" class="col-sm-5 col-form-label d-flex align-items-center justify-content-end fw-bold">Signature:</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" id="signatureDone" data-bs-target="#signatureDoneModal">
+                                                                                        <i class="fa-light fa-signature fa-lg"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="hosiptalReceivedBy" class="col-sm-5 col-form-label d-flex align-items-center fw-bold">Hospital</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <input type="text" class="form-control" id="hosiptalReceivedBy">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="signatureBtn" class="col-sm-5 col-form-label d-flex align-items-center justify-content-end fw-bold">Signature:</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <button type="button" class="btn btn-primary" id="signatureBtn" data-bs-toggle="modal" data-bs-target="#signatureModal">
+                                                                                        <i class="fa-light fa-signature fa-lg"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="MDComments" class="col-sm-5 col-form-label d-flex align-items-center fw-bold">MD Comments</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <textarea name="MDComments" id="MDComments" cols="30" rows="3" class="form-control"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <div class="row align-items-center">
+                                                                                <label for="signatureBtn" class="col-sm-5 col-form-label d-flex align-items-center justify-content-end fw-bold">Signature:</label>
+                                                                                <div class="col-sm-7 d-flex justify-content-between">
+                                                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="signatureBtn" data-bs-target="#signatureModal">
+                                                                                        <i class="fa-light fa-signature fa-lg"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset>
                                                             </div>
                                                         </div>
                                                     </div>
