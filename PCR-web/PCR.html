@@ -336,10 +336,10 @@
                     <!-- end Create New Menu -->
                     <li class="menu-title"><span data-key="t-master">Master Data</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
+                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientData">
                                 <i class="fal fa-users-crown"></i> <span data-key="t-global">Master Data</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="patientInfo">
+                            <div class="collapse menu-dropdown" id="patientData">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
@@ -386,7 +386,7 @@
                                     <a class="nav-link" href="#step-1">
                                         <span class="num">
                                             <i class="fa-light fa-person-falling-burst me-1"></i>
-                                            <span class="fs-6">Patient &amp; Incident Info</span></span>
+                                            <span class="fs-6">Patient &amp; Incident Data</span></span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -400,7 +400,7 @@
                                     <a class="nav-link" href="#step-3">
                                         <span class="num">
                                             <i class="fa-light fa-people-roof me-1"></i>
-                                        <span class="fs-6">Staff Info</span></span>
+                                        <span class="fs-6">Staff Data</span></span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -416,7 +416,7 @@
                                     <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
                                         <div class="card ribbon-box border shadow-none radius-25 mb-3">
                                             <div class="card-body">
-                                                <span class="ribbon-three ribbon-three-primary"><span>Incident info</span></span>
+                                                <span class="ribbon-three ribbon-three-primary"><span>Incident Data</span></span>
 
                                                 <div class="row g-3 mt-4">
                                                     <div class="col-lg-3">
@@ -474,7 +474,7 @@
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                                 <input type="text" class="form-control" id="hospitalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                                <label for="hospitalTime">AT Hospital Time</label>
+                                                                <label for="hospitalTime">AT Health Care Facility Time</label>
                                                             </div>
                                                             <span class="input-group-text"><i class="fa-light fa-hospital fa-lg"></i></span>
                                                         </div>
@@ -491,10 +491,10 @@
                                                     <div class="col-lg-3">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                                <input type="text" class="form-control" id="totalTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
+                                                                <input type="text" class="form-control" id="totalTime" placeholder="HH:SS" value="08:00" readonly>
                                                                 <label for="totalTime">Total Call time</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span>
+                                                            <!-- <span class="input-group-text"><i class="fa-light fa-clock fa-lg"></i></span> -->
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3">
@@ -817,14 +817,14 @@
 
                                         <div class="card ribbon-box border shadow-none radius-25 mb-3">
                                             <div class="card-body">
-                                                <span class="ribbon-three ribbon-three-primary"><span>Patient Care Info</span></span>
+                                                <span class="ribbon-three ribbon-three-primary"><span>Patient Care Data</span></span>
 
                                                 <div class="row g-3 mt-4">
                                                     <div class="col-lg-3">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="civilID" placeholder="Civil ID Number">
-                                                                <label for="civilID">Civil ID Number</label>
+                                                                <input type="number" class="form-control" id="civilID" placeholder="Civil ID / Passport Number">
+                                                                <label for="civilID">Civil ID / Passport Number</label>
                                                             </div>
                                                             <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
                                                         </div>
@@ -2360,7 +2360,7 @@
                                                                                     <th scope="col">O<sup>2</sup> SAT</th>
                                                                                     <th scope="col">RBS</th>
                                                                                     <th scope="col">GCS</th>
-                                                                                    <!-- <th scope="col">ECG</th> -->
+                                                                                    <th scope="col">ECG</th>
                                                                                     <th scope="col">RHYTHM</th>
                                                                                     <th scope="col">ECG Attachment</th>
                                                                                     <th scope="col">APGAR</th>
@@ -2379,6 +2379,7 @@
                                                                                     <td>6</td>
                                                                                     <td>887</td>
                                                                                     <td class="text-danger-emphasis fw-bold">9</td>
+                                                                                    <td>3L</td>
                                                                                     <td class="text-primary-emphasis fw-bold">6</td>
                                                                                     <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachmentImage">
                                                                                         <i class="fa-light fa-link-simple fa-lg text-decoration-underline"></i></a>
@@ -2409,6 +2410,7 @@
                                                                                     <td>6</td>
                                                                                     <td>887</td>
                                                                                     <td class="text-danger-emphasis fw-bold">9</td>
+                                                                                    <td>12L</td>
                                                                                     <td class="text-primary-emphasis fw-bold">6</td>
                                                                                     <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ECGAttachmentImage">
                                                                                         <i class="fa-light fa-link-simple fa-lg text-decoration-underline"></i></a></td>
@@ -2433,7 +2435,6 @@
                                                                         <!--end table-->
                                                                         
                                                                     </div>
-                                                                    
                                                                 </div>
                                                                 <!--end card-body-->
                                                             </div>
@@ -2571,10 +2572,10 @@
                                                                                     <div class="form-floating">
                                                                                         <select class="form-select" id="transport" aria-label="Floating label">
                                                                                             <option value="">Please select</option>
-                                                                                            <option value="1">R</option>
-                                                                                            <option value="2">Y</option>
-                                                                                            <option value="3">G</option>
-                                                                                            <option value="4">B</option>
+                                                                                            <option value="1">Red</option>
+                                                                                            <option value="2">Yellow</option>
+                                                                                            <option value="3">Green</option>
+                                                                                            <option value="4">Blue</option>
                                                                                             <!-- <option value="5">Hospital Facility</option>
                                                                                             <option value="6">Transport Type</option>
                                                                                             <option value="7">Location Type</option> -->
@@ -2593,7 +2594,7 @@
                                                                                             <option value="1">Government Hospital</option>
                                                                                             <option value="2">Private Hospital</option>
                                                                                         </select>
-                                                                                        <label for="hospitalFacility">Hospital Facility</label>
+                                                                                        <label for="hospitalFacility">Health Care Facility</label>
                                                                                     </div>
                                                                                     <span class="input-group-text"><i class="fa-light fa-car-building fa-lg"></i></span>
                                                                                 </div>
@@ -2864,11 +2865,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="mAirwayDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Oral Done By</label>
+                                                                                <label for="mAirwayDoneBy">Oral Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="nasalSizeDiv">
@@ -2887,11 +2888,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="nasalDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Nasal Done By</label>
+                                                                                <label for="mAirwayDoneBy">Nasal Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="ETTSizeDiv">
@@ -2918,11 +2919,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="ETTDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">ETT Done By</label>
+                                                                                <label for="mAirwayDoneBy">ETT Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="LMASizeDiv">
@@ -2941,22 +2942,22 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="LMADoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">LMA Done By</label>
+                                                                                <label for="mAirwayDoneBy">LMA Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="combiDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="combiDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Combi Done By</label>
+                                                                                <label for="mAirwayDoneBy">Combi Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="mAirwayCommentDiv">
@@ -3003,11 +3004,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="oxygenLPMDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="oxygenLPMDoneBy">Nasal Done by</label>
+                                                                                <label for="oxygenLPMDoneBy">Nasal Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="SFMDiv">
@@ -3024,11 +3025,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="SFMLPMDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="SFMLPMDoneBy">SFM Done by</label>
+                                                                                <label for="SFMLPMDoneBy">SFM Administered By</label>
                                                                             </div>
                                                                         </div>
 
@@ -3046,11 +3047,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="NRMLPMDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="NRMLPMDoneBy">NRM Done by</label>
+                                                                                <label for="NRMLPMDoneBy">NRM Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         
@@ -3068,11 +3069,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="BVMLPMDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BVMLPMDoneBy">BVM Done by</label>
+                                                                                <label for="BVMLPMDoneBy">BVM Administered By</label>
                                                                             </div>
                                                                         </div>
 
@@ -3121,55 +3122,55 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="immoblazatiomDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="immoblazatiomDoneBy">C.COLLAR Done by</label>
+                                                                                <label for="immoblazatiomDoneBy">C.COLLAR Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="KEDDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="KEDDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="KEDDoneBy">KED Done by</label>
+                                                                                <label for="KEDDoneBy">KED Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="LBBDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="LBBDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="LBBDoneBy">LBB Done by</label>
+                                                                                <label for="LBBDoneBy">LBB Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="ScoopDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="ScoopDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="ScoopDoneBy">Scoop Done by</label>
+                                                                                <label for="ScoopDoneBy">Scoop Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="StairDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="StairDoneBy" data-live-search="true" aria-label="Floating label">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="StairDoneBy">Stair Done by</label>
+                                                                                <label for="StairDoneBy">Stair Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="immoblazatiomDiv">
@@ -3181,6 +3182,7 @@
                                                                     </div>
                                                                 </fieldset>
                                                             </div>
+
                                                             <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4">
                                                                 <fieldset>
                                                                     <!-- <legend>Splinting</legend> -->
@@ -3202,22 +3204,22 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="splintingDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="splintingDoneBy">Rigid Done by</label>
+                                                                                <label for="splintingDoneBy">Rigid Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="tractionDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="tractionDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="tractionDoneBy">Traction Done by</label>
+                                                                                <label for="tractionDoneBy">Traction Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="splintingDiv">
@@ -3229,6 +3231,7 @@
                                                                     </div> <!-- /.row -->
                                                                 </fieldset>
                                                             </div>
+
                                                             <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4">
                                                                 <fieldset>
                                                                     <!-- <legend>Electrical Intervention</legend> -->
@@ -3241,7 +3244,7 @@
                                                                                     <option value="2">Defibrillation</option>
                                                                                     <option value="3">Cardiversion</option>
                                                                                     <option value="4">TCP</option>
-                                                                                    <option value="5">ECG</option>
+                                                                                    <!-- <option value="5">ECG</option> -->
                                                                                 </select>
                                                                                 <label for="defibrillation">Electrical Intervention (Cardiac)</label>
                                                                             </div>
@@ -3263,11 +3266,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="AEDUsedDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="AEDUsedDoneBy">AED Used Done By</label>
+                                                                                <label for="AEDUsedDoneBy">AED Used Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="DefibrillationDiv">
@@ -3284,11 +3287,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="DefibrillationDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="DefibrillationDoneBy">Defibrillation Done By</label>
+                                                                                <label for="DefibrillationDoneBy">Defibrillation Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="CardiversionDiv">
@@ -3305,11 +3308,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="CardiversionDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="CardiversionDoneBy">Cardiversion Done By</label>
+                                                                                <label for="CardiversionDoneBy">Cardiversion Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="TCPDiv">
@@ -3326,11 +3329,11 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="TCPDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="TCPDoneBy">TCP Done By</label>
+                                                                                <label for="TCPDoneBy">TCP Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="defibrillationDiv">
@@ -3347,16 +3350,17 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="ECGDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="ECGDoneBy">ECG Done By</label>
+                                                                                <label for="ECGDoneBy">ECG Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                     </div> <!-- /.row -->
                                                                 </fieldset>
                                                             </div>
+                                                            
                                                             <div class="col-xs-12 col-xsm-6 col-sm-6 col-xxlg-4">
                                                                 <fieldset>
                                                                     <!-- <legend>Others</legend> -->
@@ -3387,22 +3391,22 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="BandageDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BandageDoneBy">Bandage Done By</label>
+                                                                                <label for="BandageDoneBy">Bandage Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="coldPackDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="coldPackDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="coldPackDoneBy">Cold Pack Done By</label>
+                                                                                <label for="coldPackDoneBy">Cold Pack Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="assistDeliveryDiv">
@@ -3419,66 +3423,66 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="AssistDeliveryDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="AssistDeliveryDoneBy">Assist Delivery Done By</label>
+                                                                                <label for="AssistDeliveryDoneBy">Assist Delivery Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="WarmingDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="WarmingDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="WarmingDoneBy">Warming Done By</label>
+                                                                                <label for="WarmingDoneBy">Warming Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="CoolingDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="CoolingDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="CoolingDoneBy">Cooling Done By</label>
+                                                                                <label for="CoolingDoneBy">Cooling Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="BleedingDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="BleedingDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BleedingDoneBy">Bleeding Control Done By</label>
+                                                                                <label for="BleedingDoneBy">Bleeding Control Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="IrrigationDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="IrrigationDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="IrrigationDoneBy">Irrigation Done By</label>
+                                                                                <label for="IrrigationDoneBy">Irrigation Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="SuctionDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="SuctionDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="SuctionDoneBy">Suction Done By</label>
+                                                                                <label for="SuctionDoneBy">Suction Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         
@@ -3499,22 +3503,22 @@
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="NGTDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="NGTDoneBy">NGT Done By</label>
+                                                                                <label for="NGTDoneBy">NGT Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="BurnCareDoneByDiv">
                                                                             <div class="form-floating singleSelect">
                                                                                 <select class="form-select multiSelect" id="BurnCareDoneBy" data-live-search="true">
                                                                                     <option value="">Please select</option>
-                                                                                    <option value="1">EMT1</option>
-                                                                                    <option value="2">EMT2</option>
-                                                                                    <option value="3">EMT3</option>
+                                                                                    <option value="1">EMS Provider 1</option>
+                                                                                    <option value="2">EMS Provider 2</option>
+                                                                                    <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BurnCareDoneBy">Burn Care Done By</label>
+                                                                                <label for="BurnCareDoneBy">Burn Care Administered By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="mOthersDiv">
@@ -3570,13 +3574,18 @@
 
                                                                     <div class="row mb-2">
                                                                         <div class="col-lg-6" id="resuscitationManagementDiv">
-                                                                            <div class="form-floating">
+                                                                            <!-- <div class="form-floating">
                                                                                 <select name="resuscitation" id="resuscitation" class="form-select">
                                                                                     <option value="">Please select</option>
                                                                                     <option value="1">Yes</option>
                                                                                     <option value="2">No</option>
                                                                                 </select>
                                                                                 <label for="resuscitation">Resuscitation</label>
+                                                                            </div> -->
+
+                                                                            <div class="form-floating">
+                                                                                <input type="resuscitationNarrative" class="form-control" id="resuscitationNarrative" placeholder="" />
+                                                                                <label for="resuscitation">Narrative</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6" id="obstetricCareDiv">
@@ -3593,79 +3602,268 @@
                                                                     </div> <!-- /.row -->
                                                                 </fieldset>
                                                             </div>
-                                                            <div class="col-xs-12 col-xsm-12 col-sm-12 col-xxlg-12">
-                                                                <fieldset>
-                                                                    <div class="row align-items-center mt-1">
-                                                                        <div class="col-sm-3">
-                                                                            <div class="d-flex align-items-center gap-2">
-                                                                                <label for="" class="text-success-emphasis fw-bold fs-8">I.V / IO / IM</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-auto ms-auto">
-                                                                            <div class="hstack">
-                                                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnIVIO" data-bs-target="#addIVIO">
-                                                                                    <i class="ri-add-line align-bottom me-1"></i>Add</button>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--end col-->
-                                                                    </div>
-                                                                    <!--end row-->
-                                                
-                                                                    <div class="card p-0 mt-2 shadow-none">
-                                                                        <div class="card-body">
-                                                                            <div class="table-responsive table-card">
-                                                                                <table class="table align-middle table-nowrap table-bordered mb-0" id="IVIOTable">
-                                                                                    <thead class="table-success fw-bold">
-                                                                                        <tr>
-                                                                                            <th>Vital Type</th>
-                                                                                            <th>Site</th>
-                                                                                            <th>Time</th>
-                                                                                            <th>Size</th>
-                                                                                            <th>Attempt No</th>
-                                                                                            <th>Done by</th>
-                                                                                            <th style="width: 5%;"></th>
-                                                                                        </tr>
-                                                                                        <!--end tr-->
-                                                                                    </thead>
-                                                                                    <tbody class="list form-check-all">
-                                                                                        <tr>
-                                                                                            <td>I.V</td>
-                                                                                            <td>Loc</td>
-                                                                                            <td>12:00 PM</td>
-                                                                                            <td>2</td>
-                                                                                            <td>2</td>
-                                                                                            <td>EMT1</td>
-                                                                                            <td>
-                                                                                                <ul class="list-inline hstack gap-2 mb-0">
-                                                                                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
-                                                                                                        <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
-                                                                                                    </li>
-                                                                                                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">
-                                                                                                        <a class="remove-item-btn">
-                                                                                                            <i class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                </ul>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                        <!--end tr-->
-                                                                                    </tbody>
-                                                                                </table>
-                                                                                <!--end table-->
-                                                                                <div class="noresult" style="display: none">
-                                                                                    <div class="text-center">
-                                                                                        <lord-icon src="assets/libs/lord-icon/search.json" trigger="loop"
-                                                                                            colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
-                                                                                        </lord-icon>
-                                                                                        <h5 class="mt-2">Sorry! No Result Found</h5>
+
+                                                            <ul class="nav nav-pills nav-tabs-custom nav-success" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-bs-toggle="tab" href="#IVIOIMTab" role="tab">
+                                                                        <span class="d-block d-sm-none"><i class="fa-light fa-bed-pulse fa-lg"></i></span>
+                                                                        <span class="d-none d-sm-block"><i class="fa-light fa-bed-pulse fa-lg"></i>&nbsp;I.V / IO / IM</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item" id="cardiversionTableDiv">
+                                                                    <a class="nav-link" data-bs-toggle="tab" href="#cardiVersion_Tab" role="tab">
+                                                                        <span class="d-block d-sm-none"><i class="fa-light fa-heart-pulse fa-lg"></i></span>
+                                                                        <span class="d-none d-sm-block"><i class="fa-light fa-heart-pulse fa-lg"></i>&nbsp;CardiVersion</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item" id="TCPTableDiv">
+                                                                    <a class="nav-link" data-bs-toggle="tab" href="#TCPTab" role="tab">
+                                                                        <span class="d-block d-sm-none"><i class="fa-light fa-wave-pulse fa-lg"></i></span>
+                                                                        <span class="d-none d-sm-block"><i class="fa-light fa-wave-pulse fa-lg"></i>&nbsp;TCP</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content text-muted">
+                                                                <div class="tab-pane active" id="IVIOIMTab" role="tabpanel">
+                                                                    <!-- Start I.V / IO / IM -->
+                                                                    <div class="col-xs-12 col-xsm-12 col-sm-12 col-xxlg-12">
+                                                                        <fieldset>
+                                                                            <div class="row align-items-center mt-1">
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="d-flex align-items-center gap-2">
+                                                                                        <label for="" class="text-success-emphasis fw-bold fs-8">I.V / IO / IM</label>
                                                                                     </div>
                                                                                 </div>
+                                                                                <div class="col-md-auto ms-auto">
+                                                                                    <div class="hstack">
+                                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnIVIO"
+                                                                                            data-bs-target="#addIVIO">
+                                                                                            <i class="ri-add-line align-bottom me-1"></i>Add</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end col-->
                                                                             </div>
-                                                                        </div>
-                                                                        <!--end card-body-->
+                                                                            <!--end row-->
+                                                            
+                                                                            <div class="card p-0 mt-2 shadow-none">
+                                                                                <div class="card-body">
+                                                                                    <div class="table-responsive table-card">
+                                                                                        <table class="table align-middle table-nowrap table-bordered mb-0" id="IVIOTable">
+                                                                                            <thead class="table-success fw-bold">
+                                                                                                <tr>
+                                                                                                    <th>Vital Type</th>
+                                                                                                    <th>Site</th>
+                                                                                                    <th>Time</th>
+                                                                                                    <th>Size</th>
+                                                                                                    <th>Attempt No</th>
+                                                                                                    <th>Administered By</th>
+                                                                                                    <th style="width: 5%;"></th>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </thead>
+                                                                                            <tbody class="list form-check-all">
+                                                                                                <tr>
+                                                                                                    <td>I.V</td>
+                                                                                                    <td>Loc</td>
+                                                                                                    <td>12:00 PM</td>
+                                                                                                    <td>2</td>
+                                                                                                    <td>2</td>
+                                                                                                    <td>EMS Provider 1</td>
+                                                                                                    <td>
+                                                                                                        <ul class="list-inline hstack gap-2 mb-0">
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                                                                <a class="edit-item-btn"><i
+                                                                                                                        class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
+                                                                                                            </li>
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Delete">
+                                                                                                                <a class="remove-item-btn">
+                                                                                                                    <i
+                                                                                                                        class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
+                                                                                                                </a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <!--end table-->
+                                                                                        <div class="noresult" style="display: none">
+                                                                                            <div class="text-center">
+                                                                                                <lord-icon src="assets/libs/lord-icon/search.json" trigger="loop"
+                                                                                                    colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
+                                                                                                </lord-icon>
+                                                                                                <h5 class="mt-2">Sorry! No Result Found</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end card-body-->
+                                                                            </div>
+                                                                            <!--end card-->
+                                                                        </fieldset>
                                                                     </div>
-                                                                    <!--end card-->
-                                                                </fieldset>
+                                                                    <!--end col-->
+                                                                </div>
+
+                                                                <div class="tab-pane" id="cardiVersion_Tab" role="tabpanel">
+                                                                    <!-- Cardiversion -->
+                                                                    <div class="col-xs-12 col-xsm-12 col-sm-12 col-xxlg-12" id="">
+                                                                        <fieldset>
+                                                                            <div class="row align-items-center mt-1">
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="d-flex align-items-center gap-2">
+                                                                                        <label for="" class="text-success-emphasis fw-bold fs-8">Cardiversion</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-auto ms-auto">
+                                                                                    <div class="hstack">
+                                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnCardiVersion"
+                                                                                            data-bs-target="#addCardiVersion">
+                                                                                            <i class="ri-add-line align-bottom me-1"></i>Add</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end col-->
+                                                                            </div>
+                                                                            <!--end row-->
+                                                            
+                                                                            <div class="card p-0 mt-2 shadow-none">
+                                                                                <div class="card-body">
+                                                                                    <div class="table-responsive table-card">
+                                                                                        <table class="table align-middle table-nowrap table-bordered mb-0" id="cardiVersionTable">
+                                                                                            <thead class="table-success fw-bold">
+                                                                                                <tr>
+                                                                                                    <th>Time</th>
+                                                                                                    <th>Dose</th>
+                                                                                                    <th>Administered By</th>
+                                                                                                    <th class="w-5"></th>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </thead>
+                                                                                            <tbody class="list form-check-all">
+                                                                                                <tr>
+                                                                                                    <td>12:00 PM</td>
+                                                                                                    <td>2</td>
+                                                                                                    <td>EMS Provider 1</td>
+                                                                                                    <td>
+                                                                                                        <ul class="list-inline hstack gap-2 mb-0">
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                                                                <a class="edit-item-btn"><i
+                                                                                                                        class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
+                                                                                                            </li>
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Delete">
+                                                                                                                <a class="remove-item-btn">
+                                                                                                                    <i
+                                                                                                                        class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
+                                                                                                                </a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <!--end table-->
+                                                                                        <div class="noresult" style="display: none">
+                                                                                            <div class="text-center">
+                                                                                                <lord-icon src="assets/libs/lord-icon/search.json" trigger="loop"
+                                                                                                    colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
+                                                                                                </lord-icon>
+                                                                                                <h5 class="mt-2">Sorry! No Result Found</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end card-body-->
+                                                                            </div>
+                                                                            <!--end card-->
+                                                                        </fieldset>
+                                                                    </div>
+                                                                    <!-- End Cardiversion  -->
+                                                                </div>
+
+                                                                <div class="tab-pane" id="TCPTab" role="tabpanel">
+                                                                    <!-- TCP -->
+                                                                    <div class="col-xs-12 col-xsm-12 col-sm-12 col-xxlg-12" id="">
+                                                                        <fieldset>
+                                                                            <div class="row align-items-center mt-1">
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="d-flex align-items-center gap-2">
+                                                                                        <label for="" class="text-success-emphasis fw-bold fs-8">TCP</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-auto ms-auto">
+                                                                                    <div class="hstack">
+                                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnTCP"
+                                                                                            data-bs-target="#addTCP">
+                                                                                            <i class="ri-add-line align-bottom me-1"></i>Add</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end col-->
+                                                                            </div>
+                                                                            <!--end row-->
+                                                            
+                                                                            <div class="card p-0 mt-2 shadow-none">
+                                                                                <div class="card-body">
+                                                                                    <div class="table-responsive table-card">
+                                                                                        <table class="table align-middle table-nowrap table-bordered mb-0" id="cardiVersionTable">
+                                                                                            <thead class="table-success fw-bold">
+                                                                                                <tr>
+                                                                                                    <th>Time</th>
+                                                                                                    <th>Current</th>
+                                                                                                    <th>Administered By</th>
+                                                                                                    <th class="w-5"></th>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </thead>
+                                                                                            <tbody class="list form-check-all">
+                                                                                                <tr>
+                                                                                                    <td>12:00 PM</td>
+                                                                                                    <td>2</td>
+                                                                                                    <td>EMS Provider 1</td>
+                                                                                                    <td>
+                                                                                                        <ul class="list-inline hstack gap-2 mb-0">
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                                                                <a class="edit-item-btn"><i
+                                                                                                                        class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
+                                                                                                            </li>
+                                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip"
+                                                                                                                data-bs-trigger="hover" data-bs-placement="top" title="Delete">
+                                                                                                                <a class="remove-item-btn">
+                                                                                                                    <i
+                                                                                                                        class="ri-delete-bin-fill align-bottom text-white btn btn-danger"></i>
+                                                                                                                </a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <!--end tr-->
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <!--end table-->
+                                                                                        <div class="noresult" style="display: none">
+                                                                                            <div class="text-center">
+                                                                                                <lord-icon src="assets/libs/lord-icon/search.json" trigger="loop"
+                                                                                                    colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
+                                                                                                </lord-icon>
+                                                                                                <h5 class="mt-2">Sorry! No Result Found</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end card-body-->
+                                                                            </div>
+                                                                            <!--end card-->
+                                                                        </fieldset>
+                                                                    </div>
+                                                                    <!-- End TCP -->
+                                                                </div>
                                                             </div>
                                                         </div> <!-- /.row -->
                                                     </div>
@@ -3676,7 +3874,7 @@
                                                         <span class="ribbon-three ribbon-three-success"><span>Medications Details</span></span>
 
                                                         <div class="row align-items-center g-3">
-                                                            <div class="col-md-auto col-ms-auto">
+                                                            <div class="col-md-auto ms-auto">
                                                                 <div class="hstack">
                                                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="addBtnMedications" data-bs-target="#addTimeMedications">
                                                                         <i class="ri-add-line align-bottom me-1"></i>Add</button>
@@ -3696,7 +3894,7 @@
                                                                                 <th scope="col">Mediation</th>
                                                                                 <th scope="col">Dose</th>
                                                                                 <th scope="col">Route</th>
-                                                                                <th scope="col">Given by</th>
+                                                                                <th scope="col">Administered By</th>
                                                                                 <th scope="col" class="w-5">Narcotic Form</th>
                                                                                 <th scope="col" class="w-5"></th>
                                                                             </tr>
@@ -3708,7 +3906,7 @@
                                                                                 <td>Inj.Adenosine 3mg/1ml Injection</td>
                                                                                 <td>2</td>
                                                                                 <td>Oural</td>
-                                                                                <td>EMT1</td>
+                                                                                <td>EMS Provider 1</td>
                                                                                 <td class="text-center"><i class="fa-light fa-syringe fa-lg text-danger"></i></td>
                                                                                 <td>
                                                                                     <ul class="list-inline hstack gap-2 mb-0">
@@ -3966,7 +4164,7 @@
                                                 
                                                 <div class="card ribbon-box border shadow-none radius-25 mb-3">
                                                     <div class="card-body">
-                                                        <span class="ribbon-three ribbon-three-danger"><span>Indication Procedures</span></span>
+                                                        <span class="ribbon-three ribbon-three-danger"><span>Airway Indication &amp; Procedures</span></span>
                                                         <div class="row mt-4 g-3">
                                                             <div class="col-lg-3">
                                                                 <div class="form-floating">
@@ -4210,7 +4408,7 @@
                                                                                 <th rowspan="2">Rhythm</th>
                                                                                 <th colspan="4" class="text-center">Intervention</th>
                                                                                 <th rowspan="2">Response</th>
-                                                                                <th rowspan="2">Done By</th>
+                                                                                <th rowspan="2">Administered By</th>
                                                                                 <th rowspan="2" class="w-5"></th>
                                                                             </tr>
                                                                             <tr>
@@ -4232,7 +4430,7 @@
                                                                                 <td></td>
                                                                                 <td></td>
                                                                                 <td></td>
-                                                                                <td>EMT1</td>
+                                                                                <td>EMS Provider 1</td>
                                                                                 <td>
                                                                                     <ul class="list-inline hstack gap-2 mb-0">
                                                                                         <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#addTreatment" data-bs-placement="top" title="Edit">
@@ -4379,7 +4577,7 @@
                                                                     </thead>
                                                                     <tbody class="list form-check-all">
                                                                         <tr>
-                                                                            <td class="">EMT1</td>
+                                                                            <td class="">EMS Provider 1</td>
                                                                             <td class="">P23456789</td>
                                                                             <td class="">Ahlam Hilal Khamis Alrasbi</td>
                                                                             <td></td>
@@ -4459,8 +4657,8 @@
                                                                                     <div class="form-floating singleSelect">
                                                                                         <select name="staff_name" id="staff_name" class="form-select multiSelect" required>
                                                                                             <option value="">Please select</option>
-                                                                                            <option value="1">EMT1</option>
-                                                                                            <option value="2">EMT2</option>
+                                                                                            <option value="1">EMS Provider 1</option>
+                                                                                            <option value="2">EMS Provider 2</option>
                                                                                             <option value="3">Ambulance Operator</option>
                                                                                             <option value="4">Student ID</option>
                                                                                             <option value="5">Other</option>
@@ -4518,7 +4716,7 @@
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <div class="hstack gap-2 justify-content-end">
-                                                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                                                                 <button type="button" class="btn btn-success" id="add-btn">Add</button>
                                                                                 <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                                             </div>
@@ -4830,6 +5028,16 @@
                                         </div>
                                     </div> -->
                                     <div class="col-lg-3 mb-2">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="ECG_txt" aria-label="Floating label">
+                                                <option value="">Please select</option>
+                                                <option value="1">3L</option>
+                                                <option value="2">12L</option>
+                                            </select>
+                                            <label for="ECG_txt">ECG</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mb-2" id="RHYTHMDiv">
                                         <div class="form-floating">
                                             <select name="RHYTHM" id="RHYTHM" class="form-select multiSelect" data-live-search="true" multiple title="Please select">
                                                 <!-- <option value="">Please select</option> -->
@@ -5291,7 +5499,7 @@
                     </div>
                     <div class="modal-footer border-0">
                         <div class="hstack gap-2 justify-content-end">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
                         </div>
                     </div>
@@ -5404,11 +5612,11 @@
                                         <div class="form-floating">
                                             <select name="givenBy" id="givenBy" class="form-select">
                                                 <option value="">Please select</option>
-                                                <option value="1">EMT1</option>
-                                                <option value="2">EMT2</option>
-                                                <option value="3">EMT3</option>
+                                                <option value="1">EMS Provider 1</option>
+                                                <option value="2">EMS Provider 2</option>
+                                                <option value="3">EMS Provider 3</option>
                                             </select>
-                                            <label for="givenBy" class="form-label">Given By</label>
+                                            <label for="givenBy" class="form-label">Administered By</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -5417,7 +5625,7 @@
                     </div>
                     <div class="modal-footer border-0">
                         <div class="hstack gap-2 justify-content-end">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
                         </div>
                     </div>
@@ -5492,11 +5700,11 @@
                                         <div class="form-floating">
                                             <select name="IVIOdoneBy" id="IVIOdoneBy" class="form-select">
                                                 <option value="">Please select</option>
-                                                <option value="1">EMT1</option>
-                                                <option value="2">EMT2</option>
-                                                <option value="3">EMT3</option>
+                                                <option value="1">EMS Provider 1</option>
+                                                <option value="2">EMS Provider 2</option>
+                                                <option value="3">EMS Provider 3</option>
                                             </select>
-                                            <label for="IVIOdoneBy" class="form-label">Done By</label>
+                                            <label for="IVIOdoneBy" class="form-label">Administered By</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -5505,7 +5713,7 @@
                     </div>
                     <div class="modal-footer border-0">
                         <div class="hstack gap-2 justify-content-end">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
                         </div>
                     </div>
@@ -5514,6 +5722,114 @@
         </div>
     </div>
     <!--end addIVIO modal-->
+
+    <!-- addCardiVersion Modal  -->
+    <div class="modal fade zoomUp" id="addCardiVersion" tabindex="-1" aria-labelledby="addCardiVersionLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content border-0">
+                <!-- <div class="modal-header bg-soft-info p-3">
+                    <h5 class="modal-title" id="addCardiVersionLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                </div> -->
+                <form class="tablelist-form" autocomplete="off">
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <fieldset>
+                                <legend>Cardiversion</legend>
+                                <div class="row my-2">
+                                   
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="timeCV" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" />
+                                            <label for="timeCV" class="form-label">Time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="doseCV" placeholder="Dose"/>
+                                            <label for="doseCV" class="form-label">Dose</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <select name="doneByCV" id="doneByCV" class="form-select">
+                                                <option value="">Please select</option>
+                                                <option value="1">EMS Provider 1</option>
+                                                <option value="2">EMS Provider 2</option>
+                                                <option value="3">EMS Provider 3</option>
+                                            </select>
+                                            <label for="doneByCV" class="form-label">Administered By</label>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.row -->
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <div class="hstack gap-2 justify-content-end">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End addCardiVersion Modal -->
+
+    <!-- addTCP Modal -->
+    <div class="modal fade zoomUp" id="addTCP" tabindex="-1" aria-labelledby="addTCPLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content border-0">
+                <!-- <div class="modal-header bg-soft-info p-3">
+                    <h5 class="modal-title" id="addTCPLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                </div> -->
+                <form class="tablelist-form" autocomplete="off">
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <fieldset>
+                                <legend>TCP</legend>
+                                <div class="row my-2">
+                                   
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="timeTCP" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" />
+                                            <label for="timeTCP" class="form-label">Time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="currentTCP" placeholder="Current"/>
+                                            <label for="currentTCP" class="form-label">Current</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="form-floating">
+                                            <select name="doneByTCP" id="doneByTCP" class="form-select">
+                                                <option value="">Please select</option>
+                                                <option value="1">EMS Provider 1</option>
+                                                <option value="2">EMS Provider 2</option>
+                                                <option value="3">EMS Provider 3</option>
+                                            </select>
+                                            <label for="doneByTCP" class="form-label">Administered By</label>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.row -->
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <div class="hstack gap-2 justify-content-end">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End addTCP Modal -->
     
     <!-- addTreatment modal -->
     <div class="modal fade zoomIn" id="addTreatment" tabindex="-1" aria-labelledby="addTreatmentLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
@@ -5542,8 +5858,8 @@
                                         <input type="text" id="TreatmentPulse_txt" name="TreatmentPulse_txt" class="form-control" placeholder="Enter Pulse" />
                                     </div>
                                     <div class="col-lg-4">
-                                        <label for="TreatmentP_txt" class="form-label">P.P</label>
-                                        <input type="text" id="TreatmentP_txt" name="TreatmentP_txt" class="form-control" placeholder="P.P" />
+                                        <label for="TreatmentP_txt" class="form-label">R.R</label>
+                                        <input type="text" id="TreatmentP_txt" name="TreatmentP_txt" class="form-control" placeholder="R.R" />
                                     </div>
                                     <div class="col-lg-4">
                                         <label for="TreatmentRhythm_txt" class="form-label">Rhythm </label>
@@ -5569,18 +5885,18 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-4">
-                                        <label for="treatmentDoneBy" class="form-label">Done By</label>
+                                        <label for="treatmentDoneBy" class="form-label">Administered By</label>
                                         <select name="treatmentDoneBy" id="treatmentDoneBy" class="form-select">
                                             <option value="">Please select</option>
-                                            <option value="1">EMT1</option>
-                                            <option value="2">EMT2</option>
-                                            <option value="3">EMT3</option>
+                                            <option value="1">EMS Provider 1</option>
+                                            <option value="2">EMS Provider 2</option>
+                                            <option value="3">EMS Provider 3</option>
                                         </select>
                                     </div>
                                 </div> <!-- /.row -->
-                                <fieldset class="bg-soft-danger">
+                                <fieldset class="bg-soft-danger mb-3">
                                     <legend class="text-danger-emphasis">Intervention</legend>
-                                    <div class="row mb-3">
+                                    <div class="row">
                                         <div class="col-lg-4 mb-3">
                                             <div class="form-floating">
                                                 <select name="ventilation" id="ventilation" class="form-select">
@@ -5610,10 +5926,17 @@
                                                 <select name="electricalIntervention" id="electricalIntervention" class="form-select">
                                                     <option value="">Please select</option>
                                                     <option value="1">Shock 200 J</option>
-                                                    <option value="2">Shock 100 J</option>
+                                                    <!-- <option value="2">Shock 100 J</option> -->
                                                     <option value="3">None</option>
+                                                    <option value="4">Other</option>
                                                 </select>
                                                 <label for="electricalIntervention">Electrical Intervention</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-3" id="electIntOtherDiv">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="electIntOther" placeholder=""  />
+                                                <label for="electIntOther">Other</label>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mb-3">
@@ -5635,7 +5958,7 @@
                     </div>
                     <div class="modal-footer border-0">
                         <div class="hstack gap-2 justify-content-end">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-success"><i class="fa-light fa-paper-plane fa-lg"></i>&nbsp;Save</button>
                         </div>
                     </div>
@@ -5993,7 +6316,7 @@
                 </div>
                 <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -6230,7 +6553,7 @@
                 </div>
                 <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -6486,7 +6809,7 @@
                 </div>
                 <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -6607,10 +6930,10 @@
                                                         <tr>
                                                             <th>Dose</th>
                                                             <th>Time</th>
-                                                            <th>Done by</th>
+                                                            <th>Administered By</th>
                                                             <th>Dose</th>
                                                             <th>Time</th>
-                                                            <th>Done by</th>
+                                                            <th>Administered By</th>
                                                         </tr>
                                                     </tr>
                                                 </thead>
@@ -6622,21 +6945,21 @@
                                                         <td><input type="text" class="form-control" id="time1st_1" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" value="16:05"></td>
                                                         <td><select name="" id="Doneby1st_1" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1" selected>EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1" selected>EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <td><input type="text" name="" id="Dose2nd_1" class="form-control" value="3"></td>
                                                         <td><input type="text" class="form-control" id="time2nd_1" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true" value="14:05"></td>
                                                         <td><select name="" id="Doneby2nd_1" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1" selected>EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1" selected>EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <!-- <td>
                                                             <button type="button" class="text-dark btn btn-warning"><i class="fa-light fa-file-pen fa-lg"></i></button>
@@ -6649,21 +6972,21 @@
                                                         <td><input type="text" class="form-control" id="time1st_2" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby1st_2" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <td><input type="text" name="" id="Dose2nd_2" class="form-control"></td>
                                                         <td><input type="text" class="form-control" id="time2nd_2" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby2nd_2" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <!-- <td>
                                                             <button type="button" class="text-white btn btn-success edit-item-btn"><i class="fa-light fa-circle-check fa-lg"></i></button>
@@ -6676,21 +6999,21 @@
                                                         <td><input type="text" class="form-control" id="time1st_3" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby1st_3" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <td><input type="text" name="" id="Dose2nd_3" class="form-control"></td>
                                                         <td><input type="text" class="form-control" id="time2nd_3" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby2nd_3" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <!-- <td>
                                                             <button type="button" class="text-white btn btn-success edit-item-btn"><i class="fa-light fa-circle-check fa-lg"></i></button>
@@ -6703,21 +7026,21 @@
                                                         <td><input type="text" class="form-control" id="time1st_4" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby1st_4" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <td><input type="text" name="" id="Dose2nd_4" class="form-control"></td>
                                                         <td><input type="text" class="form-control" id="time2nd_4" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby2nd_4" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <!-- <td>
                                                             <button type="button" class="text-white btn btn-success edit-item-btn"><i class="fa-light fa-circle-check fa-lg"></i></button>
@@ -6730,21 +7053,21 @@
                                                         <td><input type="text" class="form-control" id="time1st_5" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby1st_5" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <td><input type="text" name="" id="Dose2nd_5" class="form-control"></td>
                                                         <td><input type="text" class="form-control" id="time2nd_5" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true"></td>
                                                         <td><select name="" id="Doneby2nd_5" class="form-select">
                                                             <option value="">Please select</option>
-                                                            <option value="1">EMT1</option>
-                                                            <option value="2">EMT2</option>
-                                                            <option value="3">EMT3</option>
-                                                            <option value="4">EMT4</option>
-                                                            <option value="5">EMT5</option>
+                                                            <option value="1">EMS Provider 1</option>
+                                                            <option value="2">EMS Provider 2</option>
+                                                            <option value="3">EMS Provider 3</option>
+                                                            <option value="4">EMS Provider 4</option>
+                                                            <option value="5">EMS Provider 5</option>
                                                         </select></td>
                                                         <!-- <td>
                                                             <button type="button" class="text-white btn btn-success edit-item-btn"><i class="fa-light fa-circle-check fa-lg"></i></button>
@@ -7256,7 +7579,7 @@
                 </div>
                 <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -7291,7 +7614,7 @@
                 </div>
                 <div class="modal-footer border-0 p-1">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -7349,7 +7672,7 @@
                 </div>
                 <div class="modal-footer border-0 p-1">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div>
@@ -7413,7 +7736,7 @@
                 </div>
                 <div class="modal-footer border-0 p-1">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <!-- <button type="button" class="btn btn-danger"><i class="ti-brush-alt me-1"></i>Clear</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button> -->
                     </div>
@@ -7467,7 +7790,7 @@
                 </div>
                 <div class="modal-footer border-0 p-1">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -8066,7 +8389,7 @@
                 </div>
                 <!-- <div class="modal-footer border-0">
                     <div class="hstack gap-2 justify-content-end">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success"><i class="ri-printer-line align-bottom me-1"></i> Save</button>
                     </div>
                 </div> -->

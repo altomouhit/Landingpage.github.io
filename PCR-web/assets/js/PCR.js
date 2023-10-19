@@ -24,7 +24,7 @@ window.onload = function() {
 	//Patient & Incident Info > Patient Management > Management> Splinting
 	$("#rigidDoneByDiv, #tractionDoneByDiv, #splintingDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> Electrical Intervention (Cardiac)
-	$("#AEDUsedDiv, #AEDUsedDoneByDiv,#DefibrillationDiv, #DefibrillationDoneByDiv, #CardiversionDiv, #CardiversionDoneByDiv, #TCPDiv, #TCPDoneByDiv, #defibrillationDiv, #ECGDoneByDiv").hide();
+	$("#AEDUsedDiv, #AEDUsedDoneByDiv,#DefibrillationDiv, #DefibrillationDoneByDiv, #CardiversionDiv, #CardiversionDoneByDiv, #TCPDiv, #TCPDoneByDiv, #defibrillationDiv, #ECGDoneByDiv, #cardiversionTableDiv , #TCPTableDiv").hide();
 	//Patient & Incident Info > Patient Management > Management> Others
 	$("#BandageDoneByDiv, #coldPackDoneByDiv, #AssistDeliveryDoneByDiv, #WarmingDoneByDiv, #CoolingDoneByDiv, #BleedingDoneByDiv,"+
 	"#IrrigationDoneByDiv, #SuctionDoneByDiv, #NGTDoneByDiv, #BurnCareDoneByDiv").hide();
@@ -44,6 +44,8 @@ window.onload = function() {
 	$(".factorsAffectingEMSDiv, #governmentHospitalRefusedDiv, #privateHospitalRefusedDiv").hide();
 	//Patient & Incident Info > Additional Resources On Scene
 	$("#royalOmanPoliceDiv, #militaryGovernmentDiv, #privateSectorDiv").hide();
+	//Patient Assessment & Management > Resuscitation Management > Treatment > Intervention > Electrical Intervention
+	$("#electIntOtherDiv, #RHYTHMDiv").hide();
 	//$('.selector').editableSelect();
 	$('.selector').editableSelect({
 		// enable filter
@@ -450,16 +452,20 @@ $("#defibrillation").on('change', function() {
 		$("#DefibrillationDiv, #DefibrillationDoneByDiv").hide();
 	}
 	if (Value.indexOf("3") > -1) {
-		$("#CardiversionDiv, #CardiversionDoneByDiv").show();
+		$("#CardiversionDiv, #CardiversionDoneByDiv, #cardiversionTableDiv").show();
+		$('.nav-tabs-custom a[href="#cardiVersion_Tab"]').tab('show');
 	}
 	if (!(Value.indexOf("3") > -1)) {
-		$("#CardiversionDiv, #CardiversionDoneByDiv").hide();
+		$("#CardiversionDiv, #CardiversionDoneByDiv, #cardiversionTableDiv").hide();
+		$('.nav-tabs-custom a[href="#IVIOIMTab"]').tab('show');
 	}
 	if (Value.indexOf("4") > -1) {
-		$("#TCPDiv, #TCPDoneByDiv").show();
+		$("#TCPDiv, #TCPDoneByDiv, #TCPTableDiv").show();
+		$('.nav-tabs-custom a[href="#TCPTab"]').tab('show');
 	}
 	if (!(Value.indexOf("4") > -1)) {
-		$("#TCPDiv, #TCPDoneByDiv").hide();
+		$("#TCPDiv, #TCPDoneByDiv, #TCPTableDiv").hide();
+		$('.nav-tabs-custom a[href="#IVIOIMTab"]').tab('show');
 	}
 	if (Value.indexOf("5") > -1) {
 		$("#defibrillationDiv").show();
@@ -843,6 +849,22 @@ $("#additionalResources").on('change', function() {
 	}
 	if (!(Value.indexOf("3") > -1)) {
 		$("#privateSectorDiv").hide();
+	}
+});
+//Patient Assessment & Management > Resuscitation Management > Treatment > Intervention > Electrical Intervention
+$("#ECG_txt").on('change', function() {
+	if (this.value == 1 || this.value == 2) {
+		$("#RHYTHMDiv").show();
+	} else {
+		$("#RHYTHMDiv").hide();
+	}
+});
+//Patient Assessment & Management > Resuscitation Management > Treatment > Intervention > Electrical Intervention
+$("#electricalIntervention").on('change', function() {
+	if (this.value == 4) {
+		$("#RHYTHMDiv").show();
+	} else {
+		$("#RHYTHMDiv").hide();
 	}
 });
 $("#resuscitationRequiredBtn").click(function() {
