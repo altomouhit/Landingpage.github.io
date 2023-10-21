@@ -3,7 +3,7 @@ window.onload = function() {
 	$("#locationTypeDiv, #governmentHospitalDiv, #privateHospitalDiv").hide();
 	$("#mAirwayCommentDiv, #IVIODiv, #mOthersDiv, #timeDiv").hide();
 	$(".PDOADiv, #refused").hide();
-	$("#resuscitationDiv, #painDiv").hide();
+	$("#resuscitationDiv, #painDiv, #noPainDesc").hide();
 	//Oxygen / LPM
 	$("#oxygenLPMDiv, #oxygenLPMDoneByDiv, #nasalDiv, #SFMDiv, #SFMLPMDoneByDiv, #NRMDiv, #NRMLPMDoneByDiv, #BVMDiv, #BVMLPMDoneByDiv").hide();
 	//Airway, Breathing, 
@@ -599,8 +599,12 @@ $("#resuscitation").on('change', function() {
 $("#presentIllness").on('change', function() {
 	if (this.value == 1) {
 		$("#painDiv").show();
+		$("#noPainDesc").hide();
+	} else if (this.value == 2) {
+		$("#noPainDesc").show();
 	} else {
 		$("#painDiv").hide();
+		$("#noPainDesc").hide();
 	}
 });
 //Patient & Incident Info > Resuscitation Management > Indication Procedures > Tube Type
