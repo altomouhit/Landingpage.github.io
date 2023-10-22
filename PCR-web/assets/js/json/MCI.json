@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "DPTN": "2545",
+      "Dgender": "Male",
+      "Dgender_val": "1",
+      "DageID": "25",
+      "DcardColor": "Red",
+      "DcardColor_val": "1",
+      "DmodeTrans": "Ground",
+      "DmodeTrans_val": "1",
+      "DtimeTrans": "12:30",
+      "Dambulance": "Muscat",
+      "DreceHealthFacility": "Seeb",
+      "DblackHandedOver": "Al-Amirat, AL-Athaiba, Al-Khudh2"
+    }
+  ]
+}

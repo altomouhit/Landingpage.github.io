@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>MCI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -23,10 +23,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/dashboard.css" />
+
+    <!-- multiselect Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
-
 </head>
 
 <body class="bodybg">
@@ -115,13 +117,14 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search ..."
                                                 aria-label="Recipient's username">
-                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-
+                        
                         <div class="dropdown ms-1 topbar-head-dropdown header-item d-none">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -203,15 +206,12 @@
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
                                                             <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author
-                                                                Graphic
-                                                                Optimization <span class="text-secondary">reward</span>
-                                                                is
-                                                                ready!
+                                                                Graphic Optimization <span class="text-secondary">reward</span>
+                                                                is ready!
                                                             </h6>
                                                         </a>
                                                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec
-                                                                ago</span>
+                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -228,9 +228,8 @@
                                                     </div>
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
-                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b
-                                                                    class="text-success">20</b> new messages in the
-                                                                conversation
+                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received 
+                                                                <b class="text-success">20</b> new messages in the conversation
                                                             </h6>
                                                         </a>
                                                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
@@ -241,10 +240,8 @@
                                             </div>
 
                                             <div class="my-3 text-center view-all">
-                                                <button type="button"
-                                                    class="btn btn-soft-success waves-effect waves-light">View
-                                                    All Notifications <i
-                                                        class="ri-arrow-right-line align-middle"></i></button>
+                                                <button type="button" class="btn btn-soft-success waves-effect waves-light">View All Notifications 
+                                                    <i class="ri-arrow-right-line align-middle"></i></button>
                                             </div>
                                         </div>
 
@@ -322,8 +319,8 @@
                         </li>
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
-                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents </span>
+                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarDashboards">
+                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents</span>
                             </a>
                         </li>
                         <!-- end Show PCR / Incidents Menu -->
@@ -354,13 +351,12 @@
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
-                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-governorate">Governorate</a></li>
+                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
                                     <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
                                     <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <!-- end Master Data Menu -->
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -382,137 +378,274 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Dashboard</h4>
+                                <h4 class="mb-sm-0">Mass Casualty Incident</h4>
 
-                                <!-- <div class="page-title-right">
+                                <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item">
                                             <a href="dashboard.html">
                                                 <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
                                         </li>
-                                        <li class="breadcrumb-item active">Statistics</li>
+                                        <li class="breadcrumb-item active">Mass Casualty Incident</li>
                                     </ol>
-                                </div> -->
+                                </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-                    <div class="row project-wrapper1">
-                        <div class="col-md-12 col-xxl-9 mx-auto ms-auto">
-                            <!-- <div class="row mt-2 justify-content-center">
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="PCR.html">
-                                        <div class="card gradient-blueCard  card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape gradient-violet border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/create.svg" class="imgS" alt="create" />
-                                                </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Create New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                    <!-- start page title -->
+                    <div class="row contest_input_block">
+                        <div class="col-12">
+                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                <div class="input-group input-group-navbar">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button" style="min-width: auto">
+                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" id="MCISearch" class="form-control" placeholder="Search..." aria-label="Search">
                                 </div>
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="sync-records.html">
-                                        <div class="card gradient-green card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape bg-gradient-success border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/Sync.svg" class="imgS" alt="create" />
-                                                </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Sync Records</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCAD"
+                                aria-controls="offcanvasCAD">
+                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
 
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="javascript:void(0);">
-                                        <div class="card gradient-yellow card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape bg-gradient-warning border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/report-icon.svg" class="imgS" alt="create" />
+                    <div class="offcanvas offcanvas-end" tabindex="-1" data-bs-backdrop="static" tabindex="-1" id="offcanvasCAD"
+                        aria-labelledby="offcanvasCADLabel">
+                        <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
+                            <!-- <h5 class="m-0 me-2 text-white">Theme Customizer</h5> -->
+                            <button type="button" class="btn-close btn-close-white ms-auto" id="MCICancelid" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-0">
+                            <div data-simplebar class="h-100">
+                                <div class="p-4">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="PTN" placeholder="Patient Triage Tag Number" autofocus>
+                                                    <label for="PTN">Patient Triage Tag Number</label>
                                                 </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Reports</p>
-                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="form-group form-group-select col-md-6">
-                                    <label class="form-label mb-0 w-84 LabelselectIdentity Lableselect" for="PanNumber"> <span class="change">change</span>
-                                        <select id="selectIdentity" name="selectIdentity" data-native-menu="false" class="form-control border-0 bg-transparent valid" aria-invalid="false">
-                                            <option value="TaxId">PAN No.</option>
-                                            <option value="VoterId">Voter ID No.</option>
-                                            <option value="PassportId"> Passport No.</option>
-                                            <option value="RationCardId">Ration Card No.</option>
-                                            <option value="DriversLicenseId">Driving License No.</option>
-                                        </select>
-                                    </label>
-                                    <input type="text" class="form-control text-uppercase valid" id="PanNumber" name="PanNumber" placeholder="Enter Identity" autocomplete="off" aria-required="true" aria-invalid="false">
-                                </div>
-                            </div> -->
-                             <!-- /.row -->
-
-                            <div class="row justify-content-center text-center">
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="Doctor_Requests.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Narcotic.svg" alt="1" class="dashboard-img img-fluid img-thumbnail">
-                                        </span>
-                                        <h5 class="my-3 text-info-emphasis fw-bold">Show My Requests</h5>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="PCR.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/PCR_CreateNew.svg" alt="1" class="dashboard-img img-fluid img-thumbnail">
-                                        </span>
-                                        <h5 class="my-3 text-danger-emphasis fw-bold">Create New</h5>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="sync-records.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Sync.svg" alt="2" class="dashboard-img img-fluid img-thumbnail">
-                                        </span>
-                                        <h5 class="my-3 text-success-emphasis fw-bold">Sync Records</h5>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="CAD_PCR-original.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Reports.svg" alt="3" class="dashboard-img img-fluid img-thumbnail">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="gender" aria-label="Floating label">
+                                                        <option value="">Please select</option>
+                                                        <option value="1">Male</option>
+                                                        <option value="2">Female</option>
+                                                    </select>
+                                                    <label for="gender">Gender</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
+                                            </div>
                                         </div>
-                                        <h5 class="my-3 text-warning-emphasis fw-bold">Reports</h5>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="lookUP.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Master.svg" alt="4" class="dashboard-img img-fluid img-thumbnail">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="ageID" placeholder="Age">
+                                                    <label for="ageID">Age</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-family-dress fa-lg"></i></span>
+                                            </div>
                                         </div>
-                                        <h5 class="my-3 text-primary-emphasis fw-bold">Master</h5>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="MCI.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Sync.svg" alt="4" class="dashboard-img img-fluid img-thumbnail">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="cardColor" aria-label="Floating label">
+                                                        <option value="">Please select</option>
+                                                        <option value="1">Red</option>
+                                                        <option value="2">Yellow</option>
+                                                        <option value="3">Green</option>
+                                                        <option value="4">Blue</option>
+                                                    </select>
+                                                    <label for="cardColor">Category (Card Color)</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-fill-drip fa-lg"></i></span>
+                                            </div>
                                         </div>
-                                        <h5 class="my-3 text-info-emphasis fw-bold">MCI</h5>
-                                    </a>
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="modeTrans" aria-label="Floating label">
+                                                        <option value="">Please select</option>
+                                                        <option value="1">Ground Transport</option>
+                                                        <option value="2">Air Transport</option>
+                                                        <option value="3">Sea Transport</option>
+                                                    </select>
+                                                    <label for="modeTrans">Mode of Transport</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="timeTrans" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS" />
+                                                    <label for="timeTrans">Time of Transport</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-truck-clock fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="ambulance" placeholder="" />
+                                                    <label for="ambulance">Ambulance Plate</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-truck-medical fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="" id="receHealthFacility" />
+                                                    <label for="receHealthFacility">Receiving Health Facility</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-folder-medical fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="" id="blackHandedOver" />
+                                                    <label for="blackHandedOver">Black Handed Over</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> <!-- /.row -->
                                 </div>
                             </div>
-                        </div> <!-- /.col -->
-                    </div> <!-- /.row -->
+                        </div>
+                        <div class="offcanvas-footer border-top p-3 text-center">
+                            <div class="row">
+                                <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                    <button type="reset" class="btn btn-text ms-0" id="MCICancelidBtn" style="width: auto; color: #868700">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="MCIDetailFn()" id="MCIDetailBtn">
+                                        <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /.row  -->
+                        </div>
+                    </div>
 
+                    <div class="row project-wrapper mt-4">
+                        
+                        <div class="col-xxl-12">
+                            <div class="card ribbon-box border shadow-none radius-25 mb-3">
+                                <div class="card-body">
+                                    <span class="ribbon-three ribbon-three-primary"><span>Incident Data</span></span>
+    
+                                    <div class="row g-3 mt-4">
+                                        <div class="col-lg">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="incidentNo" placeholder="Incident No" autofocus>
+                                                    <label for="incidentNo">Incident No</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="incidentType" aria-label="Floating label">
+                                                        <option value="">Please select</option>
+                                                        <option value="1">Truma</option>
+                                                        <option value="2">Medical</option>
+                                                    </select>
+                                                    <label for="incidentType">Incident Type</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-user-headset fa-lg"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="incidentDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                    <label for="incidentDate">Incident Date</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="incidentLocationtxt" placeholder="Incident Location" />
+                                                    <label for="incidentLocationtxt">Incident Location</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-map fa-lg"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg">
+                                            <div class="input-group">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="incidentTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
+                                                    <label for="incidentTime">Incident Time</label>
+                                                </div>
+                                                <span class="input-group-text"><i class="fa-light fa-calendar-clock fa-lg"></i></span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> <!-- /.row -->
+    
+                                </div>
+                            </div>
+                        </div>
+                       <!-- /.col-xxl-12 -->
+
+                        <div class="col-xxl-12">
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="table-responsive data_table">
+                                        <table class="table table-bordered table-striped w-100" id="MCITable">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Patient Triage Tag Number</th>      <!-- 0 -->
+                                                    <th>Gender</th>                         <!-- 1 -->
+                                                    <th></th>                               <!-- 2 -->
+                                                    <th>Age</th>                            <!-- 3 -->
+                                                    <th>Category (Card Color)</th>          <!-- 4 -->
+                                                    <th></th>                               <!-- 5 -->
+                                                    <th>Mode of Transport</th>              <!-- 6 -->
+                                                    <th></th>                               <!-- 7 -->
+                                                    <th>Time of Transport</th>              <!-- 8 -->
+                                                    <th>Ambulance Plate</th>                <!-- 9 -->
+                                                    <th>Receiving Health Facility</th>      <!-- 10 -->
+                                                    <th>Black Handed Over</th>              <!-- 11 -->
+                                                    <th class="w-10">Action</th>            <!-- 12 -->
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row  -->
+                        </div>
+                        <!-- end col -->
+
+                    </div>
+                    <!-- end row -->
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -522,7 +655,8 @@
                 <!-- <div class="container-fluid position-absolute footer-img">
                     <div class="row align-items-end">
                         <div class="col">
-                            <img src="assets/img/footer/pacda.jpg" class="img-fluid" alt="ambulance" />
+                            <img src="assets/img/ambulance.svg" class="img-fluid" alt="ambulance"
+                                style="width: 249px;" />
                         </div>
                         <div class="col d-flex justify-content-center">
                             <img src="assets/img/peoples.svg" class="img-fluid" alt="peoples" style="width: 189px;" />
@@ -562,12 +696,6 @@
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
-
-    <!-- <div class="customizer-setting d-none d-md-block">
-        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
-        </div>
-    </div> -->
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
@@ -1105,20 +1233,20 @@
                 <div class="modal-footer border-0 justify-content-center pt-5">
                     <button type="button" class="btn justify-content-center d-block btn-outline-dark"
                         data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center"
-                            style="min-width:100px">Yes</button></a>
+                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
                 </div>
             </div>
         </div>
     </div>
-
+   
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
     <!-- loader -->
     <script type="text/javascript" src="assets/js/loader.js"></script>
-    
+
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
     <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
     <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
@@ -1128,6 +1256,7 @@
 
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/MCI.js"></script>
 </body>
 
 </html>
