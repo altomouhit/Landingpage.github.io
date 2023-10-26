@@ -393,10 +393,10 @@
                                                     </div>
                                                     <input type="text" id="MCISearch" class="form-control" placeholder="Search..." aria-label="Search">
                                                 </div>
-                                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCAD"
+                                                <!-- <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCAD"
                                                 aria-controls="offcanvasCAD">
                                                     <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
-                                                </a>
+                                                </a> -->
                                             </div>
                                         </div>
                                     </div>
@@ -420,120 +420,12 @@
                         <div class="offcanvas-body p-0">
                             <div data-simplebar class="h-100">
                                 <div class="p-4">
-                                    <div class="row g-3">
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="number" class="form-control" id="PTN" placeholder="Patient Triage Tag Number" autofocus>
-                                                    <label for="PTN">Patient Triage Tag Number</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="gender" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Male</option>
-                                                        <option value="2">Female</option>
-                                                    </select>
-                                                    <label for="gender">Gender</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="ageID" placeholder="Age">
-                                                    <label for="ageID">Age</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-family-dress fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="cardColor" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Red</option>
-                                                        <option value="2">Yellow</option>
-                                                        <option value="3">Green</option>
-                                                        <option value="4">Blue</option>
-                                                    </select>
-                                                    <label for="cardColor">Category (Card Color)</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-fill-drip fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="modeTrans" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Ground Transport</option>
-                                                        <option value="2">Air Transport</option>
-                                                        <option value="3">Sea Transport</option>
-                                                    </select>
-                                                    <label for="modeTrans">Mode of Transport</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="timeTrans" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS" />
-                                                    <label for="timeTrans">Time of Transport</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-truck-clock fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="ambulance" placeholder="" />
-                                                    <label for="ambulance">Ambulance Plate</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-truck-medical fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="" id="receHealthFacility" />
-                                                    <label for="receHealthFacility">Receiving Health Facility</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-folder-medical fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" placeholder="" id="blackHandedOver" />
-                                                    <label for="blackHandedOver">Black Handed Over</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div> <!-- /.row -->
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="offcanvas-footer border-top p-3 text-center">
-                            <div class="row">
-                                <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                                    <button type="reset" class="btn btn-text ms-0" id="MCICancelidBtn" style="width: auto; color: #868700">
-                                        Cancel
-                                    </button>
-                                    <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="MCIDetailFn()" id="MCIDetailBtn">
-                                        <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- /.row  -->
+                            
                         </div>
                     </div>
 
@@ -544,7 +436,7 @@
                                 <div class="card-body">
                                     <span class="ribbon-three ribbon-three-primary"><span>Incident Data</span></span>
     
-                                    <div class="row g-3 mt-4">
+                                    <div class="row g-3 my-4">
                                         <div class="col-lg">
                                             <div class="input-group">
                                                 <div class="form-floating">
@@ -600,7 +492,116 @@
                                         </div>
                                         
                                     </div> <!-- /.row -->
-    
+
+                                    <fieldset class="fieldset">
+                                        <div class="row g-3 mt-1 mb-3">
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="PTN" placeholder="Patient Triage Tag Number" autofocus>
+                                                        <label for="PTN">Patient Triage Tag Number</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="gender" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Male</option>
+                                                            <option value="2">Female</option>
+                                                        </select>
+                                                        <label for="gender">Gender</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="ageID" placeholder="Age">
+                                                        <label for="ageID">Age</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-family-dress fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="cardColor" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Red</option>
+                                                            <option value="2">Yellow</option>
+                                                            <option value="3">Green</option>
+                                                            <option value="4">Blue</option>
+                                                        </select>
+                                                        <label for="cardColor">Category (Card Color)</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-fill-drip fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="modeTrans" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Ground Transport</option>
+                                                            <option value="2">Air Transport</option>
+                                                            <option value="3">Sea Transport</option>
+                                                        </select>
+                                                        <label for="modeTrans">Mode of Transport</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="timeTrans" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS" />
+                                                        <label for="timeTrans">Time of Transport</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-truck-clock fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="ambulance" placeholder="" />
+                                                        <label for="ambulance">Ambulance Plate</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-truck-medical fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" placeholder="" id="receHealthFacility" />
+                                                        <label for="receHealthFacility">Receiving Health Facility</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-folder-medical fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" placeholder="" id="blackHandedOver" />
+                                                        <label for="blackHandedOver">Black Handed Over</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 d-flex align-items-center justify-content-end btn-bottom">
+                                                <button type="reset" class="btn btn-text ms-0" id="MCICancelidBtn" style="width: auto; color: #868700">
+                                                    Cancel
+                                                </button>
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="MCIDetailFn()" id="MCIDetailBtn">
+                                                    <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
+                                                </button>
+                                            </div>
+                                        </div> <!-- /.row -->
+                                    </fieldset>
+
                                 </div>
                             </div>
                         </div>

@@ -32,7 +32,7 @@ function MCIDetailFn() {
     MCI.Dgender_val             = gender_val;
 
     MCI.DageID                  = ageID;
-    
+
     MCI.DcardColor              = cardColor ;
     MCI.DcardColor_val          = cardColor_val;
 
@@ -62,7 +62,7 @@ function MCIDetailFn() {
 //edit MCIDetailFn details
 function MCIEditFunction(data1) {
     //$(".smart-Wizard-CAD").show();
-    $('#offcanvasCAD').offcanvas('show');
+    //$('#offcanvasCAD').offcanvas('show');
     var data = data1.data();
     $("#MCIDetailBtn").html("<i class='fal fa-check'></i>&nbsp; Update");
     $("#PTN").val(data.DPTN);
@@ -78,7 +78,7 @@ function MCIEditFunction(data1) {
 //View MCIDetailFn details
 function MCIViewFunction(data1) {
     //$(".smart-Wizard-CAD").show();
-    $('#offcanvasCAD').offcanvas('show');
+    //$('#offcanvasCAD').offcanvas('show');
     var data = data1.data();
     $("#MCIDetailBtn").html("<i class='far fa-eye'></i>&nbsp; View");
     $("#PTN").val(data.DPTN);
