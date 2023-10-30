@@ -1,0 +1,25 @@
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 93%;
+  }
+}

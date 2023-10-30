@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description content="MOI">
+    <meta name=author content="MOI">
+    <title>MAFWR</title>
+    <link rel=icon href="https://altomouhit.github.io/moi.github.io/MAFWR/img/favicon.ico" type=image/png />
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,800&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap);
+
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        footer,
+        header {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            position: relative;
+        }
+
+        body {
+            font: normal 13px/16px;
+            padding: 0;
+            margin: 0;
+            font-family: "Nunito Sans", sans-serif;
+            /* background-color: rgb(236, 231, 227); */
+            background-image: url(https://altomouhit.github.io/moi.github.io/MAFWR/img/color_pattern-01.png);
+        }
+
+        #wrapper {
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        .header {
+            margin: 0px;
+            background-image: linear-gradient(to left, rgba(139, 60, 143, 0.90) 62%, rgba(29, 81, 138, 0.90) 70%, rgba(114, 202, 188, 0.90) 98%);
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .logo {
+            /* width: 13%; */
+            margin: 10px 10px;
+        }
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px 0px;
+            line-height: 3.5rem;
+            font-family: 'Courgette', cursive;
+            display: inline-block;
+            z-index: 2;
+
+            text-shadow: 2px 2px #d3d3d3;
+        }
+
+        .heading {
+            width: 100%;
+            margin: 10px 5px;
+        }
+
+        .blue-head {
+            color: rgb(85, 26, 139);
+        }
+
+        .container {
+            width: 94%;
+            margin: 3% auto;
+            overflow: hidden;
+        }
+
+        .container p {
+            line-height: 28px;
+        }
+
+        .left-column {
+            width: 90%;
+            margin: auto;
+        }
+
+        .right-column-desktop {
+            width: 30%;
+            float: right;
+        }
+
+        /* .left-column {
+            float: left;
+        } */
+
+        .time-img {
+            width: 100%;
+            text-align: center;
+        }
+
+        .time-img img {
+            width: 50%;
+        }
+
+
+        .clearfix {
+            clear: both;
+        }
+
+        .yellow-bg {
+            /* background: rgb(215 86 61); */
+            background-color: #566F7A;
+            margin: 50px 0px 50px 0px;
+            padding: 10px;
+            color: #fff;
+            border-radius: 0.5rem;
+        }
+
+        .yellow-bg a {
+            color: #fff;
+        }
+
+        .txt-highlight {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .bolded-txt {
+            font-weight: bold;
+        }
+
+        .bolded-blue {
+            color: #008ae6;
+            font-weight: bold;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            /* margin: 20px 0px; */
+            position: fixed;
+            bottom: 0;
+            background-image: linear-gradient(to left, rgba(139, 60, 143, 0.90) 62%, rgba(29, 81, 138, 0.90) 70%, rgba(114, 202, 188, 0.90) 98%);
+        }
+
+        .copy {
+            padding: 0.925rem 1.25rem;
+            color: #ffffff;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .arabic-font {
+            direction: rtl;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .fs-23 {
+            font-size: 23px;
+        }
+        @media only screen and (max-width: 767px) {
+            body {
+                text-align: center;
+            }
+
+            .right-column-mobile {
+                float: left;
+                width: 100%;
+            }
+
+            .logo {
+                width: 100%;
+            }
+
+            .heading {
+                margin: 10px auto;
+            }
+
+            .right-column-desktop {
+                display: none;
+            }
+
+            .left-column {
+                width: 100%;
+            }
+
+            .time-img img {
+                width: 10%;
+            }
+        }
+
+        @media only screen and (min-width: 767px) {
+            .right-column-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="https://wsp.mafwr.gov.om/WS/img/MOAF-white.png" alt="Logo" style="width: 20rem;" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-column">
+                <div class="content">
+                    <h1>“Dear Applicant (s), Water Permits are moved to MAFWR
+                        website, Please go to
+                        <a href="https://wsp.mafwr.gov.om" class="blue-head">https://wsp.mafwr.gov.om</a> website to
+                        apply for the Water Permits.”
+                    </h1>
+
+                    <h1 class="arabic-font float-right fs-23">
+                        ”عزيزي المستفيد تم نقل نظام التراخيص المائية على الرابط التالي :
+                        <a href="https://wsp.mafwr.gov.om" class="blue-head">https://wsp.mafwr.gov.om</a>“
+                    </h1>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="footer">
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="copy">
+                    <script>document.write(new Date().getFullYear())</script> Copyright &copy; Ministry of Agriculture,
+                    Fisheries & Water Resources
+                </p>
+                <p class="copy arabic-font">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> © حقوق النشر
+                    وزارة الثروة الزراعية و السمكية وموارد المياه - كل الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

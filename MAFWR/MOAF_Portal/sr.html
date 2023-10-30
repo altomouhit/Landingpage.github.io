@@ -10,10 +10,12 @@
 
     <link rel=icon href="img/favicon.ico" type=image/png>
     <!-- fontawesome -->
-    <link rel="stylesheet" href="css/fontawesome.5.15.4/fontawesome.5.15.4.css" />
+    <link rel="stylesheet" href="css/fontawesome-6.3.0/fontawesome.6.3.0.css" />
     <link rel="stylesheet" href="css/moaf-webapp.css" id=stylesheet />
     <link rel="stylesheet" href="css/moaf.css" />
     <link rel="stylesheet" href="css/scrollToTop.css" />
+    <link rel="stylesheet" href="css/serviceRequest.css" />
+    <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.css">
 </head>
 
 <body>
@@ -74,21 +76,16 @@
     </header>
 
     <div class="container bg-white shadow-lg p-0 mt-6">
+
         <!--Main content-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="card border-0 mb-0">
                     <div class="panel-head-services d-flex align-items-center justify-content-between">
                         <div class="card-title mb-0 d-flex align-items-center">
-                            <img src="img/Services/SR.svg">&nbsp; Service Request</div>
+                            <img src="img/Services/SR.svg">&nbsp; Service Request - <span>&nbsp;WS2023103001</span></div>
                         <div>
                             <ul class="d-flex mb-0" style="list-style: none;">
-                                <!-- <li>
-                                    <a href="#" class="helprint"> <i class="fal fa-question-circle" aria-hidden="true"></i>&nbsp;Help </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="helprint"> <i class="fal fa-print" aria-hidden="true"></i> &nbsp;Print </a>
-                                </li> -->
                                 <li>
                                     <a href="index.html" class="helprint"> <i class="fal fa-chevron-left" aria-hidden="true"></i>&nbsp; Back </a>
                                 </li>
@@ -99,522 +96,351 @@
             </div>
         </div>
         <!--End Main content-->
-
+    
         <!-- eSevices -->
         <section class="slice pt-0 pb-3">
-            <div class="container position-relative zindex-100">
-                <form action="" class="pt-4" id="checkout-form" name="checkout-form" novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-9 pd-rt-non">
-                            <fieldset>
-                                <legend>Citizen Details</legend>
-                                <div class="row">
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label class="required">Civil ID</label>
-                                        <div class="input-group">
-                                            <input type="search" id="civilId" name="" placeholder="Civil ID No" autocomplete="off" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-info" type="button" id="civilIdSearchbtnId">
-                                                    <i class="fal fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
+            <form action="" class="pt-4" modelAttribute="cmsobject" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-sm-6 col-md-9 pd-rt-non">
+                        <fieldset class="mb-3">
+                            <legend> Applicant Details</legend>
+                            <div class="row">
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="civilId" class="required">Applicant ID</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fal fa-id-card fa-fw fa-lg" aria-hidden="true"></i></span>
                                         </div>
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="cname" class="label">Name</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-user fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input name="" placeholder="Name" type="text" id="cname" class="form-control" />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="email" class="label">eMail</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-envelope fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input name="" placeholder="E-mail" type="email" id="email" autocomplete="off" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="phone" class="label">Mobile Number</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-mobile fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input type="tel" class="form-control" name="" placeholder="Mobile Number" id="phone" autocomplete="on">
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="resTypeId" class="label">Resident Type</label>
-                                        <select name="" id="resTypeId" class="form-control" required>
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="83">Omani</option>			
-                                            <option value="531">Expatriate</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-                            </fieldset>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <fieldset class="mb-2">
-                                <legend>Status</legend>
-
-                                <div class="row">
-                                    <div class="form-group col-md-12">
-                                        <label>Language</label>
-                                        <div class="d-flex align-items-center">
-                                            <div class="form-check form-check-inline">
-                                                <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="76" id="language-76">
-                                                <label class="form-check-label" for="inlineRadio1">English</label>
-                                            </div>
-
-                                            <div class="form-check form-check-inline">
-                                                <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="77" checked="checked" id="language-77">
-                                                <label class="form-check-label" for="inlineRadio1">Arabic</label>
-                                            </div>
-
+                                        <input type="search" id="civilId" name="" placeholder='Applicant ID' autocomplete="off" class="form-control" required />
+                                        <div class="invalid-feedback civilId">
+                                            Please enter Applicant ID
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.row -->
-
-                                <div class="row" style="margin-bottom: 4rem;">
-                                    <div class="form-group col-md-12 pr-0">
-                                        <label>Communication Channel</label>
-                                        <div class="d-flex align-items-center">
-                                            <div class="form-check form-check-inline">
-                                                <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="78" id="communication-78">
-                                                <label class="form-check-label" for="inlineRadio1">Email</label>
-                                            </div>
-
-                                            <div class="form-check form-check-inline">
-                                                <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="79" id="communication-79">
-                                                <label class="form-check-label" for="inlineRadio1">SMS</label>
-                                            </div>
-
-                                            <div class="form-check form-check-inline text-nowrap">
-                                                <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="80" checked="checked" id="communication-80">
-                                                <label class="form-check-label" for="inlineRadio1">Email &amp; SMS</label>
-                                            </div>
-
+    
+                                <input type="hidden" id="formlang" value="${lang}" /> 
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="expDate" class="required"> ID Expiry Date</label>
+                                    <div class="date input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fal fa-calendar-alt fa-fw fa-lg" aria-hidden="true"></i></span>
+                                        </div>
+                                        <input class="form-control" id="expDate"
+                                            name="expDate" placeholder="dd/MM/yyyy" type="text"
+                                            readonly="readonly" required />
+                                        <span class="input-group-addon" style="display: none;">
+                                            <i class="glyphicon glyphicon-calendar fal fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                        <div class="invalid-feedback expDate">
+                                            Please enter ID Expiry Date
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.row -->
-                            </fieldset>
-                        </div>
+    
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="cname" class="label required">Applicant Name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fal fa-user fa-fw fa-lg" aria-hidden="true"></i></span>
+                                        </div>
+                                        <input name="" placeholder='Applicant Name' type="text" id="cname" class="form-control" required />
+                                        <div class="invalid-feedback cname">
+                                            Please enter Applicant Name
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="email" class="label required">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fal fa-envelope fa-fw fa-lg" aria-hidden="true"></i></span>
+                                        </div>
+                                        <input name="" placeholder='Email' type="email" id="email" autocomplete="off" class="form-control" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+                                        <div class="invalid-feedback email">
+                                            Please enter Email
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="phone" class="label required">Mobile Number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fal fa-mobile fa-fw fa-lg" aria-hidden="true"></i></span>
+                                        </div>
+                                        <input type="tel" class="form-control required_step1 numeric" name="" placeholder='Mobile Number' id="phone" autocomplete="on" maxlength="8" required />
+                                        <div class="invalid-feedback phone">
+                                            Please enter Mobile Number
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </fieldset>
                     </div>
-                    <!-- /.row -->
+    
+                    <div class="col-sm-6 col-md-3">
+                        <fieldset class="mb-2">
+                            <legend>Status</legend>
 
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <fieldset class="col11">
-                                <legend>Request / Service Details </legend>
-                                <diV class="row">
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="requestNo" class="label">Service Request No</label>
-                                        <div class="input-group">
-                                            <input type="search" id="requestNo" name="" placeholder="Service Request No" autocomplete="off" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-info" type="button" id="requestNumberSearchbtnId">
-                                                    <i class="fal fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label>Language</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check form-check-inline">
+                                            <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="76" id="language-76">
+                                            <label class="form-check-label" for="inlineRadio1">English</label>
                                         </div>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="caseTypeId" class="label">Service Category</label>
-                                        <select name="" id="caseTypeId" class="form-control" onchange="subCategorylist()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="520">Technical Service</option>
-                                            <option value="522">Water Service</option>
-                                            <option value="586">HealthService</option>
-                                            <option value="9989">General Services</option>
-                                            <option value="520">Technical Service</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="caseSubTypeId" class="label">Service Sub Category</label>
-                                        <select name="caseDetailsSaveDTO.caseSubTypeId" id="caseSubTypeId" class="form-control" onchange="classificationList()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="104">Application for Work Completion Certificate and Services Connection</option>
-                                        </select>
-                                    </div>
-                                </diV>
-                                <!-- /.row -->
 
-                                <div class="row">
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="classificationID" class="label">Classification</label>
-                                        <select name="" id="classificationID" class="form-control" onchange="callgroupName()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="9400">Data Update</option>
-                                            <option value="9401">Payment Issues</option>
-                                            <option value="9402">Sync Issues</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="serviceTypeId" class="label">Service Type</label>
-                                        <select name="" id="serviceTypeId" class="form-control">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="6290">Information</option>
-                                            <option value="6291">Enquiry</option>
-                                        </select>
-                                    </div>
+                                        <div class="form-check form-check-inline">
+                                            <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="77" checked="checked" id="language-77">
+                                            <label class="form-check-label" for="inlineRadio1">Arabic</label>
+                                        </div>
 
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="regionId" class="label">Governorate</label>
-                                        <select name="caseDetailsSaveDTO.regionId" id="regionId" class="form-control" onchange="getWillayatByRegion()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="1">MUSCAT GOVERNORATE</option>
-                                            <option value="2">DHOFAR GOVERNORATE</option>
-                                            <option value="3">MUSANDAM GOVERNORATE</option>
-                                            <option value="4">AL BURAIMI GOVERNORATE</option>
-                                            <option value="5">AL DAKHILIYAH GOVERNORATE</option>
-                                            <option value="6">NORTH AL BATINAH GOVERNORATE</option>
-                                            <option value="7">SOUTH AL BATINAH GOVERNORATE</option>
-                                            <option value="8">SOUTH AL SHARQIYA GOVERNORATE</option>
-                                            <option value="9">NORTH AL SHARQIYA GOVERNORATE</option>
-                                            <option value="11">AL WUSTA GOVERNORATE</option>
-                                            <option value="12">SOHAR GOVERNORATE</option>
-                                            <option value="1612">DHOFAR GOVERNORATE REG</option>
-                                            <option value="1613">MUSCAT GOVERNORATE REG</option>
-                                            <option value="8684">AL DAKHILIYAH GOVERNORATE</option>
-                                        </select>
                                     </div>
                                 </div>
-                                <!-- /.row -->
+                            </div>
+                            <!-- /.row -->
 
-                                <div class="row">
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="willayatId" class="label">Willayat</label>
-                                        <select name="caseDetailsSaveDTO.wilayatId" id="willayatId" class="form-control" onchange="getVillageByWillayat()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="301">خصب</option>
-                                            <option value="302">دبـــــا البـيـعـة</option>
-                                            <option value="303">بــخــــا</option>
-                                            <option value="304">مدحا</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="Village_Ser" class="label">Village</label>
-                                        <select name="caseDetailsSaveDTO.villageId" id="villageId" class="form-control" onchange="assignGroup()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="3010001">خصب</option>
-                                            <option value="3010002">بانه</option>
-                                            <option value="3010003">نظيفي</option>
-                                            <option value="3010005">غب علي</option>
-                                            <option value="3010006">البلد</option>
-                                            <option value="3010007">شم</option>
-                                            <option value="3010008">سل اعلى</option>
-                                            <option value="3010009">حلة القاضي</option>
-                                            <option value="3010010">الحاجر</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label class="form-label">Attachments</label>
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                            </div>
+                            <div class="row" style="margin-bottom: 4rem;">
+                                <div class="form-group col-md-12 pr-0">
+                                    <label>Communication Channel</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check form-check-inline">
+                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="78" id="communication-78">
+                                            <label class="form-check-label" for="inlineRadio1">Email</label>
                                         </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="79" id="communication-79">
+                                            <label class="form-check-label" for="inlineRadio1">SMS</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline text-nowrap">
+                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="80" checked="checked" id="communication-80">
+                                            <label class="form-check-label" for="inlineRadio1">Email &amp; SMS</label>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <!-- /.row -->
-
-                                <div class="row">
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label for="additionalInfo" class="label">Problem Description</label>
-                                        <textarea name="" id="additionalInfo" placeholder="Problem Description" rows="3" class="form-control"></textarea>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <div class="form-group">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-                            </fieldset>
-                        </div>
+                            </div>
+                            <!-- /.row -->
+                        </fieldset>
                     </div>
-                    <!-- /.row -->
+                </div> <!-- /.row -->
+    
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <fieldset class="mb-3">
+                            <legend> Request Details </legend>
+                            <diV class="row">
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="requestNo" class="label">Service Request No</label>
+                                    <div class="input-group">
+                                        <input type="search" id="requestNo" name="" placeholder='Service Request No' autocomplete="off" class="form-control" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-ws" type="button" id="requestNumberSearchbtnId">
+                                                <i class="fal fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="caseTypeId" class="label">Service Category</label>
+                                    <input type="text" class="form-control" value="Water Permits" id="caseTypeId" placeholder="Service Category" readonly />
+                                    <div class="invalid-feedback caseTypeId">
+                                        Please select Service Category
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <label for="caseSubTypeId" class="label">Service Sub Category</label>
+                                    <select path="" id="caseSubTypeId" class="custom-select select_required" required="required">
+                                        <option value=""> Please select </option>
+                                        <option value="1">Well Permits</option>
+                                        <option value="2">Registration of Well</option>
+                                        <option value="3">Water Data Requests</option>
+                                        <option value="4">Well Water Drilling Contractors Request</option>
+                                        <option value="5">Dam & Aflaj Requests</option>
+                                        <option value="6">Development Projects Request</option>
+                                    </select>
+                                    <div class="invalid-feedback caseSubTypeId">
+                                        Please select Service Sub Category
+                                    </div>
+                                </div>
+                            </diV>
+                            <!-- /.row -->
+    
+                            <div class="row">
+                                <div class="form-group col-sm-4 col-md-4">
+                                    <label for="region" class="label">Governorate </label>
+                                    <select id="regionId" class="custom-select select_required" required="required">
+                                        <option value=""> Please select </option>
+                                        <option value="03">MUSANDAM GOVERNORATE</option>
+                                        <option value="04">AL BURAIMI GOVERNORATE</option>
+                                        <option value="05">AL DAKHILIYAH GOVERNORATE</option>
+                                        <option value="06">NORTH AL BATINAH GOVERNORATE</option>
+                                        <option value="07">SOUTH AL BATINAH GOVERNORATE</option>
+                                        <option value="08">SOUTH AL SHARQIYA GOVERNORATE</option>
+                                        <option value="09">NORTH AL SHARQIYA GOVERNORATE</option>
+                                        <option value="10">AL DHAHIRAH GOVERNORATE</option>
+                                        <option value="11">AL WUSTA GOVERNORATE</option>
+                                    </select>
+                                    <div class="invalid-feedback regionId">
+                                        Please select Governorate
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-4 col-md-4">
+                                    <label for="willayatId" class="label">Willayat</label>
+                                    <select id="willayatId" class="custom-select select_required" required="required">
+                                        <option value=""> Please select </option>
+                                        <option value="0501">Nizwa</option>
+                                        <option value="0502">Bahla</option>
+                                        <option value="0503">Manah</option>
+                                        <option value="0504">Al-Hamra</option>
+                                        <option value="0505">Adam</option>
+                                        <option value="0506">Izki</option>
+                                        <option value="0507">Sumail</option>
+                                        <option value="0508">Bid Bid</option>
+                                    </select>
+                                    <div class="invalid-feedback willayatId">
+                                        Please select Willayat
+                                    </div>
+                                </div>
 
-                    <div class="row mt-3">
-                        <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                            <button type="reset" value="Reset Button" class="btn btn-text" data-toggle="modal" data-target="#Clear" id='clearButtonId' style="width:auto; margin-left:0; color:#868700">
-                                <i class="fal fa-paint-brush fa-fw" aria-hidden="true"></i>&nbsp;
-                                Clear
-                            </button>
-                            <button type="button" class="btn btn-ws btn-height pull-up" onclick="doAction()" id="form1Submit" style="min-width:135px">
-                                <i class="fal fa-copy fa-fw" aria-hidden="true"></i>&nbsp;
-                                Submit
-                            </button>
-                        </div>
+                                <div class="form-group col-sm-4 col-md-4">
+                                    <label for="munId" class="label">Municipality</label>
+                                    <select path="municiapality" id="munId" class="custom-select select_required" required="required">
+                                        <option value=""> Please select </option>
+                                        <option value="05011">Nizwa</option>
+                                    </select>
+                                    <div class="invalid-feedback munId">
+                                        Please select Municipality
+                                    </div>
+                                </div>
+    
+                                <div class="form-group col-sm-4 col-md-4">
+                                    <label for="villageId" class="label">Village</label>
+                                    <select path="village" id="villageId" class="custom-select select_required" required="required">
+                                        <option value=""> Please select </option>
+                                        <option value="05010001">Nizwa</option>
+                                        <option value="05010002">Qiyut</option>
+                                    </select>
+                                    <div class="invalid-feedback villageId">
+                                        Please select Village
+                                    </div>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row">
+                                <div class="form-group col-sm-12 col-md-12">
+                                    <label for="additionalInfo" class="label">Problem Description</label>
+                                    <textarea name="" id="additionalInfo" placeholder='Problem Description' rows="3" class="form-control required_step1" required="required" maxlength="400"></textarea>
+                                    <div class="invalid-feedback additionalInfo">
+                                        Please enter Problem Description
+                                    </div>
+                                </div>
+                            </div> <!-- /.row -->
+                        </fieldset>
                     </div>
-                    <!-- /.row -->
-                </form>
-
-                <form action="" class="pt-4" id="checkout-form" name="checkout-form" novalidate="novalidate" hidden>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 pd-rt-non">
-                            <fieldset class="mb-2">
-                                <legend> Citizen Details </legend>
-                                <div class="row">
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label class="required">Civil ID</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-address-card fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input type="search" id="civilId" name="" placeholder="Civil ID" autocomplete="off" class="form-control" autofocus/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label for="cname" class="label">Name</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-user fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input name="" placeholder="Name" type="text" id="cname" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label for="email" class="label">eMail</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-envelope fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input name="" placeholder="E-mail" type="email" id="email" autocomplete="off" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label for="phone" class="label">Mobile Number</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fal fa-mobile fa-fw fa-lg" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input type="tel" class="form-control" name="" placeholder="Mobile Number" id="phone" autocomplete="on">
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12 col-md-12">
-                                        <label for="resTypeId" class="label">Resident Type</label>
-                                        <select name="" id="resTypeId" class="form-control" required>
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="83">Omani</option>			
-                                            <option value="531">Expatriate</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-                            </fieldset>
-
-                            <!-- <fieldset class="mb-2">
-                                <legend>Caller Details</legend>
-                                <div class="row">
-                                    
-                                </div> /.row
-                            </fieldset> -->
-                        </div>
-
-                        <div class="col-sm-12 col-md-9">
-                            <fieldset class="col11">
-                                <legend>Request/Service Details </legend>
-                                <diV class="row">
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="requestNo" class="label">Service Request No</label>
-                                        <div class="input-group">
-                                            <input type="search" id="requestNo" name="" placeholder="Service Request No" autocomplete="off" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-info" type="button" id="requestNumberSearchbtnId">
-                                                    <i class="fal fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="caseTypeId" class="label">Service Category</label>
-                                        <select name="" id="caseTypeId" class="form-control" onchange="subCategorylist()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="520">Technical Service</option>
-                                            <option value="522">Water Service</option>
-                                            <option value="586">HealthService</option>
-                                            <option value="9989">General Services</option>
-                                            <option value="520">Technical Service</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="caseSubTypeId" class="label">Service Sub Category</label>
-                                        <select name="caseDetailsSaveDTO.caseSubTypeId" id="caseSubTypeId" class="form-control" onchange="classificationList()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="104">Application for Work Completion Certificate and Services Connection</option>
-                                        </select>
-                                    </div>
-                                </diV>
-                                <!-- /.row -->
-
-                                <div class="row">
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="classificationID" class="label">Classification</label>
-                                        <select name="" id="classificationID" class="form-control" onchange="callgroupName()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="9400">Data Update</option>
-                                            <option value="9401">Payment Issues</option>
-                                            <option value="9402">Sync Issues</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label for="serviceTypeId" class="label">Service Type</label>
-                                        <select name="" id="serviceTypeId" class="form-control">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="6290">Information</option>
-                                            <option value="6291">Enquiry</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="regionId" class="label">Governorate</label>
-                                        <select name="caseDetailsSaveDTO.regionId" id="regionId" class="form-control" onchange="getWillayatByRegion()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="1">MUSCAT GOVERNORATE</option>
-                                            <option value="2">DHOFAR GOVERNORATE</option>
-                                            <option value="3">MUSANDAM GOVERNORATE</option>
-                                            <option value="4">AL BURAIMI GOVERNORATE</option>
-                                            <option value="5">AL DAKHILIYAH GOVERNORATE</option>
-                                            <option value="6">NORTH AL BATINAH GOVERNORATE</option>
-                                            <option value="7">SOUTH AL BATINAH GOVERNORATE</option>
-                                            <option value="8">SOUTH AL SHARQIYA GOVERNORATE</option>
-                                            <option value="9">NORTH AL SHARQIYA GOVERNORATE</option>
-                                            <option value="11">AL WUSTA GOVERNORATE</option>
-                                            <option value="12">SOHAR GOVERNORATE</option>
-                                            <option value="1612">DHOFAR GOVERNORATE REG</option>
-                                            <option value="1613">MUSCAT GOVERNORATE REG</option>
-                                            <option value="8684">AL DAKHILIYAH GOVERNORATE</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-                                <div class="row">
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="willayatId" class="label">Willayat</label>
-                                        <select name="caseDetailsSaveDTO.wilayatId" id="willayatId" class="form-control" onchange="getVillageByWillayat()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="301">خصب</option>
-                                            <option value="302">دبـــــا البـيـعـة</option>
-                                            <option value="303">بــخــــا</option>
-                                            <option value="304">مدحا</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-4 col-md-4">
-                                        <label for="Village_Ser" class="label">Village</label>
-                                        <select name="caseDetailsSaveDTO.villageId" id="villageId" class="form-control" onchange="assignGroup()">
-                                            <option value="0"> - Select from List - </option>
-                                            <option value="3010001">خصب</option>
-                                            <option value="3010002">بانه</option>
-                                            <option value="3010003">نظيفي</option>
-                                            <option value="3010005">غب علي</option>
-                                            <option value="3010006">البلد</option>
-                                            <option value="3010007">شم</option>
-                                            <option value="3010008">سل اعلى</option>
-                                            <option value="3010009">حلة القاضي</option>
-                                            <option value="3010010">الحاجر</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-4">
-                                        <label class="form-label">Attachments</label>
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-
-                                <div class="row">
-                                    <div class="form-group col-sm-12 col-md-6">
-                                        <label for="additionalInfo" class="label">Problem Description</label>
-                                        <textarea name="" id="additionalInfo" placeholder="Problem Description" rows="3" class="form-control"></textarea>
-                                    </div>
-                                    <div class="form-group col-sm-12 col-md-6">
-                                        <fieldset class="mb-2">
-                                            <legend>Status</legend>
-
-                                            <div class="row">
-                                                <div class="form-group col-md-12">
-                                                    <label>Language</label>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="76" id="language-76">
-                                                            <label class="form-check-label" for="inlineRadio1">English</label>
-                                                        </div>
-
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="caseDetailsSaveDTO.languageTypeId" class="form-check-input" type="radio" value="77" checked="checked" id="language-77">
-                                                            <label class="form-check-label" for="inlineRadio1">Arabic</label>
-                                                        </div>
-
+                </div> <!-- /.row -->
+    
+    
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-12">
+                        <fieldset id="attachmentsFieldset">
+                            <legend> Required Documents </legend>
+                            <div class="file-upload">
+                                <form method="post" action="" enctype="multipart/form-data" id="upload-Form">
+                                    <input type="hidden" value="${token}" id="tokenid" /> 
+                                    <input type="hidden" value="${ip}" id="ipid" /> 
+                                    <input type="hidden" value="${port}" id="portid" />
+                                </form>
+                            </div>
+    
+                            <div id='file_tools' class="row">
+                                <div class="col-md-4">
+                                    <table class="file_upload w-100 table-hover mb-0" id="f" aria-hidden="true">
+                                        <tr>
+                                            <td class="d-flex align-items-center justify-content-center">
+                                                <div class="input-group mr-3">
+                                                    <div class="custom-file">
+                                                        <input type="file" name="file" class="custom-file-input" id="currentFile" aria-describedby="inputGroupFileAddon01" />
+                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- /.row -->
-
-                                            <div class="row">
-                                                <div class="form-group col-md-12 pr-0">
-                                                    <label>Communication Channel</label>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="78" id="communication-78">
-                                                            <label class="form-check-label" for="inlineRadio1">Email</label>
-                                                        </div>
-
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="79" id="communication-79">
-                                                            <label class="form-check-label" for="inlineRadio1">SMS</label>
-                                                        </div>
-
-                                                        <div class="form-check form-check-inline">
-                                                            <input name="caseDetailsSaveDTO.channelTypeId" class="form-check-input" type="radio" value="80" checked="checked" id="communication-80">
-                                                            <label class="form-check-label" for="inlineRadio1">Email &amp; SMS</label>
-                                                        </div>
-
-                                                    </div>
+                                                <div class="mt-3 mb-3" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn btn-ws d-flex align-items-center" id="btn_upload" onclick="cmsFileUpload()">
+                                                        <i class="fal fa-arrow-to-top fa-fw fa-lg" aria-hidden="true"></i>
+                                                        Upload
+                                                    </button>
                                                 </div>
-                                            </div>
-                                            <!-- /.row -->
-                                        </fieldset>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="table-responsive data_table ">
+                                <div id="newDocuments">
+                                    <label> Documents</label>
+                                    <table id="CmsAttachmentsTable" class="table table-striped table-bordered" aria-labelledby="Documents-table"
+                                        aria-hidden="true">
+                                        <thead class="ws-thead"></thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                <div id="rfcDocuments">
+                                    <label>Previous Documents</label>
+                                    <table id="CmsAttachmentsRFCTable" class="table table-striped table-bordered" aria-labelledby="Documents-table"
+                                        aria-hidden="true">
+                                        <thead class="ws-thead"></thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+    
+                    <div class="form-group col-sm-12 col-md-12">
+                        <fieldset id="commentsFieldset">
+                            <legend> Comments </legend>
+                            <input type="hidden" id="secondSubmit">
+                            <div class="row" id="comments">
+                                <div class="form-group col-sm-12 col-md-6" id="cmscomments">
+                                    <label for="backendcomments" class="label">Ministry comments</label>
+                                    <textarea name="" id="backendcomments" placeholder='Ministry comments' rows="3" class="form-control"></textarea>
+                                    <div class="invalid-feedback backendcomments">
+                                        Please enter Ministry comments
                                     </div>
                                 </div>
-                                <!-- /.row -->
-                            </fieldset>
-                        </div>
+                                <div class="form-group col-sm-12 col-md-6" id="applicantcomments">
+                                    <label for="applicantcommentstext" class="label">Applicant comments</label>
+                                    <textarea name="" id="applicantcommentstext" placeholder='Applicant comments' rows="3" class="form-control" maxlength="150"></textarea>
+                                    <div class="invalid-feedback applicantcommentstext">
+                                        Please enter
+                                        Applicant comments
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </fieldset>
                     </div>
-                    <!-- /.row -->
-                    <div class="row mt-3">
-                        <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                            <button type="reset" value="Reset Button" class="btn btn-outline-info btn-height" data-toggle="modal" data-target="#Clear" id='clearButtonId' style="min-width:135px   ; margin-left:0;">
-                            <i class="fal fa-paint-brush fa-fw" aria-hidden="true"></i>&nbsp;
-                            Clear
+    
+    
+                    <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom mt-3" id="subclearDiv">
+                        <button type="reset" class="btn btn-danger btn-height" data-toggle="modal" data-target="#Clear" id='clearButtonId'>
+                            <i class="fal fa-paint-brush fa-fw" aria-hidden="true"></i>&nbsp;Clear
                         </button>
-                            <button type="button" class="btn btn-ws btn-height pull-up" onclick="doAction()" id="form1Submit" style="min-width:135px">
-                            <i class="fal fa-copy fa-fw" aria-hidden="true"></i>&nbsp;
-                            Submit
+                        <button type="submit" class="btn btn-primary btn-height" id="form1Submit">
+                            <i class="fal fa-copy fa-fw" aria-hidden="true"></i>&nbsp;Submit
                         </button>
-                        </div>
                     </div>
-                    <!-- /.row -->
-                    <!--END FORM TAG  -->
-                </form>
-            </div>
+                </div>
+                <!-- /.row -->
+            </form>
         </section>
-
+    
     </div>
     <!--/.container-->
 
@@ -733,18 +559,16 @@
         </div>
     </div>
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/moaf-webapp.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/moaf-webapp.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/cmsReq.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
     <!-- Date &amp; Time Live-->
     <script type="text/javascript" src="js/Time/timejs.js"></script>
     <!-- Date &amp; Time Live-->
-    <script>
-        $(document).ready(function() {
-            bsCustomFileInput.init()
-        });
-    </script>
+    <script type="text/javascript" src="js/dataTables-4/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/dataTables-4/dataTables.bootstrap4.js"></script>
 </body>
 
 </html>
