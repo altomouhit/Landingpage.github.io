@@ -866,9 +866,9 @@ $("#ECG_txt").on('change', function() {
 //Patient Assessment & Management > Resuscitation Management > Treatment > Intervention > Electrical Intervention
 $("#electricalIntervention").on('change', function() {
 	if (this.value == 4) {
-		$("#RHYTHMDiv").show();
+		$("#electIntOtherDiv").show();
 	} else {
-		$("#RHYTHMDiv").hide();
+		$("#electIntOtherDiv").hide();
 	}
 });
 $("#resuscitationRequiredBtn").click(function() {
