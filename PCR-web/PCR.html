@@ -113,6 +113,26 @@
 
                 <div class="d-flex align-items-center">
 
+                    <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                        <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="bx bx-search fs-22"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="dropdown ms-1 topbar-head-dropdown header-item d-none">
                         <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -149,6 +169,14 @@
                         <button type="button"
                             class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
                             <i class='bx bx-moon fs-22'></i>
+                        </button>
+                    </div>
+
+                    <div class="mx-1 header-item d-none d-sm-flex">
+                        <button type="button"
+                            class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode" 
+                            data-bs-toggle="modal" data-bs-target="#logOut">
+                            <i class='bx bx-power-off fs-22'></i>
                         </button>
                     </div>
 
@@ -194,9 +222,10 @@
                                                 <div class="flex-1">
                                                     <a href="#!" class="stretched-link">
                                                         <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author
-                                                            Graphic Optimization <span
-                                                                class="text-secondary">reward</span>
-                                                            is ready!
+                                                            Graphic
+                                                            Optimization <span class="text-secondary">reward</span>
+                                                            is
+                                                            ready!
                                                         </h6>
                                                     </a>
                                                     <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
@@ -242,16 +271,15 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="dropdown ms-sm-3 header-item topbar-user">
+                    <img src="assets/img/new/Logo_New.svg" class="newLogoimg" alt="">
+                    <div class="dropdown ms-sm-3 header-item topbar-user d-none">
                         <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <span class="d-flex align-items-center">
                                 <img class="rounded-circle header-profile-user" src="assets/img/avatar.svg"
                                     alt="Header Avatar">
                                 <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal
-                                        Khamis Alrasbi</span>
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal Khamis Alrasbi</span>
                                     <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span>
                                 </span>
                             </span>
@@ -262,7 +290,7 @@
                             <!-- <a class="dropdown-item" href="lockscreen.html">
                                 <i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
                                 <span class="align-middle">Lock screen</span></a> -->
-                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logOut">
+                            <a class="dropdown-item" href="#" >
                                 <i class="mdi mdi-power text-muted fs-16 align-middle me-1"></i>
                                 <span class="align-middle" data-key="t-logout">Logout</span></a>
                         </div>
@@ -1238,13 +1266,12 @@
                                                             <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <textarea name="" class="form-control" id="sceneDescription" cols="30" rows="10" placeholder=""></textarea>
-                                                                        <label for="sceneDescription">Describe Type of call, Number, and position of the patient</label>
+                                                                        <textarea name="" class="form-control" id="sceneDescription" cols="30" rows="10" placeholder="General Impression"></textarea>
+                                                                        <label for="sceneDescription">General Impression</label>
                                                                     </div>
-                                                                    <span class="input-group-text">
-                                                                        <i class="fa-light fa-message-pen fa-lg"></i></span>
+                                                                    <span class="input-group-text" data-bs-toggle="tooltip" data-bs-title="Describe Type of call, Number and position of the patient">
+                                                                        <i class="fa-light fa-question-circle fa-lg"></i></span>
                                                                 </div>
-                                                                <div class="form-text"></div>
                                                             </div>
     
                                                             <div class="col-lg-3">
@@ -1261,11 +1288,11 @@
                                                             <div class="col-lg-3">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <input type="text" class="form-control" id="MIO" placeholder="Chief Complaint / MIO" title="Describe the symptoms or reason that caused a patient to seek medical care" />
-                                                                        <label for="MIO">Describe the symptoms or reason that caused a patient to seek medical care</label> 
+                                                                        <input type="text" class="form-control" id="MIO" placeholder="Chief Complaint / MIO" />
+                                                                        <label for="MIO">Chief Complaint / MIO</label> 
                                                                     </div>
-                                                                    <span class="input-group-text" >
-                                                                        <i class="fa-light fa-message-pen fa-lg"></i></span>
+                                                                    <span class="input-group-text" data-bs-toggle="tooltip" data-bs-title="Describe the symptoms or reason that caused a patient to seek medical care">
+                                                                        <i class="fa-light fa-question-circle fa-lg"></i></span>
                                                                 </div>
                                                                 <div class="form-text"></div>
                                                             </div>
@@ -2246,68 +2273,64 @@
                                                                         <div class="row align-items-center">
                                                                             <label for="onSet" class="col-sm-4 col-form-label d-flex align-items-center position-relative">
                                                                                 <span class="text-primary fw-bold fs-3">O</span>nset
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="What were you doing when the pain or problem began?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="What were you doing when the pain or problem began?">
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="onSet" title="What were you doing when the pain or problem began?"
-                                                                                placeholder="What were you doing when the pain or problem began?" />
+                                                                                <input type="text" class="form-control" id="onSet" placeholder="Onset" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="provocation" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-dark fw-bold fs-3">P</span>rovocation
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="Does anything seem to trigger the pain or problem? Does anything make it feel better?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="Does anything seem to trigger the pain or problem? Does anything make it feel better?">
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="provocation" title="Does anything seem to trigger the pain or problem? Does anything make it feel better?" placeholder="Does anything seem to trigger the pain or problem? Does anything make it feel better?" />
+                                                                                <input type="text" class="form-control" id="provocation" placeholder="Provocation" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="quality" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-danger fw-bold fs-3">Q</span>uality
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="Can you describe the pain or problem for me?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="Can you describe the pain or problem for me?">
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="quality" title="Can you describe the pain or problem for me?" placeholder="Can you describe the pain or problem for me?" />
+                                                                                <input type="text" class="form-control" id="quality" placeholder="Quality" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="radition" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-dark fw-bold fs-3">R</span>adiation
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="Where is the pain? Will you please point toward it? Does it seem to shoot or spread anywhere?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="radition" title="Where is the pain? Will you please point toward it? Does it seem to shoot or spread anywhere?" 
-                                                                                placeholder="Where is the pain? Will you please point toward it? Does it seem to shoot or spread anywhere?" />
+                                                                                <input type="text" class="form-control" id="radition" placeholder="Radiation" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="severity" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-dark fw-bold fs-3">S</span>everity
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="How bad is pain or problem? If zero is no pain or problem and 10 is the worst you can imagine, what number would you say your pain or problem is right now?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="severity" title="How bad is pain or problem? If zero is no pain or problem and 10 is the worst you can imagine, what number would you say your pain or problem is right now?"
-                                                                                 placeholder="How bad is pain or problem? If zero is no pain or problem and 10 is the worst you can imagine, what number would you say your pain or problem is right now?" />
+                                                                                <input type="text" class="form-control" id="severity" placeholder="Severity" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="time" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-success fw-bold fs-3">T</span>ime
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="When did the pain or problem start? Has it changed at all since started?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="time" title="When did the pain or problem start? Has it changed at all since started?" 
-                                                                                placeholder="When did the pain or problem start? Has it changed at all since started?" />
+                                                                                <input type="text" class="form-control" id="time" placeholder="Time" />
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
@@ -2317,47 +2340,42 @@
                                                                         <div class="row align-items-center">
                                                                             <label for="signSymptoms" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-danger fw-bold fs-3">S</span>igns &amp; Symptoms
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="What is wrong? (This is a reminder to get the history of the present illness.)">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="signSymptoms" title="What is wrong? (This is a reminder to get the history of the present illness.)"
-                                                                                placeholder="What is wrong? (This is a reminder to get the history of the present illness.)" />
+                                                                                <input type="text" class="form-control" id="signSymptoms"  placeholder="Signs &amp; Symptoms" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="allergies" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-danger fw-bold fs-3">A</span>llergies
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="Do you have a medical identification tag describing your allergies? Do you have any allergies to medicine or food?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="allergies" title="Do you have a medical identification tag describing your allergies?
-                                                                                Do you have any allergies to medicine or food?" placeholder="Do you have a medical identification tag describing your allergies?
-                                                                                Do you have any allergies to medicine or food?" />
+                                                                                <input type="text" class="form-control" id="allergies" placeholder="Allergies" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="medications" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-success-emphasis fw-bold fs-3">M</span>edications
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="What medication are you currently taking or are supposed to be taking? Do you have a medical identification tag with the names of the medication on it?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="medications"
-                                                                                    title="What medication are you currently taking or are supposed to be taking? Do you have a medical identification tag with the names of the medication on it?"
-                                                                                    placeholder="What medication are you currently taking or are supposed to be taking? Do you have a medical identification tag with the names of the medication on it?" />
+                                                                                <input type="text" class="form-control" id="medications" placeholder="Medications" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="pastMedicalHistory" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-warning-emphasis fw-bold fs-3">P</span>ast Medical History
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="Have you been experiencing any medical problems?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
                                                                                 <div class="row">
@@ -2381,33 +2399,28 @@
                                                                                     <div class="col" id="pastMedicalHistoryTxt">
                                                                                         <input type="text" class="form-control" id="" placeholder="">
                                                                                     </div>
-                                                                                    <small>What medication are you currently taking or are supposed to be taking? Do you have a medical identification tag
-                                                                                        with the names of the medication on it?</small>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="lastOralIntake" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-info fw-bold fs-3">L</span>ast Oral Intake
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
                                                                                     data-bs-title="When did you last eat or drink? What do you eat or drink?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="lastOralIntake" title="When did you last eat or drink? What do you eat or drink?" 
-                                                                                placeholder="When did you last eat or drink? What do you eat or drink?" />
+                                                                                <input type="text" class="form-control" id="lastOralIntake" placeholder="Last Oral Intake" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row align-items-center">
                                                                             <label for="event" class="col-sm-4 col-form-label d-flex align-items-center">
                                                                                 <span class="text-danger-emphasis fw-bold fs-3">E</span>vent
-                                                                                <!-- <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip"
-                                                                                    data-bs-title="What sequence of events led to today’s problem?">
-                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span> -->
+                                                                                <span class="badge rounded-pill ms-2" data-bs-toggle="tooltip" data-bs-title="What sequence of events led to today’s problem?">
+                                                                                    <i class="fa-light fa-question-circle fa-lg text-dark"></i></span>
                                                                             </label>
                                                                             <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="event" title="What sequence of events led to today’s problem?"
-                                                                                placeholder="What sequence of events led to today’s problem?" />
+                                                                                <input type="text" class="form-control" id="event" placeholder="Event" />
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
@@ -2467,7 +2480,7 @@
                                                                                     <td></td>
                                                                                     <td>
                                                                                         <ul class="list-inline hstack gap-2 mb-0">
-                                                                                            <li class="list-inline-item" data-bs-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#addTime">
+                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#addTime">
                                                                                                 <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
                                                                                             </li>
                                                                                             <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">
@@ -2496,7 +2509,7 @@
                                                                                     <td></td>
                                                                                     <td>
                                                                                         <ul class="list-inline hstack gap-2 mb-0">
-                                                                                            <li class="list-inline-item" data-bs-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#addTime">
+                                                                                            <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#addTime">
                                                                                                 <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-white btn btn-info"></i></a>
                                                                                             </li>
                                                                                             <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Delete">
@@ -2521,15 +2534,14 @@
                                                             <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <textarea name="" class="form-control" id="fieldImpression" cols="30" rows="10" placeholder="Field Impression" 
-                                                                        title="Opinion is formed which is the outcome of the assessment and management process."></textarea>
-                                                                        <label for="fieldImpression">Opinion is formed which is the outcome of the assessment and management process.</label>
+                                                                        <textarea name="" class="form-control" id="fieldImpression" cols="30" rows="10" placeholder="Field Impression"></textarea>
+                                                                        <label for="fieldImpression">Field Impression</label>
                                                                     </div>
-                                                                    <!-- <span class="input-group-text" data-bs-toggle="tooltip"
+                                                                    <span class="input-group-text" data-bs-toggle="tooltip"
                                                                         data-bs-title="Opinion is formed which is the outcome of the assessment and management process.
                                                                         (What patient has in your opinion?) ( diagnosis)">
                                                                         <i class="fa-light fa-question-circle fa-lg text-dark"></i>
-                                                                    </span> -->
+                                                                    </span>
                                                                 </div>
                                                             </div>
 
@@ -4996,19 +5008,19 @@
 
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 d-flex align-items-center footerLineHeight footerBorderHeight">
                         2000 -
                         <script>
-                            document.write(new Date().getFullYear())
-                        </script> &copy; <span>Civil Defense and Ambulance Authority - All rights reserved.</span>
+                            document.write(new Date().getFullYear());
+                        </script> &copy; <span> Civil Defense and Ambulance Authority - All rights reserved</span>
                     </div>
-                    <div class="col-sm-6 d-flex justify-content-end">
+                    <div class="col-sm-6 d-flex align-items-center justify-content-end footerBg footerLineHeight">
                         <p>
-                            Design & Develop by <a href="https://altomouhit.com/" target="_blank">Al Tomouh IT LLC</a>.
+                            Design & Develop by <a href="https://altomouhit.com/" target="_blank">&nbsp;Al Tomouh IT LLC</a>
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> <!-- /.container-fluid -->
         </footer>
     </div>
     <!-- end main content-->

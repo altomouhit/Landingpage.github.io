@@ -277,8 +277,12 @@ legend {
 .table-bt-pd .bottom {
     padding: 0 0.5rem 0.5rem 0.5rem;
 }
-
-.table-bt-pd div.dataTables_length {
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .table-bt-pd div.dataTables_length {
     position: absolute;
     right: 229px;
     z-index: 11;
@@ -288,7 +292,7 @@ legend {
     position: absolute;
     right: 449px;
     z-index: 11;
-}
+} */
 
 .smart-Wizard label,
 .custom-tab-1 label {
@@ -775,3 +779,33 @@ hr.horizontal.dark {
 .form-floating > .form-control-plaintext::placeholder {
     color: #555;
 } */
+.newLogoimg {
+    width: 179px;
+}
+.footerBg {
+    background-color: var(--vz-footerNew-bg);
+}
+/* .footerLineHeight {
+    min-height: 38px;
+} */
+.footerBorderHeight {
+    border-left: 38px solid var(--vz-footerNew-bg);
+}
+.bannerImg {
+   /* height: 499px; */
+   min-height: 100%;
+}
+.bannerBg {
+    background-color: rgba(46, 49, 145, 0.8);
+    right: 0;
+    left: auto;
+    bottom: 0;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-avatar {
+    height: 49px;
+    margin-bottom: 1rem;
+}

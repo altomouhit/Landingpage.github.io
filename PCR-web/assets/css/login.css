@@ -1,50 +1,121 @@
 body {
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
 }
 .bg-login {
-    /* background: url(../img/Login-bg.svg); */
-    background: url(../img/login/dsc_1043.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: bottom; */
-    min-height: 100vh;
-    display: flex !important;
+  /* background: url(../img/Login-bg.svg); */
+  background: url(../img/new/loginBg@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  min-height: 100vh;
+  display: flex !important;
+  position: relative;
 }
 
 .form-signin {
-    max-width: 330px;
-    padding: 15px;
+  max-width: 330px;
+  padding: 15px;
 }
 
 .form-textdiv {
-    background: #0C5A88 0% 0% no-repeat padding-box;
+  /* background: #0C5A88 0% 0% no-repeat padding-box;
     box-shadow: 7px 7px 5px #06043373;
-    border-radius: 8px;
-    /* opacity: 0.81; */
+    border-radius: 8px; */
+  /* opacity: 0.81; */
+  border: 2px solid rgb(101, 201, 251);
+  border-radius: 2rem;
 }
 .input-group-text {
-    background-color: transparent;
-    border: 0;
-    color: var(--vz-body-bg);
+  background-color: transparent;
+  border: 0;
+  color: rgb(101, 201, 251);
 }
-.form-control, .form-control:focus, label {
-    background: transparent;
-    border: 0;
-    color: var(--vz-body-bg);
+.form-control,
+.form-control:focus,
+label {
+  background: transparent;
+  border: 0;
+  color: rgb(101, 201, 251);
 }
 .form-control:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 .login-form-bg {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    background-color: #0003;
-    position: relative;
-    padding: 15px 25px;
-    border-radius: 1rem;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #ffffff;
+  /* background-color: #0003; */
+  padding: 15px 25px;
+  /* border-radius: 1rem; */
+  background-image: url(../img/new/ribbonBg.svg);
+  background-repeat: no-repeat;
+  height: 669px;
+
+}
+.btn-login {
+  background-color: rgb(101, 201, 251);
+  border-radius: 5rem;
+}
+.btn-login:hover {
+  background-color: rgb(179, 233, 257);
+}
+
+@media (max-width: 375.98px) {
+  .login-form-bg {
+    position: absolute;
+    right: 01rem;
+    top: 0;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 376.98px) and (max-width: 575.98px) {
+  .login-form-bg {
+    position: absolute;
+    right: 2.5rem;
+    top: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login-form-bg {
+    position: absolute;
+    right: 3rem;
+    top: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1398.98px) {
+  .login-form-bg {
+    position: absolute;
+    right: 6rem;
+    top: 0;
+  }
+}
+
+@media (min-width: 1399.98px) and (max-width: 1599px) {
+  .login-form-bg {
+    position: absolute;
+    right: 11rem;
+    top: 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1599px) {
+  .login-form-bg {
+    position: absolute;
+    right: 21rem;
+    top: 0;
+  }
 }

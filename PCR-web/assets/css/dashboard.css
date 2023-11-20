@@ -48,12 +48,15 @@
 }
 
 .dashboard-img {
-    height: 149px;
+    height: 129px;
     border-radius: 1rem;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .dashboard-img:hover {
     transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-        -5px -5px 30px 15px rgba(0,0,0,0.22);
+    /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+        -5px -5px 30px 15px rgba(0,0,0,0.22); */
+}
+.dashboard-text-color {
+    color: rgb(0, 181, 246);
 }

@@ -78,9 +78,7 @@
                             </a>
                         </div>
 
-                        <button type="button"
-                            class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
-                            id="topnav-hamburger-icon">
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
                             <span class="hamburger-icon">
                                 <span></span>
                                 <span></span>
@@ -158,6 +156,14 @@
                             <button type="button"
                                 class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
                                 <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="mx-1 header-item d-none d-sm-flex">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode" 
+                                data-bs-toggle="modal" data-bs-target="#logOut">
+                                <i class='bx bx-power-off fs-22'></i>
                             </button>
                         </div>
 
@@ -252,16 +258,15 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                        <img src="assets/img/new/Logo_New.svg" class="newLogoimg" alt="">
+                        <div class="dropdown ms-sm-3 header-item topbar-user d-none">
                             <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="d-flex align-items-center">
                                     <img class="rounded-circle header-profile-user" src="assets/img/avatar.svg"
                                         alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal
-                                            Khamis Alrasbi</span>
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal Khamis Alrasbi</span>
                                         <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span>
                                     </span>
                                 </span>
@@ -272,7 +277,7 @@
                                 <!-- <a class="dropdown-item" href="lockscreen.html">
                                     <i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">Lock screen</span></a> -->
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logOut">
+                                <a class="dropdown-item" href="#" >
                                     <i class="mdi mdi-power text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle" data-key="t-logout">Logout</span></a>
                             </div>
@@ -398,8 +403,23 @@
                         </div>
                     </div>
                     <!-- end page title -->
-
+                    
                     <div class="row project-wrapper1">
+
+                        <div class="carousel slide mb-3 p-0" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/new/homeBanner.png" alt="" class="img-fluid bd-placeholder-img bannerImg w-100">
+                                    <div class="carousel-caption text-center bannerImg bannerBg p-3">
+                                        <div class="userName">
+                                            <img src="assets/img/new/userAvatar.svg" class="img-fluid img-avatar" alt="">
+                                            <p><a class="btn btn-lg btn-outline-warning" href="#">Ahlam Hilal Khamis Alrasbi </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="col-md-12 col-xxl-9 mx-auto ms-auto">
                             <!-- <div class="row mt-2 justify-content-center">
                                 <div class="col-md-3 col-sm-4 col-xs-12">
@@ -459,54 +479,53 @@
                                 </div>
                             </div> -->
                              <!-- /.row -->
-
                             <div class="row justify-content-center text-center">
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="Doctor_Requests.html" class="text-gray">
                                         <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Narcotic.svg" alt="1" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/showMyRequestsIcon.svg" alt="1" class="dashboard-img img-fluid">
                                         </span>
-                                        <h5 class="my-3 text-info-emphasis fw-bold">Show My Requests</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">Show My Requests</h6>
                                     </a>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="PCR.html" class="text-gray">
                                         <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/PCR_CreateNew.svg" alt="1" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/creatNewIcon.svg" alt="1" class="dashboard-img img-fluid">
                                         </span>
-                                        <h5 class="my-3 text-danger-emphasis fw-bold">Create New</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">Create New</h6>
                                     </a>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="sync-records.html" class="text-gray">
                                         <span class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Sync.svg" alt="2" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/SYncRecordsIcon.svg" alt="2" class="dashboard-img img-fluid">
                                         </span>
-                                        <h5 class="my-3 text-success-emphasis fw-bold">Sync Records</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">Sync Records</h6>
                                     </a>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="CAD_PCR-original.html" class="text-gray">
                                         <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Reports.svg" alt="3" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/reportIcon.svg" alt="3" class="dashboard-img img-fluid">
                                         </div>
-                                        <h5 class="my-3 text-warning-emphasis fw-bold">Reports</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">Reports</h6>
                                     </a>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="lookUP.html" class="text-gray">
                                         <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Master.svg" alt="4" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/masterIcon.svg" alt="4" class="dashboard-img img-fluid">
                                         </div>
-                                        <h5 class="my-3 text-primary-emphasis fw-bold">Master</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">Master</h6>
                                     </a>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-2">
                                     <a href="MCI.html" class="text-gray">
                                         <div class="position-relative mb-2">
-                                            <img src="assets/img/dashboard_icons/Sync.svg" alt="4" class="dashboard-img img-fluid img-thumbnail">
+                                            <img src="assets/img/new/dashboard/MCIcon.svg" alt="4" class="dashboard-img img-fluid">
                                         </div>
-                                        <h5 class="my-3 text-info-emphasis fw-bold">MCI</h5>
+                                        <h6 class="my-3 fw-bold dashboard-text-color">MCI</h6>
                                     </a>
                                 </div>
                             </div>
@@ -535,19 +554,19 @@
 
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 d-flex align-items-center footerLineHeight footerBorderHeight">
                             2000 -
                             <script>
-                                document.write(new Date().getFullYear())
-                            </script> &copy; <span>Civil Defense and Ambulance Authority - All rights reserved.</span>
+                                document.write(new Date().getFullYear());
+                            </script> &copy; <span> Civil Defense and Ambulance Authority - All rights reserved</span>
                         </div>
-                        <div class="col-sm-6 d-flex justify-content-end">
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end footerBg footerLineHeight">
                             <p>
-                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">Al Tomouh IT LLC</a>.
+                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">&nbsp;Al Tomouh IT LLC</a>
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> <!-- /.container-fluid -->
             </footer>
         </div>
         <!-- end main content-->
