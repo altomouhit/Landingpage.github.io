@@ -790,6 +790,7 @@ hr.horizontal.dark {
 } */
 .footerBorderHeight {
     border-left: 38px solid var(--vz-footerNew-bg);
+    font-size: 0.925rem;
 }
 .bannerImg {
    /* height: 499px; */
@@ -808,4 +809,7 @@ hr.horizontal.dark {
 .img-avatar {
     height: 49px;
     margin-bottom: 1rem;
+}
+#toolbar {
+    background-color: var(--vz-headerNew-bg) !important;
 }

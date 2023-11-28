@@ -9,7 +9,7 @@ function MCIDetailFn() {
 		$("#MCIDetailBtn").html("<i class='fal fa-check fa-fw'></i>&nbsp; Save");
 	}
 	var MCI = {};
-    //Incident Data Details
+	//Incident Data Details
 	var incidentNo = $("#incidentNo").val();
 	var incidentType = $("#incidentType option:selected").text();
 	var incidentType_val = $("#incidentType option:selected").val();
@@ -48,13 +48,13 @@ function MCIDetailFn() {
 	var receHealthFacility = $("#receHealthFacility").val();
 	var blackHandedOver = $("#blackHandedOver").val();
 	//Object append the data
-    MCI.DincidentNo = incidentNo;
-    MCI.DincidentType = incidentType;
-    MCI.DincidentType_val = incidentType_val;
-    MCI.DincidentDate = incidentDate;
-    MCI.DincidentLocationtxt = incidentLocationtxt;
-    MCI.incidentTime = incidentTime;
-    //Add
+	MCI.DincidentNo = incidentNo;
+	MCI.DincidentType = incidentType;
+	MCI.DincidentType_val = incidentType_val;
+	MCI.DincidentDate = incidentDate;
+	MCI.DincidentLocationtxt = incidentLocationtxt;
+	MCI.incidentTime = incidentTime;
+	//Add
 	MCI.DPTN = PTN;
 	MCI.Dgender = gender;
 	MCI.Dgender_val = gender_val;
@@ -67,10 +67,10 @@ function MCIDetailFn() {
 	MCI.Dambulance = ambulance;
 	MCI.DreceHealthFacility = receHealthFacility;
 	MCI.DblackHandedOver = blackHandedOver;
-    //Call function to save Data
+	//Call function to save Data
 	var MCITable = $('#MCITable').DataTable();
 	MCITable.row.add(MCI).draw();
-    
+
 	$("#PTN").val('');
 	$("#gender").val('');
 	$("#ageID").val('');
@@ -83,7 +83,7 @@ function MCIDetailFn() {
 }
 //edit editMCIDetailFn details
 function editMCIDetailFn(data1) {
-    //Set value in form
+	//Set value in form
 	var data = data1.data();
 	$("#MCIDetailBtn").html("<i class='fal fa-check'></i>&nbsp; Update");
 	$("#PTN").val(data.DPTN);
@@ -98,7 +98,7 @@ function editMCIDetailFn(data1) {
 }
 //View viewMCIDetailFn details
 function viewMCIDetailFn(data1) {
-    //Set value in form
+	//Set value in form
 	var data = data1.data();
 	$("#MCIDetailBtn").html("<i class='far fa-eye'></i>&nbsp; View");
 	$("#PTN").val(data.DPTN);
@@ -113,50 +113,50 @@ function viewMCIDetailFn(data1) {
 	$('#PTN, #ageID, #ambulance, #receHealthFacility, #blackHandedOver').attr('readonly', true);
 	$("#gender, #cardColor, #modeTrans").prop('disabled', true);
 }
-$(document).ready(function() {
-    $('#MCITable tbody').on('click', '#MCIViewBtn', function () {
+$(document).ready(function () {
+	$('#MCITable tbody').on('click', '#MCIViewBtn', function () {
 		var MCITable = $('#MCITable').DataTable();
 		var data = MCITable.row($(this).parents('tr'));
 		$("#MCIDetailBtn").hide();
 		viewMCIDetailFn(data);
-	 });
-    $('#MCITable tbody').on('click', '#MCIEditBtn', function() {
-        var MCITable = $('#MCITable').DataTable();
-        var data = MCITable.row($(this).parents('tr'));
-        $("#MCIDetailBtn").show();
-        editMCIDetailFn(data);
-    });
-	$('#MCITable tbody').on('click', '#MCIEditBtn', function() {
+	});
+	$('#MCITable tbody').on('click', '#MCIEditBtn', function () {
+		var MCITable = $('#MCITable').DataTable();
+		var data = MCITable.row($(this).parents('tr'));
+		$("#MCIDetailBtn").show();
+		editMCIDetailFn(data);
+	});
+	$('#MCITable tbody').on('click', '#MCIEditBtn', function () {
 		var table = $('#MCITable').DataTable();
 		SubSubEdit = table.row($(this).parents('tr'));
 		var data = table.row($(this).parents('tr'));
 		editMCIDetailFn(data);
 	});
-	$('#MCITable tbody').on('click', '#MCIDelBtn', function() {
+	$('#MCITable tbody').on('click', '#MCIDelBtn', function () {
 		var table = $('#MCITable').DataTable();
 		table.row($(this).parents('tr')).remove().draw();
 	});
 	var MCITable = $('#MCITable').DataTable({
 		processing: true,
-        serverSide: false,
+		serverSide: false,
 		ajax: "assets/js/json/MCI.json",
 		columns: [
-            { "data": "DPTN" }, 
-            { "data": "Dgender" }, 
-            { "data": "Dgender_val" }, 
-            { "data": "DageID" }, 
-            { "data": "DcardColor"}, 
-            { "data": "DcardColor_val" }, 
-            { "data": "DmodeTrans" }, 
-            { "data": "DmodeTrans_val" }, 
-            { "data": "DtimeTrans" }, 
-            { "data": "Dambulance" }, 
-            { "data": "DreceHealthFacility" }, 
-            { "data": "DblackHandedOver" }, 
-            { "data": "Actions", "orderable": false, "defaultContent": 
-                "<button type='button' id = 'MCIViewBtn' class='edit-icon'><i class='fal fa-eye'></i></button>&nbsp;" + 
-                "<button type='button' id = 'MCIEditBtn' class='edit-icon'><i class='fal fa-edit'></i></button>&nbsp;" + 
-                "<button type='button' id = 'MCIDelBtn'  class='delete-icon'><i class='fal fa-trash'></i></button>"
+		    { "data": "DPTN" }, 
+		    { "data": "Dgender" }, 
+		    { "data": "Dgender_val" }, 
+		    { "data": "DageID" }, 
+		    { "data": "DcardColor"}, 
+		    { "data": "DcardColor_val" }, 
+		    { "data": "DmodeTrans" }, 
+		    { "data": "DmodeTrans_val" }, 
+		    { "data": "DtimeTrans" }, 
+		    { "data": "Dambulance" }, 
+		    { "data": "DreceHealthFacility" }, 
+		    { "data": "DblackHandedOver" }, 
+		    { "data": "Actions", "orderable": false, "defaultContent": 
+		        "<button type='button' id = 'MCIViewBtn' class='edit-icon'><i class='fal fa-eye'></i></button>&nbsp;" + 
+		        "<button type='button' id = 'MCIEditBtn' class='edit-icon'><i class='fal fa-edit'></i></button>&nbsp;" + 
+		        "<button type='button' id = 'MCIDelBtn'  class='delete-icon'><i class='fal fa-trash'></i></button>"
 		}],
 		destroy: true,
 		dom: '<"top"f>rt<"bottom"ilp>',
@@ -168,21 +168,21 @@ $(document).ready(function() {
 		}],
 		order: [[1, 'desc']]
 	});
-	$('#cadSearch').keyup(function() {
+	$('#cadSearch').keyup(function () {
 		MCITable.search($(this).val()).draw(); // this  is for customized search box with data table search feature.
 	});
-	MCITable.columns().iterator('column', function(ctx, idx) {
+	MCITable.columns().iterator('column', function (ctx, idx) {
 		$(MCITable.column(idx).header()).append('<span class="sort-icon"/>')
 	});
 	if (sessionStorage.getItem("selectedLength") < 20) {
 		sessionStorage.setItem("selectedLength", 10);
 	}
-	$('select[name="MCITable_length"]').change(function() {
+	$('select[name="MCITable_length"]').change(function () {
 		sessionStorage.setItem("selectedLength", $(this).val());
 	});
 	MCITable.page.len(sessionStorage.getItem("selectedLength")).draw();
 });
-$("#MCICancelid, #MCICancelidBtn").click(function() {
+$("#MCICancelid, #MCICancelidBtn").click(function () {
 	$("#MCIDetailBtn").html("<i class='fal fa-check fa-fw'></i>&nbsp; Save").show();
 	$("#PTN, #gender, #ageID, #cardColor, #modeTrans, #ambulance, #receHealthFacility, #blackHandedOver").val('');
 	$('#PTN, #ageID, #ambulance, #receHealthFacility, #blackHandedOver').removeAttr('readonly');
