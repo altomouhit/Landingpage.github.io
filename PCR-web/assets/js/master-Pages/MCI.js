@@ -179,8 +179,8 @@ $(document).ready(function () {
 		columnDefs: [{
 			searchable: false,
 			//"orderable": false,
-			//visible: false,
-			//targets: [2, 5, 7]
+			visible: false,
+			targets: [2, 5, 7, 10, 11, 13]
 		}],
 		order: [[1, 'desc']]
 	});
@@ -207,4 +207,14 @@ $("#MCICancelid, #MCICancelidBtn").click(function () {
     $('#receHealthFacility').multiselect('refresh');
 	//$(".smart-Wizard-CAD").hide();
 	$('#offcanvasCAD').offcanvas('hide');
+});
+var MCIShowTable = $("#MCIShowTable").DataTable({
+	responsive: true,
+	processing: true,
+	serverSide: false,
+	destroy: true,
+	dom: '<"top"f>rt<"bottom"ilp>',
+});
+$('#MCIShowSearch').keyup(function () {
+	MCIShowTable.search($(this).val()).draw(); // this  is for customized search box with data table search feature.
 });

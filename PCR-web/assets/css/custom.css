@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+:root {
+    --bd-violet: #712cf9;
+}
 html {
     scrollbar-color: #080808 #a6a7a8;
 }

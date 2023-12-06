@@ -387,304 +387,63 @@
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row page-title-box contest_input_block">
-                        <div class="col-sm col-xl-4 d-flex align-items-center p-0">
-                            <a href="MCI_show.html" class="text-dark me-3" data-bs-toggle="tooltip" data-bs-title="Back to MCI">
-                                <img src="assets/img/left-arrow.svg">
-                            </a>
-                            <h4 class="mb-0" data-bs-toggle="tooltip" data-bs-title="Mass Casualty Incident">
-                                Mass Casualty Incident
-                            </h4>
-                        </div>
-                    
-                        <div class="col-sm-12 col-xl-8 d-flex align-items-center justify-content-end header-btn-block p-0 text-nowrap">
-                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
-                                <div class="input-group input-group-navbar">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="button" style="min-width: auto">
-                                            <i class="fal fa-search" aria-hidden="true"></i>
-                                        </button>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Mass Casualty Incident</h4>
+
+                                <div class="page-title-right">
+                                    <!-- start page title -->
+                                    <div class="row contest_input_block">
+                                        <div class="col-12">
+                                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                                <div class="input-group input-group-navbar">
+                                                    <div class="input-group-append">
+                                                        <button class="btn" type="button" style="min-width: auto">
+                                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" id="MCIShowSearch" class="form-control" placeholder="Search..." aria-label="Search">
+                                                </div>
+                                                <a href="MCI.html" class="btn btn-primary justify-content-center mx-2" data-bs-toggle="tooltip" data-bs-title="create New MIC">
+                                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <input type="text" id="MCISearch" class="form-control" placeholder="Search..." aria-label="Search">
+                                    <!-- end page title -->
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-                    <div class="row project-wrapper mt-4">
-                        
+                    <div class="row project-wrapper mt-2">
                         <div class="col-xxl-12">
-                            <div class="card ribbon-box border shadow-none radius-25 mb-3">
-                                <div class="card-body">
-                                    <span class="ribbon-three ribbon-three-primary"><span>Incident Data</span></span>
-    
-                                    <div class="row g-3 my-4">
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="number" class="form-control" id="incidentNo" placeholder="Incident No" autofocus>
-                                                    <label for="incidentNo">Incident No</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="governorateID" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Muscat</option>
-                                                        <option value="2">AL Batinah South</option>
-                                                        <option value="3">AL Batinah North</option>
-                                                        <option value="4">AL Wusta</option>
-                                                        <option value="5">Musandam</option>
-                                                        <option value="6">AL Burimi</option>
-                                                        <option value="7">AL Dakhiliyah</option>
-                                                        <option value="8">AL Dhahira</option>
-                                                        <option value="9">AL Sharqyah North</option>
-                                                        <option value="10">AL Sharqyah South</option>
-                                                        <option value="11">Dhofar</option>
-                                                    </select>
-                                                    <label for="governorateID">Governorate ID</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="stationID" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                    </select>
-                                                    <label for="stationID">Station ID</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <select class="form-select" id="incidentType" aria-label="Floating label">
-                                                        <option value="">Please select</option>
-                                                        <option value="1">Truma</option>
-                                                        <option value="2">Medical</option>
-                                                    </select>
-                                                    <label for="incidentType">Incident Type</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-user-headset fa-lg"></i></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="incidentDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
-                                                    <label for="incidentDate">Incident Date</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="incidentLocationtxt" placeholder="Incident Location" />
-                                                    <label for="incidentLocationtxt">Incident Location</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-map fa-lg"></i></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="incidentTime" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS">
-                                                    <label for="incidentTime">Incident Time</label>
-                                                </div>
-                                                <span class="input-group-text"><i class="fa-light fa-calendar-clock fa-lg"></i></span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div> <!-- /.row -->
-
-                                    <fieldset class="fieldset">
-                                        <div class="row g-3 mt-1 mb-3">
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="PTN" placeholder="Patient Triage Tag Number" autofocus>
-                                                        <label for="PTN">Patient Triage Tag Number</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="gender" aria-label="Floating label">
-                                                            <option value="">Please select</option>
-                                                            <option value="1">Male</option>
-                                                            <option value="2">Female</option>
-                                                        </select>
-                                                        <label for="gender">Gender</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="ageID" placeholder="Age">
-                                                        <label for="ageID">Age</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-family-dress fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="cardColor" aria-label="Floating label">
-                                                            <option value="">Please select</option>
-                                                            <option value="1">Red</option>
-                                                            <option value="2">Yellow</option>
-                                                            <option value="3">Green</option>
-                                                            <option value="4">Blue</option>
-                                                        </select>
-                                                        <label for="cardColor">Category (Card Color)</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-fill-drip fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="modeTrans" aria-label="Floating label">
-                                                            <option value="">Please select</option>
-                                                            <option value="1">Ground Transport</option>
-                                                            <option value="2">Air Transport</option>
-                                                            <option value="3">Sea Transport</option>
-                                                        </select>
-                                                        <label for="modeTrans">Mode of Transport</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-truck-plane fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="timeTrans" data-provider="timepickr" data-time-basic="true" placeholder="HH:SS" />
-                                                        <label for="timeTrans">Time of Transport</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-truck-clock fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="ambulance" placeholder="Ambulance Plate" />
-                                                        <label for="ambulance">Ambulance Plate</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-truck-medical fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Receiving Health Facility" id="receHealthFacility" />
-                                                        <label for="receHealthFacility">Receiving Health Facility</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-folder-medical fa-lg"></i></span>
-                                                </div>
-                                            </div> -->
-                                            <div class="col-lg-3" id="hospitalDiv1">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="hospital_Facility" aria-label="Floating label">
-                                                            <option value="">Please select</option>
-                                                            <option value="1">Government Hospital</option>
-                                                            <option value="2">Private Hospital</option>
-                                                        </select>
-                                                        <label for="hospital_Facility">Health Care Facility</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-car-building fa-lg"></i></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3" id="governmentHospitalDiv1">
-                                                <div class="input-group">
-                                                    <div class="form-floating singleSelect">
-                                                        <select class="form-select multiSelect" id="receHealthFacility" data-live-search="true" aria-label="Floating label">
-                                                            <option value="">Please select</option>                                                             
-                                                        </select>
-                                                        <label for="receHealthFacility" id="hospitalFacilitytxt"></label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-house-medical-flag fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-3">
-                                                <div class="input-group">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Black Handed Over" id="blackHandedOver" />
-                                                        <label for="blackHandedOver">Black Handed Over</label>
-                                                    </div>
-                                                    <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-9 d-flex align-items-center justify-content-end btn-bottom">
-                                                <button type="reset" class="btn btn-text ms-0" id="MCICancelidBtn" style="width: auto; color: #868700">
-                                                    Cancel
-                                                </button>
-                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="MCIDetailFn()" id="MCIDetailBtn">
-                                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Add
-                                                </button>
-                                            </div>
-                                        </div> <!-- /.row -->
-
-                                        <div class="row mb-2">
-                                            <div class="col-md-12">
-                                                <div class="table-responsive data_table">
-                                                    <table class="table table-bordered table-striped w-100" id="MCITable">
-                                                        <thead class="table-light">
-                                                            <tr>
-                                                                <th>Patient Triage Tag Number</th>  <!-- 0 -->
-                                                                <th>Gender</th>                     <!-- 1 -->
-                                                                <th></th>                           <!-- 2 -->
-                                                                <th>Age</th>                        <!-- 3 -->
-                                                                <th>Category (Card Color)</th>      <!-- 4 -->
-                                                                <th></th>                           <!-- 5 -->
-                                                                <th>Mode of Transport</th>          <!-- 6 -->
-                                                                <th></th>                           <!-- 7 -->
-                                                                <th>Time of Transport</th>          <!-- 8 -->
-                                                                <th>Ambulance Plate</th>            <!-- 9 -->
-                                                                <th></th>                           <!-- 10 -->
-                                                                <th></th>                           <!-- 11 -->
-                                                                <th>Receiving Health Facility</th>  <!-- 12 -->  
-                                                                <th></th>                           <!-- 13 -->
-                                                                <th>Black Handed Over</th>          <!-- 14 -->
-                                                                <th class="w-10">Action</th>        <!-- 15 -->
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.row  -->
-
-                                    </fieldset>
-
-                                    <div class="row mt-3">
-                                        <div class="col d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-success"><i class="fad fa-paper-plane fa-fw fa-lg"></i>&nbsp;Submit</button>
-                                        </div>
-                                    </div> <!-- /.row -->
-                                </div>
+                            <div class="table-responsive data_table">
+                                <table class="table table-bordered table-striped w-100" id="MCIShowTable">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>MCI ID</th>             <!-- 0 -->
+                                            <th>Incident No</th>        <!-- 1 -->
+                                            <th>Station ID</th>         <!-- 2 -->
+                                            <th>Incident Type</th>      <!-- 3 -->
+                                            <th>Incident Date</th>      <!-- 4 -->
+                                            <th>Incident Location</th>  <!-- 5 -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="MCI.html" class="btn btn-chartreuse">MCI06122023</a></td>
+                                            <td>INC0620</td>
+                                            <td>Boshar-1</td>
+                                            <td>Truma</td>
+                                            <td>06-12-2023</td>
+                                            <td>Khulna</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                        <!-- /.col-xxl-12 -->
