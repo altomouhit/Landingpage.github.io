@@ -12,8 +12,11 @@
       "DmodeTrans_val": "1",
       "DtimeTrans": "12:30",
       "Dambulance": "Muscat",
-      "DreceHealthFacility": "Seeb",
-      "DblackHandedOver": "Al-Amirat, AL-Athaiba, Al-Khudh2"
+      "Dhospital_Facility": "Government Hospital",
+      "Dhospital_Facility_val": "1",
+      "DreceHealthFacility": "Al Seefa Health Center",
+      "DreceHealthFacility_val": "1",
+      "DblackHandedOver": "Al-Amirat"
     },
     {
       "id": "2",
@@ -27,8 +30,11 @@
       "DmodeTrans_val": "2",
       "DtimeTrans": "12:30",
       "Dambulance": "Muscat",
-      "DreceHealthFacility": "Seeb",
-      "DblackHandedOver": "Al-Amirat, AL-Athaiba, Al-Khudh2"
+      "Dhospital_Facility": "Government Hospital",
+      "Dhospital_Facility_val": "1",
+      "DreceHealthFacility": "University Hospital",
+      "DreceHealthFacility_val": "4",
+      "DblackHandedOver": "Al-Amirat"
     },
     {
       "id": "3",
@@ -42,8 +48,11 @@
       "DmodeTrans_val": "3",
       "DtimeTrans": "12:30",
       "Dambulance": "Muscat",
-      "DreceHealthFacility": "Seeb",
-      "DblackHandedOver": "Al-Amirat, AL-Athaiba, Al-Khudh2"
+      "Dhospital_Facility": "Private Hospital",
+      "Dhospital_Facility_val": "2",
+      "DreceHealthFacility": "Bardr Al-Samaa Hospital (Ruwi)",
+      "DreceHealthFacility_val": "46",
+      "DblackHandedOver": "Al-Amirat"
     }
   ]
 }

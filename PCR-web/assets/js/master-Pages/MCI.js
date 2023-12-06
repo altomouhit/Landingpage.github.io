@@ -6,7 +6,7 @@
 function MCIDetailFn() {
 	if ($.trim($("#MCIDetailBtn").text()) == "Update") {
 		SubSubEdit.remove().draw();
-		$("#MCIDetailBtn").html("<i class='fal fa-check fa-fw'></i>&nbsp; Save");
+		$("#MCIDetailBtn").html("<i class='fal fa-plus fa-fw'></i>&nbsp; Add");
 	}
 	var MCI = {};
 	//Incident Data Details
@@ -45,7 +45,13 @@ function MCIDetailFn() {
 	}
 	var timeTrans = $("#timeTrans").val();
 	var ambulance = $("#ambulance").val();
-	var receHealthFacility = $("#receHealthFacility").val();
+
+	var hospital_Facility = $("#hospital_Facility option:selected").text();
+	var hospital_Facility_val = $("#hospital_Facility option:selected").val();
+
+	var receHealthFacility = $("#receHealthFacility option:selected").text();
+	var receHealthFacility_val = $("#receHealthFacility option:selected").val();
+
 	var blackHandedOver = $("#blackHandedOver").val();
 	//Object append the data
 	MCI.DincidentNo = incidentNo;
@@ -65,7 +71,10 @@ function MCIDetailFn() {
 	MCI.DmodeTrans_val = modeTrans_val;
 	MCI.DtimeTrans = timeTrans;
 	MCI.Dambulance = ambulance;
+	MCI.Dhospital_Facility = hospital_Facility;
+	MCI.Dhospital_Facility_val = hospital_Facility_val;
 	MCI.DreceHealthFacility = receHealthFacility;
+	MCI.DreceHealthFacility_val = receHealthFacility_val;
 	MCI.DblackHandedOver = blackHandedOver;
 	//Call function to save Data
 	var MCITable = $('#MCITable').DataTable();
@@ -78,14 +87,16 @@ function MCIDetailFn() {
 	$("#modeTrans").val('');
 	$("#timeTrans").val('');
 	$("#ambulance").val('');
-	$("#receHealthFacility").val('');
+	$("#hospital_Facility").val('');
+	$("#receHealthFacility option:selected").prop("selected", false);
+    $('#receHealthFacility').multiselect('refresh');
 	$("#blackHandedOver").val('');
 }
 //edit editMCIDetailFn details
 function editMCIDetailFn(data1) {
 	//Set value in form
 	var data = data1.data();
-	$("#MCIDetailBtn").html("<i class='fal fa-check'></i>&nbsp; Update");
+	$("#MCIDetailBtn").html("<i class='fal fa-plus'></i>&nbsp; Update");
 	$("#PTN").val(data.DPTN);
 	$("#gender").val(data.Dgender_val);
 	$("#ageID").val(data.DageID);
@@ -93,7 +104,8 @@ function editMCIDetailFn(data1) {
 	$("#modeTrans").val(data.DmodeTrans_val);
 	$("#timeTrans").val(data.DtimeTrans);
 	$("#ambulance").val(data.Dambulance);
-	$("#receHealthFacility").val(data.DreceHealthFacility);
+	$("#hospital_Facility").val(data.Dhospital_Facility_val).trigger('change');
+	$("#receHealthFacility").val(data.DreceHealthFacility_val).multiselect('rebuild');
 	$("#blackHandedOver").val(data.DblackHandedOver);
 }
 //View viewMCIDetailFn details
@@ -108,10 +120,11 @@ function viewMCIDetailFn(data1) {
 	$("#modeTrans").val(data.DmodeTrans_val);
 	$("#timeTrans").val(data.DtimeTrans);
 	$("#ambulance").val(data.Dambulance);
-	$("#receHealthFacility").val(data.DreceHealthFacility);
+	$("#hospital_Facility").val(data.Dhospital_Facility_val).trigger('change');
+	$("#receHealthFacility").val(data.DreceHealthFacility_val).multiselect('rebuild');
 	$("#blackHandedOver").val(data.DblackHandedOver);
-	$('#PTN, #ageID, #ambulance, #receHealthFacility, #blackHandedOver').attr('readonly', true);
-	$("#gender, #cardColor, #modeTrans").prop('disabled', true);
+	$('#PTN, #ageID, #ambulance, #blackHandedOver').attr('readonly', true);
+	$("#gender, #cardColor, #modeTrans, #receHealthFacility,").prop('disabled', true);
 }
 $(document).ready(function () {
 	$('#MCITable tbody').on('click', '#MCIViewBtn', function () {
@@ -151,7 +164,10 @@ $(document).ready(function () {
 		    { "data": "DmodeTrans_val" }, 
 		    { "data": "DtimeTrans" }, 
 		    { "data": "Dambulance" }, 
+			{ "data": "Dhospital_Facility" },
+			{ "data": "Dhospital_Facility_val" },
 		    { "data": "DreceHealthFacility" }, 
+			{ "data": "DreceHealthFacility_val" },
 		    { "data": "DblackHandedOver" }, 
 		    { "data": "Actions", "orderable": false, "defaultContent": 
 		        "<button type='button' id = 'MCIViewBtn' class='edit-icon'><i class='fal fa-eye'></i></button>&nbsp;" + 
@@ -163,8 +179,8 @@ $(document).ready(function () {
 		columnDefs: [{
 			searchable: false,
 			//"orderable": false,
-			visible: false,
-			targets: [2, 5, 7]
+			//visible: false,
+			//targets: [2, 5, 7]
 		}],
 		order: [[1, 'desc']]
 	});
@@ -183,10 +199,12 @@ $(document).ready(function () {
 	MCITable.page.len(sessionStorage.getItem("selectedLength")).draw();
 });
 $("#MCICancelid, #MCICancelidBtn").click(function () {
-	$("#MCIDetailBtn").html("<i class='fal fa-check fa-fw'></i>&nbsp; Save").show();
-	$("#PTN, #gender, #ageID, #cardColor, #modeTrans, #ambulance, #receHealthFacility, #blackHandedOver").val('');
-	$('#PTN, #ageID, #ambulance, #receHealthFacility, #blackHandedOver').removeAttr('readonly');
-	$("#gender, #cardColor, #modeTrans").prop('disabled', false);
+	$("#MCIDetailBtn").html("<i class='fal fa-plus fa-fw'></i>&nbsp; Add").show();
+	$("#PTN, #gender, #ageID, #timeTrans, #cardColor, #modeTrans, #ambulance, #hospital_Facility, #blackHandedOver").val('');
+	$('#PTN, #ageID, #timeTrans, #ambulance, #blackHandedOver').removeAttr('readonly');
+	$("#gender, #cardColor, #modeTrans, #hospital_Facility").prop('disabled', false);
+	$("#receHealthFacility option:selected").prop("selected", false);
+    $('#receHealthFacility').multiselect('refresh');
 	//$(".smart-Wizard-CAD").hide();
 	$('#offcanvasCAD').offcanvas('hide');
 });

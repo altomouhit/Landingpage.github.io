@@ -2060,6 +2060,262 @@ $(document).ready(function() {
             });
         }
     });
+
+	//Governorate
+	$('#hospital_Facility').on('change', function() {
+        //alert($(this).find(":selected").val());
+		$('#hospitalFacilitytxt').text($(this).find(":selected").text());
+        $('#receHealthFacility').find('option').remove().end().append('<option value="">Please select</option>').val('').trigger('change');
+		$('select#receHealthFacility').multiselect('rebuild');
+        //var storedata;
+		var receHealthFacility;
+        if ($(this).find(":selected").val() == "1") {
+            //alert("1");
+			receHealthFacility = [{
+                value: '1',
+                text: 'Al Seefa Health Center'
+            }, {
+                value: '2',
+                text: 'Muscat Health Center'
+            }, {
+                value: '3',
+                text: 'Yetti Health Center'
+            }, {
+                value: '4',
+                text: 'University Hospital'
+            },{
+                value: '5',
+                text: 'Military Hospital'
+            }, {
+                value: '6',
+                text: 'Al Nahdha Hospital'
+            }, {
+                value: '7',
+                text: 'Al Rahma Hospital'
+            }, {
+                value: '8',
+                text: 'Al Wadi Al Kabeer Health Center'
+            }, {
+                value: '9',
+                text: 'Al Wattaya Health Center'
+            }, {
+                value: '10',
+                text: 'Hai Al Mina Health Center'
+            }, {
+                value: '11',
+                text: 'Khaula Hospital'
+            }, {
+                value: '12',
+                text: 'Muttrah Health Center'
+            }, {
+                value: '13',
+                text: 'Ruwi Health Center'
+            }, {
+                value: '14',
+                text: 'Al Hajer Health Center'
+            }, {
+                value: '15',
+                text: 'Al Masarra Hospital'
+            }, {
+                value: '16',
+                text: 'Amerat Health Center'
+            }, {
+                value: '17',
+                text: 'An Nahdhah Health Center'
+            }, {
+                value: '18',
+                text: 'Sya Health Center'
+            }, {
+                value: '19',
+                text: 'Al Azaiba Health Center'
+            }, {
+                value: '20',
+                text: 'Al Ghobra Health Center'
+            }, {
+                value: '21',
+                text: 'Al Khuwair Health Center'
+            }, {
+                value: '22',
+                text: 'Al Khuwayr North Health Center'
+            }, {
+                value: '23',
+                text: 'Al-Ansab Health Center'
+            }, {
+                value: '24',
+                text: 'Bawshar Health Centre'
+            }, {
+                value: '25',
+                text: 'Bousher Specialized Polyclinic'
+            }, {
+                value: '26',
+                text: 'Renal Dialysis Centre Bausher'
+            }, {
+                value: '27',
+                text: 'Royal Hospital'
+            }, {
+                value: '28',
+                text: 'ASeeb Specialis Polyclinic'
+            }, {
+                value: '29',
+                text: 'Alsunaynah Health Center'
+            }, {
+                value: '30',
+                text: 'Al Jabal Al Akhdar Hospital'
+            }, {
+                value: '31',
+                text: 'Burkat Al Moze Health Center'
+            }, {
+                value: '32',
+                text: 'Medical Fitness Center'
+            }, {
+                value: '33',
+                text: 'Nizwa Healthy Lifestyle Project'
+            }, {
+                value: '34',
+                text: 'Nizwa Hospital'
+            }, {
+                value: '35',
+                text: 'Nizwa Poly Clinic'
+            }, {
+                value: '36',
+                text: 'Firq Health Center'
+            }, {
+                value: '37',
+                text: 'Gobra South Health Center'
+            }, {
+                value: '38',
+                text: 'Sarab Health Center'
+            }, {
+                value: '39',
+                text: 'Al Rawdah Health Center'
+            }, {
+                value: '40',
+                text: 'Mahadah'
+            }, {
+                value: '41',
+                text: 'Liqbi Health Center'
+            }, {
+                value: '42',
+                text: 'Haitham Health Center'
+            }, {
+                value: '43',
+                text: 'Ras Madrika Health Center'
+            }, {
+                value: '44',
+                text: 'Al- Jazir Hospital'
+            }, {
+                value: '45',
+                text: 'Al- Najdah Health Center'
+            }];
+            $.each(receHealthFacility, function(index, value) {
+                $('#receHealthFacility').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+				$('select#receHealthFacility').multiselect('rebuild');
+            });
+        } else if ($(this).find(":selected").val() == "2") {
+            //alert("2");
+			receHealthFacility = [{
+                value: '46',
+                text: 'Bardr Al-Samaa Hospital (Ruwi)'
+            }, {
+                value: '47',
+                text: 'Bardr Al-Samaa Hospital (AL Khoud)'
+            }, {
+                value: '48',
+                text: 'Bardr Al-Samaa Hospital (Mabella)'
+            }, {
+                value: '49',
+                text: 'Bardr Al-Samaa Hospital (Sur)'
+            },  {
+                value: '50',
+                text: 'Bardr Al-Samaa Hospital (Al-Sawaiq)'
+            }, {
+                value: '51',
+                text: 'Bardr Al-Samaa Hospital (Barka)'
+            }, {
+                value: '52',
+                text: 'Bardr Al-Samaa Hospital (Sohar)'
+            }, {
+                value: '53',
+                text: 'Bardr Al-Samaa Hospital (Falj AlQabail)'
+            }, {
+                value: '54',
+                text: 'Bardr Al-Samaa Hospital (Salalah)'
+            }, {
+                value: '55',
+                text: 'Bardr Al-Samaa Hospital (Faraq)'
+            },  {
+                value: '56',
+                text: 'StarCare Hospital (Mabella)'
+            }, {
+                value: '57',
+                text: 'StarCare Hospital (Seeb)'
+            }, {
+                value: '58',
+                text: 'StarCare Hospital (Barka)'
+            }, {
+                value: '59',
+                text: 'StarCare Hospital (Salalah)'
+            }, {
+                value: '60',
+                text: 'Ester AL-Rafah Hospital (Ghubra)'
+            }, {
+                value: '61',
+                text: 'Ester AL-Raffah Hospital (AL Khoud)'
+            },  {
+                value: '62',
+                text: 'Ester AL-Raffah Hospital (Sohar)'
+            }, {
+                value: '63',
+                text: 'Ester AL-Raffah Hospital (Ibri)'
+            }, {
+                value: '64',
+                text: 'KIMS Hospital (Ruwi)'
+            }, {
+                value: '65',
+                text: 'Apollo Hospital (Mutrah)'
+            }, {
+                value: '66',
+                text: 'Oman International Hospital (Ghubra)'
+            }, {
+                value: '67',
+                text: 'Muscat Private Hospital (Bousher)'
+            },  {
+                value: '68',
+                text: 'NMC Hospital (AL-Hail)'
+            }, {
+                value: '69',
+                text: 'NMC Hospital (Ghubra)'
+            }, {
+                value: '70',
+                text: 'NMC Hospital (Ruwi)'
+            }, {
+                value: '71',
+                text: 'LifeLine Hospital (Ghubra)'
+            }, {
+                value: '72',
+                text: 'LifeLine Hospital (Falj AlQabail)'
+            }, {
+                value: '73',
+                text: 'LifeLine Hospital (Salalah)'
+            }, {
+                value: '74',
+                text: 'AL-Razi Medical Complex (Salalah)'
+            },  {
+                value: '75',
+                text: 'AL-Hayat International Hospital (Ghubra)'
+            }];
+			$.each(receHealthFacility, function(index, value) {
+                $('#receHealthFacility').append($('<option>', {
+                    value: value.value,
+                    text: value.text
+                })).trigger('change');
+				$('select#receHealthFacility').multiselect('rebuild');
+            });
+        }
+    });
 });
 
 var ecgTable = $('#ecgTable').DataTable({
