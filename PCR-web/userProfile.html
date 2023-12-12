@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>User Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -23,10 +23,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/dashboard.css" />
+
+    <!-- multiselect Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
-
 </head>
 
 <body class="bodybg">
@@ -78,7 +80,9 @@
                             </a>
                         </div>
 
-                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                        <button type="button"
+                            class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                            id="topnav-hamburger-icon">
                             <span class="hamburger-icon">
                                 <span></span>
                                 <span></span>
@@ -327,8 +331,8 @@
                         </li>
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
-                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents </span>
+                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarDashboards">
+                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents</span>
                             </a>
                         </li>
                         <!-- end Show PCR / Incidents Menu -->
@@ -359,14 +363,13 @@
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
-                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-governorate">Governorate</a></li>
+                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
                                     <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
                                     <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
                                     <li class="nav-item"><a href="userProfile.html" class="nav-link" data-key="t-userProfile">User Profile</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <!-- end Master Data Menu -->
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -388,151 +391,182 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Dashboard</h4>
+                                <h4 class="mb-sm-0">User Profile</h4>
 
-                                <!-- <div class="page-title-right">
+                                <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item">
                                             <a href="dashboard.html">
                                                 <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
                                         </li>
-                                        <li class="breadcrumb-item active">Statistics</li>
+                                        <li class="breadcrumb-item active">User Profile</li>
                                     </ol>
-                                </div> -->
+                                </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
-                    
-                    <div class="row project-wrapper1">
 
-                        <div class="carousel slide mb-3 p-0" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/new/homeBanner.png" alt="" class="img-fluid bd-placeholder-img bannerImg w-100">
-                                    <div class="carousel-caption text-center bannerImg bannerBg p-3">
-                                        <div class="userName">
-                                            <img src="assets/img/new/userAvatar.svg" class="img-fluid img-avatar" alt="">
-                                            <p><a class="btn btn-lg btn-outline-warning" href="#">Ahlam Hilal Khamis Alrasbi </a></p>
+                    <!-- start page title -->
+                    <div class="row contest_input_block">
+                        <div class="col-12">
+                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                <div class="input-group input-group-navbar">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button" style="min-width: auto">
+                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" id="userProfileSearch" class="form-control" placeholder="Search..."
+                                        aria-label="Search">
+                                </div>
+                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="createUserProfileBtn">
+                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- end page title -->
+                    <div class="row project-wrapper">
+                        <div class="col-xxl-12">
+                            <section class="smart-Wizard">
+                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                                    <fieldset class="mb-2 p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating singleSelect">
+                                                        <input type="text" class="form-control" id="forceNo" placeholder="Force No" />
+                                                        <label for="forceNo">Force No</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-list-ol fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="loginID" placeholder="Login ID" />
+                                                        <label for="loginID">Login ID</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-user-lock fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="userName" placeholder="User Name" />
+                                                        <label for="userName">User Name</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="roleName" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Role Name 1</option>
+                                                            <option value="2">Role Name 2</option>
+                                                            <option value="3">Role Name 3</option>
+                                                        </select>
+                                                        <label for="roleName">Role Name</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-pen-ruler fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="contactNo" placeholder="Contact No" maxlength="8" />
+                                                        <label for="contactNo">Contact No</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="email" class="form-control" id="emailID" placeholder="Email">
+                                                        <label for="emailID">Email</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-envelope fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="statusYN" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Active</option>
+                                                            <option value="2">In active</option>
+                                                        </select>
+                                                        <label for="statusYN">Status</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-question fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="form-check form-switch form-switch-lg form-switch-success">
+                                                    <input type="checkbox" class="form-check-input" id="statuSwitch" checked="">
+                                                    <label for="statuSwitch">Status</label>
+                                                </div>
+                                            </div> -->
                                         </div>
+                                        <!-- /.row -->
+                
+                                        <div class="row">
+                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                                <button type="reset" class="btn btn-text" id="userProfileCancelid"
+                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                    Cancel
+                                                </button>
+                
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="userProfileFn()" id="userProfileBtn">
+                                                    <i class='fal fa-plus fa-fw'></i>&nbsp; Add
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- /.row  -->
+                                    </fieldset>
+                                </form>
+                            </section>
+                
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="table-responsive-sm data_table">
+                                        <table id="userProfileTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th>Force No</th>
+                                                    <th>Login ID</th>
+                                                    <th>User Name</th>
+                                                    <th>Role Name</th>
+                                                    <th></th>
+                                                    <th>Contact No</th>
+                                                    <th>Email</th>
+                                                    <th>Status</th>
+                                                    <th></th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
+                            <!-- /.row  -->
                         </div>
-                        
-                        <div class="col-md-12 col-xxl-9 mx-auto ms-auto">
-                            <!-- <div class="row mt-2 justify-content-center">
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="PCR.html">
-                                        <div class="card gradient-blueCard  card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape gradient-violet border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/create.svg" class="imgS" alt="create" />
-                                                </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Create New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="sync-records.html">
-                                        <div class="card gradient-green card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape bg-gradient-success border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/Sync.svg" class="imgS" alt="create" />
-                                                </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Sync Records</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <a href="javascript:void(0);">
-                                        <div class="card gradient-yellow card-hover card-animate">
-                                            <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
-                                                <div class="icon icon-lg icon-shape bg-gradient-warning border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/report-icon.svg" class="imgS" alt="create" />
-                                                </div>
-                                                <div class="text-end pt-1">
-                                                    <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Reports</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="form-group form-group-select col-md-6">
-                                    <label class="form-label mb-0 w-84 LabelselectIdentity Lableselect" for="PanNumber"> <span class="change">change</span>
-                                        <select id="selectIdentity" name="selectIdentity" data-native-menu="false" class="form-control border-0 bg-transparent valid" aria-invalid="false">
-                                            <option value="TaxId">PAN No.</option>
-                                            <option value="VoterId">Voter ID No.</option>
-                                            <option value="PassportId"> Passport No.</option>
-                                            <option value="RationCardId">Ration Card No.</option>
-                                            <option value="DriversLicenseId">Driving License No.</option>
-                                        </select>
-                                    </label>
-                                    <input type="text" class="form-control text-uppercase valid" id="PanNumber" name="PanNumber" placeholder="Enter Identity" autocomplete="off" aria-required="true" aria-invalid="false">
-                                </div>
-                            </div> -->
-                             <!-- /.row -->
-                            <div class="row justify-content-center text-center">
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="Doctor_Requests.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/showMyRequestsIcon.svg" alt="1" class="dashboard-img img-fluid">
-                                        </span>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">Show My Requests</h6>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="PCR.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/creatNewIcon.svg" alt="1" class="dashboard-img img-fluid">
-                                        </span>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">Create New</h6>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="sync-records.html" class="text-gray">
-                                        <span class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/SYncRecordsIcon.svg" alt="2" class="dashboard-img img-fluid">
-                                        </span>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">Sync Records</h6>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="generateReport.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/reportIcon.svg" alt="3" class="dashboard-img img-fluid">
-                                        </div>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">Reports</h6>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="lookUP.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/masterIcon.svg" alt="4" class="dashboard-img img-fluid">
-                                        </div>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">Master</h6>
-                                    </a>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-2">
-                                    <a href="MCI_show.html" class="text-gray">
-                                        <div class="position-relative mb-2">
-                                            <img src="assets/img/new/dashboard/MCIcon.svg" alt="4" class="dashboard-img img-fluid">
-                                        </div>
-                                        <h6 class="my-3 fw-bold dashboard-text-color">MCI</h6>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> <!-- /.col -->
-                    </div> <!-- /.row -->
-
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -542,7 +576,8 @@
                 <!-- <div class="container-fluid position-absolute footer-img">
                     <div class="row align-items-end">
                         <div class="col">
-                            <img src="assets/img/footer/pacda.jpg" class="img-fluid" alt="ambulance" />
+                            <img src="assets/img/ambulance.svg" class="img-fluid" alt="ambulance"
+                                style="width: 249px;" />
                         </div>
                         <div class="col d-flex justify-content-center">
                             <img src="assets/img/peoples.svg" class="img-fluid" alt="peoples" style="width: 189px;" />
@@ -582,12 +617,6 @@
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
-
-    <!-- <div class="customizer-setting d-none d-md-block">
-        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
-        </div>
-    </div> -->
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
@@ -1125,29 +1154,39 @@
                 <div class="modal-footer border-0 justify-content-center pt-5">
                     <button type="button" class="btn justify-content-center d-block btn-outline-dark"
                         data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center"
-                            style="min-width:100px">Yes</button></a>
+                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
                 </div>
             </div>
         </div>
     </div>
-
+   
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
     <!-- loader -->
     <script type="text/javascript" src="assets/js/loader.js"></script>
-    
+
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
     <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/plugins.js"></script> -->
+    <script type="text/javascript" src='assets/libs/choices/choices.min.js'></script>
     <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/list/list.js"></script>
+    <script type="text/javascript" src="assets/libs/list/list.pagination.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
 
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/PCR.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/userProfile.js"></script>
 </body>
 
 </html>

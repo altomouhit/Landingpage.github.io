@@ -47,7 +47,7 @@ window.onload = function() {
 	//Patient Assessment & Management > Resuscitation Management > Treatment > Intervention > Electrical Intervention
 	$("#electIntOtherDiv, #RHYTHMDiv").hide();
 	//$('.selector').editableSelect();
-	$('.selector').editableSelect({
+	/*$('.selector').editableSelect({
 		// enable filter
 		filter: true,
 		// default, fade or slide
@@ -61,7 +61,7 @@ window.onload = function() {
 		//onShow: function() {},
 		//onHide: function() {},
 		//onSelect: function(element) {}
-	});
+	});*/
 }
 $(document).ready(function() {
 	// $('#pastMedicalHistory').editableSelect().on('select.editable-select', function(e, li) {

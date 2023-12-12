@@ -1,9 +1,7 @@
 * {
     box-sizing: border-box;
 }
-:root {
-    --bd-violet: #712cf9;
-}
+
 html {
     scrollbar-color: #080808 #a6a7a8;
 }
@@ -812,6 +810,7 @@ hr.horizontal.dark {
     height: 49px;
     margin-bottom: 1rem;
 }
-#toolbar {
-    background-color: var(--vz-headerNew-bg) !important;
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
 }

@@ -133,12 +133,7 @@ $(document).ready(function () {
 		$("#MCIDetailBtn").hide();
 		viewMCIDetailFn(data);
 	});
-	$('#MCITable tbody').on('click', '#MCIEditBtn', function () {
-		var MCITable = $('#MCITable').DataTable();
-		var data = MCITable.row($(this).parents('tr'));
-		$("#MCIDetailBtn").show();
-		editMCIDetailFn(data);
-	});
+	
 	$('#MCITable tbody').on('click', '#MCIEditBtn', function () {
 		var table = $('#MCITable').DataTable();
 		SubSubEdit = table.row($(this).parents('tr'));
