@@ -346,10 +346,10 @@
                     <!-- end Show PCR / Incidents Menu -->
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="Doctor_Requests.html" aria-controls="sidebarDashboards">
-                            <i class="fal fa-stethoscope"></i> <span data-key="t-doctor">Doctor Requests</span>
+                            <i class="fal fa-stethoscope"></i> <span data-key="t-doctor">Medical Director</span>
                         </a>
                     </li>
-                    <!-- end Doctor Requests Menu -->
+                    <!-- end Medical Director Menu -->
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="Medical_Store.html" aria-controls="sidebarDashboards">
                             <i class="fal fa-pills"></i> <span data-key="t-doctor">Medical Store Requests</span>
@@ -531,7 +531,7 @@
                                                             <div class="form-floating">
                                                                 <select class="form-select" id="callCategory" aria-label="Floating label">
                                                                     <option value="">Please select</option>
-                                                                    <option value="1">Truma</option>
+                                                                    <option value="1">Trauma</option>
                                                                     <option value="2">Medical</option>
                                                                 </select>
                                                                 <label for="callCategory">Call Category</label>
@@ -1177,6 +1177,16 @@
                                                                     <span class="input-group-text"><i class="fa-light fa-buildings fa-lg"></i></span>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="col-lg-6">
+                                                                <div class="input-group">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="insuranceExpiryDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                                        <label for="insuranceExpiryDate">Medical Insurance Expiry Date</label>
+                                                                    </div>
+                                                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                                </div>
+                                                            </div>
                                                             
                                                         </div> <!-- /.row -->
     
@@ -1540,6 +1550,7 @@
                                                                                             <!-- <option value="">Please select</option> -->
                                                                                             <option value="1">Left</option>
                                                                                             <option value="2">Right</option>
+                                                                                            <option value="3">NO DCAP BTLS</option>
                                                                                         </select>
                                                                                         <label for="chestLeftRight">Chest</label>
                                                                                     </div>
@@ -1564,7 +1575,7 @@
                                                                                             <option value="11">Rales Crepitation</option>
                                                                                             <option value="12">Wheeze</option>
                                                                                             <option value="13">Rhonchi</option>
-                                                                                            <option value="14">Sling</option>
+                                                                                            <option value="14">Silent</option>
                                                                                             <option value="15">NO DCAP BTLS</option>
                                                                                         </select>
                                                                                         <label for="chest">Left Chest</label>
@@ -1611,7 +1622,7 @@
                                                                                             <option value="11">Rales Crepitation</option>
                                                                                             <option value="12">Wheeze</option>
                                                                                             <option value="13">Rhonchi</option>
-                                                                                            <option value="14">Sling</option>
+                                                                                            <option value="14">Silent</option>
                                                                                             <option value="15">NO DCAP BTLS</option>
                                                                                         </select>
                                                                                         <label for="chestRight">Right Chest</label>
@@ -1650,6 +1661,7 @@
                                                                                             <option value="2">Right Up Quadrant</option>
                                                                                             <option value="3">Left Down Quadrant</option>
                                                                                             <option value="4">Right Down Quadrant</option>
+                                                                                            <option value="5">NO DCAP BTLS</option>
                                                                                         </select>
                                                                                         <label for="abdomenLeftRight">Abdomen</label>
                                                                                     </div>
@@ -1872,6 +1884,7 @@
                                                                                             <option value="1">Thoracic</option>
                                                                                             <option value="2">Lumbar</option>
                                                                                             <option value="3">Sacrum</option>
+                                                                                            <option value="4">NO DCAP BTLS</option>
                                                                                         </select>
                                                                                         <label for="backType">Back</label>
                                                                                     </div>
@@ -1990,7 +2003,8 @@
                                                                     </fieldset>
                                                                 </div>
                                                             </div> <!-- /.row -->
-    
+
+                                                            <!-- Upper EXT -->
                                                             <div class="row mt-3">
                                                                 <div class="col">
                                                                     <fieldset>
@@ -2004,6 +2018,7 @@
                                                                                                 <!-- <option value="">Please select</option> -->
                                                                                                 <option value="1">Left</option>
                                                                                                 <option value="2">Right</option>
+                                                                                                <option value="3">NO DCAP BTLS</option>
                                                                                             </select>
                                                                                             <label for="upperEXT">Upper EXT</label>
                                                                                         </div>
@@ -2109,7 +2124,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
-    
+                                                                    <!-- LWT Ext -->
                                                                     <fieldset class="mt-3">
                                                                         <legend>Lw EXT</legend>
                                                                         <div class="row g-3">
@@ -2121,6 +2136,7 @@
                                                                                                 <!-- <option value="">Please select</option> -->
                                                                                                 <option value="1">Left</option>
                                                                                                 <option value="2">Right</option>
+                                                                                                <option value="3">NO DCAP BTLS</option>
                                                                                             </select>
                                                                                             <label for="lwEXT">Lw EXT</label>
                                                                                         </div>
@@ -2227,7 +2243,8 @@
                                                                     </fieldset>
                                                                 </div> <!-- /.col -->
                                                             </div> <!-- /.row -->
-                                                            
+                                                            <!-- End Upper EXt -->
+
                                                             <div class="row mt-3">
                                                                 <div class="col-lg-6">
                                                                     <div class="input-group">
@@ -2239,7 +2256,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div> <!-- /.row -->
-
                                                             <div class="row mt-3">
                                                                 <div class="col-lg-4">
                                                                     <div class="input-group">
@@ -2671,7 +2687,7 @@
                                                                                             <option value="1">Red</option>
                                                                                             <option value="2">Yellow</option>
                                                                                             <option value="3">Green</option>
-                                                                                            <option value="4">Blue</option>
+                                                                                            <option value="4">Black</option>
                                                                                             <!-- <option value="5">Hospital Facility</option>
                                                                                             <option value="6">Transport Type</option>
                                                                                             <option value="7">Location Type</option> -->
@@ -2965,7 +2981,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Oral Administered By</label>
+                                                                                <label for="mAirwayDoneBy">Oral Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="nasalSizeDiv">
@@ -2988,7 +3004,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Nasal Administered By</label>
+                                                                                <label for="mAirwayDoneBy">Nasal Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="ETTSizeDiv">
@@ -3019,7 +3035,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">ETT Administered By</label>
+                                                                                <label for="mAirwayDoneBy">ETT Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="LMASizeDiv">
@@ -3042,7 +3058,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">LMA Administered By</label>
+                                                                                <label for="mAirwayDoneBy">LMA Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="combiDoneByDiv">
@@ -3053,7 +3069,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="mAirwayDoneBy">Combi Administered By</label>
+                                                                                <label for="mAirwayDoneBy">Combi Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="mAirwayCommentDiv">
@@ -3104,7 +3120,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="oxygenLPMDoneBy">Nasal Administered By</label>
+                                                                                <label for="oxygenLPMDoneBy">Nasal Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="SFMDiv">
@@ -3125,7 +3141,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="SFMLPMDoneBy">SFM Administered By</label>
+                                                                                <label for="SFMLPMDoneBy">SFM Done By</label>
                                                                             </div>
                                                                         </div>
 
@@ -3147,7 +3163,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="NRMLPMDoneBy">NRM Administered By</label>
+                                                                                <label for="NRMLPMDoneBy">NRM Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         
@@ -3169,7 +3185,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BVMLPMDoneBy">BVM Administered By</label>
+                                                                                <label for="BVMLPMDoneBy">BVM Done By</label>
                                                                             </div>
                                                                         </div>
 
@@ -3222,7 +3238,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="immoblazatiomDoneBy">C.COLLAR Administered By</label>
+                                                                                <label for="immoblazatiomDoneBy">C.COLLAR Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="KEDDoneByDiv">
@@ -3233,7 +3249,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="KEDDoneBy">KED Administered By</label>
+                                                                                <label for="KEDDoneBy">KED Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="LBBDoneByDiv">
@@ -3244,7 +3260,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="LBBDoneBy">LBB Administered By</label>
+                                                                                <label for="LBBDoneBy">LBB Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="ScoopDoneByDiv">
@@ -3255,7 +3271,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="ScoopDoneBy">Scoop Administered By</label>
+                                                                                <label for="ScoopDoneBy">Scoop Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="StairDoneByDiv">
@@ -3266,7 +3282,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="StairDoneBy">Stair Administered By</label>
+                                                                                <label for="StairDoneBy">Stair Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="immoblazatiomDiv">
@@ -3304,7 +3320,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="splintingDoneBy">Rigid Administered By</label>
+                                                                                <label for="splintingDoneBy">Rigid Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="tractionDoneByDiv">
@@ -3315,7 +3331,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="tractionDoneBy">Traction Administered By</label>
+                                                                                <label for="tractionDoneBy">Traction Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="splintingDiv">
@@ -3366,7 +3382,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="AEDUsedDoneBy">AED Used Administered By</label>
+                                                                                <label for="AEDUsedDoneBy">AED Used Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="DefibrillationDiv">
@@ -3387,7 +3403,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="DefibrillationDoneBy">Defibrillation Administered By</label>
+                                                                                <label for="DefibrillationDoneBy">Defibrillation Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="CardiversionDiv">
@@ -3408,7 +3424,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="CardiversionDoneBy">Cardiversion Administered By</label>
+                                                                                <label for="CardiversionDoneBy">Cardiversion Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="TCPDiv">
@@ -3429,7 +3445,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="TCPDoneBy">TCP Administered By</label>
+                                                                                <label for="TCPDoneBy">TCP Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="defibrillationDiv">
@@ -3450,7 +3466,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="ECGDoneBy">ECG Administered By</label>
+                                                                                <label for="ECGDoneBy">ECG Done By</label>
                                                                             </div>
                                                                         </div>
                                                                     </div> <!-- /.row -->
@@ -3491,7 +3507,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BandageDoneBy">Bandage Administered By</label>
+                                                                                <label for="BandageDoneBy">Bandage Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="coldPackDoneByDiv">
@@ -3502,7 +3518,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="coldPackDoneBy">Cold Pack Administered By</label>
+                                                                                <label for="coldPackDoneBy">Cold Pack Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="assistDeliveryDiv">
@@ -3523,7 +3539,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="AssistDeliveryDoneBy">Assist Delivery Administered By</label>
+                                                                                <label for="AssistDeliveryDoneBy">Assist Delivery Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="WarmingDoneByDiv">
@@ -3534,7 +3550,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="WarmingDoneBy">Warming Administered By</label>
+                                                                                <label for="WarmingDoneBy">Warming Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="CoolingDoneByDiv">
@@ -3545,7 +3561,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="CoolingDoneBy">Cooling Administered By</label>
+                                                                                <label for="CoolingDoneBy">Cooling Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="BleedingDoneByDiv">
@@ -3556,7 +3572,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BleedingDoneBy">Bleeding Control Administered By</label>
+                                                                                <label for="BleedingDoneBy">Bleeding Control Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="IrrigationDoneByDiv">
@@ -3567,7 +3583,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="IrrigationDoneBy">Irrigation Administered By</label>
+                                                                                <label for="IrrigationDoneBy">Irrigation Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="SuctionDoneByDiv">
@@ -3578,7 +3594,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="SuctionDoneBy">Suction Administered By</label>
+                                                                                <label for="SuctionDoneBy">Suction Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         
@@ -3603,7 +3619,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="NGTDoneBy">NGT Administered By</label>
+                                                                                <label for="NGTDoneBy">NGT Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="BurnCareDoneByDiv">
@@ -3614,7 +3630,7 @@
                                                                                     <option value="2">EMS Provider 2</option>
                                                                                     <option value="3">EMS Provider 3</option>
                                                                                 </select>
-                                                                                <label for="BurnCareDoneBy">Burn Care Administered By</label>
+                                                                                <label for="BurnCareDoneBy">Burn Care Done By</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6 mb-2" id="mOthersDiv">
@@ -3753,7 +3769,7 @@
                                                                                                     <th>Time</th>
                                                                                                     <th>Size</th>
                                                                                                     <th>Attempt No</th>
-                                                                                                    <th>Administered By</th>
+                                                                                                    <th>Done By</th>
                                                                                                     <th style="width: 5%;"></th>
                                                                                                 </tr>
                                                                                                 <!--end tr-->
@@ -3834,7 +3850,7 @@
                                                                                                 <tr>
                                                                                                     <th>Time</th>
                                                                                                     <th>Dose</th>
-                                                                                                    <th>Administered By</th>
+                                                                                                    <th>Done By</th>
                                                                                                     <th class="w-5"></th>
                                                                                                 </tr>
                                                                                                 <!--end tr-->
@@ -3912,7 +3928,7 @@
                                                                                                 <tr>
                                                                                                     <th>Time</th>
                                                                                                     <th>Current</th>
-                                                                                                    <th>Administered By</th>
+                                                                                                    <th>Done By</th>
                                                                                                     <th class="w-5"></th>
                                                                                                 </tr>
                                                                                                 <!--end tr-->
@@ -4504,7 +4520,7 @@
                                                                                 <th rowspan="2">Rhythm</th>
                                                                                 <th colspan="4" class="text-center">Intervention</th>
                                                                                 <th rowspan="2">Response</th>
-                                                                                <th rowspan="2">Administered By</th>
+                                                                                <th rowspan="2">Done By</th>
                                                                                 <th rowspan="2" class="w-5"></th>
                                                                             </tr>
                                                                             <tr>
@@ -4895,7 +4911,7 @@
                                                                                 </ul>
                                                                             </td>
                                                                         </tr>
-                                                                        <tr>
+                                                                        <!-- <tr>
                                                                             <td class="">3</td>
                                                                             <td class="">Infection Control Exposure Report</td>
                                                                             <td class="">PCRIZH15032023</td>
@@ -4904,12 +4920,11 @@
                                                                                     <li class="list-inline-item" data-bs-toggle="modal" data-bs-target="#infectionModal" data-bs-placement="top" title="Infection Control Exposure Report">
                                                                                         <a class="edit-item-btn text-white btn btn-primary"><i class="fa-light fa-head-side-mask fa-lg"></i></a>
                                                                                     </li>
-                                                                                    
                                                                                 </ul>
                                                                             </td>
-                                                                        </tr>
+                                                                        </tr> -->
                                                                         <tr>
-                                                                            <td class="">4</td>
+                                                                            <td class="">3</td>
                                                                             <td class="">Refusal</td>
                                                                             <td class="">PCRIZH15032023</td>
                                                                             <td>
@@ -4921,7 +4936,7 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="">5</td>
+                                                                            <td class="">4</td>
                                                                             <td class="">PDOA</td>
                                                                             <td class="">PCRIZH15032023</td>
                                                                             <td>
@@ -5800,7 +5815,7 @@
                                                 <option value="2">EMS Provider 2</option>
                                                 <option value="3">EMS Provider 3</option>
                                             </select>
-                                            <label for="IVIOdoneBy" class="form-label">Administered By</label>
+                                            <label for="IVIOdoneBy" class="form-label">Done By</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -5854,7 +5869,7 @@
                                                 <option value="2">EMS Provider 2</option>
                                                 <option value="3">EMS Provider 3</option>
                                             </select>
-                                            <label for="doneByCV" class="form-label">Administered By</label>
+                                            <label for="doneByCV" class="form-label">Done By</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -5908,7 +5923,7 @@
                                                 <option value="2">EMS Provider 2</option>
                                                 <option value="3">EMS Provider 3</option>
                                             </select>
-                                            <label for="doneByTCP" class="form-label">Administered By</label>
+                                            <label for="doneByTCP" class="form-label">Done By</label>
                                         </div>
                                     </div>
                                 </div> <!-- /.row -->
@@ -5981,7 +5996,7 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-4">
-                                        <label for="treatmentDoneBy" class="form-label">Administered By</label>
+                                        <label for="treatmentDoneBy" class="form-label">Done By</label>
                                         <select name="treatmentDoneBy" id="treatmentDoneBy" class="form-select">
                                             <option value="">Please select</option>
                                             <option value="1">EMS Provider 1</option>
@@ -7030,10 +7045,10 @@
                                                         <tr>
                                                             <th>Dose</th>
                                                             <th>Time</th>
-                                                            <th>Administered By</th>
+                                                            <th>Done By</th>
                                                             <th>Dose</th>
                                                             <th>Time</th>
-                                                            <th>Administered By</th>
+                                                            <th>Done By</th>
                                                         </tr>
                                                     </tr>
                                                 </thead>
@@ -7185,8 +7200,8 @@
                                     <div class="row mt-2">
                                         <div class="col-lg-6 col-sm-6 mb-2">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="administeredBy" placeholder="Administered By" />
-                                                <label for="administeredBy">Administered By</label>
+                                                <input type="text" class="form-control" id="administeredBy" placeholder="Done By" />
+                                                <label for="administeredBy">Done By</label>
                                             </div>
                                         </div>
                                         <!--end col-->

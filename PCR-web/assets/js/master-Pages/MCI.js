@@ -31,7 +31,7 @@ function MCIDetailFn() {
 	} else if (cardColor_val == 3) {
 		cardColor = "<i class='fas fa-circle-dot text-success fa-xl'></i>";
 	} else if (cardColor_val == 4) {
-		cardColor = "<i class='fas fa-circle-dot text-primary fa-xl'></i>";
+		cardColor = "<i class='fas fa-circle-dot text-dark fa-xl'></i>";
 	}
 	var modeTrans = $("#modeTrans option:selected").text();
 	var modeTrans_val = $("#modeTrans option:selected").val();

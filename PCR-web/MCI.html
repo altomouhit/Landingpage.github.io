@@ -338,10 +338,10 @@
                         <!-- end Show PCR / Incidents Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="Doctor_Requests.html" aria-controls="sidebarDashboards">
-                                <i class="fal fa-stethoscope"></i> <span data-key="t-doctor">Doctor Requests</span>
+                                <i class="fal fa-stethoscope"></i> <span data-key="t-doctor">Medical Director</span>
                             </a>
                         </li>
-                        <!-- end Doctor Requests Menu -->
+                        <!-- end Medical Director Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="Medical_Store.html" aria-controls="sidebarDashboards">
                                 <i class="fal fa-pills"></i> <span data-key="t-doctor">Medical Store Requests</span>
@@ -471,7 +471,7 @@
                                                 <div class="form-floating">
                                                     <select class="form-select" id="incidentType" aria-label="Floating label">
                                                         <option value="">Please select</option>
-                                                        <option value="1">Truma</option>
+                                                        <option value="1">Trauma</option>
                                                         <option value="2">Medical</option>
                                                     </select>
                                                     <label for="incidentType">Incident Type</label>
@@ -513,7 +513,7 @@
                                     </div> <!-- /.row -->
 
                                     <fieldset class="fieldset">
-                                        <div class="row g-3 mt-1 mb-3">
+                                        <div class="row g-3 mt-1">
                                             <div class="col-lg-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
@@ -523,7 +523,7 @@
                                                     <span class="input-group-text"><i class="fa-light fa-phone-office fa-lg"></i></span>
                                                 </div>
                                             </div>
-                                            <div class="col-lg">
+                                            <div class="col-lg-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
                                                         <select class="form-select" id="gender" aria-label="Floating label">
@@ -536,7 +536,7 @@
                                                     <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
                                                 </div>
                                             </div>
-                                            <div class="col-lg">
+                                            <div class="col-lg-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
                                                         <input type="number" class="form-control" id="ageID" placeholder="Age">
@@ -553,7 +553,7 @@
                                                             <option value="1">Red</option>
                                                             <option value="2">Yellow</option>
                                                             <option value="3">Green</option>
-                                                            <option value="4">Blue</option>
+                                                            <option value="4">Black</option>
                                                         </select>
                                                         <label for="cardColor">Category (Card Color)</label>
                                                     </div>
@@ -636,7 +636,10 @@
                                                     <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-9 d-flex align-items-center justify-content-end btn-bottom">
+                                        </div> <!-- /.row -->
+
+                                        <div class="row">
+                                            <div class="col-sm d-flex align-items-center justify-content-end mb-3">
                                                 <button type="reset" class="btn btn-text ms-0" id="MCICancelidBtn" style="width: auto; color: #868700">
                                                     Cancel
                                                 </button>
