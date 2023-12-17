@@ -827,3 +827,13 @@ hr.horizontal.dark {
     background: #BEC6D0;
 }
 /*Custom scrollbar */
+
+.modal:nth-of-type(even) {
+    z-index: 1052 !important;
+}
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1051 !important;
+}
+.secondModal{
+    background: rgba(24, 49, 83, 0.5);
+}
