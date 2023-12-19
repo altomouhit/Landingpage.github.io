@@ -56,7 +56,9 @@ $(document).ready(function() {
     { "mDataProp": "Cons_address", sTitle: "Address", sType: "string" }, 
     { "mDataProp": "Cons_Phnumber", sTitle: "Mobile Number", sType: "string" }, 
     { "mDataProp": "Cons_eMail", sTitle: "Email", sType: "string" }, 
-    { "mDataProp": "Actions", sTitle: "Actions", sType: "string", "defaultContent": "<a id = 'editappconsdetails' href='javascript:void(0)' class='text-green'><i class='fa fa-edit'></i></a><a id = 'removeappconsdetails' href='javascript:void(0)' class='text-red'><i class='fa fa-trash-o'></i></a>"
+    { "mDataProp": "Actions", sTitle: "Actions", sType: "string", "defaultContent": 
+        "<a id = 'editappconsdetails' href='javascript:void(0)' class='text-green'><i class='fa fa-edit'></i></a>"+
+        "<a id = 'removeappconsdetails' href='javascript:void(0)' class='text-red'><i class='fa fa-trash'></i></a>"
     }];
     var table = $('#AppConsu_table').DataTable({
         "aoColumns": App_cols,

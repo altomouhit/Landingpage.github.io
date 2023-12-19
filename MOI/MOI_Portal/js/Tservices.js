@@ -12,6 +12,7 @@ document.getElementById("BPTS09").style.display = "none";
 document.getElementById("BPTS10").style.display = "none";
 document.getElementById("BPTS14").style.display = "none";
 document.getElementById("BPTS15").style.display = "none";
+document.getElementById("BPTS18").style.display = "none";
 document.getElementById("applybpts01").style.display = "none";
 document.getElementById("applybpts02").style.display = "none";
 document.getElementById("applybpts03").style.display = "none";
@@ -25,6 +26,7 @@ document.getElementById("applybpts09").style.display = "none";
 document.getElementById("applybpts10").style.display = "none";
 document.getElementById("applybpts14").style.display = "none";
 document.getElementById("applybpts15").style.display = "none";
+document.getElementById("applybpts18").style.display = "none";
 
 function Major() {
   //alert("BPTS01");
@@ -73,6 +75,7 @@ function Minor() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -86,6 +89,40 @@ function Minor() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
+}
+
+function fencing() {
+  //alert("BPTS18");
+  document.getElementById("Description").style.display = "none";
+  document.getElementById("BPTS01").style.display = "none";
+  document.getElementById("BPTS02").style.display = "none";
+  document.getElementById("BPTS03").style.display = "none";
+  document.getElementById("BPTS04").style.display = "none";
+  document.getElementById("BPTS05").style.display = "none";
+  document.getElementById("BPTS06").style.display = "none";
+  document.getElementById("BPTS06_07").style.display = "none";
+  document.getElementById("BPTS07").style.display = "none";
+  document.getElementById("BPTS08").style.display = "none";
+  document.getElementById("BPTS09").style.display = "none";
+  document.getElementById("BPTS10").style.display = "none";
+  document.getElementById("BPTS14").style.display = "none";
+  document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "block";
+  document.getElementById("applybpts01").style.display = "none";
+  document.getElementById("applybpts02").style.display = "none";
+  document.getElementById("applybpts03").style.display = "none";
+  document.getElementById("applybpts04").style.display = "none";
+  document.getElementById("applybpts05").style.display = "none";
+  document.getElementById("applybpts06").style.display = "none";
+  document.getElementById("applybpts06_07").style.display = "none";
+  document.getElementById("applybpts07").style.display = "none";
+  document.getElementById("applybpts08").style.display = "none";
+  document.getElementById("applybpts09").style.display = "none";
+  document.getElementById("applybpts10").style.display = "none";
+  document.getElementById("applybpts14").style.display = "none";
+  document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Modify() {
@@ -104,6 +141,7 @@ function Modify() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -117,6 +155,7 @@ function Modify() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Permit() {
@@ -135,6 +174,7 @@ function Permit() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -148,6 +188,7 @@ function Permit() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function followup() {
@@ -166,6 +207,7 @@ function followup() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -179,6 +221,7 @@ function followup() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Certificate() {
@@ -197,6 +240,7 @@ function Certificate() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -210,6 +254,7 @@ function Certificate() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Certificate_07() {
@@ -228,6 +273,7 @@ function Certificate_07() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -241,6 +287,7 @@ function Certificate_07() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Drilling() {
@@ -259,6 +306,7 @@ function Drilling() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -272,6 +320,7 @@ function Drilling() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function permanent() {
@@ -290,6 +339,7 @@ function permanent() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -303,6 +353,7 @@ function permanent() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function temporary() {
@@ -321,6 +372,7 @@ function temporary() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -334,6 +386,7 @@ function temporary() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function regarding() {
@@ -352,6 +405,7 @@ function regarding() {
   document.getElementById("BPTS10").style.display = "block";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -365,6 +419,7 @@ function regarding() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function Study() {
@@ -383,6 +438,7 @@ function Study() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "block";
   document.getElementById("BPTS15").style.display = "none";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -396,6 +452,7 @@ function Study() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function withoutConnecting() {
@@ -414,6 +471,7 @@ function withoutConnecting() {
   document.getElementById("BPTS10").style.display = "none";
   document.getElementById("BPTS14").style.display = "none";
   document.getElementById("BPTS15").style.display = "block";
+  document.getElementById("BPTS18").style.display = "none";
   document.getElementById("applybpts01").style.display = "none";
   document.getElementById("applybpts02").style.display = "none";
   document.getElementById("applybpts03").style.display = "none";
@@ -427,6 +485,7 @@ function withoutConnecting() {
   document.getElementById("applybpts10").style.display = "none";
   document.getElementById("applybpts14").style.display = "none";
   document.getElementById("applybpts15").style.display = "none";
+  document.getElementById("applybpts18").style.display = "none";
 }
 
 function clickbpts01() {
@@ -506,6 +565,12 @@ function clickbpts15() {
   document.getElementById("BPTS15").style.display = "none";
   document.getElementById("applybpts15").style.display = "block";
 }
+
+function clickbpts18() {
+  //alert("clck I agree BPTS18");
+  document.getElementById("BPTS18").style.display = "none";
+  document.getElementById("applybpts18").style.display = "block";
+}
 //.......................................................................................................
 function agreebpts01() {
   //alert("BPTS01 working");
@@ -570,6 +635,11 @@ function agreebpts14() {
 function agreebpts15() {
   //alert("BPTS15 working");
   window.location.href = "BPTS15.html";
+}
+
+function agreebpts18() {
+  //alert("BPTS18 working");
+  window.location.href = "BPTS18.html";
 }
 //...................................................... Arabic ..................................................................
 function agreebpts01ar() {
@@ -636,7 +706,12 @@ function agreebpts15ar() {
   //alert("BPTS15 working");
   window.location.href = "BPTS15ar.html";
 }
+
+function agreebpts18ar() {
+  //alert("BPTS18 working");
+  window.location.href = "BPTS18ar.html";
+}
 var closeButtons = $('.close_window');
-closeButtons.on('click', function() {
+closeButtons.on('click', function () {
   $(this).parent().hide();
 });

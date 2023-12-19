@@ -599,20 +599,50 @@ $($.fn.dataTable.tables(true)).DataTable().columns.adjust();
 $("#staticBackdrop").on("shown.bs.modal", function() {
  $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc();
 });
+$("#restorationBuildingDetailsTable").DataTable({
+
+});
 // .................................. footerHeight ..................................//
 
 // Request_Type - BPTS01 -select box for building details header change - Start
-$("#Request_ser").change(function() {
- var Requestser = $("#Request_ser").val();
- if (Requestser == '164') {
-     $('#buildheader').text('Add Buildings Details');
-   } else if(Requestser == "165") {
-     $('#buildheader').text('Heightening Buildings Details');
-   } else {
-     $('#buildheader').text('Existing Buildings Details');
-   } 
+var Requestser;
+$("#Request_ser").change(function () {
+  Requestser = $("#Request_ser").val();
+  if (Requestser == '164') {
+    $('#buildheader').text('Add Buildings Details');
+  } else if (Requestser == "165") {
+    $('#buildheader').text('Heightening Buildings Details');
+  } else {
+    $('#buildheader').text('Existing Buildings Details');
+  }
+  if(this.value == 162) {
+    $('#fencingDiv').show();
+  } else {
+    $('#fencingDiv').hide();
+    $('#fencingDetailsBPTS01').hide();
+  }
 });
+
 // Request_Type - BPTS01 -select box for building details header change - End
+
+// Request_Type - BPTS18 -select box for building details header change - Start
+$("#Fencing_type").change(function () {
+  var fencingType = $("#Fencing_type").val();
+  if (fencingType == 169 && Requestser == 162) {
+    $('#fencingDetailsBPTS01').show();
+  } else {
+    $('#fencingDetailsBPTS01').hide();
+  }
+  if (fencingType == '245') {
+    $('#fencingDetails').show();
+    $('#restorationBuildingDetails').hide();
+  } else {
+    $('#fencingDetails').hide();
+    $('#restorationBuildingDetails').show();
+  }
+});
+$("#restorationBuildingDetails1, #fencingDetails, #fencingDiv, #fencingDetailsBPTS01").hide();
+// Request_Type - BPTS18 -select box for building details header change - End
 
 // Building types - BPTS08 - Start
 $("#licenseDiv").hide();

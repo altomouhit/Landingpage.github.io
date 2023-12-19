@@ -16,9 +16,8 @@ html {
 	text-decoration: underline;
 	color: #377195;
 }
-.fa {
-	margin-right: 3px;
-	margin-left: 3px;
+.fa, .fal {
+	margin: 0 5px;
 }
 .top-dsg {
 	margin-top: 130px;

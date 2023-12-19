@@ -1,0 +1,14 @@
+{
+    "data":[
+        {
+            "pType" : "Residential",
+            "pType_val" : "138",
+            "pFootprint" : "23",
+            "pColorType" : "Building Color",
+            "pColorType_val" : "440",
+            "pLengthFence" : "28",
+            "pFenceColor" : "BLUE",
+            "pFenceColor_val" : "128"
+        }
+    ]
+}

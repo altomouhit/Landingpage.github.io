@@ -19,7 +19,7 @@
   <!--Start CSS English / Arabic files-->
   <link rel=icon href="img/Khanjar.png" type=image/png />
   <!-- fontawesome -->
-  <link rel="stylesheet" href="css/fontawesome.5.15.4.css" />
+  <link rel="stylesheet" href="css/fontawesome-6.5.1/fontawesome-6.5.1.css" />
   <link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
   <link rel="stylesheet" href="css/moi.css" />
   <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.ar.css">
@@ -125,7 +125,8 @@
                   الإستشاري</a></li>
               <li data-interest="6"><a href="#Attachment"><i class="fal fa-paperclip fa-fw"></i>المرفقات</a></li>
               <li data-interest="8"><a href="#others"><i class="fal fa-comment-alt-lines fa-fw"></i>تعليقات</a></li>
-              <li data-interest="7"><a href="#LicenseDetails"><i class="fal fa-credit-card fa-fw"></i>الدفع والمخرجات</a>
+              <li data-interest="7"><a href="#LicenseDetails"><i class="fal fa-credit-card fa-fw"></i>الدفع
+                  والمخرجات</a>
               </li>
             </ul>
             <div>
@@ -339,11 +340,13 @@
                           <label for="optradio1" class="required">نفس مقدم الطلب</label>
                           <div class="form-control">
                             <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio3" value="Yes">
+                              <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio3"
+                                value="Yes">
                               <label class="form-check-label" for="inlineRadio3">نعم</label>
                             </div>
                             <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio4" value="No" checked>
+                              <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio4" value="No"
+                                checked>
                               <label class="form-check-label" for="inlineRadio4">لا</label>
                             </div>
                           </div>
@@ -356,7 +359,8 @@
                               <label class="form-check-label" for="gccRadio1">نعم</label>
                             </div>
                             <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="gccRadio" id="gccRadio2" value="No" checked>
+                              <input class="form-check-input" type="radio" name="gccRadio" id="gccRadio2" value="No"
+                                checked>
                               <label class="form-check-label" for="gccRadio2">لا</label>
                             </div>
                           </div>
@@ -366,74 +370,74 @@
                           <input type="text" class="form-control" id="optradio2" placeholder="نوع المستفيد" readonly>
                         </div>
                       </div>
-                        
-                        <div id="benType" class="row">
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="BeneficiaryID" class="required">الرقم المدني للمستفيد</label>
-                            <input type="text" class="form-control numeric" id="BeneficiaryID"
-                              placeholder="الرقم المدني للمستفيد">
-                          </div>
-                          <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                            <label for="Bendate" class="required">تاريخ الانتهاء</label>
-                            <div class="date">
-                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
-                              <span class="input-group-addon" style="display: none;"><i
-                                  class="glyphicon glyphicon-calendar"></i></span>
-                            </div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bname">أسم المستفيد </label>
-                            <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
-                            <label for="Baddress" class="required">عنوان المستفيد</label>
-                            <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bph" class="required">رقم الهاتف</label>
-                            <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف"
-                              maxlength="8">
-                            <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bemail">البريد الالكتروني</label>
-                            <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
-                            <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
-                            <label for="waqfName">اسم الوقف</label>
-                            <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
-                          </div>
-                        </div>
-                        <!-- End Beneficiary Details -->
 
-                        <div id="OrganizationDetails" class="row">
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="crid" class="required">رقم السجل التجاري</label>
-                              <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="cname">الإسم التجاري</label>
-                              <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="Phnumber">رقم الهاتف </label>
-                              <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف"
-                                maxlength="8" readonly>
-                            </div>
-                            <div class="form-group  col-sm-4 col-md-4 col-lg-3">
-                              <label for="E-mail">البريد الالكتروني</label>
-                              <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
-                              <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء
-                                إدخال البريد الإلكتروني</div>
-                            </div>
+                      <div id="benType" class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="BeneficiaryID" class="required">الرقم المدني للمستفيد</label>
+                          <input type="text" class="form-control numeric" id="BeneficiaryID"
+                            placeholder="الرقم المدني للمستفيد">
                         </div>
-                        <!-- OrganizationDetails -->
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="Bendate" class="required">تاريخ الانتهاء</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bname">أسم المستفيد </label>
+                          <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
+                          <label for="Baddress" class="required">عنوان المستفيد</label>
+                          <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bph" class="required">رقم الهاتف</label>
+                          <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف"
+                            maxlength="8">
+                          <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bemail">البريد الالكتروني</label>
+                          <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
+                          <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                          <label for="waqfName">اسم الوقف</label>
+                          <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
+                        </div>
+                      </div>
+                      <!-- End Beneficiary Details -->
 
-                        <div class="form-group pull-right top-25">
-                          <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
-                              class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                      <div id="OrganizationDetails" class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="crid" class="required">رقم السجل التجاري</label>
+                          <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
                         </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="cname">الإسم التجاري</label>
+                          <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Phnumber">رقم الهاتف </label>
+                          <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف"
+                            maxlength="8" readonly>
+                        </div>
+                        <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                          <label for="E-mail">البريد الالكتروني</label>
+                          <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
+                          <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء
+                            إدخال البريد الإلكتروني</div>
+                        </div>
+                      </div>
+                      <!-- OrganizationDetails -->
+
+                      <div class="form-group pull-right top-25">
+                        <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
+                            class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                      </div>
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <div class="table-responsive">
@@ -464,11 +468,13 @@
                       <div class="row">
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="PSN_Plot" class="required">الرقم المتسلسل لقطعة الأرض </label>
-                          <input type="text" class="form-control" id="PSN_Plot" placeholder="الرقم المتسلسل لقطعة الأرض">
+                          <input type="text" class="form-control" id="PSN_Plot"
+                            placeholder="الرقم المتسلسل لقطعة الأرض">
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="PSN" class="required">رقم قطعة الأرض</label>
-                          <input type="number" class="form-control numeric" id="PSN" placeholder="رقم قطعة الأرض" min="0">
+                          <input type="number" class="form-control numeric" id="PSN" placeholder="رقم قطعة الأرض"
+                            min="0">
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="region_Ld" class="required">المحافظة </label>
@@ -503,17 +509,18 @@
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="square_Ld" class="required">المربع</label>
-                          <input type="number" class="form-control numeric" id="square_Ld" placeholder="المربع" min="0" />
+                          <input type="number" class="form-control numeric" id="square_Ld" placeholder="المربع"
+                            min="0" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="Plotsurface_Ld" class="required">مساحة الأرض </label>
-                          <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="مساحة الأرض"
-                            min="0">
+                          <input type="number" class="form-control numeric" id="Plotsurface_Ld"
+                            placeholder="مساحة الأرض" min="0">
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="StreetNumber_Ld" class="required">اسم الشارع</label>
-                          <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="اسم الشارع"
-                            min="0">
+                          <input type="number" class="form-control numeric" id="StreetNumber_Ld"
+                            placeholder="اسم الشارع" min="0">
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="typeUse_Ld" class="required">نوع الاستعمال </label>
@@ -586,7 +593,8 @@
                           <label class="form-check-label" for="Vacant">لا يوجد</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="optradio5" id="Occupied" value="Occupied" checked>
+                          <input class="form-check-input" type="radio" name="optradio5" id="Occupied" value="Occupied"
+                            checked>
                           <label class="form-check-label" for="Occupied">يوجد</label>
                         </div>
                       </div>
@@ -608,19 +616,23 @@
                       </div>
                       <div class="card border-0" id="Existinghide">
                         <div class="card-header ts-panel" role="tab" id="headingOne">
-                          <h4 class="card-title"> 
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                          <h4 class="card-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
                               <i class="more-less fal fa-chevron-down float-right"></i>بيانات المبنى القائم
-                            </a> </h4>
+                            </a>
+                          </h4>
                         </div>
-                        <div id="collapseOne" class="accordion-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="collapseOne" class="accordion-collapse collapse show" role="tabpanel"
+                          aria-labelledby="headingOne">
                           <div class="card-body p-0">
                             <fieldset>
                               <!-- <legend>بيانات المبنى القائم </legend> -->
                               <div class="row">
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Building Number" class="required">رقم المبنى</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNo" placeholder="رقم المبنى" min="0" />
+                                  <input type="number" class="form-control numeric" id="BuildingNo"
+                                    placeholder="رقم المبنى" min="0" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Building name" class="required">اسم المبنى</label>
@@ -648,11 +660,13 @@
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Number of units" class="required">عدد الوحدات</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberofunits" placeholder="عدد الوحدات" min="0" />
+                                  <input type="number" class="form-control numeric" id="BuildingNumberofunits"
+                                    placeholder="عدد الوحدات" min="0" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Number of floors" class="required">عدد الطوابق</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberoffloors" placeholder="عدد الطوابق" />
+                                  <input type="number" class="form-control numeric" id="BuildingNumberoffloors"
+                                    placeholder="عدد الطوابق" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Building total area (m2)" class="required">مساحة البناء بالمتر
@@ -662,16 +676,19 @@
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Footprint (m2)">مساحة الأرض بالمتر المربع</label>
-                                  <input type="number" class="form-control numeric" id="Footprint_ExBld" placeholder="مساحة الأرض بالمتر المربع" />
+                                  <input type="number" class="form-control numeric" id="Footprint_ExBld"
+                                    placeholder="مساحة الأرض بالمتر المربع" />
                                 </div>
                                 <div class="row">
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Power load (kW)">سعة الطاقة بالكيلووات</label>
-                                    <input type="number" class="form-control numeric" id="Powerlaod" placeholder="سعة الطاقة بالكيلووات" />
+                                    <input type="number" class="form-control numeric" id="Powerlaod"
+                                      placeholder="سعة الطاقة بالكيلووات" />
                                   </div>
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Car park capacity">سعة مواقف السيارات</label>
-                                    <input type="number" class="form-control numeric" id="Carparkcapacity" placeholder="سعة مواقف السيارات" />
+                                    <input type="number" class="form-control numeric" id="Carparkcapacity"
+                                      placeholder="سعة مواقف السيارات" />
                                   </div>
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Bcolortype">نوعية الطلاء</label>
@@ -714,18 +731,20 @@
                                     <label for="optradio3">سيتم هدمها ؟</label>
                                     <div class="form-control" id="WillDemolish">
                                       <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished1" value="Yes">
+                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished1"
+                                          value="Yes">
                                         <label class="form-check-label" for="Demolished1">نعم</label>
                                       </div>
                                       <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished2" value="No" checked>
+                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished2"
+                                          value="No" checked>
                                         <label class="form-check-label" for="Demolished2">لا</label>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div> <!-- /.row -->
-                            
+
                               <div class="row">
                                 <div class="col-12">
                                   <div class="form-group d-flex justify-content-end">
@@ -734,11 +753,12 @@
                                   </div>
                                 </div>
                               </div> <!-- /.row -->
-                            
+
                               <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                   <div class="table-responsive">
-                                    <table id="building_details_table" class="table table-striped table-bordered" width="100%">
+                                    <table id="building_details_table" class="table table-striped table-bordered"
+                                      width="100%">
                                       <thead class="ts-thead">
                                       </thead>
                                       <tbody>
@@ -748,7 +768,7 @@
                                 </div>
                               </div>
                               <!-- row -->
-                            
+
                               <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                   <div class="table-responsive">
@@ -762,12 +782,12 @@
                                   <!-- End Storeys -->
                                 </div>
                                 <!-- col-md-6 -->
-                            
+
                                 <!-- .........................* Units Modal Start *......................... -->
                                 <!-- Modal for storeys-->
                                 <div class="modal fade" id="addstoreysModal" role="dialog">
                                   <div class="modal-dialog modal-lg">
-                            
+
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                       <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
@@ -780,11 +800,13 @@
                                           <legend>الطوابق</legend>
                                           <div class="form-group col-sm-3">
                                             <label for="SBuildingNo">رقم المبنى</label>
-                                            <input type="number" class="form-control" id="SBuildingNo" placeholder="رقم المبنى" readonly>
+                                            <input type="number" class="form-control" id="SBuildingNo"
+                                              placeholder="رقم المبنى" readonly>
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="SstoreyNo" class="required">رقم الطابق</label>
-                                            <input type="number" class="form-control numeric" id="SstoreyNo" placeholder="رقم الطابق">
+                                            <input type="number" class="form-control numeric" id="SstoreyNo"
+                                              placeholder="رقم الطابق">
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="Storeytype" class="required">نوع الطابق </label>
@@ -797,11 +819,13 @@
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="unitsitmno" class="required">رقم الوحدة</label>
-                                            <input type="number" class="form-control numeric" id="unitsitmno" placeholder="رقم الوحدة">
+                                            <input type="number" class="form-control numeric" id="unitsitmno"
+                                              placeholder="رقم الوحدة">
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="SurfaceM2">البناء على السطح بالمتر2</label>
-                                            <input type="number" class="form-control numeric" id="SurfaceM2" placeholder="البناء على السطح بالمتر2">
+                                            <input type="number" class="form-control numeric" id="SurfaceM2"
+                                              placeholder="البناء على السطح بالمتر2">
                                           </div>
                                         </fieldset>
                                       </div>
@@ -815,11 +839,11 @@
                                   </div>
                                 </div>
                                 <!-- End Storeys Modal -->
-                            
+
                                 <!-- Modal for Edit storeys-->
                                 <div class="modal fade" tabindex="-1" id="editstoreysModal" role="dialog">
                                   <div class="modal-dialog modal-lg">
-                            
+
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                       <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
@@ -832,11 +856,13 @@
                                           <legend>الطوابق</legend>
                                           <div class="form-group col-sm-3">
                                             <label for="editSBuildingNo">رقم المبنى</label>
-                                            <input type="number" class="form-control" id="editSBuildingNo" placeholder="رقم المبنى" readonly>
+                                            <input type="number" class="form-control" id="editSBuildingNo"
+                                              placeholder="رقم المبنى" readonly>
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editSstoreyNo" class="required">رقم الطابق</label>
-                                            <input type="number" class="form-control numeric" id="editSstoreyNo" placeholder="رقم الطابق">
+                                            <input type="number" class="form-control numeric" id="editSstoreyNo"
+                                              placeholder="رقم الطابق">
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editStoreytype" class="required">نوع الطابق</label>
@@ -849,7 +875,8 @@
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editunitsitmno" class="required">نوع الوحدة</label>
-                                            <input type="number" class="form-control numeric" id="editunitsitmno" placeholder="نوع الوحدة">
+                                            <input type="number" class="form-control numeric" id="editunitsitmno"
+                                              placeholder="نوع الوحدة">
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editSurfaceM2">البناء على السطح بالمتر2</label>
@@ -859,17 +886,19 @@
                                         </fieldset>
                                       </div>
                                       <div class="modal-footer">
-                                        <button type="button" class="btn btn-ts" id="editstrfunctionid" onclick="editstrfunction()">تحديث</button>
+                                        <button type="button" class="btn btn-ts" id="editstrfunctionid"
+                                          onclick="editstrfunction()">تحديث</button>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 <!-- End Edit Storeys Modal -->
                                 <!-- .........................* Storey Modal End *......................... -->
-                            
+
                                 <div class="col-md-6 col-xs-12">
                                   <div class="table-responsive">
-                                    <table id="units_detailstable" class="table table-hover table-bordered" width="100%">
+                                    <table id="units_detailstable" class="table table-hover table-bordered"
+                                      width="100%">
                                       <thead class="ts-thead">
                                       </thead>
                                       <tbody>
@@ -879,12 +908,12 @@
                                   <!-- End Units -->
                                 </div>
                                 <!-- .col-md-6 -->
-                            
+
                                 <!-- .........................* Units Modal Start *......................... -->
                                 <!-- Modal for Units -->
                                 <div class="modal fade" id="addunitsModal" role="dialog">
                                   <div class="modal-dialog modal-lg">
-                            
+
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                       <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
@@ -898,15 +927,18 @@
                                           <div class="row">
                                             <div class="form-group col-sm-3">
                                               <label for="Building Number">رقم المبنى</label>
-                                              <input type="number" class="form-control" id="UBuildingNo" placeholder="رقم المبنى" readonly>
+                                              <input type="number" class="form-control" id="UBuildingNo"
+                                                placeholder="رقم المبنى" readonly>
                                             </div>
                                             <div class="form-group col-sm-3">
                                               <label for="auIdnumber" class="required">رقم الطابق</label>
-                                              <input type="text" class="form-control" id="auIdnumber" placeholder="رقم الطابق" readonly />
+                                              <input type="text" class="form-control" id="auIdnumber"
+                                                placeholder="رقم الطابق" readonly />
                                             </div>
                                             <div class="form-group col-sm-3">
                                               <label for="auNumberofunits">عدد الوحدات</label>
-                                              <input type="number" class="form-control numeric" id="auNumberofunits" placeholder="عدد الوحدات">
+                                              <input type="number" class="form-control numeric" id="auNumberofunits"
+                                                placeholder="عدد الوحدات">
                                             </div>
                                             <div class="form-group col-sm-3">
                                               <label for="untstype" class="required">نوع الوحدة</label>
@@ -923,7 +955,8 @@
                                         </fieldset>
                                       </div>
                                       <div class="modal-footer">
-                                        <button type="button" class="btn btn-ts" onclick="addunitsfunction()">حفظ</button>
+                                        <button type="button" class="btn btn-ts"
+                                          onclick="addunitsfunction()">حفظ</button>
                                         <button type="button" class="btn btn-ts" onclick="addunitsfunction1()">حفظ
                                           وإضافة وحدة</button>
                                       </div>
@@ -932,11 +965,11 @@
                                   </div>
                                 </div>
                                 <!-- End Modal Units -->
-                            
+
                                 <!-- Modal for Edit Units -->
                                 <div class="modal fade" id="editunitsModal" role="dialog">
                                   <div class="modal-dialog modal-lg">
-                            
+
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                       <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
@@ -949,15 +982,18 @@
                                           <legend>الوحدات</legend>
                                           <div class="form-group col-sm-3">
                                             <label for="Building Number">رقم المبنى</label>
-                                            <input type="number" class="form-control" id="editUBuildingNo" placeholder="رقم المبنى" readonly />
+                                            <input type="number" class="form-control" id="editUBuildingNo"
+                                              placeholder="رقم المبنى" readonly />
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editauIdnumber" class="required">رقم الطابق</label>
-                                            <input type="text" class="form-control" id="editauIdnumber" placeholder="رقم الطابق" readonly />
+                                            <input type="text" class="form-control" id="editauIdnumber"
+                                              placeholder="رقم الطابق" readonly />
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="editauNumberofunits">عدد الوحدات</label>
-                                            <input type="number" class="form-control numeric" id="editauNumberofunits" placeholder="عدد الوحدات">
+                                            <input type="number" class="form-control numeric" id="editauNumberofunits"
+                                              placeholder="عدد الوحدات">
                                           </div>
                                           <div class="form-group col-sm-3">
                                             <label for="edituntstype" class="required">نوع الوحدة</label>
@@ -980,7 +1016,7 @@
                                 </div>
                                 <!-- End Modal -->
                                 <!-- .........................* Units Modal End *......................... -->
-                            
+
                               </div>
                               <!-- row -->
                             </fieldset>
@@ -1003,12 +1039,15 @@
                       </div>
                       <div class="card border-0" id="Proposedhide">
                         <div class="card-header ts-panel" role="tab" id="headingTwo">
-                          <h4 class="card-title"> 
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                          <h4 class="card-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               <i class="more-less fal fa-chevron-left float-right"></i> بيانات المباني المقدم
-                              لها الطلب </a> </h4>
+                              لها الطلب </a>
+                          </h4>
                         </div>
-                        <div id="collapseTwo" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div id="collapseTwo" class="accordion-collapse collapse" role="tabpanel"
+                          aria-labelledby="headingTwo">
                           <div class="card-body p-0">
                             <fieldset>
                               <!-- <legend>بيانات المبنى المقدم له الطلب</legend> -->
@@ -1416,27 +1455,30 @@
                         <div class="form-group col-sm-5 col-md-4 col-lg-3">
                           <label for="optradio4">الإستشاري</label>
                           <div class="form-control">
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="optradio4" id="Applicant" value="179" checked>
-                                <label class="form-check-label" for="Applicant">مقدم
-                                  الطلب</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="optradio4" id="Other" value="180">
-                                <label class="form-check-label" for="Other">أخرى</label>
-                              </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio4" id="Applicant" value="179"
+                                checked>
+                              <label class="form-check-label" for="Applicant">مقدم
+                                الطلب</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio4" id="Other" value="180">
+                              <label class="form-check-label" for="Other">أخرى</label>
+                            </div>
                           </div>
                         </div>
-                      
+
                         <div class="form-group col-sm-6 col-md-4 col-lg-3 CommericalRegistrationID_val">
                           <label for="CommericalRegistrationID" class="required">رقم السجل التجاري</label>
-                          <input type="text" class="form-control" id="CommericalRegistrationID" placeholder="رقم السجل التجاري" />
+                          <input type="text" class="form-control" id="CommericalRegistrationID"
+                            placeholder="رقم السجل التجاري" />
                         </div>
-                        <div class="form-group col-sm-6 col-md-4 col-lg-3 CommericalRegistrationID_val" id="commrcialname">
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3 CommericalRegistrationID_val"
+                          id="commrcialname">
                           <label for="ComName" class="required">الإسم التجاري</label>
                           <input type="text" class="form-control" id="ComName" placeholder="الإسم التجاري" />
                         </div>
-                      
+
                         <div class="form-group col-sm-6 col-md-4 col-lg-3 Civilno">
                           <label for="CivilIDNumber" class="required">الرقم المدني</label>
                           <input type="text" class="form-control" id="CivilIDNumber" placeholder="الرقم المدني" />
@@ -1445,7 +1487,8 @@
                           <label for="Consuldate" class="required">تاريخ الانتهاء</label>
                           <div class="date">
                             <input type="text" class="form-control" id="Consuldate" placeholder="dd/mm/yyyy" />
-                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <span class="input-group-addon" style="display: none;"><i
+                                class="glyphicon glyphicon-calendar"></i></span>
                           </div>
                         </div>
                         <!-- <div class="form-group col-sm-6 col-md-4 col-lg-3" id="approved">
@@ -1457,7 +1500,7 @@
                           <label for="Address_cons">العنوان</label>
                           <input type="text" class="form-control" id="Address_cons" placeholder="العنوان" />
                         </div> -->
-                      
+
                         <div class="form-group col-sm-3 col-md-4 col-lg-3 d-flex align-items-end justify-content-end">
                           <button type="button" class="btn btn-ts" onclick="Cons_fn()" id="Consid">
                             <i class="fal fa-plus fa-fw"></i>إضافة</button>

@@ -137,3 +137,7 @@ select.form-control {
 .float-right {
     float: left !important;
 }
+.btn+.btn {
+    margin-right: 0.5rem;
+    margin-left: 0 !important;
+}

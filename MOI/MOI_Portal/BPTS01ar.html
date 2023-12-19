@@ -19,7 +19,7 @@
   <!--Start CSS English / Arabic files-->
   <link rel=icon href="img/Khanjar.png" type=image/png />
   <!-- fontawesome -->
-  <link rel="stylesheet" href="css/fontawesome.5.15.4.css" />
+  <link rel="stylesheet" href="css/fontawesome-6.5.1/fontawesome-6.5.1.css" />
   <link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
   <link rel="stylesheet" href="css/moi.css" />
   <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.ar.css">
@@ -162,9 +162,17 @@
                             <option value="742">مبنى جديد</option>
                           </select>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3" id="lichide">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3" id="lichide">
                           <label for="PermitNo">رقم الإباحة </label>
                           <input type="number" class="form-control numeric" id="PermitNo" placeholder="رقم الإباحة" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3" id="fencingDiv">
+                          <label for="Fencing_type" class="required">نوع المبارزة</label>
+                          <select name="Fencing_type" id="Fencing_type" class="form-control">
+                            <option value="1000">الرجاء تحديد</option>
+                            <option value="169">مع المبارزة</option>
+                            <option value="170">بدون سياج</option>
+                          </select>
                         </div>
                         <!-- <div class="form-group top-25">
                             <button type="button" class="btn btn-ts">ايقاف</button>
@@ -199,7 +207,7 @@
                           <label for="aname" class="required">اسم المهندس</label>
                           <input type="text" class="form-control" id="aname" placeholder="اسم المهندس">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3 haserror">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3 haserror">
                           <label for="address_app" class="required">العنوان</label>
                           <input type="text" class="form-control" id="address_app" placeholder="العنوان">
                         </div>
@@ -253,7 +261,7 @@
                           <input type="text" class="form-control" id="astatus" placeholder="حالة الطلب"
                             value="In Progress" readonly>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="Service Request Name" class="required">اسم الخدمة المطلوبة</label>
                           <input type="text" class="form-control" id="srname" placeholder="Service Request Name"
                             value="طلب اباحة بناء كبرى ( جديدة / تجديد / اضافة / تعليه / تعديل / الغاء )" readonly>
@@ -297,7 +305,7 @@
                             <option value="3">ولاية نخل</option>
                           </select>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="Municiplity_ser" class="required">البلدية</label>
                           <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
                             <option value="0">الرجاء الإختيار</option>
@@ -363,7 +371,7 @@
                             </div>
                           </div>
                         </div>
-                        <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <!-- <div class="form-group col-sm-6 col-md-4 col-xl-3" id="samehide">
                             <label for="optradio1" class="required">نفس مقدم الطلب</label>
                             <div class="form-control">
                               <label class="radio-inline"> <input type="radio" name="optradio1" value="Yes"> نعم </label>
@@ -444,7 +452,7 @@
                           <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف"
                             maxlength="8" readonly>
                         </div>
-                        <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group  col-sm-6 col-md-4 col-xl-3">
                           <label for="E-mail">البريد الالكتروني</label>
                           <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
                           <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء
@@ -482,6 +490,88 @@
                 </div>
                 <!-- .form-group -->
 
+                <!-- Fencing -->
+                <fieldset id="fencingDetailsBPTS01">
+                  <legend>تفاصيل المبارزة</legend>
+                  <div class="row">
+                    <div class="col mb-2">
+                      <label class="required" for="pType">نوع الاستعمال</label> 
+                      <select class="form-control" id="pType">
+                        <option value="1000">الرجاء الأختيار</option>
+                        <option value="572">سكني تجاري</option>
+                        <option value="598">الزراعية</option>
+                        <option value="900">سكني تجاري السياحية</option>
+                        <option value="138">سكني</option>
+                        <option value="139">تجاري</option>
+                        <option value="140">صناعي</option>
+                        <option value="189">السياحية</option>
+                        <option value="190">حكومي</option>
+                      </select>
+                    </div>
+                    <div class="col mb-2">
+                      <label for="pFootprint">مساحة الأرض بالمتر المربع</label>
+                      <input type="text" class="form-control" id="pFootprint" placeholder="مساحة الأرض بالمتر المربع" />
+                      <div id="pTotal_PlotError" class="text-danger d-none">Please enter less than Plot Area(m2)</div>
+                      <div id="pTotal_PlotAreaError" class="text-danger d-none">Please enter less than Plot Data's Plot Area</div>
+                    </div>
+                    <div class="col mb-2">
+                      <label for="pColorType">نوعية الطلاء</label>
+                      <select id="pColorType" class="form-control">
+                        <option value="1000">الرجاء الإختيار</option>
+                        <option value="440">لون المبنى</option>
+                        <option value="438">حجر</option>
+                        <option value="439">الومنيوم</option>
+                      </select>
+                    </div>
+                    <div class="col mb-2">
+                      <label for="pLengthFence" class="required">طول السياج بالأمتار</label> 
+                      <input class="form-control numeric" id="pLengthFence" placeholder="طول السياج بالأمتار" type="text">
+                    </div>
+
+                    <div class="col mb-2">
+                      <label for="pFenceColor" class="required">لون السياج</label>
+                      <select class="form-control" id="pFenceColor">
+                        <option value="1000">الرجاء الأختيار</option>
+                        <option value="126">أحمر</option>
+                        <option value="127">لون القرنفل</option>
+                        <option value="128">أزرق</option>
+                        <option value="129">أخضر</option>
+                        <option value="130">أصفر</option>
+                        <option value="131">أبيض</option>
+                      </select>
+                    </div>
+                  </div> <!-- /.row -->
+
+                  <div class="row my-3">
+                    <div class="col-md-12">
+                      <div class="form-group d-flex align-items-center justify-content-end">
+                        <button class="btn btn-default" id="cancelBtn" type="button"> <i class='fas fa-times-circle fa-fw fa-lg'></i>&nbsp; يلغي</button>
+                        <button class="btn btn-ts" id="fencingBtn" onclick="fencingFn()" type="button">
+                          <i class='fal fa-plus fa-fw'></i>&nbsp; يضيف</button>
+                      </div>
+                    </div>
+                  </div> <!-- /.row -->
+
+                  <table class="table table-striped table-bordered table-hover w-100" id="fencingTable">
+                    <thead class="ts-thead">
+                      <tr role="row">
+                        <th>نوع الاستعمال</th>                <!-- 0 -->
+                        <th></th>                               <!-- 1 -->
+                        <th>مساحة الأرض بالمتر المربع</th>    <!-- 2 -->
+                        <th>نوعية الطلاء</th>                   <!-- 3 -->
+                        <th></th>                               <!-- 4 -->
+                        <th>طول السياج بالأمتار</th>            <!-- 5 -->
+                        <th>لون السياج</th>                     <!-- 6 -->
+                        <th></th>                               <!-- 7 -->
+                        <th>الإجراء</th>                        <!-- 8 -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </fieldset>
+                <!-- Fencing -->
+
                 <div class="form-group">
                   <div class="row">
                     <div class="padtopbot">
@@ -490,17 +580,17 @@
                     <fieldset>
                       <legend>بيانات قطعة الأرض</legend>
                       <div class="row">
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="PSN_Plot" class="required">الرقم المتسلسل لقطعة الأرض </label>
                           <input type="text" class="form-control" id="PSN_Plot"
                             placeholder="الرقم المتسلسل لقطعة الأرض">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="PSN" class="required">رقم قطعة الأرض</label>
                           <input type="number" class="form-control numeric" id="PSN" placeholder="رقم قطعة الأرض"
                             min="0">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="region_Ld" class="required">المحافظة </label>
                           <select name="region_Ld" id="region_Ld" class="form-control">
                             <option value="0">الرجاء الإختيار</option>
@@ -509,7 +599,7 @@
                             <option value="3">محافظة مسندم</option>
                           </select>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="Willayat_Ld" class="required">الولاية</label>
                           <select name="Willayat_Ld" id="Willayat_Ld" class="form-control">
                             <option value="0">الرجاءالإختيار</option>
@@ -522,7 +612,7 @@
                         </div>
                       </div> <!-- /.row -->
                       <div class="row">
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="village_Ld" class="required">القرية</label>
                           <select name="village_Ld" id="village_Ld" class="form-control">
                             <option value="0">الرجاء الإختيار</option>
@@ -533,22 +623,22 @@
                             <option value="466"> دارس </option>
                           </select>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="square_Ld" class="required">المربع</label>
                           <input type="number" class="form-control numeric" id="square_Ld" placeholder="المربع"
                             min="0" />
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="Plotsurface_Ld" class="required">مساحة الأرض </label>
                           <input type="number" class="form-control numeric" id="Plotsurface_Ld"
                             placeholder="مساحة الأرض" min="0">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="StreetNumber_Ld" class="required">اسم الشارع</label>
                           <input type="number" class="form-control numeric" id="StreetNumber_Ld"
                             placeholder="اسم الشارع" min="0">
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="typeUse_Ld" class="required">نوع الاستعمال </label>
                           <select name="" id="typeUse_Ld" class="form-control">
                             <option value="0">الرجاء الأختيار</option>
@@ -572,16 +662,16 @@
                       <!-- Note message -->
                       <legend>إحداثيات نظم المعلومات الجغرافية</legend>
                       <div class="row">
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3 hidden">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3 hidden">
                           <label for="Point">Point</label>
                           <input type="number" class="form-control" id="Point" placeholder="Point" value="1" />
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group col-sm-6 col-md-4 col-xl-3">
                           <label for="Eastings" class="required">شرقي</label>
                           <input type="text" class="form-control numeric" id="Eastings" placeholder="شرقي"
                             title="Please enter valid numbers" />
                         </div>
-                        <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <div class="form-group  col-sm-6 col-md-4 col-xl-3">
                           <label for="Northings" class="required">شمالي</label>
                           <input type="text" class="form-control numeric" id="Northings" placeholder="شمالي"
                             title="Please enter valid numbers" />
@@ -693,16 +783,16 @@
                           <fieldset>
                             <!-- <legend>بيانات المبنى القائم </legend> -->
                             <div class="row">
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building Number" class="required">رقم المبنى</label>
                                 <input type="number" class="form-control numeric" id="BuildingNo"
                                   placeholder="رقم المبنى" min="0" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building name" class="required">اسم المبنى</label>
                                 <input type="text" class="form-control" id="Buildingname" placeholder="اسم المبنى" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Type of use" class="required">نوع الاستعمال</label>
                                 <select name="" id="Btype" class="form-control">
                                   <option value="0">الرجاءالأختيار</option>
@@ -712,7 +802,7 @@
                                   <option value="465">صناعي</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building status" class="required">حالة المبنى</label>
                                 <select name="" id="Bstatus" class="form-control">
                                   <option value="0">الرجاء الأختيار</option>
@@ -722,39 +812,39 @@
                                   <option value="4">تم البدء في البناء</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Number of units" class="required">عدد الوحدات</label>
                                 <input type="number" class="form-control numeric" id="BuildingNumberofunits"
                                   placeholder="عدد الوحدات" min="0" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Number of floors" class="required">عدد الطوابق</label>
                                 <input type="number" class="form-control numeric" id="BuildingNumberoffloors"
                                   placeholder="عدد الطوابق" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building total area (m2)" class="required">مساحة البناء بالمتر
                                   المربع</label>
                                 <input type="number" class="form-control numeric" id="Buildingtotalarea"
                                   placeholder="مساحة البناء بالمتر المربع" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Footprint (m2)">مساحة الأرض بالمتر المربع</label>
                                 <input type="number" class="form-control numeric" id="Footprint_ExBld"
                                   placeholder="مساحة الأرض بالمتر المربع" />
                               </div>
 
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Power load (kW)">سعة الطاقة بالكيلووات</label>
                                 <input type="number" class="form-control numeric" id="Powerlaod"
                                   placeholder="سعة الطاقة بالكيلووات" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Car park capacity">سعة مواقف السيارات</label>
                                 <input type="number" class="form-control numeric" id="Carparkcapacity"
                                   placeholder="سعة مواقف السيارات" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Bcolortype">نوعية الطلاء</label>
                                 <select id="Bcolortype" class="form-control">
                                   <option value="1000">الرجاء الإختيار</option>
@@ -763,7 +853,7 @@
                                   <option value="103">الومنيوم</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Bcolorhide">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3" id="Bcolorhide">
                                 <label for="Bcolor">لون المبنى</label>
                                 <select id="Bcolor" class="form-control">
                                   <option value="0">الرجاء الإختيار</option>
@@ -773,7 +863,7 @@
                                   <option value="465">أخضر</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="outcolor">اللون الخارجي</label>
                                 <select id="outcolor" class="form-control">
                                   <option value="0">الرجاء الإختيار</option>
@@ -783,15 +873,15 @@
                                   <option value="465">أخضر</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Street">الشارع</label>
                                 <input type="text" class="form-control" id="Street_Exbld" placeholder="الشارع" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Alley">السكة</label>
                                 <input type="text" class="form-control" id="Alley_Exbld" placeholder="السكة" />
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="will be demolished">سيتم هدمها ؟</label>
                                 <div class="form-control" id="WillDemolish">
                                   <div class="form-check form-check-inline">
@@ -1121,16 +1211,16 @@
                           <fieldset>
                             <!-- <legend>بيانات المبنى المقدم له الطلب</legend> -->
                             <div class="row">
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building Number" class="required">رقم المبنى</label>
                                 <input type="number" class="form-control numeric" id="PBuildingNo"
                                   placeholder="رقم المبنى">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building name" class="required">اسم المبنى</label>
                                 <input type="text" class="form-control" id="PBuildingname" placeholder="اسم المبنى">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Type of use" class="required">نوع الاستعمال</label>
                                 <select name="" id="Ptype" class="form-control">
                                   <option value="0">الرجاء الأختيار</option>
@@ -1140,7 +1230,7 @@
                                   <option value="465">صناعي</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building status" class="required">حالة البناء</label>
                                 <select name="" id="Pstatus" class="form-control">
                                   <option value="0">الرجاء الأختيار</option>
@@ -1154,23 +1244,23 @@
                             <!-- End row -->
 
                             <div class="row">
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Number of units" class="required">عدد الوحدات</label>
                                 <input type="number" class="form-control numeric" id="PNumberofunits"
                                   placeholder="عدد الوحدات">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Number of floors" class="required">عدد الطوابق</label>
                                 <input type="number" class="form-control numeric" id="PNumberoffloors"
                                   placeholder="عدد الطوابق">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Building total area (m2)" class="required">مساحة البناء بالمتر
                                   المربع</label>
                                 <input type="number" class="form-control numeric" id="Ptotalarea"
                                   placeholder="مساحة البناء بالمتر المربع">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Footprint (m2)">مساحة الأرض بالمتر المربع</label>
                                 <input type="text" class="form-control" id="PFootprint"
                                   placeholder="مساحة الأرض بالمتر المربع">
@@ -1179,17 +1269,17 @@
                             <!-- End row -->
 
                             <div class="row">
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="PPowerlaod">سعة الطاقة بالكيلووات</label>
                                 <input type="number" class="form-control numeric" id="PPowerlaod"
                                   placeholder="سعة الطاقة بالكيلووات">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="PCarparkcapacity">سعة مواقف السيارات</label>
                                 <input type="number" class="form-control numeric" id="PCarparkcapacity"
                                   placeholder="سعة مواقف السيارات">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Pcolortype">نوعية الطلاء</label>
                                 <select id="Pcolortype" class="form-control">
                                   <option value="1000">الرجاء الإختيار</option>
@@ -1198,7 +1288,7 @@
                                   <option value="103">الومنيوم</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Pcolorhide">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3" id="Pcolorhide">
                                 <label for="Pcolor">لون المبنى</label>
                                 <select name="Pcolor" id="Pcolor" class="form-control">
                                   <option value="0">الرجاء الإختيار</option>
@@ -1208,7 +1298,7 @@
                                   <option value="465">أخضر</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="Poutcolor">اللون الخارجي</label>
                                 <select id="Poutcolor" class="form-control">
                                   <option value="0">الرجاء الإختيار</option>
@@ -1218,11 +1308,11 @@
                                   <option value="465">أخضر</option>
                                 </select>
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="PStreet">الشارع</label>
                                 <input type="text" class="form-control" id="PStreet" placeholder="الشارع">
                               </div>
-                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <div class="form-group col-sm-6 col-md-4 col-xl-3">
                                 <label for="PAlley">السكة</label>
                                 <input type="text" class="form-control" id="PAlley" placeholder="السكة">
                               </div>
@@ -2087,6 +2177,7 @@
 
   <script src="js/moi-webapp.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/TS/fencingMaintenance.js"></script>
   <script>
     $(document).ready(function () {
       var org_type, cons_detail, AppType_BND, ConsType_Value, Building_Type;
