@@ -33,44 +33,58 @@ $(document).ready(function () {
       $("#samehide").show();
     }
     // Request_Type - BPTS01 -select box 
-    if ($("#Request_ser").val() == "162" || $("#Request_ser").val() == "1000") {
+    if($("#Request_ser").val() == "162" || $("#Request_ser").val() == "1000") {
       $("#lichide").hide();
       $('#Freezehide').hide();
       $("#Modificationdiv").hide();
       $("#addModificationdiv").hide();
       $(".renewData").hide();
       $(".newData").show();
-    } else if ($("#Request_ser").val() == "167" || $("#Request_ser").val() == "168") {
+      $("#editMap").hide();
+    } else if($("#Request_ser").val() == "167" || $("#Request_ser").val() == "168") {
       $("#lichide").hide();
       $('#Freezehide').show();
       $("#Modificationdiv").hide();
       $("#addModificationdiv").hide();
       $(".renewData").hide();
       $(".newData").show();
-    } else if ($("#Request_ser").val() == "166") {
+      $("#editMap").hide();
+    } else if($("#Request_ser").val() == "166") {
       $("#lichide").show();
       $("#Modificationdiv").show();
+      $("#addModificationdiv").hide();
       $(".renewData").hide();
       $(".newData").show();
-    } else if ($("#Request_ser").val() == "164") {
+      $("#editMap").hide();
+    } else if($("#Request_ser").val() == "164") {
       $("#lichide").show();
       $("#Modificationdiv").hide();
       $("#addModificationdiv").show();
       $(".renewData").hide();
+      $("#editMap").hide();
       $(".newData").show();
-    } else if ($("#Request_ser").val() == "163" || $("#Request_ser").val() == "751") {
+    } else if($("#Request_ser").val() == "163") {
       $("#lichide").show();
       $("#Modificationdiv").hide();
       $("#addModificationdiv").hide();
       $(".renewData").show();
       $(".newData").hide();
-    } else {
+      $("#editMap").hide();
+    }  else if($("#Request_ser").val() == "751") {
+     $("#lichide").show();
+     $("#editMap").show();
+     $("#Modificationdiv").hide();
+     $("#addModificationdiv").hide();
+     $(".renewData").show();
+     $(".newData").hide();
+   } else {
       $("#lichide").show();
       $('#Freezehide').hide();
       $("#Modificationdiv").hide();
       $("#addModificationdiv").hide();
       $(".renewData").hide();
       $(".newData").show();
+      $("#editMap").hide();
     }
 
     if ($('#Bcolortype').val() == '101') {
