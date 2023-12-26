@@ -836,4 +836,16 @@ hr.horizontal.dark {
 }
 .secondModal{
     background: rgba(24, 49, 83, 0.5);
+    color: #f1f9f2;
+}
+.dir-rtl {
+    direction: rtl;
+    text-align: right;
+    .form-select {
+        padding: .375rem .75rem .375rem 2.25rem;
+        background-position: left 0.75rem center;
+    }
+    legend {
+        width: 100%;
+    }
 }
