@@ -2368,3 +2368,12 @@ $('#BP_txt, #TreatmentBP_txt').on('keyup', function() {
 // $(document).ready(function() {
 // 	$('select').niceSelect();
 // }); 
+$("#btnAccept, #btnReleaseMedicine, #btnReject").on("click", function() {
+	$('#titleComments').text($(this).text());
+	$("#narcoticModal").modal("show");
+	$("#approvedComments").modal("show");
+});
+$("#showCommentsBtn").on("click", function() {
+	$("#narcoticModal").modal("show");
+	$("#showCommentsModal").modal("show");
+});
