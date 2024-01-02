@@ -36,7 +36,7 @@ window.onload = function() {
 	//Total Burn Score
 	$("#adultDiv, #peditricDiv").hide();
 	//Upper EXT > Upper EXT Left Burns
-	$(".upperEXTLeft, .upperEXTRight, .lwEXTLeft, .lwEXTRight, #upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv").hide();
+	$(".upperEXTLeft, .upperEXTRight, .lwEXTLeft, .lwEXTRight, #upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv, #upperEXTNODCAPBTLS, #lwEXTNODCAPBTLS").hide();
 	$("#downTimeDiv, #handoverDiv, #CPRProgressDiv, .AEDApplied").hide();
 	// Location Type
 	$("#locationSelectDiv, #dutyDiv").hide();
@@ -816,6 +816,12 @@ $("#upperEXT").on('change', function() {
 	if (!(Value.indexOf("2") > -1)) {
 		$(".upperEXTRight").hide();
 	}
+	if (Value.indexOf("3") > -1) {
+		$("#upperEXTNODCAPBTLS").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#upperEXTNODCAPBTLS").hide();
+	}
 });
 //Patient Assessment & Management > Patient Assessment > Lw EXT
 $("#lwEXT").on('change', function() {
@@ -831,6 +837,12 @@ $("#lwEXT").on('change', function() {
 	}
 	if (!(Value.indexOf("2") > -1)) {
 		$(".lwEXTRight").hide();
+	}
+	if (Value.indexOf("3") > -1) {
+		$("#lwEXTNODCAPBTLS").show();
+	}
+	if (!(Value.indexOf("3") > -1)) {
+		$("#lwEXTNODCAPBTLS").hide();
 	}
 });
 //Patient & Incident Info > Additional Resources On Scene
