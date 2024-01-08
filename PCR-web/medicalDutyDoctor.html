@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>PCR Incidents</title>
+    <title>Medical Duty Doctor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -23,9 +23,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
-    <!-- multiselect Css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
 
+    <!-- multiselect Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
 </head>
@@ -330,12 +331,6 @@
                         </li>
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarDashboards">
-                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents</span>
-                            </a>
-                        </li>
-                        <!-- end Show PCR / Incidents Menu -->
-                        <li class="nav-item">
                             <a class="nav-link menu-link" href="MCI_show.html" aria-controls="sidebarIncidents">
                                 <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="create" width="23" /> 
                                 <span data-key="t-incidents">Show MCI</span>
@@ -396,16 +391,9 @@
 
                     <!-- start page title -->
                     <div class="row">
-                        <div class="col-12 master1">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between pt-0 pb-0">
-                                <ul class="nav nav-tabs border-bottom-0">
-                                    <li class="nav-item"><a class="nav-link active text-danger fw-semibold" data-bs-toggle="tab" href="#unreadPCR"> 
-                                        <i class="fa-duotone fa-envelope-open-text fa-beat fa-lg me-2" aria-hidden="true"></i>&nbsp;Unread PCR / INCIDENT
-                                    </a></li>
-                                    <li class="nav-item"><a class="nav-link text-success-emphasis fw-semibold" data-bs-toggle="tab" href="#PCRShow"> 
-                                        <i class="fa-light fa-envelope fa-lg me-2" aria-hidden="true"></i>&nbsp; PCR / INCIDENT
-                                    </a></li>
-                                </ul>
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Medical Duty Doctor</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -413,7 +401,7 @@
                                             <a href="dashboard.html">
                                                 <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
                                         </li>
-                                        <li class="breadcrumb-item active">PCR / Incident</li>
+                                        <li class="breadcrumb-item active">Medical Duty Doctor</li>
                                     </ol>
                                 </div>
 
@@ -422,72 +410,187 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="tab-content">
-                        <div class="tab-pane fade active show p-2" id="unreadPCR" role="tabpanel">
-                            <div class="row contest_input_block">
-                                <div class="col-lg-12">
-                                    <div class="card shadow-none border-0" id="leadsList">
-                                        <div class="card-body">
-                                            <div class="table-responsive table-card data_table">
-                                                <table id="unreadPCRTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100"
-                                                    aria-hidden="true" style="margin: 0 !important;">
-                                                    <thead class="table-danger">
-                                                        <tr>
-                                                            <th>Incident No#</th>
-                                                            <th>Incident Location</th>
-                                                            <th>Station Name</th>
-                                                            <th>Call Date</th>
-                                                            <th>Call Type</th>
-                                                            <th>Call Sub category</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
-                                            </div>
-                                        </div>
+                    <!-- start page title -->
+                    <div class="row contest_input_block">
+                        <div class="col-12">
+                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                <div class="input-group input-group-navbar">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button" style="min-width: auto">
+                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                        </button>
                                     </div>
-        
+                                    <input type="text" id="medicalDutyDoctorSearch" class="form-control" placeholder="Search..."
+                                        aria-label="Search">
                                 </div>
-                                <!--end col-->
+                                <a href="javascript:void(0);" class="btn btn-primary justify-content-center mx-2" id="createUserProfileBtn">
+                                    <i class="fal fa-plus" aria-hidden="true"></i>&nbsp; Create new
+                                </a>
                             </div>
-                            <!--end row-->
                         </div>
-
-                        <div class="tab-pane fade p-2" id="PCRShow" role="tabpanel">
-                            <div class="row contest_input_block">
-                                <div class="col-lg-12">
-                                    <div class="card shadow-none border-0" id="leadsList">
-                                        <div class="card-body">
-                                            <div class="table-responsive table-card data_table">
-                                                <table id="PCRIncidentsTable" class="table align-middle table-nowrap table-bordered display expandable-table w-100" aria-hidden="true" 
-                                                    style="margin: 0 !important;">
-                                                  <thead class="table-secondary">
-                                                    <tr>
-                                                      <th>Incident No#</th>
-                                                      <th>Incident Location</th>
-                                                      <th>Station Name</th>
-                                                      <th>Call Date</th>
-                                                      <th>Call Type</th>
-                                                      <th>Call Sub category</th>
-                                                      <th></th>
-                                                    </tr>
-                                                  </thead>
-                                              </table>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-
-                            <!-- Accordions Fill Colored -->
-                            
-                        </div>
-
                     </div>
+                
+                    <!-- end page title -->
+                    <div class="row project-wrapper">
+                        <div class="col-xxl-12">
+                            <section class="smart-Wizard">
+                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                                    <fieldset class="mb-2 p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating singleSelect">
+                                                        <select class="form-select multiSelect" id="dutyDoctor" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">P2/71936 </option>
+                                                            <option value="2">P2/72334 </option>
+                                                            <option value="3">P2/72722 </option>
+                                                            <option value="4">P2/72729 </option>
+                                                            <option value="5">P2/72731 </option>
+                                                            <option value="6">P2/72737 </option>
+                                                            <option value="7">P2/72742 </option>
+                                                            <option value="8">P2/72891 </option>
+                                                            <option value="9">P2/72892 </option>
+                                                            <option value="10">P2/72895 </option>
+                                                            <option value="11">P2/72915 </option>
+                                                            <option value="12">P2/72943 </option>
+                                                            <option value="13">P2/72949 </option>
+                                                            <option value="14">P2/72963 </option>
+                                                            <option value="15">P2/72984 </option>
+                                                            <option value="16">P2/73055 </option>
+                                                            <option value="17">P2/73056 </option>
+                                                            <option value="18">P2/73221 </option>
+                                                            <option value="19">P2/73263 </option>
+                                                        </select>
+                                                        <label for="dutyDoctor">Assigned Store Duty Doctor</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-user-doctor-message fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="governorateID" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Muscat</option>
+                                                            <option value="2">AL Batinah South</option>
+                                                            <option value="3">AL Batinah North</option>
+                                                            <option value="4">AL Wusta</option>
+                                                            <option value="5">Musandam</option>
+                                                            <option value="6">AL Burimi</option>
+                                                            <option value="7">AL Dakhiliyah</option>
+                                                            <option value="8">AL Dhahira</option>
+                                                            <option value="9">AL Sharqyah North</option>
+                                                            <option value="10">AL Sharqyah South</option>
+                                                            <option value="11">Dhofar</option>
+                                                        </select>
+                                                        <label for="governorateID">Governorate ID</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="stationID" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                        </select>
+                                                        <label for="stationID">Station ID</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
+                                                </div>
+                                            </div>
 
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="fromDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                        <label for="fromDate">From Date</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="toDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                        <label for="toDate">To Date</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="statusYN" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Active</option>
+                                                            <option value="2">In active</option>
+                                                        </select>
+                                                        <label for="statusYN">Status</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-question fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="form-check form-switch form-switch-lg form-switch-success">
+                                                    <input type="checkbox" class="form-check-input" id="statuSwitch" checked="">
+                                                    <label for="statuSwitch">Status</label>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <!-- /.row -->
+                
+                                        <div class="row">
+                                            <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
+                                                <button type="reset" class="btn btn-text" id="medicalDutyDoctorCancelId"
+                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                    Cancel
+                                                </button>
+                
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="medicalDutyDoctorFn()" id="medicalDutyDoctorBtn">
+                                                    <i class='fal fa-plus fa-fw'></i>&nbsp; Add
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- /.row  -->
+                                    </fieldset>
+                                </form>
+                            </section>
+                
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="table-responsive-sm data_table">
+                                        <table id="medicalDutyDoctorTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th>Assigned Store Duty Doctor</th>
+                                                    <th></th>
+                                                    <th>Governorate</th>
+                                                    <th></th>
+                                                    <th>Station</th>
+                                                    <th></th>
+                                                    <th>From Date</th>
+                                                    <th>To Date</th>
+                                                    <th>Status</th>
+                                                    <th></th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row  -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -1086,6 +1189,8 @@
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
     <!-- loader -->
     <script type="text/javascript" src="assets/js/loader.js"></script>
+
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
     <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
     <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
@@ -1104,8 +1209,8 @@
 
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
-
-    <script type="text/javascript" src="assets/js/PCR_incidents.js"></script>
+    <script type="text/javascript" src="assets/js/PCR.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/medicalDutyDoctor.js"></script>
 </body>
 
 </html>

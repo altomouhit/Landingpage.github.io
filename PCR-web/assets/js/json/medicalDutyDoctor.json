@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "dutyDoctor": "P2/71936",
+            "dutyDoctor_val": "1",
+            "governorateID": "Muscat",
+            "governorateID_val": "1",
+            "stationID": "Al-Amirat",
+            "stationID_val": "1",
+            "fromDate": "2024-01-08",
+            "toDate": "2024-02-08",
+            "statusYN": "<i class='fas fa-times-circle text-danger fa-xl'></i>",
+            "statusYN_val": "2"
+        }
+    ]
+}
