@@ -1,0 +1,56 @@
+.btn-grad {
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: var(--bs-body-bg) !important;
+  /* box-shadow: 0 0 20px #eee; */
+  font-weight: bold !important;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.gradOlive {
+    background-image: linear-gradient(to right, #414d0b 0%, #727a17  51%, #414d0b  100%) !important;
+}
+.gradPrimary {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%) !important;
+}
+.gradSuccess {
+    background-image: linear-gradient(to right, #159957 0%, #155799  51%, #159957  100%) !important;
+}
+.graDanger {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%) !important;
+}
+.gradNext {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%) !important;
+}
+.gradWarning {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%) !important;
+}
+.gradInfo {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%) !important;
+}
+.gradLight {}
+.gradDark {}
+.gradBlack {}
+.gradWhite {}
+.gradSecondary {}
+.gradGray {
+    background-image: linear-gradient(to right, #5f2c82 0%, #49a09d  51%, #5f2c82 100%) !important;
+}
+.gradPurple {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%) !important;
+}
+.gradReassign {
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424 100%) !important;
+}
+.gradFreeze {
+    background-image: linear-gradient(to right, #7684dc 0%, #6d2b2b  51%, #473d6f 100%) !important;
+}
+/* Responsive Classes */
+@media screen and (max-width: 991.98px) {
+    .gradOliVieWrap{flex-direction: column;}
+    .gradNext,.gradPurple{padding: 1rem;}
+}
