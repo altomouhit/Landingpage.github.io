@@ -1,0 +1,375 @@
+<title>Site delivery form</title>
+<base href="https://altomouhit.github.io/moi.github.io/PCR-web/" target="_blank" />
+<style>
+    * {
+        margin: 0;
+    }
+
+    html,
+    body {
+        font-size: 1rem;
+        direction: rtl;
+    }
+
+    table {
+        font-family: "Calibri", sans-serif;
+        font-weight: 600;
+    }
+
+    .header {
+        background: rgb(46, 49, 145) url('assets/img/new/header-forms.svg');
+        background-repeat: no-repeat;
+        height: 89px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-size: cover;
+
+        td h2 {
+            color: white;
+            background: #5C9BD3;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-white {
+        color: #fff;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .table-quantity {
+        border: double windowtext 1.5pt;
+        background: #5B9BD5;
+        padding: 0cm 5.4pt 0cm 5.4pt;
+        height: 29.2pt;
+        text-align: center;
+    }
+
+    .tableDesc tr td {
+        border: 1.5pt double;
+    }
+
+    .tableDesc>tbody>tr:nth-of-type(odd)>* {
+        background: rgb(222, 234, 246);
+    }
+
+    .tableDesc>tbody>tr {
+        border-right: 1.5pt double windowtext;
+        border-bottom: 1.5pt double windowtext;
+        border-left: 1.5pt double windowtext;
+        border-image: initial;
+        border-top: none;
+        padding: 0cm 5.4pt;
+        height: 19.85pt;
+        vertical-align: top;
+    }
+
+    .border-0 {
+        border: none !important;
+    }
+
+    .collectBy tr td,
+    .handedTable tr td {
+        border: solid #ccc 1.0pt;
+        padding: 0cm 5.4pt 0cm 5.4pt;
+        height: 31.35pt;
+    }
+    .collectBy {
+        border: 1px solid #ccc;
+    }
+
+    .w-24 {
+        width: 24px;
+        margin: 0 2px;
+    }
+    .PDOATable tr td {
+        border: 1px solid #ccc;
+        padding:5px; 
+        font-weight: bold;
+    }
+</style>
+<div class="row">
+    <table cellpadding="0" cellspacing="0"
+        style="width: 900px; margin: 0 auto; border-collapse: collapse; border-spacing: 0px;">
+        <thead>
+            <tr>
+                <td colspan="2" dir="ltr">
+                    <table class="w-100" cellpadding="0" cellspacing="0" style="margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0px; ">
+                        <tbody>
+                            <tr class="header">
+                                <td>
+                                    <h2 class="">
+                                        إستمارة تسليم موقع
+                                    </h2>
+                                </td>
+                                <td>
+                                    <img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;">
+                                </td>
+                            </tr>
+                        </tbody><!---->
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 22px;"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table class="w-100 PDOATable" cellpadding="0" cellspacing="0" style="margin: 0 auto; border-collapse: collapse; border-spacing: 0px; ">
+                        <tbody>
+                            <tr><!---->
+                                <td>المحافظة: </td>
+                                <td style="width:5.0cm;"></td>
+                                <td>المركز:</td>
+                                <td style="width:5.0cm;"></td>
+                                <td>التاريخ: </td>
+                                <td style="width:5.0cm;"></td>
+                                <td>الوقت:</td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:5.0cm;">رقم البلاغ: </td>
+                                <td></td>
+                                <td>الموقع: </td>
+                                <td colspan="5"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-right">
+                    <strong style="background: #9bccf7;padding: 10px; border-radius: 8px; border: 2px solid #000">
+                        <span>بيانات المريض</span></strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            
+                            <tr><!---->
+                                <td>الاسم: </td>
+                                <td colspan="3" style="width:5.0cm;"></td>
+                                <td>الرقم المدني/ الجواز:</td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr>
+                                <td>العمر :</td>
+                                <td style="width:5.0cm;"></td>
+                                <td>الجنس: </td>
+                                <td style="width:5.0cm;"></td>
+                                <td>الجنسية: </td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr>
+                                <td>العنوان :</td>
+                                <td colspan="6"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 22px;"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-right">
+                    <strong style="background: #9bccf7;padding: 10px; border-radius: 8px; border: 2px solid #000">
+                        <span>بيانات مستلم الموقع</span></strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td>الجهة المستلمة: </td>
+                                <td colspan="3" style="width:5.0cm;"></td>
+                                <td>إسم المستلم </td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr><!---->
+                                <td>الرقم المدني/ العسكري: </td>
+                                <td colspan="3" style="width:5.0cm;"></td>
+                                <td>التوقيع </td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 22px;"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-right">
+                    <strong style="background: #9bccf7;padding: 10px; border-radius: 8px; border: 2px solid #000">
+                        <span>الشهـــــود</span></strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td>الاسم<span>:</span></td>
+                                <td colspan="3" style="width:5.0cm;"></td>
+                                <td>الرقم المدني/ العسكري<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>التوقيع<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr><!---->
+                                <td>الاسم<span>:</span></td>
+                                <td colspan="3" style="width:5.0cm;"></td>
+                                <td>الرقم المدني/ العسكري<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>التوقيع<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 22px;"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-right">
+                    <strong style="background: #9bccf7;padding: 10px; border-radius: 8px; border: 2px solid #000">
+                        <span>طاقم الاسعاف  المستجيب</span></strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td>الاسم<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>الرقم العسكري<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr><!---->
+                                <td>المسمى الوظيفي<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>التوقيع<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td>الاسم<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>الرقم العسكري<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                            <tr><!---->
+                                <td>المسمى الوظيفي<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                                <td>التوقيع<span>:</span></td>
+                                <td style="width:5.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td><strong>الموجه الطبي<span>:</span></strong></td>
+                                <td style="width:20.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr><!---->
+                                <td><strong>الضابط المناوب<span>:</span></strong></td>
+                                <td style="width:20.0cm;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 22px;"></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="height: 6px; background-color: #00B5F6;"></td>
+            </tr>
+            <tr dir="ltr">
+                <td colspan="6"
+                    style="padding: 5px; border-top: 6px solid #1B1477; color:#1B1477; display: flex; align-items: center; justify-content: space-between; font-size: 0.825rem;">
+                    <span><strong>Civil Defence and Ambulance Authority - www.cdaa.gov.om</strong></span>
+                    <span style="display: flex; align-items: center;">
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/instagram.png" alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/fb.png" alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/cancel.png" alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/youtube.png" alt="" class="w-24" />
+                        <strong>@CDAA_OMAN</strong></span>
+                </td>
+            </tr>
+        </tbody>
+    </table><!---->
+    <div class="heading-02" style="width:900px; text-align: center; margin: 0 auto;">
+    </div>
+    <!---->
+</div>
