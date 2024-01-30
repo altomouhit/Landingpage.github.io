@@ -1,5 +1,5 @@
 <title>PATIENT BELONGINGS FORM</title>
-<base href="https://altomouhit.github.io/moi.github.io/PCR-web/" target="_blank" />
+<!-- <base href="https://altomouhit.github.io/moi.github.io/PCR-web/" target="_blank" /> -->
 <style>
     * {
         margin: 0;
@@ -16,22 +16,23 @@
     }
 
     .header {
-        background: rgb(46, 49, 145) url('assets/img/new/header-forms.svg');
+        background: rgb(46, 49, 145) url('data:image/png;base64,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');
         background-repeat: no-repeat;
         height: 89px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-size: cover;
+    }
 
-        td h2 {
-            color: white;
-            background: #5C9BD3;
-            padding: 10px;
-            margin-left: 10px;
-            border-radius: 6px;
-            font-size: 1rem;
-        }
+    .header td h2 {
+        color: white;
+        background: #5C9BD3;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 6px;
+        font-size: 1rem;
+        width: fit-content;
     }
 
     .text-left {
@@ -132,7 +133,8 @@
         <tbody>
             <tr>
                 <td>
-                    <table cellpadding="0" cellspacing="0" style="width:100%; margin: 0 auto; border: 1px solid #ccc; border-collapse: collapse; border-spacing: 0px; ">
+                    <table cellpadding="0" cellspacing="0"
+                        style="width:100%; margin: 0 auto; border: 1px solid #ccc; border-collapse: collapse; border-spacing: 0px; ">
                         <tbody>
                             <tr>
                                 <td
@@ -196,66 +198,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -359,10 +301,14 @@
                     style="padding: 5px; border-top: 6px solid #1B1477; color:#1B1477; display: flex; align-items: center; justify-content: space-between; font-size: 0.825rem;">
                     <span><strong>Civil Defence and Ambulance Authority - www.cdaa.gov.om</strong></span>
                     <span style="display: flex; align-items: center;">
-                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/instagram.png" alt="" class="w-24" />
-                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/fb.png" alt="" class="w-24" />
-                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/cancel.png" alt="" class="w-24" />
-                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/youtube.png" alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/instagram.png"
+                            alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/fb.png" alt=""
+                            class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/cancel.png"
+                            alt="" class="w-24" />
+                        <img src="https://altomouhit.github.io/moi.github.io/PCR-web/assets/img/social/youtube.png"
+                            alt="" class="w-24" />
                         <strong>@CDAA_OMAN</strong></span>
                 </td>
             </tr>

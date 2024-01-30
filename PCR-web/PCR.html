@@ -7913,35 +7913,26 @@
         data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-xl modal-dialog-scrollable dir-rtl">
             <div class="modal-content border-0">
-                <!-- <div class="modal-header bg-soft-info p-3">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-                </div> -->
+                <div class="modal-header bg-soft-info p-0 d-block">
+                    <!-- <h5 class="modal-title" id="refusedFormLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button> -->
+                    <header class="header-modal">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;">
+                            </div>
+                            <div class="col-auto">
+                                <h2 class="text-center bg-PDOA">
+                                    <span style="font-family:'mohammad bold art 1'">
+                                        إستمارة تسليم موقع</span>
+                                </h2>
+                            </div>
+                        </div> <!-- /.row -->
+                    </header>
+                </div>
 
                 <div class="modal-body">
                     <div class="card border-0 shadow-none">
-                        <div class="card-body border-bottom border-bottom-dashed p-0">
-                            <div class="row">
-                                <div class="col-lg-6 mx-auto text-center">
-                                    <div class="profile-user mx-auto mb-3">
-                                        <input id="profile-img-file-input" type="file" class="profile-img-file-input" />
-                                        <label for="profile-img-file-input" class="d-block" tabindex="0">
-                                            <span class="d-flex align-items-center justify-content-center rounded">
-                                                <img src="assets/img/PDOA_Logo.png"
-                                                    lass="card-logo card-logo-dark user-profile-image img-fluid"
-                                                    alt="logo dark" width="60">
-                                                <img src="assets/img/Logo.svg"
-                                                    class="card-logo card-logo-light user-profile-image img-fluid"
-                                                    alt="logo light" width="60">
-                                            </span>
-                                            <h4 class="fw-bold text-primary-emphasis text-decoration-underline">
-                                                <span>إستمارة تسليم موقع</span>
-                                            </h4>
-                                        </label>
-                                    </div>
-                                </div> <!-- /.col -->
-                            </div> <!-- /.row -->
-                        </div>
                         <div class="card-body p-2">
                             <div class="row g-3">
                                 <div class="col-lg-3 col-sm-6">
@@ -8338,7 +8329,7 @@
                         </div> <!-- /.card-body -->
                     </div>
                 </div>
-                <div class="modal-footer border-0">
+                <div class="modal-footer print-form-footer">
                     <div class="hstack gap-2 justify-content-end">
                         <!-- <a href="assets/pdf/PDOA.PDF" class="btn btn-info" target="_blank"><i class="fal fa-print fa-fw fa-xl"></i></a> -->
                         <a href="PDOA.html" class="btn btn-info" target="_blank"><i class="fal fa-print fa-fw fa-xl"></i></a>
@@ -8358,292 +8349,348 @@
         data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-xl modal-dialog-scrollable dir-rtl">
             <div class="modal-content border-0">
-                <!-- <div class="modal-header bg-soft-info p-3">
-                    <h5 class="modal-title" id="refusedFormLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-                </div> -->
+                <div class="modal-header bg-soft-info p-0 d-block">
+                    <!-- <h5 class="modal-title" id="refusedFormLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button> -->
+                    <header class="header-modal">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;">
+                            </div>
+                            <div class="col-auto">
+                                <h2 class="text-center bg-refusal">
+                                    <span style="font-family:'mohammad bold art 1'">
+                                    رفض عناية طبية او نقل من خدمة الإسعاف</span>
+                                    <br>
+                                    <span>REFUSAL OF AMBULANCE CARE OR TRANSPORT</span>
+                                </h2>
+                            </div>
+                        </div> <!-- /.row -->
+                    </header>
+                </div>
 
                 <div class="modal-body pt-1 pb-1">
                     <div class="card border-0 shadow-none mb-0">
-                        <form class="needs-validation" novalidate id="invoice_form">
-                            <div class="card-body border-bottom border-bottom-dashed p-0">
-                                <div class="row">
-                                    <div class="col-lg-9 mx-auto text-center">
-                                        <div class="profile-user mx-auto mb-1">
-                                            <input id="profile-img-file-input" type="file"
-                                                class="profile-img-file-input" />
-                                            <label for="profile-img-file-input" class="d-block" tabindex="0">
-                                                <span class="d-flex align-items-center justify-content-center rounded">
-                                                    <img src="assets/img/PDOA_Logo.png"
-                                                        class="card-logo card-logo-dark user-profile-image img-fluid"
-                                                        alt="logo dark" width="60">
-                                                    <img src="assets/img/Logo.svg"
-                                                        class="card-logo card-logo-light user-profile-image img-fluid"
-                                                        alt="logo light" width="60">
-                                                </span>
-                                                <h5 class="fw-bold text-primary-emphasis text-decoration-underline">
-                                                    REFUSAL OF AMBULANCE CARE OR TRANSPORT <br>
-                                                    <span>رفض عناية طبية او نقل من خدمة الإسعاف</span>
-                                                </h5>
-                                            </label>
-                                        </div>
-                                    </div> <!-- /.col -->
-                                </div> <!-- /.row -->
+                        <div class="row mt-3 text-center">
+                            <div class="col-md-4">
+                                <label for="dateField" class="col-form-label fw-bold"><span>Date /</span><span dir="rtl">&nbsp;</span>
+                                <span style="font-family:'mohammad bold art 1';">التاريخ</span></label>
+                                <input type="text" class="form-control" id="dateField" data-provider="flatpickr" data-time="true" placeholder="Select Date-time" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="fieldTime" class="col-form-label fw-bold"><span>Time /&nbsp;</span>
+                                <span style="font-family:'mohammad bold art 1';">الوقت</span></label>
+                                <input type="text" class="form-control" id="fieldTime" placeholder="HH:SS" data-provider="timepickr" data-time-basic="true">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="incidentNoRef" class="col-form-label fw-bold"><span >Incident No /&nbsp;</span>
+                                    <span style="font-family:'mohammad bold art 1';">رقم البلاغ</span></label>
+                                    <input type="text" class="form-control" id="incidentNoRef" placeholder="Incident No / رقم الحادث">
                             </div>
 
-                            <div class="card-body p-2 border-top border-top-dashed">
-                                <div class="row justify-content-between">
-                                    <div class="col-md-6">
-                                        <table class="align-middle">
-                                            <tr>
-                                                <th class="text-primary">
-                                                    Date <br> <span>التاريخ</span>
-                                                </th>
-                                                <td>
-                                                    <input type="text" class="form-control" id="dateField"
-                                                        data-provider="flatpickr" data-time="true"
-                                                        placeholder="Select Date-time">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-primary">Time <br> <span>وقت</span></th>
-                                                <td><input type="text" class="form-control" id="fieldTime"
-                                                        placeholder="HH:SS" data-provider="timepickr"
-                                                        data-time-basic="true"></td>
-                                            </tr>
-                                            <tr>
-                                                <th class="col-md-6 text-primary">Incident No <br> <span>رقم
-                                                        الحادث</span></th>
-                                                <td><input type="text" class="form-control" id="incidentNo"
-                                                        placeholder="Incident No / رقم الحادث"></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <table class="align-middle">
-                                            <tr>
-                                                <th class="text-primary">Call Location <br> <span>موقع المكالمة</span>
-                                                </th>
-                                                <td><input type="text" class="form-control" id="callLocation"
-                                                        placeholder="Call Location / موقع المكالمة"></td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-primary">Ambulance Station <br> <span>محطة
-                                                        الإسعاف</span></th>
-                                                <td><input type="text" class="form-control" id="ambulanceStation"
-                                                        placeholder="Ambulance Station / محطة الإسعاف"></td>
-                                            </tr>
-                                            <tr>
-                                                <th class="col-md-6 text-primary">CDAA Directorate <br> <span>مديرية
-                                                        هيئة الدفاع المدني و الأسعاف </span></th>
-                                                <td><input type="text" class="form-control" id="CDAADirectorate"
-                                                        placeholder="CDAA Directorate / مديرية هيئة الدفاع المدني و الأسعاف ">
-                                                </td>
-                                            </tr>
-                                        </table>
+                            <div class="col-md-4">
+                                <label for="callLocation" class="col-form-label fw-bold"><span>Call Location /&nbsp;</span>
+                                    <span style="font-family:'mohammad bold art 1';">موقع البلاغ</span></label>
+                                <input type="text" class="form-control" id="callLocation" placeholder="Call Location / موقع المكالمة" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ambulanceStation" class="col-form-label fw-bold"><span>Ambulance Station /&nbsp;</span>
+                                    <span style="font-family:'mohammad bold art 1';">مركز الإسعاف</span></label>
+                                <input type="text" class="form-control" id="ambulanceStation" placeholder="Ambulance Station / محطة الإسعاف" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="CDAADirectorate" class="col-form-label fw-bold"><span >Directorate /&nbsp;</span>
+                                    <span style="font-family:'mohammad bold art 1';">الإدارة</span></label>
+                                    <input type="text" class="form-control" id="CDAADirectorate" placeholder="CDAA Directorate / مديرية هيئة الدفاع المدني و الأسعاف ">
+                            </div>
+                        </div> <!-- /.row -->
+
+                        <div class="row text-center mt-3">
+                            <div class="col-12">
+                                <p class="text-right" style="font-family:'mohammad bold art 1'" dir="rtl" >
+                                    أقر بأنني أرفض تلقي أي نوع من ا لعناية الطبية أو النقل بواسطة خدمة الإسعاف، بالرغم من النصائح والتوضيحات التي قدمت
+                                    لي من
+                                    قبلهم بشأن حالتي الصحية أو حالة من أتولى رعايته، وعليه أتحمل كافة المسئولية المترتبة على هذا القرار.
+                                </p>
+                                <p><span>======================================================================================</span></p>
+                                <p>That through my signature below on behalf of myself or whoever I entrusted with his/ her care, that I confirm my
+                                    refusal to receive any of medical care or transport from the medical staff of the ambulance service despite of
+                                    my
+                                    full awareness and capacity of its importance, despite the explanations and advice provided to me about my
+                                    health
+                                    by ambulance team and I shall legally bear all the consequences resulting from this refusal, and I do not hold
+                                    the
+                                    ambulance medical team or the ambulance service any responsibility toward this.</p>
+                            </div>
+                        </div> <!-- /.row -->
+
+                        <fieldset class="mb-3">
+                            <div class="row align-items-center justify-content-between my-3">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold">
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الاسم<span>:</span></span></label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Name</label>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';" dir="rtl">صلة القرابة<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Relationship</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> <!-- /.card-body -->
-
-                            <div class="card-body p-2">
-                                <div class="row">
-                                    <div class="col-md-4 row align-items-end">
-                                        <label for="staticEmail2" class="col-sm-1 mb-0">I</label>
-                                        <div class="col-sm-11">
-                                            <input type="text"
-                                                class="form-control border-top-0 border-start-0 border-end-0 rounded-0 border-bottom-dashed"
-                                                id="staticEmail2" />
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';" dir="rtl">الجنسية<span>:</span></span></label>
                                         </div>
-                                    </div> <!--end col-->
-                                    <div class="col-md-8 row align-items-end">
-                                        <label for="guardianNationality" class="col-sm-6 mb-0">Relationship: Patient /
-                                            Guardian Nationality:</label>
-                                        <div class="col-sm-6">
-                                            <input type="text"
-                                                class="form-control border-top-0 border-start-0 border-end-0 rounded-0 border-bottom-dashed"
-                                                id="guardianNationality" placeholder="">
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                         </div>
-                                    </div> <!--end col-->
-                                    <div class="col-auto mt-1">
-                                        <label for="" class="text-justify">That through my signature below on behalf of
-                                            myself or whoever I entrusted with his/ her care, that I confirm my refusal
-                                            to
-                                            receive any of medical care or transport from the medical staff of the
-                                            ambulance service despite of my full awareness and capacity of
-                                            its importance, despite the explanations and advice provided to me about my
-                                            health by ambulance team, and I shall legally bear all
-                                            the consequences resulting from this refusal, and I do not hold the
-                                            ambulance medical team or the ambulance service any responsibility
-                                            toward this.</label>
-                                    </div> <!--end col-->
-                                </div> <!--end row-->
-
-                                <div class="row text-end dir-rtl">
-                                    <div class="col-md-4 row align-items-end">
-                                        <label for="staticEmail2" class="col-sm-2 mb-0">أقر أنا</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"
-                                                class="form-control border-top-0 border-start-0 border-end-0 rounded-0 border-bottom-dashed"
-                                                id="staticEmail2" />
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Nationality</label>
                                         </div>
-                                    </div> <!--end col-->
-                                    <div class="col-md-8 row align-items-end">
-                                        <label for="guardianNationality" class="col-sm-6 mb-0">صــــــــلة القرابة
-                                            :مريض/ وصي على المريض الجنسية</label>
-                                        <div class="col-sm-6">
-                                            <input type="text"
-                                                class="form-control border-top-0 border-start-0 border-end-0 rounded-0 border-bottom-dashed"
-                                                id="guardianNationality" placeholder="">
-                                        </div>
-                                    </div> <!--end col-->
-                                    <div class="col-auto mt-1">
-                                        <label for="" class="text-justify">بأنني أرفض تلقي أي نوع من ا لعناية الطبية أو
-                                            النقل بواسطة خدمة الإسعاف، بالرغم من
-                                            النصائح والتوضيحات التي قدمت لي من قبلهم بشأن حالتي الصحية أو حالة من أتولى
-                                            رعايته، وعليه أتحمل كافة المسئولية
-                                            المترتبة على هذا القرار.</label>
-                                    </div> <!--end col-->
-                                </div> <!--end row-->
-                            </div> <!-- /.card-body -->
-
-                            <div class="card-body p-2 border-top border-top-dashed">
-                                <fieldset>
-                                    <div class="row mt-2">
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilIDPDOA"
-                                                    placeholder="Civil ID" />
-                                                <label for="civilIDPDOA">Civil ID <span>الرقم المدني</span></label>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilAddress"
-                                                    placeholder="Address">
-                                                <label for="civilAddress">Address <span>العنوان</span></label>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilPhoneNo"
-                                                    placeholder="Phone No" />
-                                                <label for="civilPhoneNo">Phone No <span>رقم الهاتف</span></label>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <label for="signatureRecipient">Signature <span>التوقيع</span></label>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#signatureModal"><i
-                                                    class="fa-light fa-signature fa-lg"></i></button>
-                                        </div>
-                                        <!--end col-->
                                     </div>
-                                    <!--end row-->
-
-                                    <div class="row mb-2">
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilIDWitness"
-                                                    placeholder="Civil ID" />
-                                                <label for="civilIDWitness">Civil ID <span>الرقم المدني</span></label>
-                                            </div>
+                                </div>
+                                
+                            </div> <!-- /.row -->
+    
+                            <div class="row align-items-center my-3 justify-content-between">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold">
+                                        <span style="font-family:'mohammad bold art 1';">الرقم المدني<span>:</span></span></label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Civil ID No</label>
+                                </div>
+                            </div> <!-- /.row -->
+                            
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">العنوان<span>:</span></span></label>
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilWitnessName"
-                                                    placeholder="Witness Name" />
-                                                <label for="civilWitnessName">Witness Name <span>اسم
-                                                        الشاهد</span></label>
-                                            </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="civilPhoneNo"
-                                                    placeholder="Phone No" />
-                                                <label for="civilPhoneNo">Phone No <span>رقم الهاتف</span></label>
-                                            </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Relationship</label>
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <label for="signatureRecipient">Signature <span>التوقيع</span></label>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#signatureModal">
-                                                <i class="fa-light fa-signature fa-lg"></i></button>
-                                        </div>
-                                        <!--end col-->
                                     </div>
-                                    <!--end row-->
-                                </fieldset>
-                            </div>
-
-                            <div class="card-body p-2 border-top border-top-dashed">
-                                <fieldset>
-                                    <div class="row mt-2">
-                                        <div class="col-lg-6 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="ambulanceMedic1"
-                                                    placeholder="Ambulance Medic1 / مسعف الإسعاف 1" />
-                                                <label for="ambulanceMedic1">Ambulance Medic1 <span>مسعف الإسعاف
-                                                        1</span></label>
-                                            </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">رقم الهاتف<span>:</span></span></label>
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="forceNo"
-                                                    placeholder="Force No / رقم القوة">
-                                                <label for="forceNo">Force No <span>رقم القوة</span></label>
-                                            </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <label for="ambulanceSignature">Signature <span>التوقيع</span></label>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#signatureModal"><i
-                                                    class="fa-light fa-signature fa-lg"></i></button>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Phone No</label>
                                         </div>
-                                        <!--end col-->
                                     </div>
-                                    <!--end row-->
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row text-center p-3">
+                                <div class="col">
+                                    <strong class="p-3" style='border: 2px solid #385D8A;'>
+                                        <span style="font-family:'mohammad bold art 1';">التوقيع<span>:</span></span>
+                                        <span><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#signatureModal">
+                                            <i class="fa-light fa-signature fa-lg"></i></button></span>
+                                        <span><span>:</span> Signature</span>
+                                    </strong>
+                                </div>
+                            </div> <!-- /.row -->
+                        </fieldset>
 
-                                    <div class="row mb-2">
-                                        <div class="col-lg-6 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="ambulanceMedic2"
-                                                    placeholder="Ambulance Medic2 / مسعف الإسعاف 2" />
-                                                <label for="ambulanceMedic2">Ambulance Medic2 <span>مسعف الإسعاف
-                                                        2</span></label>
-                                            </div>
+                        <fieldset class="mb-3">
+                            <div class="row text-right text-white mt-3">
+                                <div class="col">
+                                    <strong class="bg-black p-2 rounded"> <span>الشهود</span><span> / witness</span></strong>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row align-items-center my-3 justify-content-between">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold">
+                                        <span style="font-family:'mohammad bold art 1';">الاسم<span>:</span></span></label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Name</label>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">الرقم المدني<span>:</span></span></label>
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="forceNo2"
-                                                    placeholder="Force No">
-                                                <label for="forceNo2">Force No <span>رقم القوة</span></label>
-                                            </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                         </div>
-                                        <!--end col-->
-                                        <div class="col-lg-3 col-sm-6 mb-2">
-                                            <label for="ambulanceSignature2">Signature <span>التوقيع</span></label>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#signatureModal">
-                                                <i class="fa-light fa-signature fa-lg"></i></button>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Civil ID No.</label>
                                         </div>
-                                        <!--end col-->
                                     </div>
-                                    <!--end row-->
-                                </fieldset>
-                            </div> <!-- /.card-body -->
-                        </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">رقم الهاتف<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Phone No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row text-center my-3 p-3">
+                                <div class="col">
+                                    <strong class="p-3" style='border: 2px solid #385D8A;'>
+                                        <span style="font-family:'mohammad bold art 1';">التوقيع<span>:</span></span>
+                                        <span><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#signatureModal">
+                                            <i class="fa-light fa-signature fa-lg"></i></button></span>
+                                        <span><span>:</span> Signature</span>
+                                    </strong>
+                                </div>
+                            </div> <!-- /.row -->
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="row text-right text-white mt-3">
+                                <div class="col">
+                                    <strong class="bg-black p-2 rounded"><span>الطاقم الطبي المستجيب</span><span> / Ambulance crew</span></strong>
+                                    
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row align-items-center my-3 justify-content-between">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold">
+                                        <span style="font-family:'mohammad bold art 1';">اسم المسعف 1<span>:</span></span></label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Ambulance Medic1</label>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">الرقم العسكري<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Force No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">التوقيع<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal">
+                                            <i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Signature</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.row -->
+                            <div class="row align-items-center my-3 justify-content-between">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold">
+                                        <span style="font-family:'mohammad bold art 1';">اسم المسعف 2<span>:</span></span></label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Ambulance Medic2</label>
+                                </div>
+                            </div> <!-- /.row -->
+    
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">الرقم العسكري<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Force No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row g-3 align-items-center justify-content-between">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold">
+                                                <span style="font-family:'mohammad bold art 1';">التوقيع<span>:</span></span></label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signatureModal">
+                                            <i class="fa-light fa-signature fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label fw-bold"><span>:</span>Signature</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.row -->
+                        </fieldset>
                     </div>
                 </div>
-                <div class="modal-footer border-0">
+                <div class="modal-footer print-form-footer">
                     <div class="hstack gap-2 justify-content-end">
                         <!-- <a href="assets/pdf/REFUSAL.PDF" class="btn btn-info" target="_blank"><i class="fal fa-print fa-fw fa-xl"></i></a> -->
                         <a href="REFUSAL-Form.html" class="btn btn-info" target="_blank"><i class="fal fa-print fa-fw fa-xl"></i></a>
@@ -8661,37 +8708,26 @@
         aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content border-0">
-                <!-- <div class="modal-header bg-soft-info p-3">
-                    <h5 class="modal-title" id="personalBelongingFormLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-                </div> -->
+                <div class="modal-header bg-soft-info p-0 d-block">
+                    <!-- <h5 class="modal-title" id="refusedFormLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button> -->
+                    <header class="header-modal">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <h2 class="text-center bg-PDOA">
+                                    <span>PATIENT BELONGINGS FORM</span>
+                                </h2>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;">
+                            </div>
+                        </div> <!-- /.row -->
+                    </header>
+                </div>
 
                 <div class="modal-body pt-1 pb-1">
                     <div class="card border-0 shadow-none mb-0">
                         <form class="needs-validation" novalidate id="pb_form">
-                            <div class="card-body border-bottom border-bottom-dashed p-0">
-                                <div class="row">
-                                    <div class="col-lg-6 mx-auto text-center">
-                                        <div class="profile-user mx-auto mb-1">
-                                            <input id="profile-img-file-input" type="file"
-                                                class="profile-img-file-input" />
-                                            <label for="profile-img-file-input" class="d-block" tabindex="0">
-                                                <span class="d-flex align-items-center justify-content-center rounded">
-                                                    <img src="assets/img/PDOA_Logo.png"
-                                                        class="card-logo card-logo-dark user-profile-image img-fluid"
-                                                        alt="logo dark" width="60">
-                                                    <img src="assets/img/Logo.svg"
-                                                        class="card-logo card-logo-light user-profile-image img-fluid"
-                                                        alt="logo light" width="60">
-                                                </span>
-                                                <h5 class="fw-bold text-primary-emphasis text-decoration-underline">
-                                                    PATIENT BELONGINGS FORM</h5>
-                                            </label>
-                                        </div>
-                                    </div> <!-- /.col -->
-                                </div> <!-- /.row -->
-                            </div>
-
                             <div class="card-body p-2 border-top border-top-dashed">
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-6 mb-2">
@@ -8938,7 +8974,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="modal-footer border-0">
+                <div class="modal-footer print-form-footer">
                     <div class="hstack gap-2 justify-content-end">
                         <!-- javascript:void(0) -->
                         <a href="PB-Form.html" target="_blank" class="btn btn-info"><i class="fal fa-print fa-fw fa-xl"></i></a>
@@ -8957,36 +8993,26 @@
         aria-labelledby="narcoticModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content border-0">
-                <!-- <div class="modal-header bg-soft-info p-3">
-                    <h5 class="modal-title" id="narcoticModalLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
-                </div> -->
+                <div class="modal-header bg-soft-info p-0 d-block">
+                    <!-- <h5 class="modal-title" id="narcoticModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button> -->
+                    <header class="header-modal">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <h2 class="text-center bg-PDOA">
+                                    <span>RESTRICTED MEDICATION PRESCRIPTION</span>
+                                </h2>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;">
+                            </div>
+                        </div> <!-- /.row -->
+                    </header>
+                </div>
 
                 <div class="modal-body pt-1 pb-1">
                     <div class="card border-0 shadow-none mb-0">
                         <form class="needs-validation" novalidate id="Narcotic_form">
-                            <div class="card-body border-bottom border-bottom-dashed p-0">
-                                <div class="row">
-                                    <div class="col-lg-6 mx-auto text-center">
-                                        <div class="profile-user mx-auto mb-1">
-                                            <input id="profile-img-file-input" type="file"
-                                                class="profile-img-file-input" />
-                                            <label for="profile-img-file-input" class="d-block" tabindex="0">
-                                                <span class="d-flex align-items-center justify-content-center rounded">
-                                                    <img src="assets/img/PDOA_Logo.png"
-                                                        class="card-logo card-logo-dark user-profile-image img-fluid"
-                                                        alt="logo dark" width="60">
-                                                    <img src="assets/img/Logo.svg"
-                                                        class="card-logo card-logo-light user-profile-image img-fluid"
-                                                        alt="logo light" width="60">
-                                                </span>
-                                                <h5 class="fw-bold text-primary-emphasis text-decoration-underline">
-                                                    RESTRICTED MEDICATION PRESCRIPTION</h5>
-                                            </label>
-                                        </div>
-                                    </div> <!-- /.col -->
-                                </div> <!-- /.row -->
-                            </div>
 
                             <div class="card-body p-2 border-top border-top-dashed">
                                 <div class="row">
@@ -9481,7 +9507,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="modal-footer d-block">
+                <div class="modal-footer d-block print-form-footer">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between">
                             <button type="reset" class="btn btn-warning" id="showCommentsBtn"><i
