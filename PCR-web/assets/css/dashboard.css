@@ -16,6 +16,11 @@
     opacity: 0.7;
     background-color: var(--vz-footer-bg);
 } */
+.main-bg {
+    background: url(../img/new/bgNew.png);
+    background-size: cover;
+    background-position: top center;
+}
 .position-absolute.absolute-centered {
     left: 50%;
     top: 50%;
@@ -59,4 +64,20 @@
 }
 .dashboard-text-color {
     color: rgb(0, 181, 246);
+}
+.footer {
+    position: absolute;
+    left: 0 !important;
+    z-index: 1009;
+    width: 100%;
+}
+.btn-userName {
+    background: var(--vz-userName);
+    color: black;
+    font-weight: 600;
+    border: 0;
+    border-radius: 2rem;
+}
+.btn-userName:hover {
+    background: var(--vz-userName);
 }

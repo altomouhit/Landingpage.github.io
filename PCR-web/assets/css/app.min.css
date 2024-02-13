@@ -54,6 +54,7 @@
 	--vz-footerNew-bg: rgb(27, 20, 119);
 	--vz-headerNew-bg: rgb(46, 49, 145);
 	--vz-footer-bg: rgb(41, 170, 225);
+	--vz-userName: #E3D535;
 }
 :root .nav-tabs {
 	--vz-nav-tabs-link-active-bg: #f3f6f9
@@ -421,7 +422,7 @@
 	content: "\ec34"
 }
 [data-topbar=dark] #page-topbar {
-	background-color: var(--vz-header-bg-dark);
+	background-color: var(--vz-headerNew-bg);
 	border-color: var(--vz-header-bg-dark);
 	/* background: url(../img/bg-pattern.png), url(../img/bg_header.png), linear-gradient(to right, #002650 50%, #025f3e);
     background-position: center center; */
@@ -451,6 +452,14 @@
 @media (min-width: 767.99px) {
 	[data-topbar=dark] .topbar-user {
 		background-color: var(--vz-topbar-user-bg-dark)
+	}	
+}
+@media (max-width: 1024.1px) {
+	[data-topbar=dark] #page-topbar {
+		background: var(--vz-headerNew-bg) !important;
+	}
+	.newLogoimg {
+		width: 7.5rem !important;
 	}
 }
 [data-topbar=dark] .topbar-user .user-name-text {
@@ -1250,9 +1259,9 @@
 	text-decoration: underline
 }
 [data-layout=vertical][data-sidebar=dark] .navbar-menu {
-	/* background: var(--vz-vertical-menu-bg-dark); */
+	background: var(--vz-headerNew-bg);
 	/* background: transparent linear-gradient(164deg, #1e2248 0%, #1a51a0 31%, #39bde1 100%) 0% 0% no-repeat padding-box; */
-	background: transparent linear-gradient(164deg, var(--vz-headerNew-bg) 0%, var(--vz-headerNew-bg) 31%, var(--vz-footer-bg) 100%) 0% 0% no-repeat padding-box;
+	/* background: transparent linear-gradient(164deg, var(--vz-headerNew-bg) 0%, var(--vz-headerNew-bg) 31%, var(--vz-footer-bg) 100%) 0% 0% no-repeat padding-box; */
 	border-right: 0px solid var(--vz-headerNew-bg);
 }
 [data-layout=vertical][data-sidebar=dark] .navbar-menu .hamburger-icon span {
@@ -1329,7 +1338,7 @@
 	background-color: var(--vz-vertical-menu-item-active-color-dark)!important
 }
 [data-layout=vertical][data-sidebar=dark][data-sidebar-size=sm] .navbar-brand-box {
-	background: var(--vz-vertical-menu-bg-dark)
+	background: var(--vz-headerNew-bg)
 }
 [data-layout=vertical][data-sidebar=dark][data-sidebar-size=sm] .navbar-menu .navbar-nav .nav-item:hover>.menu-dropdown {
 	background: var(--vz-vertical-menu-bg-dark)

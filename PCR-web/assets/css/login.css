@@ -7,7 +7,7 @@ body {
 }
 .bg-login {
   /* background: url(../img/Login-bg.svg); */
-  background: url(../img/new/loginBg@2x.png);
+  background: url(../img/new/bgNew.png);
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: bottom; */
@@ -28,6 +28,7 @@ body {
   /* opacity: 0.81; */
   border: 2px solid rgb(101, 201, 251);
   border-radius: 2rem;
+  overflow: hidden;
 }
 .input-group-text {
   background-color: transparent;

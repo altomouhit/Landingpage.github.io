@@ -780,7 +780,7 @@ hr.horizontal.dark {
     color: #555;
 } */
 .newLogoimg {
-    width: 179px;
+    width: 9rem;
 }
 .footerBg {
     background-color: var(--vz-footerNew-bg);
@@ -808,7 +808,7 @@ hr.horizontal.dark {
 }
 .img-avatar {
     height: 49px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 .form-control[readonly] {
     background-color: #e9ecef;

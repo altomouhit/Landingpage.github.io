@@ -12,7 +12,7 @@ window.onload = function() {
 	//circulation
 	$("#circulationPulseDiv, #circulationSkinDiv").hide();
 	//Burns
-	$("#headBurnsDiv, #neckBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #chestRightBurnsDiv, #leftChestDiv, #rightChestDiv").hide();
+	$("#headBurnsDiv, #neckBurnsDiv, #pelvicBurnsDiv, #chestBurnsDiv, #chestRightBurnsDiv, #leftChestDiv, #rightChestDiv, #pupilCheckDiv").hide();
 	//Abdomen
 	$("#leftUpAbdomenDiv, #abdomenBurnsDiv,#rightUpAbdomenDiv ,#rightUpAbdomenBurnsDiv, #leftDownAbdomenDiv, #leftDownAbdomenBurnsDiv, #rightDownAbdomenDiv, #rightDownAbdomenBurnsDiv").hide();
 	//Back
@@ -126,6 +126,14 @@ $('#head').on('change', function() {
 		$("#headBurnsDiv").show();
 	} else {
 		$("#headBurnsDiv").hide();
+	}
+});
+//Patient Assessment > head > pupilCheck
+$('#pupilCheck').on('change', function() {
+	if ($("#pupilCheck option[value=10]:selected") ?.length > 0) {
+		$("#pupilCheckDiv").show();
+	} else {
+		$("#pupilCheckDiv").hide();
 	}
 });
 //Patient Assessment > Neck
@@ -336,7 +344,7 @@ $("#mAirway").on('change', function() {
 		$("#ETTSizeDiv, #ETTDoneByDiv").hide();
 	}
 	if (Value.indexOf("5") > -1) {
-		$("#mAirwayCommentDiv").show();
+		$("#mAirwayCommentDiv").hide();
 	}
 	if (!(Value.indexOf("5") > -1)) {
 		$("#mAirwayCommentDiv").hide();
@@ -375,7 +383,7 @@ $("#oxygenLPM").on('change', function() {
 		$("#BVMDiv, #BVMLPMDoneByDiv").hide();
 	}
 	if (Value.indexOf("5") > -1) {
-		$("#oxygenLPMDiv").show();
+		$("#oxygenLPMDiv").hide();
 	}
 	if (!(Value.indexOf("5") > -1)) {
 		$("#oxygenLPMDiv").hide();
@@ -409,7 +417,7 @@ $("#immoblazatiom").on('change', function() {
 		$("#ScoopDoneByDiv").hide();
 	}
 	if (Value.indexOf("5") > -1) {
-		$("#immoblazatiomDiv").show();
+		$("#immoblazatiomDiv").hide();
 	}
 	if (!(Value.indexOf("5") > -1)) {
 		$("#immoblazatiomDiv").hide();

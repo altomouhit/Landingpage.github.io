@@ -328,13 +328,15 @@
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
-                                <i class="bx bx-receipt"></i> <span data-key="t-incidents">Show PCR / Incidents </span>
+                                <!-- <img src="assets/img/dashboard_icons/ShowPCRIcon.svg" class="me-1" alt="Show PCR" width="21" />  -->
+                                <img src="assets/img/dashboard_icons/ShowPCRIcon.svg" class="me-1" alt="Show PCR" width="21" /> 
+                                <span data-key="t-incidents">Show PCR / Incidents </span>
                             </a>
                         </li>
                         <!-- end Show PCR / Incidents Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="MCI_show.html" aria-controls="sidebarIncidents">
-                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="create" width="23" /> 
+                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="Show MCI" width="23" /> 
                                 <span data-key="t-incidents">Show MCI</span>
                             </a>
                         </li>
@@ -353,16 +355,33 @@
                         <!-- end Medical Store Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="PCR.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/create.svg" class="me-1" alt="create" width="21" /> <span data-key="t-CreateNew">Create New</span>
+                                <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="me-1" alt="create" width="21" /> 
+                                <span data-key="t-CreateNew">Create New</span>
                             </a>
                         </li>
                         <!-- end Create New Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="sync-records.html" aria-controls="sidebarCreateNew">
+                                <img src="assets/img/dashboard_icons/SyncRecordsIcon.svg" class="me-1" alt="Sync Records" width="21" /> 
+                                <span data-key="t-CreateNew">Sync Records</span>
+                            </a>
+                        </li>
+                        <!-- end Sync Records Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="generateReport.html" aria-controls="sidebarCreateNew">
+                                <img src="assets/img/dashboard_icons/reportIcon.svg" class="me-1" alt="Reports" width="21" /> 
+                                <span data-key="t-CreateNew">Reports</span>
+                            </a>
+                        </li>
+                        <!-- end Reports Menu -->
                         <li class="menu-title"><span data-key="t-master">Master Data</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
-                                <i class="fal fa-users-crown"></i> <span data-key="t-global">Master Data</span>
+                            <a class="nav-link menu-link" href="#masterData" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="masterData">
+                                <!-- <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" />  -->
+                                <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" /> 
+                                <span data-key="t-global">Master Data</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="patientInfo">
+                            <div class="collapse menu-dropdown" id="masterData">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
@@ -389,16 +408,15 @@
         <!-- ============================================================== -->
         <div class="main-content">
 
-            <div class="page-content">
+            <div class="page-content vh-100 main-bg">
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <h4 class="mb-sm-0">Dashboard</h4>
-
-                                <!-- <div class="page-title-right">
+                                <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item">
                                             <a href="dashboard.html">
@@ -406,37 +424,30 @@
                                         </li>
                                         <li class="breadcrumb-item active">Statistics</li>
                                     </ol>
-                                </div> -->
-
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end page title -->
                     
                     <div class="row project-wrapper1">
 
-                        <div class="carousel slide mb-3 p-0" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/new/homeBanner.png" alt="" class="img-fluid bd-placeholder-img bannerImg w-100">
-                                    <div class="carousel-caption text-center bannerImg bannerBg p-3">
-                                        <div class="userName">
-                                            <img src="assets/img/new/userAvatar.svg" class="img-fluid img-avatar" alt="">
-                                            <p><a class="btn btn-lg btn-outline-warning" href="#">Ahlam Hilal Khamis Alrasbi </a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="bannerImg mt-5">
+                            <div class="userName d-flex align-items-center">
+                                <img src="assets/img/new/userAvatar.svg" class="img-fluid img-avatar" alt="">
+                                <p class="mb-0 ms-2">
+                                    <a class="btn btn-lg btn-userName" href="#">Ahlam Hilal Khamis Alrasbi </a></p>
                             </div>
                         </div>
-                        
-                        <div class="col-md-12 col-xxl-9 mx-auto ms-auto">
+
+                        <div class="col-md-12 col-xxl-9 mx-auto ms-auto d-none">
                             <!-- <div class="row mt-2 justify-content-center">
                                 <div class="col-md-3 col-sm-4 col-xs-12">
                                     <a href="PCR.html">
                                         <div class="card gradient-blueCard  card-hover card-animate">
                                             <div class="card-body border-0 d-flex align-items-center justify-content-between p-0">
                                                 <div class="icon icon-lg icon-shape gradient-violet border-radius-xl d-flex align-items-center justify-content-center">
-                                                    <img src="assets/img/create.svg" class="imgS" alt="create" />
+                                                    <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="imgS" alt="create" />
                                                 </div>
                                                 <div class="text-end pt-1">
                                                     <p class="text-sm mb-0 fw-bold1 fs-5 text-white me-2">Create New</p>
@@ -565,8 +576,7 @@
                     <div class="row align-items-center">
                         <div class="col-sm-6 d-flex align-items-center footerLineHeight footerBorderHeight">
                             2000 -
-                            <script>
-                                document.write(new Date().getFullYear());
+                            <script> document.write(new Date().getFullYear());
                             </script> &copy; <span> Civil Defense and Ambulance Authority - All rights reserved</span>
                         </div>
                         <div class="col-sm-6 d-flex align-items-center justify-content-end footerBg footerLineHeight">

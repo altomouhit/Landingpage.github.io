@@ -1,38 +1,56 @@
 <title>REFUSAL</title>
-<base href="https://altomouhit.github.io/moi.github.io/PCR-web/" target="_blank" />
+<!-- <base href="https://altomouhit.github.io/moi.github.io/PCR-web/" target="_blank" /> -->
 <style>
     * {
         margin: 0;
     }
 
-    html,
-    body {
+    html, body {
         font-size: 1rem;
+        /* background: rgb(204,204,204); */
+        height: 100%;
+        margin: 0;
+    }
+    page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        /* box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5); */
     }
 
+    page[size="A4"] {
+        width: 21cm;
+        height: 29.7cm;
+    }
+
+    page[size="A4"][layout="portrait"] {
+        width: 29.7cm;
+        height: 21cm;
+    }
+
+    @media print {
+        body, page {
+            margin: 0;
+            box-shadow: 0;
+        }
+        tfoot {
+            position: fixed;
+            bottom: 0;
+            width: 21cm;
+        }
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 21cm;
+        text-align: center;
+        /* padding: 10px 0; */
+    }
     table {
         font-family: "Calibri", sans-serif;
         font-weight: 600;
-    }
-
-    .header {
-        background: rgb(46, 49, 145) url(assets/img/new/header-forms.svg);
-        background-repeat: no-repeat;
-        height: 89px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-size: cover;
-
-        td h2 {
-            color: black;
-            background: #E2EFD9;
-            padding: 10px;
-            margin-left: 10px;
-            border-radius: 6px;
-            font-size: 1rem;
-            border: 5px solid #5C9BD3;
-        }
+        position: relative;
     }
 
     .text-left {
@@ -54,9 +72,11 @@
     .w-100 {
         width: 100%;
     }
+
     .w-50 {
         width: 50%;
     }
+
     .table-quantity {
         border: double windowtext 1.5pt;
         background: #5B9BD5;
@@ -94,50 +114,44 @@
         padding: 0cm 5.4pt 0cm 5.4pt;
         height: 31.35pt;
     }
+
     .collectBy {
         border: 2px solid;
     }
+
     .w-24 {
         width: 24px;
         margin: 0 2px;
     }
+
     .incidenTable tr td {
         border: 1pt solid #000;
         height: 31.35pt;
     }
+
     .d-flex {
         display: flex;
     }
+
     .items-center {
         align-items: center;
     }
+
     .justify-between {
-        justify-content:space-between;
+        justify-content: space-between;
+    }
+
+    .p-0 {
+        padding: 0 !important;
     }
 </style>
-<div class="row">
-    <table border="0" cellpadding="0" cellspacing="0"
-        style="width: 900px; margin: 0 auto; border-collapse: collapse; border-spacing: 0px;">
+<page size="A4">
+    <table cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0px;">
         <thead>
             <tr>
-                <td colspan="2">
-                    <table border="0" cellpadding="0" cellspacing="0"
-                        style="width:100%; margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0px; ">
-                        <tbody>
-                            <tr class="header">
-                                <td>
-                                    <h2 class="text-center">
-                                        <span style="font-family:'mohammad bold art 1'">
-                                        رفض عناية طبية او نقل من خدمة الإسعاف</span>
-                                        <br>
-                                        <span>REFUSAL OF AMBULANCE CARE OR TRANSPORT</span>
-                                    </h2>
-                                </td>
-                                <td><img src="assets/img/new/Logo_New.svg" style="width: 160px; margin-right: 10px;"></td>
-                            </tr>
-                        </tbody><!---->
-                    </table>
-                </td>
+                <th>
+                    <img src="assets/img/new/header-refusal.png" alt="header" class="w-100" />
+                </th>
             </tr>
             <tr>
                 <td colspan="2" style="height: 22px;"></td>
@@ -146,22 +160,25 @@
         <tbody>
             <tr>
                 <td>
-                    <table cellpadding="0" cellspacing="0" class="w-100 incidenTable" style="border-collapse: collapse; border-spacing: 0px; ">
+                    <table cellpadding="0" cellspacing="0" class="w-100 incidenTable"
+                        style="border-collapse: collapse; border-spacing: 0px; ">
                         <tbody>
                             <tr style="height:35.1pt;">
                                 <td class="text-center" style="width:182.75pt; vertical-align:top;">
                                     <p> <span>Date /</span><span dir="rtl">&nbsp;</span>
-                                        <span style="font-family:'mohammad bold art 1';">التاريخ</span></p>
+                                        <span style="font-family:'mohammad bold art 1';">التاريخ</span>
+                                    </p>
                                     <p><span>...................................</span></p>
                                 </td>
                                 <td class="text-center" style="width:182.75pt; vertical-align:top;">
                                     <p><span>Time /&nbsp;</span>
-                                        <span style="font-family:'mohammad bold art 1';">الوقت</span></p>
+                                        <span style="font-family:'mohammad bold art 1';">الوقت</span>
+                                    </p>
                                     <p><span>...................................</span></p>
                                 </td>
                                 <td class="text-center" style="width:182.8pt; vertical-align:top;">
-                                    <p> 
-                                        <span >Incident No /&nbsp;</span>
+                                    <p>
+                                        <span>Incident No /&nbsp;</span>
                                         <span style="font-family:'mohammad bold art 1';">رقم البلاغ</span>
                                     </p>
                                     <p><span>...................................</span></p>
@@ -169,21 +186,22 @@
                             </tr>
                             <tr style="height:35.4pt;">
                                 <td class="text-center" style="width:182.75pt; vertical-align:top;">
-                                    <p ><span>Call Location /&nbsp;</span>
-                                        <span style="font-family:'mohammad bold art 1';">موقع البلاغ</span></p>
-                                    <p ><span
-                                            >.........................</span></p>
+                                    <p><span>Call Location /&nbsp;</span>
+                                        <span style="font-family:'mohammad bold art 1';">موقع البلاغ</span>
+                                    </p>
+                                    <p><span>.........................</span></p>
                                 </td>
                                 <td class="text-center" style="width:182.75pt; vertical-align:top;">
                                     <p><span>Ambulance Station /&nbsp;</span>
                                         <span style="font-family:'mohammad bold art 1';">مركز الإسعاف</span>
                                     </p>
-                                    <p><span >.........................</span></p>
+                                    <p><span>.........................</span></p>
                                 </td>
                                 <td class="text-center" style="width:182.8pt; vertical-align:top;">
-                                    <p ><span >Directorate /&nbsp;</span>
-                                        <span style="font-family:'mohammad bold art 1';">الإدارة</span></p>
-                                    <p ><span>.........................</span></p>
+                                    <p><span>Directorate /&nbsp;</span>
+                                        <span style="font-family:'mohammad bold art 1';">الإدارة</span>
+                                    </p>
+                                    <p><span>.........................</span></p>
                                 </td>
                             </tr>
                         </tbody>
@@ -196,14 +214,16 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <table class="w-100 text-center" style="border-collapse:collapse;" cellpadding="0" cellspacing="0"> 
+                    <table class="w-100 text-center" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
                         <tbody>
                             <tr>
                                 <td>
-                                    <p class="text-right" style="font-family:'mohammad bold art 1'" dir="rtl" >
-                                        أقر بأنني أرفض تلقي أي نوع من ا لعناية الطبية أو النقل بواسطة خدمة الإسعاف، بالرغم من النصائح والتوضيحات التي قدمت
+                                    <p class="text-right" style="font-family:'mohammad bold art 1'" dir="rtl">
+                                        أقر بأنني أرفض تلقي أي نوع من ا لعناية الطبية أو النقل بواسطة خدمة الإسعاف،
+                                        بالرغم من النصائح والتوضيحات التي قدمت
                                         لي من
-                                        قبلهم بشأن حالتي الصحية أو حالة من أتولى رعايته، وعليه أتحمل كافة المسئولية المترتبة على هذا القرار.
+                                        قبلهم بشأن حالتي الصحية أو حالة من أتولى رعايته، وعليه أتحمل كافة المسئولية
+                                        المترتبة على هذا القرار.
                                     </p>
                                 </td>
                             </tr>
@@ -212,7 +232,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p><span>======================================================================================</span></p>
+                                    <p><span>======================================================================================</span>
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -220,14 +241,19 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>That through my signature below on behalf of myself or whoever I entrusted with his/ her care, that I confirm my
-                                        refusal to receive any of medical care or transport from the medical staff of the ambulance service despite of
+                                    <p>That through my signature below on behalf of myself or whoever I entrusted with
+                                        his/ her care, that I confirm my
+                                        refusal to receive any of medical care or transport from the medical staff of
+                                        the ambulance service despite of
                                         my
-                                        full awareness and capacity of its importance, despite the explanations and advice provided to me about my
+                                        full awareness and capacity of its importance, despite the explanations and
+                                        advice provided to me about my
                                         health
-                                        by ambulance team and I shall legally bear all the consequences resulting from this refusal, and I do not hold
+                                        by ambulance team and I shall legally bear all the consequences resulting from
+                                        this refusal, and I do not hold
                                         the
-                                        ambulance medical team or the ambulance service any responsibility toward this.</p>
+                                        ambulance medical team or the ambulance service any responsibility toward this.
+                                    </p>
                                 </td>
                             </tr>
                         </tbody>
@@ -242,53 +268,80 @@
                     <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
                         <tbody>
                             <tr>
-                                <td colspan="2">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Name <span>:</span></span>
-                                        <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الاسم<span>:</span></span>
-                                    </p>
+                                <td class="text-left">
+                                    <span dir="ltr">Name <span>:</span></span>
+                                </td>
+                                <td><u>George</u></td>
+                                <td class="text-right">
+                                    <span style="font-family:'mohammad bold art 1';"
+                                        dir="rtl">الاسم<span>:</span></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Nationality<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الجنسية<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left p-0"><span
+                                                        dir="ltr">Nationality<span>:</span></span></td>
+                                                <td></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';"
+                                                        dir="rtl">الجنسية<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Relationship <span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">صلة القرابة<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left"><span dir="ltr">Relationship<span>:</span></span>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right p-0"><span
+                                                        style="font-family:'mohammad bold art 1';" dir="rtl">صلة
+                                                        القرابة<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr colspan="2">
+                                <td class="text-left">
+                                    <span dir="ltr">Civil ID No <span>:</span></span>
+                                </td>
+                                <td class="text-center"><u>109823168</u></td>
+                                <td class="text-right">
+                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
+                                        المدني<span>:</span></span>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Civil ID No <span>:</span></span>
-                                        <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم المدني<span>:</span></span>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Phone No<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">رقم الهاتف<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left p-0"><span dir="ltr">Phone No<span>:</span></span>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';"
+                                                        dir="rtl">رقم الهاتف<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Address<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">العنوان<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left"><span dir="ltr">Address<span>:</span></span></td>
+                                                <td></td>
+                                                <td class="text-right p-0"><span
+                                                        style="font-family:'mohammad bold art 1';"
+                                                        dir="rtl">العنوان<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
                             <tr>
@@ -296,7 +349,8 @@
                                     <strong style='padding: 5px; border: 2px solid #385D8A;'>
                                         <span dir="ltr">Signature <span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span></strong>
+                                        <span style="font-family:'mohammad bold art 1';"
+                                            dir="rtl">التوقيع<span>:</span></span></strong>
                                 </td>
                             </tr>
                         </tbody>
@@ -308,7 +362,8 @@
             </tr>
             <tr>
                 <td colspan="1" class="text-right text-white">
-                    <strong style="background: #000; padding: 10px; border-radius: 8px;"><span>witness / </span> <span>الشهود</span></strong>
+                    <strong style="background: #000; padding: 10px; border-radius: 8px;"><span>witness / </span>
+                        <span>الشهود</span></strong>
                 </td>
             </tr>
             <tr>
@@ -323,7 +378,8 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Name <span>:</span></span>
                                         <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الاسم<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';"
+                                            dir="rtl">الاسم<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -332,14 +388,16 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Phone No<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">رقم الهاتف<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">رقم
+                                            الهاتف<span>:</span></span>
                                     </p>
                                 </td>
                                 <td class="w-50">
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Civil ID No.<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم المدني<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
+                                            المدني<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -348,7 +406,8 @@
                                     <strong style='padding: 5px; border: 2px solid #385D8A;'>
                                         <span dir="ltr">Signature <span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span></strong>
+                                        <span style="font-family:'mohammad bold art 1';"
+                                            dir="rtl">التوقيع<span>:</span></span></strong>
                                 </td>
                             </tr>
                         </tbody>
@@ -360,7 +419,8 @@
             </tr>
             <tr>
                 <td colspan="1" class="text-right text-white">
-                    <strong style="background: #000;padding: 10px; border-radius: 8px;"><span>Ambulance crew / </span> <span>الطاقم الطبي المستجيب</span></strong>
+                    <strong style="background: #000;padding: 10px; border-radius: 8px;"><span>Ambulance crew / </span>
+                        <span>الطاقم الطبي المستجيب</span></strong>
                 </td>
             </tr>
             <tr>
@@ -375,7 +435,8 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Ambulance Medic1 <span>:</span></span>
                                         <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف 1<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف
+                                            1<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -384,14 +445,16 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Signature<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';"
+                                            dir="rtl">التوقيع<span>:</span></span>
                                     </p>
                                 </td>
                                 <td class="w-50">
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">force No.<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم العسكري<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
+                                            العسكري<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -400,7 +463,8 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Ambulance Medic2 <span>:</span></span>
                                         <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف 2<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف
+                                            2<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -409,14 +473,16 @@
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">Signature<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';"
+                                            dir="rtl">التوقيع<span>:</span></span>
                                     </p>
                                 </td>
                                 <td class="w-50">
                                     <p class="d-flex items-center justify-between">
                                         <span dir="ltr">force No.<span>:</span></span>
                                         <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم العسكري<span>:</span></span>
+                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
+                                            العسكري<span>:</span></span>
                                     </p>
                                 </td>
                             </tr>
@@ -427,24 +493,9 @@
             <tr>
                 <td colspan="2" style="height: 22px;"></td>
             </tr>
-            <tr>
-                <td colspan="6" style="height: 6px; background-color: #00B5F6;"></td>
-            </tr>
-            <tr>
-                <td colspan="6"
-                    style="padding: 5px; border-top: 6px solid #1B1477; color:#1B1477; display: flex; align-items: center; justify-content: space-between; font-size: 0.825rem;">
-                    <span><strong>Civil Defence and Ambulance Authority - www.cdaa.gov.om</strong></span>
-                    <span style="display: flex; align-items: center;">
-                        <img src="assets/img/social/instagram.png" alt="" class="w-24" />
-                        <img src="assets/img/social/fb.png" alt="" class="w-24" />
-                        <img src="assets/img/social/cancel.png" alt="" class="w-24" />
-                        <img src="assets/img/social/youtube.png" alt="" class="w-24" />
-                        <strong>@CDAA_OMAN</strong></span>
-                </td>
-            </tr>
         </tbody>
     </table><!---->
-    <div class="heading-02" style="width:900px; text-align: center; margin: 0 auto;">
-    </div>
-    <!---->
-</div>
+    <div class="footer">
+        <img src="assets/img/new/footer.png" alt="footer" class="w-100" />
+    </div> <!-- /.footer -->
+</page>
