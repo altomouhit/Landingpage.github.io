@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="author" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href=" images/Khanjar.png">
+<title>المخالفات المائية</title>
+<script src="js/jquery-3.3.1.js"></script>
+<!--Start CSS English / Arabic files-->
+<!-- <link rel="stylesheet" href="css/bootstrap.min.ar.css" /> -->
+<link rel="stylesheet" href="css/bootstrap.min.ar.css" />
+<link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.ar.css">
+
+<!-- Header-->
+<link rel="stylesheet" href="css/headerar.css">
+<!-- Header-->
+
+<!-- Top Menu -->
+<link rel="stylesheet" href="css/top-menu_ar.css"/>
+<!-- Top Menu -->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content_ar.css"/>
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop_ar.css" />
+
+<!-- side-nav Services -->
+<link rel="stylesheet" href="css/side-nav.ar.css">
+<!-- End side-nav Services -->
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard_ar.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.ar.css">
+<!--End CSS English / Arabic files-->
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Common CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/blue.css" id="colorstyle">
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<link rel="stylesheet" href="css/mobile-app.css"/>
+<!-- End scrolling assets -->
+
+<!-- Select2 -->
+<link rel="stylesheet" href="css/Multiselect/select2.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Common CSS files-->
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<div class="dm-welcome-msg"> <span>Welcome To OMAN Municipality Smart Portal</span> </div>
+<header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="indexar.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="indexar.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/omanar.png" alt="Ministry of Regional Municipality & Water Resources"></a>
+      <ul class="gettime">
+        <li id="date"></li>
+        <li class="menu-separator">|</li>
+        <li id="time"></li>
+      </ul>
+    </div>
+  </header>
+  
+
+<!--  Modified by Balarama krishna --> 
+<!--  Modified Date 10/03/2017 --> 
+
+<!--Top Menu-->
+<div class="top-menu">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-9">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-dm-theme">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <a class="emarat-logo-menu" href="#" rel="nofollow" target="_blank" title="eService Portal"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+              <!--class="active"-->
+              <li><a href="index.html" accesskey="0"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;الرئيسية</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;عن الوزارة</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="media.html"><i class="fa fa-medium" aria-hidden="true"></i>&nbsp;مركز الوسائط</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Tenders.html"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;المناقصات</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Downloads.html"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;التحميل</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="Track.html"><i class="fa fa-crosshairs" aria-hidden="true"></i>&nbsp;متابعة الطلب</a></li>
+              <li class="menu-separator">|</li>
+              <li><a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+              <li class="menu-separator">|</li>
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Sridhar Talluri </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <a class="dropdown-item" href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>Profile</a> <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a> </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Zoom"> <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a class="font-change" id="lnkDecrease" title="Zoomout" href="JavaScript:Void(0)" >A-</a></li>
+                  <li class="dropdown-item"><a class="font-change" id="lnkNormal"  title="Normalview" href="javascript:window.location.reload();" >A</a></li>
+                  <li class="dropdown-item"><a class="font-change" id="lnkIncrease" title="Zoomin" href="JavaScript:Void(0)" >A+</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Change Color"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li id="demo-lunar"   class="btn demo-lunar ccolor" title="lunar"></li>
+                  <li id="demo-blue"    class="btn demo-blue ccolor" title="Blue"></li>
+                  <li id="demo-green"   class="btn demo-green ccolor" title="Green"></li>
+                  <li id="demo-red"     class="btn demo-red ccolor" title="Red"></li>
+                  <li id="demo-orange"  class="btn demo-orange ccolor" title="Orange"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <div class="search-div transparent-white-background">
+          <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10">
+              <form method="GET" target="_self" action="" class="pure-form pure-form-stacked" >
+                <input type="search" name="q" id="tags" placeholder="بحث" maxlength="256" value=""/>
+                <div class="theme-dark-red"> <a title="بحث" href="JavaScript:Void(0)" onclick="document.forms[0].submit();"> <span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">بحث</span></a> </div>
+              </form>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+              <div class="langL pull-right bold" style="">
+                <?xml version="1.0" encoding="ISO-8859-1" ?>
+                <a href="BPWS_Violation.html" hreflang="en">English</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--End Top Menu-->
+
+<div class="container main-content-top-margin"> 
+  <!--Main content-->
+  <div class="row transparent-white-background">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel panel-default panel-dm-theme">
+        <div class="panel-head-services header-with-image" style="background: rgb(0, 139, 174);">
+          <div class="panel-title">  <i class="fa fa-tint fa-39px"></i>&nbsp;المخالفات المائية
+            <ul class="pull-right" style="list-style: none;display: inline-flex;">
+              <li><a href="#" class="helprint">مساعدة <i class="fa fa-question" aria-hidden="true"></i>&nbsp;</a> </li>
+              <li><a class="helprint" id="btn1"> طباعة <i class="fa fa-print" aria-hidden="true"></i>&nbsp;</a> </li>
+              <li><a href="dashboardar.html" class="helprint">رجوع <i class="fa fa-chevron-left" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Main content--> 
+  
+  <!--Section start from here-->
+  <div class="inner-pages transparent-white-background">
+    <div class="row"> 
+      <!-- SmartWizard html -->
+      <div id="smartwizard">
+        <ul id="credit">
+          <li data-interest = "1"><a href="#ViolationData"><i class="fa fa-user fa-fw"></i>بيانات المخالفه</a></li>
+          <li data-interest = "2"><a href="#Acknowledgement"><i class="fa fa-file-text-o"></i>شكر وتقدير</a></li>
+          <li data-interest = "3"><a href="#Comments"><i class="fal fa-check-square fa-fw"></i>التعليقات / الإجراءات</a></li>
+          <li data-interest = "4"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>المستندات</a></li>
+          <li data-interest = "5"><a href="#PaymentDetails"><i class="fa fa-credit-card fa-fw"></i>الدفع</a></li>
+        </ul>
+        <div>
+          <div id="ViolationData" class="">
+            <div class="form-group">
+              <div class="row">
+                <fieldset>
+                  <legend>بيانات المخالف</legend>
+                  <div class="row">
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="vioday">اسم المخالف</label>
+                      <input type="text" class="form-control" id="vioday" placeholder="اسم المخالف" value="violator" readonly />
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="CRNO">رقم السجل التجاري</label>
+                      <input type="text" class="form-control numeric" id="CRNO" placeholder="رقم السجل التجاري" value="10164000" readonly/>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="CivilID">الرقم المدني</label>
+                      <input type="text" class="form-control numeric" id="CivilID" placeholder="الرقم المدني" value="109823198" readonly/>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="viodate">تاريخ</label>
+                      <input type="text" class="form-control" id="viodate" placeholder="تاريخ" value="12/10/2018" readonly />
+                    </div>
+                  </div> <!-- End row -->
+                </fieldset>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group -->
+
+            <div class="form-group">
+              <div class="row">
+                <fieldset>
+                  <legend>بيانات المقاول</legend>
+                  <div class="panel-box-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ws-table">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">اسم المقاول</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">رقم السجل التجاري</th>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ws-table">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">رقم التسجيل بالوزارة</th>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div> <!-- /.row -->
+                    <legend>العمال المضبوطين في الموقع</legend>
+                      <div class="row">
+                        <div class="table-responsive">
+                          <table class="table table-bordered ws-table">
+                            <thead>
+                              <tr>
+                                <th>الرقم المتسلسل</th>
+                                <th>اسم العامل</th>
+                                <th>رقم البطاقة</th>
+                                <th>المهنة</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>ABC</td>
+                                <td>198</td>
+                                <td>SD</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div> <!-- ./row -->
+                  </div>
+                </fieldset>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group -->
+
+            <div class="form-group">
+              <div class="row">
+                <fieldset>
+                  <legend>تفاصيل الواقعة</legend>
+                  <div class="panel-box-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ws-table">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">Request No</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>تاريخ البلاغ</th>
+                              <td>12/10/2018</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">مصدر البلاغ</th>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th>صفة الواقعة المبلغ عنها</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">تاريخ الواقعة (أذا كان معروف)</th>
+                              <td>16/10/2018</td>
+                            </tr>
+                            <tr>
+                              <th>نوع المخالفة</th>
+                              <td>Drilling a new well without permit</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div> <!-- /.row -->
+            </div> <!-- ./form-group -->
+
+            <div class="form-group">
+              <div class="row marTB10">
+                <fieldset>
+                  <legend>تفاصيل الموقع</legend>
+                  <div class="panel-box-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th>رقم الحصر للبئر ( ان وجد)</th>
+                              <td>12345</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">المحافظة</th>
+                              <td>Nizwa</td>
+                            </tr>
+                            <tr>
+                              <th>الولاية</th>
+                              <td>Nizwa</td>
+                            </tr>
+                            <tr>
+                              <th>القرية</th>
+                              <td>Nizwa</td>
+                            </tr>
+                            <tr>
+                              <th>معلومات عن الطريق</th>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ">
+                          <thead class="thead-default">
+                            <tr>
+                              <th>اقرب وادي</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">تاريخ المعاينة الميدانية</th>
+                              <td>12/10/2018</td>
+                            </tr>
+                            <tr>
+                              <th>شرقي</th>
+                              <td>236482.68</td>
+                            </tr>
+                            <tr>
+                              <th>شمالي</th>
+                              <td>5345576.65</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <fieldset>
+                  <legend>بيانات البئر</legend>
+                  <div class="panel-box-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ws-table">
+                          <thead class="thead-default">
+                            <tr>
+                              <th class="col-sm-6">العمق</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>القطر</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>مستوى الماء</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>المضخة</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>نوع البئر</th>
+                              <td>Open (Manual Drilling)</td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">حالة البئر</th>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-sm-6">
+                        <table class="table table-bordered ws-table">
+                          <thead class="thead-default">
+                            <tr>
+                              <th>عدد المضخات</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>قطر الأنبوب / الأنابيب</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>نسبة الملوحة</th>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">نوع الاستخدام  </th>
+                              <td class="multi-drop">
+                              <select class="form-control" id="ViolationType">
+                                <option value="1000">الرجاء الاختيار</option>
+                                <option value="601">حفر بئر جديدة بدون ترخيص</option>
+                                <option value="602">عدم ردم بئر مستبدلة</option>
+                                <option value="603">تعميق بئر بدون ترخيص</option>
+                                <option value="604">صيانة بئر بدون ترخيص</option>
+                                <option value="605">استخدام بئر لغير الغرض المصرح به</option>
+                                <option value="606">تركيب مضخة على بئر بدون ترخيص</option>
+                                <option value="607">تركيب وحدة تحلية مياة على بئر بدون ترخيص</option>
+                                <option value="608">اعادة استخدام بئر مهجورة بدون ترخيص</option>
+                                <option value="609">نقل مياه من بئر بدون ترخيص</option>
+                                <option value="610">بيع مياه من بئر بدون ترخيص</option>
+                                <option value="611">تمديد أنابيب من بئر بدون ترخيص</option>
+                              </select>
+                            </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                </fieldset>
+              </div> <!-- /.row -->
+            </div> <!-- ./form-group -->
+          </div> <!-- End ViolationData -->
+          
+          <div id="Acknowledgement" class="">
+            <div class="panel-group paddingT10">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-sm-12 margin-10">
+                  <span class="pull-left input-checkbox top-10  margin-10" style="margin-bottom:0px;"> 
+                      <label class="check-inline"> <input type="checkbox" name="violation1" id="chk1" value="violation"></label>
+                      </span>
+                    <div class="pull-left">
+                      <button type="button" class="btn btn-ws" data-toggle="modal" data-target="#acknowledgement01" id="viobtn1">&nbsp;انا موافق على ازالة المخالفة</button>
+                    </div>
+                  </div>
+                </div> <!-- End row -->
+              </div> <!-- End form-group -->
+        
+              <div class="form-group" id="Vio1">
+                <div class="row">
+                  <div class="col-md-12">
+                    <fieldset>
+                      <legend>انذار</legend>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>لفاضل,</p><br>
+                    <p><strong>الموضوع /</strong> انذار</p>
+                          </div>
+                        </div> <!-- End row -->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p class="text-justify">نود الإفادة بانه قد ثبت لإدارة موارد المياة بمحافظة مسقط قيامكم بحفر بئر جديدة بدون ترخيص في منطقة الخوض السابعة، مما يعد مخالفة صريحة لأنظمة وقوانين وزارة البلديات الإقليمية وموارد المياه المعمول بها. لذا يرجى التكرم بردم البئر بالتنسيق مع المختصين في هذه الدائرة، وذلك في موعد أقصاه 15 يوم من تاريخ ابلاغكم بمضمونه، والا سنضطر اسفين لاتخاذ الإجراءات القانونية قبلكم وتفضلوا بقبول فائق الاحترام ،،،</p>
+                            <p>م/</p>
+                            <p>دير دائرة موارد المياه بمحافظة مسقط</p>
+                          </div>
+                        </div> <!-- End row -->
+                      </div> <!-- End form-group -->
+                    </fieldset>
+                  </div>
+                </div> <!-- End row -->
+              </div> <!-- End form-group -->
+        
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-sm-12 margin-10">
+                    <span class="pull-left input-checkbox top-10 margin-10" style="margin-bottom:0px;"> 
+                      <label class="check-inline"> <input type="checkbox" name="violation2" id="chk2" value="violation"></label>
+                      </span>
+                    <div class="pull-left">
+                      <button type="button" class="btn btn-ws" data-toggle="modal" data-target="#acknowledgement02"  id="viobtn2">&nbsp;اقرار وتعهد</button>
+                    </div>
+                  </div>
+                </div> <!-- End row -->
+              </div> <!-- End form-group -->
+        
+              <div class="form-group" id="Vio2">
+                <div class="row">
+                  <div class="col-md-12">
+                    <fieldset>
+                      <legend>انذار نهائي</legend>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p>لفاضل,</p><br>
+                    <p><strong>الموضوع /</strong> انذار نهائي</p>
+                          </div>
+                        </div> <!-- End row -->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p class="text-justify">الحاق الى خطابنا الموجه اليكم برقم و ب ق م م / د م م / 211 / 2017 م بتاريخ 30/10/2017 م حول قيامكم بحفر بئر جديدة مفتوحة في</p>
+                            <p class="text-justify">“منطقة الخوض السابعة بولاية السيب ، وحيث انه حتى تاريخه لم يتم ردم البئر وإعادة الوشع الى اصلة ، تنفيذا لأنظمة وقوانين وزارة البلديات الإقليمية وموارد المياه ، لذا يرجى التكرم بردم البئر ردما كاملا وصحيحا بالتنسيق مع المختصين من هذه الدائرة ، وذلك في موعد أقصاه 7 أيام من تاريخ ابلاغكم بمضمون هذا الإنذار ، والا سنضطر اسفين لاتخاذ الإجراءات القانونية قبلكم . وتفضلوا بقبول فائق الاحترام ،،، </p>
+                            <p>م/</p>
+                            <p>دير دائرة موارد المياه بمحافظة مسقط</p>
+                          </div>
+                        </div> <!-- End row -->
+                      </div> <!-- End form-group -->
+                    </fieldset>
+                  </div>
+                </div> <!-- End row -->
+              </div> <!-- End form-group -->
+        
+            </div>  
+                    
+          </div> <!-- End TechnicalReview -->
+          
+          <div id="Comments" class="">
+            <div class="form-group">
+              <div class="row">
+                <fieldset>
+                  <legend>تفاصيل التعليقات</legend>
+                  <div class="table-responsive">
+                    <table id="Commentstable" class="table table-striped table-bordered">
+                      <thead class="thead-default">
+                        <tr class="ws-thead">
+                          <th>التاريخ والوقت</th>
+                          <th>التعليقات</th>
+                          <th>حالة الطلب</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>10/05/2017  09:41AM</td>
+                          <td>Please Modify the Request with... </td>
+                          <td>Clarifications Req.</td>
+                        </tr>
+                        <tr>
+                          <td>12/05/2017  11:15AM</td>
+                          <td></td>
+                          <td>Submitted</td>
+                        </tr>
+                        <tr>
+                          <td>13/05/2017  10:25AM</td>
+                          <td></td>
+                          <td>Approved by Head of Section</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div> <!-- .End row --> 
+            </div> <!-- .form-group --> 
+          </div> <!-- End Comments -->
+          
+          <div id="Attachment" class="">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <fieldset>
+                    <legend>المستندات</legend>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered">
+                        <thead class="ws-thead">
+                          <tr>
+                            <th>#</th>
+                            <th>المستندات</th>
+                            <th>اسم الملف</th>
+                            <th>Upload By</th>
+                            <th>التاريخ</th>
+                            <th>التحميل</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row" class="bold">1</td>
+                            <td>Title Deed</td>
+                            <td><a style = "cursor:pointer" onclick = "TitleDeed();" title="TitleDeed">TitleDeed.pdf</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-download"></i></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="bold">2</td>
+                            <td>Sketch</td>
+                            <td><a style = "cursor:pointer" onclick = "Sketch();" title="TitleDeed">Sketch.pdf</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa fa-download"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <fieldset>
+                    <legend>عارض الملف</legend>
+                    <iframe src="" id="iframe">
+                    <p>Your browser does not support iframes.</p>
+                    </iframe>
+                  </fieldset>
+                </div>
+              </div> <!-- .row --> 
+            </div> <!-- .form-group --> 
+          </div> <!-- Attachment -->
+          
+          <div id="PaymentDetails" class="">
+              <div class="form-group">
+                <div class="row">
+                  <fieldset>
+                    <legend>الدفع</legend>
+                    <div class="table-responsive">
+                      <table id="pay_table"  class="table table-hover table-bordered">
+                        <thead class="ws-thead">
+                          <tr>
+                            <th>الرقم المتسلسل</th>
+                            <th>المبلغ</th>
+                            <th>نوع الدفع</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group -->
+              <div class="row">
+                <div class="form-group pull-right">
+                  <button type="button" class="btn btn-ws"><i class="fa fa-money fa-fw"></i>Pay & Submit</button>
+                </div>
+              </div> <!-- End .row -->
+            </div>
+
+        </div> <!-- .Empty div --> 
+      </div> <!-- End SmartWizard html --> 
+    </div> <!-- End row --> 
+  </div>
+  
+   <!-- End inner-pages -->
+</div> <!-- End container --> 
+
+<!-- Large modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="acknowledgement01">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header ws">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">&nbsp;انا موافق على ازالة المخالفة</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="text-justify">اقر انا الموقع ادناه صالح بن سعيد بن سالم العيسري حامل بطاقة شخصية رقم / 21291971 من سكان ولاية السيب بانني قد قمت بحقر بئر جديدة مقتوحة بدون ترخيص رسمي بمنزلي الكائن بمنطقة الخوض السادسة مخالفا بذالك انظمة وقوانين وزراة البلديات الاقليمية وموارد المياة وعلية فانني اوكد بانني ردمت البئر بطريقة سليمة، واتعهد بعدم تكرار او ارتكاب اي مخالفة مستقبلا، متحملا المسؤلية كاملة اذا ظهر مني ما يخالف ذالك.</p>
+                        <hr>
+                        <p>التوقيع</p>
+                        <p>التاريخ :-</p>
+                      </div>
+                    </div> <!-- End row -->
+                  </div> <!-- End form-group -->
+                </fieldset>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- End form-group -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ws" data-dismiss="modal"><i class="fa fa-times-circle"></i>&nbsp;أغلق</button>
+          <button type="button" class="btn btn-ws"><i class="fa fa-long-arrow-left"></i>&nbsp;خضع</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+  
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="acknowledgement02">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header ws">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">اقرار وتعهد</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="text-justify">اقر انا الموقع ادناه صالح بن سعيد بن سالم العيسري حامل بطاقة شخصية رقم / 21291971 من سكان ولاية السيب بانني قد قمت بحقر بئر جديدة مقتوحة بدون ترخيص رسمي بمنزلي الكائن بمنطقة الخوض السادسة مخالفا بذالك انظمة وقوانين وزراة البلديات الاقليمية وموارد المياة وعلية فانني اوكد بانني ردمت البئر بطريقة سليمة، واتعهد بعدم تكرار او ارتكاب اي مخالفة مستقبلا، متحملا المسؤلية كاملة اذا ظهر مني ما يخالف ذالك.</p>
+                        <hr>
+                        <p>التوقيع</p>
+                        <p>التاريخ :-</p>
+                      </div>
+                    </div> <!-- End row -->
+                  </div> <!-- End form-group -->
+                </fieldset>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- End form-group -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ws" data-dismiss="modal"><i class="fa fa-times-circle"></i>&nbsp;أغلق</button>
+          <button type="button" class="btn btn-ws"><i class="fa fa-long-arrow-left"></i>&nbsp;خضع</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br />
+
+<!-- FOOTER START -->
+ <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline">
+            <li><a href="indexar.html">الرئيسية</a></li>
+            <li>|</li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li>|</li>
+            <li><a href="usefullinksar.html" title="روابط هامة">روابط هامة</a></li>
+            <li>|</li>
+            <li><a href="#">خريطة الموقع</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة الموقع</a></li>
+            <li>|</li>
+            <li><a href="#">العلامات التجارية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة مكافحة الفساد</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة المشاركات الإلكترونية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة الوصول </a></li>
+            <li>|</li>
+            <li><a href="#">سياسة التحول للحكومة الإلكترونية</a></li>
+            <li>|</li>
+            <li><a href="#">سياسة البيانات المفتوحة</a></li>
+            <li>|</li>
+            <li><a href="#"> عمان الرقمية</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled list-inline social-icons">
+            <li><a href="#"> <img src="images/store/google-play-badge.png" alt="Get it on Google Play" style="width: 120px;"></a></li>
+            <li><a href="#"> <img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="width: 120px;"></a> </li>
+          </ul>
+        </div>
+        <div class="col-md-4"  style="text-align:center;"> 
+          <!-- <h4>Follow with us</h4> -->
+          <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+            <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="pull-right"> <a class="pull-right ml101" href="http://www.w3.org/" target="_blank"> <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled list-inline" style="text-align: center;">
+            <li>حقوق الطبع محفوظة &copy; لوزارة البلديات الإقليمية وموارد المياه</li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- End container --> 
+  </section> <!-- FOOTER END --> 
+  
+  <!--Scrolling top--> 
+  <a class="scrollup" href="#" title="للأعلى" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br>للأعلى</a> 
+  <!-- end scrolling top--> 
+  
+  <!-- Side Nav top-->
+  <div class="login-anmi wow fadeInDown">
+    <ul>
+      <li><a class="lnk-social social-facebook social-rounded" href="loginar.html"><img src="images/sidenav/loginside.png"> تسجيل الدخول</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/track.png">متابعة الطلب</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/about.png">عن الوزارة</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/Tender.png">المناقصات</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/newside.png">النشرة الإخبارية</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/library.png">المكتبة الإلكترونية</a></li>
+      <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/anreport.png">التقارير السنوية</a></li>
+    </ul>
+  </div>
+  <!-- end Side Nav top-->
+  
+<script src="js/bootstrap.min.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Time/timejsar.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Datepicker/bootstrap-datepicker.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/demo.js"></script> 
+<!-- Include smartWizard source --> 
+<script src="js/jquery.smartWizard.js"></script> 
+<script src="js/jquery.dataTables.min.ar.js"></script> 
+<script src="js/dataTables.bootstrap.js"></script> 
+<!-- Include jQuery validations plugin --> 
+<script src="js/validations.js"></script> 
+<script src="js/validator.min.js"></script> 
+<!-- Select2 --> 
+<script src="js/Multiselect/Multiselect.js"></script> 
+<!-- Include Smartwizardws plugin --> 
+<script src="js/smartwizardwsar-violation.js"></script> 
+<script src="js/GISar.js"></script> 
+<script src="js/WS/Beneficiaryar.js"></script>
+
+
+<script>
+$('#viobtn1').attr("disabled", "true");
+$('#viobtn2').attr("disabled", "true");
+  $('#chk1').click(function(){
+    if($(this).is(':checked')){
+        $('#viobtn1').removeAttr("disabled");
+    }else {
+        $('#viobtn1').attr("disabled", "true");
+    }
+  });
+  $('#chk2').click(function(){
+    if($(this).is(':checked')){
+        $('#viobtn2').removeAttr("disabled");
+    }else {
+        $('#viobtn2').attr("disabled", "true");
+    }
+  });
+$(document).ready(function() { 
+  var docHeight = $(window).height();
+  var footerHeight = $('#footer').height();
+  var footerTop = $('#footer').position().top + footerHeight;
+  //alert(docHeight);
+  if (footerTop < docHeight) {
+    $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+  }
+  //window.location.reload();
+});
+</script>
+</body>
+</html>

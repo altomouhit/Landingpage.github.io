@@ -102,3 +102,14 @@ $(document).ready(function() {
 		downloadAttachmentFile(data.data());
 	});
 });
+//.................................. Date picker by balaram on 14/11/2017..................................//
+$(function() {
+	$('.date').datepicker({
+		format: "dd/mm/yyyy",
+		orientation: "auto bottom",
+		forceParse: false,
+		autoclose: true,
+		todayHighlight: true,
+		toggleActive: true
+	});
+});

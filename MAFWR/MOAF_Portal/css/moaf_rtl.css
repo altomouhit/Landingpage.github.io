@@ -239,3 +239,7 @@ select.form-control {
     margin-right: 0.5rem!important;
     margin-left: 0;
 }
+.btn+.btn {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}

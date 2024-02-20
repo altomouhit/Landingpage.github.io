@@ -1180,3 +1180,18 @@ div.panel-footer {
 .eService-img {
 	height: 180px;
 }
+.hidden {
+    display: none !important;
+}
+#credit li {
+    margin: 10px 10px 10px 0px;
+}
+.fa, .fal {
+    margin: 0 5px;
+}
+.btn-default {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%), 0 2px 5px 0 rgb(0 0 0 / 15%) !important;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
