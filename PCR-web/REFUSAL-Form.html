@@ -144,6 +144,9 @@
     .p-0 {
         padding: 0 !important;
     }
+    .text-nowrap {
+        white-space: nowrap;
+    }
 </style>
 <page size="A4">
     <table cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0px;">
@@ -273,8 +276,7 @@
                                 </td>
                                 <td><u>George</u></td>
                                 <td class="text-right">
-                                    <span style="font-family:'mohammad bold art 1';"
-                                        dir="rtl">الاسم<span>:</span></span>
+                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">الاسم<span>:</span></span>
                                 </td>
                             </tr>
                             <tr>
@@ -282,11 +284,9 @@
                                     <table class="w-100">
                                         <tbody>
                                             <tr>
-                                                <td class="text-left p-0"><span
-                                                        dir="ltr">Nationality<span>:</span></span></td>
+                                                <td class="text-left p-0"><span dir="ltr">Nationality<span>:</span></span></td>
                                                 <td></td>
-                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';"
-                                                        dir="rtl">الجنسية<span>:</span></span></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';" dir="rtl">الجنسية<span>:</span></span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -311,7 +311,7 @@
                                     <span dir="ltr">Civil ID No <span>:</span></span>
                                 </td>
                                 <td class="text-center"><u>109823168</u></td>
-                                <td class="text-right">
+                                <td class="text-right text-nowrap">
                                     <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
                                         المدني<span>:</span></span>
                                 </td>
@@ -374,31 +374,40 @@
                     <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
                         <tbody>
                             <tr>
-                                <td colspan="2">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Name <span>:</span></span>
-                                        <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';"
-                                            dir="rtl">الاسم<span>:</span></span>
-                                    </p>
+                                <td class="text-left">
+                                    <span dir="ltr">Name <span>:</span></span>
+                                </td>
+                                <td><u>George</u></td>
+                                <td class="text-right">
+                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">الاسم<span>:</span></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Phone No<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">رقم
-                                            الهاتف<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left p-0"><span dir="ltr">Phone No<span>:</span></span></td>
+                                                <td></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';" dir="rtl">رقم الهاتف<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Civil ID No.<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
-                                            المدني<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left"><span dir="ltr">Civil ID No.<span>:</span></span>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right p-0">
+                                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">
+                                                        الرقم المدني
+                                                    <span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
                             <tr>
@@ -428,62 +437,84 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <table class="collectBy w-100" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
+                    <table class="collectBy w-100 text-nowrap" style="border-collapse:collapse;" cellpadding="0" cellspacing="0">
                         <tbody>
+                            
                             <tr>
-                                <td colspan="2">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Ambulance Medic1 <span>:</span></span>
-                                        <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف
-                                            1<span>:</span></span>
-                                    </p>
+                                <td class="text-left">
+                                    <span dir="ltr">Ambulance Medic 1 <span>:</span></span>
+                                </td>
+                                <td><u>......</u></td>
+                                <td class="text-right">
+                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف 1<span>:</span></span>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Signature<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';"
-                                            dir="rtl">التوقيع<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left p-0"><span dir="ltr">Signature<span>:</span></span></td>
+                                                <td></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">force No.<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
-                                            العسكري<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left"><span dir="ltr">Force No.<span>:</span></span>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right p-0">
+                                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">
+                                                        الرقم العسكري
+                                                    <span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td colspan="2">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Ambulance Medic2 <span>:</span></span>
-                                        <span>................................................................................................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف
-                                            2<span>:</span></span>
-                                    </p>
+                                <td class="text-left">
+                                    <span dir="ltr">Ambulance Medic 2 <span>:</span></span>
+                                </td>
+                                <td><u>......</u></td>
+                                <td class="text-right">
+                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">اسم المسعف 2<span>:</span></span>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">Signature<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';"
-                                            dir="rtl">التوقيع<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left p-0"><span dir="ltr">Signature<span>:</span></span></td>
+                                                <td></td>
+                                                <td class="text-right"><span style="font-family:'mohammad bold art 1';" dir="rtl">التوقيع<span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                                 <td class="w-50">
-                                    <p class="d-flex items-center justify-between">
-                                        <span dir="ltr">force No.<span>:</span></span>
-                                        <span>...................................</span>
-                                        <span style="font-family:'mohammad bold art 1';" dir="rtl">الرقم
-                                            العسكري<span>:</span></span>
-                                    </p>
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left"><span dir="ltr">Force No.<span>:</span></span>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right p-0">
+                                                    <span style="font-family:'mohammad bold art 1';" dir="rtl">
+                                                        الرقم العسكري
+                                                    <span>:</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </td>
                             </tr>
                         </tbody>
