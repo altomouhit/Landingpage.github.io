@@ -65,12 +65,12 @@
 .dashboard-text-color {
     color: rgb(0, 181, 246);
 }
-.footer {
+/* .footer {
     position: absolute;
     left: 0 !important;
     z-index: 1009;
     width: 100%;
-}
+} */
 .btn-userName {
     background: var(--vz-userName);
     color: black;

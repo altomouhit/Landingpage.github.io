@@ -591,7 +591,7 @@
 .page-title-box h4 {
 	font-weight: 700;
 	font-size: 1.25rem !important;
-	text-transform: uppercase
+	/* text-transform: uppercase; */
 }
 [data-layout=horizontal] .page-title-box {
 	padding: 1.2rem 0;
@@ -624,8 +624,8 @@
 .footer {
 	bottom: 0;
 	padding: 20px calc(1.5rem * .5);
-	/* position: absolute; */
-	/* right: 0; */
+	position: absolute;
+	right: 0;
 	left: 250px;
 	/* background-color: var(--vz-footer-bg); */
 	background-color: rgb(41, 170, 225);
@@ -633,7 +633,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 79px;
+    min-height: 49px;
     color: var(--vz-body-bg);
     display: flex;
     align-items: center;
