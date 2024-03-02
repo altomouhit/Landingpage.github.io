@@ -462,7 +462,7 @@ hr.horizontal.dark {
     margin-top: -1.5rem !important;
 }
 
-.dataTables_filter {
+.dataTables_filter, .dt-search {
     display: none;
 }
 
@@ -782,16 +782,16 @@ hr.horizontal.dark {
 .newLogoimg {
     width: 9rem;
 }
-.footerBg {
+/* .footerBg {
     background-color: var(--vz-footerNew-bg);
-}
+} */
 /* .footerLineHeight {
     min-height: 38px;
 } */
-.footerBorderHeight {
+/* .footerBorderHeight {
     border-left: 38px solid var(--vz-footerNew-bg);
     font-size: 0.925rem;
-}
+} */
 .bannerImg {
    /* height: 499px; */
    min-height: 100%;

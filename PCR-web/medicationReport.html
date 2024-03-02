@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Medication Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -24,11 +24,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/report-dashboard.css" />
-
+    <!-- multiselect Css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/multiselect.css" />
     <script type="text/javascript" defer src="assets/js/auth.js"></script>
     <script type="text/javascript" defer src="init.js"></script>
-
 </head>
 
 <body class="bodybg">
@@ -80,7 +80,9 @@
                             </a>
                         </div>
 
-                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                        <button type="button"
+                            class="btn btn-sm px-3 fa-2x header-item vertical-menu-btn topnav-hamburger"
+                            id="topnav-hamburger-icon">
                             <span class="hamburger-icon">
                                 <span></span>
                                 <span></span>
@@ -288,12 +290,6 @@
                 </div>
             </div>
         </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
             <!-- LOGO -->
@@ -335,16 +331,8 @@
                         </li>
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="PCR_incidents.html" aria-controls="sidebarIncidents">
-                                <!-- <img src="assets/img/dashboard_icons/ShowPCRIcon.svg" class="me-1" alt="Show PCR" width="21" />  -->
-                                <img src="assets/img/dashboard_icons/ShowPCRIcon.svg" class="me-1" alt="Show PCR" width="21" /> 
-                                <span data-key="t-incidents">Show PCR / Incidents </span>
-                            </a>
-                        </li>
-                        <!-- end Show PCR / Incidents Menu -->
-                        <li class="nav-item">
                             <a class="nav-link menu-link" href="MCI_show.html" aria-controls="sidebarIncidents">
-                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="Show MCI" width="23" /> 
+                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="create" width="23" /> 
                                 <span data-key="t-incidents">Show MCI</span>
                             </a>
                         </li>
@@ -363,20 +351,12 @@
                         <!-- end Medical Store Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="PCR.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="me-1" alt="create" width="21" /> 
-                                <span data-key="t-CreateNew">Create New</span>
+                                <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="me-1" alt="create" width="21" /> <span data-key="t-CreateNew">Create New</span>
                             </a>
                         </li>
                         <!-- end Create New Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="sync-records.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/dashboard_icons/SyncRecordsIcon.svg" class="me-1" alt="Sync Records" width="21" /> 
-                                <span data-key="t-CreateNew">Sync Records</span>
-                            </a>
-                        </li>
-                        <!-- end Sync Records Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="report_dashboard.html" aria-controls="sidebarCreateNew">
+                            <a class="nav-link menu-link active" href="report_dashboard.html" aria-controls="sidebarCreateNew">
                                 <img src="assets/img/dashboard_icons/reportIcon.svg" class="me-1" alt="Reports" width="21" /> 
                                 <span data-key="t-CreateNew">Reports</span>
                             </a>
@@ -384,16 +364,14 @@
                         <!-- end Reports Menu -->
                         <li class="menu-title"><span data-key="t-master">Master Data</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#masterData" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="masterData">
-                                <!-- <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" />  -->
-                                <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" /> 
-                                <span data-key="t-global">Master Data</span>
+                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
+                                <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" /> <span data-key="t-global">Master Data</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="masterData">
+                            <div class="collapse menu-dropdown" id="patientInfo">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item"><a href="lookUP.html" class="nav-link" data-key="t-lookUP">Look UP Master</a></li>
                                     <!-- <li class="nav-item"><a href="factorsAffectingEMS.html" class="nav-link" data-key="t-factors">Factors Affecting EMS</a></li> -->
-                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-governorate">Governorate</a></li>
+                                    <li class="nav-item"><a href="governorate.html" class="nav-link" data-key="t-category">Governorate</a></li>
                                     <li class="nav-item"><a href="sync-status.html" class="nav-link" data-key="t-sync">SYNC Status</a></li>
                                     <li class="nav-item"><a href="deviceMaster.html" class="nav-link" data-key="t-device">Device Master</a></li>
                                     <li class="nav-item"><a href="userProfile.html" class="nav-link" data-key="t-userProfile">User Profile</a></li>
@@ -401,7 +379,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- end Master Data Menu -->
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -420,102 +397,187 @@
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Reports</h4>
-                                <!-- <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item">
-                                            <a href="dashboard.html">
-                                                <i class="bi bi-columns-gap fa-lg" style="color: var(--vz-topnav-item-color-active);"></i> Dashboard</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">Statistics</li>
-                                    </ol>
+                    <div class="row page-title-box contest_input_block">
+                        <div class="col-sm col-xl-4 d-flex align-items-center p-0">
+                            <a href="report_dashboard.html" class="text-dark me-3" data-bs-toggle="tooltip" data-bs-title="Back to Report Dashboard ">
+                                <img src="assets/img/left-arrow.svg">
+                            </a>
+                            <h4 class="mb-0" data-bs-toggle="tooltip" data-bs-title="Medication Report">
+                                Medication Report
+                            </h4>
+                        </div>
+                    
+                        <div class="col-sm-12 col-xl-8 d-flex align-items-center justify-content-end header-btn-block p-0 text-nowrap">
+                            <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
+                                <!-- <div class="input-group input-group-navbar">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button" style="min-width: auto">
+                                            <i class="fal fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" id="ambulanceSearch" class="form-control" placeholder="Search..." aria-label="Search">
                                 </div> -->
+                                <div class="">
+                                    <button type="button" class="btn btn-rounded btn-primary btn-label">
+                                            <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button>
+                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label">
+                                            <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
-                    
-                    <div class="row project-wrapper1">
-                        
-                        <div class="col-md-12 col-xxl-10 mx-auto mt-5">
-                            <div class="services_flex"> <!-- style="padding-top: calc(70px + 30px);"  -->
-                                <a href="ambulanceReport.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/ambulance.svg" />
-                                    </div>
-                                    <div class="services_label">Station Ambulance</div>
-                                </a>
-                                <a href="supervisorsOnDuty.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/supervisors.svg" />
-                                    </div>
-                                    <div class="services_label">Supervisors on Duty </div>
-                                </a>
-                                <a href="medicalDirectors.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/medicalDirectors.svg" />
-                                    </div>
-                                    <div class="services_label">Medical Directors Duty</div>
-                                </a>
-                                <a href="patientOutcome.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/patient.svg" />
-                                    </div>
-                                    <div class="services_label">Patient & Management Outcome </div>
-                                </a>
-                                <a href="medicationReport.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/medication.svg" />
-                                    </div>
-                                    <div class="services_label">Medication Report</div>
-                                </a>
-                                <a href="callAttendance.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/attendance.svg" />
-                                    </div>
-                                    <div class="services_label">Call Attendance </div>
-                                </a>
-                                <a href="incidentLocation.html" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/img/reportIcons/governorate.svg" />
-                                    </div>
-                                    <div class="services_label">Incident Location </div>
-                                </a>
-                            </div>
-                        </div> <!-- /.col -->
-                    </div> <!-- /.row -->
 
+                    <div class="row project-wrapper">
+                        <div class="col-xxl-12">
+                            <section class="smart-Wizard">
+                                <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
+                                    <fieldset class="mb-2 p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input staffRadio" type="radio" name="staffRadio" id="doneBy" value="doneBy">
+                                                    <label class="form-check-label" for="doneBy">Done By</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input staffRadio" type="radio" name="staffRadio" id="allStaff" value="allStaff">
+                                                    <label class="form-check-label" for="allStaff">All Staff</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="governorateID" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Muscat</option>
+                                                            <option value="2">Al Batinah South</option>
+                                                            <option value="3">Al Batinah North</option>
+                                                            <option value="4">Al Wusta</option>
+                                                            <option value="5">Musandam</option>
+                                                            <option value="6">Al Burimi</option>
+                                                            <option value="7">Al Dakhiliyah</option>
+                                                            <option value="8">Al Dhahira</option>
+                                                            <option value="9">Al Sharqyah North</option>
+                                                            <option value="10">Al Sharqyah South</option>
+                                                            <option value="11">Dhofar</option>
+                                                        </select>
+                                                        <label for="governorateID">Governorate</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="incidentLocation" aria-label="Floating label">
+                                                            <option value="">Please select</option>                                                           
+                                                        </select>
+                                                        <label for="incidentLocation">Willayat</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="fromDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                        <label for="fromDate" class="required">From Date</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="toDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr">
+                                                        <label for="toDate" class="required">To Date</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="medicationType" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Basic</option>
+                                                            <option value="2">Advanced</option>
+                                                        </select>
+                                                        <label for="medicationType" class="required">Medication Type</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-pills fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="medication" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                        </select>
+                                                        <label for="medication">Medication </label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-pills fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm d-flex align-items-center justify-content-end btn-bottom">
+                                                <button type="reset" class="btn btn-text" id="medicationReportCancelId"
+                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                    Cancel
+                                                </button>
+                
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="medicationReportFn()" id="medicationReportBtn">
+                                                    <i class='fal fa-search fa-fw'></i>&nbsp;Search
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- /.row  -->
+                                    </fieldset>
+                                </form>
+                            </section>
+                
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="table-responsive-sm data_table">
+                                        <table id="medicationReportTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th>Governorate</th>
+                                                    <th>Willayat</th>
+                                                    <th>Station Name</th>
+                                                    <th>Medication </th>
+                                                    <th>Done By</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> <!-- /.row  -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
                 </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
 
             <footer class="footer">
-                <!-- <div class="container-fluid position-absolute footer-img">
-                    <div class="row align-items-end">
-                        <div class="col">
-                            <img src="assets/img/footer/pacda.jpg" class="img-fluid" alt="ambulance" />
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                            <img src="assets/img/peoples.svg" class="img-fluid" alt="peoples" style="width: 189px;" />
-                        </div>
-                        <div class="col d-flex justify-content-end">
-                            <img src="assets/img/fireBus.svg" class="img-fluid" alt="fireBus" style="width: 249px;" />
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-sm-6 d-flex align-items-center footerLineHeight">
+                        <div class="col-sm-6 d-flex align-items-center footerLineHeight footerBorderHeight1">
                             2000 -
-                            <script> document.write(new Date().getFullYear());
+                            <script>
+                                document.write(new Date().getFullYear());
                             </script> &copy; <span> Civil Defense and Ambulance Authority - All rights reserved</span>
                         </div>
-                        <div class="col-sm-6 d-flex align-items-center justify-content-end footerLineHeight">
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end footerBg1 footerLineHeight">
                             <p>
                                 Design & Develop by <a href="https://altomouhit.com/" target="_blank">&nbsp;Al Tomouh IT LLC</a>
                             </p>
@@ -534,12 +596,6 @@
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
-
-    <!-- <div class="customizer-setting d-none d-md-block">
-        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
-        </div>
-    </div> -->
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
@@ -1048,21 +1104,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
         </div>
-        <!-- <div class="offcanvas-footer border-top p-3 text-center">
-            <div class="row">
-                <div class="col-6">
-                    <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
-                </div>
-                <div class="col-6">
-                    <a href="#" class="btn btn-primary w-100">Save</a>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <!-- Modal -->
@@ -1077,29 +1122,38 @@
                 <div class="modal-footer border-0 justify-content-center pt-5">
                     <button type="button" class="btn justify-content-center d-block btn-outline-dark"
                         data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center"
-                            style="min-width:100px">Yes</button></a>
+                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
                 </div>
             </div>
         </div>
     </div>
-
+   
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
     <!-- loader -->
     <script type="text/javascript" src="assets/js/loader.js"></script>
-    
+
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="assets/libs/node-waves/waves.min.js"></script>
     <script type="text/javascript" src="assets/libs/feather-icons/feather.min.js"></script>
     <script type="text/javascript" src="assets/libs/lord-icon/lord-icon-2.1.0.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/plugins.js"></script> -->
+    <script type="text/javascript" src='assets/libs/choices/choices.min.js'></script>
     <script type="text/javascript" src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/list/list.js"></script>
+    <script type="text/javascript" src="assets/libs/list/list.pagination.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
 
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/PCR.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/medicationReport.js"></script>
 </body>
-
 </html>

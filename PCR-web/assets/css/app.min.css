@@ -628,12 +628,13 @@
 	right: 0;
 	left: 250px;
 	/* background-color: var(--vz-footer-bg); */
-	background-color: rgb(41, 170, 225);
+	/* background-color: rgb(41, 170, 225); */
+	background-color: var(--vz-headerNew-bg);
 	/* background-image: url(../img/footer/pacda3.jpg); */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 49px;
+    height: 49px;
     color: var(--vz-body-bg);
     display: flex;
     align-items: center;

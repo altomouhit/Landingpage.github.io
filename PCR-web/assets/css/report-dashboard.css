@@ -26,10 +26,12 @@
     text-align: center;
     /* width: 120px; */
     justify-content: flex-start;
-    background-color: var(--vz-body-bg);
+    /* background-color: var(--vz-body-bg); */
+    background-color: #F1F9F2;
     border-radius: 0 1.2rem;
     padding: 0.625rem;
     box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border: 1px solid #f1f1f1;
 }
 .services_label {
     font-display: swap;
