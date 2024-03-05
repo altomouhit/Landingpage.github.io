@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .smart-Wizard {
-    padding: 20px;
+    padding: 10px;
     margin-top: 10px;
     background: var(--vz-card-bg) 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 30px #00000014;
@@ -302,7 +302,7 @@ legend {
 .data_table .table {
     border: 1px solid #bfc6cf !important;
     border-radius: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .table .thead-light th {

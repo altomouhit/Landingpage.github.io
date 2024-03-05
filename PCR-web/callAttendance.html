@@ -418,10 +418,10 @@
                                     <input type="text" id="ambulanceSearch" class="form-control" placeholder="Search..." aria-label="Search">
                                 </div> -->
                                 <div class="">
-                                    <button type="button" class="btn btn-rounded btn-primary btn-label">
-                                            <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button>
-                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label">
-                                            <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
+                                    <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="print">
+                                        <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
+                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="export">
+                                        <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +437,8 @@
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
-                                                        <select class="form-select" id="governorateID" aria-label="Floating label">
+                                                        <select class="form-select multiSelect" id="governorateID" data-live-search="true" multiple title="Please select">
+                                                            <!-- <option value="">Please select</option> -->
                                                             <option value="">Please select</option>
                                                             <option value="1">Muscat</option>
                                                             <option value="2">Al Batinah South</option>
@@ -518,11 +519,11 @@
                             <div class="row mt-4">
                                 <div class="col-md-12">
                                     <div class="table-responsive data_table">
-                                        <table id="callAttendanceTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                        <table id="callAttendanceTable" class="table align-middle table-nowrap table-striped  table-bordered w-100" aria-hidden="true">
                                             <thead class="table-primary">
                                                 <tr>
                                                     <th>Staff Name</th>
-                                                    <!-- <th>Muscat</th>
+                                                    <th>Muscat</th>
                                                     <th>Al Batinah South</th>
                                                     <th>Al Batinah North</th>
                                                     <th>Al Wusta</th>
@@ -532,13 +533,313 @@
                                                     <th>Al Dhahira</th>
                                                     <th>Al Sharqyah North</th>
                                                     <th>Al Sharqyah South</th>
-                                                    <th>Dhofar</th> -->
-                                                    <th>Governorate</th>
-                                                    <th>Willayat</th>
+                                                    <th>Dhofar</th>
+                                                    <!-- <th>Governorate</th>
+                                                    <th>Willayat</th> -->
                                                     <th>No of Calls. Count</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <tr>
+                                                    <td>Ali Mohammed Said Al-faraji</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ALMuhannad Abdullah</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mohammed AL-Braiki</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mazen Nasser Jamil AL-Maliki</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P217394 YAQOUB JUMA KHAMIS AL-SIYABI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P218076 MALIK HAMED JUMA AL-MASUODI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P218589 KHALID MARHOON SAID AL HATTALI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P218617 WALEED SAKER BADER AL ABRI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P218645 SULEIMAN HAMED MOHD AL HINAI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P218929 ALI KHAMIS MAYOOF AL GHAFRI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P219121 HILAL HAMED KHAMIS AL-AMRANI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P219308 KHALID ALI SAID AL-ISAAI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P219896 Faiz Khamis Yusuf Al-Sinani</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225677 Emad Masaod ashid Al-Makdami</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225695 Khalil Khasib Said Al-Essai</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225722 MOHAMMED SALEM KHAMIS AL-REZAIQI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225735 SULIEMAN NASSER ALI AL-RAWAHI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225738 MOHAMMED HAMED ALI AL-HARASI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P225749 AHMED MOHAMMED HUMAID AL-SHUKAILI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>P228385 SAIF SALIM KHALFAN AL-MAAMARI</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -1136,7 +1437,15 @@
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
-
+    <!-- Data table print buttons start -->
+    <script type="text/javascript" src="assets/libs/dataTables/dataTables.buttons.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.dataTables.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/jszip.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/pdfmake.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/vfs_fonts.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.html5.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.print.js"></script>
+    <!-- Data table print buttons End -->
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/PCR.js"></script>

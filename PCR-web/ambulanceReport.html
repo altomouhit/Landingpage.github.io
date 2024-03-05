@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/buttons.dataTables.css" />
 
     <!-- multiselect Css-->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
@@ -117,7 +118,8 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search ..."
                                                 aria-label="Recipient's username">
-                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
                                         </div>
                                     </div>
                                 </form>
@@ -165,7 +167,7 @@
 
                         <div class="mx-1 header-item d-none d-sm-flex">
                             <button type="button"
-                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode" 
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode"
                                 data-bs-toggle="modal" data-bs-target="#logOut">
                                 <i class='bx bx-power-off fs-22'></i>
                             </button>
@@ -270,8 +272,10 @@
                                     <img class="rounded-circle header-profile-user" src="assets/img/avatar.svg"
                                         alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal Khamis Alrasbi</span>
-                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super User</span>
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Ahlam Hilal
+                                            Khamis Alrasbi</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super
+                                            User</span>
                                     </span>
                                 </span>
                             </button>
@@ -281,7 +285,7 @@
                                 <!-- <a class="dropdown-item" href="lockscreen.html">
                                     <i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">Lock screen</span></a> -->
-                                <a class="dropdown-item" href="#" >
+                                <a class="dropdown-item" href="#">
                                     <i class="mdi mdi-power text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle" data-key="t-logout">Logout</span></a>
                             </div>
@@ -332,7 +336,8 @@
                         <!-- end Dashboard Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="MCI_show.html" aria-controls="sidebarIncidents">
-                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="create" width="23" /> 
+                                <img src="assets/img/new/dashboard/MCI_white.svg" class="me-1" alt="create"
+                                    width="23" />
                                 <span data-key="t-incidents">Show MCI</span>
                             </a>
                         </li>
@@ -351,21 +356,26 @@
                         <!-- end Medical Store Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="PCR.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="me-1" alt="create" width="21" /> <span data-key="t-CreateNew">Create New</span>
+                                <img src="assets/img/dashboard_icons/creatNewIcon.svg" class="me-1" alt="create"
+                                    width="21" /> <span data-key="t-CreateNew">Create New</span>
                             </a>
                         </li>
                         <!-- end Create New Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link active" href="report_dashboard.html" aria-controls="sidebarCreateNew">
-                                <img src="assets/img/dashboard_icons/reportIcon.svg" class="me-1" alt="Reports" width="21" /> 
+                            <a class="nav-link menu-link active" href="report_dashboard.html"
+                                aria-controls="sidebarCreateNew">
+                                <img src="assets/img/dashboard_icons/reportIcon.svg" class="me-1" alt="Reports"
+                                    width="21" />
                                 <span data-key="t-CreateNew">Reports</span>
                             </a>
                         </li>
                         <!-- end Reports Menu -->
                         <li class="menu-title"><span data-key="t-master">Master Data</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="patientInfo">
-                                <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master" width="21" /> <span data-key="t-global">Master Data</span>
+                            <a class="nav-link menu-link" href="#patientInfo" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="patientInfo">
+                                <img src="assets/img/dashboard_icons/masterIcon.svg" class="me-1" alt="Master"
+                                    width="21" /> <span data-key="t-global">Master Data</span>
                             </a>
                             <div class="collapse menu-dropdown" id="patientInfo">
                                 <ul class="nav nav-sm flex-column">
@@ -406,8 +416,9 @@
                                 Station Ambulance Factors Effecting EMS
                             </h4>
                         </div>
-                    
-                        <div class="col-sm-12 col-xl-8 d-flex align-items-center justify-content-end header-btn-block p-0 text-nowrap">
+
+                        <div
+                            class="col-sm-12 col-xl-8 d-flex align-items-center justify-content-end header-btn-block p-0 text-nowrap">
                             <div class="page-title-right top_header_bar d-flex align-items-center justify-content-end">
                                 <!-- <div class="input-group input-group-navbar">
                                     <div class="input-group-append">
@@ -418,15 +429,14 @@
                                     <input type="text" id="ambulanceSearch" class="form-control" placeholder="Search..." aria-label="Search">
                                 </div> -->
                                 <div class="">
-                                    <button type="button" class="btn btn-rounded btn-primary btn-label">
-                                            <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button>
-                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label">
-                                            <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
+                                    <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="print">
+                                        <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
+                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="export">
+                                        <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
                     <!-- end page title -->
 
                     <div class="row project-wrapper">
@@ -438,8 +448,8 @@
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
-                                                        <select class="form-select" id="governorateID" aria-label="Floating label">
-                                                            <option value="">Please select</option>
+                                                        <select class="form-select multiSelect" id="governorateID" data-live-search="true" multiple title="Please select">
+                                                            <!-- <option value="">Please select</option> -->
                                                             <option value="1">Muscat</option>
                                                             <option value="2">Al Batinah South</option>
                                                             <option value="3">Al Batinah North</option>
@@ -460,7 +470,7 @@
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="form-floating">
                                                     <select class="form-select" id="incidentLocation" aria-label="Floating label">
-                                                        <option value="">Please select</option>                                                           
+                                                        <option value="">Please select</option>
                                                     </select>
                                                     <label for="incidentLocation">Willayat</label>
                                                 </div>
@@ -523,14 +533,15 @@
                                                     <span class="input-group-text"><i class="fa-light fa-notes-medical fa-lg"></i></span>
                                                 </div>
                                             </div>
-                                        
+
                                             <div class="col-sm-6 d-flex align-items-center justify-content-end btn-bottom">
                                                 <button type="reset" class="btn btn-text" id="ambulanceCancelId"
                                                     style="width: auto; margin-left: 0; color: #868700">
                                                     Cancel
                                                 </button>
-                
-                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="ambulanceFn()" id="ambulanceBtn">
+
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2"
+                                                    onclick="ambulanceFn()" id="ambulanceBtn">
                                                     <i class='fal fa-search fa-fw'></i>&nbsp;Search
                                                 </button>
                                             </div>
@@ -539,19 +550,224 @@
                                     </fieldset>
                                 </form>
                             </section>
-                
+
                             <div class="row mt-4">
                                 <div class="col-md-12">
-                                    <div class="table-responsive-sm data_table">
-                                        <table id="ambulanceTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                    <div class="table-responsive data_table">
+                                        <table id="ambulanceTable" class="table align-middle table-striped table-bordered w-100"
+                                            aria-hidden="true">
                                             <thead class="table-primary">
                                                 <tr>
                                                     <th class="w-10">Station</th>
-                                                    <th>Factors Effecting EMS</th>
+                                                    <th>Adverse Round Condition</th>
+                                                    <th>Adverse Weather</th>
+                                                    <th>Crowd Control</th>
+                                                    <th>Hazardous Material</th>
+                                                    <th>Language Barrier</th>
+                                                    <th>Prolonged Extrication </th>
+                                                    <th>Unsafe Scene</th>
+                                                    <th>Vehicle Problems</th>
+                                                    <th>Not Applicable</th>
+                                                    <th>Directions</th>
+                                                    <th>Ambulance Crash</th>
+                                                    <th>Ambulance Failure</th>
+                                                    <th>Distance</th>
+                                                    <th>Diversion</th>
+                                                    <th>Refuse Receiving Patient</th>
                                                     <th class="w-5">Total Count</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <tr> 
+                                                    <td>Al-Amirat</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>AL-Athaiba</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Al-Khudh1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Al-Khudh2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Al-Watayah</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Boshar-1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Boshar-2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Darsate</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Qurayyat</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Standby</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -578,7 +794,8 @@
                         </div>
                         <div class="col-sm-6 d-flex align-items-center justify-content-end footerBg1 footerLineHeight">
                             <p>
-                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">&nbsp;Al Tomouh IT LLC</a>
+                                Design & Develop by <a href="https://altomouhit.com/" target="_blank">&nbsp;Al Tomouh IT
+                                    LLC</a>
                             </p>
                         </div>
                     </div>
@@ -1132,12 +1349,13 @@
                 <div class="modal-footer border-0 justify-content-center pt-5">
                     <button type="button" class="btn justify-content-center d-block btn-outline-dark"
                         data-bs-dismiss="modal" style="min-width: 100px; display: none;">No</button>
-                    <a href="index.html" class="logOut"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
+                    <a href="index.html" class="logOut"><button type="button"
+                            class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
                 </div>
             </div>
         </div>
     </div>
-   
+
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-5.3.0/bootstrap.bundle.js"></script>
@@ -1156,14 +1374,24 @@
     <script type="text/javascript" src="assets/libs/list/list.js"></script>
     <script type="text/javascript" src="assets/libs/list/list.pagination.js"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.11/sweetalert2.js"></script>
 
     <script type="text/javascript" src="assets/libs/dataTables/jquery.dataTables.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/dataTables.bootstrap5.js"></script>
-
+    <!-- Data table print buttons start -->
+    <script type="text/javascript" src="assets/libs/dataTables/dataTables.buttons.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.dataTables.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/jszip.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/pdfmake.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/vfs_fonts.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.html5.js"></script>
+    <script type="text/javascript" src="assets/libs/dataTables/buttons.print.js"></script>
+    <!-- Data table print buttons End -->
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/PCR.js"></script>
     <script type="text/javascript" src="assets/js/master-Pages/ambulanceReport.js"></script>
 </body>
+
 </html>
