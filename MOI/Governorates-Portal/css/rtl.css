@@ -1,0 +1,178 @@
+@import url(TanseekModProArabic_font/TanseekModProArabic-Bold.css);
+:root {
+    --tanseek-arabic: 'Tanseek Mod Pro Arabic';
+}
+
+html {
+    direction: rtl;
+}
+
+body {
+    text-align: right;
+}
+
+.tanseek-arabic {
+    font-family: var(--tanseek-arabic);
+}
+
+.custom-carousel-1 .owl-carousel.nav-bottom.nav-bottom-align-left .owl-nav {
+    position: absolute;
+    top: 89px;
+    right: -61px;
+    left: auto;
+}
+
+.owl-carousel.nav-arrows-thin .owl-nav .owl-prev:before {
+    content: "\e606";
+    font-size: inherit;
+}
+
+.owl-carousel.nav-arrows-thin .owl-nav .owl-next:before {
+    content: "\e605";
+    font-size: inherit;
+}
+
+.text-lg-end {
+    text-align: left !important;
+}
+
+@media (min-width: 992px) {
+    #header .header-nav-main nav>ul>li>a.dropdown-toggle .fa-chevron-down {
+        /* display: none; */
+        margin-right: 0.5rem;
+        margin-left: 0;
+    }
+    #header .header-nav-features {
+        position: relative;
+        padding-right: 20px;
+        margin-right: 10px;
+        padding-left: 0;
+        margin-left: auto;
+    }
+    .custom-carouse-1-title .pe-lg-4 {
+        padding-left: 1.5rem !important;
+    }
+    .custom-carouse-1-title .me-lg-5 {
+        margin-left: 3rem !important;
+    }
+    .custom-carouse-1-title h4 {
+        font-family: var(--tanseek-arabic);
+    }
+    #header .header-nav-main nav>ul>li.dropdown .dropdown-menu li a {
+        text-align: right;
+    }
+    .e-service-heading {
+        font-family: var(--tanseek-arabic);
+        font-size: 1.5rem !important;
+    }
+}
+
+html .scroll-to-top {
+    left: 10px;
+    right: auto;
+}
+
+html .divider.divider-primary.divider-small .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.custom-view-more .ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: auto !important;
+}
+
+.custom-view-more .ms-2 svg {
+    transform: rotate(180deg);
+}
+
+.tab-pane .row .col-md-6 .d-flex .ps-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 0 !important;
+}
+
+.twitter-carousel .vc_col-sm-10 {
+    padding: 0 50px 0 0;
+}
+
+.twitter-carousel .vc_col-sm-10:before {
+    right: 10px;
+    left: auto;
+}
+
+.custom-read-more-link svg,
+.custom-read-more svg {
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+    transform: rotate(180deg);
+}
+
+.list.list-icons.list-icons-lg.list-icons-style-2 li {
+    padding-top: 8px;
+    padding-right: 42px;
+    padding-left: 0;
+}
+
+.list.list-icons li>[class*=fa-]:first-child,
+.list.list-icons li>.icons:first-child,
+.list.list-icons li a:first-child>[class*=fa-]:first-child,
+.list.list-icons li a:first-child>.icons:first-child {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 5px;
+}
+
+#header .header-nav-features .header-nav-features-dropdown {
+    left: 100%;
+    right: auto;
+    margin-left: -50px;
+    margin-right: 0;
+}
+
+
+/* Search */
+
+.simple-search .form-control {
+    border-radius: 1.3rem 0 0 1.3rem;
+    border-color: #eee;
+    border-left: 0;
+    border-right: inherit;
+}
+
+.input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-right: -1px;
+    margin-left: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.simple-search .btn {
+    border-right: 0;
+    border-left: inherit;
+}
+
+#header .header-nav-features .header-nav-features-dropdown:before {
+    left: 10px;
+    right: auto;
+}
+
+.government-title {
+    font-family: var(--tanseek-arabic);
+    font-size: 2.5rem;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
