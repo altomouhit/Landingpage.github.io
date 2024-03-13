@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "deviceNametxt": "Device 1",
+            "deviceIMEItxt": "863073053888635",
+            "assignedTo": "P1/3240",
+            "assignedTo_val": "1",
+            "governorateID": "Muscat",
+            "governorateID_val": "1",
+            "stationID": "Al-Amirat",
+            "stationID_val": "1",
+            "statusYN": "<i class='fas fa-toggle-off text-danger fa-2x'></i>",
+            "statusYN_val": "2"
+        }
+    ]
+}

@@ -420,6 +420,8 @@
                                 <div class="">
                                     <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="print">
                                        <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
+                                    <button type="button" class="btn btn-rounded btn-success btn-label" id="excel">
+                                    <i class="fal fa-file-xls label-icon align-middle fa-2x"></i>&nbsp;Export to Excel</button>
                                     <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="export">
                                         <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
                                 </div>
@@ -517,8 +519,31 @@
                                                     <span class="input-group-text"><i class="fa-light fa-car fa-lg"></i></span>
                                                 </div>
                                             </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select multiSelect" id="medicalDirector" data-live-search="true" multiple title="Please select">
+                                                            <!-- <option value="">Please select</option> -->
+                                                        </select>
+                                                        <label for="medicalDirector">Medical Director</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-car fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="stationID" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                        </select>
+                                                        <label for="stationID">Station ID</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
+                                                </div>
+                                            </div>
                                         
-                                            <div class="col-sm-6 d-flex align-items-center justify-content-end btn-bottom">
+                                            <div class="col-sm d-flex align-items-center justify-content-end btn-bottom">
                                                 <button type="reset" class="btn btn-text" id="medicalDirectorsCancelId"
                                                     style="width: auto; margin-left: 0; color: #868700">
                                                     Cancel

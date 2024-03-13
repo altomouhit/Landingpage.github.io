@@ -451,7 +451,7 @@
                                             </div>
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="form-floating">
-                                                    <input type="text" class="form-control" id="deviceIMEItxt" placeholder="Device IMEI Number" />
+                                                    <input type="number" class="form-control" id="deviceIMEItxt" placeholder="Device IMEI Number" />
                                                     <label for="deviceIMEItxt">Device IMEI Number</label>
                                                 </div>
                                             </div>
@@ -474,15 +474,15 @@
                                                     <select class="form-select" id="governorateID" aria-label="Floating label">
                                                         <option value="">Please select</option>
                                                         <option value="1">Muscat</option>
-                                                        <option value="2">AL Batinah South</option>
-                                                        <option value="3">AL Batinah North</option>
-                                                        <option value="4">AL Wusta</option>
+                                                        <option value="2">Al Batinah South</option>
+                                                        <option value="3">Al Batinah North</option>
+                                                        <option value="4">Al Wusta</option>
                                                         <option value="5">Musandam</option>
-                                                        <option value="6">AL Burimi</option>
-                                                        <option value="7">AL Dakhiliyah</option>
-                                                        <option value="8">AL Dhahira</option>
-                                                        <option value="9">AL Sharqyah North</option>
-                                                        <option value="10">AL Sharqyah South</option>
+                                                        <option value="6">Al Burimi</option>
+                                                        <option value="7">Al Dakhiliyah</option>
+                                                        <option value="8">Al Dhahira</option>
+                                                        <option value="9">Al Sharqyah North</option>
+                                                        <option value="10">Al Sharqyah South</option>
                                                         <option value="11">Dhofar</option>
                                                     </select>
                                                     <label for="governorateID">Governorate</label>
@@ -499,11 +499,16 @@
                                             </div>
 
                                             <div class="col-sm-6 col-md-3 mb-3">
-                                                <div class="form-floating">
-                                                    <div class="form-check form-switch form-switch-lg form-switch-success">
-                                                        <input type="checkbox" class="form-check-input" id="customSwitchsizelg" checked="">
-                                                        <label for="lookupDetailStatus">Status</label>
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="statusYN" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">Active</option>
+                                                            <option value="2">In active</option>
+                                                        </select>
+                                                        <label for="statusYN">Status</label>
                                                     </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-question fa-lg"></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -511,13 +516,11 @@
                 
                                         <div class="row">
                                             <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                                                <button type="reset" class="btn btn-text" id="deviceCancelid"
-                                                    style="width: auto; margin-left: 0; color: #868700">
+                                                <button type="reset" class="btn btn-text" id="deviceCancelid" style="width: auto; margin-left: 0; color: #868700">
                                                     Cancel
                                                 </button>
                 
-                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="deviceDetailFn()"
-                                                    id="deviceDetailBtn">
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="deviceDetailFn()" id="deviceDetailBtn">
                                                     <i class="fal fa-check" aria-hidden="true"></i>&nbsp; Save
                                                 </button>
                                             </div>
@@ -533,17 +536,21 @@
                                         <table id="deviceStatusTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
                                             <thead class="table-primary">
                                                 <tr>
-                                                    <th>#</th>
-                                                    <th>Device Name</th>
-                                                    <th>Device IMEI Number</th>
-                                                    <th>Device Assigned To</th>
-                                                    <th>Governorate</th>
-                                                    <th>Station</th>
-                                                    <th>Device Status</th>
+                                                    <th>Device Name</th>            <!-- 0 -->
+                                                    <th>Device IMEI Number</th>     <!-- 1 -->
+                                                    <th>Device Assigned To</th>     <!-- 2 -->
+                                                    <th></th>                       <!-- 3 -->
+                                                    <th>Governorate</th>            <!-- 4 -->
+                                                    <th></th>                       <!-- 5 -->
+                                                    <th>Station</th>                <!-- 6 -->
+                                                    <th></th>                       <!-- 7 -->
+                                                    <th>Device Status</th>          <!-- 8 -->
+                                                    <th></th>                       <!-- 9 -->
+                                                    <th>Action</th>                 <!-- 10 -->
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <!-- <tr>
                                                     <td>1</td>
                                                     <td>Device 1</td>
                                                     <td>863073053888635</td>
@@ -578,7 +585,7 @@
                                                         <input type="checkbox" class="form-check-input" id="device3" checked="">
                                                         </div>
                                                     </td>
-                                                </tr>
+                                                </tr> -->
                                             </tbody>
                                         </table>
                                     </div>

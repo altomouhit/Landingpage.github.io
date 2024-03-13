@@ -476,11 +476,34 @@
                                                     <div class="form-floating">
                                                         <select class="form-select" id="roleName" aria-label="Floating label">
                                                             <option value="">Please select</option>
-                                                            <option value="1">Role Name 1</option>
-                                                            <option value="2">Role Name 2</option>
-                                                            <option value="3">Role Name 3</option>
+                                                            <option value="1">System-Administrator</option>
+                                                            <option value="2">Medical Director</option>
+                                                            <option value="3">EMS Supervisor</option>
+                                                            <option value="4">EMT</option>
+                                                            <option value="5">Student</option>
+                                                            <option value="6">Duty EMS Supervisor</option>
+                                                            <option value="7">Duty Medical Director</option>
+                                                            <option value="8">Ambulance Operator</option>
+                                                            <option value="9">Medical Store Attendant</option>
+                                                            <option value="10">Doctor</option>
                                                         </select>
                                                         <label for="roleName">Role Name</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-pen-ruler fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3" id="EMTTypeDiv">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="EMTType" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                            <option value="1">EMT Student</option>
+                                                            <option value="2">EMT Basic</option>
+                                                            <option value="3">EMT Advanced</option>
+                                                            <option value="4">Paramedic</option>
+                                                        </select>
+                                                        <label for="EMTType">EMT Level Type</label>
                                                     </div>
                                                     <span class="input-group-text"><i class="fa-light fa-pen-ruler fa-lg"></i></span>
                                                 </div>
@@ -556,6 +579,8 @@
                                                     <th>Login ID</th>
                                                     <th>User Name</th>
                                                     <th>Role Name</th>
+                                                    <th></th>
+                                                    <th>EMT Level Type</th>
                                                     <th></th>
                                                     <th>Contact No</th>
                                                     <th>Email</th>

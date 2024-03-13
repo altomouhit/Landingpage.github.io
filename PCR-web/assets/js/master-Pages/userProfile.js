@@ -13,6 +13,8 @@ function userProfileFn() {
     userProfile.userName = $("#userName").val();
     userProfile.roleName = $("#roleName option:selected").text();
     userProfile.roleName_val = $("#roleName option:selected").val();
+    userProfile.EMTType = $("#EMTType option:selected").text();
+    userProfile.EMTType_val = $("#EMTType option:selected").val();
     userProfile.contactNo = $("#contactNo").val();
     userProfile.emailID = $("#emailID").val();
     userProfile.statusYN = $("#statusYN option:selected").text();
@@ -34,7 +36,7 @@ function userProfileFn() {
     $("#forceNo").val('');
     $("#loginID").val('');
     $("#userName").val('');
-    $("#roleName").val('');
+    $("#roleName, #EMTType").val('');
     $("#contactNo").val('');
     $("#emailID").val('');
     $("#statusYN").val('');
@@ -51,6 +53,7 @@ function editUserProfileFn(data1) {
     $("#loginID").val(data.loginID);
     $("#userName").val(data.userName);
     $("#roleName").val(data.roleName_val);
+    $("#EMTType").val(data.EMTType_val);
     $("#contactNo").val(data.contactNo);
     $("#emailID").val(data.emailID);
     $("#statusYN").val(data.statusYN_val);
@@ -64,12 +67,13 @@ function viewUserProfileFn(data1) {
     $("#loginID").val(data.loginID);
     $("#userName").val(data.userName);
     $("#roleName").val(data.roleName_val);
+    $("#EMTType").val(data.EMTType_val);
     $("#contactNo").val(data.contactNo);
     $("#emailID").val(data.emailID);
     $("#statusYN").val(data.statusYN_val);
     //$("#statuSwitch").val(data.statuSwitch).is(":checked");
     $('#forceNo, #loginID, #userName, #contactNo, #emailID').attr('readonly', true);
-	$("#roleName, #statusYN").prop('disabled', true);
+	$("#roleName, #statusYN, #EMTType").prop('disabled', true);
 }
 $(document).ready(function () {
     $('#userProfileTable tbody').on('click', '#userProfileViewBtn', function () {
@@ -99,6 +103,8 @@ $(document).ready(function () {
             { "data": "userName" },
             { "data": "roleName" },
             { "data": "roleName_val" },
+            { "data": "EMTType"},
+            { "data": "EMTType_val" },
             { "data": "contactNo" },
             { "data": "emailID" },
             { "data": "statusYN" },
@@ -113,7 +119,7 @@ $(document).ready(function () {
             "searchable": false,
             //"orderable": false,
             visible: false,
-            "targets": [4, 8]
+            "targets": [4, 5, 6, 8]
         }],
         "order": [[0, 'asc']]
     });
@@ -137,4 +143,12 @@ $("#userProfileCancelid").click(function () {
     $('#forceNo, #loginID, #userName, #contactNo, #emailID').removeAttr('readonly');
 	$("#roleName, #statusYN").prop('disabled', false);
     $(".smart-Wizard").hide();
+});
+$("#EMTTypeDiv").hide();
+$("#roleName").on("change", function () {
+    if(this.value == "4") {
+        $("#EMTTypeDiv").show();
+    }  else {
+        $("#EMTTypeDiv").hide();
+    }
 });

@@ -420,6 +420,8 @@
                                 <div class="">
                                     <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="print">
                                         <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
+                                    <button type="button" class="btn btn-rounded btn-success btn-label" id="excel">
+                                        <i class="fal fa-file-xls label-icon align-middle fa-2x"></i>&nbsp;Export to Excel</button>
                                     <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="export">
                                         <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
                                 </div>
@@ -439,7 +441,6 @@
                                                     <div class="form-floating">
                                                         <select class="form-select multiSelect" id="governorateID" data-live-search="true" multiple title="Please select">
                                                             <!-- <option value="">Please select</option> -->
-                                                            <option value="">Please select</option>
                                                             <option value="1">Muscat</option>
                                                             <option value="2">Al Batinah South</option>
                                                             <option value="3">Al Batinah North</option>
@@ -463,6 +464,17 @@
                                                         <option value="">Please select</option>                                                           
                                                     </select>
                                                     <label for="incidentLocation">Willayat</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 mb-3">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="stationID" aria-label="Floating label">
+                                                            <option value="">Please select</option>
+                                                        </select>
+                                                        <label for="stationID">Station ID</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
                                                 </div>
                                             </div>
                                             
@@ -497,6 +509,37 @@
                                                         <label for="attendanceType">Attendance Type</label>
                                                     </div>
                                                     <span class="input-group-text"><i class="fa-light fa-clipboard-user fa-lg"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 mb-3" id="staffIdDiv">
+                                                <div class="input-group">
+                                                    <div class="form-floating">
+                                                        <select name="force_number" id="force_number" class="form-select multiSelect" data-live-search="true" multiple title="Please select">
+                                                            <!-- <option value="">Please select</option> -->
+                                                            <option value="1">P2/71936 </option>
+                                                            <option value="2">P2/72334 </option>
+                                                            <option value="3">P2/72722 </option>
+                                                            <option value="4">P2/72729 </option>
+                                                            <option value="5">P2/72731 </option>
+                                                            <option value="6">P2/72737 </option>
+                                                            <option value="7">P2/72742 </option>
+                                                            <option value="8">P2/72891 </option>
+                                                            <option value="9">P2/72892 </option>
+                                                            <option value="10">P2/72895 </option>
+                                                            <option value="11">P2/72915 </option>
+                                                            <option value="12">P2/72943 </option>
+                                                            <option value="13">P2/72949 </option>
+                                                            <option value="14">P2/72963 </option>
+                                                            <option value="15">P2/72984 </option>
+                                                            <option value="16">P2/73055 </option>
+                                                            <option value="17">P2/73056 </option>
+                                                            <option value="18">P2/73221 </option>
+                                                            <option value="19">P2/73263 </option>
+                                                        </select>
+                                                        <label for="force_number" class="form-label">Staff</label>
+                                                    </div>
+                                                    <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
                                                 </div>
                                             </div>
                                         

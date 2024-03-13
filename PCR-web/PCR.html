@@ -6111,13 +6111,16 @@
                                                                                     <div class="form-floating singleSelect">
                                                                                         <select name="staff_name" id="staff_name" class="form-select multiSelect" required>
                                                                                             <option value="">Please select</option>
-                                                                                            <option value="1">EMS Provider 1</option>
-                                                                                            <option value="2">EMS Provider 2</option>
-                                                                                            <option value="3">Ambulance Operator</option>
-                                                                                            <option value="4">Student ID</option>
-                                                                                            <option value="5">Other </option>
+                                                                                            <option value="1">System-Administrator</option>
+                                                                                            <option value="2">Medical Director</option>
+                                                                                            <option value="3">EMS Supervisor</option>
+                                                                                            <option value="4">EMT</option>
+                                                                                            <option value="5">Student</option>
                                                                                             <option value="6">Duty EMS Supervisor</option>
                                                                                             <option value="7">Duty Medical Director</option>
+                                                                                            <option value="8">Ambulance Operator</option>
+                                                                                            <option value="9">Medical Store Attendant</option>
+                                                                                            <option value="10">Doctor</option>
                                                                                         </select>
                                                                                         <label for="staff_name" class="form-label">Staff</label>
                                                                                     </div>
@@ -6151,35 +6154,34 @@
                                                                                 </div>
                                                                                 <div class="col-lg-12">
                                                                                     <div class="form-floating">
-                                                                                        <input type="text" id="ID_Name"
-                                                                                            name="ID_Name"
-                                                                                            class="form-control"
-                                                                                            placeholder="Enter Name"
-                                                                                            required />
-                                                                                        <label for="ID_Name"
-                                                                                            class="form-label">Name</label>
+                                                                                        <input type="text" id="ID_Name" name="ID_Name" class="form-control" placeholder="Enter Name" required />
+                                                                                        <label for="ID_Name" class="form-label">Name</label>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-lg-12" id="dutyDiv">
                                                                                     <label for=""></label>
-                                                                                    <div
-                                                                                        class="form-check form-check-inline">
-                                                                                        <input class="form-check-input"
-                                                                                            type="radio"
-                                                                                            name="dutyRadio" id="called"
-                                                                                            value="called">
-                                                                                        <label class="form-check-label"
-                                                                                            for="called">Called</label>
+                                                                                    <div class="form-check form-check-inline">
+                                                                                        <input class="form-check-input" type="radio" name="dutyRadio" id="called" value="called">
+                                                                                        <label class="form-check-label" for="called">Called</label>
                                                                                     </div>
-                                                                                    <div
-                                                                                        class="form-check form-check-inline">
-                                                                                        <input class="form-check-input"
-                                                                                            type="radio"
-                                                                                            name="dutyRadio"
-                                                                                            id="attended"
-                                                                                            value="attended">
-                                                                                        <label class="form-check-label"
-                                                                                            for="attended">Attended</label>
+                                                                                    <div class="form-check form-check-inline">
+                                                                                        <input class="form-check-input" type="radio" name="dutyRadio" id="attended" value="attended">
+                                                                                        <label class="form-check-label" for="attended">Attended</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-12" id="EMTTypeDiv">
+                                                                                    <div class="input-group">
+                                                                                        <div class="form-floating">
+                                                                                            <select class="form-select" id="EMTType" aria-label="Floating label">
+                                                                                                <option value="">Please select</option>
+                                                                                                <option value="1">EMT Student</option>
+                                                                                                <option value="2">EMT Basic</option>
+                                                                                                <option value="3">EMT Advanced</option>
+                                                                                                <option value="4">Paramedic</option>
+                                                                                            </select>
+                                                                                            <label for="EMTType">EMT Level Type</label>
+                                                                                        </div>
+                                                                                        <span class="input-group-text"><i class="fa-light fa-pen-ruler fa-lg"></i></span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

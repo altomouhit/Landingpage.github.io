@@ -13,7 +13,8 @@
 }
 .services_flex {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(175px,1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(175px,1fr)); */
+    grid-template-columns: repeat(auto-fill,minmax(149px,1fr));
     grid-gap: 10px;
 }
 @media (min-width: 1300px) {
@@ -74,7 +75,7 @@
 .item--inner {
     text-align: center;
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 15px 10px;
     -webkit-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
     -khtml-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
     -moz-box-shadow: 0 0 74px rgba(3, 0, 44, .24);

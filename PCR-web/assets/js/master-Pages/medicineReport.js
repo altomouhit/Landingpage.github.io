@@ -7,7 +7,7 @@ $(".staffRadio").on('change', function() {
         $("#mgmtOutcomeTableDiv").show();
     }
 });
-$("#medicalDirectorsCancelId").click(function () {
+$("#medicineReportCancelId").click(function () {
     $("#medicalDirectorsBtn").html("<i class='fal fa-check fa-fw'></i>&nbsp; Save").show();
     $("#medicationType, #incidentLocation, #stationID, #fromDate, #toDate, #callCategory, #transport").val('').prop('disabled', false);
 });
@@ -15,16 +15,16 @@ $("#medicalDirectorsCancelId").click(function () {
 var printCounter = 0;
 $(document).ready(function() {
 	// DataTable initialisation
-	var medicationReportTable = $('#medicationReportTable').DataTable({
+	var medicineReportTable = $('#medicineReportTable').DataTable({
         "dom": '<"top"f>rt<"bottom"ilp>',
 		"paging": true,
 		"autoWidth": true,
 		"buttons": [{
 			extend: 'pdfHtml5',
-            title: 'Medication Report',
+            title: 'Medicine Report',
             text: '<i class="fal fa-file-pdf fa-lg fa-fw text-danger"></i>',
             className: 'btn btn-danger btn-md px-2 mr-1',
-            filename: 'medicationReport',
+            filename: 'medicineReport',
             orientation: 'landscape', //portrait
             pageSize: 'A4', //A3 , A5 , A6 , legal , letter
 			exportOptions: {
@@ -63,7 +63,7 @@ $(document).ready(function() {
 						columns: [ {
 							alignment: 'left',
 							bold: true,
-							text: 'Medication Report',
+							text: 'Medicine Report',
 							fontSize: 16,
 							margin: [10, 0]
 						 }, {
@@ -131,7 +131,7 @@ $(document).ready(function() {
             title: 'Incident Location Report',
             text: '<i class="fal fa-file-xls fa-lg fa-fw text-success"></i>',
             className: 'btn btn-danger btn-md px-2 mr-1',
-            filename: 'medicationReport',
+            filename: 'medicineReport',
             orientation: 'landscape', //portrait
             pageSize: 'A4', //A3 , A5 , A6 , legal , letter
 			exportOptions: {
@@ -167,13 +167,13 @@ $(document).ready(function() {
         }]
 	});
     $('#export').on('click', function() {
-        medicationReportTable.button(0).trigger();
+        medicineReportTable.button(0).trigger();
     });
 	$('#excel').on('click', function() {
-        medicationReportTable.button(1).trigger();
+        medicineReportTable.button(1).trigger();
     });
     $('#print').on('click', function() {
-        medicationReportTable.button(1).trigger();
+        medicineReportTable.button(1).trigger();
     });
 });
 

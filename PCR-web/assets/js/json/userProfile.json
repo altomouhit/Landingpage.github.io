@@ -4,11 +4,13 @@
             "forceNo": "emp1",
             "loginID": "32562",
             "userName": "Khamis",
-            "roleName": "Role Name 1",
+            "roleName": "System-Administrator",
             "roleName_val": "1",
+            "EMTType":"EMT Basic",
+            "EMTType_val":"2",
             "contactNo": "71518263",
             "emailID": "bala@gmail.com",
-            "statusYN": "<i class='fas fa-times-circle text-danger fa-xl'></i>",
+            "statusYN": "<i class='fas fa-check-circle text-success fa-xl'></i>",
             "statusYN_val": "2"
         }
     ]

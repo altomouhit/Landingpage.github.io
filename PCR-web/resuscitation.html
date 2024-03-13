@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Patient & Management Outcome </title>
+    <title>Resuscitation Required</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="e-Service" name="description" />
     <meta content="altomouhit" name="author" />
@@ -402,8 +402,8 @@
                             <a href="report_dashboard.html" class="text-dark me-3" data-bs-toggle="tooltip" data-bs-title="Back to Report Dashboard ">
                                 <img src="assets/img/left-arrow.svg">
                             </a>
-                            <h4 class="mb-0" data-bs-toggle="tooltip" data-bs-title="Patient & Management Outcome ">
-                                Patient & Management Outcome 
+                            <h4 class="mb-0" data-bs-toggle="tooltip" data-bs-title="Resuscitation Required">
+                                Resuscitation Required
                             </h4>
                         </div>
                     
@@ -415,9 +415,9 @@
                                             <i class="fal fa-search" aria-hidden="true"></i>
                                         </button>
                                     </div>
-                                    <input type="text" id="ambulanceSearch" class="form-control" placeholder="Search..." aria-label="Search">
+                                    <input type="text" id="resuscSearch" class="form-control" placeholder="Search..." aria-label="Search">
                                 </div> -->
-                                <div class="patientTableDiv">
+                                <div class="">
                                     <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="print">
                                         <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
                                     <button type="button" class="btn btn-rounded btn-success btn-label" id="excel">
@@ -425,17 +425,10 @@
                                     <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="export">
                                         <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
                                 </div>
-                                <div class="mgmtOutcomeTableDiv">
-                                    <!-- <button type="button" class="btn btn-rounded btn-primary btn-label" id="printMgmt">
-                                        <i class="fal fa-print label-icon align-middle fa-2x"></i>&nbsp;Print</button> -->
-                                    <button type="button" class="btn btn-rounded btn-success btn-label" id="excelMgmt">
-                                        <i class="fal fa-file-xls label-icon align-middle fa-2x"></i>&nbsp;Export to Excel</button>
-                                    <button type="button" class="btn btn-rounded btn-danger mx-2 btn-label" id="exportMgmt">
-                                        <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i>&nbsp;Export to PDF</button>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end page title -->
                     <!-- end page title -->
 
                     <div class="row project-wrapper">
@@ -444,16 +437,6 @@
                                 <form action="" class="smart-form" id="checkout-form" name="checkout-form" novalidate="novalidate">
                                     <fieldset class="mb-2 p-3">
                                         <div class="row">
-                                            <div class="col-sm-6 col-md-3 mb-3">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input outcomeRadio" type="radio" name="outcomeRadio" id="patientOutcome" value="patient">
-                                                    <label class="form-check-label" for="patientOutcome">Patient Outcome</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input outcomeRadio" type="radio" name="outcomeRadio" id="mgmtOutcome" value="mgmt">
-                                                    <label class="form-check-label" for="mgmtOutcome">Management Outcome</label>
-                                                </div>
-                                            </div>
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
@@ -485,7 +468,6 @@
                                                     <label for="incidentLocation">Willayat</label>
                                                 </div>
                                             </div>
-
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
@@ -497,7 +479,7 @@
                                                     <span class="input-group-text"><i class="fa-light fa-thumbtack fa-lg"></i></span>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-sm-6 col-md-3 mb-3">
                                                 <div class="input-group">
                                                     <div class="form-floating">
@@ -517,13 +499,14 @@
                                                     <span class="input-group-text"><i class="fa-light fa-calendar-lines-pen fa-lg"></i></span>
                                                 </div>
                                             </div>
-
+                                        
                                             <div class="col-sm d-flex align-items-center justify-content-end btn-bottom">
-                                                <button type="reset" class="btn btn-text" id="outcomeCancelId" style="width: auto; margin-left: 0; color: #868700">
+                                                <button type="reset" class="btn btn-text" id="resuscCancelId"
+                                                    style="width: auto; margin-left: 0; color: #868700">
                                                     Cancel
                                                 </button>
                 
-                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="outcomeFn()" id="outcomeBtn">
+                                                <button type="button" class="btn btn-chartreuse btn-height ml-2" onclick="resuscFn()" id="resuscBtn">
                                                     <i class='fal fa-search fa-fw'></i>&nbsp;Search
                                                 </button>
                                             </div>
@@ -533,19 +516,16 @@
                                 </form>
                             </section>
                 
-                            <div class="row mt-4 patientTableDiv">
+                            <div class="row mt-4">
                                 <div class="col-md-12">
                                     <div class="table-responsive data_table">
-                                        <table id="patientOutcomeTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
+                                        <table id="resuscTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
                                             <thead class="table-primary">
                                                 <tr>
-                                                    <th>Governorate</th>
-                                                    <th>Willayat</th>
-                                                    <th>Count of Stable</th>
-                                                    <th>Count of Unstable</th>
-                                                    <th>Count of Improve</th>
-                                                    <th>Count of Deteriorated</th>
-                                                    <th>Count of Dead</th>
+                                                    <!-- <th>Governorate</th>
+                                                    <th>Willayat</th> -->
+                                                    <th>Station Name</th>
+                                                    <th>Resuscitation Required Status Count</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -553,27 +533,8 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div> <!-- /.row  -->
-
-                            <div class="row mt-4 mgmtOutcomeTableDiv">
-                                <div class="col-md-12">
-                                    <div class="table-responsive-sm data_table">
-                                        <table id="mgmtOutcomeTable" class="table align-middle table-nowrap table-bordered w-100" aria-hidden="true">
-                                            <thead class="table-primary">
-                                                <tr>
-                                                    <th>Governorate</th>
-                                                    <th>Willayat</th>
-                                                    <th>Count of Unchanged</th>
-                                                    <th>Count of ROSC</th>
-                                                    <th>Count of Dead</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div> <!-- /.row  -->
+                            </div>
+                            <!-- /.row  -->
                         </div>
                         <!-- end col -->
                     </div>
@@ -1119,10 +1080,21 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
+        <!-- <div class="offcanvas-footer border-top p-3 text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="btn btn-primary w-100">Save</a>
+                </div>
+            </div>
+        </div> -->
     </div>
 
     <!-- Modal -->
@@ -1174,9 +1146,10 @@
     <script type="text/javascript" src="assets/libs/dataTables/buttons.html5.js"></script>
     <script type="text/javascript" src="assets/libs/dataTables/buttons.print.js"></script>
     <!-- Data table print buttons End -->
+
     <!-- App js -->
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/PCR.js"></script>
-    <script type="text/javascript" src="assets/js/master-Pages/patientOutcome.js"></script>
+    <script type="text/javascript" src="assets/js/master-Pages/resuscitation.js"></script>
 </body>
 </html>

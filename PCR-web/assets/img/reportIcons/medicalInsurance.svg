@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.935" height="78.053" viewBox="0 0 58.935 78.053">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.584" gradientTransform="matrix(0, -1, 0.761, 0, 0.222, 1.019)" gradientUnits="objectBoundingBox">
+      <stop offset="0.697" stop-color="#fff"/>
+      <stop offset="0.866" stop-color="#f8f6f6"/>
+      <stop offset="1" stop-color="#f0edec"/>
+    </radialGradient>
+  </defs>
+  <g id="medicalInsurance" transform="translate(-29.391 -221.71)">
+    <rect id="Rectangle_18378" data-name="Rectangle 18378" width="58.622" height="73.554" rx="4" transform="translate(29.704 225.96) rotate(0.244)" fill="#1b1464"/>
+    <rect id="Rectangle_18379" data-name="Rectangle 18379" width="65.954" height="52.75" rx="4" transform="translate(84.923 230.685) rotate(90.244)" stroke="#4f9dbc" stroke-miterlimit="10" stroke-width="0.5" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_18394" data-name="Rectangle 18394" width="34.459" height="13.681" transform="translate(41.892 233.46)" fill="none" stroke="#1b1477" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="HEALTH_INSURANCE_" data-name="HEALTH
+INSURANCE " transform="translate(59.416 238.72) rotate(0.244)" fill="#344a5f" font-size="4" font-family="RSCanaith"><tspan x="-6.678" y="0">HEALTH</tspan><tspan x="-10.818" y="5">INSURANCE </tspan></text>
+    <rect id="Rectangle_18380" data-name="Rectangle 18380" width="36.159" height="0.415" transform="translate(40.066 288.786) rotate(0.244)" fill="#bcbdbf"/>
+    <rect id="Rectangle_18381" data-name="Rectangle 18381" width="23.35" height="6.419" rx="2" transform="translate(46.544 221.96)" fill="#fff" stroke="#18799f" stroke-miterlimit="10" stroke-width="0.5"/>
+    <g id="Group_45766" data-name="Group 45766" transform="translate(40.647 255.296)">
+      <rect id="Rectangle_18382" data-name="Rectangle 18382" width="5.519" height="5.519" fill="#bcbdbf"/>
+      <g id="Group_45765" data-name="Group 45765" transform="translate(7.703 0.834)">
+        <rect id="Rectangle_18383" data-name="Rectangle 18383" width="27.218" height="0.602" fill="#bcbdbf"/>
+        <rect id="Rectangle_18384" data-name="Rectangle 18384" width="27.218" height="0.602" transform="translate(0 1.625)" fill="#bcbdbf"/>
+        <rect id="Rectangle_18385" data-name="Rectangle 18385" width="27.218" height="0.602" transform="translate(0 3.25)" fill="#bcbdbf"/>
+      </g>
+    </g>
+    <g id="Group_45768" data-name="Group 45768" transform="translate(40.759 265.22)">
+      <rect id="Rectangle_18386" data-name="Rectangle 18386" width="5.519" height="5.519" transform="translate(0 0)" fill="#bcbdbf"/>
+      <g id="Group_45767" data-name="Group 45767" transform="translate(7.703 0.834)">
+        <rect id="Rectangle_18387" data-name="Rectangle 18387" width="27.218" height="0.602" fill="#bcbdbf"/>
+        <rect id="Rectangle_18388" data-name="Rectangle 18388" width="27.218" height="0.602" transform="translate(0 1.625)" fill="#bcbdbf"/>
+        <rect id="Rectangle_18389" data-name="Rectangle 18389" width="27.218" height="0.602" transform="translate(0 3.25)" fill="#bcbdbf"/>
+      </g>
+    </g>
+    <g id="Group_45770" data-name="Group 45770" transform="translate(40.871 275.144)">
+      <rect id="Rectangle_18390" data-name="Rectangle 18390" width="5.519" height="5.519" fill="#bcbdbf"/>
+      <g id="Group_45769" data-name="Group 45769" transform="translate(7.703 0.834)">
+        <rect id="Rectangle_18391" data-name="Rectangle 18391" width="27.218" height="0.602" fill="#bcbdbf"/>
+        <rect id="Rectangle_18392" data-name="Rectangle 18392" width="27.218" height="0.602" transform="translate(0 1.625)" fill="#bcbdbf"/>
+        <rect id="Rectangle_18393" data-name="Rectangle 18393" width="27.218" height="0.602" transform="translate(0 3.25)" fill="#bcbdbf"/>
+      </g>
+    </g>
+    <path id="Path_65613" data-name="Path 65613" d="M55.446,293.665l1.466,1.324,3.288-3.538" transform="translate(-13.51 -36.035)" fill="none" stroke="#146c43" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_65614" data-name="Path 65614" d="M55.446,314.154l1.466,1.324L60.2,311.94" transform="translate(-13.51 -46.66)" fill="none" stroke="#146c43" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_65615" data-name="Path 65615" d="M55.446,334.643l1.466,1.324,3.288-3.538" transform="translate(-13.51 -57.284)" fill="none" stroke="#146c43" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Group_45773" data-name="Group 45773" transform="translate(44.688 237.96)">
+      <g id="Group_45771" data-name="Group 45771" transform="translate(24.353 0)">
+        <rect id="Rectangle_18395" data-name="Rectangle 18395" width="3.17" height="0.867" transform="translate(0 1.151)" fill="#146c43"/>
+        <rect id="Rectangle_18396" data-name="Rectangle 18396" width="3.17" height="0.867" transform="translate(2.018) rotate(90)" fill="#146c43"/>
+      </g>
+      <g id="Group_45772" data-name="Group 45772" transform="translate(0 0)">
+        <rect id="Rectangle_18397" data-name="Rectangle 18397" width="3.169" height="0.867" transform="translate(0 1.151)" fill="#146c43"/>
+        <rect id="Rectangle_18398" data-name="Rectangle 18398" width="3.17" height="0.867" transform="translate(2.018) rotate(90)" fill="#146c43"/>
+      </g>
+    </g>
+  </g>
+</svg>

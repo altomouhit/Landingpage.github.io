@@ -39,7 +39,7 @@ window.onload = function() {
 	$(".upperEXTLeft, .upperEXTRight, .lwEXTLeft, .lwEXTRight, #upperEXTLeftBurnsDiv, #upperEXTRightBurnsDiv,#lwEXTLeftBurnsDiv, #lwEXTRightBurnsDiv, #upperEXTNODCAPBTLS, #lwEXTNODCAPBTLS").hide();
 	$("#downTimeDiv, #handoverDiv, #CPRProgressDiv, .AEDApplied").hide();
 	// Location Type
-	$("#locationSelectDiv, #dutyDiv").hide();
+	$("#locationSelectDiv, #dutyDiv, #EMTTypeDiv").hide();
 	//Patient & Incident Info > Incident info > Factors Affecting EMS
 	$(".factorsAffectingEMSDiv, #governmentHospitalRefusedDiv, #privateHospitalRefusedDiv").hide();
 	//Patient & Incident Info > Additional Resources On Scene
@@ -700,8 +700,12 @@ $("#CPRProgress").on('change', function() {
 $("#staff_name").on('change', function() {
 	if (this.value == 6 || this.value == 7) {
 		$("#dutyDiv").show();
-	} else {
+		$("#EMTTypeDiv").hide();
+	} else if(this.value == 4) {
+		$("#EMTTypeDiv").show();
 		$("#dutyDiv").hide();
+	} else {
+		$("#dutyDiv, #EMTTypeDiv").hide();
 	}
 });
 //Patient & Incident Info > Incident info > Factors Affecting EMS
